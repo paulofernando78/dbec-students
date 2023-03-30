@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-font: 'Gruppo', cursive;
+}
+
+a {
+    font-family: var(--primary-font);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+}
