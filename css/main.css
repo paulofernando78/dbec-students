@@ -10,7 +10,9 @@
 :root {
     --nav-font: 'Gruppo', cursive;
     --primary-font: 'Kanit', sans-serif;
-    --secondary-font: 'Walter Turncoat', cursive;
+    --primary-font-size: 36px;
+    --secondary-font: 'Walter Turncoat' cursive;
+    --secondary-font-size: 32px;
 }
 
 .logo {
