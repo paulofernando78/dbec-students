@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 
 * {
     margin: 0;
@@ -8,10 +7,10 @@
 }
 
 :root {
-    --nav-font: 'Kanit', sans-serif;
     --primary-font: 'Kanit', sans-serif;
+    --secondary-font: 'Walter Turncoat', cursive;
     --topic-font-size: 2rem;
-    --subtopic-font-size: 1rem;
+    --subtopic-font-size: 1.5rem;
     --paragraph-font-size: 1rem;
 }
 
@@ -19,9 +18,13 @@
     background-color: #000;
     color: white;
     font-family: var(--primary-font);
-    font-size: 30px;
+    font-size:30px;
     padding-left: 10px;
 }
+
+/* .icon {
+    width: 15px;
+} */
 
 .nav-menu {
     height: 100%;
@@ -34,11 +37,11 @@
 }
 
 .nav-menu-link {
+    font-family: var(--primary-font);
     list-style: none;
 }
 
 .nav-menu-link a {
-    font-family: var(--nav-font);
     color: white;
     text-decoration: none;
 }
@@ -54,16 +57,24 @@ a {
     width: 70%;
 }
 
-
 .welcome {
     font-family: var(--primary-font);
 }
 
 h1 {
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     font-size: var(--topic-font-size);
+    padding: 0 0 0 10px;
 }
+
+h2 {
+    font-family: var(--secondary-font);
+    font-size: var(--subtopic-font-size);
+    padding: 0 0 0 10px;
+}
+
 p {
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     font-size: var(--secondary-font-size);
+    padding-left: 10px
 }
