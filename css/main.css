@@ -8,7 +8,7 @@
 
 :root {
     --primary-font: 'Kanit', sans-serif;
-    --secondary-font: 'Walter Turncoat', cursive;
+    --secondary-font: 'Kanit', sans-serif;
     --topic-font-size: 2rem;
     --subtopic-font-size: 1.5rem;
     --paragraph-font-size: 1rem;
@@ -76,5 +76,5 @@ h2 {
 p {
     font-family: var(--secondary-font);
     font-size: var(--secondary-font-size);
-    padding-left: 10px
+    padding-left: 10px;
 }
