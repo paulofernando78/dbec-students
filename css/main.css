@@ -161,4 +161,5 @@ p {
 .btn-exercise {
     font-size: var(--paragraph-font-size);
     padding: 5px;
+    border-radius: 5px;
 }
