@@ -158,6 +158,7 @@ p {
     font-size: var(--paragraph-font-size);
 }
 
-#submit {
-    padding-left: 10px;
+.btn-exercise {
+    font-size: var(--paragraph-font-size);
+    padding: 5px;
 }
