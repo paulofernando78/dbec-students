@@ -17,11 +17,44 @@
     --paragraph-font-size: 1.5rem;
 }
 
+/* LOGIN PAGE */
+
 .wrapper {
     width: 550px;
     margin: 0 auto;
     border: solid 1px lightgray;
 }
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-logo {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.login-flag {
+    width: 85%;
+    margin-bottom: 50px;
+}
+
+.how-you-doing {
+    width: 40%;
+    margin: 20px 0 0 128px;
+}
+
+.me-computer {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    width: 80%;
+}
+
+/* INDEX PAGE */
 
 .header-content {
     background-color: #062745;
@@ -77,25 +110,20 @@ a {
     text-decoration: none;
 }
 
-.how-you-doing {
-    width: 40%;
-    margin: 20px 0 0 128px;
+.study-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.study-time {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.study-time-gif {
     padding: 50px 0;
     width: 60%;
     filter: drop-shadow(2px 2px 1px);
 }
 
-.me-computer {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+.me-studying {
+
 }
 
 main {
