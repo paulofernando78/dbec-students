@@ -66,6 +66,8 @@ nav {
     gap: 5px;
     background: #000;
     color: white;
+    font-family: var(--primary-font);
+    font-size: var(--paragraph-font-size);
 }
 
 nav img {
@@ -79,8 +81,6 @@ nav img {
 }
 
 nav ul li {
-    font-family: var(--primary-font);
-    font-size: var(--paragraph-font-size);
     list-style: none;
 }
 
