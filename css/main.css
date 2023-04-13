@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 * {
     margin: 0;
@@ -12,6 +13,7 @@
 :root {
     --primary-font: 'Kanit', sans-serif;
     --secondary-font: 'Patrick Hand', cursive;
+    --button-font: 'Bangers', cursive;
     --topic-font-size: 3rem;
     --subtopic-font-size: 2.5rem;
     --paragraph-font-size: 1.5rem;
@@ -44,14 +46,19 @@
 
 .how-you-doing {
     width: 40%;
-    margin: 20px 0 0 128px;
+    margin: 20px 67px 0 0px;
 }
 
 .me-computer {
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
     width: 80%;
+}
+
+#btn-login {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--button-font);
+    font-size: 30px;
+    background-color: red;
 }
 
 /* INDEX PAGE */
