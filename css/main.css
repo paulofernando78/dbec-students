@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
@@ -24,7 +24,7 @@
 }
 
 .header-content {
-    background-color: #000;
+    background-color: #062745;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -33,18 +33,12 @@
 }
 
 .btn-menu {
-    font-size: 8px;
-    width: 80px;
-    height: 40px;
-    padding: 0 10px;
-    background-color: red;
-    color: white;
-    font-family: var(--primary-font);
+    filter: invert(1);
 }
 
 .logo {
-    font-family: 'Bebas Neue', cursive; 
-    font-size: 2.5rem;
+    font-family: 'Lato', sans-serif; 
+    font-size: 1.7rem;
     color: white;
 }
 
@@ -54,7 +48,7 @@
 
 nav {
     padding: 10px;
-    background: #000;
+    background-color: #062745;
     color: white;
     font-family: var(--primary-font);
     font-size: var(--paragraph-font-size);
@@ -86,6 +80,15 @@ a {
 .how-you-doing {
     width: 40%;
     margin: 20px 0 0 128px;
+}
+
+.study-time {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0;
+    width: 60%;
+    filter: drop-shadow(2px 2px 1px);
 }
 
 .me-computer {
