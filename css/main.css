@@ -9,12 +9,6 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(45deg,lightgrey, white, lightgray);
-}
-
 :root {
     --primary-font: 'Kanit', sans-serif;
     --secondary-font: 'Patrick Hand', cursive;
@@ -23,13 +17,19 @@ body {
     --paragraph-font-size: 1.5rem;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg,rgba(240, 235, 235, 0.247), rgb(255, 255, 255), rgba(211, 211, 211, 0.226));
+}
+
 .wrapper {
     width: 550px;
     margin: 0 auto;
     border: solid 1px lightgray;
 }
 
-.header-container {
+.header-content {
     background-color: #000;
     display: flex;
     align-items: center;
@@ -58,41 +58,40 @@ body {
     width: 50px;
 }
 
-.svg-icon {
-    filter: invert(1);
-    width: 35px;
-}
-
-.nav-menu {
-    /* display: none; */
+nav {
     height: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    
     gap: 5px;
     background: #000;
     color: white;
 }
 
-.nav-menu-link {
+nav img {
+    filter: invert(1);
+    width: 35px;
+}
+
+.icon-list {
+    display: flex;
+    gap: 5px;
+}
+
+nav ul li {
     font-family: var(--primary-font);
     font-size: var(--paragraph-font-size);
     list-style: none;
 }
 
-.nav-menu-link a {
+nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-a {
-    text-decoration: none;
-}
-
-.how {
-    width: 250px;
-    margin: 20px 0 0 145px;
+.how-you-doing {
+    width: 40%;
+    margin: 20px 0 0 128px;
 }
 
 .me-computer {
