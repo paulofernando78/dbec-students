@@ -19,7 +19,7 @@
     --paragraph-font-size: 1.5rem;
 }
 
-/* LOGIN PAGE */
+/* INDEX - LOGIN PAGE */
 
 .wrapper {
     width: 550px;
@@ -45,8 +45,8 @@
 }
 
 .how-you-doing {
-    width: 40%;
-    margin: 20px 67px 0 0px;
+    width: 25%;
+    margin: 20px 37px 0 0px;
 }
 
 .me-computer {
@@ -61,7 +61,7 @@
     background-color: red;
 }
 
-/* INDEX PAGE */
+/* MAIN PAGE */
 
 .header-content {
     background-color: #062745;
