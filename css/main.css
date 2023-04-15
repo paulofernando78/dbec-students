@@ -165,7 +165,7 @@ main {
 }
 
 .description {
-    line-height: 1.2
+    line-height: 1.1
 }
 
 /* GRAMMAR BOOKS */
@@ -228,9 +228,10 @@ main {
 }
 
 .btn-exercise {
+    font-family: var(--extra-font);
     font-size: var(--paragraph-font-size);
-    padding: 5px;
-    border-radius: 5px;
+    padding: 0 5px;
+    border-radius: 3px;
 }
 
 /* LISTENING */
