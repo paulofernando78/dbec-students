@@ -11,18 +11,27 @@
 }
 
 :root {
-    --primary-font: 'Kanit', sans-serif;
-    --secondary-font: 'Patrick Hand', cursive;
     --button-font: 'Bangers', cursive;
-    --topic-font-size: 3rem;
-    --subtopic-font-size: 2.5rem;
-    --paragraph-font-size: 1.5rem;
+    --font: 'Kanit', sans-serif;
+    --nav-font-size: 1.5rem;
+    --topic-font-size: 2rem;
+    --subtopic-font-size: 1.5rem;
+    --paragraph-font-size: 1rem;
+    --description-paragraph-font-size: 1rem;
+
+    --extra-font: 'Patrick Hand', cursive;
+    --extra-topic-font-size: 2.3rem;
+    --extra-subtopic-font-size: 1.8rem;
+    --extra-paragraph-font-size: 1.3rem;
+
+    --description-font: 'Patrick Hand', cursive;
+    --description-font-size: 1.rem;
 }
 
 /* INDEX - LOGIN PAGE */
 
 .wrapper {
-    width: 550px;
+    width: 960px;
     margin: 0 auto;
     border: solid 1px lightgray;
 }
@@ -90,8 +99,8 @@ nav {
     padding: 10px;
     background-color: #062745;
     color: white;
-    font-family: var(--primary-font);
-    font-size: var(--paragraph-font-size);
+    font-family: var(--font);
+    font-size: var(--nav-font-size);
 }
 
 nav img {
@@ -136,22 +145,44 @@ a {
 main {
     padding: 10px;
     background-image: linear-gradient(45deg,rgba(211, 211, 211, 0.527), white, rgba(128, 128, 128, 0.096), white);
-    background-repeat: no-repeat;
 }
 
-h2 {
-    font-family: var(--secondary-font);
+/* FLIPPED CLASSRROMS */
+
+.h2-flipped {
+    font-family: var(--font);
     font-size: var(--topic-font-size);
 }
 
-h3 {
-    font-family: var(--secondary-font);
+.h3-flipped {
+    font-family: var(--font);
     font-size: var(--subtopic-font-size);
 }
 
-p {
-    font-family: var(--secondary-font);
+.p-flipped {
+    font-family: var(--font);
     font-size: var(--paragraph-font-size);
+}
+
+.description {
+    line-height: 1.2
+}
+
+/* GRAMMAR BOOKS */
+
+.h2-extra {
+    font-family: var(--extra-font);
+    font-size: var(--extra-topic-font-size);
+}
+
+.h3-extra {
+    font-family: var(--extra-font);
+    font-size: var(--extra-subtopic-font-size);
+}
+
+.p-extra {
+    font-family: var(--extra-font);
+    font-size: var(--extra-paragraph-font-size);
 }
 
 .portuguese {
@@ -201,3 +232,6 @@ p {
     padding: 5px;
     border-radius: 5px;
 }
+
+/* LISTENING */
+
