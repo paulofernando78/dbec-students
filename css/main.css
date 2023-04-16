@@ -37,7 +37,7 @@
 } */
 
 body {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -50,28 +50,29 @@ body {
 .login-logo {
     font-family: 'Lato', sans-serif;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    font-size: 21.1px;
 }
 
 .login-flag {
-    width: 85%;
+    width: 300px;
     margin-bottom: 50px;
 }
 
 .how-you-doing {
-    width: 30%;
-    margin: 10px 37px 0 0px;
+    width: 130px;
+    margin: 0 37px 0 0px;
 }
 
 .me-computer {
-    width: 70%;
+    width: 300px;
 }
 
 #btn-login {
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 5px;
     font-family: var(--button-font);
-    font-size: 30px;
+    font-size: 20px;
     background-color: red;
 }
 
@@ -143,13 +144,10 @@ a {
     filter: drop-shadow(2px 2px 1px);
 }
 
-.me-studying {
-
-}
-
 main {
     padding: 10px;
     background-image: linear-gradient(45deg,rgba(211, 211, 211, 0.527), white, rgba(128, 128, 128, 0.096), white);
+    /* height: 100vh; */
 }
 
 /* FLIPPED CLASSRROMS */
