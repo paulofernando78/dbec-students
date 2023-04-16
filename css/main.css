@@ -30,11 +30,15 @@
 
 /* INDEX - LOGIN PAGE */
 
-.wrapper {
+/* .wrapper {
     width: 960px;
     margin: 0 auto;
     border: solid 1px lightgray;
-}
+} */
+
+/* body {
+    height: 100vw;
+} */
 
 .login-content {
     display: flex;
