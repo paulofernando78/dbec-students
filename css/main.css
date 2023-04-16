@@ -16,7 +16,7 @@
     --nav-font-size: 1.5rem;
     --topic-font-size: 2rem;
     --subtopic-font-size: 1.5rem;
-    --paragraph-font-size: 1rem;
+    --paragraph-font-size: 1.2rem;
     --description-paragraph-font-size: 1rem;
 
     --extra-font: 'Patrick Hand', cursive;
@@ -145,8 +145,12 @@ a {
 
 .study-time-gif {
     padding: 50px 0;
-    width: 60%;
+    width: 200px;
     filter: drop-shadow(2px 2px 1px);
+}
+
+.me-studying {
+    width: 300px;
 }
 
 main {
