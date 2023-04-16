@@ -36,9 +36,10 @@
     border: solid 1px lightgray;
 } */
 
-/* body {
-    height: 100vw;
-} */
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 .login-content {
     display: flex;
