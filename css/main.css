@@ -12,17 +12,17 @@
 
 :root {
     --button-font: 'Bangers', cursive;
-    --font: 'Kanit', sans-serif;
     --nav-font-size: 1.5rem;
+    --font: 'Kanit', sans-serif;
     --topic-font-size: 2rem;
     --subtopic-font-size: 1.5rem;
     --paragraph-font-size: 1.2rem;
     --description-paragraph-font-size: 1rem;
 
-    --extra-font: 'Patrick Hand', cursive;
-    --extra-topic-font-size: 2.3rem;
-    --extra-subtopic-font-size: 1.8rem;
-    --extra-paragraph-font-size: 1.3rem;
+    --grammar-font: 'Patrick Hand', cursive;
+    --grammar-topic-font-size: 2.3rem;
+    --grammar-subtopic-font-size: 1.8rem;
+    --grammar-paragraph-font-size: 1.3rem;
 
     --description-font: 'Patrick Hand', cursive;
     --description-font-size: 1.rem;
@@ -30,15 +30,12 @@
 
 /* INDEX - LOGIN PAGE */
 
-/* .wrapper {
-    width: 960px;
-    margin: 0 auto;
-    border: solid 1px lightgray;
-} */
-
 body {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
+    background-image: linear-gradient(45deg,rgba(211, 211, 211, 0.527), white, rgba(128, 128, 128, 0.096), white);
+    height: 100vh;
+    background-size: contain;
 }
 
 .login-content {
@@ -155,8 +152,6 @@ a {
 
 main {
     padding: 10px;
-    background-image: linear-gradient(45deg,rgba(211, 211, 211, 0.527), white, rgba(128, 128, 128, 0.096), white);
-    /* height: 100vh; */
 }
 
 /* FLIPPED CLASSRROMS */
@@ -180,22 +175,24 @@ main {
     line-height: 1.1
 }
 
-/* GRAMMAR BOOKS */
+/* GRAMMAR */
 
-.h2-extra {
-    font-family: var(--extra-font);
-    font-size: var(--extra-topic-font-size);
+.h2-grammar {
+    font-family: var(--grammar-font);
+    font-size: var(--grammar-topic-font-size);
 }
 
-.h3-extra {
-    font-family: var(--extra-font);
-    font-size: var(--extra-subtopic-font-size);
+.h3-grammar {
+    font-family: var(--grammar-font);
+    font-size: var(--grammar-subtopic-font-size);
 }
 
-.p-extra {
-    font-family: var(--extra-font);
-    font-size: var(--extra-paragraph-font-size);
+.p-grammar {
+    font-family: var(--grammar-font);
+    font-size: var(--grammar-paragraph-font-size);
 }
+
+/* EXERCISES */
 
 .portuguese {
     color: grey;
@@ -234,13 +231,17 @@ main {
     color: red;
 }
 
-.placeholder {
-    font-family: var(--secondary-font);
-    font-size: var(--paragraph-font-size);
+.correct {
+    width: 18px;
+    fill: sepia (50%)
+}
+
+.incorrect {
+    width: 15px;
 }
 
 .btn-exercise {
-    font-family: var(--extra-font);
+    font-family: var(--grammar-font);
     font-size: var(--paragraph-font-size);
     padding: 0 5px;
     border-radius: 3px;
