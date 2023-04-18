@@ -32,21 +32,18 @@
 
 body {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 10px auto;
     /* background-image: linear-gradient(45deg,rgba(255, 255, 255, 0.527), rgb(235, 229, 229), rgba(153, 55, 55, 0.096), rgb(255, 255, 255)); */
-    height: 100vh;
-    background-size: contain;
 }
 
 .login-content {
     max-width: 350px;
     display: flex;
+    margin: 10px auto;
     flex-direction: column;
     align-items: center;
     border: 1px;
     border-radius: 5px;
-    box-shadow: 0 0 3px;
-    margin: 10px auto;
 
 }
 
