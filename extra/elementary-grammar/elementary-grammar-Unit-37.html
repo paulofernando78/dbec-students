@@ -8,19 +8,24 @@
     <title>Elementary Grammar Unit 37</title>
 </head>
 <style>
-
-.answer > :checked + label::after {
-    content: '\274C';
-    margin-left: 1em;
-
+/* DRPODOWN ANSWERS */
+.result {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
 }
 
-.answer > [data-correct]:checked + label::after {
-    content: '\2714';
-
+.correct {
+    background: url(http://www.profesornativo.com/tick.jpg);
+    background-repeat: no-repeat;
 }
 
+.incorrect {
+    background: url(http://www.profesornativo.com/x.jpg);
+    background-repeat: no-repeat;
+}
 </style>
+
 <body>
         <header>
             
@@ -111,8 +116,10 @@
             
             <div class="ribbon-2"><p class="p-grammar">EXERCISES</p></div>
             <br>
-            <p class="p-grammar">Name:</p> <input type="name">
+            <p class="p-grammar">Write your name:</p> <input type="name">
             <br><br>
+
+            <!-- 37.1 -->
             <p class="p-grammar"><b>37.1 Ketham is a small town. Look at the information and choose the correct answer.</b></p>
             <br>
             <p class="p-grammar">1. a castle? No</p>
@@ -123,89 +130,83 @@
             <p class="p-grammar">6. a university? No</p>
             <p class="p-grammar">7. any big hotels? No</p>
             <br>
+            <p class="p-grammar">Example:</p>
             <p class="p-grammar">1. <span class="example">There's</span> a castle.</p>
-            <img src="../../assets/correct.svg" alt="Correct" class="correct">
-            <img src="../../assets/incorrect.svg" alt="Incorrect" class="incorrect">
-            <section class="p-grammar">
-                2. <select name="question-2" id="37-1-2">
-                    <option value="1">...</option>
-                    <option value="1" class="p-grammar">There is</option>
-                    <option value="1" class="p-grammar">There are</option>
-                    <option value="1" class="p-grammar">There isn't</option>
-                    <option value="1" class="p-grammar">There aren't</option>
-                </select> a lot of restaurants.
-            </section>
-            <section class="p-grammar">
-                3. <select name="question-3" id="37-1-3">
-                    <option value="1" class="p-grammar">...</option>
-                    <option value="1" class="p-grammar">There is</option>
-                    <option value="1" class="p-grammar">There are</option>
-                    <option value="1" class="p-grammar">There isn't</option>
-                    <option value="1" class="p-grammar">There aren't</option>
-                </select> a hospital.
-            </section>
-            <section class="p-grammar">
-                4. <select name="question-4" id="37-1-4">
-                    <option value="1" class="p-grammar">...</option>
-                    <option value="1" class="p-grammar">There is</option>
-                    <option value="1" class="p-grammar">There are</option>
-                    <option value="1" class="p-grammar">There isn't</option>
-                    <option value="1" class="p-grammar">There aren't</option>
-                </select> a swimming pool.
-            </section>
-            <section class="p-grammar">
-                5. <select name="question-5" id="37-1-5">
-                    <option value="1">...</option>
-                    <option value="1" class="p-grammar">There is</option>
-                    <option value="1" class="p-grammar">There are</option>
-                    <option value="1" class="p-grammar">There isn't</option>
-                    <option value="1" class="p-grammar">There aren't</option>
-                </select> two movie theaters / cinemas.
-            </section>
-            <section class="p-grammar">
-                6. <select name="question-6" id="37-1-6">
-                    <option value="1">...</option>
-                    <option value="1" class="p-grammar">There is</option>
-                    <option value="1" class="p-grammar">There are</option>
-                    <option value="1" class="p-grammar">There isn't</option>
-                    <option value="1" class="p-grammar">There aren't</option>
-                </select> a university.
-            </section>
-            <section class="p-grammar">
-                7. <select name="question-7" id="37-1-7">
-                    <option value="1">...</option>
-                    <option value="1" class="p-grammar">There is</option>
-                    <option value="1" class="p-grammar">There are</option>
-                    <option value="1" class="p-grammar">There isn't</option>
-                    <option value="1" class="p-grammar">There aren't</option>
-                </select> any big hotels.
-            </section>
 
-            <!-- <section>        
-                <p class="p-extra">2. _____ a lot of restaurants. </p>
-                <div class="answer">
-                    <input type="radio" name="answer 371-2" id="answer 371-2-2">
-                    <label for="answer 371-2-2">There is</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer 371-2" id="answer 371-2-3">
-                    <label for="answer 371-2-3">There isn't</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer 371-2" id="answer 371-2-4" data-correct="true">
-                    <label for="answer 371-2-4">There are</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer 371-2" id="answer 371-2-5">
-                    <label for="answer 371-2-5">There aren't</label>
-                </div>
-            </section> -->
-            
+            <section class="p-grammar">
+                2. 
+                <select name="3712" >
+                    <option value="na">...</option>
+                    <option value="a" class="p-grammar">There is</option>
+                    <option value="b" class="p-grammar">There isn't</option>
+                    <option value="c" class="p-grammar">There are</option>
+                    <option value="d" class="p-grammar">There aren't</option>
+                </select> a lot of restaurants.
+                <span class="result"></span>
+            </section>
+            <section class="p-grammar">
+                3. 
+                <select name="3713" >
+                    <option value="na" class="p-grammar">...</option>
+                    <option value="a" class="p-grammar">There is</option>
+                    <option value="b" class="p-grammar">There isn't</option>
+                    <option value="c" class="p-grammar">There are</option>
+                    <option value="d" class="p-grammar">There aren't</option>
+                </select> a hospital.
+                <span class="result"></span>
+            </section>
+            <section class="p-grammar">
+                4. 
+                <select name="3714" >
+                    <option value="na" class="p-grammar">...</option>
+                    <option value="a" class="p-grammar">There is</option>
+                    <option value="b" class="p-grammar">There isn't</option>
+                    <option value="c" class="p-grammar">There are</option>
+                    <option value="d" class="p-grammar">There aren't</option>
+                </select> a swimming pool.
+                <span class="result"></span>
+            </section>
+            <section class="p-grammar">
+                5. 
+                <select name="3715" >
+                    <option value="na">...</option>
+                    <option value="a" class="p-grammar">There is</option>
+                    <option value="b" class="p-grammar">There isn't</option>
+                    <option value="c" class="p-grammar">There are</option>
+                    <option value="d" class="p-grammar">There aren't</option>
+                </select> two movie theaters / cinemas.
+                <span class="result"></span>
+            </section>
+            <section class="p-grammar">
+                6. 
+                <select name="3716" >
+                    <option value="na">...</option>
+                    <option value="a" class="p-grammar">There is</option>
+                    <option value="b" class="p-grammar">There isn't</option>
+                    <option value="c" class="p-grammar">There are</option>
+                    <option value="d" class="p-grammar">There aren't</option>
+                </select> a university.
+                <span class="result"></span>
+            </section>
+            <section class="p-grammar">
+                7. 
+                <select name="3717">
+                    <option value="na">...</option>
+                    <option value="a" class="p-grammar">There is</option>
+                    <option value="b" class="p-grammar">There isn't</option>
+                    <option value="c" class="p-grammar">There are</option>
+                    <option value="d" class="p-grammar">There aren't</option>
+                </select> any big hotels.
+                <span class="result"></span>
+            </section>
             <br>
-            <button class="btn-exercise" id="...">Submit</button>
+            <!-- <button class="btn-exercise" id="...">Submit</button>
             <button class="btn-exercise" id="...">Reset</button>
             <br>
             <br>
+            <br> -->
+
+            <!-- 37.2 -->
             <p class="p-grammar"><b>37.2 Choose <span class="example">there is</span> / <span class="example">there isn't</span> / <span class="example">is there</span> or <span class="example">there are</span> / <span class="example">there aren't</span> / <span class="example">are there</span>.</b></p>
             <br>
             <p class="p-grammar">1. Look! <span class="example">There's</span> a picture of your brother in the newspaper.</p>
@@ -217,6 +218,8 @@
             <p class="p-grammar">7. ... any problems?' 'No, everything is OK.'</p>
             <p class="p-grammar">8. ... nowhere to sit down. ... any chairs.</p>
             <br>
+
+            <!-- 37.3 -->
             <p class="p-grammar"><b>37.3 Write sentences with <span class="example">There are...</span> . Choose from the boxes.</b></p>
             <p class="p-grammar">1. <span class="example">There are seven days in a week.</span></p>
             <p class="p-grammar">2. ...</p>
@@ -225,6 +228,8 @@
             <p class="p-grammar">5. ...</p>
             <p class="p-grammar">6. ...</p>
             <br>
+
+            <!-- 37.4 -->
             <p class="p-grammar"><b>37.4 Choose <span class="example"> there's</span> / <span class="example"> is there</span> or <span class="example"> it's</span></b> / <span class="example"> Is it</span></p>
             <br>
             <p class="p-grammar">1. '<span class="example">There's</span> a train at 10:30.' 'Is it a fast train?'</p>
@@ -235,5 +240,37 @@
             <p class="p-grammar">6. 'What's that building?' '... a school.'</p>
             <p class="p-grammar">7. '... a restaurant in this hotel?' 'No, I'm afraid not.'</p>
         </main>
+
+        <script>
+            const answers = {
+                3712: 'c',
+                3713: 'a',
+                3714: 'b',
+                3715: 'c',
+                3716: 'b',
+                3717: 'd',
+      }
+
+        function checkAnswer(select){
+            const correctAnswer = answers[select.name];
+            const selectedAnswer = select.options[select.selectedIndex].value;
+            const result = select.parentElement.querySelector('.result');
+            result.className = 'result';
+
+        if (selectedAnswer === correctAnswer) {
+          result.classList.add('correct');
+        } else {
+          result.classList.add('incorrect');
+        }
+      }
+
+      const selects = document.querySelectorAll('select');
+
+      [...selects].forEach((el) => {
+        el.addEventListener('change', () => {
+          checkAnswer(el);
+        });
+      });
+        </script>
 </body>
 </html>
