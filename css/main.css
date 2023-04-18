@@ -33,7 +33,7 @@
 body {
     max-width: 700px;
     margin: 0 auto;
-    background-image: linear-gradient(45deg,rgba(211, 211, 211, 0.527), white, rgba(128, 128, 128, 0.096), white);
+    background-image: linear-gradient(45deg,rgba(255, 255, 255, 0.527), rgb(235, 229, 229), rgba(153, 55, 55, 0.096), rgb(255, 255, 255));
     height: 100vh;
     background-size: contain;
 }
@@ -200,13 +200,13 @@ main {
 
 .container-img {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .imgs {
     border:  3px solid black;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 
 }
 .ribbon-1 {
