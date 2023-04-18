@@ -39,9 +39,15 @@ body {
 }
 
 .login-content {
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
+    margin: 10px auto;
+
 }
 
 .login-logo {
