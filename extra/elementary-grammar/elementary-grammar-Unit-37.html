@@ -16,7 +16,7 @@
         width: 20px;
     }
 
-    .correct { 
+    .correct {
         background: url(../../assets/correct.png);
         background-repeat: no-repeat;
         background-size: 21px;
@@ -25,7 +25,7 @@
     .incorrect {
         background: url(../../assets/incorrect.png);
         background-repeat: no-repeat;
-        background-size: 20px;
+        background-size: 19px;
     }
 </style>
 
@@ -36,6 +36,8 @@
     <main>
         <h2 class="h2-grammar">Elementary Grammar</h2>
         <h3 class="h3-grammar">Unit 37 There is / There are</h3>
+        <br>
+        <hr>
         <br>
         <section>
             <p class="p-grammar">There to be <span class="portuguese">Haver, existir</span></p>
@@ -53,9 +55,7 @@
             <p class="p-grammar"><b>Affirmative</b></p>
             <p class="p-grammar"><u>There's</u> a man on the roof.</p>
             <p class="p-grammar"><u>There's</u> a train at 10:30. </p>
-            <p class="p-grammar"><u>There's</u> a big tree in the garden.</p>
             <p class="p-grammar"><u>There's</u> a cat at the window.</p>
-            <p class="p-grammar"><u>There's</u> nothing interesting on TV. Turn it off and let's go out.</p>
             <br>
             <div class="container-imgs">
                 <img src="../../assets/man-roof.jpg" alt="A man on the roof." class="imgs">
@@ -63,6 +63,10 @@
                 <img src="../../assets/cat-window.jpg" alt="A cat at the window" class="imgs">
             </div>
             <br>
+            <p class="p-grammar"><u>There's</u> a big tree in the garden.</p>
+            <p class="p-grammar"><u>There's</u> nothing interesting on TV. Turn it off.</p>
+            <br>
+
             <p class="p-grammar"><b>Dialogue:</b></p>
             <p class="p-grammar"><b>A:</b> Do you have any money?</p>
             <p class="p-grammar"><b>B:</b> Yes, <u>There's</u> some in my wallet.</p>
@@ -347,7 +351,6 @@
             3727: 'f',
             3728: 'a',
         }
-
 
         function checkAnswer(select) {
             const correctAnswer = answers[select.name];
