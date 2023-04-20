@@ -152,8 +152,8 @@ a {
 
 .study-time-gif {
     padding: 50px 0;
-    width: 200px;
-    filter: drop-shadow(2px 2px 1px);
+    width: 400px;
+    filter: drop-shadow(1px 1px 1px);
 }
 
 .me-studying {
@@ -182,7 +182,7 @@ main {
 }
 
 .description {
-    line-height: 1.1
+    line-height: 1.2
 }
 
 /* ELEMENTARY GRAMMAR */
