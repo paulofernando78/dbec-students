@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap');
 
 * {
     margin: 0;
@@ -13,7 +13,7 @@
 :root {
     --button-font: 'Bangers', cursive;
     --nav-font-size: 1.5rem;
-    --font: 'Kanit', sans-serif;
+    --font: 'Montserrat', sans-serif;
     --topic-font-size: 2rem;
     --subtopic-font-size: 1.5rem;
     --paragraph-font-size: 1.2rem;
