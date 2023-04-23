@@ -187,6 +187,10 @@ main {
     line-height: 1.2
 }
 
+table, td {
+    border: 1px solid black;;
+}
+
 /* ELEMENTARY GRAMMAR */
 
 .h2-grammar {
