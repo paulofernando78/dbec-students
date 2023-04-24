@@ -265,9 +265,18 @@ table, td {
    width: 100%; 
 }
 
-@media (min-width: 376px) {
-    .logo-main {
-        font-size: 1.1rem;
+@media (min-width: 1024px) {
+    
+    header {
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+
+    nav {
+        display: block;
+        position: absolute;
+        left: 0;
     }
     
 }
