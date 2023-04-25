@@ -10,25 +10,27 @@
 </head>
 <style>
     /* RADIO EXERCISES */
-    .answer > :checked + label::after {
-    content: "";
-    display: inline-block;
-    background: url(../../../assets/incorrect.png) no-repeat;
-    background-size: 20px;
-    width: 20px;
-    height: 20px;
-    margin-left: .5em;
-}
 
-.answer > [data-correct]:checked + label::after {
+    .answer > [data-correct]:checked + label::after {
     content: "";
     display: inline-block;
     background: url(../../../assets/correct.png) no-repeat;
     background-size: 20px 20px;
     width: 20px;
-    height: 20px;
+    height: 18px;
     margin-left: .5em;
 }
+
+    .answer > :checked + label::after {
+    content: "";
+    display: inline-block;
+    background: url(../../../assets/incorrect.png) no-repeat;
+    background-size: 17px;
+    width: 20px;
+    height: 17px;
+    margin-left: .5em;
+}
+
 </style>
 
 <body>
@@ -119,75 +121,75 @@
             </div>
             <br>
 
-            <!-- 45.1 -->
+        <!-- 45.1 -->
+        <div>
+            <p><b>45.1 Choose the correct answer.</b>
+            </p>
+            <br>
+            <p><b>Example</b></p>
+            <p>1. Somebody broke the window.
+            <br>
+                <span class="example">Who broke the window?</span></p>
+            <br>
             <div>
-                <p><b>45.1 Choose the correct answer.</b>
-                </p>
-                <br>
-                <p><b>Example</b></p>
-                <p>1. Somebody broke the window.
-                <br>
-                    <span class="example">Who broke the window?</span></p>
-                <br>
-                <div>
-                    <p class="answer">2. Something fell off the shelf. </p>
-                    <div class="answer">
-                        <input type="radio" name="4512">
-                        <label for="answer">Who fell off the shelf?</label>
-                    </div>
-                    <div class="answer">
-                        <input type="radio" name="4512" data-correct="true">
-                        <label for="answer">What fell off the shelf?</label>
-                    </div>
+                <p class="answer">2. Something fell off the shelf. </p>
+                <div class="answer">
+                    <input type="radio" name="4512">
+                    <label for="answer">Who fell off the shelf?</label>
                 </div>
-                <br>
-                <div>
-                    <p class="answer">3. Somebody wants to see you.</p>
-                    <div class="answer">
-                        <input type="radio" name="4513" data-correct="true">
-                        <label for="answer">Who wants to see me?</label>
-                    </div>
-                    <div class="answer">
-                        <input type="radio" name="4513">
-                        <label for="answer">What wants to see me?</label>
-                    </div>
+                <div class="answer">
+                    <input type="radio" name="4512" data-correct="true">
+                    <label for="answer">What fell off the shelf?</label>
                 </div>
-                <br>
-                <div>
-                    <p class="answer">4. Somebody took my umbrella.</p>
-                    <div class="answer">
-                        <input type="radio" name="4514" data-correct="true">
-                        <label for="answer">Who took my umbrella?</label>
-                    </div>
-                    <div class="answer">
-                        <input type="radio" name="4514">
-                        <label for="answer">What took my umbrella?</label>
-                    </div>
+            </div>
+            <br>
+            <div>
+                <p class="answer">3. Somebody wants to see you.</p>
+                <div class="answer">
+                    <input type="radio" name="4513" data-correct="true">
+                    <label for="answer">Who wants to see me?</label>
                 </div>
-                <br>
-                <div>
-                    <p class="answer">5. Something I ate made me sick.</p>
-                    <div class="answer">
-                        <input type="radio" name="4515">
-                        <label for="answer">Who made you sick?</label>
-                    </div>
-                    <div class="answer">
-                        <input type="radio" name="4515" data-correct="true">
-                        <label for="answer">What made your sick?</label>
-                    </div>
+                <div class="answer">
+                    <input type="radio" name="4513">
+                    <label for="answer">What wants to see me?</label>
                 </div>
-                <br>
-                <div>
-                    <p class="answer">6. Somebody is coming.</p>
-                    <div class="answer">
-                        <input type="radio" name="4516" data-correct="true">
-                        <label for="answer">Who's coming?</label>
-                    </div>
-                    <div class="answer">
-                        <input type="radio" name="4516">
-                        <label for="answer">What's coming?</label>
-                    </div>
+            </div>
+            <br>
+            <div>
+                <p class="answer">4. Somebody took my umbrella.</p>
+                <div class="answer">
+                    <input type="radio" name="4514" data-correct="true">
+                    <label for="answer">Who took my umbrella?</label>
                 </div>
+                <div class="answer">
+                    <input type="radio" name="4514">
+                    <label for="answer">What took my umbrella?</label>
+                </div>
+            </div>
+            <br>
+            <div>
+                <p class="answer">5. Something I ate made me sick.</p>
+                <div class="answer">
+                    <input type="radio" name="4515">
+                    <label for="answer">Who made you sick?</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="4515" data-correct="true">
+                    <label for="answer">What made your sick?</label>
+                </div>
+            </div>
+            <br>
+            <div>
+                <p class="answer">6. Somebody is coming.</p>
+                <div class="answer">
+                    <input type="radio" name="4516" data-correct="true">
+                    <label for="answer">Who's coming?</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="4516">
+                    <label for="answer">What's coming?</label>
+            </div>
+        </div>
 </body>
 
 </html>
