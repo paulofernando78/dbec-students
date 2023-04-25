@@ -166,6 +166,10 @@ main {
     padding: 10px;
 }
 
+.red {
+    color:red;
+}
+
 /* MAIN FONT */
 
 .h2-main {
@@ -255,6 +259,17 @@ table, td {
     border-radius: 3px;
 }
 
+/* TABLES */
+
+table {
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
 /* LISTENING */
 
 .listening-banner {
@@ -271,12 +286,19 @@ table, td {
         display: block;
         position: absolute;
         left: 0;
+        width: 370px;
     }
 
     nav {
         display: block;
         position: absolute;
         left: 0;
+        width: 370px;
+        height: 100vh;
+    }
+
+    .btn-menu {
+        display: none
     }
     
 }
