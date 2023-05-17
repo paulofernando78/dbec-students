@@ -6,6 +6,6 @@
     text-align: right;
 }
 
-.table-unit-1-b2 tr td:nth-last-child(3) {
+.table-unit-1-b2 tr td:nth-last-child(3 ) {
     text-align: right;
 }

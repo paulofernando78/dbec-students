@@ -21,10 +21,10 @@
     --paragraph-font-size: 1.2rem;
     --description-paragraph-font-size: 1rem;
 
-    --grammar-font: 'Patrick Hand', cursive;
-    --grammar-topic-font-size: 2.3rem;
-    --grammar-subtopic-font-size: 1.8rem;
-    --grammar-paragraph-font-size: 1.3rem;
+    --hand-font: 'Patrick Hand', cursive;
+    --hand-topic-font-size: 2.3rem;
+    --hand-subtopic-font-size: 1.8rem;
+    --hand-paragraph-font-size: 1.3rem;
 
     --description-font: 'Patrick Hand', cursive;
     --description-font-size: 1.rem;
@@ -195,21 +195,21 @@ table, td {
     border: 1px solid black;;
 }
 
-/* ELEMENTARY GRAMMAR */
+/* HAND FONT */
 
-.h2-grammar {
-    font-family: var(--grammar-font);
-    font-size: var(--grammar-topic-font-size);
+.h2-hand {
+    font-family: var(--hand-font);
+    font-size: var(--hand-topic-font-size);
 }
 
-.h3-grammar {
-    font-family: var(--grammar-font);
-    font-size: var(--grammar-subtopic-font-size);
+.h3-hand {
+    font-family: var(--hand-font);
+    font-size: var(--hand-subtopic-font-size);
 }
 
-.p-grammar {
-    font-family: var(--grammar-font);
-    font-size: var(--grammar-paragraph-font-size);
+.p-hand {
+    font-family: var(--hand-font);
+    font-size: var(--hand-paragraph-font-size);
 }
 
 /* ELEMENTARY GRAMMAR EXERCISES */
