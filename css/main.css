@@ -114,7 +114,7 @@ body {
     width: 35px;
 }
 
-nav {c
+nav {
     padding: 10px;
     background-color: #062745;
     color: white;
@@ -213,6 +213,13 @@ table, td {
 .p-hand {
     font-family: var(--hand-font);
     font-size: var(--hand-paragraph-font-size);
+}
+
+/* IMG GIFS */
+
+.img-gifs {
+    display: flex;
+    width: 200px;
 }
 
 /* RIBBONS */
