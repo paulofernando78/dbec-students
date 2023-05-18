@@ -189,9 +189,9 @@ main {
 
 .description {
     line-height: 1.2;
-    border: solid 1px #3333332f;
+    /* border: solid 1px #3333332f;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px; */
 }
 
 table, td {
