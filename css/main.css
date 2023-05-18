@@ -114,7 +114,7 @@ body {
     width: 35px;
 }
 
-nav {
+nav {c
     padding: 10px;
     background-color: #062745;
     color: white;
@@ -188,7 +188,10 @@ main {
 }
 
 .description {
-    line-height: 1.2
+    line-height: 1.2;
+    border: solid 1px #3333332f;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 table, td {
@@ -212,6 +215,24 @@ table, td {
     font-size: var(--hand-paragraph-font-size);
 }
 
+/* RIBBONS */
+
+.ribbon-lightgrey {
+    background: lightgrey;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.ribbon-red {
+    background: red;
+    font-family: var(--secondary-font);
+    padding-left: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+
 /* ELEMENTARY GRAMMAR EXERCISES */
 
 .portuguese {
@@ -229,23 +250,6 @@ table, td {
     height: 200px;
     border-radius: 5px;
     box-shadow: 0 0 3px;
-}
-.ribbon-1 {
-    background: red;
-    font-family: var(--secondary-font);
-    padding-left: 10px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-}
-
-.ribbon-2 {
-    background: grey;
-    font-family: var(--secondary-font);
-    padding-left: 10px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
 }
 
 .example {
@@ -300,5 +304,4 @@ td {
     .btn-menu {
         display: none
     }
-    
 }
