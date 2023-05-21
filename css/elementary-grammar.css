@@ -1,0 +1,64 @@
+.ribbon-lightgrey {
+    background: lightgrey;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.ribbon-red {
+    background: red;
+    font-family: var(--secondary-font);
+    padding-left: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
+/* UNIT 1 */
+
+.img-unit1 {
+    width: 100%;
+}
+
+.table-unit-1-b tr td:nth-last-child(2) {
+    text-align: right;
+}
+
+.table-unit-1-b2 tr td:nth-last-child(3 ) {
+    text-align: right;
+}
+
+/* UNIT 37 */
+
+.container-imgs {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.imgs {
+    width: 33%;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
+}
+
+.example {
+    color: red;
+}
+
+.btn-exercise {
+    font-family: var(--grammar-font);
+    font-size: var(--paragraph-font-size);
+    padding: 0 5px;
+    border-radius: 3px;
+}

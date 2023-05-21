@@ -1,0 +1,165 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+/* CSS */
+
+@import url(login-page.css);
+@import url(beginner.css);
+
+/* ROOT */
+
+:root {
+    --font: 'Walter Turncoat', cursive;
+    --title-font-size: 2.3em;
+    --subtitle-font-size: 1.8em;
+    --paragraph-font-size: 1.3em;
+
+    --description-font: 'Roboto', sans-serif;
+    --description-font-size: 1.rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN PAGE */
+
+.header-content {
+    background-color: #062745;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.btn-menu {
+    width: 40px;
+    filter: invert(1);
+}
+
+.btn-menu:hover {
+    cursor: pointer;
+}
+
+.logo-main {
+    font-family: 'Lato', sans-serif; 
+    font-size: 1rem;
+    color: white;
+}
+
+.logo-img {
+    width: 35px;
+}
+
+nav {
+    padding: 10px;
+    background-color: #062745;
+    color: white;
+    font-family: var(--font);
+    font-size: var(--nav-font-size);
+    display: none;
+}
+
+nav img {
+    filter: invert(1);
+    width: 35px;
+}
+
+.icon-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.study-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.study-time-gif {
+    padding: 50px 0;
+    width: 400px;
+    filter: drop-shadow(1px 1px 1px);
+}
+
+.me-studying {
+    width: 300px;
+}
+
+main {
+    padding: 10px;
+}
+
+.red {
+    color:red;
+}
+
+/*FONT */
+
+h1 {
+    font-family: var(--font);
+    font-size: var(--title-font-size);
+}
+
+h2 {
+    font-family: var(--font);
+    font-size: var(--subtitle-font-size);
+}
+
+p {
+    font-family: var(--font);
+    font-size: var(--paragraph-font-size);
+}
+
+.portuguese {
+    color: grey;
+}
+
+.description {
+    line-height: 1.2;
+    /* border: solid 1px #3333332f;
+    padding: 10px;
+    border-radius: 5px; */
+}
+
+/* RIBBONS */
+
+.ribbon-lightgrey {
+    background: lightgrey;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.ribbon-red {
+    background: red;
+    font-family: var(--secondary-font);
+    padding-left: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+/* TABLE */
+
+table, td {
+    border: 1px solid black;
+}

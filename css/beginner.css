@@ -1,0 +1,27 @@
+/* CLASS 2 */
+
+
+
+/* CLASS 10 */
+
+.class-10-gifs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.class-10-gif1 {
+    width: 30%;
+}
+
+.class-10-lead-in-menu {
+    width: 100%;
+}
+
+.presentation-currencies {
+    width: 100%;
+}
+
+.practice-menu {
+    width: 70%;
+}
