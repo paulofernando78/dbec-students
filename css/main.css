@@ -134,7 +134,7 @@ p {
 
 /* RIBBONS */
 
-.ribbon-lightgrey {
+.ribbon-1 {
     background: lightgrey;
     border-radius: 4px;
     padding-left: 10px;
@@ -151,4 +151,8 @@ p {
 
 table, td {
     border: 1px solid black;
+}
+
+.phonetics {
+    color: #00a2ff;
 }
