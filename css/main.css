@@ -136,17 +136,15 @@ p {
 
 .ribbon-lightgrey {
     background: lightgrey;
-    border-radius: 5px;
+    border-radius: 4px;
     padding-left: 10px;
 }
 
 .ribbon-red {
     background: red;
-    font-family: var(--secondary-font);
-    padding-left: 10px;
-    border-radius: 5px;
     color: white;
-    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 4px;
 }
 
 /* TABLE */
