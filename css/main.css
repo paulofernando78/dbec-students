@@ -90,7 +90,9 @@ main {
 
 .main-container-gifs {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .main-container-gifs-align {
