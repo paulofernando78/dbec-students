@@ -80,24 +80,28 @@ a {
     text-decoration: none;
 }
 
-.study-imgs {
+main {
+    padding: 10px;
+}
+
+.feeling-today {
+    text-align: center;
+}
+
+.main-container-gifs {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.main-container-gifs-align {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.study-time-gif {
-    padding: 50px 0;
-    width: 400px;
-    filter: drop-shadow(1px 1px 1px);
-}
-
-.me-studying {
-    width: 300px;
-}
-
-main {
-    padding: 10px;
+.main-gifs {
+    width: 100%;
+    
 }
 
 /*FONT */
@@ -196,10 +200,4 @@ table, td {
 .phonetics {
     color: #00a2ff;
     font-family: 'Times New Roman', Times, serif;
-}
-
-/* ICONS */
-
-.icon-audio {
-    display: flex;
 }
