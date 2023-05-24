@@ -100,10 +100,6 @@ main {
     padding: 10px;
 }
 
-.red {
-    color:red;
-}
-
 /*FONT */
 
 h1 {
@@ -121,10 +117,6 @@ p {
     font-size: var(--paragraph-font-size);
 }
 
-.portuguese {
-    color: grey;
-}
-
 .class-description {
     line-height: 1.2;
     /* border: solid 1px #3333332f;
@@ -134,10 +126,11 @@ p {
 
 /* RIBBONS */
 
-.ribbon-1 {
-    background: lightgrey;
+.ribbon-lightgray {
+    background: lightgray;
     border-radius: 4px;
     padding-left: 10px;
+    border: 1px solid black;
 }
 
 .ribbon-red {
@@ -164,7 +157,7 @@ p {
 
 /* BOXES */
 
-.box-1 {
+.box-white {
     border: 1px solid black;
     border-radius: 4px;
     background-color: white;
@@ -177,7 +170,28 @@ table, td {
     border: 1px solid black;
 }
 
+/* COLORS */
+
+.color-lightgray {
+    color: gray;
+}
+
+.color-red {
+    color:red;
+}
+
+.color-green {
+    color: green
+}
+
+
 .phonetics {
     color: #00a2ff;
     font-family: 'Times New Roman', Times, serif;
+}
+
+/* ICONS */
+
+.icon-audio {
+    display: flex;
 }
