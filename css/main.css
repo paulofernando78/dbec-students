@@ -157,6 +157,14 @@ p {
 
 /* BOXES */
 
+.box-title {
+    border: 5px solid rgb(230, 175, 27);
+    border-radius: 4px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
 .box-white {
     border: 1px solid black;
     border-radius: 4px;
