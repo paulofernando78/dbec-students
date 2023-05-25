@@ -94,8 +94,8 @@ main {
 .main-container-gifs {
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: center;
 }
 
 .main-container-gifs-align {
