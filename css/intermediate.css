@@ -15,3 +15,8 @@
     border: 2px solid black;
     border-radius: 4px;
 }
+
+.radio-flex {
+    display: flex;
+    gap: 20px;
+}
