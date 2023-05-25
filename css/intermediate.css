@@ -3,20 +3,27 @@
 
 /* Class 3 • 1B Modern family */
 
-.container-imgs-class-3-1b-modern-family-grammar-lead-in {
+.class-3-1b-modern-family-grammar-lead-in-container-imgs {
     display: grid;
     grid-template-columns: repeat(auto-fit, 250px);
     gap: 10px;
     justify-content: center;
 }
 
-.size-imgs-class-3-1b-modern-family-grammar-lead-in {
+.class-3-1b-modern-family-grammar-lead-in-size-imgs {
     width: 100%;
     border: 2px solid black;
     border-radius: 4px;
 }
 
-.radio-flex {
+/* .exercise-1-15-class-3-1b-modern-family-grammar-lead-in {
+    display: grid;
+    grid-template-columns: 160px 50px 50px 50px;
+    gap: 15px;
+    align-items: center;
+} */
+
+.exercise-1-15-match-class-3-1b-modern-family-grammar-lead-in {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }

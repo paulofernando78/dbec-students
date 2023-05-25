@@ -126,6 +126,11 @@ p {
     font-size: var(--paragraph-font-size);
 }
 
+.p {
+    font-family: var(--font);
+    font-size: var(--paragraph-font-size);
+}
+
 .class-description {
     line-height: 1.2;
     /* border: solid 1px #3333332f;
