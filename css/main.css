@@ -92,10 +92,10 @@ main {
 /* GIFS */
 
 .main-container-gifs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
 }
 
 .main-container-gifs-align {
