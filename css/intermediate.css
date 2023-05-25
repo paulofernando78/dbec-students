@@ -1,4 +1,17 @@
-/* class 2 */
+/* Class 2 */
 
 
-/* class 3 */
+/* Class 3 • 1B Modern family */
+
+.container-imgs-class-3-1b-modern-family-grammar-lead-in {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.size-imgs-class-3-1b-modern-family-grammar-lead-in {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 4px;
+}

@@ -133,37 +133,6 @@ p {
     border-radius: 5px; */
 }
 
-/* RIBBONS */
-
-.ribbon-lightgray {
-    background: lightgray;
-    border-radius: 4px;
-    padding-left: 10px;
-    border: 1px solid black;
-}
-
-.ribbon-red {
-    background: red;
-    color: white;
-    padding-left: 10px;
-    border-radius: 4px;
-}
-
-/* IMAGES */
-
-.container-imgs {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    gap: 20px;
-}
-
-.border-imgs {
-    border: 3px solid #000;
-    border-radius: 5px;
-}
-
 /* CONTAINERS */
 
 .container-title {
@@ -179,6 +148,22 @@ p {
     border-radius: 4px;
     background-color: white;
     padding: 5px;
+}
+
+/* RIBBONS */
+
+.ribbon-lightgray {
+    background: lightgray;
+    border-radius: 4px;
+    padding-left: 10px;
+    border: 2px solid black;
+}
+
+.ribbon-red {
+    background: red;
+    color: white;
+    padding-left: 10px;
+    border-radius: 4px;
 }
 
 /* TABLE */
