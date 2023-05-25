@@ -86,7 +86,10 @@ main {
 
 .feeling-today {
     text-align: center;
+    font-size: 30px;
 }
+
+/* GIFS */
 
 .main-container-gifs {
     display: flex;
@@ -103,6 +106,7 @@ main {
 
 .main-gifs {
     width: 80px;
+    filter: drop-shadow(0 0 1px black);
 }
 
 /*FONT */
@@ -147,7 +151,7 @@ p {
 
 /* IMAGES */
 
-.imgs-all {
+.container-imgs {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -155,22 +159,22 @@ p {
     gap: 20px;
 }
 
-.imgs-border {
+.border-imgs {
     border: 3px solid #000;
     border-radius: 5px;
 }
 
-/* BOXES */
+/* CONTAINERS */
 
-.box-title {
-    border: 5px solid rgb(230, 175, 27);
+.container-title {
+    border: 10px solid grey;
     border-radius: 4px;
     background-color: black;
     padding: 10px;
     color: white;
 }
 
-.box-white {
+.container-white {
     border: 1px solid black;
     border-radius: 4px;
     background-color: white;
@@ -196,7 +200,6 @@ table, td {
 .color-green {
     color: green
 }
-
 
 .phonetics {
     color: #00a2ff;
