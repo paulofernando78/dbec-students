@@ -1,0 +1,29 @@
+.listening-justify {
+    text-align: justify;
+}
+
+.listening-container {
+    display: grid;
+    grid-template-columns: 67.2% 30%;
+    gap: 20px;
+
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.listening-imgs {
+    width: 100%;
+}
+
+.border {
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+@media (max-width: 400px) {
+
+    .listening-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

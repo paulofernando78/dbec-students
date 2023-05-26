@@ -161,7 +161,7 @@ p {
     background: lightgray;
     border-radius: 4px;
     padding-left: 10px;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
 .ribbon-red {
@@ -169,6 +169,23 @@ p {
     color: white;
     padding-left: 10px;
     border-radius: 4px;
+    border: 1px solid black;
+}
+
+.ribbon-deepyellow {
+    background: #F6BE00;
+    color: white;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.ribbon-dark-lightblue {
+    background: green;
+    color: white;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
 }
 
 /* TABLE */
