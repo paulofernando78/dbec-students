@@ -1,24 +1,26 @@
-.listening-justify {
-    text-align: justify;
-}
-
-.listening-container {
+.container {
     display: grid;
     grid-template-columns: 67.2% 30%;
     gap: 20px;
     margin-top: 20px;
+    
 
     /* display: flex;
     flex-wrap: wrap; */
 }
 
-.listening-imgs {
+.justify {
+    text-align: justify;
+}
+
+.imgs {
     width: 100%;
 }
 
 .border {
     border: 1px solid black;
     border-radius: 4px;
+    box-shadow: 0 0 3px;
 }
 
 @media (max-width: 450px) {

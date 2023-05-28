@@ -131,13 +131,6 @@ p {
     font-size: var(--paragraph-font-size);
 }
 
-.class-description {
-    line-height: 1.2;
-    /* border: solid 1px #3333332f;
-    padding: 10px;
-    border-radius: 5px; */
-}
-
 /* CONTAINERS */
 
 .container-title {
@@ -226,4 +219,13 @@ table, td {
 .phonetics {
     color: #00a2ff;
     font-family: 'Times New Roman', Times, serif;
+}
+
+/* COURSES */
+
+.class-description {
+    line-height: 1.2;
+    /* border: solid 1px #3333332f;
+    padding: 10px;
+    border-radius: 5px; */
 }
