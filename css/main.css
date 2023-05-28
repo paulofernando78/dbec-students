@@ -217,12 +217,8 @@ table, td {
     color: green
 }
 
-/* PHONETICS */
-
-.phonetics {
+.color-lightblue {
     color: #00a2ff;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: var(--phonetics-size);
 }
 
 .times-roman {
