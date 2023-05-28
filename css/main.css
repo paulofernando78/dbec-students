@@ -15,6 +15,7 @@
     --title-font-size: 2.3em;
     --subtitle-font-size: 1.8em;
     --paragraph-font-size: 1.3em;
+    --phonetics-size: 0.8em;
 }
 
 /* MAIN PAGE */
@@ -216,9 +217,16 @@ table, td {
     color: green
 }
 
+/* PHONETICS */
+
 .phonetics {
     color: #00a2ff;
     font-family: 'Times New Roman', Times, serif;
+    font-size: var(--phonetics-size);
+}
+
+.times-roman {
+
 }
 
 /* COURSES */
