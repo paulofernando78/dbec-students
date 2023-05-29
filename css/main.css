@@ -12,10 +12,10 @@
 
 :root {
     --font: 'Walter Turncoat', cursive;
-    --title-font-size: 2.3em;
-    --subtitle-font-size: 1.8em;
-    --paragraph-font-size: 1.3em;
-    --font-size-smaller: 0.8em;
+    --title-font-size: 2.3rem;
+    --subtitle-font-size: 1.8rem;
+    --paragraph-font-size: 1.3rem;
+    --font-size-smaller: 0.8rem;
 }
 
 /* MAIN PAGE */
@@ -230,6 +230,12 @@ table, td {
     border-radius: 5px; */
 }
 
+/* GENERAL */
+
 .smaller {
     font-size: var(--font-size-smaller)
+}
+
+.phonetics {
+    font-family: 'Times New Roman', Times, serif;
 }
