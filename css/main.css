@@ -232,6 +232,10 @@ table, td {
 
 /* GENERAL */
 
+.justify {
+    text-align: justify;
+}
+
 .smaller {
     font-size: var(--font-size-smaller)
 }
