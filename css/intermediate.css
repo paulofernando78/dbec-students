@@ -1,7 +1,12 @@
-/* Class 2 */
-
-
-/* Class 3 • 1B Modern family */
+.class-2-sea-food {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
+}
 
 .class-3-1b-modern-family-grammar-lead-in-container-imgs {
     display: grid;
