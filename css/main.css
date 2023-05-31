@@ -139,7 +139,6 @@ p {
     border-radius: 4px;
     background-color: black;
     padding: 10px;
-    color: white;
     box-shadow: 0 0 4px;
 }
 
@@ -154,13 +153,14 @@ p {
 /* RIBBONS */
 
 .ribbon-black {
-    color: white;
     background: black;
     border: 1px solid black;
     border-radius: 4px;
     padding-left: 10px;
     box-shadow: 0 0 3px;
 }
+
+
 
 .ribbon-lightgray {
     background: lightgray;
@@ -186,15 +186,17 @@ p {
     padding-left: 10px;
     border-radius: 4px;
     box-shadow: 0 0 3px;
+    font-weight: bold;
 }
 
 .ribbon-green {
-    background: green;
+    background: rgba(0, 128, 0, 0.63);
     border: 1px solid black;
     color: black;
     padding-left: 10px;
     border-radius: 4px;
     box-shadow: 0 0 3px;
+    font-weight: bold;
 }
 
 /* TABLE */
@@ -204,6 +206,10 @@ table, td {
 }
 
 /* COLORS */
+
+.color-white {
+    color: white ;
+}
 
 .color-lightgray {
     color: gray;
