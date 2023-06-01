@@ -26,7 +26,7 @@
     justify-content:space-between
 }
 
-.class-10-presentation-img-currencies {
+.class-10-vocabulary-presentation-img-currencies {
     width: 40%;
     /* display: block;
     margin-left: auto;
@@ -36,8 +36,8 @@
     box-shadow: 0 0 3px;
 }
 
-.class-10-practice-menu {
-    width: 100%;
+.class-10-vocabulary-practice-menu {
+    width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -53,8 +53,18 @@
     align-items: center;
 }
 
-.class-10-presentation-img-currencies {
-    width: 100%;
+.class-10-vocabulary-presentation-img-currencies {
+    width: 80%;
+}
+
+.class-10-vocabulary-practice-menu {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
 }
 
 }
