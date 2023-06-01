@@ -1,8 +1,7 @@
-/* CLASS 2 */
-
-
-
-/* CLASS 10 */
+.class-2-vocabulary-presentation-currencies {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 
 .class-10-gifs {
     display: flex;
@@ -25,7 +24,7 @@
 }
 
 .presentation-currencies {
-    width: 80%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;

@@ -93,10 +93,9 @@ main {
 /* GIFS */
 
 .main-container-gifs {
-
     display: grid;
-    grid-template-columns: repeat(auto-fit, 177px);
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 150px);
+    justify-content: space-around;
 }
 
 .main-container-gifs-align {
@@ -106,9 +105,19 @@ main {
 }
 
 .main-gifs {
-    width: 80px;
+    width: 50%;
     filter: drop-shadow(0 0 1px black);
+    padding-top: 30px;
 }
+
+.main-gif-embarassed {
+    font-size: 1rem;
+}
+
+.main-gif-disappoited {
+    font-size: 1rem;
+}
+
 
 /*FONT */
 
