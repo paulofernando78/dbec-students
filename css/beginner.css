@@ -53,6 +53,11 @@
     gap: 10px;
 }
 
+label {
+    width: 100px;
+    display: inline-block;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width: 600px) {
