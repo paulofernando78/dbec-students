@@ -48,18 +48,18 @@
     box-shadow: 0 0 3px;
 }
 
-.class-10-vocabulary-practice-match-money {
+.class-10-vocabulary-practice-hcwp {
     display: flex;
     gap: 10px;
 }
 
-label {
+.class-10-vocabulary-practice-hcwp-label {
     width: 30%;
     display: inline-block;
 }
 
-select {
-    width: 80%;
+.class-10-vocabulary-practice-hcwp-select {
+    width: 54%;
 }
 
 /* MEDIA QUERY */
