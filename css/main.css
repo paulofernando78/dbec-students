@@ -144,7 +144,7 @@ p {
 /* CONTAINERS */
 
 .container-title {
-    border: 12px solid grey;
+    border: 5px solid white;
     border-radius: 4px;
     background-color: black;
     padding: 10px;
@@ -169,22 +169,11 @@ p {
     box-shadow: 0 0 3px;
 }
 
-
-
 .ribbon-lightgray {
     background: lightgray;
     border: 1px solid black;
     border-radius: 4px;
     padding-left: 10px;
-    box-shadow: 0 0 3px;
-}
-
-.ribbon-red {
-    background: red;
-    border: 1px solid black;
-    color: black;
-    padding-left: 10px;
-    border-radius: 4px;
     box-shadow: 0 0 3px;
 }
 
@@ -206,6 +195,23 @@ p {
     border-radius: 4px;
     box-shadow: 0 0 3px;
     font-weight: bold;
+}
+
+.ribbon-white {
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 0 3px;
+}
+
+.ribbon-red {
+    background: red;
+    border: 1px solid black;
+    color: black;
+    padding-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
 }
 
 /* TABLE */
