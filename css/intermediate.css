@@ -8,6 +8,11 @@
     box-shadow: 0 0 3px;
 }
 
+.class-3-flipped-classroom-1b-modern-family-practice-b-label {
+    display: inline-block;
+    width: 160px;
+}
+
 .class-3-1b-modern-family-grammar-lead-in-container-imgs {
     display: grid;
     grid-template-columns: repeat(auto-fit, 250px);
@@ -19,16 +24,4 @@
     width: 100%;
     border: 2px solid black;
     border-radius: 4px;
-}
-
-/* .exercise-1-15-class-3-1b-modern-family-grammar-lead-in {
-    display: grid;
-    grid-template-columns: 160px 50px 50px 50px;
-    gap: 15px;
-    align-items: center;
-} */
-
-.exercise-1-15-match-class-3-1b-modern-family-grammar-lead-in {
-    display: flex;
-    gap: 10px;
 }
