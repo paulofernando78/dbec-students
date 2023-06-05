@@ -151,6 +151,14 @@ p {
     box-shadow: 0 0 4px;
 }
 
+.container-white-content {
+    border: 1px solid black;
+    border-radius: 0 0 4px 4px;;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 0 3px;
+}
+
 .container-white {
     border: 1px solid black;
     border-radius: 4px;
@@ -160,6 +168,14 @@ p {
 }
 
 /* RIBBONS */
+
+.ribbon-black-content {
+    background: black;
+    border: 1px solid black;
+    border-radius: 4px 4px 0 0;
+    padding-left: 10px;
+    box-shadow: 0 0 3px;
+}
 
 .ribbon-black {
     background: black;
