@@ -57,16 +57,14 @@ nav {
     display: none;
 }
 
-.nav-icon {
-    filter: invert(1);
-}
-
-/* Courses Icons Alignment Flex Rows */
-
 .icon-list {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.nav-icon {
+    filter: invert(1);
 }
 
 nav ul li {
@@ -124,7 +122,13 @@ main {
 /* ICONS */
 
 .icon-size {
-    width: 2.3rem;
+    width: 2rem;
+}
+
+.icon-container-classes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /*FONT AND TEXT */
@@ -286,4 +290,14 @@ table, td {
     /* border: solid 1px #3333332f;
     padding: 10px;
     border-radius: 5px; */
+}
+
+@media (max-width: 600px) {
+
+    .icon-container-classes {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+    }
+
 }
