@@ -19,6 +19,11 @@
     box-shadow: 0 0 3px;
 }
 
+#audio-player-fixed {
+    top: 0;
+    position: sticky;
+}
+
 @media (max-width: 450px) {
 
     .container {
