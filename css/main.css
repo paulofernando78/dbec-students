@@ -57,10 +57,11 @@ nav {
     display: none;
 }
 
-nav img {
+.nav-icon {
     filter: invert(1);
-    width: 35px;
 }
+
+/* Courses Icons Alignment Flex Rows */
 
 .icon-list {
     display: flex;
@@ -118,8 +119,15 @@ main {
     font-size: 1rem;
 }
 
+/* GENERAL */
 
-/*FONT */
+/* ICONS */
+
+.icon-size {
+    width: 2.3rem;
+}
+
+/*FONT AND TEXT */
 
 h1 {
     font-family: var(--font);
@@ -139,6 +147,19 @@ p {
 .p {
     font-family: var(--font);
     font-size: var(--paragraph-font-size);
+}
+
+.justify {
+    text-align: justify;
+}
+
+.smaller {
+    font-size: var(--font-size-smaller)
+}
+
+.phonetics {
+    font-family: 'Times New Roman', Times, serif;
+    color: #00a2ff
 }
 
 /* CONTAINERS */
@@ -265,19 +286,4 @@ table, td {
     /* border: solid 1px #3333332f;
     padding: 10px;
     border-radius: 5px; */
-}
-
-/* GENERAL */
-
-.justify {
-    text-align: justify;
-}
-
-.smaller {
-    font-size: var(--font-size-smaller)
-}
-
-.phonetics {
-    font-family: 'Times New Roman', Times, serif;
-    color: #00a2ff
 }
