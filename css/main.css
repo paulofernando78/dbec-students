@@ -157,6 +157,10 @@ p {
     text-align: justify;
 }
 
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .smaller {
     font-size: var(--font-size-smaller)
 }
