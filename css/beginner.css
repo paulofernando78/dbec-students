@@ -4,7 +4,7 @@
 }
 
 .class-2-flipped-classroom--grammar-grid-interrogative-container {
-    width: 100%;
+    width: 41%;
 }
 
 .class-10-gifs {
@@ -76,6 +76,10 @@
 
     .class-2-flipped-classroom--grammar-grid-positive-negative-container {
     width: 55%;
+}
+
+.class-2-flipped-classroom--grammar-grid-interrogative-container {
+    width: 75%;
 }
 
     .class-10-vocabulary-presentation-container {
