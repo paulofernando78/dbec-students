@@ -315,4 +315,9 @@ table, td {
         gap: 10px;
     }
 
+    .video-iframe-mobile {
+        width: 100%;
+        height: 200px;
+    }
+
 }
