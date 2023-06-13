@@ -282,12 +282,6 @@ p {
     box-shadow: 0 0 3px;
 }
 
-/* TABLE */
-
-table, td {
-    border: 1px solid black;
-}
-
 /* COLORS */
 
 .color-white {
@@ -308,6 +302,24 @@ table, td {
 
 .color-lightblue {
     color: #00a2ff;
+}
+
+/* TABLE */
+
+table, td {
+    border: 1px solid black;
+}
+
+/* IMAGES */
+
+.img-1 {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
 }
 
 /* COURSES */
