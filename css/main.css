@@ -312,6 +312,14 @@ table, td {
 
 /* IMAGES */
 
+.img {
+    width: 49%;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
+}
+
 .img-1 {
     width: 80%;
     display: block;
@@ -320,6 +328,11 @@ table, td {
     border: 1px solid black;
     border-radius: 4px;
     box-shadow: 0 0 3px;
+}
+
+.img-2 {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* COURSES */
