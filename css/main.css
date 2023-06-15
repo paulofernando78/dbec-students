@@ -312,14 +312,6 @@ table, td {
 
 /* IMAGES */
 
-.img {
-    width: 49%;
-    display: flex;
-    border: 1px solid black;
-    border-radius: 4px;
-    box-shadow: 0 0 3px;
-}
-
 .img-1 {
     width: 80%;
     display: block;
@@ -330,9 +322,16 @@ table, td {
     box-shadow: 0 0 3px;
 }
 
-.img-2 {
+.img-2-container {
     display: flex;
     justify-content: space-between;
+}
+
+.img-2 {
+    width: 49%;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
 }
 
 /* COURSES */
@@ -352,10 +351,17 @@ table, td {
         gap: 10px;
     }
 
+    .img-2-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        
+    }
+
     .img-2 {
-    display: flex;
-    justify-content: space-between;
-}
+        width: 90%;
+    }
 
     .video-iframe-mobile {
         width: 100%;
