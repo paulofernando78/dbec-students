@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .answer > :checked + label::after {
+    content: '\274C';
+    margin-left: 1em;
+}
+
+.answer > [data-correct]:checked + label::after {
+    content: '\2714';
+}
+</style>
+
+<body>
+    <section>        
+<p class="p-grammar">2. _____ a lot of restaurants. </p>
+<div class="answer">
+  <input type="radio" name="answer 37-1-2" id="answer 37-1-2">
+  <label for="answer 371-2-2">There is</label>
+</div>
+<div class="answer">
+  <input type="radio" name="answer 37-1-2" id="answer 37-1-3">
+  <label for="answer 371-2-3">There isn't</label>
+</div>
+<div class="answer">
+  <input type="radio" name="answer 37-1-2" data-correct="true">
+  <label for="answer 371-2-4">There are</label>
+</div>
+<div class="answer">
+  <input type="radio" name="answer 37-1-2" id="answer 37-1-5">
+  <label for="answer 371-2-5">There aren't</label>
+</div>
+</section>
+</body>
+</html>
