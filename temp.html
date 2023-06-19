@@ -7,14 +7,23 @@
 </head>
 
 <style>
-    .answer > :checked + label::after {
-    content: '\274C';
-    margin-left: 1em;
-}
+  .answer > :checked + label::after {
+    content: "";
+    background-image: url(../../../../assets/imgs/incorrect.png);
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-left: .5em;
+  }
+  
+    .answer > [data-correct]:checked + label::after {
+    content: "";
+    background-image: url(../../../../assets/imgs/correct.png);
+    width: 16px;
+    height: 16px;
+  }
 
-.answer > [data-correct]:checked + label::after {
-    content: '\2714';
-}
 </style>
 
 <body>
