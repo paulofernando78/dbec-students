@@ -11,11 +11,11 @@
 </head>
 
 <style>
-  .radio-answer > [data-correct]:checked + label::after {
+  .radio-answer > [data-correct]:checked + label::before {
     background-image: url(../../../../assets/imgs/radio-correct.png);
   }
 
-  .radio-answer > :checked + label::after {
+  .radio-answer > :checked + label::before {
     content: "";
     background-image: url(../../../../assets/imgs/radio-incorrect.png);
     background-size: contain;
@@ -23,13 +23,15 @@
     width: 22px;
     height: 22px;
     display: inline-block;
-    margin-left: .5em;
+    /* margin-left: .5em; */
     position: relative;
     top: 0.281rem;
+    right: 1.5rem;
   }
 
-  input[type=radio] {
+  input[type="radio"] {
     transform: scale(1.45);
+    accent-color: black;
   }
 </style>
 
