@@ -11,13 +11,13 @@
 </head>
 
 <style>
-  .answer > [data-correct]:checked + label::after {
-    background-image: url(../../../../assets/imgs/correct.png);
+  .radio-answer > [data-correct]:checked + label::after {
+    background-image: url(../../../../assets/imgs/radio-correct.png);
   }
 
-  .answer > :checked + label::after {
+  .radio-answer > :checked + label::after {
     content: "";
-    background-image: url(../../../../assets/imgs/incorrect.png);
+    background-image: url(../../../../assets/imgs/radio-incorrect.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 18px;
@@ -25,7 +25,7 @@
     display: inline-block;
     margin-left: .5em;
     position: relative;
-    top: 0.03rem;
+    top: 0.05rem;
   }
 </style>
 
@@ -69,31 +69,31 @@
       <br>
       <form class="p">
         1. Look! It's _____ email from Melanie.
-        <div class="answer">
+        <div class="radio-answer">
           <input type="radio" name="grammar-1-1">
           <label>a</label>
         </div>
-        <div class="answer">
+        <div class="radio-answer">
           <input type="radio" name="grammar-1-1" data-correct="true">
           <label>an</label>
         </div>
         <br>
         2. A: Where are my sunglasses? B: _____ in your bag.
-        <div class="answer">
+        <div class="radio-answer">
           <input type="radio" name="grammar-1-2" data-correct="true">
           <label>They're</label>
         </div>
-        <div class="answer">
+        <div class="radio-answer">
           <input type="radio" name="grammar-1-2">
           <label>It's</label>
         </div>
         <br>
         3. These are nice _____.
-        <div class="answer">
+        <div class="radio-answer">
           <input type="radio" name="grammar-1-3">
           <label>watchs</label>
         </div>
-        <div class="answer">
+        <div class="radio-answer">
           <input type="radio" name="grammar-1-3" data-correct="true">
           <label>watches</label>
         </div>
