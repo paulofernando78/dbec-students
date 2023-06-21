@@ -11,11 +11,11 @@
 </head>
 
 <style>
-  .radio-answer > [data-correct]:checked + label::after {
+  .radio-answer > [data-correct]:checked + label::before {
     background-image: url(../../../../assets/imgs/radio-correct.png);
   }
 
-  .radio-answer > :checked + label::after {
+  .radio-answer > :checked + label::before {
     content: "";
     background-image: url(../../../../assets/imgs/radio-incorrect.png);
     background-size: contain;
@@ -26,10 +26,11 @@
     margin-left: .5rem;
     position: relative;
     top: 0.268rem;
+    right: 2.011rem;
   }
 
   input[type="radio"] {
-    transform: scale(1.45);
+    transform: scale(1.39);
     accent-color: black;
   }
 </style>
@@ -69,6 +70,12 @@
       <p class="ribbon-lightgray"><b>Grammar (practice)</b></p>
       <br>
       <p class="ribbon-green">High-controlled written practice</p>
+      <br>
+      <br>
+      <div id="radioContainer">
+      <input type="radio" name="radioBtn" id="radioBtn" onclick="replaceWithImage()">
+      </div>
+      <br>
       <br>
       <p>Choose the correct answer.</p>
       <br>
@@ -172,4 +179,19 @@
     </section>
   </main>
 </body>
+
+<script>
+  function replaceWithImage() {
+  var radioContainer = document.getElementById('radioContainer');
+  var radioBtn = document.getElementById('radioBtn');
+  var radioImage = document.createElement('img');
+  radioImage.src = '';
+  radioImage.id = 'radioImage';
+  radioImage.classList.add('visible');
+
+  radioContainer.replaceChild(radioImage, radioBtn);
+}
+
+</script>
+
 </html>

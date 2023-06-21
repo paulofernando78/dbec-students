@@ -348,6 +348,22 @@ table, td {
 
 /* RADIO */
 
+#radioContainer {
+  position: relative;
+  display: inline-block;
+}
+
+#radioImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#radioImage.visible {
+  display: block;
+}
+
 
 @media (max-width: 600px) {
 
