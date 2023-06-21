@@ -346,7 +346,17 @@ table, td {
 
 /* EXERCISES */
 
-/* RADIO */
+input[type=radio] {
+    transform: scale(1.3);
+}
+
+input[type=radio]#input-green {
+    accent-color: green;
+}
+
+input[type=radio]#input-red {
+    accent-color: red;
+}
 
 #radioContainer {
   position: relative;

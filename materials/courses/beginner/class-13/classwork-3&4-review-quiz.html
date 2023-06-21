@@ -10,12 +10,12 @@
   <title>Beginner (A1) • Class 13 Classwork • 3&4 Review + Quiz</title>
 </head>
 
-<style>
-  .radio-answer > [data-correct]:checked + label::before {
+<!-- <style>
+  .radio-answer > [data-correct]:checked + label::after {
     background-image: url(../../../../assets/imgs/radio-correct.png);
   }
 
-  .radio-answer > :checked + label::before {
+  .radio-answer > :checked + label::after {
     content: "";
     background-image: url(../../../../assets/imgs/radio-incorrect.png);
     background-size: contain;
@@ -26,14 +26,8 @@
     margin-left: .5rem;
     position: relative;
     top: 0.268rem;
-    right: 2.011rem;
   }
-
-  input[type="radio"] {
-    transform: scale(1.39);
-    accent-color: black;
-  }
-</style>
+</style> -->
 
 <body>
   <header>
@@ -71,46 +65,36 @@
       <br>
       <p class="ribbon-green">High-controlled written practice</p>
       <br>
-      <br>
-      <div id="radioContainer">
-      <input type="radio" name="radioBtn" id="radioBtn" onclick="replaceWithImage()">
-      </div>
-      <br>
-      <br>
       <p>Choose the correct answer.</p>
       <br>
-      <form class="p">
+      <div class="p">
         1. Look! It's _____ email from Melanie.
-        <div class="radio-answer">
-          <input type="radio" name="grammar-1-1" id="grammar-1-1a">
-          <label for="grammar-1-1a">a</label>
-        </div>
-        <div class="radio-answer">
-          <input type="radio" name="grammar-1-1" data-correct="true" id="grammar-1-1b">
-          <label for="grammar-1-1b">an</label>
-        </div>
+        <br>
+        <input type="radio" name="grammar-1-1" id="input-green">
+        <label for="input-green"></label>a
+        <br>
+        <input type="radio" name="grammar-1-1" id="input-red">
+        <label for="grammar-1-1b"></label>an
+        <br>
         <br>
         2. A: Where are my sunglasses? B: _____ in your bag.
-        <div class="radio-answer">
-          <input type="radio" name="grammar-1-2" data-correct="true" id="grammar-1-2a">
-          <label for="grammar-1-2a">They're</label>
-        </div>
-        <div class="radio-answer">
-          <input type="radio" name="grammar-1-2" id="grammar-1-2b">
-          <label for="grammar-1-2b">It's</label>
-        </div>
+        <br>
+        <input type="radio" name="grammar-1-2" id="input-green">
+        <label>They're</label>
+        <br>
+        <input type="radio" name="grammar-1-2" id="input-red">
+        <label for="teste">It's</label>
+        <br>
         <br>
         3. These are nice _____.
-        <div class="radio-answer">
-          <input type="radio" name="grammar-1-3" id="grammar-1-3a">
-          <label for="grammar-1-3a">watchs</label>
-        </div>
-        <div class="radio-answer">
-          <input type="radio" name="grammar-1-3" data-correct="true" id="grammar-1-3b">
-          <label for="grammar-1-3b">watches</label>
-        </div>
         <br>
-      </form>
+        <input type="radio" name="grammar-1-3" id="input-red">
+        <label>watchs</label>
+        <br>
+        <input type="radio" name="grammar-1-3" id="input-green">
+        <label>watches</label>
+        <br>
+      </div>
       <br>
       <p class="ribbon-green">Low-controlled written practice</p>
       <br>
@@ -179,19 +163,4 @@
     </section>
   </main>
 </body>
-
-<script>
-  function replaceWithImage() {
-  var radioContainer = document.getElementById('radioContainer');
-  var radioBtn = document.getElementById('radioBtn');
-  var radioImage = document.createElement('img');
-  radioImage.src = '';
-  radioImage.id = 'radioImage';
-  radioImage.classList.add('visible');
-
-  radioContainer.replaceChild(radioImage, radioBtn);
-}
-
-</script>
-
 </html>
