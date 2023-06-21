@@ -347,7 +347,7 @@ table, td {
 /* EXERCISES */
 
 input[type=radio] {
-    transform: scale(1.3);
+    transform: scale(1.4);
 }
 
 input[type=radio]#input-green {
