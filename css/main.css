@@ -346,19 +346,9 @@ table, td {
 
 /* EXERCISES */
 
-/* input[type=radio] {
-    transform: scale(1.4);
-}
+/* RADIO CORRECT*/
 
-input[type=radio]#input-green {
-    accent-color: green;
-}
-
-input[type=radio]#input-red {
-    accent-color: red;
-} */
-
-.radio-correct[type="radio"]{
+.radio-correct[type="radio"] {
    appearance: none;
    border: 1px solid #d3d3d3;
    width: 18px;
@@ -377,7 +367,7 @@ input[type=radio]#input-red {
   border: none;
 }
 
-.radio-correct[type="radio"]:checked::before{
+.radio-correct[type="radio"]:checked::before {
   position: absolute;
   background: #d3d3d3 ;
   border-radius:100%;
@@ -389,7 +379,9 @@ input[type=radio]#input-red {
   height: 20px;
 }
 
-.radio-incorrect[type="radio"]{
+/* RADIO INCORRECT*/
+
+.radio-incorrect[type="radio"] {
    appearance: none;
    border: 1px solid #d3d3d3;
    width: 18px;
@@ -408,7 +400,7 @@ input[type=radio]#input-red {
   border: none;
 }
 
-.radio-incorrect[type="radio"]:checked::before{
+.radio-incorrect[type="radio"]:checked::before {
   position: absolute;
   background: #d3d3d3 ;
   border-radius:100%;
@@ -419,6 +411,74 @@ input[type=radio]#input-red {
   width: 20px;
   height: 20px;
 }
+
+/* CHECKBOX CORRECT */
+
+.checkbox-correct[type="checkbox"] {
+   appearance: none;
+   border: 1px solid #d3d3d3;
+   width: 18px;
+   height: 18px;
+   content: none;
+   outline: none;
+   border-radius:20%;
+   margin: 0;
+}
+
+.checkbox-correct[type="checkbox"]:checked {
+  appearance: none;
+  border-radius: 20%;
+  outline: none;
+  content: none;
+  border: none;
+}
+
+.checkbox-correct[type="checkbox"]:checked::before {
+  position: absolute;
+  background: #d3d3d3 ;
+  border-radius: 20%;
+  color: white !important;
+  content: "";
+  background-image: url(../assets/imgs/checkbox-correct.png);
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+/* CHECKBOX INCORRECT */
+
+.checkbox-incorrect[type="checkbox"] {
+   appearance: none;
+   border: 1px solid #d3d3d3;
+   width: 18px;
+   height: 18px;
+   content: none;
+   outline: none;
+   border-radius:20%;
+   margin: 0;
+}
+
+.checkbox-incorrect[type="checkbox"]:checked {
+  appearance: none;
+  border-radius: 20%;
+  outline: none;
+  content: none;
+  border: none;
+}
+
+.checkbox-incorrect[type="checkbox"]:checked::before {
+  position: absolute;
+  background: #d3d3d3 ;
+  border-radius: 20%;
+  color: white !important;
+  content: "";
+  background-image: url(../assets/imgs/checkbox-incorrect.png);
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+/* FILL IN THE BLANKS */
 
 @media (max-width: 600px) {
 
