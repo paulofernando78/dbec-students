@@ -346,7 +346,7 @@ table, td {
 
 /* EXERCISES */
 
-input[type=radio] {
+/* input[type=radio] {
     transform: scale(1.4);
 }
 
@@ -356,24 +356,69 @@ input[type=radio]#input-green {
 
 input[type=radio]#input-red {
     accent-color: red;
+} */
+
+.radio-correct[type="radio"]{
+   appearance: none;
+   border: 1px solid #d3d3d3;
+   width: 18px;
+   height: 18px;
+   content: none;
+   outline: none;
+   border-radius:100%;
+   margin: 0;
 }
 
-#radioContainer {
-  position: relative;
-  display: inline-block;
+.radio-correct[type="radio"]:checked {
+  appearance: none;
+  border-radius:100%;
+  outline: none;
+  content: none;
+  border: none;
 }
 
-#radioImage {
+.radio-correct[type="radio"]:checked::before{
   position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
+  background: #d3d3d3 ;
+  border-radius:100%;
+  color: white !important;
+  content: "";
+  background-image: url(../assets/imgs/radio-correct.png);
+  background-size: contain;
+  width: 20px;
+  height: 20px;
 }
 
-#radioImage.visible {
-  display: block;
+.radio-incorrect[type="radio"]{
+   appearance: none;
+   border: 1px solid #d3d3d3;
+   width: 18px;
+   height: 18px;
+   content: none;
+   outline: none;
+   border-radius:100%;
+   margin: 0;
 }
 
+.radio-incorrect[type="radio"]:checked {
+  appearance: none;
+  border-radius:100%;
+  outline: none;
+  content: none;
+  border: none;
+}
+
+.radio-incorrect[type="radio"]:checked::before{
+  position: absolute;
+  background: #d3d3d3 ;
+  border-radius:100%;
+  color: white !important;
+  content: "";
+  background-image: url(../assets/imgs/radio-incorrect.png);
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
 
 @media (max-width: 600px) {
 
