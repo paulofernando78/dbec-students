@@ -511,11 +511,12 @@ button {
     font-weight: bold;
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: lightgray;
+    background-color: orange;
     color: black;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0 0 2px;
+    border: solid 1px;
+    box-shadow: 0 0 3px;
 }
 
 #result {

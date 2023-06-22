@@ -51,18 +51,37 @@
         <div class="p">
             <b>Dropdown menu</b>
             <br>
-            <label>1. He</label>
-            <select name="" id="">
-                <option value="">am</option>
-                <option value="">are</option>
-                <option value="">is</option>
+            <label for="option1">1. I</label>
+            <select name="option1" id="option1">
+                <option value="na">...</option>
+                <option value="am">am</option>
+                <option value="are">are</option>
+                <option value="is">is</option>
             </select>
-            Mike.
+            a teacher.
+            <br>
+            <label for="option2">2. He</label>
+            <select name="option2" id="option2">
+                <option value="na">...</option>
+                <option value="am">am</option>
+                <option value="are">are</option>
+                <option value="is">is</option>
+            </select>
+            a student.
+            <br>
+            <label for="option3">3. We</label>
+            <select name="option3" id="option3">
+                <option value="na">...</option>
+                <option value="am">am</option>
+                <option value="are">are</option>
+                <option value="is">is</option>
+            </select>
+            happy.
+            <br>
         </div>
         <br>
-        <br>
-        <!-- FILL IN THE BLANKS -->
 
+        <!-- FILL IN THE BLANKS -->
         <div class="p">
             <b>Fill in the blanks</b>
             <br>
@@ -84,15 +103,17 @@
         </div>
     </main>
     <script>
+
+        // FILL IN THE BLANKS
         function checkAnswers() {
         var answer1 = document.getElementById('blank1').value.toLowerCase();
         var answer2 = document.getElementById('blank2').value.toLowerCase();
         var answer3 = document.getElementById('blank3').value.toLowerCase();
   
         if (answer1 === 'is' && answer2 === 'went' && answer3 === 'been') {
-        document.getElementById('result').textContent = 'Congratulations!';
+            document.getElementById('result').textContent = 'Congratulations!';
         } else {
-        document.getElementById('result').textContent = 'Please, try again.';
+            document.getElementById('result').textContent = 'Please, try again.';
         }
   
         }
