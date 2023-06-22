@@ -346,7 +346,7 @@ table, td {
 
 /* EXERCISES */
 
-.execise-align {
+.alignment {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -356,8 +356,8 @@ table, td {
 .radio-correct[type="radio"] {
    appearance: none;
    border: 1px solid #d3d3d3;
-   width: 20px;
-   height: 20px;
+   width: 22px;
+   height: 22px;
    content: none;
    outline: none;
    border-radius:100%;
@@ -374,14 +374,14 @@ table, td {
 
 .radio-correct[type="radio"]:checked::before {
   position: absolute;
-  background: #d3d3d3 ;
+  /* background: #d3d3d3; */
   border-radius:100%;
   color: white !important;
   content: "";
   background-image: url(../assets/imgs/radio-correct.png);
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
 /* RADIO INCORRECT*/
@@ -389,8 +389,8 @@ table, td {
 .radio-incorrect[type="radio"] {
    appearance: none;
    border: 1px solid #d3d3d3;
-   width: 20px;
-   height: 20px;
+   width: 22px;
+   height: 22px;
    content: none;
    outline: none;
    border-radius:100%;
@@ -407,7 +407,7 @@ table, td {
 
 .radio-incorrect[type="radio"]:checked::before {
   position: absolute;
-  background: #d3d3d3 ;
+  /* background: #d3d3d3; */
   border-radius:100%;
   color: white !important;
   content: "";
@@ -422,8 +422,8 @@ table, td {
 .checkbox-correct[type="checkbox"] {
    appearance: none;
    border: 1px solid #d3d3d3;
-   width: 20px;
-   height: 20px;
+   width: 22px;
+   height: 22px;
    content: none;
    outline: none;
    border-radius:20%;
@@ -440,14 +440,14 @@ table, td {
 
 .checkbox-correct[type="checkbox"]:checked::before {
   position: absolute;
-  background: #d3d3d3 ;
+  /* background: #d3d3d3; */
   border-radius: 20%;
   color: white !important;
   content: "";
   background-image: url(../assets/imgs/checkbox-correct.png);
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
 /* CHECKBOX INCORRECT */
@@ -455,8 +455,8 @@ table, td {
 .checkbox-incorrect[type="checkbox"] {
    appearance: none;
    border: 1px solid #d3d3d3;
-   width: 20px;
-   height: 20px;
+   width: 22px;
+   height: 22px;
    content: none;
    outline: none;
    border-radius:20%;
@@ -473,14 +473,14 @@ table, td {
 
 .checkbox-incorrect[type="checkbox"]:checked::before {
   position: absolute;
-  background: #d3d3d3 ;
+  /* background: #d3d3d3; */
   border-radius: 20%;
   color: white !important;
   content: "";
   background-image: url(../assets/imgs/checkbox-incorrect.png);
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
 /* FILL IN THE BLANKS */
