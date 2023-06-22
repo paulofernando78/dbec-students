@@ -346,6 +346,11 @@ table, td {
 
 /* EXERCISES */
 
+.execise-align {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 /* RADIO CORRECT*/
 
 .radio-correct[type="radio"] {
