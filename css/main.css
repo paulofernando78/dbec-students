@@ -356,8 +356,8 @@ table, td {
 .radio-correct[type="radio"] {
    appearance: none;
    border: 1px solid #d3d3d3;
-   width: 18px;
-   height: 18px;
+   width: 20px;
+   height: 20px;
    content: none;
    outline: none;
    border-radius:100%;
@@ -389,8 +389,8 @@ table, td {
 .radio-incorrect[type="radio"] {
    appearance: none;
    border: 1px solid #d3d3d3;
-   width: 18px;
-   height: 18px;
+   width: 20px;
+   height: 20px;
    content: none;
    outline: none;
    border-radius:100%;
@@ -413,8 +413,8 @@ table, td {
   content: "";
   background-image: url(../assets/imgs/radio-incorrect.png);
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
 /* CHECKBOX CORRECT */
@@ -422,8 +422,8 @@ table, td {
 .checkbox-correct[type="checkbox"] {
    appearance: none;
    border: 1px solid #d3d3d3;
-   width: 18px;
-   height: 18px;
+   width: 20px;
+   height: 20px;
    content: none;
    outline: none;
    border-radius:20%;
@@ -455,8 +455,8 @@ table, td {
 .checkbox-incorrect[type="checkbox"] {
    appearance: none;
    border: 1px solid #d3d3d3;
-   width: 18px;
-   height: 18px;
+   width: 20px;
+   height: 20px;
    content: none;
    outline: none;
    border-radius:20%;
