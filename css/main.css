@@ -503,10 +503,6 @@ table, td {
 
 /* DROPDOWN MENU */
 
-.fill-inline {
-    display: inline-block;
-}
-
 /* FILL IN THE BLANKS */
 
 @media (max-width: 600px) {
