@@ -311,6 +311,14 @@ table, td {
     border: 1px solid black;
 }
 
+/* ALIGNNMENT */
+
+.alignment {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 /* IMAGES */
 
 .img-1 {
@@ -346,11 +354,6 @@ table, td {
 
 /* EXERCISES */
 
-.alignment {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
 /* RADIO CORRECT*/
 
 .radio-correct[type="radio"] {
