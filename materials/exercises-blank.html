@@ -84,24 +84,25 @@
         </div>
     </main>
     <script>
-         function checkAnswers() {
-      var answer1 = document.getElementById('blank1').value.toLowerCase();
-      var answer2 = document.getElementById('blank2').value.toLowerCase();
-      var answer3 = document.getElementById('blank3').value.toLowerCase();
-      
-      if (answer1 === 'is' && answer2 === 'went' && answer3 === 'been') {
+        function checkAnswers() {
+        var answer1 = document.getElementById('blank1').value.toLowerCase();
+        var answer2 = document.getElementById('blank2').value.toLowerCase();
+        var answer3 = document.getElementById('blank3').value.toLowerCase();
+  
+        if (answer1 === 'is' && answer2 === 'went' && answer3 === 'been') {
         document.getElementById('result').textContent = 'Congratulations!';
-      } else {
+        } else {
         document.getElementById('result').textContent = 'Please, try again.';
-      }
-    }
+        }
+  
+        }
+        function resetAnswers() {
+        document.getElementById('blank1').value = '';
+        document.getElementById('blank2').value = '';
+        document.getElementById('blank3').value = '';
+        document.getElementById('result').textContent = '';
 
-    function resetAnswers() {
-      document.getElementById('blank1').value = '';
-      document.getElementById('blank2').value = '';
-      document.getElementById('blank3').value = '';
-      document.getElementById('result').textContent = '';
-    }
+        }
     </script>
 </body>
 </html>
