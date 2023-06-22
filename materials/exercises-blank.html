@@ -68,9 +68,39 @@
             <br>
             <p>Choose the correct answer.</p>
             <br>
-            <label>1. Mike usually</label>
-            <input type="text" class="fill-inline"> (get up) at 7a.m.
+            <label>1. My name</label>
+            <input type="text" id="blank1"> Mike.
+            <br>
+            <label>2. He</label>
+            <input type="text" id="blank2"> (go) to the movies last night.
+            <br>
+            <label>3. I have never </label>
+            <input type="text" id="blank3"> (be) to Japan.
+            <br>
+            <button onclick="checkAnswers()">Check Answers</button>
+            <div id="result"></div>
+            <button onclick="resetAnswers()">Reset</button>
+            <div id="result"></div>
         </div>
     </main>
+    <script>
+        function checkAnswers() {
+        var answer1 = document.getElementById('blank1').value.toLowerCase();
+        var answer2 = document.getElementById('blank2').value.toLowerCase();
+        var answer3 = document.getElementById('blank3').value.toLowerCase();
+  
+        if (answer1 === 'is' && answer2 === 'went' && answer3 === 'been') {
+        document.getElementById('result').textContent = 'Congratulations!';
+        } else {
+        document.getElementById('result').textContent = 'Please, try again.';
+  }
+        function resetAnswers() {
+        document.getElementById('blank1').value = '';
+        document.getElementById('blank2').value = '';
+        document.getElementById('blank3').value = '';
+        document.getElementById('result').textContent = '';
+}
+}
+    </script>
 </body>
 </html>

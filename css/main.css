@@ -190,7 +190,7 @@ p {
     border-radius: 4px;
     background-color: black;
     padding: 10px;
-    box-shadow: 0 0 4px;
+    box-shadow: 0 0 3px;
 }
 
 .container-white-content {
@@ -438,72 +438,89 @@ table, td {
 /* CHECKBOX CORRECT */
 
 .checkbox-correct[type="checkbox"] {
-   appearance: none;
-   border: 1px solid #d3d3d3;
-   width: 22px;
-   height: 22px;
-   content: none;
-   outline: none;
-   border-radius:20%;
-   margin: 0;
+    appearance: none;
+    border: 1px solid #d3d3d3;
+    width: 22px;
+    height: 22px;
+    content: none;
+    outline: none;
+    border-radius:20%;
+    margin: 0;
 }
 
 .checkbox-correct[type="checkbox"]:checked {
-  appearance: none;
-  border-radius: 20%;
-  outline: none;
-  content: none;
-  border: none;
+    appearance: none;
+    border-radius: 20%;
+    outline: none;
+    content: none;
+    border: none;
 }
 
 .checkbox-correct[type="checkbox"]:checked::before {
-  position: absolute;
-  /* background: #d3d3d3; */
-  border-radius: 20%;
-  color: white !important;
-  content: "";
-  background-image: url(../assets/imgs/checkbox-correct.png);
-  background-size: contain;
-  width: 22px;
-  height: 22px;
+    position: absolute;
+    /* background: #d3d3d3; */
+    border-radius: 20%;
+    color: white !important;
+    content: "";
+    background-image: url(../assets/imgs/checkbox-correct.png);
+    background-size: contain;
+    width: 22px;
+    height: 22px;
 }
 
 /* CHECKBOX INCORRECT */
 
 .checkbox-incorrect[type="checkbox"] {
-   appearance: none;
-   border: 1px solid #d3d3d3;
-   width: 22px;
-   height: 22px;
-   content: none;
-   outline: none;
-   border-radius:20%;
-   margin: 0;
+    appearance: none;
+    border: 1px solid #d3d3d3;
+    width: 22px;
+    height: 22px;
+    content: none;
+    outline: none;
+    border-radius:20%;
+    margin: 0;
 }
 
 .checkbox-incorrect[type="checkbox"]:checked {
-  appearance: none;
-  border-radius: 20%;
-  outline: none;
-  content: none;
-  border: none;
+    appearance: none;
+    border-radius: 20%;
+    outline: none;
+    content: none;
+    border: none;
 }
 
 .checkbox-incorrect[type="checkbox"]:checked::before {
-  position: absolute;
-  /* background: #d3d3d3; */
-  border-radius: 20%;
-  color: white !important;
-  content: "";
-  background-image: url(../assets/imgs/checkbox-incorrect.png);
-  background-size: contain;
-  width: 22px;
-  height: 22px;
+    position: absolute;
+    /* background: #d3d3d3; */
+    border-radius: 20%;
+    color: white !important;
+    content: "";
+    background-image: url(../assets/imgs/checkbox-incorrect.png);
+    background-size: contain;
+    width: 22px;
+    height: 22px;
 }
 
 /* DROPDOWN MENU */
 
 /* FILL IN THE BLANKS */
+
+button {
+    font-family: var(--font);
+    font-size: var(--font-size-smaller);
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 3px;
+}
+
+#result {
+    margin-top: 10px;
+}
 
 @media (max-width: 600px) {
 
