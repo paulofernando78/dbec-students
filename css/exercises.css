@@ -140,13 +140,21 @@
 }
 
 .icon.correct::before {
-  content: "\2714";
-  color: green;
+  display: inline-block;
+  content: "";
+  background-image: url(../assets/imgs/correct.png);
+  background-size: contain;
+  width: 22px;
+  height: 22px;
 }
 
 .icon.incorrect::before {
-  content: "\2718";
-  color: red;
+  display: inline-block;
+  content: "";
+  background-image: url(../assets/imgs/incorrect.png);
+  background-size: contain;
+  width: 22px;
+  height: 22px;
 }
 
 /* FILL IN THE BLANKS */
