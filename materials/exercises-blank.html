@@ -1,263 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/exercises.css" />
-    <script src="../js/exercises.js"></script>
-    <title>Exercises Blank</title>
-  </head>
-  <body>
-    <main>
-      <div class="container-title">
-        <h1 class="color-white">Exercise Templates</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/exercises.css" />
+  <script src="../js/exercises.js"></script>
+  <title>Exercises Blank</title>
+</head>
+
+<body>
+  <main>
+    <div class="container-title">
+      <h1 class="color-white">Exercise Templates</h1>
+    </div>
+    <br />
+
+    <!-- RADIO -->
+
+    <p><b>RADIO</b></p>
+    <br />
+    <div class="p">
+      <p><b>1. Choose the correct answer.</b></p>
+      <br />
+      <p>1. He _____ at a bank.</p>
+      <div class="align-items-center">
+        <input type="radio" name="radio-1-1" id="radio-1a" class="radio-correct" />
+        <label for="radio-1a">works</label>
       </div>
-      <br />
-
-      <!-- RADIO -->
-
-      <p><b>RADIO</b></p>
-      <br />
-      <div class="p">
-        <p><b>1. Choose the correct answer</b></p>
-        <br />
-        <p>1. He _____ at a bank.</p>
-        <div class="align-items-center">
-          <input
-            type="radio"
-            name="radio-1-1"
-            id="radio-1a"
-            class="radio-correct"
-          />
-          <label for="radio-1a">works</label>
-        </div>
-        <div class="align-items-center">
-          <input
-            type="radio"
-            name="radio-1-1"
-            id="radio-1b"
-            class="radio-incorrect"
-          />
-          <label for="radio-1b">work</label>
-        </div>
-        <button onclick="resetRadios()">Reset</button>
+      <div class="align-items-center">
+        <input type="radio" name="radio-1-1" id="radio-1b" class="radio-incorrect" />
+        <label for="radio-1b">work</label>
       </div>
-      <br />
-      <hr />
-      <br />
+      <button onclick="resetRadios()">Reset</button>
+    </div>
+    <br />
+    <hr />
+    <br />
 
-      <!-- CHECKBOX -->
+    <!-- CHECKBOX -->
 
-      <p><b>CHECKBOX</b></p>
+    <p><b>CHECKBOX</b></p>
+    <br />
+    <div class="p">
+      <p><b>1. Select the correct answers.</b></p>
       <br />
-      <div class="p">
-        <p><b>1. Choose the correct answers.</b></p>
-        <br />
-        <p>1. Select fruit only.</p>
-        <div class="align-items-center">
-          <input
-            type="checkbox"
-            name="checbox-1-1"
-            id="checbox-1a"
-            class="checkbox-correct"
-          />
-          <label for="checbox-1a">banana</label>
-        </div>
-        <div class="align-items-center">
-          <input
-            type="checkbox"
-            name="checbox-1-1"
-            id="checbox-1b"
-            class="checkbox-incorrect"
-          />
-          <label for="checbox-1b">meat</label>
-        </div>
-        <div class="align-items-center">
-          <input
-            type="checkbox"
-            name="checbox-1-1"
-            id="checbox-1c"
-            class="checkbox-correct"
-          />
-          <label for="checbox-1c">apple</label>
-        </div>
-        <button onclick="resetCheckboxes()">Reset</button>
+      <p>1. Select fruit only.</p>
+      <div class="align-items-center">
+        <input type="checkbox" name="checbox-1-1" id="checbox-1a" class="checkbox-correct" />
+        <label for="checbox-1a">banana</label>
       </div>
-      <br />
-      <hr />
-      <br />
-
-      <!-- DROPDOWN MENU -->
-
-      <div class="p">
-        <p><b>DROPDOWN</b></p>
-        <br />
-        <p><b>1. Choose the correct answer.</b></p>
-        <br />
-        <label for="option1">a) I</label>
-        <select
-          name="option1"
-          id="option1"
-          onchange="checkAnswer(this, 'icon1', 'a')"
-        >
-          <option value="na">...</option>
-          <option value="a">am</option>
-          <option value="b">are</option>
-          <option value="c">is</option>
-        </select>
-        a teacher.
-        <span id="icon1" class="icon"></span>
-        <br />
-        <label for="option2">b) He</label>
-        <select
-          name="option2"
-          id="option2"
-          onchange="checkAnswer(this, 'icon2', 'c')"
-        >
-          <option value="na">...</option>
-          <option value="a">am</option>
-          <option value="b">are</option>
-          <option value="c">is</option>
-        </select>
-        a student.
-        <span id="icon2" class="icon"></span>
-        <br />
-        <label for="option3">c) We</label>
-        <select
-          name="option3"
-          id="option3"
-          onchange="checkAnswer(this, 'icon3', 'b')"
-        >
-          <option value="na">...</option>
-          <option value="a">am</option>
-          <option value="b">are</option>
-          <option value="c">is</option>
-        </select>
-        happy.
-        <span id="icon3" class="icon"></span>
-        <br />
-        <button onclick="resetDropdowns()">Reset</button>
+      <div class="align-items-center">
+        <input type="checkbox" name="checbox-1-1" id="checbox-1b" class="checkbox-incorrect" />
+        <label for="checbox-1b">meat</label>
       </div>
-      <br />
-      <hr />
-      <br />
-
-      <!-- FILL IN THE BLANKS -->
-
-      <div class="p">
-        <p><b>FILL-IN-THE-BLANKS</b></p>
-        <br />
-        <p><b>1. Write the correct answer.</b></p>
-        <br />
-        <label>1. My name <input type="text" id="blank1" /></label>
-        <span id="fillIcon1" class="icon"></span>
-        Mike.
-        <br />
-        <label>2. He <input type="text" id="blank2" /></label>
-        <span id="fillIcon2" class="icon"></span>
-        (go) to the movies last night.
-        <br />
-        <label>3. I have never <input type="text" id="blank3" /></label>
-        <span id="fillIcon3" class="icon"></span>
-        (be) to Japan.
-        <br />
-        <button onclick="checkAnswers()">Check answers</button>
-        <div id="result"></div>
-        <button onclick="resetAnswers()">Reset</button>
+      <div class="align-items-center">
+        <input type="checkbox" name="checbox-1-1" id="checbox-1c" class="checkbox-correct" />
+        <label for="checbox-1c">apple</label>
       </div>
-    </main>
-  </body>
+      <button onclick="resetCheckboxes()">Reset</button>
+    </div>
+    <br />
+    <hr />
+    <br />
 
-  <script>
-    // RADIO
+    <!-- DROPDOWN MENU -->
 
-    function resetRadios() {
-      var radios = document.querySelectorAll('input[type="radio"]');
-      radios.forEach(function (radio) {
-        radio.checked = false;
-      });
+    <div class="p">
+      <p><b>DROPDOWN</b></p>
+      <br />
+      <p><b>1. Choose the correct answer.</b></p>
+      <br />
+      <label for="option1">a) I</label>
+      <select name="option1" id="option1" onchange="checkAnswer(this, 'icon1', 'a')">
+        <option value="na">...</option>
+        <option value="a">am</option>
+        <option value="b">are</option>
+        <option value="c">is</option>
+      </select>
+      a teacher.
+      <span id="icon1" class="icon"></span>
+      <br />
+      <label for="option2">b) He</label>
+      <select name="option2" id="option2" onchange="checkAnswer(this, 'icon2', 'c')">
+        <option value="na">...</option>
+        <option value="a">am</option>
+        <option value="b">are</option>
+        <option value="c">is</option>
+      </select>
+      a student.
+      <span id="icon2" class="icon"></span>
+      <br />
+      <label for="option3">c) We</label>
+      <select name="option3" id="option3" onchange="checkAnswer(this, 'icon3', 'b')">
+        <option value="na">...</option>
+        <option value="a">am</option>
+        <option value="b">are</option>
+        <option value="c">is</option>
+      </select>
+      happy.
+      <span id="icon3" class="icon"></span>
+      <br />
+      <button onclick="resetDropdowns()">Reset</button>
+    </div>
+    <br />
+    <hr />
+    <br />
+
+    <!-- FILL IN THE BLANKS -->
+
+    <div class="p">
+      <p><b>FILL-IN-THE-BLANKS</b></p>
+      <br />
+      <p><b>1. Write the correct answer.</b></p>
+      <br />
+      <label>1. My name <input type="text" id="blank1" /></label>
+      <span id="fillIcon1" class="icon"></span>
+      Mike.
+      <br />
+      <label>2. He <input type="text" id="blank2" /></label>
+      <span id="fillIcon2" class="icon"></span>
+      (go) to the movies last night.
+      <br />
+      <label>3. I have never <input type="text" id="blank3" /></label>
+      <span id="fillIcon3" class="icon"></span>
+      (be) to Japan.
+      <br />
+      <button onclick="checkAnswers()">Check answers</button>
+      <div id="result"></div>
+      <button onclick="resetAnswers()">Reset</button>
+    </div>
+  </main>
+</body>
+
+<script>
+  // RADIO
+
+  function resetRadios() {
+    var radios = document.querySelectorAll('input[type="radio"]');
+    radios.forEach(function (radio) {
+      radio.checked = false;
+    });
+  }
+
+  // CHECKBOX
+
+  function resetCheckboxes() {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(function (checkbox) {
+      checkbox.checked = false;
+    });
+  }
+
+  // DROPDOWN
+
+  function checkAnswer(selectElement, iconId, correctValue) {
+    var selectedValue = selectElement.value;
+    var icon = document.getElementById(iconId);
+    icon.className =
+      selectedValue === correctValue ? "icon correct" : "icon incorrect";
+    icon.style.display = "inline-block";
+  }
+
+  function resetDropdowns() {
+    var selects = document.getElementsByTagName("select");
+    for (var i = 0; i < selects.length; i++) {
+      selects[i].selectedIndex = 0;
     }
 
-    // CHECKBOX
+    var icons = document.querySelectorAll(".icon");
+    icons.forEach(function (icon) {
+      icon.style.display = "none";
+    });
+  }
 
-    function resetCheckboxes() {
-      var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-      checkboxes.forEach(function (checkbox) {
-        checkbox.checked = false;
-      });
+  // FILL IN THE BLANKS
+
+  function checkAnswers() {
+    var answers = {
+      blank1: "is",
+      blank2: "went",
+      blank3: "been",
+    };
+
+    var fillIcon1 = document.getElementById("fillIcon1");
+    var fillIcon2 = document.getElementById("fillIcon2");
+    var fillIcon3 = document.getElementById("fillIcon3");
+    var result = document.getElementById("result");
+
+    var isCorrect1 =
+      document.getElementById("blank1").value.trim() === answers.blank1;
+    var isCorrect2 =
+      document.getElementById("blank2").value.trim() === answers.blank2;
+    var isCorrect3 =
+      document.getElementById("blank3").value.trim() === answers.blank3;
+
+    fillIcon1.className = isCorrect1 ? "icon correct" : "icon incorrect";
+    fillIcon2.className = isCorrect2 ? "icon correct" : "icon incorrect";
+    fillIcon3.className = isCorrect3 ? "icon correct" : "icon incorrect";
+
+    fillIcon1.style.display = "inline-block";
+    fillIcon2.style.display = "inline-block";
+    fillIcon3.style.display = "inline-block";
+
+    var allCorrect = isCorrect1 && isCorrect2 && isCorrect3;
+    result.innerHTML = allCorrect
+      ? "All answers are correct!"
+      : "Some answers are incorrect!";
+  }
+
+  function resetAnswers() {
+    var inputs = document.getElementsByTagName("input");
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].value = "";
     }
 
-    // DROPDOWN
+    var icons = document.querySelectorAll(".icon");
+    icons.forEach(function (icon) {
+      icon.style.display = "none";
+    });
 
-    function checkAnswer(selectElement, iconId, correctValue) {
-      var selectedValue = selectElement.value;
-      var icon = document.getElementById(iconId);
-      icon.className =
-        selectedValue === correctValue ? "icon correct" : "icon incorrect";
-      icon.style.display = "inline-block";
-    }
+    var result = document.getElementById("result");
+    result.innerHTML = "";
+  }
+</script>
 
-    function resetDropdowns() {
-      var selects = document.getElementsByTagName("select");
-      for (var i = 0; i < selects.length; i++) {
-        selects[i].selectedIndex = 0;
-      }
-
-      var icons = document.querySelectorAll(".icon");
-      icons.forEach(function (icon) {
-        icon.style.display = "none";
-      });
-    }
-
-    // FILL IN THE BLANKS
-
-    function checkAnswers() {
-      var answers = {
-        blank1: "is",
-        blank2: "went",
-        blank3: "been",
-      };
-
-      var fillIcon1 = document.getElementById("fillIcon1");
-      var fillIcon2 = document.getElementById("fillIcon2");
-      var fillIcon3 = document.getElementById("fillIcon3");
-      var result = document.getElementById("result");
-
-      var isCorrect1 =
-        document.getElementById("blank1").value.trim() === answers.blank1;
-      var isCorrect2 =
-        document.getElementById("blank2").value.trim() === answers.blank2;
-      var isCorrect3 =
-        document.getElementById("blank3").value.trim() === answers.blank3;
-
-      fillIcon1.className = isCorrect1 ? "icon correct" : "icon incorrect";
-      fillIcon2.className = isCorrect2 ? "icon correct" : "icon incorrect";
-      fillIcon3.className = isCorrect3 ? "icon correct" : "icon incorrect";
-
-      fillIcon1.style.display = "inline-block";
-      fillIcon2.style.display = "inline-block";
-      fillIcon3.style.display = "inline-block";
-
-      var allCorrect = isCorrect1 && isCorrect2 && isCorrect3;
-      result.innerHTML = allCorrect
-        ? "All answers are correct!"
-        : "Some answers are incorrect!";
-    }
-
-    function resetAnswers() {
-      var inputs = document.getElementsByTagName("input");
-      for (var i = 0; i < inputs.length; i++) {
-        inputs[i].value = "";
-      }
-
-      var icons = document.querySelectorAll(".icon");
-      icons.forEach(function (icon) {
-        icon.style.display = "none";
-      });
-
-      var result = document.getElementById("result");
-      result.innerHTML = "";
-    }
-  </script>
 </html>
