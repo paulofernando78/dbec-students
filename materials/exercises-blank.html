@@ -1,141 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/exercises.css" />
+    <script src="../js/exercises.js"></script>
     <title>Exercises Blank</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="container-title">
-            <h1 class="color-white">Exercises Blank</h1>
-        </div>
-        <br>
+      <div class="container-title">
+        <h1 class="color-white">Exercises Templates</h1>
+      </div>
+      <br />
 
-        <!-- RADIO -->
+      <!-- RADIO -->
 
-        <div class="p">
-            <p><b>1. Choose the correct answer</b></p>
-            <br>
-            <p>1. He _____ at a bank.</p>
-            <div class="align-items-center">
-                <input type="radio" name="grammar-1-1" id="" class="radio-correct">
-                <label for=""></label> works
-            </div>
-            <div class="align-items-center">
-                <input type="radio" name="grammar-1-1" id="" class="radio-incorrect">
-                <label for=""></label>work
-            </div>
+      <p><b>RADIO</b></p>
+      <br />
+      <div class="p">
+        <p><b>1. Choose the correct answer</b></p>
+        <br />
+        <p>1. He _____ at a bank.</p>
+        <div class="align-items-center">
+          <input
+            type="radio"
+            name="radio-1-1"
+            id="radio-1a"
+            class="radio-correct"
+          />
+          <label for="radio-1a">works</label>
         </div>
-        <br>
-        
-        <!-- CHECKBOX -->
+        <div class="align-items-center">
+          <input
+            type="radio"
+            name="radio-1-1"
+            id="radio-1b"
+            class="radio-incorrect"
+          />
+          <label for="radio-1b">work</label>
+        </div>
+        <button onclick="resetRadios()">Reset</button>
+      </div>
+      <br />
+      <hr />
+      <br />
 
-        <div class="p">
-            <p><b>1. Select fruit only.</b></p>
-            <br>
-            <p>1.</p>
-            <div class="align-items-center">
-                <input type="checkbox" name="1-1" id="1-1" class="checkbox-correct">
-                <label for="1-1"></label>Banana
-            </div>
-            <div class="align-items-center">
-                <input type="checkbox" name="1-1" id="1-2" class="checkbox-incorrect">
-                <label for="1-2"></label>meat
-            </div>
-            <div class="align-items-center">
-                <input type="checkbox" name="1-1" id="1-3" class="checkbox-correct">
-                <label for="1-3"></label>apple
-            </div>
-        </div>
-        <br>
+      <!-- CHECKBOX -->
 
-        <!-- DROPDOWN MENU -->
-        <div class="p">
-            <b>Dropdown menu</b>
-            <br>
-            <label for="option1">1. I</label>
-            <select name="option1" id="option1">
-                <option value="na">...</option>
-                <option value="am">am</option>
-                <option value="are">are</option>
-                <option value="is">is</option>
-            </select>
-            a teacher.
-            <br>
-            <label for="option2">2. He</label>
-            <select name="option2" id="option2">
-                <option value="na">...</option>
-                <option value="am">am</option>
-                <option value="are">are</option>
-                <option value="is">is</option>
-            </select>
-            a student.
-            <br>
-            <label for="option3">3. We</label>
-            <select name="option3" id="option3">
-                <option value="na">...</option>
-                <option value="am">am</option>
-                <option value="are">are</option>
-                <option value="is">is</option>
-            </select>
-            happy.
-            <br>
-            <button onclick="resetDropdowns()">Reset</button>
+      <p><b>CHECKBOX</b></p>
+      <br />
+      <div class="p">
+        <p><b>1. Choose the correct answers.</b></p>
+        <br />
+        <p>1. Select fruit only.</p>
+        <div class="align-items-center">
+          <input
+            type="checkbox"
+            name="checbox-1-1"
+            id="checbox-1a"
+            class="checkbox-correct"
+          />
+          <label for="checbox-1a">Banana</label>
         </div>
-        <br>
+        <div class="align-items-center">
+          <input
+            type="checkbox"
+            name="checbox-1-1"
+            id="checbox-1b"
+            class="checkbox-incorrect"
+          />
+          <label for="checbox-1b">meat</label>
+        </div>
+        <div class="align-items-center">
+          <input
+            type="checkbox"
+            name="checbox-1-1"
+            id="checbox-1c"
+            class="checkbox-correct"
+          />
+          <label for="checbox-1c">apple</label>
+        </div>
+        <button onclick="resetCheckboxes()">Reset</button>
+      </div>
+      <br />
+      <hr />
+      <br />
 
-        <!-- FILL IN THE BLANKS -->
-        <div class="p">
-            <b>Fill in the blanks</b>
-            <br>
-            <p>Choose the correct answer.</p>
-            <br>
-            <label>1. My name</label>
-            <input type="text" id="blank1"> Mike.
-            <br>
-            <label>2. He</label>
-            <input type="text" id="blank2"> (go) to the movies last night.
-            <br>
-            <label>3. I have never </label>
-            <input type="text" id="blank3"> (be) to Japan.
-            <br>
-            <button onclick="checkAnswers()">Check answers</button>
-            <div id="result"></div>
-            <button onclick="resetAnswers()">Reset</button>
-            <div id="result"></div>
-        </div>
+      <!-- DROPDOWN MENU -->
+
+      <div class="p">
+        <p><b>DROPDOWN</b></p>
+        <br />
+        <p><b>1. Choose the correct answer.</b></p>
+        <br />
+        <label for="option1">a) I</label>
+        <select
+          name="option1"
+          id="option1"
+          onchange="checkAnswer(this, 'icon1', 'a')"
+        >
+          <option value="na">...</option>
+          <option value="a">am</option>
+          <option value="b">are</option>
+          <option value="c">is</option>
+        </select>
+        a teacher.
+        <span id="icon1" class="icon"></span>
+        <br />
+        <label for="option2">b) He</label>
+        <select
+          name="option2"
+          id="option2"
+          onchange="checkAnswer(this, 'icon2', 'c')"
+        >
+          <option value="na">...</option>
+          <option value="a">am</option>
+          <option value="b">are</option>
+          <option value="c">is</option>
+        </select>
+        a student.
+        <span id="icon2" class="icon"></span>
+        <br />
+        <label for="option3">c) We</label>
+        <select
+          name="option3"
+          id="option3"
+          onchange="checkAnswer(this, 'icon3', 'b')"
+        >
+          <option value="na">...</option>
+          <option value="a">am</option>
+          <option value="b">are</option>
+          <option value="c">is</option>
+        </select>
+        happy.
+        <span id="icon3" class="icon"></span>
+        <br />
+        <button onclick="resetDropdowns()">Reset</button>
+      </div>
+      <br />
+      <hr />
+      <br />
+
+      <!-- FILL IN THE BLANKS -->
+
+      <div class="p">
+        <p><b>FILL-IN-THE-BLANKS</b></p>
+        <br />
+        <p><b>1. Write the correct answer.</b></p>
+        <br />
+        <label>1. My name <input type="text" id="blank1" /> Mike.</label>
+        <br />
+        <label
+          >2. He <input type="text" id="blank2" /> (go) to the movies last
+          night.</label
+        >
+        <br />
+        <label
+          >3. I have never <input type="text" id="blank3" /> (be) to
+          Japan.</label
+        >
+        <br />
+        <button onclick="checkAnswers()">Check answers</button>
+        <div id="result"></div>
+        <button onclick="resetAnswers()">Reset</button>
+        <div id="result"></div>
+      </div>
     </main>
-    <script>
+  </body>
+  <script>
+function resetRadios() {
+  var radios = document.querySelectorAll('input[type="radio"]');
+  radios.forEach(function (radio) {
+    radio.checked = false;
+  });
+}
 
-        // DROPDOWN MENU
-        function resetDropdowns() {
-        document.getElementById("option1").selectedIndex = 0;
-        document.getElementById("option2").selectedIndex = 0;
-        document.getElementById("option3").selectedIndex = 0;
-    }
+// CHECKBOX
 
-        // FILL IN THE BLANKS
-        function checkAnswers() {
-        var answer1 = document.getElementById('blank1').value.toLowerCase();
-        var answer2 = document.getElementById('blank2').value.toLowerCase();
-        var answer3 = document.getElementById('blank3').value.toLowerCase();
-  
-        if (answer1 === 'is' && answer2 === 'went' && answer3 === 'been') {
-            document.getElementById('result').textContent = 'Congratulations!';
-        } else {
-            document.getElementById('result').textContent = 'Please, try again.';
-        }
-  
-        }
-        function resetAnswers() {
-        document.getElementById('blank1').value = '';
-        document.getElementById('blank2').value = '';
-        document.getElementById('blank3').value = '';
-        document.getElementById('result').textContent = '';
+function resetCheckboxes() {
+  var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach(function (checkbox) {
+    checkbox.checked = false;
+  });
+}
 
-        }
-    </script>
-</body>
+// DROPDOWN
+
+function checkAnswer(selectElement, iconId, correctValue) {
+  var selectedValue = selectElement.value;
+  var icon = document.getElementById(iconId);
+
+  if (selectedValue === correctValue) {
+    icon.className = "icon correct";
+  } else {
+    icon.className = "icon incorrect";
+  }
+
+  icon.style.display = "inline-block";
+}
+
+function resetDropdowns() {
+  var dropdowns = document.querySelectorAll("select");
+  dropdowns.forEach(function (dropdown) {
+    dropdown.selectedIndex = 0;
+  });
+
+  var icons = document.querySelectorAll(".icon");
+  icons.forEach(function (icon) {
+    icon.style.display = "none";
+  });
+}
+
+// FILL IN THE BLANKS
+
+function checkAnswers() {
+  var answer1 = document.getElementById("blank1").value.toLowerCase();
+  var answer2 = document.getElementById("blank2").value.toLowerCase();
+  var answer3 = document.getElementById("blank3").value.toLowerCase();
+
+  if (answer1 === "is" && answer2 === "went" && answer3 === "been") {
+    document.getElementById("result").textContent = "Congratulations!";
+  } else {
+    document.getElementById("result").textContent = "Please, try again.";
+  }
+}
+function resetAnswers() {
+  document.getElementById("blank1").value = "";
+  document.getElementById("blank2").value = "";
+  document.getElementById("blank3").value = "";
+  document.getElementById("result").textContent = "";
+}
+
+  </script>
 </html>
