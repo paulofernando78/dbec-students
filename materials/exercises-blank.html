@@ -62,7 +62,7 @@
             id="checbox-1a"
             class="checkbox-correct"
           />
-          <label for="checbox-1a">Banana</label>
+          <label for="checbox-1a">banana</label>
         </div>
         <div class="align-items-center">
           <input
@@ -150,88 +150,114 @@
         <br />
         <p><b>1. Write the correct answer.</b></p>
         <br />
-        <label>1. My name <input type="text" id="blank1" /> Mike.</label>
+        <label>1. My name <input type="text" id="blank1" /></label>
+        <span id="fillIcon1" class="icon"></span>
+        Mike.
         <br />
-        <label
-          >2. He <input type="text" id="blank2" /> (go) to the movies last
-          night.</label
-        >
+        <label>2. He <input type="text" id="blank2" /></label>
+        <span id="fillIcon2" class="icon"></span>
+        (go) to the movies last night.
         <br />
-        <label
-          >3. I have never <input type="text" id="blank3" /> (be) to
-          Japan.</label
-        >
+        <label>3. I have never <input type="text" id="blank3" /></label>
+        <span id="fillIcon3" class="icon"></span>
+        (be) to Japan.
         <br />
         <button onclick="checkAnswers()">Check answers</button>
         <div id="result"></div>
         <button onclick="resetAnswers()">Reset</button>
-        <div id="result"></div>
       </div>
     </main>
   </body>
+
   <script>
-function resetRadios() {
-  var radios = document.querySelectorAll('input[type="radio"]');
-  radios.forEach(function (radio) {
-    radio.checked = false;
-  });
-}
+    // RADIO
 
-// CHECKBOX
+    function resetRadios() {
+      var radios = document.querySelectorAll('input[type="radio"]');
+      radios.forEach(function (radio) {
+        radio.checked = false;
+      });
+    }
 
-function resetCheckboxes() {
-  var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  checkboxes.forEach(function (checkbox) {
-    checkbox.checked = false;
-  });
-}
+    // CHECKBOX
 
-// DROPDOWN
+    function resetCheckboxes() {
+      var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(function (checkbox) {
+        checkbox.checked = false;
+      });
+    }
 
-function checkAnswer(selectElement, iconId, correctValue) {
-  var selectedValue = selectElement.value;
-  var icon = document.getElementById(iconId);
+    // DROPDOWN
 
-  if (selectedValue === correctValue) {
-    icon.className = "icon correct";
-  } else {
-    icon.className = "icon incorrect";
-  }
+    function checkAnswer(selectElement, iconId, correctValue) {
+      var selectedValue = selectElement.value;
+      var icon = document.getElementById(iconId);
+      icon.className =
+        selectedValue === correctValue ? "icon correct" : "icon incorrect";
+      icon.style.display = "inline-block";
+    }
 
-  icon.style.display = "inline-block";
-}
+    function resetDropdowns() {
+      var selects = document.getElementsByTagName("select");
+      for (var i = 0; i < selects.length; i++) {
+        selects[i].selectedIndex = 0;
+      }
 
-function resetDropdowns() {
-  var dropdowns = document.querySelectorAll("select");
-  dropdowns.forEach(function (dropdown) {
-    dropdown.selectedIndex = 0;
-  });
+      var icons = document.querySelectorAll(".icon");
+      icons.forEach(function (icon) {
+        icon.style.display = "none";
+      });
+    }
 
-  var icons = document.querySelectorAll(".icon");
-  icons.forEach(function (icon) {
-    icon.style.display = "none";
-  });
-}
+    // FILL IN THE BLANKS
 
-// FILL IN THE BLANKS
+    function checkAnswers() {
+      var answers = {
+        blank1: "is",
+        blank2: "went",
+        blank3: "been",
+      };
 
-function checkAnswers() {
-  var answer1 = document.getElementById("blank1").value.toLowerCase();
-  var answer2 = document.getElementById("blank2").value.toLowerCase();
-  var answer3 = document.getElementById("blank3").value.toLowerCase();
+      var fillIcon1 = document.getElementById("fillIcon1");
+      var fillIcon2 = document.getElementById("fillIcon2");
+      var fillIcon3 = document.getElementById("fillIcon3");
+      var result = document.getElementById("result");
 
-  if (answer1 === "is" && answer2 === "went" && answer3 === "been") {
-    document.getElementById("result").textContent = "Congratulations!";
-  } else {
-    document.getElementById("result").textContent = "Please, try again.";
-  }
-}
-function resetAnswers() {
-  document.getElementById("blank1").value = "";
-  document.getElementById("blank2").value = "";
-  document.getElementById("blank3").value = "";
-  document.getElementById("result").textContent = "";
-}
+      var isCorrect1 =
+        document.getElementById("blank1").value.trim() === answers.blank1;
+      var isCorrect2 =
+        document.getElementById("blank2").value.trim() === answers.blank2;
+      var isCorrect3 =
+        document.getElementById("blank3").value.trim() === answers.blank3;
 
+      fillIcon1.className = isCorrect1 ? "icon correct" : "icon incorrect";
+      fillIcon2.className = isCorrect2 ? "icon correct" : "icon incorrect";
+      fillIcon3.className = isCorrect3 ? "icon correct" : "icon incorrect";
+
+      fillIcon1.style.display = "inline-block";
+      fillIcon2.style.display = "inline-block";
+      fillIcon3.style.display = "inline-block";
+
+      var allCorrect = isCorrect1 && isCorrect2 && isCorrect3;
+      result.innerHTML = allCorrect
+        ? "All answers are correct!"
+        : "Some answers are incorrect!";
+    }
+
+    function resetAnswers() {
+      var inputs = document.getElementsByTagName("input");
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].value = "";
+      }
+
+      var icons = document.querySelectorAll(".icon");
+      icons.forEach(function (icon) {
+        icon.style.display = "none";
+      });
+
+      var result = document.getElementById("result");
+      result.innerHTML = "";
+    }
   </script>
 </html>
