@@ -27,8 +27,9 @@
   border-radius: 100%;
   color: white !important;
   content: "";
-  background-image: url(../assets/imgs/radio-correct.png);
+  background-image: url(../assets/imgs/radio-correct.svg);
   background-size: contain;
+  filter: var(--icon-correct);
   width: 22px;
   height: 22px;
 }
@@ -60,8 +61,9 @@
   border-radius: 100%;
   color: white !important;
   content: "";
-  background-image: url(../assets/imgs/radio-incorrect.png);
+  background-image: url(../assets/imgs/radio-incorrect.svg);
   background-size: contain;
+  filter: var(--icon-incorrect);
   width: 22px;
   height: 22px;
 }
@@ -93,8 +95,9 @@
   border-radius: 20%;
   color: white !important;
   content: "";
-  background-image: url(../assets/imgs/checkbox-correct.png);
+  background-image: url(../assets/imgs/checkbox-correct.svg);
   background-size: contain;
+  filter: var(--icon-correct);
   width: 22px;
   height: 22px;
 }
@@ -126,8 +129,9 @@
   border-radius: 20%;
   color: white !important;
   content: "";
-  background-image: url(../assets/imgs/checkbox-incorrect.png);
+  background-image: url(../assets/imgs/checkbox-incorrect.svg);
   background-size: contain;
+  filter: var(--icon-incorrect);
   width: 22px;
   height: 22px;
 }
@@ -142,8 +146,9 @@
 .icon.correct::before {
   display: inline-block;
   content: "";
-  background-image: url(../assets/imgs/correct.png);
+  background-image: url(../assets/imgs/correct.svg);
   background-size: contain;
+  filter: var(--icon-correct);
   width: 22px;
   height: 22px;
 }
@@ -151,8 +156,9 @@
 .icon.incorrect::before {
   display: inline-block;
   content: "";
-  background-image: url(../assets/imgs/incorrect.png);
+  background-image: url(../assets/imgs/incorrect.svg);
   background-size: contain;
+  filter: var(--icon-incorrect);
   width: 22px;
   height: 22px;
 }
