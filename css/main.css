@@ -332,9 +332,9 @@ p {
     box-shadow: 0 0 3px;
 }
 
-.img-container {
+.container-img {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .img-2 {
