@@ -173,7 +173,7 @@
 
         <!-- EXERCISE 1 -->
         <!-- FILL IN THE BLANKS -->
-        <div class="p">
+        <div class="p container-white">
           <p><b>1. Write the short form.</b></p>
           <br />
           <label>a) she is <input type="text" id="blank1" /></label>
@@ -260,9 +260,9 @@
         <!-- EXERCISE 3 -->
         <!-- CHECKBOX -->
         <div class="p">
-          <p><b>1. Select the correct answers.</b></p>
+          <p><b>3. Select the correct answers.</b></p>
           <br />
-          <p>1. I _____ a student.</p>
+          <p>a&#41; I _____ a student.</p>
           <div class="align-items-center">
             <input type="checkbox" name="checbox-1-1" id="checbox-1a" class="checkbox-incorrect" />
             <label for="checbox-1a">'re'</label>
@@ -283,7 +283,7 @@
         <!-- EXERCISE 4 -->
         <!-- DROPDOWN MENU -->
         <div class="p">
-          <p><b>1. Choose the correct answer.</b></p>
+          <p><b>4. Choose the correct answer.</b></p>
           <br />
           <label for="option1">a) I</label>
           <select name="option1" id="option1" onchange="checkAnswer(this, 'icon1', 'a')">
@@ -328,9 +328,9 @@
     var answers = {
       blank1: "she's",
       blank2: "they're",
-      blank3: "it's not",
+      blank3: ["it's not", "it isn't"],
       blank4: "I'm not",
-      blank5: "you're not",
+      blank5: ["you're not", "you aren't"],
     };
 
     var fillIcon1 = document.getElementById("fillIcon1");
@@ -345,11 +345,11 @@
     var isCorrect2 =
       document.getElementById("blank2").value.trim() === answers.blank2;
     var isCorrect3 =
-      document.getElementById("blank3").value.trim() === answers.blank3;
+      answers.blank3.includes(document.getElementById("blank3").value.trim());
     var isCorrect4 =
       document.getElementById("blank4").value.trim() === answers.blank4;
     var isCorrect5 =
-      document.getElementById("blank5").value.trim() === answers.blank5;
+      answers.blank5.includes(document.getElementById("blank5").value.trim());
 
     fillIcon1.className = isCorrect1 ? "icon correct" : "icon incorrect";
     fillIcon2.className = isCorrect2 ? "icon correct" : "icon incorrect";
