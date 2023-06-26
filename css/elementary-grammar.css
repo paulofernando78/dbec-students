@@ -11,7 +11,7 @@
 
 .unit-1-negative-grid {
     display: grid;
-    grid-template-columns: 55px 55px 55px;
+    grid-template-columns: 55px 100px 280px; 
 }
 
 /* UNIT 37 */
