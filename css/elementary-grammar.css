@@ -5,13 +5,13 @@
 
 .unit-1-affirmtive-grid {
     display: grid;
-    grid-template-columns: 7% 7% 7%;
+    grid-template-columns: 55px 55px 55px;
     
 }
 
 .unit-1-negative-grid {
     display: grid;
-    grid-template-columns: 7% 11% 12%;
+    grid-template-columns: 55px 55px 55px;
 }
 
 /* UNIT 37 */
