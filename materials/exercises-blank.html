@@ -27,11 +27,11 @@
       <p>1. He _____ at a bank.</p>
       <div class="align-items-center">
         <input type="radio" name="radio-1-1" id="radio-1a" class="radio-correct" />
-        <label for="radio-1a">works</label>
+        <label for="radio-1a">a&#41; works</label>
       </div>
       <div class="align-items-center">
         <input type="radio" name="radio-1-1" id="radio-1b" class="radio-incorrect" />
-        <label for="radio-1b">work</label>
+        <label for="radio-1b">b&#41; work</label>
       </div>
       <button onclick="resetRadios()">Reset</button>
     </div>
@@ -48,16 +48,16 @@
       <br />
       <p>1. Select fruit only.</p>
       <div class="align-items-center">
-        <input type="checkbox" name="checbox-1-1" id="checbox-1a" class="checkbox-correct" />
-        <label for="checbox-1a">banana</label>
+        <input type="checkbox" name="checbox-1-1" id="checbox-1a" class="checkbox" />
+        <label for="checbox-1a">a&#41; banana</label>
       </div>
       <div class="align-items-center">
-        <input type="checkbox" name="checbox-1-1" id="checbox-1b" class="checkbox-incorrect" />
-        <label for="checbox-1b">meat</label>
+        <input type="checkbox" name="checbox-1-1" id="checbox-1b" class="checkbox" />
+        <label for="checbox-1b">b&#41; meat</label>
       </div>
       <div class="align-items-center">
-        <input type="checkbox" name="checbox-1-1" id="checbox-1c" class="checkbox-correct" />
-        <label for="checbox-1c">apple</label>
+        <input type="checkbox" name="checbox-1-1" id="checbox-1c" class="checkbox" />
+        <label for="checbox-1c">c&#41; apple</label>
       </div>
       <button onclick="resetCheckboxes()">Reset</button>
     </div>
@@ -115,65 +115,26 @@
       <br />
       <p><b>1. Write the correct answer.</b></p>
       <br />
-      <label>1. My name <input type="text" id="blank1" /></label>
-      <span id="fillIcon1" class="icon"></span>
+      <label>a&#41; My name <input type="text" id="blank1" /></label>
+      <span id="fillIcon1" class="fill-icon"></span>
       Mike.
       <br />
-      <label>2. He <input type="text" id="blank2" /></label>
-      <span id="fillIcon2" class="icon"></span>
+      <label>b&#41; He <input type="text" id="blank2" /></label>
+      <span id="fillIcon2" class="fill-icon"></span>
       (go) to the movies last night.
       <br />
-      <label>3. I have never <input type="text" id="blank3" /></label>
-      <span id="fillIcon3" class="icon"></span>
+      <label>c&#41; I have never <input type="text" id="blank3" /></label>
+      <span id="fillIcon3" class="fill-icon"></span>
       (be) to Japan.
       <br />
       <button onclick="checkAnswers()">Check answers</button>
       <div id="result"></div>
-      <button onclick="resetAnswers()">Reset</button>
+      <button onclick="resetFill()">Reset</button>
     </div>
   </main>
 </body>
 
 <script>
-  // RADIO
-
-  function resetRadios() {
-    var radios = document.querySelectorAll('input[type="radio"]');
-    radios.forEach(function (radio) {
-      radio.checked = false;
-    });
-  }
-
-  // CHECKBOX
-
-  function resetCheckboxes() {
-    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(function (checkbox) {
-      checkbox.checked = false;
-    });
-  }
-
-  // DROPDOWN
-
-  function checkAnswer(selectElement, iconId, correctValue) {
-    var selectedValue = selectElement.value;
-    var icon = document.getElementById(iconId);
-    icon.className =
-      selectedValue === correctValue ? "icon correct" : "icon incorrect";
-    icon.style.display = "inline-block";
-  }
-
-  function resetDropdowns() {
-    var selects = document.getElementsByTagName("select");
-    for (var i = 0; i < selects.length; i++) {
-      selects[i].selectedIndex = 0;
-    }
-
-    var icons = document.querySelectorAll(".icon");
-    icons.forEach(function (icon) {
-      icon.style.display = "none";
-    });
-  }
 
   // FILL IN THE BLANKS
 
@@ -196,9 +157,9 @@
     var isCorrect3 =
       document.getElementById("blank3").value.trim() === answers.blank3;
 
-    fillIcon1.className = isCorrect1 ? "icon correct" : "icon incorrect";
-    fillIcon2.className = isCorrect2 ? "icon correct" : "icon incorrect";
-    fillIcon3.className = isCorrect3 ? "icon correct" : "icon incorrect";
+    fillIcon1.className = isCorrect1 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon2.className = isCorrect2 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon3.className = isCorrect3 ? "fill-icon correct" : "fill-icon incorrect";
 
     fillIcon1.style.display = "inline-block";
     fillIcon2.style.display = "inline-block";
@@ -210,13 +171,13 @@
       : "Some answers are incorrect!";
   }
 
-  function resetAnswers() {
+  function resetFill() {
     var inputs = document.getElementsByTagName("input");
     for (var i = 0; i < inputs.length; i++) {
       inputs[i].value = "";
     }
 
-    var icons = document.querySelectorAll(".icon");
+    var icons = document.querySelectorAll(".fill-icon");
     icons.forEach(function (icon) {
       icon.style.display = "none";
     });
