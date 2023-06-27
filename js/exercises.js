@@ -10,54 +10,30 @@ function resetRadios() {
 // CHECKBOXES
 
 function checkCheckboxes() {
-  var checkboxes = document.getElementsByClassName("checkbox");
-  var correctIcons = document.getElementsByClassName("correct-icon");
-  var incorrectIcons = document.getElementsByClassName("incorrect-icon");
-  var result = document.getElementById("resultCheckboxes");
-  var correctCount = 0;
+  var checkboxes = document.querySelectorAll(".checkbox");
+  var icons = document.querySelectorAll(".checkbox-icon");
 
   for (var i = 0; i < checkboxes.length; i++) {
     var checkbox = checkboxes[i];
-    var correctIcon = correctIcons[i];
-    var incorrectIcon = incorrectIcons[i];
+    var icon = icons[i];
 
-    if (checkbox.dataset.correct === "true") {
-      if (checkbox.checked) {
-        correctIcon.classList.remove("invisible");
-        incorrectIcon.classList.add("invisible");
-        correctCount++;
-      } else {
-        correctIcon.classList.add("invisible");
-        incorrectIcon.classList.remove("invisible");
-      }
+    if (checkbox.getAttribute("data-correct") === "true") {
+      icon.classList.remove("invisible");
     }
   }
-
-  result.textContent = "Correct answers: " + correctCount;
 }
 
 function resetCheckboxes() {
-  var checkboxes = document.getElementsByClassName("checkbox");
-  var correctIcons = document.getElementsByClassName("correct-icon");
-  var incorrectIcons = document.getElementsByClassName("incorrect-icon");
-  var result = document.getElementById("resultCheckboxes");
+  var checkboxes = document.querySelectorAll(".checkbox");
+  var icons = document.querySelectorAll(".checkbox-icon");
 
   for (var i = 0; i < checkboxes.length; i++) {
     var checkbox = checkboxes[i];
+    var icon = icons[i];
+
     checkbox.checked = false;
+    icon.classList.add("invisible");
   }
-
-  for (var i = 0; i < correctIcons.length; i++) {
-    var correctIcon = correctIcons[i];
-    correctIcon.classList.add("invisible");
-  }
-
-  for (var i = 0; i < incorrectIcons.length; i++) {
-    var incorrectIcon = incorrectIcons[i];
-    incorrectIcon.classList.add("invisible");
-  }
-
-  result.textContent = "";
 }
 
 // DROPDOWN 
