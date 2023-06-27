@@ -7,35 +7,73 @@ function resetRadios() {
   });
 }
 
-// CHECKBOX  RESET BUTTON
+// CHECKBOX
 
+function checkCheckboxes() {
+  var checkboxes = document.getElementsByClassName("checkbox");
+  var correctIcons = document.getElementsByClassName("correct-icon");
+  var incorrectIcons = document.getElementsByClassName("incorrect-icon");
+  var result = document.getElementById("result");
+  var correctCount = 0;
 
+  for (var i = 0; i < checkboxes.length; i++) {
+    var checkbox = checkboxes[i];
+    var correctIcon = correctIcons[i];
+    var incorrectIcon = incorrectIcons[i];
 
-function resetCheckboxes() {
-  var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  checkboxes.forEach(function (checkbox) {
-    checkbox.checked = false;
-  });
+    if (checkbox.dataset.correct === "true") {
+      if (checkbox.checked) {
+        correctIcon.classList.remove("invisible");
+        incorrectIcon.classList.add("invisible");
+        correctCount++;
+      } else {
+        correctIcon.classList.add("invisible");
+        incorrectIcon.classList.remove("invisible");
+      }
+    }
+  }
+
+  result.textContent = "Correct answers: " + correctCount;
 }
 
-  // DROPDOWN 
+function resetCheckboxes() {
+  var checkboxes = document.getElementsByClassName("checkbox");
+  var correctIcons = document.getElementsByClassName("correct-icon");
+  var incorrectIcons = document.getElementsByClassName("incorrect-icon");
+  var result = document.getElementById("result");
 
-  function checkAnswer(selectElement, iconId, correctValue) {
-    var selectedValue = selectElement.value;
-    var icon = document.getElementById(iconId);
-    icon.className =
-      selectedValue === correctValue ? "icon correct" : "icon incorrect";
-    icon.style.display = "inline-block";
+  for (var i = 0; i < checkboxes.length; i++) {
+    var checkbox = checkboxes[i];
+    checkbox.checked = false;
   }
 
-  function resetDropdowns() {
-    var selects = document.getElementsByTagName("select");
-    for (var i = 0; i < selects.length; i++) {
-      selects[i].selectedIndex = 0;
-    }
-
-    var icons = document.querySelectorAll(".icon");
-    icons.forEach(function (icon) {
-      icon.style.display = "none";
-    });
+  for (var i = 0; i < correctIcons.length; i++) {
+    var correctIcon = correctIcons[i];
+    correctIcon.classList.add("invisible");
   }
+
+  for (var i = 0; i < incorrectIcons.length; i++) {
+    var incorrectIcon = incorrectIcons[i];
+    incorrectIcon.classList.add("invisible");
+  }
+
+  result.textContent = "";
+}
+
+// DROPDOWN 
+
+
+
+// DROPDOWN RESET BUTTON
+
+function resetDropdowns() {
+  var selects = document.getElementsByTagName("select");
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].selectedIndex = 0;
+  }
+
+  var icons = document.querySelectorAll(".icon");
+  icons.forEach(function (icon) {
+    icon.style.display = "none";
+  });
+}

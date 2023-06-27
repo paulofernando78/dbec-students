@@ -19,7 +19,7 @@
 
     <!-- RADIO -->
 
-    <p><b>RADIO</b></p>
+    <p><b>RADIO </b></p>
     <br />
     <div class="p">
       <p><b>1. Choose the correct answer.</b></p>
@@ -43,68 +43,77 @@
 
     <p><b>CHECKBOX</b></p>
     <br />
-    <div class="p">
-      <p><b>1. Select the correct answers.</b></p>
-      <br />
-      <p>1. Select fruit only.</p>
-      <div class="align-items-center">
-        <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="checkbox" />
-        <label for="checkbox-1a">a&#41; banana</label>
-      </div>
-      <div class="align-items-center">
-        <input type="checkbox" name="checkbox-1b" id="checkbox-1b" class="checkbox" />
-        <label for="checkbox-1b">b&#41; meat</label>
-      </div>
-      <div class="align-items-center">
-        <input type="checkbox" name="checkbox-1c" id="checkbox-1c" class="checkbox" />
-        <label for="checkbox-1c">c&#41; apple</label>
-      </div>
-      <button onclick="checkAllAnswers()">Check Answer</button>
-      <button onclick="resetCheckboxes()">Reset</button>
-    </div>
+<div class="p">
+  <p><b>1. Select the correct answer.</b></p>
+  <br />
+  <p>1. Fruit only.</p>
+  <div class="align-items-center">
+    <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox" data-correct="true">
+    <label for="checkbox-1a">a&#41; banana</label>
+    <span class="icon checkbox-icon correct-icon invisible"></span>
+    <span class="icon checkbox-icon incorrect-icon invisible"></span>
+  </div>
+  <div class="align-items-center">
+    <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox" data-correct="false">
+    <label for="checkbox-1b">b&#41; meat</label>
+    <span class="icon checkbox-icon correct-icon invisible"></span>
+    <span class="icon checkbox-icon incorrect-icon invisible"></span>
+  </div>
+  <div class="align-items-center">
+    <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox" data-correct="true">
+    <label for="checkbox-1c">c&#41; apple</label>
+    <span class="icon checkbox-icon correct-icon invisible"></span>
+    <span class="icon checkbox-icon incorrect-icon invisible"></span>
+  </div>
+  <button onclick="checkCheckboxes()">Check Answer</button>
+  <button onclick="resetCheckboxes()">Reset</button>
+  <p id="result"></p>
+</div>
     <br />
     <hr />
     <br />
 
     <!-- DROPDOWN MENU -->
 
-    <div class="p">
-      <p><b>DROPDOWN</b></p>
-      <br />
-      <p><b>1. Choose the correct answer.</b></p>
-      <br />
-      <label for="option1">a) I</label>
-      <select name="option1" id="option1" onchange="checkAnswer(this, 'icon1', 'a')">
-        <option value="na">...</option>
-        <option value="a">am</option>
-        <option value="b">are</option>
-        <option value="c">is</option>
-      </select>
-      a teacher.
-      <span id="icon1" class="icon"></span>
-      <br />
-      <label for="option2">b) He</label>
-      <select name="option2" id="option2" onchange="checkAnswer(this, 'icon2', 'c')">
-        <option value="na">...</option>
-        <option value="a">am</option>
-        <option value="b">are</option>
-        <option value="c">is</option>
-      </select>
-      a student.
-      <span id="icon2" class="icon"></span>
-      <br />
-      <label for="option3">c) We</label>
-      <select name="option3" id="option3" onchange="checkAnswer(this, 'icon3', 'b')">
-        <option value="na">...</option>
-        <option value="a">am</option>
-        <option value="b">are</option>
-        <option value="c">is</option>
-      </select>
-      happy.
-      <span id="icon3" class="icon"></span>
-      <br />
-      <button onclick="resetDropdowns()">Reset</button>
-    </div>
+<div class="p">
+  <p><b>DROPDOWN</b></p>
+  <br />
+  <p><b>1. Choose the correct answer.</b></p>
+  <br />
+  <label for="option1">a&#41; I</label>
+  <select name="option1" id="option1">
+    <option value="na">...</option>
+    <option value="a">am</option>
+    <option value="b">are</option>
+    <option value="c">is</option>
+  </select>
+  a teacher.
+  <span id="icon1" class="icon checkbox-icon"></span>
+  <br />
+  <label for="option2">b&#41; He</label>
+  <select name="option2" id="option2">
+    <option value="na">...</option>
+    <option value="a">am</option>
+    <option value="b">are</option>
+    <option value="c">is</option>
+  </select>
+  a student.
+  <span id="icon2" class="icon checkbox-icon"></span>
+  <br />
+  <label for="option3">c&#41; We</label>
+  <select name="option3" id="option3">
+    <option value="na">...</option>
+    <option value="a">am</option>
+    <option value="b">are</option>
+    <option value="c">is</option>
+  </select>
+  happy.
+  <span id="icon3" class="icon checkbox-icon"></span>
+  <br />
+  <button onclick="checkAllAnswers()">Check Answers</button>
+  <button onclick="resetDropdowns()">Reset</button>
+  <p id="result"></p>
+</div>
     <br />
     <hr />
     <br />
@@ -128,9 +137,9 @@
       <span id="fillIcon3" class="fill-icon"></span>
       (be) to Japan.
       <br />
-      <button onclick="checkAnswers()">Check answers</button>
-      <div id="result"></div>
+      <button onclick="checkFill()">Check answers</button>
       <button onclick="resetFill()">Reset</button>
+      <div id="result"></div>
     </div>
   </main>
 </body>
@@ -139,7 +148,7 @@
 
   // FILL IN THE BLANKS
 
-  function checkAnswers() {
+  function checkFill() {
     var answers = {
       blank1: "is",
       blank2: "went",
