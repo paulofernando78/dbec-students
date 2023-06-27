@@ -67,7 +67,7 @@
   </div>
   <button onclick="checkCheckboxes()">Check Answer</button>
   <button onclick="resetCheckboxes()">Reset</button>
-  <p id="result"></p>
+  <p id="resultCheckboxes"></p>
 </div>
     <br />
     <hr />
@@ -139,7 +139,7 @@
       <br />
       <button onclick="checkFill()">Check answers</button>
       <button onclick="resetFill()">Reset</button>
-      <div id="result"></div>
+      <div id="resultFill"></div>
     </div>
   </main>
 </body>
@@ -158,7 +158,7 @@
     var fillIcon1 = document.getElementById("fillIcon1");
     var fillIcon2 = document.getElementById("fillIcon2");
     var fillIcon3 = document.getElementById("fillIcon3");
-    var result = document.getElementById("result");
+    var result = document.getElementById("resultFill");
 
     var isCorrect1 =
       document.getElementById("blank1").value.trim() === answers.blank1;
@@ -177,8 +177,8 @@
 
     var allCorrect = isCorrect1 && isCorrect2 && isCorrect3;
     result.innerHTML = allCorrect
-      ? "All answers are correct!"
-      : "Some answers are incorrect!";
+      ? "Congratulations."
+      : "Please, try it again.";
   }
 
   function resetFill() {
@@ -192,7 +192,7 @@
       icon.style.display = "none";
     });
 
-    var result = document.getElementById("result");
+    var result = document.getElementById("resultFill");
     result.innerHTML = "";
   }
 </script>

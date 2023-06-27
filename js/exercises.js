@@ -7,13 +7,13 @@ function resetRadios() {
   });
 }
 
-// CHECKBOX
+// CHECKBOXES
 
 function checkCheckboxes() {
   var checkboxes = document.getElementsByClassName("checkbox");
   var correctIcons = document.getElementsByClassName("correct-icon");
   var incorrectIcons = document.getElementsByClassName("incorrect-icon");
-  var result = document.getElementById("result");
+  var result = document.getElementById("resultCheckboxes");
   var correctCount = 0;
 
   for (var i = 0; i < checkboxes.length; i++) {
@@ -40,7 +40,7 @@ function resetCheckboxes() {
   var checkboxes = document.getElementsByClassName("checkbox");
   var correctIcons = document.getElementsByClassName("correct-icon");
   var incorrectIcons = document.getElementsByClassName("incorrect-icon");
-  var result = document.getElementById("result");
+  var result = document.getElementById("resultCheckboxes");
 
   for (var i = 0; i < checkboxes.length; i++) {
     var checkbox = checkboxes[i];
