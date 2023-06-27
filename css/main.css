@@ -18,8 +18,8 @@
     --subtitle-font-size: 1.8rem;
     --paragraph-font-size: 1.3rem;
     --font-size-smaller: 0.8rem;
-    --icon-correct: invert(35%) sepia(15%) saturate(2476%) hue-rotate(86deg) brightness(110%) contrast(119%);
-    --icon-incorrect: invert(20%) sepia(50%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(119%);
+    ---icon-correct: invert(35%) sepia(15%) saturate(2476%) hue-rotate(86deg) brightness(110%) contrast(119%);
+    ---icon-incorrect: invert(20%) sepia(50%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(119%);
 }
 
 /* MAIN PAGE */

@@ -3,7 +3,7 @@
 
 .radio-correct[type="radio"] {
   appearance: none;
-  border: 1px solid #d3d3d3;
+  /* border: 1px solid #d3d3d3; */
   border: 1px solid black;
   width: 22px;
   height: 22px;
@@ -11,6 +11,7 @@
   outline: none;
   border-radius: 100%;
   margin: 0;
+  
 }
 
 .radio-correct[type="radio"]:checked {
@@ -24,6 +25,7 @@
 .radio-correct[type="radio"]:checked::before {
   position: absolute;
   /* background: #d3d3d3; */
+  border: 1px solid black;
   border-radius: 100%;
   color: white !important;
   content: "";
@@ -38,7 +40,7 @@
 
 .radio-incorrect[type="radio"] {
   appearance: none;
-  border: 1px solid #d3d3d3;
+  /* border: 1px solid #d3d3d3; */
   border: 1px solid black;
   width: 22px;
   height: 22px;
@@ -59,6 +61,7 @@
 .radio-incorrect[type="radio"]:checked::before {
   position: absolute;
   /* background: #d3d3d3; */
+  border: 1px solid black;
   border-radius: 100%;
   color: white !important;
   content: "";
@@ -73,7 +76,7 @@
 
 .checkbox[type="checkbox"] {
   appearance: none;
-  /* border: 1px solid #d3d3d3; */
+  border: 1px solid #d3d3d3;
   border: 1px solid black;
   width: 22px;
   height: 22px;
@@ -93,7 +96,8 @@
 
 .checkbox[type="checkbox"]:checked::before {
   position: absolute;
-  /* background: #d3d3d3; */
+  background: #d3d3d3;
+  border: 1px solid black;
   border-radius: 20%;
   color: white !important;
   content: "";
@@ -132,7 +136,7 @@
   content: "";
   background-image: url(../assets/imgs/checkbox-correct.svg);
   background-size: contain;
-  filter: var(--icon-correct);
+  filter: var(--checkbox-icon-correct);
   width: 22px;
   height: 22px; 
 }

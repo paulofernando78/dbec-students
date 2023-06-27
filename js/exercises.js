@@ -9,6 +9,8 @@ function resetRadios() {
 
 // CHECKBOX  RESET BUTTON
 
+
+
 function resetCheckboxes() {
   var checkboxes = document.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach(function (checkbox) {
