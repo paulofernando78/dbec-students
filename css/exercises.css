@@ -152,34 +152,25 @@
 
 /* DROPDOWN MENU */
 
-.drop-icon {
-  display: none;
-  margin-left: 5px;
-}
 
-.drop-icon.correct::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../assets/imgs/correct.svg);
-  background-size: contain;
-  filter: var(--icon-correct);
-  width: 22px;
-  height: 22px;
-}
+.dropdown-icon {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
 
-.drop-icon.incorrect::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../assets/imgs/incorrect.svg);
-  background-size: contain;
-  filter: var(--icon-incorrect);
-  width: 22px;
-  height: 22px;
-}
+  .correct-icon {
+    background-image: url(../assets/imgs/correct.svg);
+    filter: var(--icon-correct);
+  }
 
-#result {
-  margin-top: 10px;
-}
+  .incorrect-icon {
+    background-image: url(../assets/imgs/incorrect.svg);
+    filter: var(--icon-incorrect);
+  }
 
 /* FILL IN THE BLANKS */
 
