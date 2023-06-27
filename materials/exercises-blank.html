@@ -60,6 +60,11 @@
     <label for="checkbox-1c">c&#41; apple</label>
     <span class="icon checkbox-icon invisible"></span>
   </div>
+   <div class="align-items-center">
+    <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox">
+    <label for="checkbox-1c">c&#41; bread</label>
+    <span class="icon checkbox-icon invisible"></span>
+  </div>
   <button onclick="checkCheckboxes()">Check answers</button>
   <button onclick="resetCheckboxes()">Reset</button>
   <p id="resultCheckboxes"></p>
@@ -103,6 +108,16 @@
     <option value="c">is</option>
   </select>
   happy.
+  <span class="dropdown-icon icon invisible"></span>
+    <br />
+  <label>d&#41; She wakes up</label>
+  <select id="option4">
+    <option value="na">...</option>
+    <option value="a">in</option>
+    <option value="b">at</option>
+    <option value="c">on</option>
+  </select>
+  6 a.m. every day.
   <span class="dropdown-icon icon invisible"></span>
   <br />
   <button onclick="checkDropdowns()">Check Answers</button>
@@ -181,32 +196,39 @@ function resetCheckboxes() {
 
 // DROPDOWN 
 
-  function checkDropdowns() {
-    var dropdowns = document.querySelectorAll("select");
-    var dropdownIcons = document.querySelectorAll(".dropdown-icon");
-    var resultElement = document.getElementById("result");
-    var correctAnswers = ["a", "c", "b"];
+function checkDropdowns() {
+  var dropdowns = document.querySelectorAll("select");
+  var dropdownIcons = document.querySelectorAll(".dropdown-icon");
+  var resultElement = document.getElementById("result");
+  var correctAnswers = ["a", "c", "b", "b"];
 
-    var allCorrect = true;
+  var correctCount = 0;
+  var incorrectCount = 0;
 
-    for (var i = 0; i < dropdowns.length; i++) {
-      var dropdown = dropdowns[i];
-      var dropdownIcon = dropdownIcons[i];
-      var selectedOption = dropdown.value;
+  for (var i = 0; i < dropdowns.length; i++) {
+    var dropdown = dropdowns[i];
+    var dropdownIcon = dropdownIcons[i];
+    var selectedOption = dropdown.value;
 
     if (selectedOption !== correctAnswers[i]) {
-      allCorrect = false;
       dropdownIcon.classList.add("incorrect-icon");
-      dropdownIcon.classList.remove("correct-icon"); // Remove 'correct-icon' class if previously added
+      dropdownIcon.classList.remove("correct-icon");
+      incorrectCount++;
     } else {
       dropdownIcon.classList.add("correct-icon");
-      dropdownIcon.classList.remove("incorrect-icon"); // Remove 'incorrect-icon' class if previously added
+      dropdownIcon.classList.remove("incorrect-icon");
+      correctCount++;
     }
     dropdownIcon.classList.remove("invisible");
   }
 
-    console.log("Selected answers:", dropdowns);
+  if (correctCount === dropdowns.length) {
+    resultElement.textContent = "Congratulations! All answers are correct.";
+  } else {
+    resultElement.textContent = "You have " + correctCount + " correct answer(s) and " + incorrectCount + " incorrect answer(s). Please try again.";
   }
+}
+
 
   function resetDropdowns() {
     var dropdowns = document.querySelectorAll("select");
