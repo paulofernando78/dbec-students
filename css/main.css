@@ -317,7 +317,8 @@ p {
 .align-items-center {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    padding: 2px;
 }
 
 /* IMAGES */
