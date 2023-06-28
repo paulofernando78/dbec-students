@@ -148,6 +148,11 @@
       <span id="fillIcon3" class="fill-icon"></span>
       (be) to Japan.
       <br />
+      <label>d&#41; They <input type="text" id="blank4" /></label>
+      <span id="fillIcon4" class="fill-icon"></span>
+      teachers.
+      <br>
+
       <button onclick="checkFill()">Check answers</button>
       <button onclick="resetFill()">Reset</button>
       <div id="resultFill"></div>
@@ -261,64 +266,84 @@
   // FILL IN THE BLANKS
 
   function checkFill() {
-  var answers = {
-    blank1: "is",
-    blank2: "went",
-    blank3: "been",
-  };
+    var answers = {
+      blank1: "is",
+      blank2: "went",
+      blank3: "been",
+      blank4: ["are", "'re"]
+    };
 
-  var fillIcon1 = document.getElementById("fillIcon1");
-  var fillIcon2 = document.getElementById("fillIcon2");
-  var fillIcon3 = document.getElementById("fillIcon3");
-  var result = document.getElementById("resultFill");
+    var fillIcon1 = document.getElementById("fillIcon1");
+    var fillIcon2 = document.getElementById("fillIcon2");
+    var fillIcon3 = document.getElementById("fillIcon3");
+    var fillIcon4 = document.getElementById("fillIcon4");
+    var result = document.getElementById("resultFill");
 
-  var isCorrect1 =
-    document.getElementById("blank1").value.trim() === answers.blank1;
-  var isCorrect2 =
-    document.getElementById("blank2").value.trim() === answers.blank2;
-  var isCorrect3 =
-    document.getElementById("blank3").value.trim() === answers.blank3;
+    var isCorrect1 =
+      document.getElementById("blank1").value.trim() === answers.blank1;
+    var isCorrect2 =
+      document.getElementById("blank2").value.trim() === answers.blank2;
+    var isCorrect3 =
+      document.getElementById("blank3").value.trim() === answers.blank3;
+    var isCorrect4 = answers.blank4.includes(document.getElementById("blank4").value.trim());
 
-  fillIcon1.className = isCorrect1 ? "fill-icon correct" : "fill-icon incorrect";
-  fillIcon2.className = isCorrect2 ? "fill-icon correct" : "fill-icon incorrect";
-  fillIcon3.className = isCorrect3 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon1.className = isCorrect1 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon2.className = isCorrect2 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon3.className = isCorrect3 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon4.className = isCorrect4 ? "fill-icon correct" : "fill-icon incorrect";
 
-  fillIcon1.style.display = "inline-block";
-  fillIcon2.style.display = "inline-block";
-  fillIcon3.style.display = "inline-block";
+    fillIcon1.style.display = "inline-block";
+    fillIcon2.style.display = "inline-block";
+    fillIcon3.style.display = "inline-block";
+    fillIcon4.style.display = "inline-block";
 
-  var correctCount = 0;
-  var incorrectCount = 0;
+    var correctCount = 0;
+    var incorrectCount = 0;
 
-  if (isCorrect1) {
-    correctCount++;
-  } else {
-    incorrectCount++;
+    if (isCorrect1) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    if (isCorrect2) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    if (isCorrect3) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    var resultMessage = "";
+    if (correctCount > 0) {
+      resultMessage += "Correct answers: " + correctCount + "<br/>";
+    }
+
+    if (incorrectCount > 0) {
+      resultMessage += "Incorrect answers: " + incorrectCount + "<br/>";
+    }
+
+    result.innerHTML = resultMessage;
   }
 
-  if (isCorrect2) {
-    correctCount++;
-  } else {
-    incorrectCount++;
-  }
+  function resetFill() {
+    var inputs = document.getElementsByTagName("input");
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].value = "";
+    }
 
-  if (isCorrect3) {
-    correctCount++;
-  } else {
-    incorrectCount++;
-  }
+    var icons = document.querySelectorAll(".fill-icon");
+    icons.forEach(function (icon) {
+      icon.style.display = "none";
+    });
 
-  var resultMessage = "";
-  if (correctCount > 0) {
-    resultMessage += "Correct answers: " + correctCount + "<br/>";
+    var result = document.getElementById("resultFill");
+    result.innerHTML = "";
   }
-
-  if (incorrectCount > 0) {
-    resultMessage += "Incorrect answers: " + incorrectCount + "<br/>";
-  }
-
-  result.innerHTML = resultMessage;
-}
 </script>
 
 </html>

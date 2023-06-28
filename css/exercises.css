@@ -105,6 +105,15 @@
   height: 22px;
 }
 
+select {
+  padding-top: 10px;
+}
+
+select option {
+  font-family: var(--font);
+  font-size: 1.2rem;
+}
+
 /* --- */
 
 .checkbox-icon {
@@ -119,6 +128,10 @@
 
 .invisible {
   display: none;
+}
+
+#resultCheckboxes {
+  margin-top: 10px;
 }
 
 /* .checkbox-icon {
@@ -172,6 +185,10 @@
     filter: var(--icon-incorrect);
   }
 
+  #result {
+  margin-top: 10px;
+}
+
 /* FILL IN THE BLANKS */
 
 .fill-icon {
@@ -199,7 +216,7 @@
   height: 22px;
 }
 
-#result {
+#resultFill {
   margin-top: 10px;
 }
 
