@@ -58,9 +58,38 @@
           height="480" class="video-iframe-mobile"></iframe>
         <br>
         <br>
-        <div class="justify">
-          <p>Jenny Zielinski and Rob Walker work for a <sup>1</sup> <input type="text"> called New York 24seven. She's American, and he's <sup>2</sup> <input type="text">. Rob came to New York a few <sup>3</sup> <input type="text" name="" id=""> ago. He had met Jenny when she went to <sup>4</sup> <input type="text"> on a work trip. They got a long very well, and he was offered a job for a month in <sup>5</sup> <input type="text">. Later he was offered a <sup>6</sup> <input type="text" name="" id=""> job. Jenny helped Rob <sup>7</sup> <input type="text" name="" id=""> an apartment, and they are enjoying life in the US, although Rob misses his friends and <sup>8</sup> <input type="text" name="" id="">.
-          </p>
+
+        <!-- FILL IN THE BLANKS -->
+
+        <div class="p">
+          <label>Jenny Zielinski and Rob Walker work for a <sup>1</sup> <input type="text" id="blank1" /> called New York 24seven.</label>
+          <span id="fillIcon1" class="fill-icon"></span>
+
+          <label>She's American, and he's <sup>2</sup> <input type="text" id="blank2" /></label>
+          <span id="fillIcon2" class="fill-icon"></span>.
+
+          <label>Rob came to New York a few <sup>3</sup> <input type="text" id="blank3" /> ago</label>
+          <span id="fillIcon3" class="fill-icon"></span>
+
+          <label>He had met Jenny when she went to <sup>4</sup> <input type="text" id="blank4" /> on a work trip.</label>
+          <span id="fillIcon4" class="fill-icon"></span>
+
+          <label>They got a long very well, and he was offered a job for a month in <sup>5</sup> <input type="text" id="blank5" />.</label>
+          <span id="fillIcon5" class="fill-icon"></span>
+
+          <label>Later he was offered a <sup>6</sup> <input type="text" id="blank6" /> job</label>
+          <span id="fillIcon6" class="fill-icon"></span>
+
+          <label>Jenny helped Rob <sup>7</sup> <input type="text" id="blank7" /> an apartment, and they are enjoying life in the US, although Rob misses his friends and
+          <span id="fillIcon7" class="fill-icon"> </span>
+
+          <sup>8</sup> <input type="text" id="blank8" /></label>
+          <span id="fillIcon8" class="fill-icon"></span>
+
+          <br>
+          <button onclick="checkFill()">Check answers</button>
+          <button onclick="resetFill()">Reset</button>
+          <div id="resultFill"></div>
         </div>
         <br>
         <br>
@@ -70,7 +99,8 @@
         <br>
         <p class="ribbon-green">High-controlled oral practice</p>
         <br>
-        <iframe src="https://drive.google.com/file/d/1_WW-xuPWS6RbnD_N9qK0puA3KliWcKul/preview" width="100%" height="480" class="video-iframe-mobile"></iframe>
+        <iframe src="https://drive.google.com/file/d/1_WW-xuPWS6RbnD_N9qK0puA3KliWcKul/preview" width="100%"
+          height="480" class="video-iframe-mobile"></iframe>
         <p>...</p>
         <br>
         <p class="ribbon-green">Low-controlled oral practice</p>
@@ -110,5 +140,144 @@
     </section>
   </main>
 </body>
+
+<script>
+  // FILL IN THE BLANKS
+
+  function checkFill() {
+    var answers = {
+      blank1: "magazine",
+      blank2: "British",
+      blank3: "months",
+      blank4: "London",
+      blank5: "New York",
+      blank6: "permament",
+      blank7: "find",
+      blank8: "family"
+    };
+
+    var fillIcon1 = document.getElementById("fillIcon1");
+    var fillIcon2 = document.getElementById("fillIcon2");
+    var fillIcon3 = document.getElementById("fillIcon3");
+    var fillIcon4 = document.getElementById("fillIcon4");
+    var fillIcon5 = document.getElementById("fillIcon5");
+    var fillIcon6 = document.getElementById("fillIcon6");
+    var fillIcon7 = document.getElementById("fillIcon7");
+    var fillIcon8 = document.getElementById("fillIcon8");
+    var result = document.getElementById("resultFill");
+
+    var isCorrect1 =
+      document.getElementById("blank1").value.trim() === answers.blank1;
+    var isCorrect2 =
+      document.getElementById("blank2").value.trim() === answers.blank2;
+    var isCorrect3 =
+      document.getElementById("blank3").value.trim() === answers.blank3;
+    var isCorrect4 =
+      document.getElementById("blank4").value.trim() === answers.blank4;
+    var isCorrect5 =
+      document.getElementById("blank5").value.trim() === answers.blank5;
+    var isCorrect6 =
+      document.getElementById("blank6").value.trim() === answers.blank6;
+    var isCorrect7 =
+      document.getElementById("blank7").value.trim() === answers.blank7;
+    var isCorrect8 =
+      document.getElementById("blank8").value.trim() === answers.blank8;
+
+    fillIcon1.className = isCorrect1 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon2.className = isCorrect2 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon3.className = isCorrect3 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon4.className = isCorrect4 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon5.className = isCorrect5 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon6.className = isCorrect6 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon7.className = isCorrect7 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon8.className = isCorrect8 ? "fill-icon correct" : "fill-icon incorrect";
+
+    fillIcon1.style.display = "inline-block";
+    fillIcon2.style.display = "inline-block";
+    fillIcon3.style.display = "inline-block";
+    fillIcon4.style.display = "inline-block";
+    fillIcon5.style.display = "inline-block";
+    fillIcon6.style.display = "inline-block";
+    fillIcon7.style.display = "inline-block";
+    fillIcon8.style.display = "inline-block";
+
+    var correctCount = 0;
+    var incorrectCount = 0;
+
+    if (isCorrect1) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    if (isCorrect2) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    if (isCorrect3) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    if (isCorrect4) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    if (isCorrect5) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    if (isCorrect6) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    if (isCorrect7) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    if (isCorrect8) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
+    var resultMessage = "";
+    if (correctCount > 0) {
+      resultMessage += "Correct answers: " + correctCount + "<br/>";
+    }
+
+    if (incorrectCount > 0) {
+      resultMessage += "Incorrect answers: " + incorrectCount + "<br/>";
+    }
+
+    result.innerHTML = resultMessage;
+  }
+
+  function resetFill() {
+    var inputs = document.getElementsByTagName("input");
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].value = "";
+    }
+
+    var icons = document.querySelectorAll(".fill-icon");
+    icons.forEach(function (icon) {
+      icon.style.display = "none";
+    });
+
+    var result = document.getElementById("resultFill");
+    result.innerHTML = "";
+  }
+</script>
 
 </html>
