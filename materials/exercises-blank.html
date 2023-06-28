@@ -318,6 +318,12 @@
       incorrectCount++;
     }
 
+    if (isCorrect4) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+
     var resultMessage = "";
     if (correctCount > 0) {
       resultMessage += "Correct answers: " + correctCount + "<br/>";
