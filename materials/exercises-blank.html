@@ -197,43 +197,48 @@
   // CHECKBOXES
 
 function checkCheckboxes() {
-    var checkboxes = document.querySelectorAll(".checkbox");
-    var icons = document.querySelectorAll(".checkbox-icon");
-    var totalCheckboxes = checkboxes.length;
-    var correctCount = 0;
+  var checkboxes = document.querySelectorAll(".checkbox");
+  var icons = document.querySelectorAll(".checkbox-icon");
+  var totalCheckboxes = checkboxes.length;
+  var correctCount = 0;
 
-    for (var i = 0; i < totalCheckboxes; i++) {
-      var checkbox = checkboxes[i];
-      var icon = icons[i];
+  for (var i = 0; i < totalCheckboxes; i++) {
+    var checkbox = checkboxes[i];
+    var icon = icons[i];
 
-      if (checkbox.checked && checkbox.getAttribute("data-correct") === "true") {
-        correctCount++;
-      }
-
-      if (checkbox.getAttribute("data-correct") === "true") {
-        icon.classList.remove("invisible");
-      }
+    if (checkbox.checked && checkbox.getAttribute("data-correct") === "true") {
+      correctCount++;
     }
 
-    var resultElement = document.getElementById("resultCheckboxes");
-    resultElement.textContent = "You have selected " + correctCount + " correct answer(s) out of " + totalCheckboxes + ".";
-  }
-
-  function resetCheckboxes() {
-    var checkboxes = document.querySelectorAll(".checkbox");
-    var icons = document.querySelectorAll(".checkbox-icon");
-    var resultElement = document.getElementById("resultCheckboxes");
-
-    for (var i = 0; i < checkboxes.length; i++) {
-      var checkbox = checkboxes[i];
-      var icon = icons[i];
-
-      checkbox.checked = false;
-      icon.classList.add("invisible");
+    if (checkbox.getAttribute("data-correct") === "true") {
+      icon.classList.remove("invisible");
     }
-
-    resultElement.textContent = "";
   }
+
+  var resultElement = document.getElementById("resultCheckboxes");
+  resultElement.textContent =
+    "You have achieved " +
+    correctCount +
+    " correct answer(s) out of " +
+    document.querySelectorAll(".checkbox[data-correct='true']").length +
+    ".";
+}
+
+function resetCheckboxes() {
+  var checkboxes = document.querySelectorAll(".checkbox");
+  var icons = document.querySelectorAll(".checkbox-icon");
+  var resultElement = document.getElementById("resultCheckboxes");
+
+  for (var i = 0; i < checkboxes.length; i++) {
+    var checkbox = checkboxes[i];
+    var icon = icons[i];
+
+    checkbox.checked = false;
+    icon.classList.add("invisible");
+  }
+
+  resultElement.textContent = "";
+}
 
   // DROPDOWN 
 
