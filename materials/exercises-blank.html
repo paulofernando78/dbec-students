@@ -151,7 +151,7 @@
       <p><b>1. Write the correct answer.</b></p>
       <br />
       <label>a&#41; My name <input type="text" id="blank1" />
-        <span id="fillIcon1" class="fill-icon"></span>Mike.</label>
+        <span id="fillIcon1" class="fill-icon"></span> Mike.</label>
       <br />
 
       <label>b&#41; He <input type="text" id="blank2" />
@@ -196,12 +196,13 @@
 
   // CHECKBOXES
 
-  function checkCheckboxes() {
+function checkCheckboxes() {
     var checkboxes = document.querySelectorAll(".checkbox");
     var icons = document.querySelectorAll(".checkbox-icon");
+    var totalCheckboxes = checkboxes.length;
     var correctCount = 0;
 
-    for (var i = 0; i < checkboxes.length; i++) {
+    for (var i = 0; i < totalCheckboxes; i++) {
       var checkbox = checkboxes[i];
       var icon = icons[i];
 
@@ -215,12 +216,13 @@
     }
 
     var resultElement = document.getElementById("resultCheckboxes");
-    resultElement.textContent = "You have selected " + correctCount + " correct answer(s).";
+    resultElement.textContent = "You have selected " + correctCount + " correct answer(s) out of " + totalCheckboxes + ".";
   }
 
   function resetCheckboxes() {
     var checkboxes = document.querySelectorAll(".checkbox");
     var icons = document.querySelectorAll(".checkbox-icon");
+    var resultElement = document.getElementById("resultCheckboxes");
 
     for (var i = 0; i < checkboxes.length; i++) {
       var checkbox = checkboxes[i];
@@ -229,42 +231,46 @@
       checkbox.checked = false;
       icon.classList.add("invisible");
     }
+
+    resultElement.textContent = "";
   }
 
   // DROPDOWN 
 
-  function checkDropdowns() {
-    var dropdowns = document.querySelectorAll("select");
-    var dropdownIcons = document.querySelectorAll(".dropdown-icon");
-    var resultElement = document.getElementById("result");
-    var correctAnswers = ["a", "c", "b", "b"];
+function checkDropdowns() {
+  var dropdowns = document.querySelectorAll("select");
+  var dropdownIcons = document.querySelectorAll(".dropdown-icon");
+  var resultElement = document.getElementById("result");
+  var correctAnswers = ["a", "c", "b", "b"];
 
-    var correctCount = 0;
-    var incorrectCount = 0;
+  var totalDropdowns = dropdowns.length;
+  var correctCount = 0;
+  var incorrectCount = 0;
 
-    for (var i = 0; i < dropdowns.length; i++) {
-      var dropdown = dropdowns[i];
-      var dropdownIcon = dropdownIcons[i];
-      var selectedOption = dropdown.value;
+  for (var i = 0; i < dropdowns.length; i++) {
+    var dropdown = dropdowns[i];
+    var dropdownIcon = dropdownIcons[i];
+    var selectedOption = dropdown.value;
 
-      if (selectedOption !== correctAnswers[i]) {
-        dropdownIcon.classList.add("incorrect-icon");
-        dropdownIcon.classList.remove("correct-icon");
-        incorrectCount++;
-      } else {
-        dropdownIcon.classList.add("correct-icon");
-        dropdownIcon.classList.remove("incorrect-icon");
-        correctCount++;
-      }
-      dropdownIcon.classList.remove("invisible");
-    }
-
-    if (correctCount === dropdowns.length) {
-      resultElement.textContent = "Congratulations! All answers are correct.";
+    if (selectedOption !== correctAnswers[i]) {
+      dropdownIcon.classList.add("incorrect-icon");
+      dropdownIcon.classList.remove("correct-icon");
+      incorrectCount++;
     } else {
-      resultElement.textContent = "You have " + correctCount + " correct answer(s) and " + incorrectCount + " incorrect answer(s). Please try again.";
+      dropdownIcon.classList.add("correct-icon");
+      dropdownIcon.classList.remove("incorrect-icon");
+      correctCount++;
     }
+    dropdownIcon.classList.remove("invisible");
   }
+
+  if (correctCount === totalDropdowns) {
+    resultElement.textContent = "Congratulations! You selected " + correctCount + " out of " + totalDropdowns + " correct answer(s).";
+  } else {
+    resultElement.textContent = "You have selected " + correctCount + " correct answer(s) out of " + totalDropdowns + ".";
+  }
+}
+
 
 
   function resetDropdowns() {
@@ -286,91 +292,61 @@
 
   // FILL IN THE BLANKS
 
-  function checkFill() {
-    var answers = {
-      blank1: "is",
-      blank2: "went",
-      blank3: "been",
-      blank4: ["are", "'re"]
-    };
+function checkFill() {
+  var answers = {
+    blank1: "is",
+    blank2: "went",
+    blank3: "been",
+    blank4: ["are", "'re"]
+  };
 
-    var fillIcon1 = document.getElementById("fillIcon1");
-    var fillIcon2 = document.getElementById("fillIcon2");
-    var fillIcon3 = document.getElementById("fillIcon3");
-    var fillIcon4 = document.getElementById("fillIcon4");
-    var result = document.getElementById("resultFill");
+  var fillIcon1 = document.getElementById("fillIcon1");
+  var fillIcon2 = document.getElementById("fillIcon2");
+  var fillIcon3 = document.getElementById("fillIcon3");
+  var fillIcon4 = document.getElementById("fillIcon4");
+  var result = document.getElementById("resultFill");
 
-    var isCorrect1 =
-      document.getElementById("blank1").value.trim() === answers.blank1;
-    var isCorrect2 =
-      document.getElementById("blank2").value.trim() === answers.blank2;
-    var isCorrect3 =
-      document.getElementById("blank3").value.trim() === answers.blank3;
-    var isCorrect4 = answers.blank4.includes(document.getElementById("blank4").value.trim());
+  var isCorrect1 =
+    document.getElementById("blank1").value.trim() === answers.blank1;
+  var isCorrect2 =
+    document.getElementById("blank2").value.trim() === answers.blank2;
+  var isCorrect3 =
+    document.getElementById("blank3").value.trim() === answers.blank3;
+  var isCorrect4 = answers.blank4.includes(
+    document.getElementById("blank4").value.trim()
+  );
 
-    fillIcon1.className = isCorrect1 ? "fill-icon correct" : "fill-icon incorrect";
-    fillIcon2.className = isCorrect2 ? "fill-icon correct" : "fill-icon incorrect";
-    fillIcon3.className = isCorrect3 ? "fill-icon correct" : "fill-icon incorrect";
-    fillIcon4.className = isCorrect4 ? "fill-icon correct" : "fill-icon incorrect";
+  fillIcon1.className = isCorrect1 ? "fill-icon correct" : "fill-icon incorrect";
+  fillIcon2.className = isCorrect2 ? "fill-icon correct" : "fill-icon incorrect";
+  fillIcon3.className = isCorrect3 ? "fill-icon correct" : "fill-icon incorrect";
+  fillIcon4.className = isCorrect4 ? "fill-icon correct" : "fill-icon incorrect";
 
-    fillIcon1.style.display = "inline-block";
-    fillIcon2.style.display = "inline-block";
-    fillIcon3.style.display = "inline-block";
-    fillIcon4.style.display = "inline-block";
+  fillIcon1.style.display = "inline-block";
+  fillIcon2.style.display = "inline-block";
+  fillIcon3.style.display = "inline-block";
+  fillIcon4.style.display = "inline-block";
 
-    var correctCount = 0;
-    var incorrectCount = 0;
+  var totalQuestions = Object.keys(answers).length;
+  var correctCount = [isCorrect1, isCorrect2, isCorrect3, isCorrect4].filter(Boolean).length;
+  var resultMessage = "You have got " + correctCount + " correct answer(s) out of " + totalQuestions + ".";
 
-    if (isCorrect1) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
+  result.innerHTML = resultMessage;
+}
 
-    if (isCorrect2) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
-
-    if (isCorrect3) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
-
-    if (isCorrect4) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
-
-    var resultMessage = "";
-    if (correctCount > 0) {
-      resultMessage += "Correct answers: " + correctCount + "<br/>";
-    }
-
-    if (incorrectCount > 0) {
-      resultMessage += "Incorrect answers: " + incorrectCount + "<br/>";
-    }
-
-    result.innerHTML = resultMessage;
+function resetFill() {
+  var inputs = document.getElementsByTagName("input");
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].value = "";
   }
 
-  function resetFill() {
-    var inputs = document.getElementsByTagName("input");
-    for (var i = 0; i < inputs.length; i++) {
-      inputs[i].value = "";
-    }
+  var icons = document.querySelectorAll(".fill-icon");
+  icons.forEach(function (icon) {
+    icon.style.display = "none";
+  });
 
-    var icons = document.querySelectorAll(".fill-icon");
-    icons.forEach(function (icon) {
-      icon.style.display = "none";
-    });
-
-    var result = document.getElementById("resultFill");
-    result.innerHTML = "";
-  }
+  var result = document.getElementById("resultFill");
+  result.innerHTML = "";
+}
 </script>
 
 </html>
