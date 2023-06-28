@@ -165,7 +165,7 @@ select option {
 input[type="text"] {
   margin-top: .2rem;
   padding: 0 .2rem;
-  width: 100px;
+  width: 150px;
   font-family: var(--font);
   font-size: var(--paragraph-font-size)
 }
