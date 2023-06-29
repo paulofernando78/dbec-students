@@ -211,7 +211,7 @@
 
       <br />
       <br />
-      
+
       <button onclick="checkDropdowns()">Check Answers</button>
       <button onclick="resetDropdowns()">Reset</button>
       <p id="result"></p>
@@ -231,43 +231,74 @@
       <p>xxx <sup>1</sup>
         <input type="text" id="blank1" />
         <span id="fillIcon1" class="fill-icon"></span>
-        xxx</p>
+        xxx
+      </p>
 
       <p>xxx <sup>2</sup>
         <input type="text" id="blank2" />
         <span id="fillIcon2" class="fill-icon"></span>
-        xxx</p>
+        xxx
+      </p>
 
       <p>xxx <sup>3</sup>
         <input type="text" id="blank3" />
         <span id="fillIcon3" class="fill-icon"></span>
-        xxx</p>
+        xxx
+      </p>
 
       <p>xxx <sup>4</sup>
         <input type="text" id="blank4" />
         <span id="fillIcon4" class="fill-icon"></span>
-        xxx</p>
+        xxx
+      </p>
 
       <p>xxx <sup>5</sup>
         <input type="text" id="blank5" />
         <span id="fillIcon5" class="fill-icon"></span>
-        xxx</p>
+        xxx
+      </p>
 
       <p>xxx <sup>6</sup>
         <input type="text" id="blank6" />
         <span id="fillIcon6" class="fill-icon"></span>
-        xxx</p>
+        xxx
+      </p>
 
-      <p>xxx
-        <sup>7</sup> <input type="text" id="blank7" />
+      <p>xxx <sup>7</sup>
+        <input type="text" id="blank7" />
         <span id="fillIcon7" class="fill-icon"></span>
-        xxx</p>
+        xxx
+      </p>
 
-      <p>xxx
-        <sup>8</sup>
+      <p>xxx <sup>8</sup>
         <input type="text" id="blank8" />
         <span id="fillIcon8" class="fill-icon"></span>
-        xxx</p>
+        xxx
+      </p>
+
+      <p>xxx <sup>9</sup>
+        <input type="text" id="blank9" />
+        <span id="fillIcon9" class="fill-icon"></span>
+        xxx
+      </p>
+
+      <p>xxx <sup>10</sup>
+        <input type="text" id="blank10" />
+        <span id="fillIcon10" class="fill-icon"></span>
+        xxx
+      </p>
+
+      <p>xxx <sup>11</sup>
+        <input type="text" id="blank11" />
+        <span id="fillIcon11" class="fill-icon"></span>
+        xxx
+      </p>
+
+      <p>xxx <sup>12</sup>
+        <input type="text" id="blank12" />
+        <span id="fillIcon12" class="fill-icon"></span>
+        xxx
+      </p>
       <br />
 
       <button onclick="checkFill()">Check answers</button>
@@ -332,6 +363,16 @@
         xxx <sup>10</sup>
         <input type="text" id="blank10text" />
         <span id="filltextIcon10" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>11</sup>
+        <input type="text" id="blank11text" />
+        <span id="filltextIcon11" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>12</sup>
+        <input type="text" id="blank12text" />
+        <span id="filltextIcon12" class="fill-text-icon"></span>
         xxx.
       </p>
 
@@ -475,14 +516,19 @@
 
   function checkFill() {
     var answers = {
-      blank1: "xxx",
-      blank2: "xxx",
-      blank3: "xxx",
-      blank4: "xxx",
-      blank5: "xxx",
-      blank6: "xxx",
-      blank7: "xxx",
-      blank8: "xxx",
+      blank1: "1",
+      blank2: "2",
+      blank3: "3",
+      blank4: "4",
+      blank5: "5",
+      blank6: "6",
+      blank7: "7",
+      blank8: "8",
+      blank9: "9",
+      blank10: "10",
+      blank11: "11",
+      blank12: "12",
+      // blank?: ["?", "?"]
     };
 
     var fillIcon1 = document.getElementById("fillIcon1");
@@ -493,6 +539,10 @@
     var fillIcon6 = document.getElementById("fillIcon6");
     var fillIcon7 = document.getElementById("fillIcon7");
     var fillIcon8 = document.getElementById("fillIcon8");
+    var fillIcon9 = document.getElementById("fillIcon9");
+    var fillIcon10 = document.getElementById("fillIcon10");
+    var fillIcon11 = document.getElementById("fillIcon11");
+    var fillIcon12 = document.getElementById("fillIcon12");
     var result = document.getElementById("resultFill");
 
     var isCorrect1 =
@@ -511,6 +561,18 @@
       document.getElementById("blank7").value.trim() === answers.blank7;
     var isCorrect8 =
       document.getElementById("blank8").value.trim() === answers.blank8;
+    var isCorrect9 =
+      document.getElementById("blank9").value.trim() === answers.blank9;
+    var isCorrect10 =
+      document.getElementById("blank10").value.trim() === answers.blank10;
+    var isCorrect11 =
+      document.getElementById("blank11").value.trim() === answers.blank11;
+    var isCorrect12 =
+      document.getElementById("blank12").value.trim() === answers.blank12;
+
+    //   var isCorrect? = answers.blank?.includes(
+    //   document.getElementById("blank?").value.trim()
+    // );
 
     fillIcon1.className = isCorrect1
       ? "fill-icon correct"
@@ -536,6 +598,18 @@
     fillIcon8.className = isCorrect8
       ? "fill-icon correct"
       : "fill-icon incorrect";
+    fillIcon9.className = isCorrect9
+      ? "fill-icon correct"
+      : "fill-icon incorrect";
+    fillIcon10.className = isCorrect10
+      ? "fill-icon correct"
+      : "fill-icon incorrect";
+    fillIcon11.className = isCorrect11
+      ? "fill-icon correct"
+      : "fill-icon incorrect";
+    fillIcon12.className = isCorrect12
+      ? "fill-icon correct"
+      : "fill-icon incorrect";
 
     fillIcon1.style.display = "inline-block";
     fillIcon2.style.display = "inline-block";
@@ -545,6 +619,10 @@
     fillIcon6.style.display = "inline-block";
     fillIcon7.style.display = "inline-block";
     fillIcon8.style.display = "inline-block";
+    fillIcon9.style.display = "inline-block";
+    fillIcon10.style.display = "inline-block";
+    fillIcon11.style.display = "inline-block";
+    fillIcon12.style.display = "inline-block";
 
     var totalQuestions = Object.keys(answers).length;
     var correctCount = [
@@ -552,6 +630,14 @@
       isCorrect2,
       isCorrect3,
       isCorrect4,
+      isCorrect5,
+      isCorrect6,
+      isCorrect7,
+      isCorrect8,
+      isCorrect9,
+      isCorrect10,
+      isCorrect11,
+      isCorrect12,
     ].filter(Boolean).length;
     var resultMessage =
       "You have got " +
@@ -590,6 +676,10 @@
       blank6text: "6",
       blank7text: "7",
       blank8text: "8",
+      blank9text: "9",
+      blank10text: "10",
+      blank11text: "11",
+      blank12text: "12",
       // blank?: ["?", "?"]
     };
 
@@ -601,6 +691,10 @@
     var filltextIcon6 = document.getElementById("filltextIcon6");
     var filltextIcon7 = document.getElementById("filltextIcon7");
     var filltextIcon8 = document.getElementById("filltextIcon8");
+    var filltextIcon9 = document.getElementById("filltextIcon9");
+    var filltextIcon10 = document.getElementById("filltextIcon10");
+    var filltextIcon10 = document.getElementById("filltextIcon11");
+    var filltextIcon10 = document.getElementById("filltextIcon12");
     var result = document.getElementById("resultFilltext");
 
     var isCorrect1 =
@@ -627,6 +721,18 @@
     var isCorrect8 =
       document.getElementById("blank8text").value.trim() ===
       answers.blank8text;
+    var isCorrect9 =
+      document.getElementById("blank9text").value.trim() ===
+      answers.blank9text;
+    var isCorrect10 =
+      document.getElementById("blank10text").value.trim() ===
+      answers.blank10text;
+    var isCorrect11 =
+      document.getElementById("blank11text").value.trim() ===
+      answers.blank11text;
+    var isCorrect12 =
+      document.getElementById("blank12text").value.trim() ===
+      answers.blank12text;
 
     // var isCorrect? = answers.blank?.includes(
     //   document.getElementById("blank?").value.trim()
@@ -656,6 +762,18 @@
     filltextIcon8.className = isCorrect8
       ? "fill-text-icon correct"
       : "fill-text-icon incorrect";
+    filltextIcon9.className = isCorrect9
+      ? "fill-text-icon correct"
+      : "fill-text-icon incorrect";
+    filltextIcon10.className = isCorrect10
+      ? "fill-text-icon correct"
+      : "fill-text-icon incorrect";
+    filltextIcon11.className = isCorrect11
+      ? "fill-text-icon correct"
+      : "fill-text-icon incorrect";
+    filltextIcon12.className = isCorrect12
+      ? "fill-text-icon correct"
+      : "fill-text-icon incorrect";
 
     filltextIcon1.style.display = "inline-block";
     filltextIcon2.style.display = "inline-block";
@@ -665,6 +783,10 @@
     filltextIcon6.style.display = "inline-block";
     filltextIcon7.style.display = "inline-block";
     filltextIcon8.style.display = "inline-block";
+    filltextIcon9.style.display = "inline-block";
+    filltextIcon10.style.display = "inline-block";
+    filltextIcon11.style.display = "inline-block";
+    filltextIcon12.style.display = "inline-block";
 
     var totalQuestions = Object.keys(answers).length;
     var correctCount = [
@@ -676,6 +798,10 @@
       isCorrect6,
       isCorrect7,
       isCorrect8,
+      isCorrect9,
+      isCorrect10,
+      isCorrect11,
+      isCorrect12,
     ].filter(Boolean).length;
     var resultMessage =
       "You have got " +

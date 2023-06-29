@@ -151,7 +151,6 @@ select option {
   height: 22px;
   background-size: cover;
   display: inline-block;
-  vertical-align: middle;
   margin-left: 5px;
   display: none;
 }
