@@ -95,7 +95,7 @@
     <div class="p">
       <p><b>1. Select the correct answer.</b></p>
       <br />
-      <p>1. Fruit only.</p>
+      <p>1. xxx.</p>
 
       <div class="align-items-center">
         <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox" data-correct="true" />
@@ -110,7 +110,7 @@
       </div>
 
       <div class="align-items-center">
-        <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox" />
+        <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox " data-correct="true"" />
         <label for="checkbox-1c">c&#41; xxx</label>
         <span class="icon checkbox-icon invisible"></span>
       </div>
@@ -130,6 +130,7 @@
 
       <button onclick="checkCheckboxes()">Check answers</button>
       <button onclick="resetCheckboxes()">Reset</button>
+      <button onclick="showCheckboxes()">Show answers</button>
       <p id="resultCheckboxes"></p>
     </div>
 
@@ -402,117 +403,74 @@
     }
   }
 
-  // CHECKBOXES
+  // CHECKBOXES  
 
-  function checkCheckboxes() {
-    var checkboxes = document.querySelectorAll(".checkbox");
-    var icons = document.querySelectorAll(".checkbox-icon");
-    var totalCheckboxes = checkboxes.length;
-    var correctCount = 0;
+    function checkCheckboxes() {
+        var checkboxes = document.querySelectorAll(".checkbox");
+        var icons = document.querySelectorAll(".checkbox-icon");
+        var totalCheckboxes = checkboxes.length;
+        var correctCount = 0;
 
-    for (var i = 0; i < totalCheckboxes; i++) {
-      var checkbox = checkboxes[i];
-      var icon = icons[i];
+        for (var i = 0; i < totalCheckboxes; i++) {
+          var checkbox = checkboxes[i];
+          var icon = icons[i];
 
-      if (
-        checkbox.checked &&
-        checkbox.getAttribute("data-correct") === "true"
-      ) {
-        correctCount++;
+          if (
+            checkbox.checked &&
+            checkbox.getAttribute("data-correct") === "true"
+          ) {
+            correctCount++;
+          }
+
+          if (checkbox.getAttribute("data-correct") === "true") {
+            icon.classList.remove("invisible");
+          }
+        }
+
+        var resultElement = document.getElementById("resultCheckboxes");
+        resultElement.textContent =
+          "You have selected " +
+          correctCount +
+          " correct answer(s) out of " +
+          document.querySelectorAll(".checkbox[data-correct='true']").length +
+          ".";
       }
 
-      if (checkbox.getAttribute("data-correct") === "true") {
-        icon.classList.remove("invisible");
+      function resetCheckboxes() {
+        var checkboxes = document.querySelectorAll(".checkbox");
+        var icons = document.querySelectorAll(".checkbox-icon");
+
+        for (var i = 0; i < checkboxes.length; i++) {
+          var checkbox = checkboxes[i];
+          var icon = icons[i];
+
+          checkbox.checked = false;
+          icon.classList.add("invisible");
+        }
+
+        var resultElement = document.getElementById("resultCheckboxes");
+        resultElement.textContent = "";
       }
-    }
 
-    var resultElement = document.getElementById("resultCheckboxes");
-    resultElement.textContent =
-      "You have selected " +
-      correctCount +
-      " correct answer(s) out of " +
-      document.querySelectorAll(".checkbox[data-correct='true']").length +
-      ".";
-  }
+      function showCheckboxes() {
+        var checkboxes = document.querySelectorAll(".checkbox");
+        var icons = document.querySelectorAll(".checkbox-icon");
+        var selectedLetters = [];
 
-  function resetCheckboxes() {
-    var checkboxes = document.querySelectorAll(".checkbox");
-    var icons = document.querySelectorAll(".checkbox-icon");
-    var resultElement = document.getElementById("resultCheckboxes");
+        for (var i = 0; i < checkboxes.length; i++) {
+          var checkbox = checkboxes[i];
+          var icon = icons[i];
 
-    for (var i = 0; i < checkboxes.length; i++) {
-      var checkbox = checkboxes[i];
-      var icon = icons[i];
+          if (checkbox.getAttribute("data-correct") === "true") {
+            icon.classList.remove("invisible");
+            selectedLetters.push(checkbox.nextElementSibling.textContent.charAt(0));
+          }
+        }
 
-      checkbox.checked = false;
-      icon.classList.add("invisible");
-    }
-
-    resultElement.textContent = "";
-  }
-
-  // DROPDOWN
-
-  function checkDropdowns() {
-    var dropdowns = document.querySelectorAll("select");
-    var dropdownIcons = document.querySelectorAll(".dropdown-icon");
-    var resultElement = document.getElementById("result");
-    var correctAnswers = ["a", "a", "a", "a", "a"];
-
-    var totalDropdowns = dropdowns.length;
-    var correctCount = 0;
-    var incorrectCount = 0;
-
-    for (var i = 0; i < dropdowns.length; i++) {
-      var dropdown = dropdowns[i];
-      var dropdownIcon = dropdownIcons[i];
-      var selectedOption = dropdown.value;
-
-      if (selectedOption !== correctAnswers[i]) {
-        dropdownIcon.classList.add("incorrect-icon");
-        dropdownIcon.classList.remove("correct-icon");
-        incorrectCount++;
-      } else {
-        dropdownIcon.classList.add("correct-icon");
-        dropdownIcon.classList.remove("incorrect-icon");
-        correctCount++;
+        var resultElement = document.getElementById("resultCheckboxes");
+        resultElement.textContent =
+          "The correct answer(s) is/are " + selectedLetters.join(", ") + ".";
       }
-      dropdownIcon.style.display = "inline-block";
-    }
-
-    if (correctCount === totalDropdowns) {
-      resultElement.textContent =
-        "Congratulations! You selected " +
-        correctCount +
-        " out of " +
-        totalDropdowns +
-        " correct answer(s).";
-    } else {
-      resultElement.textContent =
-        "You have selected " +
-        correctCount +
-        " correct answer(s) out of " +
-        totalDropdowns +
-        ".";
-    }
-  }
-
-  function resetDropdowns() {
-    var dropdowns = document.querySelectorAll("select");
-    var dropdownIcons = document.querySelectorAll(".dropdown-icon");
-    var resultElement = document.getElementById("result");
-
-    for (var i = 0; i < dropdowns.length; i++) {
-      var dropdown = dropdowns[i];
-      var dropdownIcon = dropdownIcons[i];
-
-      dropdown.value = "na";
-      dropdownIcon.classList.remove("correct-icon", "incorrect-icon");
-      dropdownIcon.style.display = "none"; // Hide the icon
-    }
-
-    resultElement.textContent = "";
-  }
 
   // FILL-IN-THE-BLANKS
 
