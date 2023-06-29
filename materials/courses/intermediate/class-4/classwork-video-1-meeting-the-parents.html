@@ -178,67 +178,11 @@
     fillIcon7.style.display = "inline-block";
     fillIcon8.style.display = "inline-block";
 
-    var correctCount = 0;
-    var incorrectCount = 0;
+  var totalQuestions = Object.keys(answers).length;
+  var correctCount = [isCorrect1, isCorrect2, isCorrect3, isCorrect4].filter(Boolean).length;
+  var resultMessage = "You have got " + correctCount + " correct answer(s) out of " + totalQuestions + ".";
 
-    if (isCorrect1) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
-
-    if (isCorrect2) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
-
-    if (isCorrect3) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
-
-    if (isCorrect4) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
-
-    if (isCorrect5) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
-
-    if (isCorrect6) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
-
-    if (isCorrect7) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
-
-    if (isCorrect8) {
-      correctCount++;
-    } else {
-      incorrectCount++;
-    }
-
-    var resultMessage = "";
-    if (correctCount > 0) {
-      resultMessage += "Correct answers: " + correctCount + "<br/>";
-    }
-
-    if (incorrectCount > 0) {
-      resultMessage += "Incorrect answers: " + incorrectCount + "<br/>";
-    }
-
-    result.innerHTML = resultMessage;
+  result.innerHTML = resultMessage;
   }
 
   function resetFill() {

@@ -160,7 +160,7 @@ select option {
   margin-top: 10px;
 }
 
-/* FILL IN THE BLANKS */
+/* FILL-IN-THE-BLANKS */
 
 input[type="text"] {
   margin-top: .2rem;
@@ -198,6 +198,39 @@ input[type="text"] {
 }
 
 #resultFill {
+  margin-top: 10px;
+}
+
+/* FILL-IN-THE-BLANKS TEXT */
+
+.fill-text-icon {
+  display: none;
+  margin-left: 5px;
+  position: relative;
+  top: 5px;
+}
+
+.fill-text-icon.correct::before {
+  display: inline-block;
+  content: "";
+  background-image: url(../assets/imgs/correct.svg);
+  background-size: contain;
+  filter: var(--icon-correct);
+  width: 22px;
+  height: 22px;
+}
+
+.fill-text-icon.incorrect::before {
+  display: inline-block;
+  content: "";
+  background-image: url(../assets/imgs/incorrect.svg);
+  background-size: contain;
+  filter: var(--icon-incorrect);
+  width: 22px;
+  height: 22px;
+}
+
+#resultFilltext {
   margin-top: 10px;
 }
 

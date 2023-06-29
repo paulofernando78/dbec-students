@@ -95,6 +95,53 @@
       <br />
       <p class="ribbon-green">High-controlled written practice</p>
       <br />
+
+      <div class="p">
+        <p><b>FILL-IN-THE-BLANKS</b></p>
+        <br />
+
+        <p><b>1. Write the correct answer.</b></p>
+        <br />
+        <b>Keisha:</b> I haven't seen (see) those sneakers before. Are they new?
+        <br>
+        xxx <input type="text" id="blank1" />
+        <span id="fillIcon1" class="fill-icon"></span>
+        xxx
+        <br>
+        xxx <input type="text" id="blank2" />
+        <span id="fillIcon2" class="fill-icon"></span>
+        xxx
+        <br>
+        xxx <input type="text" id="blank3" />
+        <span id="fillIcon3" class="fill-icon"></span>
+        xxx
+        <br>
+        xxx <input type="text" id="blank4" />
+        <span id="fillIcon4" class="fill-icon"></span>
+        xxx
+        <br>
+        xxx <input type="text" id="blank5" />
+        <span id="fillIcon5" class="fill-icon"></span>
+        xxx
+        <br>
+        xxx <input type="text" id="blank6" />
+        <span id="fillIcon6" class="fill-icon"></span>
+        xxx
+        <br>
+        xxx <input type="text" id="blank7" />
+        <span id="fillIcon7" class="fill-icon"></span>
+        xxx
+        <br>
+        xxx <input type="text" id="blank8" />
+        <span id="fillIcon8" class="fill-icon"></span>
+        xxx
+
+        <br>
+        <button onclick="checkFill()">Check answers</button>
+        <button onclick="resetFill()">Reset</button>
+        <div id="resultFill"></div>
+      </div>
+
       <div class="p">
         <p><b>1. Read the conversation. What are they arguing about?</b></p>
         <br />
@@ -106,7 +153,8 @@
         <span id="fillIcon1" class="icon"></span>
         (buy) them today. Do you like them?
         <br />
-        <label><b>Keisha:</b> They're OK. How much 3 <input type="text" id="blank2" /></label> they <input type="text" id="blank2-1" />
+        <label><b>Keisha:</b> They're OK. How much 3 <input type="text" id="blank2" /></label> they <input type="text"
+          id="blank2-1" />
         <span id="fillIcon2" class="icon"></span>
         cost?
         <br />
@@ -114,7 +162,8 @@
         <span id="fillIcon3" class="icon"></span>
         (be) a bargain. Under $100.
         <br>
-        <p><b><b>Keisha:</b></b> You mean $99.99. That's isn't cheap for a pair of sneakers. Anyway, we can't afford to buy new clothes right now.</p>
+        <p><b><b>Keisha:</b></b> You mean $99.99. That's isn't cheap for a pair of sneakers. Anyway, we can't afford to
+          buy new clothes right now.</p>
         <p><b>Daniel:</b> Why not?</p>
         <label><b>Keisha:</b> Have you <input type="text" id="blank4" /></label>
         <span id="fillIcon4" class="icon"></span>
@@ -151,20 +200,28 @@
 
   // FILL IN THE BLANKS
 
-  function checkAnswers() {
+  function checkFill() {
     var answers = {
-      blank1: "have bought",
-      blank2: "have",
-      blank2_1: "cost",
-      blank3: "were",
-      blank4: "seen"
+      blank1: "1",
+      blank2: "2",
+      blank3: "3",
+      blank4: "4",
+      blank5: "5",
+      blank6: "6",
+      blank7: "7",
+      blank8: "8",
+      // blank?: ["?", "?"]
     };
 
     var fillIcon1 = document.getElementById("fillIcon1");
     var fillIcon2 = document.getElementById("fillIcon2");
     var fillIcon3 = document.getElementById("fillIcon3");
     var fillIcon4 = document.getElementById("fillIcon4");
-    var result = document.getElementById("result");
+    var fillIcon5 = document.getElementById("fillIcon5");
+    var fillIcon6 = document.getElementById("fillIcon6");
+    var fillIcon7 = document.getElementById("fillIcon7");
+    var fillIcon8 = document.getElementById("fillIcon8");
+    var result = document.getElementById("resultFill");
 
     var isCorrect1 =
       document.getElementById("blank1").value.trim() === answers.blank1;
@@ -172,37 +229,58 @@
       document.getElementById("blank2").value.trim() === answers.blank2;
     var isCorrect3 =
       document.getElementById("blank3").value.trim() === answers.blank3;
-      var isCorrect4 =
+    var isCorrect4 =
       document.getElementById("blank4").value.trim() === answers.blank4;
+    var isCorrect5 =
+      document.getElementById("blank5").value.trim() === answers.blank5;
+    var isCorrect6 =
+      document.getElementById("blank6").value.trim() === answers.blank6;
+    var isCorrect7 =
+      document.getElementById("blank7").value.trim() === answers.blank7;
+    var isCorrect8 =
+      document.getElementById("blank8").value.trim() === answers.blank8;
 
-    fillIcon1.className = isCorrect1 ? "icon correct" : "icon incorrect";
-    fillIcon2.className = isCorrect2 ? "icon correct" : "icon incorrect";
-    fillIcon3.className = isCorrect3 ? "icon correct" : "icon incorrect";
-    fillIcon4.className = isCorrect4 ? "icon correct" : "icon incorrect";
+    // var isCorrect? = answers.blank?.includes(
+    //   document.getElementById("blank?").value.trim()
+    // );
+
+    fillIcon1.className = isCorrect1 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon2.className = isCorrect2 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon3.className = isCorrect3 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon4.className = isCorrect4 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon4.className = isCorrect5 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon4.className = isCorrect6 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon4.className = isCorrect7 ? "fill-icon correct" : "fill-icon incorrect";
+    fillIcon4.className = isCorrect8 ? "fill-icon correct" : "fill-icon incorrect";
 
     fillIcon1.style.display = "inline-block";
     fillIcon2.style.display = "inline-block";
     fillIcon3.style.display = "inline-block";
     fillIcon4.style.display = "inline-block";
+    fillIcon5.style.display = "inline-block";
+    fillIcon6.style.display = "inline-block";
+    fillIcon7.style.display = "inline-block";
+    fillIcon8.style.display = "inline-block";
 
-    var allCorrect = isCorrect1 && isCorrect2 && isCorrect3 && isCorrect4;
-    result.innerHTML = allCorrect
-      ? "All answers are correct!"
-      : "Some answers are incorrect!";
+    var totalQuestions = Object.keys(answers).length;
+    var correctCount = [isCorrect1, isCorrect2, isCorrect3, isCorrect4].filter(Boolean).length;
+    var resultMessage = "You have got " + correctCount + " correct answer(s) out of " + totalQuestions + ".";
+
+    result.innerHTML = resultMessage;
   }
 
-  function resetAnswers() {
+  function resetFill() {
     var inputs = document.getElementsByTagName("input");
     for (var i = 0; i < inputs.length; i++) {
       inputs[i].value = "";
     }
 
-    var icons = document.querySelectorAll(".icon");
+    var icons = document.querySelectorAll(".fill-icon");
     icons.forEach(function (icon) {
       icon.style.display = "none";
     });
 
-    var result = document.getElementById("result");
+    var result = document.getElementById("resultFill");
     result.innerHTML = "";
   }
 </script>
