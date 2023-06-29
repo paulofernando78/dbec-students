@@ -110,8 +110,8 @@
       </div>
 
       <div class="align-items-center">
-        <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox " data-correct="true"  " />
-        <label for="checkbox-1c">c&#41; xxx</label>
+        <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox " data-correct="true" " />
+        <label for=" checkbox-1c">c&#41; xxx</label>
         <span class="icon checkbox-icon invisible"></span>
       </div>
 
@@ -227,76 +227,73 @@
     <br />
 
     <div>
-      <p><b>1. Write the correct answer.</b></p>
-      <br />
       <p>xxx <sup>1</sup>
-        <input type="text" id="blank1" class="fill">
+        <input type="text" id="blank1" />
         <span id="fillIcon1" class="fill-icon"></span>
         xxx
       </p>
 
       <p>xxx <sup>2</sup>
-        <input type="text" id="blank2" class="fill">
+        <input type="text" id="blank2" />
         <span id="fillIcon2" class="fill-icon"></span>
         xxx
       </p>
 
       <p>xxx <sup>3</sup>
-        <input type="text" id="blank3" class="fill">
+        <input type="text" id="blank3" />
         <span id="fillIcon3" class="fill-icon"></span>
         xxx
-      </p>
 
       <p>xxx <sup>4</sup>
-        <input type="text" id="blank4" class="fill">
+        <input type="text" id="blank4" />
         <span id="fillIcon4" class="fill-icon"></span>
         xxx
       </p>
 
       <p>xxx <sup>5</sup>
-        <input type="text" id="blank5" class="fill">
+        <input type="text" id="blank5" />
         <span id="fillIcon5" class="fill-icon"></span>
         xxx
       </p>
 
       <p>xxx <sup>6</sup>
-        <input type="text" id="blank6" class="fill">
+        <input type="text" id="blank6" />
         <span id="fillIcon6" class="fill-icon"></span>
         xxx
       </p>
 
       <p>xxx <sup>7</sup>
-        <input type="text" id="blank7" class="fill">
+        <input type="text" id="blank7" />
         <span id="fillIcon7" class="fill-icon"></span>
         xxx
       </p>
 
       <p>xxx <sup>8</sup>
-        <input type="text" id="blank8" class="fill">
+        <input type="text" id="blank8" />
         <span id="fillIcon8" class="fill-icon"></span>
         xxx
       </p>
 
       <p>xxx <sup>9</sup>
-        <input type="text" id="blank9" class="fill">
+        <input type="text" id="blank9" />
         <span id="fillIcon9" class="fill-icon"></span>
         xxx
       </p>
 
       <p>xxx <sup>10</sup>
-        <input type="text" id="blank10" class="fill">
+        <input type="text" id="blank10" />
         <span id="fillIcon10" class="fill-icon"></span>
         xxx
       </p>
 
       <p>xxx <sup>11</sup>
-        <input type="text" id="blank11" class="fill">
+        <input type="text" id="blank11" />
         <span id="fillIcon11" class="fill-icon"></span>
         xxx
       </p>
 
       <p>xxx <sup>12</sup>
-        <input type="text" id="blank12" class="fill">
+        <input type="text" id="blank12" />
         <span id="fillIcon12" class="fill-icon"></span>
         xxx
       </p>
@@ -304,10 +301,10 @@
 
       <button onclick="checkFill()">Check answers</button>
       <button onclick="resetFill()">Reset</button>
-      <button onclick="showFill()">Show answers</button>
+      <button onclick="showFill()">Show Answers</button>
       <div id="resultFill" class="p"></div>
     </div>
-    <br />
+    <br>
 
     <!-- FILL IN THE BLANKS (TEXT) -->
 
@@ -405,72 +402,72 @@
 
   // CHECKBOXES  
 
-    function checkCheckboxes() {
-        var checkboxes = document.querySelectorAll(".checkbox");
-        var icons = document.querySelectorAll(".checkbox-icon");
-        var totalCheckboxes = checkboxes.length;
-        var correctCount = 0;
+  function checkCheckboxes() {
+    var checkboxes = document.querySelectorAll(".checkbox");
+    var icons = document.querySelectorAll(".checkbox-icon");
+    var totalCheckboxes = checkboxes.length;
+    var correctCount = 0;
 
-        for (var i = 0; i < totalCheckboxes; i++) {
-          var checkbox = checkboxes[i];
-          var icon = icons[i];
+    for (var i = 0; i < totalCheckboxes; i++) {
+      var checkbox = checkboxes[i];
+      var icon = icons[i];
 
-          if (
-            checkbox.checked &&
-            checkbox.getAttribute("data-correct") === "true"
-          ) {
-            correctCount++;
-          }
-
-          if (checkbox.getAttribute("data-correct") === "true") {
-            icon.classList.remove("invisible");
-          }
-        }
-
-        var resultElement = document.getElementById("resultCheckboxes");
-        resultElement.textContent =
-          "You have selected " +
-          correctCount +
-          " correct answer(s) out of " +
-          document.querySelectorAll(".checkbox[data-correct='true']").length +
-          ".";
+      if (
+        checkbox.checked &&
+        checkbox.getAttribute("data-correct") === "true"
+      ) {
+        correctCount++;
       }
 
-      function resetCheckboxes() {
-        var checkboxes = document.querySelectorAll(".checkbox");
-        var icons = document.querySelectorAll(".checkbox-icon");
-
-        for (var i = 0; i < checkboxes.length; i++) {
-          var checkbox = checkboxes[i];
-          var icon = icons[i];
-
-          checkbox.checked = false;
-          icon.classList.add("invisible");
-        }
-
-        var resultElement = document.getElementById("resultCheckboxes");
-        resultElement.textContent = "";
+      if (checkbox.getAttribute("data-correct") === "true") {
+        icon.classList.remove("invisible");
       }
+    }
 
-      function showCheckboxes() {
-        var checkboxes = document.querySelectorAll(".checkbox");
-        var icons = document.querySelectorAll(".checkbox-icon");
-        var selectedLetters = [];
+    var resultElement = document.getElementById("resultCheckboxes");
+    resultElement.textContent =
+      "You have selected " +
+      correctCount +
+      " correct answer(s) out of " +
+      document.querySelectorAll(".checkbox[data-correct='true']").length +
+      ".";
+  }
 
-        for (var i = 0; i < checkboxes.length; i++) {
-          var checkbox = checkboxes[i];
-          var icon = icons[i];
+  function resetCheckboxes() {
+    var checkboxes = document.querySelectorAll(".checkbox");
+    var icons = document.querySelectorAll(".checkbox-icon");
 
-          if (checkbox.getAttribute("data-correct") === "true") {
-            icon.classList.remove("invisible");
-            selectedLetters.push(checkbox.nextElementSibling.textContent.charAt(0));
-          }
-        }
+    for (var i = 0; i < checkboxes.length; i++) {
+      var checkbox = checkboxes[i];
+      var icon = icons[i];
 
-        var resultElement = document.getElementById("resultCheckboxes");
-        resultElement.textContent =
-          "Correct answers: " + selectedLetters.join(", ") + ".";
+      checkbox.checked = false;
+      icon.classList.add("invisible");
+    }
+
+    var resultElement = document.getElementById("resultCheckboxes");
+    resultElement.textContent = "";
+  }
+
+  function showCheckboxes() {
+    var checkboxes = document.querySelectorAll(".checkbox");
+    var icons = document.querySelectorAll(".checkbox-icon");
+    var selectedLetters = [];
+
+    for (var i = 0; i < checkboxes.length; i++) {
+      var checkbox = checkboxes[i];
+      var icon = icons[i];
+
+      if (checkbox.getAttribute("data-correct") === "true") {
+        icon.classList.remove("invisible");
+        selectedLetters.push(checkbox.nextElementSibling.textContent.charAt(0));
       }
+    }
+
+    var resultElement = document.getElementById("resultCheckboxes");
+    resultElement.textContent =
+      "Correct answers: " + selectedLetters.join(", ") + ".";
+  }
 
   // FILL-IN-THE-BLANKS
 
@@ -498,40 +495,29 @@
     }
   }
 
-  var originalAnswers = {
-    blank1: "1",
-    blank2: "2",
-    blank3: "3",
-    blank4: "4",
-    blank5: "5",
-    blank6: "6",
-    blank7: "7",
-    blank8: "8",
-    blank9: "9",
-    blank10: "10",
-    blank11: "11",
-    blank12: ["12", " 12-1"],
-  };
-
-  function showFill() {
-    var answers = Object.assign({}, originalAnswers);
-
-    // Set the values of the input fields to the corresponding answers
-    for (var key in answers) {
-      if (answers.hasOwnProperty(key)) {
-        document.getElementById(key).value = answers[key];
-      }
-    }
-  }
-
   function checkFill() {
-    var answers = Object.assign({}, originalAnswers);
+    var answers = {
+      blank1: "1",
+      blank2: "2",
+      blank3: "3",
+      blank4: "4",
+      blank5: "5",
+      blank6: "6",
+      blank7: "7",
+      blank8: "8",
+      blank9: "9",
+      blank10: "10",
+      blank11: "11",
+      blank12: ["12", "12-1"],
+    };
 
     var fillIcon1 = document.getElementById("fillIcon1");
     var fillIcon2 = document.getElementById("fillIcon2");
     var fillIcon3 = document.getElementById("fillIcon3");
+    var fillIcon31 = document.getElementById("fillIcon31");
     var fillIcon4 = document.getElementById("fillIcon4");
     var fillIcon5 = document.getElementById("fillIcon5");
+    var fillIcon51 = document.getElementById("fillIcon51");
     var fillIcon6 = document.getElementById("fillIcon6");
     var fillIcon7 = document.getElementById("fillIcon7");
     var fillIcon8 = document.getElementById("fillIcon8");
@@ -541,8 +527,8 @@
     var fillIcon12 = document.getElementById("fillIcon12");
     var result = document.getElementById("resultFill");
 
-    var isCorrect1 =
-      document.getElementById("blank1").value.trim() === answers.blank1;
+    var isCorrect1 = answers.blank1.includes(
+      document.getElementById("blank1").value.trim());
     var isCorrect2 =
       document.getElementById("blank2").value.trim() === answers.blank2;
     var isCorrect3 =
@@ -563,9 +549,8 @@
       document.getElementById("blank10").value.trim() === answers.blank10;
     var isCorrect11 =
       document.getElementById("blank11").value.trim() === answers.blank11;
-    var isCorrect12 = answers.blank12.includes(
-      document.getElementById("blank12").value.trim()
-    );
+    var isCorrect12 =
+      answers.blank12.includes(document.getElementById("blank12").value.trim());
 
     fillIcon1.className = isCorrect1
       ? "fill-icon correct"
@@ -617,13 +602,14 @@
     fillIcon11.style.display = "inline-block";
     fillIcon12.style.display = "inline-block";
 
-    var totalQuestions = Object.keys(answers).length;
     var correctCount = [
       isCorrect1,
       isCorrect2,
       isCorrect3,
+      isCorrect31,
       isCorrect4,
       isCorrect5,
+      isCorrect51,
       isCorrect6,
       isCorrect7,
       isCorrect8,
@@ -644,205 +630,25 @@
   }
 
   function resetFill() {
-    var inputs = document.getElementsByClassName("fill");
-    for (var i = 0; i < inputs.length; i++) {
-      inputs[i].value = "";
-      inputs[i].style.backgroundColor = ""; // Remove any background color
+    var fillInputs = document.getElementsByTagName("input");
+    var fillIcons = document.getElementsByClassName("fill-icon");
+
+    for (var i = 0; i < fillInputs.length; i++) {
+      fillInputs[i].value = "";
     }
 
-    var icons = document.querySelectorAll(".fill-icon");
-    icons.forEach(function (icon) {
-      icon.style.display = "none";
-    });
+    for (var j = 0; j < fillIcons.length; j++) {
+      fillIcons[j].className = "fill-icon";
+      fillIcons[j].style.display = "none";
+    }
 
-    var result = document.getElementById("resultFill");
-    result.innerHTML = "";
+    document.getElementById("resultFill").innerHTML = "";
   }
 
   // FILL-IN-THE-BLANK (TEXT)
 
-  function showFilltext() {
-    var answers = {
-      blank1text: "1",
-      blank2text: "2",
-      blank3text: "3",
-      blank4text: "4",
-      blank5text: "5",
-      blank6text: "6",
-      blank7text: "7",
-      blank8text: "8",
-      blank9text: "9",
-      blank10text: "10",
-      blank11text: "11",
-      blank12text: ["12", " 12-1"],
-    };
 
-    // Set the values of the input fields to the corresponding answers
-    for (var key in answers) {
-      if (answers.hasOwnProperty(key)) {
-        document.getElementById(key).value = answers[key];
-      }
-    }
-  }
 
-  function checkFilltext() {
-    var answers = {
-      blank1text: "1",
-      blank2text: "2",
-      blank3text: "3",
-      blank4text: "4",
-      blank5text: "5",
-      blank6text: "6",
-      blank7text: "7",
-      blank8text: "8",
-      blank9text: "9",
-      blank10text: "10",
-      blank11text: "11",
-      blank12text: ["12", "12-1"],
-    };
-
-    var filltextIcon1 = document.getElementById("filltextIcon1");
-    var filltextIcon2 = document.getElementById("filltextIcon2");
-    var filltextIcon3 = document.getElementById("filltextIcon3");
-    var filltextIcon4 = document.getElementById("filltextIcon4");
-    var filltextIcon5 = document.getElementById("filltextIcon5");
-    var filltextIcon6 = document.getElementById("filltextIcon6");
-    var filltextIcon7 = document.getElementById("filltextIcon7");
-    var filltextIcon8 = document.getElementById("filltextIcon8");
-    var filltextIcon9 = document.getElementById("filltextIcon9");
-    var filltextIcon10 = document.getElementById("filltextIcon10");
-    var filltextIcon11 = document.getElementById("filltextIcon11");
-    var filltextIcon12 = document.getElementById("filltextIcon12");
-    var result = document.getElementById("resultFilltext");
-
-    var isCorrect1 =
-      document.getElementById("blank1text").value.trim() ===
-      answers.blank1text;
-    var isCorrect2 =
-      document.getElementById("blank2text").value.trim() ===
-      answers.blank2text;
-    var isCorrect3 =
-      document.getElementById("blank3text").value.trim() ===
-      answers.blank3text;
-    var isCorrect4 =
-      document.getElementById("blank4text").value.trim() ===
-      answers.blank4text;
-    var isCorrect5 =
-      document.getElementById("blank5text").value.trim() ===
-      answers.blank5text;
-    var isCorrect6 =
-      document.getElementById("blank6text").value.trim() ===
-      answers.blank6text;
-    var isCorrect7 =
-      document.getElementById("blank7text").value.trim() ===
-      answers.blank7text;
-    var isCorrect8 =
-      document.getElementById("blank8text").value.trim() ===
-      answers.blank8text;
-    var isCorrect9 =
-      document.getElementById("blank9text").value.trim() ===
-      answers.blank9text;
-    var isCorrect10 =
-      document.getElementById("blank10text").value.trim() ===
-      answers.blank10text;
-    var isCorrect11 =
-      document.getElementById("blank11text").value.trim() ===
-      answers.blank11text;
-    var isCorrect12 = answers.blank12text.includes(
-      document.getElementById("blank12text").value.trim());
-
-    filltextIcon1.className = isCorrect1
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-    filltextIcon2.className = isCorrect2
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-    filltextIcon3.className = isCorrect3
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-    filltextIcon4.className = isCorrect4
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-    filltextIcon5.className = isCorrect5
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-    filltextIcon6.className = isCorrect6
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-    filltextIcon7.className = isCorrect7
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-    filltextIcon8.className = isCorrect8
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-    filltextIcon9.className = isCorrect9
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-    filltextIcon10.className = isCorrect10
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-    filltextIcon11.className = isCorrect11
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-    filltextIcon12.className = isCorrect12
-      ? "fill-text-icon correct"
-      : "fill-text-icon incorrect";
-
-    filltextIcon1.style.display = "inline-block";
-    filltextIcon2.style.display = "inline-block";
-    filltextIcon3.style.display = "inline-block";
-    filltextIcon4.style.display = "inline-block";
-    filltextIcon5.style.display = "inline-block";
-    filltextIcon6.style.display = "inline-block";
-    filltextIcon7.style.display = "inline-block";
-    filltextIcon8.style.display = "inline-block";
-    filltextIcon9.style.display = "inline-block";
-    filltextIcon10.style.display = "inline-block";
-    filltextIcon11.style.display = "inline-block";
-    filltextIcon12.style.display = "inline-block";
-
-    var totalQuestions = Object.keys(answers).length;
-    var correctCount = [
-      isCorrect1,
-      isCorrect2,
-      isCorrect3,
-      isCorrect4,
-      isCorrect5,
-      isCorrect6,
-      isCorrect7,
-      isCorrect8,
-      isCorrect9,
-      isCorrect10,
-      isCorrect11,
-      isCorrect12,
-    ].filter(function (x) {
-      return x === true;
-    }).length;
-
-    result.innerHTML =
-      "You got " +
-      correctCount +
-      " out of " +
-      Object.keys(answers).length +
-      " correct.";
-  }
-
-    function resetFill() {
-      var inputs = document.getElementsByClassName(".fill-text");
-      for (var i = 0; i < inputs.length; i++) {
-        inputs[i].value = "";
-      }
-
-      var icons = document.querySelectorAll(".fill-icon");
-      icons.forEach(function (icon) {
-        icon.style.display = "none";
-      });
-
-      var result = document.getElementById("resultFill");
-      result.innerHTML = "";
-    }
-  
 </script>
 
 </html>
-
