@@ -1,5 +1,14 @@
 /* RADIO CORRECT*/
 
+label {
+  font-family: var(--font);
+  font-size: var(--paragraph-font-size);
+}
+
+input[type="radio"] {
+}
+
+
 .radio-correct[type="radio"] {
   appearance: none;
   /* border: 1px solid #d3d3d3; */
