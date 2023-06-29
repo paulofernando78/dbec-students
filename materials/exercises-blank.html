@@ -527,8 +527,7 @@
       blank9: "9",
       blank10: "10",
       blank11: "11",
-      blank12: "12",
-      // blank?: ["?", "?"]
+      blank12: ["12", "12-1"],
     };
 
     var fillIcon1 = document.getElementById("fillIcon1");
@@ -567,12 +566,8 @@
       document.getElementById("blank10").value.trim() === answers.blank10;
     var isCorrect11 =
       document.getElementById("blank11").value.trim() === answers.blank11;
-    var isCorrect12 =
-      document.getElementById("blank12").value.trim() === answers.blank12;
-
-    //   var isCorrect? = answers.blank?.includes(
-    //   document.getElementById("blank?").value.trim()
-    // );
+    var isCorrect12 = answers.blank12.includes(
+      document.getElementById("blank12").value.trim());
 
     fillIcon1.className = isCorrect1
       ? "fill-icon correct"
@@ -638,15 +633,16 @@
       isCorrect10,
       isCorrect11,
       isCorrect12,
-    ].filter(Boolean).length;
-    var resultMessage =
-      "You have got " +
-      correctCount +
-      " correct answer(s) out of " +
-      totalQuestions +
-      ".";
+    ].filter(function (x) {
+      return x === true;
+    }).length;
 
-    result.innerHTML = resultMessage;
+    result.innerHTML =
+      "You got " +
+      correctCount +
+      " out of " +
+      Object.keys(answers).length +
+      " correct.";
   }
 
   function resetFill() {
@@ -679,8 +675,7 @@
       blank9text: "9",
       blank10text: "10",
       blank11text: "11",
-      blank12text: "12",
-      // blank?: ["?", "?"]
+      blank12text: ["12", "12-1"],
     };
 
     var filltextIcon1 = document.getElementById("filltextIcon1");
@@ -693,8 +688,8 @@
     var filltextIcon8 = document.getElementById("filltextIcon8");
     var filltextIcon9 = document.getElementById("filltextIcon9");
     var filltextIcon10 = document.getElementById("filltextIcon10");
-    var filltextIcon10 = document.getElementById("filltextIcon11");
-    var filltextIcon10 = document.getElementById("filltextIcon12");
+    var filltextIcon11 = document.getElementById("filltextIcon11");
+    var filltextIcon12 = document.getElementById("filltextIcon12");
     var result = document.getElementById("resultFilltext");
 
     var isCorrect1 =
@@ -730,13 +725,8 @@
     var isCorrect11 =
       document.getElementById("blank11text").value.trim() ===
       answers.blank11text;
-    var isCorrect12 =
-      document.getElementById("blank12text").value.trim() ===
-      answers.blank12text;
-
-    // var isCorrect? = answers.blank?.includes(
-    //   document.getElementById("blank?").value.trim()
-    // );
+    var isCorrect12 = answers.blank12text.includes(
+      document.getElementById("blank12text").value.trim());
 
     filltextIcon1.className = isCorrect1
       ? "fill-text-icon correct"
@@ -802,15 +792,16 @@
       isCorrect10,
       isCorrect11,
       isCorrect12,
-    ].filter(Boolean).length;
-    var resultMessage =
-      "You have got " +
-      correctCount +
-      " correct answer(s) out of " +
-      totalQuestions +
-      ".";
+    ].filter(function (x) {
+      return x === true;
+    }).length;
 
-    result.innerHTML = resultMessage;
+    result.innerHTML =
+      "You got " +
+      correctCount +
+      " out of " +
+      Object.keys(answers).length +
+      " correct.";
   }
 
   function resetFilltext() {
