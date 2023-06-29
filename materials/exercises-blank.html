@@ -303,6 +303,7 @@
 
       <button onclick="checkFill()">Check answers</button>
       <button onclick="resetFill()">Reset</button>
+      <button onclick="showFill()">Show answers</button>
       <div id="resultFill" class="p"></div>
     </div>
     <br />
@@ -378,6 +379,7 @@
 
       <button onclick="checkFilltext()">Check answers</button>
       <button onclick="resetFilltext()">Reset</button>
+      <button onclick="showFilltext()">Show answers</button>
       <div id="resultFilltext" class="p"></div>
     </div>
   </main>
@@ -514,6 +516,30 @@
 
   // FILL-IN-THE-BLANKS
 
+  function showFill() {
+    var answers = {
+      blank1: "1",
+      blank2: "2",
+      blank3: "3",
+      blank4: "4",
+      blank5: "5",
+      blank6: "6",
+      blank7: "7",
+      blank8: "8",
+      blank9: "9",
+      blank10: "10",
+      blank11: "11",
+      blank12: ["12", "12-1"],
+    };
+
+    // Set the values of the input fields to the corresponding answers
+    for (var key in answers) {
+      if (answers.hasOwnProperty(key)) {
+        document.getElementById(key).value = answers[key];
+      }
+    }
+  }
+
   function checkFill() {
     var answers = {
       blank1: "1",
@@ -567,7 +593,8 @@
     var isCorrect11 =
       document.getElementById("blank11").value.trim() === answers.blank11;
     var isCorrect12 = answers.blank12.includes(
-      document.getElementById("blank12").value.trim());
+      document.getElementById("blank12").value.trim()
+    );
 
     fillIcon1.className = isCorrect1
       ? "fill-icon correct"
@@ -661,6 +688,30 @@
   }
 
   // FILL-IN-THE-BLANK (TEXT)
+
+  function showFilltext() {
+    var answers = {
+      blank1text: "1",
+      blank2text: "2",
+      blank3text: "3",
+      blank4text: "4",
+      blank5text: "5",
+      blank6text: "6",
+      blank7text: "7",
+      blank8text: "8",
+      blank9text: "9",
+      blank10text: "10",
+      blank11text: "11",
+      blank12text: ["12", "12-1"],
+    };
+
+    // Set the values of the input fields to the corresponding answers
+    for (var key in answers) {
+      if (answers.hasOwnProperty(key)) {
+        document.getElementById(key).value = answers[key];
+      }
+    }
+  }
 
   function checkFilltext() {
     var answers = {
