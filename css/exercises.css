@@ -155,12 +155,12 @@ select option {
   display: none;
 }
 
-.correct-icon {
+.correct {
   background-image: url(../assets/imgs/correct.svg);
   filter: var(--icon-correct);
 }
 
-.incorrect-icon {
+.incorrect {
   background-image: url(../assets/imgs/incorrect.svg);
   filter: var(--icon-incorrect);
 }

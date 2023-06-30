@@ -154,7 +154,7 @@
           <option value="b">xxx</option>
           <option value="c">xxx</option>
         </select>
-        <span class="dropdown-icon icon invisible"></span>
+        <span class="dropdown-icon" id="option1Icon"></span>
         xxx
       </label>
       <br />
@@ -167,7 +167,7 @@
           <option value="b">xxx</option>
           <option value="c">xxx</option>
         </select>
-        <span class="dropdown-icon icon invisible"></span>
+        <span class="dropdown-icon" id="option2Icon"></span>
         xxx
       </label>
       <br />
@@ -180,7 +180,7 @@
           <option value="b">xxx</option>
           <option value="c">xxx</option>
         </select>
-        <span class="dropdown-icon icon invisible"></span>
+        <span class="dropdown-icon" id="option3Icon"></span>
         xxx
       </label>
       <br />
@@ -193,7 +193,7 @@
           <option value="b">xxx</option>
           <option value="c">xxx</option>
         </select>
-        <span class="dropdown-icon icon invisible"></span>
+        <span class="dropdown-icon" id="option4Icon"></span>
         xxx
       </label>
       <br />
@@ -206,7 +206,7 @@
           <option value="b">xxx</option>
           <option value="c">xxx</option>
         </select>
-        <span class="dropdown-icon icon invisible"></span>
+        <span class="dropdown-icon" id="option5Icon"></span>
         xxx
       </label>
 
@@ -217,6 +217,7 @@
       <button onclick="resetDropdowns()">Reset</button>
       <p id="result"></p>
     </div>
+
     <br />
     <hr />
     <br />
@@ -468,6 +469,64 @@
     resultElement.textContent =
       "Correct answers: " + selectedLetters.join(", ") + ".";
   }
+
+  // DROPDOWN
+
+  function checkDropdowns() {
+    var answers = {
+      option1: "a",
+      option2: "a",
+      option3: "a",
+      option4: "a",
+      option5: "a",
+    };
+
+    var result = document.getElementById("result");
+    var dropdownIcons = document.getElementsByClassName("dropdown-icon");
+
+    var correctCount = 0;
+
+    // Check each dropdown answer
+    for (var key in answers) {
+      if (answers.hasOwnProperty(key)) {
+        var selectedValue = document.getElementById(key).value;
+
+        if (selectedValue === answers[key]) {
+          correctCount++;
+          var icon = document.getElementById(key + "Icon");
+          icon.className = "dropdown-icon correct";
+        } else {
+          var icon = document.getElementById(key + "Icon");
+          icon.className = "dropdown-icon incorrect";
+        }
+
+        icon.style.display = "inline-block";
+      }
+    }
+
+    result.innerHTML =
+      "You got " +
+      correctCount +
+      " out of " +
+      Object.keys(answers).length +
+      " correct.";
+  }
+
+  function resetDropdowns() {
+    var dropdowns = document.getElementsByTagName("select");
+    var dropdownIcons = document.getElementsByClassName("dropdown-icon");
+
+    for (var i = 0; i < dropdowns.length; i++) {
+      dropdowns[i].selectedIndex = 0;
+    }
+
+    for (var j = 0; j < dropdownIcons.length; j++) {
+      dropdownIcons[j].className = "dropdown-icon";
+    }
+
+    document.getElementById("result").innerHTML = "";
+  }
+
 
   // FILL-IN-THE-BLANKS
 
