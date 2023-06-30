@@ -172,7 +172,7 @@ p {
 
 .p {
     font-family: var(--font);
-    font-size: var(--paragraph-font-size);
+    font-size: var(--p-size);
 }
 
 .justify {
