@@ -25,3 +25,9 @@
     border: 2px solid black;
     border-radius: 4px;
 }
+
+.class-5-2a-spending-money-vocabulary-lead-in {
+    display: grid;
+    grid-template-columns: 500px 200px;
+    gap: 10px;
+}

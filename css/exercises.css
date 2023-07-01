@@ -1,13 +1,14 @@
-/* RADIO CORRECT*/
-
 label {
   font-family: var(--font);
-  font-size: var(--paragraph-font-size);
+  font-size: var(--p-size);
 }
+
+/* RADIO CORRECT*/
 
 input[type="radio"] {
+  font-family: var(--font);
+  font-size: var(--p-size);
 }
-
 
 .radio-correct[type="radio"] {
   appearance: none;
@@ -143,7 +144,7 @@ select {
 
 select option {
   font-family: var(--font);
-  font-size: var(--paragraph-font-size)
+  font-size: var(--p-size)
 }
 
 .dropdown-icon {
@@ -165,7 +166,7 @@ select option {
   filter: var(--icon-incorrect);
 }
 
-#result {
+#result-dropdown {
   margin-top: 10px;
 }
 
@@ -176,7 +177,7 @@ input[type="text"] {
   padding: 0 .2rem;
   width: 150px;
   font-family: var(--font);
-  font-size: var(--paragraph-font-size)
+  font-size: var(--p-size)
 }
 
 .fill-icon {

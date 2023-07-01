@@ -330,8 +330,13 @@ p {
 
 /* IMAGES */
 
+.container-img {
+    display: flex;
+    justify-content: space-around;
+}
+
 .img-1 {
-    width: 100%;
+    width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -340,9 +345,11 @@ p {
     box-shadow: 0 0 3px;
 }
 
-.container-img {
-    display: flex;
-    justify-content: space-around;
+.grid-2-columns {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .img-2 {
@@ -352,9 +359,12 @@ p {
     box-shadow: 0 0 3px;
 }
 
-.container-grid-3 {
+.grid-3-columns {
     display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
 }
+
 
 .img-3 {
     width: 33%;
