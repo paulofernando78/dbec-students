@@ -44,4 +44,13 @@
 .unit-99-2-grid-3-columns {
     display: grid;
     grid-template-columns: 45% 5% 45%;
+    justify-content: center;
+}
+
+.unit-99-2-grid-3-columns > p {
+    text-align: center;
+}
+
+input[type="text"] {
+  width: 500px;
 }

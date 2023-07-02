@@ -28,6 +28,7 @@
 
 .class-5-2a-spending-money-vocabulary-lead-in {
     display: grid;
-    grid-template-columns: 500px 200px;
+    grid-template-columns: 500px 210px;
+    /* grid-template-columns: auto auto; */
     gap: 10px;
 }
