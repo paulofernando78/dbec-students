@@ -1,12 +1,10 @@
-
-
 /* UNIT 1 */
 
 
 .unit-1-affirmtive-grid {
     display: grid;
     grid-template-columns: 100px 100px 110px;
-    
+
 }
 
 .unit-1-negative-grid {
@@ -47,10 +45,22 @@
     justify-content: center;
 }
 
-.unit-99-2-grid-3-columns > p {
+.unit-99-2-grid-3-columns>p {
     text-align: center;
 }
 
 input[type="text"] {
-  width: 90%;
+    width: 90%;
+}
+
+@media (max-width: 600px) {
+    .unit-99-2-grid-3-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
 }
