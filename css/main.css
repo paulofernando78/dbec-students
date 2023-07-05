@@ -168,6 +168,7 @@ h3 {
 
 p {
     font-size: var(--p-size);
+    font-size: var(--p-size);
 }
 
 .p {
@@ -333,6 +334,16 @@ p {
 .container-img {
     display: flex;
     justify-content: space-around;
+}
+
+.img-1-100 {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
 }
 
 .img-1 {
