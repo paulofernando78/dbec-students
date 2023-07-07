@@ -298,6 +298,16 @@ p {
     box-shadow: 0 0 3px;
 }
 
+.ribbon-blue {
+    background: rgb(64, 64, 255);
+    border: 1px solid black;
+    color: black;
+    padding-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
+    font-weight: bold;
+}
+
 /* COLORS */
 
 .color-white {
@@ -318,6 +328,10 @@ p {
 
 .color-lightblue {
     color: #00a2ff;
+}
+
+.color-blue {
+    color: blue;
 }
 
 /* ALIGNNMENT */
