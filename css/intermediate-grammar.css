@@ -229,6 +229,11 @@
     gap: 10px
 }
 
+.unit-113-1-2-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* UNIT 114 */
 
 /* UNIT 115 */
@@ -243,56 +248,63 @@
 
 /* UNIT 120 */
 
-/* UNIT 1 */
+/* UNIT 121 */
 
-/* UNIT 1 */
+/* UNIT 122 */
 
-/* UNIT 1 */
+/* UNIT 123 */
 
-/* UNIT 1 */
+/* UNIT 124 */
 
-/* UNIT 1 */
+/* UNIT 125 */
 
-/* UNIT 1 */
+/* UNIT 126 */
 
-/* UNIT 1 */
+/* UNIT 127 */
 
-/* UNIT 1 */
+/* UNIT 128 */
 
-/* UNIT 1 */
+/* UNIT 129 */
 
-/* UNIT 1 */
+/* UNIT 130 */
 
-/* UNIT 1 */
+/* UNIT 131 */
 
-/* UNIT 1 */
+/* UNIT 132 */
 
-/* UNIT 1 */
+/* UNIT 133 */
 
-/* UNIT 1 */
+/* UNIT 134 */
 
-/* UNIT 1 */
+/* UNIT 135 */
 
-/* UNIT 1 */
+/* UNIT 136 */
 
-/* UNIT 1 */
+/* UNIT 137 */
 
-/* UNIT 1 */
+/* UNIT 138 */
 
-/* UNIT 1 */
+/* UNIT 139 */
 
-/* UNIT 1 */
+/* UNIT 140 */
 
-/* UNIT 1 */
+/* UNIT 141 */
 
-/* UNIT 1 */
+/* UNIT 142 */
 
-/* UNIT 1 */
+/* UNIT 143 */
 
-/* UNIT 1 */
+/* UNIT 144 */
+
+/* UNIT 145 */
 
 @media (max-width: 600px) {
     .unit-113-a-couple-in-the-rain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .unit-113-1-2-columns {
         display: flex;
         flex-direction: column;
     }

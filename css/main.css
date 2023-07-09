@@ -308,6 +308,16 @@ p {
     font-weight: bold;
 }
 
+.ribbon-intermediate-grammar {
+    background: #0077C1;
+    border: 1px solid black;
+    color: black;
+    padding-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
+    font-weight: bold;
+}
+
 /* COLORS */
 
 .color-white {
