@@ -234,6 +234,10 @@
     justify-content: space-around;
 }
 
+.fill {
+    width: 500px;
+}
+
 /* UNIT 114 */
 
 /* UNIT 115 */
@@ -299,6 +303,9 @@
 /* UNIT 145 */
 
 @media (max-width: 600px) {
+
+    /* UNIT 113 */
+
     .unit-113-a-couple-in-the-rain {
         display: flex;
         flex-direction: column;
@@ -307,5 +314,9 @@
     .unit-113-1-2-columns {
         display: flex;
         flex-direction: column;
+    }
+
+    .fill {
+        width: 290px;
     }
 }
