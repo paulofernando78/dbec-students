@@ -28,7 +28,11 @@
 
 /* UNIT 9 */
 
-.unit-9-
+.unit-9-a-grid {
+    display: grid;
+    grid-template-columns: 130px 80px 200px;
+    width: 356px;
+}
 
 /* UNIT 10 */
 
