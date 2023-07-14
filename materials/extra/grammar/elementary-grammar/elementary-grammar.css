@@ -36,6 +36,12 @@
 
 /* UNIT 10 */
 
+.unit-10-a-grid {
+    display: grid;
+    grid-template-columns: 130px 80px 200px;
+    width: 356px;
+}
+
 /* UNIT 11 */
 
 /* UNIT 12 */
