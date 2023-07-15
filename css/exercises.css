@@ -245,7 +245,31 @@ input[type="text"] {
 
 /* BUTTON */
 
-button {
+.pushable {
+  background: rgb(83, 83, 83);
+  border-radius: 5px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+.front {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: var(--font);
+  font-size: 1rem;
+  background: grey;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+/* button {
   font-family: var(--font);
   font-size: 1rem;
   font-weight: bold;
@@ -257,4 +281,4 @@ button {
   cursor: pointer;
   border: solid 1px;
   box-shadow: 0 0 3px;
-}
+} */

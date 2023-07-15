@@ -82,7 +82,8 @@
                         class="color-lightgray"> mas não tenho certeza</span>:</p>
                 <br>
                 <p>A: Are you going out later?</p>
-                <p>B: Maybe <span class="color-lightgray">Talvez</span>. <b>If</b> I finish my studies earlier, I'll call you.</p>
+                <p>B: Maybe <span class="color-lightgray">Talvez</span>. <b>If</b> I finish my studies earlier, I'll
+                    call you.</p>
             </div>
             <br>
             <div class="container-white">
@@ -172,6 +173,13 @@
                 <label for=""></label>they'll invite
             </div>
             <br>
+            <button onclick="resetRadios()" class="pushable">
+                <span class="front">
+                    Reset
+                </span>
+            </button>
+            <br>
+            <br>
             <p><b>99.2 Write sentences beginning with if. Choose from the boxes.</b></p>
             <br>
             <div class="unit-99-2-grid-3-columns">
@@ -244,15 +252,33 @@
                 </p>
                 <br />
 
-                <button onclick="checkFill()">Check answers</button>
-                <button onclick="resetFill()">Reset</button>
-                <button onclick="showFill()">Show Answers</button>
+                <button onclick="checkFill()" class="pushable">
+                    <span class="front">Check answers</span>
+                </button>
+                <button onclick="resetFill()" class="pushable">
+                    <span class="front">Reset</span>
+                </button>
+                <button onclick="showFill()" class="pushable">
+                    <span class="front">Show Answers</span>
+                </button>
                 <div id="resultFill" class="p"></div>
             </div>
             <br>
         </div>
     </main>
     <script>
+
+        // RADIOS
+
+        function resetRadios() {
+            var radios = document.querySelectorAll('input[type="radio"]');
+            for (var i = 0; i < radios.length; i++) {
+                radios[i].checked = false;
+            }
+        }
+
+        // FILL-IN-THE-BLANKS
+
         function showFill() {
             var answers = {
                 blank1:
