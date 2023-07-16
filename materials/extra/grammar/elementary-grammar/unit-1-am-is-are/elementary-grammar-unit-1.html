@@ -259,79 +259,39 @@
             <input type="radio" name="radio-1-5" id="radio-5b" class="radio-correct" />
             <label for="radio-5b">is / are</label>
           </div>
-          <button onclick="resetRadios()">Reset</button>
+          <br>
+
+          <button onclick="resetRadios()" class="pushable">
+            <span class="front">
+              Reset
+            </span>
+          </button>
         </div>
         <br />
         <br />
 
         <!-- EXERCISE 3 -->
         <!-- CHECKBOX -->
-        <div class="p">
-          <p><b>3. Select the correct answers.</b></p>
-          <br />
-          <p>a&#41; I _____ a student.</p>
-          <div class="align-items-center">
-            <input type="checkbox" name="checbox-1-1" id="checbox-1a" class="checkbox-incorrect" />
-            <label for="checbox-1a">'re'</label>
-          </div>
-          <div class="align-items-center">
-            <input type="checkbox" name="checbox-1-1" id="checbox-1b" class="checkbox-correct" />
-            <label for="checbox-1b">am</label>
-          </div>
-          <div class="align-items-center">
-            <input type="checkbox" name="checbox-1-1" id="checbox-1c" class="checkbox-correct" />
-            <label for="checbox-1c">'m</label>
-          </div>
-          <button onclick="resetCheckboxes()">Reset</button>
-        </div>
-        <br />
-        <br />
+      
 
         <!-- EXERCISE 4 -->
         <!-- DROPDOWN MENU -->
-        <div class="p">
-          <p><b>4. Choose the correct answer.</b></p>
-          <br />
-          <label for="option1">a) I</label>
-          <select name="option1" id="option1" onchange="checkAnswer(this, 'icon1', 'a')">
-            <option value="na">...</option>
-            <option value="a">am</option>
-            <option value="b">are</option>
-            <option value="c">is</option>
-          </select>
-          a teacher.
-          <span id="icon1" class="icon"></span>
-          <br />
-          <label for="option2">b) He</label>
-          <select name="option2" id="option2" onchange="checkAnswer(this, 'icon2', 'c')">
-            <option value="na">...</option>
-            <option value="a">am</option>
-            <option value="b">are</option>
-            <option value="c">is</option>
-          </select>
-          a student.
-          <span id="icon2" class="icon"></span>
-          <br />
-          <label for="option3">c) We</label>
-          <select name="option3" id="option3" onchange="checkAnswer(this, 'icon3', 'b')">
-            <option value="na">...</option>
-            <option value="a">am</option>
-            <option value="b">are</option>
-            <option value="c">is</option>
-          </select>
-          happy.
-          <span id="icon3" class="icon"></span>
-          <br />
-          <button onclick="resetDropdowns()">Reset</button>
-        </div>
-        <br />
-        <br />
+       
   </main>
 </body>
 
 <script>
 
   // FILL IN THE BLANKS
+
+  // RADIOS
+
+    function resetRadios() {
+      var radios = document.querySelectorAll('input[type="radio"]');
+      for (var i = 0; i < radios.length; i++) {
+        radios[i].checked = false;
+      }
+    }
 
   function showFill() {
     var answers = {
