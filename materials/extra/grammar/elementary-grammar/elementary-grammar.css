@@ -1,15 +1,17 @@
 /* UNIT 1 */
 
 
-.unit-1-affirmtive-grid {
+.unit-1-a-affirmative-grid {
     display: grid;
     grid-template-columns: 100px 100px 110px;
+    width: 315px;
 
 }
 
-.unit-1-negative-grid {
+.unit-1-a-negative-grid {
     display: grid;
     grid-template-columns: 100px 100px 280px;
+    width: 487px;
 }
 
 /* UNIT 2 */

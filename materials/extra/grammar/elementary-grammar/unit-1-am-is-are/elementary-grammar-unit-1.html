@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../../../../css/main.css">
-  <link rel="stylesheet" href="../../../../../css/elementary-grammar.css">
+  <link rel="stylesheet" href="../elementary-grammar.css">
   <script src="../../../../../js/exercises.js"></script>
   <title>Elementary Grammar Unit 1</title>
 </head>
@@ -15,10 +15,10 @@
   <main>
     <div class="container-title">
       <h1 class="color-white">Elementary Grammar</h1>
-      <h2 class="color-white">Unit 1 am / ia / are</h2>
+      <h2 class="color-white">Unit 1 am / is / are</h2>
     </div>
     <br>
-    <p>&#10071To be <span class="portuguese">Ser, estar e *ter</span></p>
+    <p>&#10071To be <span class="color-lightgrey">Ser, estar e *ter</span></p>
 
     <!-- A -->
     <section>
@@ -42,7 +42,7 @@
       <br>
       <p><b>AFFIRMATIVE</b></p>
       <br>
-      <div class="unit-1-affirmtive-grid">
+      <div class="container-white unit-1-a-affirmative-grid">
         <p><i>subject</i></p>
         <p><i>verb</i></p>
         <p><i>shot form</i></p>
@@ -93,7 +93,7 @@
       <br>
       <p><b>NEGATIVE</b></p>
       <br>
-      <div class="unit-1-negative-grid">
+      <div class="container-white unit-1-a-negative-grid">
         <p><i>subject</i></p>
         <p><i>verb</i></p>
         <p><i>shot form</i></p>
@@ -173,27 +173,34 @@
 
         <!-- EXERCISE 1 -->
         <!-- FILL IN THE BLANKS -->
-        <div class="p container-white">
+        <div>
           <p><b>1. Write the short form.</b></p>
           <br />
-          <label>a) she is <input type="text" id="blank1" /></label>
+          <label>a&#41 she is <input type="text" id="blank1" class="fill"></label>
           <span id="fillIcon1" class="icon"></span>
           <br />
-          <label>b) they are <input type="text" id="blank2" /></label>
+          <label>b&#41 they are <input type="text" id="blank2" class="fill"></label>
           <span id="fillIcon2" class="icon"></span>
           <br />
-          <label>c) it is not <input type="text" id="blank3" /></label>
+          <label>c&#41 it is not <input type="text" id="blank3" class="fill"></label>
           <span id="fillIcon3" class="icon"></span>
           <br />
-          <label>d) I am not <input type="text" id="blank4" /></label>
+          <label>d&#41 I am not <input type="text" id="blank4" class="fill"></label>
           <span id="fillIcon4" class="icon"></span>
           <br />
-          <label>f) you are not <input type="text" id="blank5" /></label>
+          <label>f&#41 you are not <input type="text" id="blank5" class="fill"></label>
           <span id="fillIcon5" class="icon"></span>
           <br />
-          <button onclick="checkAnswers()">Check answers</button>
-          <div id="result"></div>
-          <button onclick="resetAnswers()">Reset</button>
+          <br>
+          <button onclick="checkFill()" class="pushable">
+            <span class="front">Check answers</span>
+          </button>
+          <button onclick="resetFill()" class="pushable">
+            <span class="front">Reset</span>
+          </button>
+          <button onclick="showFill()" class="pushable">
+            <span class="front">Show Answers</span>
+          </button>
         </div>
         <br>
         <br>
@@ -323,14 +330,33 @@
 </body>
 
 <script>
+
   // FILL IN THE BLANKS
-  function checkAnswers() {
+
+  function showFill() {
     var answers = {
       blank1: "she's",
       blank2: "they're",
-      blank3: ["it's not", "it isn't"],
+      blank3: ["it's not", " it isn't"],
       blank4: "I'm not",
-      blank5: ["you're not", "you aren't"],
+      blank5: ["you're not", " you aren't"],
+    };
+
+    // Set the values of the input fields to the corresponding answers
+    for (var key in answers) {
+      if (answers.hasOwnProperty(key)) {
+        document.getElementById(key).value = answers[key];
+      }
+    }
+  }
+
+  function checkFill() {
+    var answers = {
+      blank1: "she's",
+      blank2: "they're",
+      blank3: ["it's not", "it isn't", "it's not, it isn't"],
+      blank4: "I'm not",
+      blank5: ["you're not", "you aren't", "you're not, you aren't"],
     };
 
     var fillIcon1 = document.getElementById("fillIcon1");
@@ -338,7 +364,7 @@
     var fillIcon3 = document.getElementById("fillIcon3");
     var fillIcon4 = document.getElementById("fillIcon4");
     var fillIcon5 = document.getElementById("fillIcon5");
-    var result = document.getElementById("result");
+    var result = document.getElementById("resultFill");
 
     var isCorrect1 =
       document.getElementById("blank1").value.trim() === answers.blank1;
@@ -351,11 +377,21 @@
     var isCorrect5 =
       answers.blank5.includes(document.getElementById("blank5").value.trim());
 
-    fillIcon1.className = isCorrect1 ? "icon correct" : "icon incorrect";
-    fillIcon2.className = isCorrect2 ? "icon correct" : "icon incorrect";
-    fillIcon3.className = isCorrect3 ? "icon correct" : "icon incorrect";
-    fillIcon4.className = isCorrect4 ? "icon correct" : "icon incorrect";
-    fillIcon5.className = isCorrect5 ? "icon correct" : "icon incorrect";
+    fillIcon1.className = isCorrect1
+      ? "fill-icon correct"
+      : "fill-icon incorrect";
+    fillIcon2.className = isCorrect2
+      ? "fill-icon correct"
+      : "fill-icon incorrect";
+    fillIcon3.className = isCorrect3
+      ? "fill-icon correct"
+      : "fill-icon incorrect";
+    fillIcon4.className = isCorrect4
+      ? "fill-icon correct"
+      : "fill-icon incorrect";
+    fillIcon5.className = isCorrect5
+      ? "fill-icon correct"
+      : "fill-icon incorrect";
 
     fillIcon1.style.display = "inline-block";
     fillIcon2.style.display = "inline-block";
@@ -363,25 +399,39 @@
     fillIcon4.style.display = "inline-block";
     fillIcon5.style.display = "inline-block";
 
-    var allCorrect = isCorrect1 && isCorrect2 && isCorrect3 && isCorrect4 && isCorrect5;
-    result.innerHTML = allCorrect
-      ? "All answers are correct!"
-      : "Some answers are incorrect!";
+    var correctCount = [
+      isCorrect1,
+      isCorrect2,
+      isCorrect3,
+      isCorrect4,
+      isCorrect5,
+
+    ].filter(function (x) {
+      return x === true;
+    }).length;
+
+    result.innerHTML =
+      "You got " +
+      correctCount +
+      " out of " +
+      Object.keys(answers).length +
+      " correct.";
   }
 
-  function resetAnswers() {
-    var inputs = document.getElementsByTagName("input");
-    for (var i = 0; i < inputs.length; i++) {
-      inputs[i].value = "";
+  function resetFill() {
+    var fillInputs = document.getElementsByClassName("fill");
+    var fillIcons = document.getElementsByClassName("fill-icon");
+
+    for (var i = 0; i < fillInputs.length; i++) {
+      fillInputs[i].value = "";
     }
 
-    var icons = document.querySelectorAll(".icon");
-    icons.forEach(function (icon) {
-      icon.style.display = "none";
-    });
+    for (var j = 0; j < fillIcons.length; j++) {
+      fillIcons[j].className = "fill-icon";
+      fillIcons[j].style.display = "none";
+    }
 
-    var result = document.getElementById("result");
-    result.innerHTML = "";
+    document.getElementById("resultFill").innerHTML = "";
   }
 </script>
 </body>
