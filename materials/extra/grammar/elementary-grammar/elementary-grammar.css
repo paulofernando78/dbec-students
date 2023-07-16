@@ -3,15 +3,14 @@
 
 .unit-1-a-affirmative-grid {
     display: grid;
-    grid-template-columns: 100px 100px 110px;
-    width: 315px;
-
+    grid-template-columns: 1fr;
+    width: 292px;
 }
 
 .unit-1-a-negative-grid {
     display: grid;
-    grid-template-columns: 100px 100px 280px;
-    width: 487px;
+    grid-template-columns: 1fr;
+    width: 421px;
 }
 
 /* UNIT 2 */
@@ -207,27 +206,43 @@
 
 /* UNIT 80 */
 
-/* UNIT 1 */
+/* UNIT 81 */
 
-/* UNIT 1 */
+/* UNIT 82 */
 
-/* UNIT 1 */
+/* UNIT 83 */
 
-/* UNIT 1 */
+/* UNIT 84 */
 
-/* UNIT 1 */
+/* UNIT 85 */
 
-/* UNIT 1 */
+/* UNIT 86 */
 
-/* UNIT 1 */
+/* UNIT 87 */
 
-/* UNIT 1 */
+/* UNIT 88 */
 
-/* UNIT 1 */
+/* UNIT 89 */
 
-/* UNIT 1 */
+/* UNIT 90 */
 
-/* UNIT 1 */
+/* UNIT 91 */
+
+/* UNIT 92 */
+
+/* UNIT 93 */
+
+/* UNIT 94 */
+
+/* UNIT 95 */
+
+/* UNIT 96 */
+
+/* UNIT 97 */
+
+/* UNIT 98 */
+
+/* UNIT 99 */
 
 .unit-99-2-grid-3-columns {
     display: grid;
@@ -243,55 +258,60 @@ input[type="text"] {
     width: 90%;
 }
 
-/* UNIT 1 */
+/* UNIT 100 */
 
-/* UNIT 1 */
+/* UNIT 101 */
 
-/* UNIT 1 */
+/* UNIT 102 */
 
-/* UNIT 1 */
+/* UNIT 103 */
 
-/* UNIT 1 */
+/* UNIT 104 */
 
-/* UNIT 1 */
+/* UNIT 105 */
 
-/* UNIT 1 */
+/* UNIT 106 */
 
-/* UNIT 1 */
+/* UNIT 107 */
 
-/* UNIT 1 */
+/* UNIT 108 */
 
-/* UNIT 1 */
+/* UNIT 109 */
 
-/* UNIT 1 */
+/* UNIT 110 */
 
-/* UNIT 1 */
+/* UNIT 111 */
 
-/* UNIT 1 */
+/* UNIT 112 */
 
-/* UNIT 1 */
+/* UNIT 113 */
 
-/* UNIT 1 */
-
-/* UNIT 1 */
-
-/* UNIT 1 */
-
-/* UNIT 1 */
-
-/* UNIT 1 */
-
-/* UNIT 1 */
-
-/* UNIT 1 */
-
-/* UNIT 1 */
-
-/* UNIT 1 */
-
-/* UNIT 1 */
+/* UNIT 114 */
 
 @media (max-width: 600px) {
+
+    .unit-1-a-negative-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 357px;
+    }
+
+    .unit-1-a-negative-smaller-font-1 {
+        font-size: 1.1rem;
+    }
+
+    .unit-1-a-negative-smaller-font-2 {
+        font-size: 1.2rem;
+    }
+
+    .unit-1-a-negative-smaller-font-3 {
+        font-size: 1.1rem;
+    }
+
+    .unit-1-a-negative-smaller-font-4 {
+        font-size: 1rem;
+    }
+
     .unit-99-2-grid-3-columns {
         display: grid;
         grid-template-columns: 1fr;
