@@ -355,6 +355,10 @@ p {
 
 /* IMAGES */
 
+.general-icons {
+    width: 25px;
+}
+
 .container-img {
     display: flex;
     justify-content: space-around;
@@ -408,9 +412,6 @@ p {
     box-shadow: 0 0 3px;
 }
 
-.flag-mini {
-    width: 25px;
-}
 
 /* COURSES */
 
