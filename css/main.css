@@ -355,7 +355,7 @@ p {
 
 /* IMAGES */
 
-.general-icons {
+.icon-general {
     width: 25px;
 }
 
@@ -374,7 +374,7 @@ p {
     box-shadow: 0 0 3px;
 }
 
-.img-1 {
+.img-1-90 {
     width: 90%;
     display: block;
     margin-left: auto;
