@@ -94,7 +94,7 @@
       </div>
       <br>
       <p>I<b>'m not</b>
-        cold. You can open the window <span class="color-lightgray">Não estou com frio. Você pode abrir a
+        cold. You can open the window. <span class="color-lightgrey">Não estou com frio. Você pode abrir a
           janela</span></p>
       <p>I<b>'m not</b> 32 (years old). Actually, I<b>'m</b> 30. <span class="color-lightgrey">Não tenho 32 (anos
           de idade). Na verdade
@@ -105,10 +105,10 @@
       <p>My brother <b>isn't</b> scared of dogs. He<b>'s</b> afraid of snakes. <span class="color-lightgrey">Meu
           irmão não tem medo de cachorro. Ele tem medo de cobras.</span>
       </p>
-      <p>It<b>'s</b> /bill ten clock. You<b>'re</b> not late again. <span class="color-lightgrey">Ainda são dez
+      <p>It<b>'s</b> still ten clock. You<b>'re</b> not late again. <span class="color-lightgrey">Ainda são dez
           horas. Você não está
           atrasado(a).</span></p>
-      <p>Ann and I <b>aren't</b> good friends. She<b>'s</b> just an acquaintance.<span class="color-lightgrey">Ann
+      <p>Ann and I <b>aren't</b> good friends. She<b>'s</b> just an acquaintance.<span class="color-lightgrey"> Ann
           e eu somos bons amigos. Ela é apenas uma conhecida.</span></p>
       <p>Your keys <b>aren't</b> on the table. They<b>'re</b> in your pocket. Check that out! <span
           class="color-lightgrey">Suas chaves não estão na mesa. Elas estão no seu bolso. Dê uma olhada.</span>
@@ -130,7 +130,7 @@
         <p>Thank you. <b>That's</b> very nice of you. <span class="color-lightgrey">Obrigado(a). Foi muito gentil da sua
             parte.</span></p>
         <p>Look! There's Chris. <span class="color-lightgrey">Veja! Lá está o Chris.</span></p>
-        <p>"Here's your key." "Thank you." <span class="color-lightgrey">Aqui estpa a sua chave. Obrigado(a).</span></p>
+        <p>"Here's your key." "Thank you." <span class="color-lightgrey">Aqui está a sua chave. Obrigado(a).</span></p>
         <br>
       </section>
 
@@ -628,87 +628,6 @@
     document.getElementById("result-dropdown").innerHTML = "";
   }
 
-  // FILL-IN-THE-BLANKS
-
-    function showFill() {
-      var answers = {
-        blank1: "1",
-        blank2: "2",
-        blank3: "3",
-      };
-
-      // Set the values of the input fields to the corresponding answers
-      for (var key in answers) {
-        if (answers.hasOwnProperty(key)) {
-          document.getElementById(key).value = answers[key];
-        }
-      }
-    }
-
-    function checkFill() {
-      var answers = {
-        blank1: "1",
-        blank2: "2",
-        blank3: "3",
-      };
-
-      var fillIcon1 = document.getElementById("fillIcon1");
-      var fillIcon2 = document.getElementById("fillIcon2");
-      var fillIcon3 = document.getElementById("fillIcon3");
-      var result = document.getElementById("resultFill");
-
-      var isCorrect1 =
-        document.getElementById("blank1").value.trim() === answers.blank1;
-      var isCorrect2 =
-        document.getElementById("blank2").value.trim() === answers.blank2;
-      var isCorrect3 =
-        document.getElementById("blank3").value.trim() === answers.blank3;
-
-      fillIcon1.className = isCorrect1
-        ? "fill-icon correct"
-        : "fill-icon incorrect";
-      fillIcon2.className = isCorrect2
-        ? "fill-icon correct"
-        : "fill-icon incorrect";
-      fillIcon3.className = isCorrect3
-        ? "fill-icon correct"
-        : "fill-icon incorrect";
-
-      fillIcon1.style.display = "inline-block";
-      fillIcon2.style.display = "inline-block";
-      fillIcon3.style.display = "inline-block";
-
-      var correctCount = [
-        isCorrect1,
-        isCorrect2,
-        isCorrect3,
-      ].filter(function (x) {
-        return x === true;
-      }).length;
-
-      result.innerHTML =
-        "You got " +
-        correctCount +
-        " out of " +
-        Object.keys(answers).length +
-        " correct.";
-    }
-
-    function resetFill() {
-      var fillInputs = document.getElementsByClassName("fill");
-      var fillIcons = document.getElementsByClassName("fill-icon");
-
-      for (var i = 0; i < fillInputs.length; i++) {
-        fillInputs[i].value = "";
-      }
-
-      for (var j = 0; j < fillIcons.length; j++) {
-        fillIcons[j].className = "fill-icon";
-        fillIcons[j].style.display = "none";
-      }
-
-      document.getElementById("resultFill").innerHTML = "";
-    }
 </script>
 </body>
 
