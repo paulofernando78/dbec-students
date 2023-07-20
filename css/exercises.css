@@ -311,7 +311,7 @@ select option {
 @media (max-width: 600px) {
 
   input[type="text"] {
-    width: 90%;
+    width: 80%;
   }
 
 }

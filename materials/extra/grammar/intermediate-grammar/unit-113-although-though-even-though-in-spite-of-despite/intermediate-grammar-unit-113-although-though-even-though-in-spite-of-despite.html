@@ -24,7 +24,7 @@
         <br>
 
         <!-- A -->
-        <section>
+        <div>
             <div class="ribbon-intermediate-grammar">
                 <p class="color-white">A</p>
             </div>
@@ -53,7 +53,7 @@
         <br>
 
         <!-- B -->
-        <section>
+        <div>
             <div class="ribbon-intermediate-grammar">
                 <p class="color-white">B</p>
             </div>
@@ -75,7 +75,7 @@
         <br>
 
         <!-- C -->
-        <section>
+        <div>
             <div class="ribbon-intermediate-grammar">
                 <p class="color-white">C</p>
             </div>
@@ -144,7 +144,7 @@
             <p><b>Even though</b> I was really tired, I couldn't sleep.</p>
             <br>
 
-        </section>
+        </div>
         <br>
 
         <!--EXERCISES-->
@@ -389,6 +389,7 @@
         <br>
 
         <!-- 113.3 -->
+        <!-- FILL-IN-THE-BLANKS -->
         <div>
             <p><b>113.3 Complete the sentences. Use although + a sentence from the box.</b>
             </p>
@@ -412,6 +413,7 @@
                 <p>1.
                     <input type="text" id="blank1" class="fill">
                     <span id="fillIcon1" class="fill-icon"></span>
+                    <br>
                     , he isn't particularly well-paid.
                 </p>
                 <br>
@@ -419,11 +421,13 @@
                 <p>2.
                     <input type="text" id="blank2" class="fill">
                     <span id="fillIcon2" class="fill-icon"></span>
+                    <br>
                     , I recognised her from a photograph.
                 </p>
                 <br>
 
                 <p>3. She wasn't wearing a coat
+                    <br>
                     <input type="text" id="blank3" class="fill">
                     <span id="fillIcon3" class="fill-icon"></span>
                     .
@@ -431,6 +435,7 @@
                 <br>
 
                 <p>4. We thought we'd better invite them to the party
+                    <br>
                     <input type="text" id="blank4" class="fill">
                     <span id="fillIcon4" class="fill-icon"></span>
                     .
@@ -440,6 +445,7 @@
                 <p>5.
                     <input type="text" id="blank5" class="fill">
                     <span id="fillIcon5" class="fill-icon"></span>
+                    <br>
                     , I managed to make myself understood.
                 </p>
                 <br>
@@ -447,11 +453,13 @@
                 <p>6.
                     <input type="text" id="blank6" class="fill">
                     <span id="fillIcon6" class="fill-icon"></span>
+                    <br>
                     , the room wasn't warm.
                 </p>
                 <br>
 
                 <p>7. I didn't recognise her
+                    <br>
                     <input type="text" id="blank7" class="fill">
                     <span id="fillIcon7" class="fill-icon"></span>
                     .
@@ -459,6 +467,7 @@
                 <br>
 
                 <p>8. We're not very good friends
+                    <br>
                     <input type="text" id="blank8" class="fill">
                     <span id="fillIcon8" class="fill-icon"></span>
                     .
@@ -474,7 +483,7 @@
                 <button onclick="showFill()" class="pushable">
                     <span class="front">Show Answers</span>
                 </button>
-                <div id="resultFill" class="p"></div>
+                <div id="resultFill1" class="p"></div>
             </div>
         </div>
         <br>
@@ -597,7 +606,7 @@
             var fillIcon6 = document.getElementById("fillIcon6");
             var fillIcon7 = document.getElementById("fillIcon7");
             var fillIcon8 = document.getElementById("fillIcon8");
-            var result = document.getElementById("resultFill");
+            var result = document.getElementById("resultFill1");
 
             var isCorrect1 =
                 document.getElementById("blank1").value.trim() === answers.blank1;
