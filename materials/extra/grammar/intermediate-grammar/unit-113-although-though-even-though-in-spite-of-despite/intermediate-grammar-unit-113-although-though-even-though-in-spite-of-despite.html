@@ -154,6 +154,7 @@
         <br>
 
         <!-- 113.1 -->
+        <!-- RADIO -->
         <div>
             <p><b>113.1. Choose the correct answer.</b></p>
             <br />
@@ -213,13 +214,18 @@
             </div>
             <br />
 
-            <button onclick="resetRadios()">Reset</button>
+            <button onclick="resetRadios()" class="pushable">
+                <span class="front">
+                    Reset
+                </span>
+            </button>
         </div>
         <br />
         <hr>
         <br>
 
         <!-- 113.2 -->
+        <!-- DROPDOWN -->
         <div>
             <p><b>113.2. Choose the correct answer.</b></p>
             <br />
@@ -368,9 +374,14 @@
             <br>
             <iframe src="https://drive.google.com/file/d/1K-Bhpdqn8chl85dgnonmGJ7V0jLSmBwJ/preview" width="100%"
                 height="60"></iframe>
-
-            <button onclick="checkDropdowns()">Check Answers</button>
-            <button onclick="resetDropdowns()">Reset</button>
+            <br>
+            <br>
+            <button onclick="checkDropdowns()" class="pushable">
+                <span class="front">Check Answers</span>
+            </button>
+            <button onclick="resetDropdowns()" class="pushable">
+                <span class="front">Reset</span>
+            </button>
             <p id="result-dropdown"></p>
         </div>
         <br>
@@ -454,9 +465,15 @@
                 </p>
                 <br />
 
-                <button onclick="checkFill()">Check answers</button>
-                <button onclick="resetFill()">Reset</button>
-                <button onclick="showFill()">Show Answers</button>
+                <button onclick="checkFill()" class="pushable">
+                    <span class="front">Check answers</span>
+                </button>
+                <button onclick="resetFill()" class="pushable">
+                    <span class="front">Reset</span>
+                </button>
+                <button onclick="showFill()" class="pushable">
+                    <span class="front">Show Answers</span>
+                </button>
                 <div id="resultFill" class="p"></div>
             </div>
         </div>
