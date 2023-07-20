@@ -1,6 +1,5 @@
 /* UNIT 1 */
 
-
 .unit-1-a-affirmative-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -12,10 +11,6 @@
     grid-template-columns: 1fr;
     width: 421px;
 }
-
-/* .unit-1-exercise-3-adjectives {
-    width: 100%;
-} */
 
 /* UNIT 2 */
 
@@ -289,10 +284,6 @@
 /* UNIT 114 */
 
 @media (max-width: 600px) {
-
-    input[type="text"] {
-        width: 90%;
-    }
 
     .unit-1-a-negative-grid {
         display: grid;

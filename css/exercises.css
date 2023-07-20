@@ -212,7 +212,7 @@ select option {
   height: 22px;
 }
 
-#resultFill {
+#resultFill1 {
   margin-top: 10px;
 }
 
@@ -308,4 +308,10 @@ select option {
   transform: translateY(-2px);
 }
 
-@media {max}
+@media (max-width: 600px) {
+
+  input[type="text"] {
+    width: 90%;
+  }
+
+}

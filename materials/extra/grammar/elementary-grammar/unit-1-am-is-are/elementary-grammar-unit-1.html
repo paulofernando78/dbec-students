@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../../../../css/main.css">
   <link rel="stylesheet" href="../elementary-grammar.css">
-  <script src="../../../../../js/exercises.js"></script>
   <title>Elementary Grammar Unit 1</title>
 </head>
 
@@ -115,25 +114,27 @@
       </p>
       <br>
       <p>We say <b>it's</b> hot/warm/cold/sunny/dark. etc.</p>
+      <p><span class="color-lightgrey">Dizemos que está quente/morno/frio/ensolarado/escuro. etc.</span></p>
       <br>
       <p>It's sunny today, but it isn't warm. <span class="color-lightgrey">Hoje está ensolarado, mas não está
           quente.</span></p>
       <br>
 
-      <!-- C -->
-      <section>
-        <div class="ribbon-red">
-          <p>C</p>
-        </div>
-        <br>
-        <p></p>
-        <p>Thank you. <b>That's</b> very nice of you. <span class="color-lightgrey">Obrigado(a). Foi muito gentil da sua
-            parte.</span></p>
-        <p>Look! There's Chris. <span class="color-lightgrey">Veja! Lá está o Chris.</span></p>
-        <p>"Here's your key." "Thank you." <span class="color-lightgrey">Aqui está a sua chave. Obrigado(a).</span></p>
-        <br>
-      </section>
-
+      
+    </section>
+    
+    <!-- C -->
+    <section>
+      <div class="ribbon-red">
+        <p>C</p>
+      </div>
+      <br>
+      <p></p>
+      <p>Thank you. <b>That's</b> very nice of you. <span class="color-lightgrey">Obrigado(a). Foi muito gentil da sua
+          parte.</span></p>
+      <p>Look! There's Chris. <span class="color-lightgrey">Veja! Lá está o Chris.</span></p>
+      <p>"Here's your key." "Thank you." <span class="color-lightgrey">Aqui está a sua chave. Obrigado(a).</span></p>
+      <br>
     </section>
 
     <!--EXERCISES-->
@@ -144,35 +145,46 @@
       <br>
 
       <!-- EXERCISE 1 -->
-      <!-- FILL IN THE BLANKS -->
+      <!-- FILL IN THE BLANKS 1 -->
       <div>
         <p><b>1. Write the short form.</b></p>
         <br />
-        <label>a&#41 she is <input type="text" id="blank1" class="fill"></label>
+        <label>a&#41 she is
+        <input type="text" id="blank1" class="fill" style="width: 150px;"></label>
         <span id="fillIcon1" class="icon"></span>
         <br />
-        <label>b&#41 they are <input type="text" id="blank2" class="fill"></label>
+
+        <label>b&#41 they are
+        <input type="text" id="blank2" class="fill" style="width: 150px;"></label>
         <span id="fillIcon2" class="icon"></span>
         <br />
-        <label>c&#41 it is not <input type="text" id="blank3" class="fill"></label>
+
+        <label>c&#41 it is not
+        <input type="text" id="blank3" class="fill" style="width: 150px;"></label>
         <span id="fillIcon3" class="icon"></span>
         <br />
-        <label>d&#41 I am not <input type="text" id="blank4" class="fill"></label>
+
+        <label>d&#41 I am not
+        <input type="text" id="blank4" class="fill" style="width: 150px;"></label>
         <span id="fillIcon4" class="icon"></span>
         <br />
-        <label>f&#41 you are not <input type="text" id="blank5" class="fill"></label>
+
+        <label>f&#41 you are not
+        <input type="text" id="blank5" class="fill" style="width: 150px;"></label>
         <span id="fillIcon5" class="icon"></span>
         <br />
+        
         <br>
-        <button onclick="checkFill()" class="pushable">
+        <button onclick="checkFill1()" class="pushable">
           <span class="front">Check answers</span>
         </button>
-        <button onclick="resetFill()" class="pushable">
+        <button onclick="resetFill1()" class="pushable">
           <span class="front">Reset</span>
         </button>
-        <button onclick="showFill()" class="pushable">
+        <button onclick="showFill1()" class="pushable">
           <span class="front">Show Answers</span>
         </button>
+        <div id="resultFill1" class="p"></div>
       </div>
       <br>
       <br>
@@ -456,7 +468,7 @@
 
   // EXERCISE 1
   // FILL-IN-THE-BLANKS 1
-  function showFill() {
+  function showFill1() {
     var answers = {
       blank1: "she's",
       blank2: "they're",
@@ -472,7 +484,7 @@
       }
     }
   }
-  function checkFill() {
+  function checkFill1() {
     var answers = {
       blank1: "she's",
       blank2: "they're",
@@ -486,7 +498,7 @@
     var fillIcon3 = document.getElementById("fillIcon3");
     var fillIcon4 = document.getElementById("fillIcon4");
     var fillIcon5 = document.getElementById("fillIcon5");
-    var result = document.getElementById("resultFill");
+    var result = document.getElementById("resultFill1");
 
     var isCorrect1 =
       document.getElementById("blank1").value.trim() === answers.blank1;
@@ -539,7 +551,7 @@
       Object.keys(answers).length +
       " correct.";
   }
-  function resetFill() {
+  function resetFill1() {
     var fillInputs = document.getElementsByClassName("fill");
     var fillIcons = document.getElementsByClassName("fill-icon");
 
@@ -552,7 +564,7 @@
       fillIcons[j].style.display = "none";
     }
 
-    document.getElementById("resultFill").innerHTML = "";
+    document.getElementById("resultFill1").innerHTML = "";
   }
 
   // EXERCISE 2
