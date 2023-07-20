@@ -1,7 +1,18 @@
+/* GENERAL */
+
 label {
   font-family: var(--font);
   font-size: var(--p-size);
 }
+
+input[type="text"] {
+  margin-top: .2rem;
+  padding: 0 .2rem;
+  font-family: var(--font);
+  font-size: var(--p-size)
+}
+
+/* RADIO BUTTONS */
 
 /* RADIO CORRECT*/
 
@@ -172,12 +183,6 @@ select option {
 
 /* FILL-IN-THE-BLANKS 1 */
 
-input[type="text"] {
-  margin-top: .2rem;
-  padding: 0 .2rem;
-  font-family: var(--font);
-  font-size: var(--p-size)
-}
 
 .fill-icon {
   display: none;
@@ -211,13 +216,6 @@ input[type="text"] {
 }
 
 /* FILL-IN-THE-BLANKS 2 */
-
-input[type="text"] {
-  margin-top: .2rem;
-  padding: 0 .2rem;
-  font-family: var(--font);
-  font-size: var(--p-size)
-}
 
 .fill2-icon {
   display: none;
@@ -308,17 +306,3 @@ input[type="text"] {
 .pushable:active .front {
   transform: translateY(-2px);
 }
-
-/* button {
-  font-family: var(--font);
-  font-size: 1rem;
-  font-weight: bold;
-  margin-top: 10px;
-  padding: 2px 10px;
-  background-color: orange;
-  color: black;
-  border-radius: 4px;
-  cursor: pointer;
-  border: solid 1px;
-  box-shadow: 0 0 3px;
-} */

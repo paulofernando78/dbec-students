@@ -134,325 +134,328 @@
         <br>
       </section>
 
-      <!--EXERCISES-->
-      <section class="p-grammar">
-        <div class="ribbon-lightgray">
-          <p>Exercises</p>
+    </section>
+
+    <!--EXERCISES-->
+    <section>
+      <div class="ribbon-lightgray">
+        <p>Exercises</p>
+      </div>
+      <br>
+
+      <!-- EXERCISE 1 -->
+      <!-- FILL IN THE BLANKS -->
+      <div>
+        <p><b>1. Write the short form.</b></p>
+        <br />
+        <label>a&#41 she is <input type="text" id="blank1" class="fill"></label>
+        <span id="fillIcon1" class="icon"></span>
+        <br />
+        <label>b&#41 they are <input type="text" id="blank2" class="fill"></label>
+        <span id="fillIcon2" class="icon"></span>
+        <br />
+        <label>c&#41 it is not <input type="text" id="blank3" class="fill"></label>
+        <span id="fillIcon3" class="icon"></span>
+        <br />
+        <label>d&#41 I am not <input type="text" id="blank4" class="fill"></label>
+        <span id="fillIcon4" class="icon"></span>
+        <br />
+        <label>f&#41 you are not <input type="text" id="blank5" class="fill"></label>
+        <span id="fillIcon5" class="icon"></span>
+        <br />
+        <br>
+        <button onclick="checkFill()" class="pushable">
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="resetFill()" class="pushable">
+          <span class="front">Reset</span>
+        </button>
+        <button onclick="showFill()" class="pushable">
+          <span class="front">Show Answers</span>
+        </button>
+      </div>
+      <br>
+      <br>
+
+      <!-- EXERCISE 2 -->
+      <!-- RADIO  -->
+      <div class="p">
+        <p><b>2. Choose the correct answer.</b></p>
+        <br />
+        <p>a&#41; The weather _____ good today. <span class="color-lightgray"><span class="color-lightgrey">Hoje o
+              clima está bom.</span></span></p>
+        <div class="align-items-center">
+          <input type="radio" name="radio-1-1" id="radio-1a" class="radio-incorrect" />
+          <label for="radio-1a">are</label>
+        </div>
+        <div class="align-items-center">
+          <input type="radio" name="radio-1-1" id="radio-1b" class="radio-correct" />
+          <label for="radio-1b">is</label>
+        </div>
+        <br />
+        <p>b&#41; This bag _____ heavy. <span class="color-lightgray"><span class="color-lightgrey">Esta sacola está
+              pesada</span></span>.</p>
+        <div class="align-items-center">
+          <input type="radio" name="radio-1-2" id="radio-2a" class="radio-incorrect" />
+          <label for="radio-2a">are</label>
+        </div>
+        <div class="align-items-center">
+          <input type="radio" name="radio-1-2" id="radio-2b" class="radio-correct" />
+          <label for="radio-2b">is</label>
+        </div>
+        <br />
+        <p>c&#41; These bags _____ heavy.</p>
+        <div class="align-items-center">
+          <input type="radio" name="radio-1-3" id="radio-3a" class="radio-correct" />
+          <label for="radio-3a">are</label>
+        </div>
+        <div class="align-items-center">
+          <input type="radio" name="radio-1-3" id="radio-3b" class="radio-incorrect" />
+          <label for="radio-3b">is</label>
+        </div>
+        <br />
+        <p>d&#41; My brother and I _____ good tennis players.</p>
+        <div class="align-items-center">
+          <input type="radio" name="radio-1-4" id="radio-4a" class="radio-correct" />
+          <label for="radio-4a">are</label>
+        </div>
+        <div class="align-items-center">
+          <input type="radio" name="radio-1-4" id="radio-4b" class="radio-incorrect" />
+          <label for="radio-4b">is</label>
+        </div>
+        <br />
+        <p>e&#41; Amy _____ at home. Her children _____ at school.</p>
+        <div class="align-items-center">
+          <input type="radio" name="radio-1-5" id="radio-5a" class="radio-incorrect" />
+          <label for="radio-5a">are / is</label>
+        </div>
+        <div class="align-items-center">
+          <input type="radio" name="radio-1-5" id="radio-5b" class="radio-correct" />
+          <label for="radio-5b">is / are</label>
         </div>
         <br>
 
-        <!-- EXERCISE 1 -->
-        <!-- FILL IN THE BLANKS -->
-        <div>
-          <p><b>1. Write the short form.</b></p>
-          <br />
-          <label>a&#41 she is <input type="text" id="blank1" class="fill"></label>
-          <span id="fillIcon1" class="icon"></span>
-          <br />
-          <label>b&#41 they are <input type="text" id="blank2" class="fill"></label>
-          <span id="fillIcon2" class="icon"></span>
-          <br />
-          <label>c&#41 it is not <input type="text" id="blank3" class="fill"></label>
-          <span id="fillIcon3" class="icon"></span>
-          <br />
-          <label>d&#41 I am not <input type="text" id="blank4" class="fill"></label>
-          <span id="fillIcon4" class="icon"></span>
-          <br />
-          <label>f&#41 you are not <input type="text" id="blank5" class="fill"></label>
-          <span id="fillIcon5" class="icon"></span>
-          <br />
-          <br>
-          <button onclick="checkFill()" class="pushable">
-            <span class="front">Check answers</span>
-          </button>
-          <button onclick="resetFill()" class="pushable">
-            <span class="front">Reset</span>
-          </button>
-          <button onclick="showFill()" class="pushable">
-            <span class="front">Show Answers</span>
-          </button>
-        </div>
+        <button onclick="resetRadios()" class="pushable">
+          <span class="front">
+            Reset
+          </span>
+        </button>
+      </div>
+      <br />
+
+      <!-- EXERCISE 3 -->
+      <!-- DROPDOWN -->
+      <div>
+        <p><b>3. Choose the correct answers.</b></p>
+        <br />
+        <p><img src="../../../../../assets/imgs/cellphone.png" alt="cellphone" class="icon-general"> Zoom in</p>
+        <img src="img/unit-1-exercise-3.png" alt=" Pictures showing how people are feeling" class="img-1-100">
         <br>
+        <label>
+          1. She
+          <select id="option1a">
+            <option value="na">...</option>
+            <option value="a">is</option>
+            <option value="b">are</option>
+          </select>
+          <span class="dropdown-icon" id="option1aIcon"></span>
+        </label>
+
+        <label>
+          <select id="option1b">
+            <option value="na">...</option>
+            <option value="a">hot</option>
+            <option value="b">scared</option>
+            <option value="c">thirsty</option>
+            <option value="d">angry</option>
+            <option value="e">cold</option>
+            <option value="f">hungry</option>
+          </select>
+          <span class="dropdown-icon" id="option1bIcon"></span>
+          .
+        </label>
+        <br />
+
+        <label>
+          2. They
+          <select id="option2a">
+            <option value="na">...</option>
+            <option value="a">is</option>
+            <option value="b">are</option>
+          </select>
+          <span class="dropdown-icon" id="option2aIcon"></span>
+        </label>
+
+        <label>
+          <select id="option2b">
+            <option value="na">...</option>
+            <option value="a">hot</option>
+            <option value="b">scared</option>
+            <option value="c">thirsty</option>
+            <option value="d">angry</option>
+            <option value="e">cold</option>
+            <option value="f">hungry</option>
+          </select>
+          <span class="dropdown-icon" id="option2bIcon"></span>
+          .
+        </label>
+        <br />
+
+        <label>
+          3. He
+          <select id="option3a">
+            <option value="na">...</option>
+            <option value="a">is</option>
+            <option value="b">are</option>
+          </select>
+          <span class="dropdown-icon" id="option3aIcon"></span>
+        </label>
+
+        <label>
+          <select id="option3b">
+            <option value="na">...</option>
+            <option value="a">hot</option>
+            <option value="b">scared</option>
+            <option value="c">thirsty</option>
+            <option value="d">angry</option>
+            <option value="e">cold</option>
+            <option value="f">hungry</option>
+          </select>
+          <span class="dropdown-icon" id="option3bIcon"></span>
+          .
+        </label>
+        <br />
+
+        <label>
+          4. He
+          <select id="option4a">
+            <option value="na">...</option>
+            <option value="a">is</option>
+            <option value="b">are</option>
+          </select>
+          <span class="dropdown-icon" id="option4aIcon"></span>
+        </label>
+
+        <label>
+          <select id="option4b">
+            <option value="na">...</option>
+            <option value="a">hot</option>
+            <option value="b">scared</option>
+            <option value="c">thirsty</option>
+            <option value="d">angry</option>
+            <option value="e">cold</option>
+            <option value="f">hungry</option>
+          </select>
+          <span class="dropdown-icon" id="option4bIcon"></span>
+          .
+        </label>
+        <br />
+
+        <label>
+          5. They
+          <select id="option5a">
+            <option value="na">...</option>
+            <option value="a">is</option>
+            <option value="b">are</option>
+          </select>
+          <span class="dropdown-icon" id="option5aIcon"></span>
+        </label>
+
+        <label>
+          <select id="option5b">
+            <option value="na">...</option>
+            <option value="a">hot</option>
+            <option value="b">scared</option>
+            <option value="c">thirsty</option>
+            <option value="d">angry</option>
+            <option value="e">cold</option>
+            <option value="f">hungry</option>
+          </select>
+          <span class="dropdown-icon" id="option5bIcon"></span>
+          .
+        </label>
+        <br />
+
+        <label>
+          6. She
+          <select id="option6a">
+            <option value="na">...</option>
+            <option value="a">is</option>
+            <option value="b">are</option>
+          </select>
+          <span class="dropdown-icon" id="option6aIcon"></span>
+        </label>
+
+        <label>
+          <select id="option6b">
+            <option value="na">...</option>
+            <option value="a">hot</option>
+            <option value="b">scared</option>
+            <option value="c">thirsty</option>
+            <option value="d">angry</option>
+            <option value="e">cold</option>
+            <option value="f">hungry</option>
+          </select>
+          <span class="dropdown-icon" id="option6bIcon"></span>
+          .
+        </label>
+        <br />
+        <br />
+
+        <button onclick="checkDropdowns()" class="pushable">
+          <span class="front">Check Answers</span>
+        </button>
+        <button onclick="resetDropdowns()" class="pushable">
+          <span class="front">Reset</span>
+        </button>
+        <p id="result-dropdown"></p>
+      </div>
+      <br />
+
+      <!-- EXERCISE 4 -->
+      <!-- FILL IN THE BLANKS -->
+      <div>
+        <p><b>4. Write the correct form.</b></p>
+        <br />
+        <p>1. (Brazil / a very big country)
+          <br>
+          <input type="text" id="blank1_fill2" class="fill2">
+          <span id="fill2Icon1" class="fill2-icon"></span>
+        </p>
+
+        <p>2. (Diamonds / cheap)
+          <br>
+          <input type="text" id="blank2_fill2" class="fill2">
+          <span id="fill2Icon2" class="fill2-icon"></span>
+        </p>
+
+        <p>3. (Quebec / in the United States)
+          <br>
+          <input type="text" id="blank3_fill2" class="fill2">
+          <span id="fill2Icon3" class="fill2-icon"></span>
+        </p>
         <br>
-
-        <!-- EXERCISE 2 -->
-        <!-- RADIO  -->
-        <div class="p">
-          <p><b>2. Choose the correct answer.</b></p>
-          <br />
-          <p>a&#41; The weather _____ good today. <span class="color-lightgray">Hoje o clima está bom.</span></p>
-          <div class="align-items-center">
-            <input type="radio" name="radio-1-1" id="radio-1a" class="radio-incorrect" />
-            <label for="radio-1a">are</label>
-          </div>
-          <div class="align-items-center">
-            <input type="radio" name="radio-1-1" id="radio-1b" class="radio-correct" />
-            <label for="radio-1b">is</label>
-          </div>
-          <br />
-          <p>b&#41; This bag _____ heavy <span class="color-lightgray">pesada</span>.</p>
-          <div class="align-items-center">
-            <input type="radio" name="radio-1-2" id="radio-2a" class="radio-incorrect" />
-            <label for="radio-2a">are</label>
-          </div>
-          <div class="align-items-center">
-            <input type="radio" name="radio-1-2" id="radio-2b" class="radio-correct" />
-            <label for="radio-2b">is</label>
-          </div>
-          <br />
-          <p>c&#41; These bags _____ heavy.</p>
-          <div class="align-items-center">
-            <input type="radio" name="radio-1-3" id="radio-3a" class="radio-correct" />
-            <label for="radio-3a">are</label>
-          </div>
-          <div class="align-items-center">
-            <input type="radio" name="radio-1-3" id="radio-3b" class="radio-incorrect" />
-            <label for="radio-3b">is</label>
-          </div>
-          <br />
-          <p>d&#41; My brother and I _____ good tennis players.</p>
-          <div class="align-items-center">
-            <input type="radio" name="radio-1-4" id="radio-4a" class="radio-correct" />
-            <label for="radio-4a">are</label>
-          </div>
-          <div class="align-items-center">
-            <input type="radio" name="radio-1-4" id="radio-4b" class="radio-incorrect" />
-            <label for="radio-4b">is</label>
-          </div>
-          <br />
-          <p>e&#41; Amy _____ at home. Her children _____ at school.</p>
-          <div class="align-items-center">
-            <input type="radio" name="radio-1-5" id="radio-5a" class="radio-incorrect" />
-            <label for="radio-5a">are / is</label>
-          </div>
-          <div class="align-items-center">
-            <input type="radio" name="radio-1-5" id="radio-5b" class="radio-correct" />
-            <label for="radio-5b">is / are</label>
-          </div>
-          <br>
-
-          <button onclick="resetRadios()" class="pushable">
-            <span class="front">
-              Reset
-            </span>
-          </button>
-        </div>
         <br />
 
-        <!-- EXERCISE 3 -->
-        <!-- DROPDOWN -->
-
-        <div>
-          <p><b>3. Choose the correct answers.</b></p>
-          <br />
-          <p><img src="../../../../../assets/imgs/cellphone.png" alt="cellphone" class="icon-general"> Zoom in</p>
-          <img src="img/unit-1-exercise-3.png" alt=" Pictures showing how people are feeling" class="img-1-100">
-          <br>
-          <label>
-            1. She
-            <select id="option1a">
-              <option value="na">...</option>
-              <option value="a">is</option>
-              <option value="b">are</option>
-            </select>
-            <span class="dropdown-icon" id="option1aIcon"></span>
-          </label>
-
-          <label>
-            <select id="option1b">
-              <option value="na">...</option>
-              <option value="a">hot</option>
-              <option value="b">scared</option>
-              <option value="c">thirsty</option>
-              <option value="d">angry</option>
-              <option value="e">cold</option>
-              <option value="f">hungry</option>
-            </select>
-            <span class="dropdown-icon" id="option1bIcon"></span>
-            .
-          </label>
-          <br />
-
-          <label>
-            2. They
-            <select id="option2a">
-              <option value="na">...</option>
-              <option value="a">is</option>
-              <option value="b">are</option>
-            </select>
-            <span class="dropdown-icon" id="option2aIcon"></span>
-          </label>
-
-          <label>
-            <select id="option2b">
-              <option value="na">...</option>
-              <option value="a">hot</option>
-              <option value="b">scared</option>
-              <option value="c">thirsty</option>
-              <option value="d">angry</option>
-              <option value="e">cold</option>
-              <option value="f">hungry</option>
-            </select>
-            <span class="dropdown-icon" id="option2bIcon"></span>
-            .
-          </label>
-          <br />
-
-          <label>
-            3. He
-            <select id="option3a">
-              <option value="na">...</option>
-              <option value="a">is</option>
-              <option value="b">are</option>
-            </select>
-            <span class="dropdown-icon" id="option3aIcon"></span>
-          </label>
-
-          <label>
-            <select id="option3b">
-              <option value="na">...</option>
-              <option value="a">hot</option>
-              <option value="b">scared</option>
-              <option value="c">thirsty</option>
-              <option value="d">angry</option>
-              <option value="e">cold</option>
-              <option value="f">hungry</option>
-            </select>
-            <span class="dropdown-icon" id="option3bIcon"></span>
-            .
-          </label>
-          <br />
-
-          <label>
-            4. He
-            <select id="option4a">
-              <option value="na">...</option>
-              <option value="a">is</option>
-              <option value="b">are</option>
-            </select>
-            <span class="dropdown-icon" id="option4aIcon"></span>
-          </label>
-
-          <label>
-            <select id="option4b">
-              <option value="na">...</option>
-              <option value="a">hot</option>
-              <option value="b">scared</option>
-              <option value="c">thirsty</option>
-              <option value="d">angry</option>
-              <option value="e">cold</option>
-              <option value="f">hungry</option>
-            </select>
-            <span class="dropdown-icon" id="option4bIcon"></span>
-            .
-          </label>
-          <br />
-
-          <label>
-            5. They
-            <select id="option5a">
-              <option value="na">...</option>
-              <option value="a">is</option>
-              <option value="b">are</option>
-            </select>
-            <span class="dropdown-icon" id="option5aIcon"></span>
-          </label>
-
-          <label>
-            <select id="option5b">
-              <option value="na">...</option>
-              <option value="a">hot</option>
-              <option value="b">scared</option>
-              <option value="c">thirsty</option>
-              <option value="d">angry</option>
-              <option value="e">cold</option>
-              <option value="f">hungry</option>
-            </select>
-            <span class="dropdown-icon" id="option5bIcon"></span>
-            .
-          </label>
-          <br />
-
-          <label>
-            6. She
-            <select id="option6a">
-              <option value="na">...</option>
-              <option value="a">is</option>
-              <option value="b">are</option>
-            </select>
-            <span class="dropdown-icon" id="option6aIcon"></span>
-          </label>
-
-          <label>
-            <select id="option6b">
-              <option value="na">...</option>
-              <option value="a">hot</option>
-              <option value="b">scared</option>
-              <option value="c">thirsty</option>
-              <option value="d">angry</option>
-              <option value="e">cold</option>
-              <option value="f">hungry</option>
-            </select>
-            <span class="dropdown-icon" id="option6bIcon"></span>
-            .
-          </label>
-          <br />
-          <br />
-
-          <button onclick="checkDropdowns()" class="pushable">
-            <span class="front">Check Answers</span>
-          </button>
-          <button onclick="resetDropdowns()" class="pushable">
-            <span class="front">Reset</span>
-          </button>
-          <p id="result-dropdown"></p>
-        </div>
-        <br />
-
-        <!-- FILL IN THE BLANKS -->
-
-        <p><b>FILL-IN-THE-BLANKS</b></p>
-        <br />
-
-        <div>
-          <p>1. (Brazil / a very big country)
-            <br>
-            <input type="text" id="blank1" class="fill">
-            <span id="fillIcon1" class="fill-icon"></span>
-          </p>
-
-          <p>2. (Diamonds / cheap)
-            <br>
-            <input type="text" id="blank2" class="fill">
-            <span id="fillIcon2" class="fill-icon"></span>
-          </p>
-
-          <p>3. (Quebec / in the United States)
-            <br>
-            <input type="text" id="blank3" class="fill">
-            <span id="fillIcon3" class="fill-icon"></span>
-            <br>
-            <br />
-
-            <button onclick="checkFill()" class="pushable">
-              <span class="front">Check answers</span>
-            </button>
-            <button onclick="resetFill()" class="pushable">
-              <span class="front">Reset</span>
-            </button>
-            <button onclick="showFill()" class="pushable">
-              <span class="front">Show Answers</span>
-            </button>
-          <div id="resultFill" class="p"></div>
-        </div>
-
+        <button onclick="checkFill2()" class="pushable">
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="resetFill2()" class="pushable">
+          <span class="front">Reset</span>
+        </button>
+        <button onclick="showFill2()" class="pushable">
+          <span class="front">Show Answers</span>
+        </button>
+        <div id="resultFill2" class="p"></div>
+      </div>
+    </section>
   </main>
 </body>
 
 <script>
 
-  // FILL-IN-THE-BLANKS
-
+  // EXERCISE 1
+  // FILL-IN-THE-BLANKS 1
   function showFill() {
     var answers = {
       blank1: "she's",
@@ -469,7 +472,6 @@
       }
     }
   }
-
   function checkFill() {
     var answers = {
       blank1: "she's",
@@ -537,7 +539,6 @@
       Object.keys(answers).length +
       " correct.";
   }
-
   function resetFill() {
     var fillInputs = document.getElementsByClassName("fill");
     var fillIcons = document.getElementsByClassName("fill-icon");
@@ -554,8 +555,8 @@
     document.getElementById("resultFill").innerHTML = "";
   }
 
+  // EXERCISE 2
   // RADIOS
-
   function resetRadios() {
     var radios = document.querySelectorAll('input[type="radio"]');
     for (var i = 0; i < radios.length; i++) {
@@ -563,8 +564,8 @@
     }
   }
 
+  // EXERCISE 3
   // DROPDOWN
-
   function checkDropdowns() {
     var answers = {
       option1a: "a",
@@ -611,7 +612,6 @@
       Object.keys(answers).length +
       " correct.";
   }
-
   function resetDropdowns() {
     var dropdowns = document.getElementsByTagName("select");
     var dropdownIcons = document.getElementsByClassName("dropdown-icon");
@@ -628,6 +628,85 @@
     document.getElementById("result-dropdown").innerHTML = "";
   }
 
+  // EXERCISE 4
+  // FILL-IN-THE-BLANKS 2
+  function showFill2() {
+    var answers = {
+      blank1_fill2: ["Brazil is a very big country.", " Brazil's a very big country."],
+      blank2_fill2: "Diamonds aren't cheap.",
+      blank3_fill2: ["Quebec is not in the United States.", " Quebec isn't in the United States."],
+    };
+
+    // Set the values of the input fields to the corresponding answers
+    for (var key in answers) {
+      if (answers.hasOwnProperty(key)) {
+        document.getElementById(key).value = answers[key];
+      }
+    }
+  }
+  function checkFill2() {
+    var answers = {
+      blank1_fill2: ["Brazil is a very big country.", "Brazil's a very big country.", "Brazil is a very big country., Brazil's a very big country."],
+      blank2_fill2: "Diamonds aren't cheap.",
+      blank3_fill2: ["Quebec is not in the United States.", "Quebec isn't in the United States.", "Quebec is not in the United States., Quebec isn't in the United States."],
+    };
+
+    var fill2Icon1 = document.getElementById("fill2Icon1");
+    var fill2Icon2 = document.getElementById("fill2Icon2");
+    var fill2Icon3 = document.getElementById("fill2Icon3");
+    var result = document.getElementById("resultFill2");
+
+    var isCorrect1 =
+      answers.blank1_fill2.includes(document.getElementById("blank1_fill2").value.trim());
+    var isCorrect2 =
+      document.getElementById("blank2_fill2").value.trim() === answers.blank2_fill2;
+    var isCorrect3 =
+      answers.blank3_fill2.includes(document.getElementById("blank3_fill2").value.trim());
+
+    fill2Icon1.className = isCorrect1
+      ? "fill2-icon correct"
+      : "fill2-icon incorrect";
+    fill2Icon2.className = isCorrect2
+      ? "fill2-icon correct"
+      : "fill2-icon incorrect";
+    fill2Icon3.className = isCorrect3
+      ? "fill2-icon correct"
+      : "fill2-icon incorrect";
+
+    fill2Icon1.style.display = "inline-block";
+    fill2Icon2.style.display = "inline-block";
+    fill2Icon3.style.display = "inline-block";
+
+    var correctCount = [
+      isCorrect1,
+      isCorrect2,
+      isCorrect3,
+    ].filter(function (x) {
+      return x === true;
+    }).length;
+
+    result.innerHTML =
+      "You got " +
+      correctCount +
+      " out of " +
+      Object.keys(answers).length +
+      " correct.";
+  }
+  function resetFill2() {
+    var fill2Inputs = document.getElementsByClassName("fill2");
+    var fill2Icons = document.getElementsByClassName("fill2-icon");
+
+    for (var i = 0; i < fill2Inputs.length; i++) {
+      fill2Inputs[i].value = "";
+    }
+
+    for (var j = 0; j < fill2Icons.length; j++) {
+      fill2Icons[j].className = "fill2-icon";
+      fill2Icons[j].style.display = "none";
+    }
+
+    document.getElementById("resultFill2").innerHTML = "";
+  }
 </script>
 </body>
 
