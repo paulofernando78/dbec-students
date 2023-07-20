@@ -9,7 +9,8 @@ input[type="text"] {
   margin-top: .2rem;
   padding: 0 .2rem;
   font-family: var(--font);
-  font-size: var(--p-size)
+  font-size: var(--p-size);
+  width: 95%;
 }
 
 /* RADIO BUTTONS */
@@ -306,3 +307,5 @@ select option {
 .pushable:active .front {
   transform: translateY(-2px);
 }
+
+@media {max}

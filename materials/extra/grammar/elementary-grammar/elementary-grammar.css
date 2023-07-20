@@ -258,10 +258,6 @@
     text-align: center;
 }
 
-input[type="text"] {
-    width: 90%;
-}
-
 /* UNIT 100 */
 
 /* UNIT 101 */
@@ -294,6 +290,10 @@ input[type="text"] {
 
 @media (max-width: 600px) {
 
+    input[type="text"] {
+        width: 90%;
+    }
+
     .unit-1-a-negative-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -322,7 +322,4 @@ input[type="text"] {
         justify-content: center;
     }
 
-    input[type="text"] {
-        width: 80%;
-    }
 }
