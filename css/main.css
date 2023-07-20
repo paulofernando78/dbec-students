@@ -240,8 +240,8 @@ p {
     font-weight: bold;
 }
 
-.ribbon-lightgray {
-    background: lightgray;
+.ribbon-lightgrey {
+    background: lightgrey;
     border: 1px solid black;
     border-radius: 4px;
     padding-left: 10px;
@@ -386,7 +386,6 @@ p {
 
 .grid-2-columns {
     display: grid;
-    
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }

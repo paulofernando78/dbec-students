@@ -14,6 +14,12 @@
 
 /* UNIT 2 */
 
+.unit-2-a-affirmative-question-grid {
+    display: flex;
+    gap: 20px;
+    width: 240px;
+}
+
 /* UNIT 3 */
 
 /* UNIT 4 */
