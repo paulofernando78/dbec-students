@@ -14,10 +14,18 @@
 
 /* UNIT 2 */
 
-.unit-2-a-affirmative-question-grid {
+.unit-2-a-affirmative-question-flex {
+    display: flex;
+    width: 217px;
+}
+
+.unit-2-c-short-answers-flex {
     display: flex;
     gap: 20px;
-    width: 240px;
+}
+
+.unit-2-c-short-answers-seat {
+    width: 35%;
 }
 
 /* UNIT 3 */
@@ -311,6 +319,16 @@
 
     .unit-1-a-negative-smaller-font-4 {
         font-size: 1rem;
+    }
+
+    .unit-2-c-short-answers-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .unit-2-c-short-answers-seat {
+        width: 80%;
     }
 
     .unit-99-2-grid-3-columns {
