@@ -318,7 +318,7 @@
         <!-- EXERCISE 2.2 -->
         <!-- FILL IN THE BLANKS 1-->
         <div>
-            <p><b>2. Complete the questions. Use what, who, where, and how + is or are.</b></p>
+            <p><b>2.2 Complete the questions. Use what, who, where, and how + is or are.</b></p>
             <br />
             <p>1. A:
                 <input type="text" id="blank1_fill1" class="fill1" style="width: 200px;"> your children?
@@ -383,19 +383,94 @@
         </div>
         <br>
 
-        <!-- EXERCISE 2.3 -->
-        <p><b>2.3 ....</b>
-        </p>
-        <br>
-        <p>...</p>
-        <br>
-        <br>
+        <!-- FILL IN THE BLANKS 2-->
+        <div>
+            <p><b>2.3 Write the questions.</b></p>
+            <br />
+            <p>1. (name?)
+                <br>
+                A: <input type="text" id="blank1_fill2" class="fill2" style="width: 300px;">
+                <span id="fill2Icon1" class="fill2-icon"></span>
+                <br>
+                B: Eric.
+            </p>
+            <br>
+            <p>2. (Australian?)
+                <br>
+                A: <input type="text" id="blank2_fill2" class="fill2" style="width: 300px;">
+                <span id="fill2Icon2" class="fill2-icon"></span>
+                <br>
+                B: No, I'm Canadian.
+            </p>
+            <br>
+            <p>3. (how old?)
+                <br>
+                A: <input type="text" id="blank3_fill2" class="fill2" style="width: 300px;">
+                <span id="fill2Icon3" class="fill2-icon"></span>
+                <br>
+                B: I'm 30.
+            </p>
+            <br>
+            <p>4. (a teacher?)
+                <br>
+                A: <input type="text" id="blank4_fill2" class="fill2" style="width: 300px;">
+                <span id="fill2Icon4" class="fill2-icon"></span>
+                <br>
+                B: No, I'm a lawyer.
+            </p>
+            <br>
+            <p>5. (married?)
+                <br>
+                A: <input type="text" id="blank5_fill2" class="fill2" style="width: 300px;">
+                <span id="fill2Icon5" class="fill2-icon"></span>
+                <br>
+                B: Yes, I am.
+            </p>
+            <br>
+            <p>6. (wife a lawyer?)
+                <br>
+                A: <input type="text" id="blank6_fill2" class="fill2" style="width: 300px;">
+                <span id="fill2Icon6" class="fill2-icon"></span>
+                <br>
+                B: No, she's a teacher.
+            </p>
+            <br>
+            <p>7. (from?)
+                <br>
+                A: <input type="text" id="blank7_fill2" class="fill2" style="width: 300px;">
+                <span id="fill2Icon7" class="fill2-icon"></span>
+                <br>
+                B: She's from Mexico.
+            </p>
+            <br>
+            <p>8. (her name?)
+                <br>
+                A: <input type="text" id="blank8_fill2" class="fill2" style="width: 300px;">
+                <span id="fill2Icon8" class="fill2-icon"></span>
+                <br>
+                B: Ana.
+            </p>
+            <br>
+            <p>9. (how old?)
+                <br>
+                A: <input type="text" id="blank9_fill2" class="fill2" style="width: 300px;">
+                <span id="fill2Icon9" class="fill2-icon"></span>
+                <br>
+                B: She's 27.
+            </p>
+            <br />
 
-        <!-- EXERCISE 2.4 -->
-        <p><b>2.41 ....</b>
-        </p>
-        <br>
-        <p>...</p>
+            <button onclick="checkFill2()" class="pushable">
+                <span class="front">Check answers</span>
+            </button>
+            <button onclick="resetFill2()" class="pushable">
+                <span class="front">Reset</span>
+            </button>
+            <button onclick="showFill2()" class="pushable">
+                <span class="front">Show Answers</span>
+            </button>
+            <div id="resultFill2" class="p"></div>
+        </div>
         <br>
     </main>
     <script>
@@ -563,6 +638,7 @@
                 " correct.";
         }
         function resetFill1() {
+
             var fill1Inputs = document.getElementsByClassName("fill1");
             var fill1Icons = document.getElementsByClassName("fill1-icon");
 
@@ -577,6 +653,146 @@
 
             document.getElementById("resultFill1").innerHTML = "";
         }
+
+        // FILL-IN-THE-BLANKS 2
+        function showFill2() {
+            var answers = {
+                blank1_fill2: ["What is your name?", " What's your name?"],
+                blank2_fill2: "Are you Australian?",
+                blank3_fill2: "How old are you?",
+                blank4_fill2: "Are you a teacher?",
+                blank5_fill2: "Are you married?",
+                blank6_fill2: "Is your wife a lawyer?",
+                blank7_fill2: ["Where is she from", " Where's she from?"],
+                blank8_fill2: ["What is her name?", " What's her name?"],
+                blank9_fill2: "How old is she?",
+            };
+
+            // Set the values of the input fields to the corresponding answers
+            for (var key in answers) {
+                if (answers.hasOwnProperty(key)) {
+                    document.getElementById(key).value = answers[key];
+                }
+            }
+        }
+        function checkFill2() {
+            var answers = {
+                blank1_fill2: ["What is your name?", "What's your name?", "What is your name?, What's your name?"],
+                blank2_fill2: "Are you Australian?",
+                blank3_fill2: "How old are you?",
+                blank4_fill2: "Are you a teacher?",
+                blank5_fill2: "Are you married?",
+                blank6_fill2: "Is your wife a lawyer?",
+                blank7_fill2: ["Where is she from", "Where's she from?", "Where is she from, Where's she from?"],
+                blank8_fill2: ["What is her name?", "What's her name?", "What is her name?, What's her name?"],
+                blank9_fill2: "How old is she?",
+            };
+
+            var fill2Icon1 = document.getElementById("fill2Icon1");
+            var fill2Icon2 = document.getElementById("fill2Icon2");
+            var fill2Icon3 = document.getElementById("fill2Icon3");
+            var fill2Icon4 = document.getElementById("fill2Icon4");
+            var fill2Icon5 = document.getElementById("fill2Icon5");
+            var fill2Icon6 = document.getElementById("fill2Icon6");
+            var fill2Icon7 = document.getElementById("fill2Icon7");
+            var fill2Icon8 = document.getElementById("fill2Icon8");
+            var fill2Icon9 = document.getElementById("fill2Icon9");
+            var result = document.getElementById("resultFill2");
+
+            var isCorrect1 =
+                answers.blank1_fill2.includes(document.getElementById("blank1_fill2").value.trim()); 2;
+            var isCorrect2 =
+                document.getElementById("blank2_fill2").value.trim() === answers.blank2_fill2;
+            var isCorrect3 =
+                document.getElementById("blank3_fill2").value.trim() === answers.blank3_fill2;
+            var isCorrect4 =
+                document.getElementById("blank4_fill2").value.trim() === answers.blank4_fill2;
+            var isCorrect5 =
+                document.getElementById("blank5_fill2").value.trim() === answers.blank5_fill2;
+            var isCorrect6 =
+                document.getElementById("blank6_fill2").value.trim() === answers.blank6_fill2;
+            var isCorrect7 =
+                answers.blank7_fill2.includes(document.getElementById("blank7_fill2").value.trim());
+            var isCorrect8 =
+                answers.blank8_fill2.includes(document.getElementById("blank8_fill2").value.trim());
+            var isCorrect9 =
+                document.getElementById("blank9_fill2").value.trim() === answers.blank9_fill2;
+
+            fill2Icon1.className = isCorrect1
+                ? "fill2-icon correct"
+                : "fill2-icon incorrect";
+            fill2Icon2.className = isCorrect2
+                ? "fill2-icon correct"
+                : "fill2-icon incorrect";
+            fill2Icon3.className = isCorrect3
+                ? "fill2-icon correct"
+                : "fill2-icon incorrect";
+            fill2Icon4.className = isCorrect4
+                ? "fill2-icon correct"
+                : "fill2-icon incorrect";
+            fill2Icon5.className = isCorrect5
+                ? "fill2-icon correct"
+                : "fill2-icon incorrect";
+            fill2Icon6.className = isCorrect6
+                ? "fill2-icon correct"
+                : "fill2-icon incorrect";
+            fill2Icon7.className = isCorrect7
+                ? "fill2-icon correct"
+                : "fill2-icon incorrect";
+            fill2Icon8.className = isCorrect8
+                ? "fill2-icon correct"
+                : "fill2-icon incorrect";
+            fill2Icon9.className = isCorrect9
+                ? "fill2-icon correct"
+                : "fill2-icon incorrect";
+
+            fill2Icon1.style.display = "inline-block";
+            fill2Icon2.style.display = "inline-block";
+            fill2Icon3.style.display = "inline-block";
+            fill2Icon4.style.display = "inline-block";
+            fill2Icon5.style.display = "inline-block";
+            fill2Icon6.style.display = "inline-block";
+            fill2Icon7.style.display = "inline-block";
+            fill2Icon8.style.display = "inline-block";
+            fill2Icon9.style.display = "inline-block";
+
+            var correctCount = [
+                isCorrect1,
+                isCorrect2,
+                isCorrect3,
+                isCorrect4,
+                isCorrect5,
+                isCorrect6,
+                isCorrect7,
+                isCorrect8,
+                isCorrect9,
+            ].filter(function (x) {
+                return x === true;
+            }).length;
+
+            result.innerHTML =
+                "You got " +
+                correctCount +
+                " out of " +
+                Object.keys(answers).length +
+                " correct.";
+        }
+        function resetFill2() {
+            var fill2Inputs = document.getElementsByClassName("fill2");
+            var fill2Icons = document.getElementsByClassName("fill2-icon");
+
+            for (var i = 0; i < fill2Inputs.length; i++) {
+                fill2Inputs[i].value = "";
+            }
+
+            for (var j = 0; j < fill2Icons.length; j++) {
+                fill2Icons[j].className = "fill2-icon";
+                fill2Icons[j].style.display = "none";
+            }
+
+            document.getElementById("resultFill2").innerHTML = "";
+        }
+
     </script>
 </body>
 
