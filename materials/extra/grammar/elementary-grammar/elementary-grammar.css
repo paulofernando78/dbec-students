@@ -16,7 +16,8 @@
 
 .unit-2-a-affirmative-question-flex {
     display: flex;
-    width: 217px;
+    width: 236px;
+    gap: 20px;
 }
 
 .unit-2-c-short-answers-flex {

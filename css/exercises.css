@@ -185,14 +185,14 @@ select option {
 /* FILL-IN-THE-BLANKS 1 */
 
 
-.fill-icon {
+.fill1-icon {
   display: none;
   margin-left: 5px;
   position: relative;
   top: 5px;
 }
 
-.fill-icon.correct::before {
+.fill1-icon.correct::before {
   display: inline-block;
   content: "";
   background-image: url(../assets/imgs/correct.svg);
@@ -202,7 +202,7 @@ select option {
   height: 22px;
 }
 
-.fill-icon.incorrect::before {
+.fill1-icon.incorrect::before {
   display: inline-block;
   content: "";
   background-image: url(../assets/imgs/incorrect.svg);
