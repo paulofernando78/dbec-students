@@ -249,6 +249,39 @@ select option {
   margin-top: 10px;
 }
 
+/* FILL-IN-THE-BLANKS 3 */
+
+.fill3-icon {
+  display: none;
+  margin-left: 5px;
+  position: relative;
+  top: 5px;
+}
+
+.fill3-icon.correct::before {
+  display: inline-block;
+  content: "";
+  background-image: url(../assets/imgs/correct.svg);
+  background-size: contain;
+  filter: var(--icon-correct);
+  width: 22px;
+  height: 22px;
+}
+
+.fill3-icon.incorrect::before {
+  display: inline-block;
+  content: "";
+  background-image: url(../assets/imgs/incorrect.svg);
+  background-size: contain;
+  filter: var(--icon-incorrect);
+  width: 22px;
+  height: 22px;
+}
+
+#resultFill3 {
+  margin-top: 10px;
+}
+
 /* FILL-IN-THE-BLANKS TEXT */
 
 .fill-text-icon {
