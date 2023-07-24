@@ -349,8 +349,10 @@ p {
 .align-items-center {
     display: flex;
     align-items: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
     padding: 2px;
+    margin-right: 12px;
 }
 
 /* IMAGES */
