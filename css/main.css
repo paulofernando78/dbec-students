@@ -152,6 +152,12 @@ main {
     height: 22px;
 }
 
+.icon-general {
+    width: 1.2rem;
+    position: relative;
+    top: 2px;
+}
+
 /*FONT AND TEXT */
 
 h1 {
@@ -356,10 +362,6 @@ p {
 }
 
 /* IMAGES */
-
-.icon-general {
-    width: 25px;
-}
 
 .container-img {
     display: flex;

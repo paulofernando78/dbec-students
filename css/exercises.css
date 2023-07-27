@@ -182,6 +182,9 @@ select option {
 
 /* FILL-IN-THE-BLANKS 1 */
 
+.fill1_answer {
+  display: none;
+}
 
 .fill1-icon {
   display: none;
@@ -216,6 +219,10 @@ select option {
 
 /* FILL-IN-THE-BLANKS 2 */
 
+.fill2_answer {
+  display: none;
+}
+
 .fill2-icon {
   display: none;
   margin-left: 5px;
@@ -248,6 +255,10 @@ select option {
 }
 
 /* FILL-IN-THE-BLANKS 3 */
+
+.fill3_answer {
+  display: none;
+}
 
 .fill3-icon {
   display: none;
