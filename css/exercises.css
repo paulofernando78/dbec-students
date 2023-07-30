@@ -3,6 +3,8 @@
 label {
   font-family: var(--font);
   font-size: var(--p-size);
+  display: flex;
+    gap: 10px;
 }
 
 input[type="text"] {
@@ -162,6 +164,8 @@ select option {
   height: 22px;
   background-size: cover;
   display: inline-block;
+  position: relative;
+  top: 2px;
   margin-left: 5px;
   display: none;
 }
@@ -293,6 +297,10 @@ select option {
 
 /* FILL-IN-THE-BLANKS TEXT */
 
+.fill-text {
+  width: 150px !important;
+}
+
 .fill-text-icon {
   display: none;
   margin-left: 5px;
@@ -322,6 +330,10 @@ select option {
 
 #resultFilltext {
   margin-top: 10px;
+}
+
+.fill-text-answer {
+  display: none;
 }
 
 /* BUTTON */

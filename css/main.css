@@ -378,8 +378,8 @@ p {
     box-shadow: 0 0 3px;
 }
 
-.img-1-90 {
-    width: 90%;
+.img-1-50 {
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -395,7 +395,7 @@ p {
 }
 
 .img-2 {
-    width: 49%;
+    width: 100%;
     border: 1px solid black;
     border-radius: 4px;
     box-shadow: 0 0 3px;

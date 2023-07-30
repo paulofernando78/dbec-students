@@ -22,6 +22,7 @@
 /* CLASS 9 */
 
 /* CLASS 10 */
+
 .class-10-gifs {
     display: flex;
     align-items: center;
@@ -30,21 +31,24 @@
 
 .class-10-gif1 {
     width: 30%;
+    margin: 30px;
 }
 
-.class-10-lead-in-menu {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.class-10-vocabulary-lead-in {
+    display: grid;
+    grid-template-columns: 525px 229px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.class-10-vocabulary-lead-in-imgs {
+    width: 100%;
     border: 1px solid black;
     border-radius: 4px;
     box-shadow: 0 0 3px;
 }
 
 .class-10-vocabulary-presentation-container {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
     display: flex;
     justify-content: space-between
 }
@@ -61,6 +65,7 @@
 
 .class-10-vocabulary-practice-menu {
     display: flex;
+    justify-content: space-between;
     gap: 10px;
 }
 
@@ -73,7 +78,7 @@
 
 .class-10-vocabulary-practice-hcwp {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .class-10-vocabulary-practice-hcwp-label {
@@ -102,10 +107,10 @@
 
 .class-14-align-mpf-imgs {
     display: grid;
-        grid-template-columns: repeat(auto-fit, 160px);
-        justify-content: space-around;
-        gap: 30px;
-    
+    grid-template-columns: repeat(auto-fit, 160px);
+    justify-content: space-around;
+    gap: 30px;
+
 }
 
 /* CLASS 15 */
@@ -168,6 +173,13 @@
     }
 
     /* CLASS 10 */
+
+    .class-10-vocabulary-lead-in {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     .class-10-vocabulary-presentation-container {
         display: flex;
         flex-direction: column;
