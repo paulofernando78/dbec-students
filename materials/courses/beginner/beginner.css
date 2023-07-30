@@ -77,8 +77,8 @@
 }
 
 .class-10-vocabulary-practice-hcwp {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 100px 240px;
 }
 
 .class-10-vocabulary-practice-hcwp-label {
