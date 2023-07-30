@@ -23,14 +23,14 @@
 
 /* CLASS 10 */
 
-.class-10-gifs {
+.class-10-container-gif {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.class-10-gif1 {
-    width: 30%;
+.class-10-gifs {
+    width: 20%;
     margin: 30px;
 }
 
@@ -164,6 +164,10 @@
     }
 
     /* CLASS 10 */
+
+    .class-10-gifs {
+        width: 30%;
+    }
 
     .class-10-vocabulary-lead-in {
         display: grid;
