@@ -3,8 +3,6 @@
 label {
   font-family: var(--font);
   font-size: var(--p-size);
-  display: flex;
-    gap: 10px;
 }
 
 input[type="text"] {
