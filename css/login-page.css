@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap");
+@import url(main.css);
 
 * {
     margin: 0;
@@ -50,16 +50,11 @@ body {
   margin-bottom: 20px;
 }
 
-#btn-login {
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-family: "Bangers", cursive;
-  font-size: 20px;
-  color: white;
-  background-color: #CE2028;
+.login-input {
+  
 }
 
-#btn-login a {
+.start-here {
+  /* font-weight: bold; */
   color: white;
-  text-decoration: none;
 }

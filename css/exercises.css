@@ -334,32 +334,6 @@ select option {
   display: none;
 }
 
-/* BUTTON */
-
-.pushable {
-  background: rgb(83, 83, 83);
-  border-radius: 5px;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-}
-
-.front {
-  display: block;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-family: var(--font);
-  font-size: 1rem;
-  background: grey;
-  color: white;
-  transform: translateY(-5px);
-}
-
-.pushable:active .front {
-  transform: translateY(-2px);
-}
-
 @media (max-width: 600px) {
 
   input[type="text"] {
