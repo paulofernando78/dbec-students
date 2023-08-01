@@ -37,9 +37,9 @@
 
 .unit-5-c-supernova-img {
     width: 50%;
-        border: 1px solid black;
-        border-radius: 4px;
-        box-shadow: 0 0 3px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
 }
 
 /* UNIT 6 */
@@ -337,6 +337,10 @@
 
     .unit-2-c-short-answers-seat {
         width: 80%;
+    }
+
+    .unit-5-c-supernova-img {
+        width: 100%;
     }
 
     .unit-99-2-grid-3-columns {
