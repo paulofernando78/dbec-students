@@ -347,7 +347,7 @@ p {
 }
 
 .color-blue {
-    color: blue;
+    color: rgba(0, 0, 255, 0.678);
 }
 
 /* ALIGNNMENT */
@@ -422,6 +422,13 @@ p {
     /* border: solid 1px #3333332f; 
     padding: 10px;
     border-radius: 5px; */
+}
+
+/* ARROW */
+
+.arrow-bold {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
 }
 
 /* BUTTON */
