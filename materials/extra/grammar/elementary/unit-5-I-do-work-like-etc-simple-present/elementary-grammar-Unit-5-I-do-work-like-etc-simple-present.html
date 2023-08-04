@@ -604,37 +604,36 @@
             <p>1. He
                 <input type="text" id="blank1_fill1" class="fill1" style="width: 200px;"> the piano.
                 <span id="fill1Icon1" class="fill1-icon"></span>
-            <p class="color-green fill1_answer">Answer 1</p>
+            <p class="color-green fill1_answer">plays</p>
             </p>
-            <br>
+
             <p>2. They
                 <input type="text" id="blank2_fill1" class="fill1" style="width: 200px;"> in a very big house.
                 <span id="fill1Icon2" class="fill1-icon"></span>
-            <p class="color-green fill1_answer">Answer 2</p>
+            <p class="color-green fill1_answer">live</p>
             </p>
-            <br>
+
             <p>3.
                 <input type="text" id="blank3_fill1" class="fill1" style="width: 200px;"> a lot of fruit.
                 <span id="fill1Icon3" class="fill1-icon"></span>
-            <p class="color-green fill1_answer">Answer 3</p>
+            <p class="color-green fill1_answer">She eats</p>
             </p>
-            <br>
+
             <p>4.
                 <input type="text" id="blank4_fill1" class="fill1" style="width: 200px;"> tennis.
                 <span id="fill1Icon4" class="fill1-icon"></span>
-            <p class="color-green fill1_answer">Answer 4</p>
+            <p class="color-green fill1_answer">He plays</p>
             </p>
-            <br>
+
             <p>5.
                 <input type="text" id="blank5_fill1" class="fill1" style="width: 200px;"> to the movies a lot.
                 <span id="fill1Icon5" class="fill1-icon"></span>
-            <p class="color-green fill1_answer">Answer 5</p>
+            <p class="color-green fill1_answer">They go</p>
             </p>
-            <br>
             <p>6.
                 <input type="text" id="blank6_fill1" class="fill1" style="width: 200px;"> seven hours a night.
                 <span id="fill1Icon6" class="fill1-icon"></span>
-            <p class="color-green fill1_answer">Answer 6</p>
+            <p class="color-green fill1_answer">He sleeps</p>
             </p>
             <br>
 
@@ -662,6 +661,115 @@
                 radios[i].checked = false;
             }
         }
+
+        // FILL-IN-THE-BLANKS 1
+        function checkFill1() {
+            var answers = {
+                blank1_fill1: "plays",
+                blank2_fill1: "live",
+                blank3_fill1: "She eats",
+                blank4_fill1: "He plays",
+                blank5_fill1: "They go",
+                blank6_fill1: "He sleeps",
+            };
+
+            var fill1Icon1 = document.getElementById("fill1Icon1");
+            var fill1Icon2 = document.getElementById("fill1Icon2");
+            var fill1Icon3 = document.getElementById("fill1Icon3");
+            var fill1Icon4 = document.getElementById("fill1Icon4");
+            var fill1Icon5 = document.getElementById("fill1Icon5");
+            var fill1Icon6 = document.getElementById("fill1Icon6");
+            var result = document.getElementById("resultFill1");
+
+            var isCorrect1 =
+                document.getElementById("blank1_fill1").value.trim() === answers.blank1_fill1;
+            var isCorrect2 =
+                document.getElementById("blank2_fill1").value.trim() === answers.blank2_fill1;
+            var isCorrect3 =
+                document.getElementById("blank3_fill1").value.trim() === answers.blank3_fill1;
+            var isCorrect4 =
+                document.getElementById("blank4_fill1").value.trim() === answers.blank4_fill1;
+            var isCorrect5 =
+                document.getElementById("blank5_fill1").value.trim() === answers.blank5_fill1;
+            var isCorrect6 =
+                document.getElementById("blank6_fill1").value.trim() === answers.blank6_fill1;
+
+            fill1Icon1.className = isCorrect1
+                ? "fill1-icon correct"
+                : "fill1-icon incorrect";
+            fill1Icon2.className = isCorrect2
+                ? "fill1-icon correct"
+                : "fill1-icon incorrect";
+            fill1Icon3.className = isCorrect3
+                ? "fill1-icon correct"
+                : "fill1-icon incorrect";
+            fill1Icon4.className = isCorrect4
+                ? "fill1-icon correct"
+                : "fill1-icon incorrect";
+            fill1Icon5.className = isCorrect5
+                ? "fill1-icon correct"
+                : "fill1-icon incorrect";
+            fill1Icon6.className = isCorrect6
+                ? "fill1-icon correct"
+                : "fill1-icon incorrect";
+
+            fill1Icon1.style.display = "inline-block";
+            fill1Icon2.style.display = "inline-block";
+            fill1Icon3.style.display = "inline-block";
+            fill1Icon4.style.display = "inline-block";
+            fill1Icon5.style.display = "inline-block";
+            fill1Icon6.style.display = "inline-block";
+
+            var correctCount = [
+                isCorrect1,
+                isCorrect2,
+                isCorrect3,
+                isCorrect4,
+                isCorrect5,
+                isCorrect6,
+            ].filter(function (x) {
+                return x === true;
+            }).length;
+
+            result.innerHTML =
+                "You got " +
+                correctCount +
+                " out of " +
+                Object.keys(answers).length +
+                " correct.";
+        }
+        function showFill1() {
+            var answerElements = document.getElementsByClassName("fill1_answer");
+
+            for (var i = 0; i < answerElements.length; i++) {
+                var answerElement = answerElements[i];
+                answerElement.style.display = "block"; // Show the answers
+            }
+        }
+        function resetFill1() {
+            var fill1Inputs = document.getElementsByClassName("fill1");
+            var fill1Icons = document.getElementsByClassName("fill1-icon");
+            var result = document.getElementById("resultFill1");
+
+            for (var i = 0; i < fill1Inputs.length; i++) {
+                fill1Inputs[i].value = "";
+            }
+
+            for (var j = 0; j < fill1Icons.length; j++) {
+                fill1Icons[j].className = "fill1-icon";
+                fill1Icons[j].style.display = "none";
+            }
+
+            result.innerHTML = "";
+
+            var answerElements = document.getElementsByClassName("fill1_answer");
+
+            for (var k = 0; k < answerElements.length; k++) {
+                var answerElement = answerElements[k];
+                answerElement.style.display = "none"; // Hide the answers
+            }
+        }
+
     </script>
 </body>
 
