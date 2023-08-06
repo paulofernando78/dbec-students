@@ -1,0 +1,23 @@
+.unit-2-a-affirmative-question-flex {
+    display: flex;
+    width: 236px;
+    gap: 20px;
+}
+
+.unit-2-c-short-answers-flex {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .unit-2-c-short-answers-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .unit-2-c-short-answers-seat {
+        width: 80%;
+    }
+}

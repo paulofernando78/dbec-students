@@ -1,0 +1,7 @@
+.unit-3-a-affirmative-question-grid {
+    display: grid;
+    grid-template-columns: 97px 97px 100px;
+    width: 356px;
+    align-items: center;
+    gap: 33px;
+}
