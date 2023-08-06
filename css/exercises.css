@@ -9,6 +9,7 @@ label {
 
 input[type="text"] {
   padding-left: .2rem;
+  margin: .1rem 0 .1rem 0;
   font-family: var(--font);
   font-size: var(--p-size);
   width: 90%;
