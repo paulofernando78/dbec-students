@@ -32,7 +32,6 @@
 
 /* UNIT 3 */
 
-/* UNIT 4 */
 
 .unit-3-a-affirmative-question-grid {
     display: grid;
@@ -40,6 +39,15 @@
     width: 356px;
     align-items: center;
     gap: 33px;
+}
+
+/* UNIT 4 */
+
+.unit-4-b-word-order {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 160px 70px 140px 200px;
+    width: 532px;
 }
 
 /* UNIT 5 */
@@ -348,9 +356,21 @@
         width: 80%;
     }
 
+    .unit-4-b-word-order {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 80px 50px 63px 200px;
+        width: 356px;
+    }
+
+    .unit-4-b-smaller {
+        font-size: 0.95rem;
+    }
+
     .unit-5-c-supernova-img {
         width: 100%;
     }
+
 
     .unit-99-2-grid-3-columns {
         display: grid;
