@@ -359,6 +359,7 @@ p {
     gap: 8px;
     padding: 2px;
     margin-right: 12px;
+    line-height: 1;
 }
 
 .align-items-center-2 {
