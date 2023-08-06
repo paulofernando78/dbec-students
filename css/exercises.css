@@ -334,6 +334,15 @@ select option {
   display: none;
 }
 
+.fills-height-margin {
+  line-height: 0.8;
+  margin-bottom: 15px;
+}
+
+.span-answer {
+  line-height: 1.3;
+}
+
 @media (max-width: 600px) {
 
   input[type="text"] {
