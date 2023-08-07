@@ -1,0 +1,11 @@
+.a-negative-flex {
+    display: flex;
+    width: 320px;
+    gap: 20px;
+}
+
+.incorrect {
+    width: 20px;
+    position: relative;
+    top: 3px;
+}
