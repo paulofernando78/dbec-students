@@ -9,3 +9,13 @@
     position: relative;
     top: 3px;
 }
+
+.exercise-6-2 {
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    .exercise-6-2 {
+            width: 100%;
+        }
+}

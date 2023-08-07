@@ -74,6 +74,7 @@ function showCheckboxes() {
     "Correct answers: " + selectedLetters.join(", ") + ".";
 }
 
+// EXERCISE XXX
 // DROPDOWN
 function checkDropdowns() {
   var answers = {
@@ -138,21 +139,22 @@ function resetDropdowns() {
   document.getElementById("result-dropdown").innerHTML = "";
 }
 
+// EXERCISE XXX
 // FILL-IN-THE-BLANKS 1
 function checkFill1() {
   var answers = {
-    blank1_fill1: "1",
-    blank2_fill1: "2",
-    blank3_fill1: "3",
-    blank4_fill1: "4",
-    blank5_fill1: "5",
-    blank6_fill1: "6",
-    blank7_fill1: "7",
-    blank8_fill1: "8",
-    blank9_fill1: "9",
-    blank10_fill1: "10",
-    blank11_fill1: "11",
-    blank12_fill1: ["12", "12-1"],
+    blank1_fill1: "xxx",
+    blank2_fill1: "xxx",
+    blank3_fill1: "xxx",
+    blank4_fill1: "xxx",
+    blank5_fill1: "xxx",
+    blank6_fill1: "xxx",
+    blank7_fill1: "xxx",
+    blank8_fill1: "xxx",
+    blank9_fill1: "xxx",
+    blank10_fill1: "xxx",
+    blank11_fill1: "xxx",
+    blank12_fill1: ["xxx", "xxx"],
   };
 
   var fill1Icon1 = document.getElementById("fill1Icon1");
@@ -311,21 +313,22 @@ function resetFill1() {
   }
 }
 
+// EXERCISE XXX
 // FILL-IN-THE-BLANKS 2
 function checkFill2() {
   var answers = {
-    blank1_fill2: "1",
-    blank2_fill2: "2",
-    blank3_fill2: "3",
-    blank4_fill2: "4",
-    blank5_fill2: "5",
-    blank6_fill2: "6",
-    blank7_fill2: "7",
-    blank8_fill2: "8",
-    blank9_fill2: "9",
-    blank10_fill2: "10",
-    blank11_fill2: "11",
-    blank12_fill2: ["12", "12-1"],
+    blank1_fill2: "xxx",
+    blank2_fill2: "xxx",
+    blank3_fill2: "xxx",
+    blank4_fill2: "xxx",
+    blank5_fill2: "xxx",
+    blank6_fill2: "xxx",
+    blank7_fill2: "xxx",
+    blank8_fill2: "xxx",
+    blank9_fill2: "xxx",
+    blank10_fill2: "xxx",
+    blank11_fill2: "xxx",
+    blank12_fill2: ["xxx", "xxx"],
   };
 
   var fill2Icon1 = document.getElementById("fill2Icon1");
@@ -484,21 +487,22 @@ function resetFill2() {
   }
 }
 
+// EXERCISE XXX
 // FILL-IN-THE-BLANKS 3
 function checkFill3() {
   var answers = {
-    blank1_fill3: "1",
-    blank2_fill3: "2",
-    blank3_fill3: "3",
-    blank4_fill3: "4",
-    blank5_fill3: "5",
-    blank6_fill3: "6",
-    blank7_fill3: "7",
-    blank8_fill3: "8",
-    blank9_fill3: "9",
-    blank10_fill3: "10",
-    blank11_fill3: "11",
-    blank12_fill3: ["12", "12-1", "12 / 12-1"],
+    blank1_fill3: "xxx",
+    blank2_fill3: "xxx",
+    blank3_fill3: "xxx",
+    blank4_fill3: "xxx",
+    blank5_fill3: "xxx",
+    blank6_fill3: "xxx",
+    blank7_fill3: "xxx",
+    blank8_fill3: "xxx",
+    blank9_fill3: "xxx",
+    blank10_fill3: "xxx",
+    blank11_fill3: "xxx",
+    blank12_fill3: ["xxx", "xxx"],
   };
 
   var fill3Icon1 = document.getElementById("fill3Icon1");
@@ -657,21 +661,196 @@ function resetFill3() {
   }
 }
 
+// EXERCISE XXX
+// FILL-IN-THE-BLANKS 4
+function checkFill4() {
+  var answers = {
+    blank1_fill4: "xxx",
+    blank2_fill4: "xxx",
+    blank3_fill4: "xxx",
+    blank4_fill4: "xxx",
+    blank5_fill4: "xxx",
+    blank6_fill4: "xxx",
+    blank7_fill4: "xxx",
+    blank8_fill4: "xxx",
+    blank9_fill4: "xxx",
+    blank10_fill4: "xxx",
+    blank11_fill4: "xxx",
+    blank12_fill4: ["xxx", "xxx"],
+  };
+
+  var fill4Icon1 = document.getElementById("fill4Icon1");
+  var fill4Icon2 = document.getElementById("fill4Icon2");
+  var fill4Icon3 = document.getElementById("fill4Icon3");
+  var fill4Icon4 = document.getElementById("fill4Icon4");
+  var fill4Icon5 = document.getElementById("fill4Icon5");
+  var fill4Icon6 = document.getElementById("fill4Icon6");
+  var fill4Icon7 = document.getElementById("fill4Icon7");
+  var fill4Icon8 = document.getElementById("fill4Icon8");
+  var fill4Icon9 = document.getElementById("fill4Icon9");
+  var fill4Icon10 = document.getElementById("fill4Icon10");
+  var fill4Icon11 = document.getElementById("fill4Icon11");
+  var fill4Icon12 = document.getElementById("fill4Icon12");
+  var result = document.getElementById("resultFill4");
+
+  var isCorrect1 =
+    document.getElementById("blank1_fill4").value.trim() ===
+    answers.blank1_fill4;
+  var isCorrect2 =
+    document.getElementById("blank2_fill4").value.trim() ===
+    answers.blank2_fill4;
+  var isCorrect3 =
+    document.getElementById("blank3_fill4").value.trim() ===
+    answers.blank3_fill4;
+  var isCorrect4 =
+    document.getElementById("blank4_fill4").value.trim() ===
+    answers.blank4_fill4;
+  var isCorrect5 =
+    document.getElementById("blank5_fill4").value.trim() ===
+    answers.blank5_fill4;
+  var isCorrect6 =
+    document.getElementById("blank6_fill4").value.trim() ===
+    answers.blank6_fill4;
+  var isCorrect7 =
+    document.getElementById("blank7_fill4").value.trim() ===
+    answers.blank7_fill4;
+  var isCorrect8 =
+    document.getElementById("blank8_fill4").value.trim() ===
+    answers.blank8_fill4;
+  var isCorrect9 =
+    document.getElementById("blank9_fill4").value.trim() ===
+    answers.blank9_fill4;
+  var isCorrect10 =
+    document.getElementById("blank10_fill4").value.trim() ===
+    answers.blank10_fill4;
+  var isCorrect11 =
+    document.getElementById("blank11_fill4").value.trim() ===
+    answers.blank11_fill4;
+  var userInput12 = document.getElementById("blank12_fill4").value.trim();
+  var isCorrect12 = answers.blank12_fill4.includes(userInput12);
+
+  fill4Icon1.className = isCorrect1
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+  fill4Icon2.className = isCorrect2
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+  fill4Icon3.className = isCorrect3
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+  fill4Icon4.className = isCorrect4
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+  fill4Icon5.className = isCorrect5
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+  fill4Icon6.className = isCorrect6
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+  fill4Icon7.className = isCorrect7
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+  fill4Icon8.className = isCorrect8
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+  fill4Icon9.className = isCorrect9
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+  fill4Icon10.className = isCorrect10
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+  fill4Icon11.className = isCorrect11
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+  fill4Icon12.className = isCorrect12
+    ? "fill4-icon correct"
+    : "fill4-icon incorrect";
+
+  fill4Icon1.style.display = "inline-block";
+  fill4Icon2.style.display = "inline-block";
+  fill4Icon3.style.display = "inline-block";
+  fill4Icon4.style.display = "inline-block";
+  fill4Icon5.style.display = "inline-block";
+  fill4Icon6.style.display = "inline-block";
+  fill4Icon7.style.display = "inline-block";
+  fill4Icon8.style.display = "inline-block";
+  fill4Icon9.style.display = "inline-block";
+  fill4Icon10.style.display = "inline-block";
+  fill4Icon11.style.display = "inline-block";
+  fill4Icon12.style.display = "inline-block";
+
+  var correctCount = [
+    isCorrect1,
+    isCorrect2,
+    isCorrect3,
+    isCorrect4,
+    isCorrect5,
+    isCorrect6,
+    isCorrect7,
+    isCorrect8,
+    isCorrect9,
+    isCorrect10,
+    isCorrect11,
+    isCorrect12,
+  ].filter(function (x) {
+    return x === true;
+  }).length;
+
+  result.innerHTML =
+    "You got " +
+    correctCount +
+    " out of " +
+    Object.keys(answers).length +
+    " correct.";
+}
+function showFill4() {
+  var answerElements = document.getElementsByClassName("fill4_answer");
+
+  for (var i = 0; i < answerElements.length; i++) {
+    var answerElement = answerElements[i];
+    answerElement.style.display = "block"; // Show the answers
+  }
+}
+function resetFill4() {
+  var fill4Inputs = document.getElementsByClassName("fill4");
+  var fill4Icons = document.getElementsByClassName("fill4-icon");
+  var result = document.getElementById("resultFill4");
+
+  for (var i = 0; i < fill4Inputs.length; i++) {
+    fill4Inputs[i].value = "";
+  }
+
+  for (var j = 0; j < fill4Icons.length; j++) {
+    fill4Icons[j].className = "fill4-icon";
+    fill4Icons[j].style.display = "none";
+  }
+
+  result.innerHTML = "";
+
+  var answerElements = document.getElementsByClassName("fill4_answer");
+
+  for (var k = 0; k < answerElements.length; k++) {
+    var answerElement = answerElements[k];
+    answerElement.style.display = "none"; // Hide the answers
+  }
+}
+
+// EXERCISE XXX
 // FILL-IN-THE-BLANK (TEXT)
 function checkFilltext() {
   var answers = {
-    blank1_text: "1",
-    blank2_text: "2",
-    blank3_text: "3",
-    blank4_text: "4",
-    blank5_text: "5",
-    blank6_text: "6",
-    blank7_text: "7",
-    blank8_text: "8",
-    blank9_text: "9",
-    blank10_text: "10",
-    blank11_text: "11",
-    blank12_text: ["12", "12-1"],
+    blank1_text: "xxx",
+    blank2_text: "xxx",
+    blank3_text: "xxx",
+    blank4_text: "xxx",
+    blank5_text: "xxx",
+    blank6_text: "xxx",
+    blank7_text: "xxx",
+    blank8_text: "xxx",
+    blank9_text: "xxx",
+    blank10_text: "xxx",
+    blank11_text: "xxx",
+    blank12_text: ["xxx", "xxx"],
   };
 
   var filltextIcon1 = document.getElementById("filltextIcon1");
