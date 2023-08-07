@@ -190,7 +190,7 @@ function checkFill2() {
     blank4_fill2: "Are you a teacher?",
     blank5_fill2: "Are you married?",
     blank6_fill2: "Is your wife a lawyer?",
-    blank7_fill2: ["Where is she from", "Where's she from?"],
+    blank7_fill2: ["Where is she from?", "Where's she from?"],
     blank8_fill2: ["What is her name?", "What's her name?"],
     blank9_fill2: "How old is she?",
   };
@@ -209,7 +209,6 @@ function checkFill2() {
   var isCorrect1 = answers.blank1_fill2.includes(
     document.getElementById("blank1_fill2").value.trim()
   );
-  2;
   var isCorrect2 =
     document.getElementById("blank2_fill2").value.trim() ===
     answers.blank2_fill2;
