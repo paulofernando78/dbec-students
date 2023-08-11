@@ -288,15 +288,15 @@ function resetFill2() {
 // FILL-IN-THE-BLANKS 3
 function checkFill3() {
   var answers = {
-    blank1_fill3: "Sue always arrives early",
-    blank2_fill3: "I never go to the movies",
-    blank3_fill3: "Hannah always works hard",
-    blank4_fill3: "Children usually like chocolate",
-    blank5_fill3: "Julia always enjoys parties",
-    blank6_fill3: "I often forget people's names",
-    blank7_fill3: "Nick never watches TV",
-    blank8_fill3: "We usually have dinner at 6:30",
-    blank9_fill3: "Jenn always wears nice clothes",
+    blank1_fill3: "Sue always arrives early.",
+    blank2_fill3: "I never go to the movies.",
+    blank3_fill3: "Hannah always works hard.",
+    blank4_fill3: "Children usually like chocolate.",
+    blank5_fill3: "Julia always enjoys parties.",
+    blank6_fill3: "I often forget people's names.",
+    blank7_fill3: "Nick never watches TV.",
+    blank8_fill3: "We usually have dinner at 6:30.",
+    blank9_fill3: "Jenn always wears nice clothes.",
   };
 
   var fill3Icon1 = document.getElementById("fill3Icon1");
