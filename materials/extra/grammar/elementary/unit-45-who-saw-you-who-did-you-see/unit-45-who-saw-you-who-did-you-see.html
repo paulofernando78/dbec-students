@@ -82,14 +82,14 @@
             <p>In these questions, <b>who</b>/<b>what</b> is the subject:</p>
             <p><b>•</b> Who lives in this house? <mark>John</mark> lives in it.</p>
             <p><b>•</b> What happened? <mark>The truck</mark> broke down.</p>
-            <p><b>•</b> What's happening? <mark>"Something"</mark> is happening.</p>
+            <p><b>•</b> What's happening? <mark>"The computer"</mark> isn't working.</p>
             <p><b>•</b> Who has my key? <mark>Mary</mark> has the key. *Who's got my key?</p>
             <br>
             <p>In these questions, <b>who</b>/<b>what</b> is the object:</p>
-            <p><b>•</b> Who did you meet yesterday? You met <mark>"somebody"</mark>.</p>
-            <p><b>•</b> What did Paul say? Paul said <mark>"something"</mark>.</p>
-            <p><b>•</b> Who are you phoning? I'm phoning <mark>"somebody"</mark>.</p>
-            <p><b>•</b> What was Silvia wearing? She was wearing <mark>"something"</mark>.</p>
+            <p><b>•</b> Who did you meet yesterday? I met <mark>"a friend"</mark>.</p>
+            <p><b>•</b> What did Paul say? Paul said <mark>"he wants to talk to you = something."</mark>.</p>
+            <p><b>•</b> Who are you phoning? I'm phoning <mark>"Mike"</mark>.</p>
+            <p><b>•</b> What was Silvia wearing? She was wearing <mark>"a jacket"</mark>.</p>
             <br>
         </section>
         <br>
@@ -110,81 +110,213 @@
             <p class="ribbon-lightgrey"><b>EXERCISES</b></p>
             <br>
 
-                <!-- EXERCISE 45.1 -->
-                <!-- FILL IN THE BLANKS 1-->
-                <div>
-                    <p><b>45.1 Make questions with <b><span class="color-green">who</span></b> or <b><span class="color-green">what</span></b>. In these questions, <b>who</b>/<b>what</b> is the subject.</b></p>
-                    <br />
-                
-                    <div class="fills-height fills-margin">
-                        <p>1. Somebody broke the window.
-                            <br>
-                            <input type="text" id="blank1_fill1" class="fill1">
-                            <span id="fill1Icon1" class="fill1-icon"></span>
-                        <p class="color-green fill1_answer answer-height"><i>Who broke the window?</i></p>
-                        </p>
-                    </div>
-                
-                    <div class="fills-height fills-margin">
-                        <p>2. Something felt off the shelf.
-                            <br>
-                            <input type="text" id="blank2_fill1" class="fill1">
-                            <span id="fill1Icon2" class="fill1-icon"></span>
-                        <p class="color-green fill1_answer answer-height"><i>What felt off the shelf?</i></p>
-                        </p>
-                    </div>
-                
-                    <div class="fills-height fills-margin">
-                        <p>3. Somebody wants to see you.
-                            <br>
-                            <input type="text" id="blank3_fill1" class="fill1">
-                            <span id="fill1Icon3" class="fill1-icon"></span>
-                        <p class="color-green fill1_answer answer-height"><i>Who wants to see you?</i></p>
-                        </p>
-                    </div>
-                
-                    <div class="fills-height fills-margin">
-                        <p>4. Somebody took my umbrella.
-                            <br>
-                            <input type="text" id="blank4_fill1" class="fill1">
-                            <span id="fill1Icon4" class="fill1-icon"></span>
-                        <p class="color-green fill1_answer answer-height"><i>Who took your umbrella?</i></p>
-                        </p>
-                    </div>
-                
-                    <div class="fills-height fills-margin">
-                        <p>5. Something made me sick.
-                            <br>
-                            <input type="text" id="blank5_fill1" class="fill1">
-                            <span id="fill1Icon5" class="fill1-icon"></span>
-                        <p class="color-green fill1_answer answer-height"><i>What made you you sick?</i></p>
-                        </p>
-                    </div>
-                
-                    <div class="fills-height">
-                        <p>6. Somebody is coming.
-                            <br>
-                            <input type="text" id="blank6_fill1" class="fill1">
-                            <span id="fill1Icon6" class="fill1-icon"></span>
-                        <p class="color-green fill1_answer answer-height"><i>Who's coming.</i></p>
-                        </p>
-                    </div>
-    
-                    <br>
-                
-                    <button onclick="checkFill1()" class="pushable">
-                        <span class="front">Check answers</span>
-                    </button>
-                    <button onclick="showFill1()" class="pushable">
-                        <span class="front">Show Answers</span>
-                    </button>
-                    <button onclick="resetFill1()" class="pushable">
-                        <span class="front">Reset</span>
-                    </button>
-                    <div id="resultFill1" class="p"></div>
-                
+            <!-- EXERCISE 45.1 -->
+            <!-- FILL IN THE BLANKS 1-->
+            <div>
+                <p><b>45.1 Make questions with <b><span class="color-green">who</span></b> or <b><span
+                                class="color-green">what</span></b>. In these questions, <b>who</b>/<b>what</b> is the
+                        subject.</b></p>
+                <br />
+
+                <div class="fills-height fills-margin">
+                    <p>1. Somebody broke the window.
+                        <br>
+                        <input type="text" id="blank1_fill1" class="fill1">
+                        <span id="fill1Icon1" class="fill1-icon"></span>
+                    <p class="color-green fill1_answer answer-height"><i>Who broke the window?</i></p>
+                    </p>
                 </div>
+
+                <div class="fills-height fills-margin">
+                    <p>2. Something felt off the shelf.
+                        <br>
+                        <input type="text" id="blank2_fill1" class="fill1">
+                        <span id="fill1Icon2" class="fill1-icon"></span>
+                    <p class="color-green fill1_answer answer-height"><i>What felt off the shelf?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>3. Somebody wants to see you.
+                        <br>
+                        <input type="text" id="blank3_fill1" class="fill1">
+                        <span id="fill1Icon3" class="fill1-icon"></span>
+                    <p class="color-green fill1_answer answer-height"><i>Who wants to see you?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>4. Somebody took my umbrella.
+                        <br>
+                        <input type="text" id="blank4_fill1" class="fill1">
+                        <span id="fill1Icon4" class="fill1-icon"></span>
+                    <p class="color-green fill1_answer answer-height"><i>Who took your umbrella?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>5. Something made me sick.
+                        <br>
+                        <input type="text" id="blank5_fill1" class="fill1">
+                        <span id="fill1Icon5" class="fill1-icon"></span>
+                    <p class="color-green fill1_answer answer-height"><i>What made you you sick?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height">
+                    <p>6. Somebody is coming.
+                        <br>
+                        <input type="text" id="blank6_fill1" class="fill1">
+                        <span id="fill1Icon6" class="fill1-icon"></span>
+                    <p class="color-green fill1_answer answer-height"><i>Who's coming.</i></p>
+                    </p>
+                </div>
+
                 <br>
+
+                <button onclick="checkFill1()" class="pushable">
+                    <span class="front">Check answers</span>
+                </button>
+                <button onclick="showFill1()" class="pushable">
+                    <span class="front">Show Answers</span>
+                </button>
+                <button onclick="resetFill1()" class="pushable">
+                    <span class="front">Reset</span>
+                </button>
+                <div id="resultFill1" class="p"></div>
+
+            </div>
+            <br>
+
+            <!-- EXERCISE 45.2 -->
+            <!-- FILL IN THE BLANKS 2-->
+            <div>
+                <p><b>45.2 Make questions with <b><span class="color-green">who</span></b> or <b><span class="color-green">what</span></b> (subject or object).</b></p>
+                <br />
+                <div class="fills-height fills-margin">
+                    <p>1. I bought something.
+                        <br>
+                        <input type="text" id="blank1_fill2" class="fill2">
+                        <span id="fill2Icon1" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>What did you buy?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>2. Somebody lives in this house.
+                        <br>
+                        <input type="text" id="blank2_fill2" class="fill2">
+                        <span id="fill2Icon2" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>Who lives in this house?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>3. I phoned somebody.
+                        <br>
+                        <input type="text" id="blank3_fill2" class="fill2">
+                        <span id="fill2Icon3" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>Who did you phone?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>4. Something happened last night.
+                        <br>
+                        <input type="text" id="blank4_fill2" class="fill2">
+                        <span id="fill2Icon4" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>What happened last night?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>5. Somebody knows the answer.
+                        <br>
+                        <input type="text" id="blank5_fill2" class="fill2">
+                        <span id="fill2Icon5" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>Who knows the answer?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>6. Somebody did the dishes. <span class="color-lightgrey">Alguém lavou os pratos.</span>
+                        <br>
+                        <input type="text" id="blank6_fill2" class="fill2">
+                        <span id="fill2Icon6" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>Who did the dishes?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>7. Jane did something.
+                        <br>
+                        <input type="text" id="blank7_fill2" class="fill2">
+                        <span id="fill2Icon7" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>What did Jane do?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>8. Something woke me up.
+                        <br>
+                        <input type="text" id="blank8_fill2" class="fill2">
+                        <span id="fill2Icon8" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>What woke you up?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>9. Somebody saw the accident.
+                        <br>
+                        <input type="text" id="blank9_fill2" class="fill2">
+                        <span id="fill2Icon9" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>Who saw the accident?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>10. I saw somebody.
+                        <br>
+                        <input type="text" id="blank10_fill2" class="fill2">
+                        <span id="fill2Icon10" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>Who did you see?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height fills-margin">
+                    <p>11. Somebody has your pen.
+                        <br>
+                        <input type="text" id="blank11_fill2" class="fill2">
+                        <span id="fill2Icon11" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>Who has your pen?</i></p>
+                    </p>
+                </div>
+
+                <div class="fills-height">
+                    <p>12. This word means something.
+                        <br>
+                        <input type="text" id="blank12_fill2" class="fill2">
+                        <span id="fill2Icon12" class="fill2-icon"></span>
+                    <p class="color-green fill2_answer answer-height"><i>What does this word mean?</i></p>
+                    </p>
+                </div>
+                <br />
+
+                <button onclick="checkFill2()" class="pushable">
+                    <span class="front">Check answers</span>
+                </button>
+                <button onclick="showFill2()" class="pushable">
+                    <span class="front">Show Answers</span>
+                </button>
+                <button onclick="resetFill2()" class="pushable">
+                    <span class="front">Reset</span>
+                </button>
+                <div id="resultFill2" class="p"></div>
+            </div>
+            <br>
+
+
+        </section>
 </body>
 
 </html>
