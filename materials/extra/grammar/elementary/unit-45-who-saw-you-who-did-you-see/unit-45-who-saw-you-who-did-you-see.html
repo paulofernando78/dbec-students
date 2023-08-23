@@ -6,31 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../../css/main.css">
+    <script src="assets/js/unit-45-who-saw-you-who-did-you-see.js"></script>
     <title>Elementary Grammar Unit 45</title>
 </head>
-<style>
-    /* RADIO EXERCISES */
-
-    .answer>[data-correct]:checked+label::after {
-        content: "";
-        display: inline-block;
-        background: url(../../../assets/correct.png) no-repeat;
-        background-size: 20px 20px;
-        width: 20px;
-        height: 18px;
-        margin-left: .5em;
-    }
-
-    .answer> :checked+label::after {
-        content: "";
-        display: inline-block;
-        background: url(../../../assets/incorrect.png) no-repeat;
-        background-size: 17px;
-        width: 20px;
-        height: 17px;
-        margin-left: .5em;
-    }
-</style>
 
 <body>
     <header>
@@ -100,7 +78,7 @@
             <p><b>•</b> Jane won a new car.</p>
             <p>Who won a new car? Jane. (Subject)</p>
             <p>What did Jane win? A new car. (Object)</p>
-            <br> 
+            <br>
             <p>In these questions, <b>who</b>/<b>what</b> is the subject:</p>
             <p><b>•</b> Who lives in this house? <mark>John</mark> lives in it.</p>
             <p><b>•</b> What happened? <mark>The truck</mark> broke down.</p>
@@ -129,40 +107,84 @@
 
         <!--EXERCISES-->
         <section>
-            <p class="ribbon-lightgre             y"><b>EXERCISES</b></p>
+            <p class="ribbon-lightgrey"><b>EXERCISES</b></p>
             <br>
 
-            <!-- 45.1 -->
-            <div>
-                <p><b>45.1 Choose the correct answer.</b>
-                </p>
-                <br>
-                <p><b>Example</b></p>
-                <p>1. Somebody broke the window.
+                <!-- EXERCISE 45.1 -->
+                <!-- FILL IN THE BLANKS 1-->
+                <div>
+                    <p><b>45.1 Make questions with <b><span class="color-green">who</span></b> or <b><span class="color-green">what</span></b>. In these questions, <b>who</b>/<b>what</b> is the subject.</b></p>
+                    <br />
+                
+                    <div class="fills-height fills-margin">
+                        <p>1. Somebody broke the window.
+                            <br>
+                            <input type="text" id="blank1_fill1" class="fill1">
+                            <span id="fill1Icon1" class="fill1-icon"></span>
+                        <p class="color-green fill1_answer answer-height"><i>Who broke the window?</i></p>
+                        </p>
+                    </div>
+                
+                    <div class="fills-height fills-margin">
+                        <p>2. Something felt off the shelf.
+                            <br>
+                            <input type="text" id="blank2_fill1" class="fill1">
+                            <span id="fill1Icon2" class="fill1-icon"></span>
+                        <p class="color-green fill1_answer answer-height"><i>What felt off the shelf?</i></p>
+                        </p>
+                    </div>
+                
+                    <div class="fills-height fills-margin">
+                        <p>3. Somebody wants to see you.
+                            <br>
+                            <input type="text" id="blank3_fill1" class="fill1">
+                            <span id="fill1Icon3" class="fill1-icon"></span>
+                        <p class="color-green fill1_answer answer-height"><i>Who wants to see you?</i></p>
+                        </p>
+                    </div>
+                
+                    <div class="fills-height fills-margin">
+                        <p>4. Somebody took my umbrella.
+                            <br>
+                            <input type="text" id="blank4_fill1" class="fill1">
+                            <span id="fill1Icon4" class="fill1-icon"></span>
+                        <p class="color-green fill1_answer answer-height"><i>Who took your umbrella?</i></p>
+                        </p>
+                    </div>
+                
+                    <div class="fills-height fills-margin">
+                        <p>5. Something made me sick.
+                            <br>
+                            <input type="text" id="blank5_fill1" class="fill1">
+                            <span id="fill1Icon5" class="fill1-icon"></span>
+                        <p class="color-green fill1_answer answer-height"><i>What made you you sick?</i></p>
+                        </p>
+                    </div>
+                
+                    <div class="fills-height">
+                        <p>6. Somebody is coming.
+                            <br>
+                            <input type="text" id="blank6_fill1" class="fill1">
+                            <span id="fill1Icon6" class="fill1-icon"></span>
+                        <p class="color-green fill1_answer answer-height"><i>Who's coming.</i></p>
+                        </p>
+                    </div>
+    
                     <br>
-                <p>Who broke the window?</p>
-                </p>
+                
+                    <button onclick="checkFill1()" class="pushable">
+                        <span class="front">Check answers</span>
+                    </button>
+                    <button onclick="showFill1()" class="pushable">
+                        <span class="front">Show Answers</span>
+                    </button>
+                    <button onclick="resetFill1()" class="pushable">
+                        <span class="front">Reset</span>
+                    </button>
+                    <div id="resultFill1" class="p"></div>
+                
+                </div>
                 <br>
-                2. Something fell off the shelf.
-                Who fell off the shelf?
-                What fell off the shelf?
-                <br>
-                3. Somebody wants to see you.
-                Who wants to see me?
-                What wants to see me?
-                <br>
-                4. Somebody took my umbrella.
-                Who took my umbrella?
-                What took my umbrella?
-                <br>
-                5. Something I ate made me sick.
-                Who made you sick?
-                What made your sick?
-                <br>
-                6. Somebody is coming.
-                Who's coming?
-                What's coming?
-            </div>
 </body>
 
 </html>
