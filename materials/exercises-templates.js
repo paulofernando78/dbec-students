@@ -143,18 +143,20 @@ function resetDropdowns() {
 // FILL-IN-THE-BLANKS 1
 function checkFill1() {
   var answers = {
-    blank1_fill1: "xxx",
-    blank2_fill1: "xxx",
-    blank3_fill1: "xxx",
-    blank4_fill1: "xxx",
-    blank5_fill1: "xxx",
-    blank6_fill1: "xxx",
-    blank7_fill1: "xxx",
-    blank8_fill1: "xxx",
-    blank9_fill1: "xxx",
-    blank10_fill1: "xxx",
-    blank11_fill1: "xxx",
+    blank1_fill1: ["xxx", "xxx"],
+    blank2_fill1: ["xxx", "xxx"],
+    blank3_fill1: ["xxx", "xxx"],
+    blank4_fill1: ["xxx", "xxx"],
+    blank5_fill1: ["xxx", "xxx"],
+    blank6_fill1: ["xxx", "xxx"],
+    blank7_fill1: ["xxx", "xxx"],
+    blank8_fill1: ["xxx", "xxx"],
+    blank9_fill1: ["xxx", "xxx"],
+    blank10_fill1: ["xxx", "xxx"],
+    blank11_fill1: ["xxx", "xxx"],
     blank12_fill1: ["xxx", "xxx"],
+    blank13_fill1: ["xxx", "xxx"],
+    blank14_fill1: ["xxx", "xxx"],
   };
 
   var fill1Icon1 = document.getElementById("fill1Icon1");
@@ -169,43 +171,51 @@ function checkFill1() {
   var fill1Icon10 = document.getElementById("fill1Icon10");
   var fill1Icon11 = document.getElementById("fill1Icon11");
   var fill1Icon12 = document.getElementById("fill1Icon12");
+  var fill1Icon13 = document.getElementById("fill1Icon13");
+  var fill1Icon14 = document.getElementById("fill1Icon14");
   var result = document.getElementById("resultFill1");
 
-  var isCorrect1 =
-    document.getElementById("blank1_fill1").value.trim() ===
-    answers.blank1_fill1;
-  var isCorrect2 =
-    document.getElementById("blank2_fill1").value.trim() ===
-    answers.blank2_fill1;
-  var isCorrect3 =
-    document.getElementById("blank3_fill1").value.trim() ===
-    answers.blank3_fill1;
-  var isCorrect4 =
-    document.getElementById("blank4_fill1").value.trim() ===
-    answers.blank4_fill1;
-  var isCorrect5 =
-    document.getElementById("blank5_fill1").value.trim() ===
-    answers.blank5_fill1;
-  var isCorrect6 =
-    document.getElementById("blank6_fill1").value.trim() ===
-    answers.blank6_fill1;
-  var isCorrect7 =
-    document.getElementById("blank7_fill1").value.trim() ===
-    answers.blank7_fill1;
-  var isCorrect8 =
-    document.getElementById("blank8_fill1").value.trim() ===
-    answers.blank8_fill1;
-  var isCorrect9 =
-    document.getElementById("blank9_fill1").value.trim() ===
-    answers.blank9_fill1;
-  var isCorrect10 =
-    document.getElementById("blank10_fill1").value.trim() ===
-    answers.blank10_fill1;
-  var isCorrect11 =
-    document.getElementById("blank11_fill1").value.trim() ===
-    answers.blank11_fill1;
+  var userInput1 = document.getElementById("blank1_fill1").value.trim();
+  var isCorrect1 = answers.blank1_fill1.includes(userInput1);
+  
+  var userInput2 = document.getElementById("blank2_fill1").value.trim();
+  var isCorrect2 = answers.blank2_fill1.includes(userInput2);
+
+  var userInput3 = document.getElementById("blank3_fill1").value.trim();
+  var isCorrect3 = answers.blank3_fill1.includes(userInput3);
+
+  var userInput4 = document.getElementById("blank4_fill1").value.trim();
+  var isCorrect4 = answers.blank4_fill1.includes(userInput4);
+
+  var userInput5 = document.getElementById("blank5_fill1").value.trim();
+  var isCorrect5 = answers.blank5_fill1.includes(userInput5);
+
+  var userInput6 = document.getElementById("blank6_fill1").value.trim();
+  var isCorrect6 = answers.blank6_fill1.includes(userInput6);
+
+  var userInput7 = document.getElementById("blank7_fill1").value.trim();
+  var isCorrect7 = answers.blank7_fill1.includes(userInput7);
+
+  var userInput8 = document.getElementById("blank8_fill1").value.trim();
+  var isCorrect8 = answers.blank8_fill1.includes(userInput8);
+
+  var userInput9 = document.getElementById("blank9_fill1").value.trim();
+  var isCorrect9 = answers.blank9_fill1.includes(userInput9);
+
+  var userInput10 = document.getElementById("blank10_fill1").value.trim();
+  var isCorrect10 = answers.blank10_fill1.includes(userInput10);
+
+  var userInput11 = document.getElementById("blank11_fill1").value.trim();
+  var isCorrect11 = answers.blank11_fill1.includes(userInput11);
+
   var userInput12 = document.getElementById("blank12_fill1").value.trim();
   var isCorrect12 = answers.blank12_fill1.includes(userInput12);
+
+  var userInput13 = document.getElementById("blank13_fill1").value.trim();
+  var isCorrect13 = answers.blank13_fill1.includes(userInput13);
+  
+  var userInput14 = document.getElementById("blank14_fill1").value.trim();
+  var isCorrect14 = answers.blank14_fill1.includes(userInput14);
 
   fill1Icon1.className = isCorrect1
     ? "fill1-icon correct"
@@ -243,6 +253,12 @@ function checkFill1() {
   fill1Icon12.className = isCorrect12
     ? "fill1-icon correct"
     : "fill1-icon incorrect";
+  fill1Icon13.className = isCorrect13
+    ? "fill1-icon correct"
+    : "fill1-icon incorrect";
+  fill1Icon14.className = isCorrect14
+    ? "fill1-icon correct"
+    : "fill1-icon incorrect";
 
   fill1Icon1.style.display = "inline-block";
   fill1Icon2.style.display = "inline-block";
@@ -256,6 +272,8 @@ function checkFill1() {
   fill1Icon10.style.display = "inline-block";
   fill1Icon11.style.display = "inline-block";
   fill1Icon12.style.display = "inline-block";
+  fill1Icon13.style.display = "inline-block";
+  fill1Icon14.style.display = "inline-block";
 
   var correctCount = [
     isCorrect1,
@@ -270,6 +288,8 @@ function checkFill1() {
     isCorrect10,
     isCorrect11,
     isCorrect12,
+    isCorrect13,
+    isCorrect14,
   ].filter(function (x) {
     return x === true;
   }).length;
