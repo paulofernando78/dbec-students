@@ -321,8 +321,9 @@ p {
     font-weight: bold;
 }
 
-.ribbon-deepyellow {
-    background: #F6BE00;
+.ribbon-lightyellow {
+    background: #f6bd00b4;
+    background: rgba(255, 230, 0, 0.671);
     border: 1px solid black;
     color: black;
     padding-left: 10px;
