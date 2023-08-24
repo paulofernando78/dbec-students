@@ -224,6 +224,13 @@ main {
     top: -2px;
 }
 
+.icon-celta-wrapup {
+    width: 53px;
+    height: 48px;
+    filter: drop-shadow(1px 1px);
+    margin-right: 15px;
+}
+
 /*FONT AND TEXT */
 
 h1 {
