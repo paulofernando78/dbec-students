@@ -23,30 +23,96 @@
         </div>
         <br>
 
-        <!-- VOCABULARY (Lead-in) -->
+        <!-- GRAMMAR (Lead-in) -->
         <div>
-            <div class="icon-celta-alignment">
-                <img src="../../../../assets/imgs/celta-leadin.gif" alt="brain" class="icon-celta">
-                <p><b>VOCABULARY (Lead-in)</b></p>
-            </div>
-            <br>
-            <p>Look at the pictures.</p>
-            <br>
-            <div class="vocabulary-leadin-container">
-                <img src="assets/img/vl1.png" alt="1" class="img-1-100" style="height: 180px;">
-                <img src="assets/img/vl2.png" alt="2" class="img-1-100" style="height: 180px;">
-                <img src="assets/img/vl3.png" alt="3" class="img-1-100" style="height: 180px;">
-                <img src="assets/img/vl4.png" alt="4" class="img-1-100" style="height: 180px;">
-            </div>
-            <br>
-            <!-- CHECKBOX 1 -->
-            <div>
-                <p><b>It's a...</b></p>
-                
-            <br>
-            <div class="vocabulary-bitmoji">
+            <div class="vocabulary-bitmoji-container">
                 <img src="assets/img/coffee.png" alt="Coffee" class="vocabulary-bitmoji-imgs">
                 <img src="assets/img/tea.png" alt="Tea" class="vocabulary-bitmoji-imgs">
+            </div>
+            <div>
+                <div class="icon-celta-alignment">
+                    <img src="../../../../assets/imgs/celta-leadin.gif" alt="brain" class="icon-celta">
+                    <p><b>VOCABULARY (Lead-in)</b></p>
+                </div>
+                <br>
+                <p><b>Look at the pictures.</b></p>
+                <br>
+                <div class="vocabulary-leadin-container">
+                    <img src="assets/img/vl1.png" alt="1" class="img-1-100" style="height: 180px;">
+                    <img src="assets/img/vl2.png" alt="2" class="img-1-100" style="height: 180px;">
+                    <img src="assets/img/vl3.png" alt="3" class="img-1-100" style="height: 180px;">
+                    <img src="assets/img/vl4.png" alt="4" class="img-1-100" style="height: 180px;">
+                </div>
+                <br>
+    
+                <p><b>Select the correct answers.</b></p>
+                <br>
+    
+                <!-- CHECKBOX 1 -->
+                <div>
+                    <div class="container-exercise-space">
+                        <div>
+                            <div>
+                                <p>It's a...</p>
+                                <div class="align-items-center-1">
+                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox">
+                                    <label for="checkbox-1a">a&#41; a hospital</label>
+                                    <span class="icon checkbox-icon invisible"></span>
+                                </div>
+    
+                                <div class="align-items-center-1">
+                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox" />
+                                    <label for="checkbox-1b">b&#41; a market</label>
+                                    <span class="icon checkbox-icon invisible"></span>
+                                </div>
+    
+                                <div class="align-items-center-1">
+                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox"
+                                        data-correct="true">
+                                    <label for=" checkbox-1c">c&#41; a coffeee shop</label>
+                                    <span class="icon checkbox-icon invisible"></span>
+                                </div>
+                                <br>
+                                <p>People drink...</p>
+                                <div class="align-items-center-1">
+                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox">
+                                    <label for=" checkbox-1c">d&#41; champagne</label>
+                                    <span class="icon checkbox-icon invisible"></span>
+                                </div>
+    
+                                <div class="align-items-center-1">
+                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1d" class="checkbox"
+                                        data-correct="true">
+                                    <label for=" checkbox-1d">e&#41; tea</label>
+                                    <span class="icon checkbox-icon invisible"></span>
+                                </div>
+    
+                                <div class="align-items-center-1">
+                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1f" class="checkbox">
+                                    <label for=" checkbox-1f">f&#41; vodka</label>
+                                    <span class="icon checkbox-icon invisible"></span>
+                                </div>
+    
+                                <div class="align-items-center-1">
+                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1g" class="checkbox"
+                                        data-correct="true">
+                                    <label for=" checkbox-1g">g&#41; coffee</label>
+                                    <span class="icon checkbox-icon invisible"></span>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div>
+                            <button onclick="checkCheckboxes()" class="pushable">
+                                <span class="front">Check answers</span>
+                            </button>
+                            <button onclick="resetCheckboxes()" class="pushable">
+                                <span class="front">Reset</span>
+                            </button>
+                            <p id="resultCheckboxes"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -54,7 +120,7 @@
         <hr>
         <br>
 
-        <!-- VOCABULARY (Presentation) -->
+        <!-- GRAMMAR (Presentation) -->
         <div>
             <div class="icon-celta-alignment">
                 <img src="../../../../assets/imgs/celta-presentation.gif" alt="Graphic" class="icon-celta-presentation">
@@ -74,7 +140,7 @@
         <hr>
         <br>
 
-        <!-- VOCABULARY (practice) -->
+        <!-- GRAMMAR (practice) -->
         <div>
             <div class="icon-celta-alignment">
                 <img src="../../../../assets/imgs/celta-practice.gif" alt="Engine" class="icon-celta-practice">
@@ -120,7 +186,7 @@
         <hr>
         <br>
 
-        <!-- VOCABULARY (Production) -->
+        <!-- GRAMMAR (Production) -->
         <div>
             <div class="icon-celta-alignment">
                 <img src="../../../../assets/imgs/celta-production.gif" alt="Rocket" class="icon-celta-production">
@@ -134,21 +200,11 @@
         <hr>
         <br>
 
-        <!-- VOCABULARY (Wrap-up) -->
-        <div>
-            <div class="icon-celta-alignment">
-                <img src="../../../../assets/imgs/celta-wrapup.gif" alt="Rocket" class="icon-celta-wrapup">
-                <p class="ribbon-lightgray"><b>VOCABULARY (Wrap-up)</b></p>
-            </div>
-            <br>
-            <p>...</p>
-        </div>
-
         <br>
         <hr style="border: 2px dashed;">
         <br>
 
-        <!-- GRAMMAR (Lead-in) -->
+        <!-- VOCABULARY (Lead-in) -->
         <div>
             <div class="icon-celta-alignment">
                 <img src="../../../../assets/imgs/celta-leadin.gif" alt="brain" class="icon-celta">
@@ -163,7 +219,7 @@
         <hr>
         <br>
 
-        <!-- GRAMMAR (Presentation) -->
+        <!-- VOCABULARY (Presentation) -->
         <div>
             <div class="icon-celta-alignment">
                 <img src="../../../../assets/imgs/celta-presentation.gif" alt="Graphic" class="icon-celta-presentation">
@@ -179,7 +235,7 @@
         <hr>
         <br>
 
-        <!-- GRAMMAR (practice) -->
+        <!-- VOCABULARY (practice) -->
         <div>
             <div class="icon-celta-alignment">
                 <img src="../../../../assets/imgs/celta-practice.gif" alt="Engine" class="icon-celta-practice">
@@ -221,7 +277,7 @@
         <hr>
         <br>
 
-        <!-- GRAMMAR (Production) -->
+        <!-- VOCABULARY (Production) -->
         <div>
             <div class="icon-celta-alignment">
                 <img src="../../../../assets/imgs/celta-production.gif" alt="Rocket" class="icon-celta-production">
@@ -235,7 +291,7 @@
         <hr>
         <br>
 
-        <!-- GRAMMAR (Wrap-up) -->
+        <!-- WRAP-UP -->
         <div>
             <div class="icon-celta-alignment">
                 <img src="../../../../assets/imgs/celta-wrapup.gif" alt="Rocket" class="icon-celta-wrapup">

@@ -94,7 +94,7 @@ input[type="radio"] {
   height: 22px;
 }
 
-/* CHECKBOX STYLE*/
+/* CHECKBOX 1*/
 
 .checkbox[type="checkbox"] {
   appearance: none;
@@ -130,7 +130,7 @@ input[type="radio"] {
 
 /* --- */
 
-.checkbox-icon1 {
+.checkbox-icon {
   display: inline-block;
   width: 22px;
   height: 22px;
@@ -140,7 +140,7 @@ input[type="radio"] {
   filter: var(--icon-correct)
 }
 
-.invisible1 {
+.invisible {
   display: none;
 }
 
@@ -148,6 +148,59 @@ input[type="radio"] {
   margin-top: 10px;
 }
 
+/* CHECKBOX 2*/
+
+.checkbox2[type="checkbox"] {
+  appearance: none;
+  border: 1px solid black;
+  width: 22px;
+  height: 22px;
+  content: none;
+  outline: none;
+  border-radius: 20%;
+  margin: 0;
+}
+
+.checkbox2[type="checkbox"]:checked {
+  appearance: none;
+  border-radius: 20%;
+  outline: none;
+  content: none;
+  border: none;
+}
+
+.checkbox2[type="checkbox"]:checked::before {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 20%;
+  color: white !important;
+  content: "";
+  background-image: url(../assets/imgs/checkbox.svg);
+  background-size: contain;
+  width: 22px;
+  height: 22px;
+}
+
+
+/* --- */
+
+.checkbox-icon2 {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+  background-size: cover;
+  background-image: url(../assets/imgs/correct.svg);
+  filter: var(--icon-correct)
+}
+
+.invisible2 {
+  display: none;
+}
+
+#resultCheckboxes2 {
+  margin-top: 10px;
+}
 
 /* DROPDOWN MENU */
 

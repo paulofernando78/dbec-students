@@ -4,7 +4,12 @@
     gap: 10px;
 }
 
-.vocabulary-bitmoji {
+.vocabulary-leadin-flex-select {
+    display: flex;
+    align-content: center;
+}
+
+.vocabulary-bitmoji-container {
     display: flex;
     justify-content: center;
 }
@@ -14,6 +19,7 @@
     filter: drop-shadow(1px 1px 1px);
 }
 
+
 @media (max-width: 600px) {
 
     .vocabulary-leadin-container {
@@ -22,7 +28,13 @@
         gap: 10px;
     }
 
+    .vocabulary-leadin-flex-select {
+        display: flex;
+        flex-direction: column;
+    }
+
     .vocabulary-bitmoji-imgs {
         width: 40%;
     }
+
 }
