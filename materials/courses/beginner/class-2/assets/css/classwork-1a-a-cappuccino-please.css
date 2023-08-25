@@ -19,6 +19,28 @@
     filter: drop-shadow(1px 1px 1px);
 }
 
+.grammar-practice-container {
+    display: grid;
+    grid-template-columns: 400px 300px;
+    gap: 20px;
+}
+
+.practice-numbers-hcop {
+    font: 1em s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border: solid 1px black;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: 37px;
+    left: 12px;
+}
+
 
 @media (max-width: 600px) {
 
@@ -35,6 +57,12 @@
 
     .vocabulary-bitmoji-imgs {
         width: 40%;
+    }
+
+    .grammar-practice-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
 }
