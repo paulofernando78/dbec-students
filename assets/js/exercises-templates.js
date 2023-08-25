@@ -11,6 +11,7 @@ function resetRadios() {
   }
 }
 
+// EXERCISE XXX
 // CHECKBOXES 1
 function checkCheckboxes() {
   var checkboxes = document.querySelectorAll(".checkbox");
@@ -74,7 +75,7 @@ function showCheckboxes() {
     "Correct answers: " + selectedLetters.join(", ") + ".";
 }
 
-
+// EXERCISE XXX
 // CHECKBOXES 2
 function checkCheckboxes2() {
   var checkboxes = document.querySelectorAll(".checkbox2");
@@ -241,7 +242,7 @@ function checkFill1() {
 
   var userInput1 = document.getElementById("blank1_fill1").value.trim();
   var isCorrect1 = answers.blank1_fill1.includes(userInput1);
-  
+
   var userInput2 = document.getElementById("blank2_fill1").value.trim();
   var isCorrect2 = answers.blank2_fill1.includes(userInput2);
 
@@ -277,7 +278,7 @@ function checkFill1() {
 
   var userInput13 = document.getElementById("blank13_fill1").value.trim();
   var isCorrect13 = answers.blank13_fill1.includes(userInput13);
-  
+
   var userInput14 = document.getElementById("blank14_fill1").value.trim();
   var isCorrect14 = answers.blank14_fill1.includes(userInput14);
 

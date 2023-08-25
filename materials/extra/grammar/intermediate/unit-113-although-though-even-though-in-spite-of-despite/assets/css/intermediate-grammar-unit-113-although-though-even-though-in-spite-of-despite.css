@@ -1,0 +1,28 @@
+.unit-113-a-couple-in-the-rain {
+    display: flex;
+    gap: 10px
+}
+
+.unit-113-1-2-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fill {
+    width: 80%;
+}
+
+@media (max-width: 600px) {
+
+    /* UNIT 113 */
+
+    .unit-113-a-couple-in-the-rain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .unit-113-1-2-columns {
+        display: flex;
+        flex-direction: column;
+    }
+}
