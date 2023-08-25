@@ -43,24 +43,25 @@
 
 .grammar-production-conversation-gif {
   width: 200px;
-  fill: ;  
+filter: drop-shadow(1px 1px 1px);
+   
 }
 
 
 @media (max-width: 600px) {
 
-    .vocabulary-leadin-container {
+    .grammar-leadin-container {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .vocabulary-leadin-flex-select {
+    .grammar-leadin-flex-select {
         display: flex;
         flex-direction: column;
     }
 
-    .vocabulary-bitmoji-imgs {
+    .grammar-bitmoji-imgs {
         width: 40%;
     }
 
@@ -70,7 +71,7 @@
         gap: 20px;
     }
 
-    .presentation-form-container {
+    .grammar-presentation-form-container {
         display: flex;
         flex-direction: column;
     }
