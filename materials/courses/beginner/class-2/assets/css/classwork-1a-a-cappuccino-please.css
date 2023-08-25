@@ -14,7 +14,7 @@
     filter: drop-shadow(1px 1px 1px);
 }
 
-.grammar.presentation-form-container {
+.grammar-presentation-form-container {
     display: flex;
     gap: 10px;
 }
