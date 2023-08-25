@@ -181,7 +181,7 @@ main {
 .icon-celta-presentation {
     width: 45px;
     height: 38px;
-    filter: drop-shadow(1px 1px);
+    filter: drop-shadow(1px 1px) grayscale();;
     margin-right: 15px;
 }
 
