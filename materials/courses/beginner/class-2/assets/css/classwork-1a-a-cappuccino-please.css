@@ -19,6 +19,11 @@
     filter: drop-shadow(1px 1px 1px);
 }
 
+.presentation-form-container {
+    display: flex;
+    gap: 10px;
+}
+
 .grammar-practice-container {
     display: grid;
     grid-template-columns: 400px 300px;
@@ -63,6 +68,11 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .presentation-form-container {
+        display: flex;
+        flex-direction: column;
     }
 
 }
