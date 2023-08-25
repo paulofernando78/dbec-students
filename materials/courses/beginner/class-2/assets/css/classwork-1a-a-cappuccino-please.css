@@ -1,25 +1,20 @@
-.vocabulary-leadin-container {
+.grammar-bitmoji-container {
+    display: flex;
+    justify-content: center;
+}
+
+.grammar-leadin-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
-.vocabulary-leadin-flex-select {
-    display: flex;
-    align-content: center;
-}
-
-.vocabulary-bitmoji-container {
-    display: flex;
-    justify-content: center;
-}
-
-.vocabulary-bitmoji-imgs {
+.grammar-bitmoji-imgs {
     width: 30%;
     filter: drop-shadow(1px 1px 1px);
 }
 
-.presentation-form-container {
+.grammar.presentation-form-container {
     display: flex;
     gap: 10px;
 }
@@ -44,6 +39,11 @@
     position: relative;
     top: 37px;
     left: 12px;
+}
+
+.production-conversation-gif {
+  width: 200px;
+  fill: ;  
 }
 
 
