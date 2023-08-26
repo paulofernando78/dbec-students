@@ -8,6 +8,7 @@
     width: 20px;
     position: relative;
     top: 3px;
+    filter: var(--icon-incorrect);
 }
 
 .exercise-6-2 {
