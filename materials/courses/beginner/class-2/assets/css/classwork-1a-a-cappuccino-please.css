@@ -28,6 +28,7 @@
 .grammar-practice-container {
     display: grid;
     grid-template-columns: 400px 300px;
+    gap: 20px;
 }
 
 .grammar-practice-numbers-hcop {
