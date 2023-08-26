@@ -161,6 +161,7 @@ main {
 .icon-celta-alignment {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .icon-book-tilte {
