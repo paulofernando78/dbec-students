@@ -90,7 +90,7 @@ a {
 }
 
 main {
-    padding: 10px;
+    padding: 7px;
 }
 
 .feeling-today {
@@ -160,11 +160,18 @@ main {
 
 .icon-celta-alignment {
     display: flex;
-    align-items: end;
+    align-items: center;
 }
 
-.icon-celta {
-    width: 50px;
+.icon-book-tilte {
+    width: 43px;
+    height: 48px;
+    margin-right: 15px;
+    padding-bottom: 9px;
+}
+
+.icon-celta-introduction {
+    width: 53px;
     height: 50px;
     filter: drop-shadow(1px 1px);
     margin-right: 15px;
@@ -178,22 +185,22 @@ main {
 }
 
 .icon-celta-presentation {
-    width: 45px;
-    height: 38px;
-    filter: drop-shadow(1px 1px) grayscale();;
+    width: 53px;
+    height: 53px;
+    filter: drop-shadow(1px 1px) grayscale();
     margin-right: 15px;
 }
 
 .icon-celta-practice {
     width: 55px;
-    height: 40px;
+    height: 55px;
     filter: drop-shadow(1px 1px);
     margin-right: 15px;
 }
 
 .icon-celta-production {
     width: 50px;
-    height: 43px;
+    height: 54px;
     filter: drop-shadow(1px 1px);
     margin-right: 15px;
 }
@@ -319,6 +326,14 @@ p {
     font-weight: bold;
 }
 
+.ribbon-celta {
+    border: 5px solid white;
+        border-radius: 4px;
+        background-color: black;
+        padding: 10px;
+        box-shadow: 0 0 3px;
+}
+
 .ribbon-lightgrey {
     background: lightgrey;
     border: 1px solid black;
@@ -326,16 +341,6 @@ p {
     padding-left: 5px;
     box-shadow: 0 0 3px;
     font-weight: bold;
-}
-
-.ribbon-lightgrey-celta {
-    background: lightgrey;
-    border: 1px solid black;
-    border-radius: 4px;
-    padding-left: 5px;
-    box-shadow: 0 0 3px;
-    font-weight: bold;
-    width: 50%;
 }
 
 .ribbon-lightyellow {
