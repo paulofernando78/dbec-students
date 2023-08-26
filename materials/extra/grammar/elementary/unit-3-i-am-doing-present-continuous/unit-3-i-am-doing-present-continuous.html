@@ -26,7 +26,7 @@
                 <p class="color-white">A</p>
             </div>
             <br>
-            <img src="assets/img/unit-3-a.png" alt="Present continuous examples" class="img-1-100">
+            <img src="assets/img/unit-3-a.png" alt="Present continuous examples" class="img-1-100-border">
             <br>
             <p>The present continuous is:</p>
             <p><b>am</b>/<b>is</b>/<b>are</b> + <b>do<span class="color-green">ing</span></b>  / <b>eat<span class="color-green">ing</span></b> / <b>runn<span class="color-green">ing</span></b> / <b>writ<span class="color-green">ing</span></b> etc. =
@@ -125,254 +125,274 @@
         <br>
 
         <!--EXERCISES-->
+        <div>
         <div class="ribbon-lightgrey">
             <p>EXERCISES</p>
         </div>
         <br>
         <br>
 
-        <!-- EXERCISE 3.1 -->
-        <!-- FILL IN THE BLANKS 1-->
-        <div>
-            <p><b>3.1 What are these people doing? Use these verbs to complete the sentences.</b></p>
-            <br>
-            <div class="align-items-center-2">
-                <div>
-                    <p><b>eat</b></p>
+            <!-- EXERCISE 3.1 -->
+            <!-- FILL IN THE BLANKS 1-->
+            <div>
+                <p><b>3.1 What are these people doing? Use these verbs to complete the sentences.</b></p>
+                <br>
+                <div class="align-items-center-2">
+                    <div>
+                        <p><b>eat</b></p>
+                    </div>
+                    <div>
+                        <p><b>have</b></p>
+                    </div>
+                    <div>
+                        <p><b>lie</b></p>
+                    </div>
+                    <div>
+                        <p><b>play</b></p>
+                    </div>
+                    <div>
+                        <p><b>sit</b></p>
+                    </div>
+                    <div>
+                        <p><b>wait</b></p>
+                    </div>
                 </div>
-                <div>
-                    <p><b>have</b></p>
-                </div>
-                <div>
-                    <p><b>lie</b></p>
-                </div>
-                <div>
-                    <p><b>play</b></p>
-                </div>
-                <div>
-                    <p><b>sit</b></p>
-                </div>
-                <div>
-                    <p><b>wait</b></p>
-                </div>
+                <br>
+                <p><img src="../../../../../assets/imgs/cellphone.png" alt="cellphone" class="icon-general"><img
+                        src="../../../../../assets/imgs/zoom-in.png" alt="hand zooming in" class="icon-general"> Zoom in</p>
+                <img src="assets/img/unit-3-exercise-3-1.png" alt="" class="img-1-100-border">
+                <br>
+                <p>1.
+                    <input type="text" id="blank1_fill1" class="fill1" style="width: 150px;">
+                    <span id="fill1Icon1" class="fill1-icon"></span>
+                    an apple.
+                <p class="color-green fill1_answer">She is eating / She's eating</p>
+                </p>
+                <p>2. He
+                    <input type="text" id="blank2_fill1" class="fill1" style="width: 150px;">
+                    <span id="fill1Icon2" class="fill1-icon"></span>
+                    for a bus.
+                <p class="color-green fill1_answer">He is waiting / He's waiting</p>
+                </p>
+                <p>3. They
+                    <input type="text" id="blank3_fill1" class="fill1" style="width: 150px;">
+                    <span id="fill1Icon3" class="fill1-icon"></span> soccer.
+                <p class="color-green fill1_answer">are playing / 're playing
+                <p>
+                    <img src="../../../../../assets/imgs/flag-usa.png" alt="USA flag" class="icon-general"> soccer.
+    
+                    <img src="../../../../../assets/imgs/flag-uk.png" alt="USA flag" class="icon-general"> football
+                </p>
+                </p>
+                <p>4.
+                    <input type="text" id="blank4_fill1" class="fill1" style="width: 150px;">
+                    <span id="fill1Icon4" class="fill1-icon"></span>
+                    on the floor.
+                <p class="color-green fill1_answer">He is lying / He's lying</p>
+                </p>
+                <p>5.
+                    <input type="text" id="blank5_fill1" class="fill1" style="width: 170px;">
+                    <span id="fill1Icon5" class="fill1-icon"></span>
+                    breakfast.
+                <p class="color-green fill1_answer">They are having / They're having</p>
+                </p>
+                <p>6.
+                    <input type="text" id="blank6_fill1" class="fill1" style="width: 150px;">
+                    <span id="fill1Icon6" class="fill1-icon"></span>
+                    on the table.
+                <p class="color-green fill1_answer">She is sitting / She's sitting</p>
+                </p>
+                <br>
+    
+    
+                <button onclick="checkFill1()" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Check answers</span>
+                </button>
+                <button onclick="showFill1()" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Show Answers</span>
+                </button>
+                <button onclick="resetFill1()" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Reset</span>
+                </button>
+                <div id="resultFill1" class="p"></div>
             </div>
             <br>
-            <p><img src="../../../../../assets/imgs/cellphone.png" alt="cellphone" class="icon-general"><img
-                    src="../../../../../assets/imgs/zoom-in.png" alt="hand zooming in" class="icon-general"> Zoom in</p>
-            <img src="assets/img/unit-3-exercise-3-1.png" alt="" class="img-1-100">
-            <br>
-            <p>1.
-                <input type="text" id="blank1_fill1" class="fill1" style="width: 150px;">
-                <span id="fill1Icon1" class="fill1-icon"></span>
-                an apple.
-            <p class="color-green fill1_answer">She is eating / She's eating</p>
-            </p>
-            <p>2. He
-                <input type="text" id="blank2_fill1" class="fill1" style="width: 150px;">
-                <span id="fill1Icon2" class="fill1-icon"></span>
-                for a bus.
-            <p class="color-green fill1_answer">He is waiting / He's waiting</p>
-            </p>
-            <p>3. They
-                <input type="text" id="blank3_fill1" class="fill1" style="width: 150px;">
-                <span id="fill1Icon3" class="fill1-icon"></span> soccer.
-            <p class="color-green fill1_answer">are playing / 're playing
-            <p>
-                <img src="../../../../../assets/imgs/flag-usa.png" alt="USA flag" class="icon-general"> soccer.
-
-                <img src="../../../../../assets/imgs/flag-uk.png" alt="USA flag" class="icon-general"> football
-            </p>
-            </p>
-            <p>4.
-                <input type="text" id="blank4_fill1" class="fill1" style="width: 150px;">
-                <span id="fill1Icon4" class="fill1-icon"></span>
-                on the floor.
-            <p class="color-green fill1_answer">He is lying / He's lying</p>
-            </p>
-            <p>5.
-                <input type="text" id="blank5_fill1" class="fill1" style="width: 170px;">
-                <span id="fill1Icon5" class="fill1-icon"></span>
-                breakfast.
-            <p class="color-green fill1_answer">They are having / They're having</p>
-            </p>
-            <p>6.
-                <input type="text" id="blank6_fill1" class="fill1" style="width: 150px;">
-                <span id="fill1Icon6" class="fill1-icon"></span>
-                on the table.
-            <p class="color-green fill1_answer">She is sitting / She's sitting</p>
-            </p>
-            <br>
-
-
-            <button onclick="checkFill1()" class="pushable">
-                <span class="front">Check answers</span>
-            </button>
-            <button onclick="showFill1()" class="pushable">
-                <span class="front">Show Answers</span>
-            </button>
-            <button onclick="resetFill1()" class="pushable">
-                <span class="front">Reset</span>
-            </button>
-            <div id="resultFill1" class="p"></div>
-        </div>
-        <br>
-
-        <!-- EXERCISE 3.2 -->
-        <!-- FILL IN THE BLANKS 2-->
-        <div>
-            <p><b>3.2 Complete the sentences. Use these verbs:</b></p>
-            <br />
-            <div class="align-items-center-2">
-                <div>
-                    <p><b>build</b></p>
+    
+            <!-- EXERCISE 3.2 -->
+            <!-- FILL IN THE BLANKS 2-->
+            <div>
+                <p><b>3.2 Complete the sentences. Use these verbs:</b></p>
+                <br />
+                <div class="align-items-center-2">
+                    <div>
+                        <p><b>build</b></p>
+                    </div>
+                    <div>
+                        <p><b>cook</b></p>
+                    </div>
+                    <div>
+                        <p><b>leave</b></p>
+                    </div>
+                    <div>
+                        <p><b>stay</b></p>
+                    </div>
+                    <div>
+                        <p><b>swim</b></p>
+                    </div>
+                    <div>
+                        <p><b>wait</b></p>
+                    </div>
+                    <div>
+                        <p><b>take</b></p>
+                    </div>
+                    <div>
+                        <p><b>work</b></p>
+                    </div>
+    
                 </div>
-                <div>
-                    <p><b>cook</b></p>
-                </div>
-                <div>
-                    <p><b>leave</b></p>
-                </div>
-                <div>
-                    <p><b>stay</b></p>
-                </div>
-                <div>
-                    <p><b>swim</b></p>
-                </div>
-                <div>
-                    <p><b>wait</b></p>
-                </div>
-                <div>
-                    <p><b>take</b></p>
-                </div>
-                <div>
-                    <p><b>work</b></p>
-                </div>
-
+                <br>
+                <p>1. Please be quiet. I _____ .
+                    <br>
+                    <input type="text" id="blank1_fill2" class="fill2" style="width: 160px">
+                    <span id="fill2Icon1" class="fill2-icon"></span>
+                <p class="color-green fill2_answer">am working / 'm working</p>
+                </p>
+                <p>2. A: Where's John? B: He's in the kitchen. He _____ .
+                    <br>
+                    <input type="text" id="blank2_fill2" class="fill2" style="width: 200px">
+                    <span id="fill2Icon2" class="fill2-icon"></span>
+                <p class="color-green fill2_answer">is cooking / 's cooking</p>
+                </p>
+                <p>3. A: You _____ . B: On my foot.
+                    <br>
+                    <input type="text" id="blank3_fill2" class="fill2" style="width: 180px">
+                    <span id="fill2Icon3" class="fill2-icon"></span>
+                <p class="color-green fill2_answer">are standing / 're standing</p>
+                </p>
+                <p>4. Look! Somebody _____ . in the river.
+                    <br>
+                    <input type="text" id="blank4_fill2" class="fill2" style="width: 200px">
+                    <span id="fill2Icon4" class="fill2-icon"></span>
+                <p class="color-green fill2_answer">is swimming / 's swimming</p>
+                </p>
+                <p>5. We're on vacation. We _____ . at a hotal on the beach.
+                    <br>
+                    <input type="text" id="blank5_fill2" class="fill2" style="width: 200px">
+                    <span id="fill2Icon5" class="fill2-icon"></span>
+                <p class="color-green fill2_answer">are staying / 're staying</p>
+                </p>
+                <p>6. A: Where's Sue? B: She _____ . a shower.
+                    <br>
+                    <input type="text" id="blank6_fill2" class="fill2" style="width: 200px">
+                    <span id="fill2Icon6" class="fill2-icon"></span>
+                <p class="color-green fill2_answer">is taking / 's taking</p>
+                </p>
+                <p>7. They _____ . a new hotel downtown.
+                    <br>
+                    <input type="text" id="blank7_fill2" class="fill2" style="width: 200px">
+                    <span id="fill2Icon7" class="fill2-icon"></span>
+                <p class="color-green fill2_answer">are building / 're building</p>
+                </p>
+                <p>8. I _____ . now. Goodbye!
+                    <br>
+                    <input type="text" id="blank8_fill2" class="fill2" style="width: 200px">
+                    <span id="fill2Icon8" class="fill2-icon"></span>
+                <p class="color-green fill2_answer">am leaving / 'm leaving</p>
+                </p>
+                <br>
+    
+                <button onclick="checkFill2()" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Check answers</span>
+                </button>
+                <button onclick="showFill2()" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Show Answers</span>
+                </button>
+                <button onclick="resetFill2()" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Reset</span>
+                </button>
+                <div id="resultFill2" class="p"></div>
             </div>
             <br>
-            <p>1. Please be quiet. I _____ .
+    
+            <!-- EXERCISE 3.3 -->
+            <!-- FILL IN THE BLANKS 3-->
+            <div>
+                <p><b>3.3 Look at the picture. Write sentences about Jane. Use <b><span class="color-green">She's
+                                -ing</span></b> or <b><span class="color-green">She isn't</span></b>.</b></p>
+                <br />
+                <img src="assets/img/unit-3-exercise-3-3.png" alt="Jane" class="img-1-100-border" style="width: 70%;">
                 <br>
-                <input type="text" id="blank1_fill2" class="fill2" style="width: 160px">
-                <span id="fill2Icon1" class="fill2-icon"></span>
-            <p class="color-green fill2_answer">am working / 'm working</p>
-            </p>
-            <p>2. A: Where's John? B: He's in the kitchen. He _____ .
+                <p>1. (have dinner)
+                    <input type="text" id="blank1_fill3" class="fill3" style="width: 300px;">
+                    <span id="fill3Icon1" class="fill3-icon"></span>
+                    <p class="color-green fill3_answer">She is not having dinner. / She's not having dinner. / She isn't having dinner.</p>
+                </p>
+                <p>2. (watch TV)
+                    <input type="text" id="blank2_fill3" class="fill3" style="width: 300px;">
+                    <span id="fill3Icon2" class="fill3-icon"></span>
+                    <p class="color-green fill3_answer">She is watching TV. / She's watching TV.</p>
+                </p>
+                <p>3. (sit n the floor)
+                    <input type="text" id="blank3_fill3" class="fill3" style="width: 300px;">
+                    <span id="fill3Icon3" class="fill3-icon"></span>
+                    <p class="color-green fill3_answer">She is sitting on the floor. / She's sitting on the floor.</p>
+                </p>
+                <p>4. (read a book)
+                    <input type="text" id="blank4_fill3" class="fill3" style="width: 300px;">
+                    <span id="fill3Icon4" class="fill3-icon"></span>
+                    <p class="color-green fill3_answer">She is not reading a book. / She's not reading a book. / She isn't reading a book.</p>
+                </p>
+                <p>5. (play the piano)
+                    <input type="text" id="blank5_fill3" class="fill3" style="width: 300px;">
+                    <span id="fill3Icon5" class="fill3-icon"></span>
+                    <p class="color-green fill3_answer">She is not playing the piano. / She's not playing the piano. / "She isn't playing the paino.</p>
+                </p>
+                <p>6. (laugh)
+                    <input type="text" id="blank6_fill3" class="fill3" style="width: 300px;">
+                    <span id="fill3Icon6" class="fill3-icon"></span>
+                    <p class="color-green fill3_answer">She is laughing. / She's laughing.</p>
+                </p>
+                <p>7. (wear a hat)
+                    <input type="text" id="blank7_fill3" class="fill3" style="width: 300px;">
+                    <span id="fill3Icon7" class="fill3-icon"></span>
+                    <p class="color-green fill3_answer">She is wearing a hat. / She's wearing a hat.</p>
+                </p>
+                <p>8. (drink coffee)
+                    <input type="text" id="blank8_fill3" class="fill3" style="width: 300px;">
+                    <span id="fill3Icon8" class="fill3-icon"></span>
+                    <p class="color-green fill3_answer">She is not drinking coffee. / She's not drinking coffee. / She isn't drinking coffee.</p>
+                </p>
                 <br>
-                <input type="text" id="blank2_fill2" class="fill2" style="width: 200px">
-                <span id="fill2Icon2" class="fill2-icon"></span>
-            <p class="color-green fill2_answer">is cooking / 's cooking</p>
-            </p>
-            <p>3. A: You _____ . B: On my foot.
-                <br>
-                <input type="text" id="blank3_fill2" class="fill2" style="width: 180px">
-                <span id="fill2Icon3" class="fill2-icon"></span>
-            <p class="color-green fill2_answer">are standing / 're standing</p>
-            </p>
-            <p>4. Look! Somebody _____ . in the river.
-                <br>
-                <input type="text" id="blank4_fill2" class="fill2" style="width: 200px">
-                <span id="fill2Icon4" class="fill2-icon"></span>
-            <p class="color-green fill2_answer">is swimming / 's swimming</p>
-            </p>
-            <p>5. We're on vacation. We _____ . at a hotal on the beach.
-                <br>
-                <input type="text" id="blank5_fill2" class="fill2" style="width: 200px">
-                <span id="fill2Icon5" class="fill2-icon"></span>
-            <p class="color-green fill2_answer">are staying / 're staying</p>
-            </p>
-            <p>6. A: Where's Sue? B: She _____ . a shower.
-                <br>
-                <input type="text" id="blank6_fill2" class="fill2" style="width: 200px">
-                <span id="fill2Icon6" class="fill2-icon"></span>
-            <p class="color-green fill2_answer">is taking / 's taking</p>
-            </p>
-            <p>7. They _____ . a new hotel downtown.
-                <br>
-                <input type="text" id="blank7_fill2" class="fill2" style="width: 200px">
-                <span id="fill2Icon7" class="fill2-icon"></span>
-            <p class="color-green fill2_answer">are building / 're building</p>
-            </p>
-            <p>8. I _____ . now. Goodbye!
-                <br>
-                <input type="text" id="blank8_fill2" class="fill2" style="width: 200px">
-                <span id="fill2Icon8" class="fill2-icon"></span>
-            <p class="color-green fill2_answer">am leaving / 'm leaving</p>
-            </p>
-            <br>
-
-            <button onclick="checkFill2()" class="pushable">
-                <span class="front">Check answers</span>
-            </button>
-            <button onclick="showFill2()" class="pushable">
-                <span class="front">Show Answers</span>
-            </button>
-            <button onclick="resetFill2()" class="pushable">
-                <span class="front">Reset</span>
-            </button>
-            <div id="resultFill2" class="p"></div>
-        </div>
-        <br>
-
-        <!-- EXERCISE 3.3 -->
-        <!-- FILL IN THE BLANKS 3-->
-        <div>
-            <p><b>3.3 Look at the picture. Write sentences about Jane. Use <b><span class="color-green">She's
-                            -ing</span></b> or <b><span class="color-green">She isn't</span></b>.</b></p>
-            <br />
-            <img src="assets/img/unit-3-exercise-3-3.png" alt="Jane" class="img-1-100" style="width: 70%;">
-            <br>
-            <p>1. (have dinner)
-                <input type="text" id="blank1_fill3" class="fill3" style="width: 300px;">
-                <span id="fill3Icon1" class="fill3-icon"></span>
-                <p class="color-green fill3_answer">She is not having dinner. / She's not having dinner. / She isn't having dinner.</p>
-            </p>
-            <p>2. (watch TV)
-                <input type="text" id="blank2_fill3" class="fill3" style="width: 300px;">
-                <span id="fill3Icon2" class="fill3-icon"></span>
-                <p class="color-green fill3_answer">She is watching TV. / She's watching TV.</p>
-            </p>
-            <p>3. (sit n the floor)
-                <input type="text" id="blank3_fill3" class="fill3" style="width: 300px;">
-                <span id="fill3Icon3" class="fill3-icon"></span>
-                <p class="color-green fill3_answer">She is sitting on the floor. / She's sitting on the floor.</p>
-            </p>
-            <p>4. (read a book)
-                <input type="text" id="blank4_fill3" class="fill3" style="width: 300px;">
-                <span id="fill3Icon4" class="fill3-icon"></span>
-                <p class="color-green fill3_answer">She is not reading a book. / She's not reading a book. / She isn't reading a book.</p>
-            </p>
-            <p>5. (play the piano)
-                <input type="text" id="blank5_fill3" class="fill3" style="width: 300px;">
-                <span id="fill3Icon5" class="fill3-icon"></span>
-                <p class="color-green fill3_answer">She is not playing the piano. / She's not playing the piano. / "She isn't playing the paino.</p>
-            </p>
-            <p>6. (laugh)
-                <input type="text" id="blank6_fill3" class="fill3" style="width: 300px;">
-                <span id="fill3Icon6" class="fill3-icon"></span>
-                <p class="color-green fill3_answer">She is laughing. / She's laughing.</p>
-            </p>
-            <p>7. (wear a hat)
-                <input type="text" id="blank7_fill3" class="fill3" style="width: 300px;">
-                <span id="fill3Icon7" class="fill3-icon"></span>
-                <p class="color-green fill3_answer">She is wearing a hat. / She's wearing a hat.</p>
-            </p>
-            <p>8. (drink coffee)
-                <input type="text" id="blank8_fill3" class="fill3" style="width: 300px;">
-                <span id="fill3Icon8" class="fill3-icon"></span>
-                <p class="color-green fill3_answer">She is not drinking coffee. / She's not drinking coffee. / She isn't drinking coffee.</p>
-            </p>
-            <br>
-
-            <button onclick="checkFill3()" class="pushable">
-                <span class="front">Check answers</span>
-            </button>
-            <button onclick="showFill3()" class="pushable">
-                <span class="front">Show Answers</span>
-            </button>
-            <button onclick="resetFill3()" class="pushable">
-                <span class="front">Reset</span>
-            </button>
-            <div id="resultFill3" class="p"></div>
+    
+                <button onclick="checkFill3()" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Check answers</span>
+                </button>
+                <button onclick="showFill3()" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Show Answers</span>
+                </button>
+                <button onclick="resetFill3()" class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Reset</span>
+                </button>
+                <div id="resultFill3" class="p"></div>
+            </div>
         </div>
     </main>
 </body>
