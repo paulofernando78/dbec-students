@@ -32,7 +32,6 @@
 }
 
 .grammar-practice-numbers-hcop {
-    font: 1em s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,9 +47,9 @@
 }
 
 .grammar-production-conversation-gif {
-  width: 200px;
-filter: drop-shadow(1px 1px 1px);
-   
+    width: 200px;
+    filter: drop-shadow(1px 1px 1px);
+
 }
 
 
@@ -69,6 +68,12 @@ filter: drop-shadow(1px 1px 1px);
 
     .grammar-bitmoji-imgs {
         width: 40%;
+    }
+
+    .grammar-practice-hcwp-radio {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .grammar-practice-container {
