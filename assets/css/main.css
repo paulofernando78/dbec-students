@@ -328,6 +328,16 @@ p {
     font-weight: bold;
 }
 
+.ribbon-lightgrey-celta {
+    background: lightgrey;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-left: 5px;
+    box-shadow: 0 0 3px;
+    font-weight: bold;
+    width: 50%;
+}
+
 .ribbon-lightyellow {
     background: #ffee008f;
     border: 1px solid black;

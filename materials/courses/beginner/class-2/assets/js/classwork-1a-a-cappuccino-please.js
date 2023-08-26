@@ -1,3 +1,11 @@
+// RADIOS
+function resetRadios() {
+  var radios = document.querySelectorAll('input[type="radio"]');
+  for (var i = 0; i < radios.length; i++) {
+    radios[i].checked = false;
+  }
+}
+
 // CHECKBOXES 1
 function checkCheckboxes() {
   var checkboxes = document.querySelectorAll(".checkbox");

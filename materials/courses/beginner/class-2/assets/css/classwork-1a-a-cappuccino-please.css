@@ -19,10 +19,15 @@
     gap: 10px;
 }
 
+.grammar-practice-hcwp-radio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
 .grammar-practice-container {
     display: grid;
     grid-template-columns: 400px 300px;
-    gap: 20px;
 }
 
 .grammar-practice-numbers-hcop {
