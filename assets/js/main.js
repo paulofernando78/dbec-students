@@ -5,9 +5,17 @@ function buttonMenu() {
     }
 }
 
-function buttonTips() {
-  if (tips.style.display == "block") {tips.style = "none";
+function buttonTips1() {
+  if (tips1.style.display == "block") {tips1.style = "none";
   } else {
-    tips.style.display = "block";
+    tips1.style.display = "block";
+  }
+}
+
+function buttonTips2() {
+  if (tips2.style.display == "block") {
+    tips2.style = "none";
+  } else {
+    tips2.style.display = "block";
   }
 }
