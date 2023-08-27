@@ -19,7 +19,7 @@
     <main>
         <div class="container-title">
             <div class="icon-celta-alignment">
-                <h1 class="color-white">Beginner (A1)</h1> 
+                <h1 class="color-white">Beginner (A1)</h1>
             </div>
             <h2 class="color-white">Class 2</h2>
             <p class="color-white"><b>Classwork • 1A A cappuccino, please?</b></p>
@@ -250,178 +250,184 @@
             <br>
 
             <!-- High Control Written Practice -->
-            <div class="ribbon-lightgrey" style="width: 57px;">
-                <p class="smaller">HCWP</p>
-            </div>
-            <br>
-            <div class="ribbon-lightyellow" style="width: 300px;">
-                <p>ICQs</p>
-            </div>
-            <br>
-
-            <!-- RADIO -->
             <div>
-                <p><b>1. Choose the correct answers.</b></p>
-                <br />
+                <div class="ribbon-lightgrey" style="width: 57px;">
+                    <p class="smaller">HCWP</p>
+                </div>
+                <br>
+                <div class="ribbon-lightyellow" style="width: 300px;">
+                    <p>ICQs</p>
+                </div>
+                <br>
 
-                <div class="container-exercise-space">
-                    <div class="grammar-practice-hcwp-radio">
+                <!-- RADIO -->
+                <div>
+                    <p><b>1. Choose the correct answers.</b></p>
+                    <br />
 
-                        <div>
-                            <p>1. I ..........</p>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-1" id="radio-1a" class="radio-correct" />
-                                <label for="radio-1a">a&#41; am</label>
+                    <div class="container-exercise-space">
+                        <div class="grammar-practice-hcwp-radio">
+
+                            <div>
+                                <p>1. I ..........</p>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-1" id="radio-1a" class="radio-correct" />
+                                    <label for="radio-1a">a&#41; am</label>
+                                </div>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-1" id="radio-1b" class="radio-incorrect" />
+                                    <label for="radio-1b">b&#41; are</label>
+                                </div>
                             </div>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-1" id="radio-1b" class="radio-incorrect" />
-                                <label for="radio-1b">b&#41; are</label>
+
+                            <div>
+                                <p>2. you</p>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-2" id="radio-2a" class="radio-incorrect" />
+                                    <label for="radio-2a">a&#41; am</label>
+                                </div>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-2" id="radio-2b" class="radio-correct" />
+                                    <label for="radio-2b">b&#41; are</label>
+                                </div>
                             </div>
+
+                            <div>
+                                <p>3. I</p>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-3" id="radio-3a" class="radio-incorrect" />
+                                    <label for="radio-3a">a&#41; amn't</label>
+                                </div>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-3" id="radio-3b" class="radio-correct" />
+                                    <label for="radio-3b">b&#41; 'm not'</label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p>4. you</p>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-4" id="radio-4a" class="radio-incorrect" />
+                                    <label for="radio-4a">a&#41; are'nt</label>
+                                </div>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-4" id="radio-4b" class="radio-correct" />
+                                    <label for="radio-4b">b&#41; aren't</label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p>5. are</p>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-5" id="radio-5a" class="radio-correct" />
+                                    <label for="radio-5a">a&#41; you?</label>
+                                </div>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-5" id="radio-5b" class="radio-incorrect" />
+                                    <label for="radio-5b">b&#41; I</label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p>6. Am</p>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-6" id="radio-6a" class="radio-incorrect" />
+                                    <label for="radio-6a">a&#41; you?</label>
+                                </div>
+                                <div class="align-items-center-1">
+                                    <input type="radio" name="radio-1-6" id="radio-6b" class="radio-correct" />
+                                    <label for="radio-6b">b&#41; I ?</label>
+                                </div>
+                            </div>
+
                         </div>
-
                         <div>
-                            <p>2. you</p>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-2" id="radio-2a" class="radio-incorrect" />
-                                <label for="radio-2a">a&#41; am</label>
-                            </div>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-2" id="radio-2b" class="radio-correct" />
-                                <label for="radio-2b">b&#41; are</label>
-                            </div>
+                            <button onclick="resetRadios()" class="pushable">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front">
+                                    Reset
+                                </span>
+                            </button>
                         </div>
-
-                        <div>
-                            <p>3. I</p>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-3" id="radio-3a" class="radio-incorrect" />
-                                <label for="radio-3a">a&#41; amn't</label>
-                            </div>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-3" id="radio-3b" class="radio-correct" />
-                                <label for="radio-3b">b&#41; 'm not'</label>
-                            </div>
-                        </div>
-
-                        <div>
-                            <p>4. you</p>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-4" id="radio-4a" class="radio-incorrect" />
-                                <label for="radio-4a">a&#41; are'nt</label>
-                            </div>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-4" id="radio-4b" class="radio-correct" />
-                                <label for="radio-4b">b&#41; aren't</label>
-                            </div>
-                        </div>
-
-                        <div>
-                            <p>5. are</p>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-5" id="radio-5a" class="radio-correct" />
-                                <label for="radio-5a">a&#41; you?</label>
-                            </div>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-5" id="radio-5b" class="radio-incorrect" />
-                                <label for="radio-5b">b&#41; I</label>
-                            </div>
-                        </div>
-
-                        <div>
-                            <p>6. Am</p>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-6" id="radio-6a" class="radio-incorrect" />
-                                <label for="radio-6a">a&#41; you?</label>
-                            </div>
-                            <div class="align-items-center-1">
-                                <input type="radio" name="radio-1-6" id="radio-6b" class="radio-correct" />
-                                <label for="radio-6b">b&#41; I ?</label>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div>
-                        <button onclick="resetRadios()" class="pushable">
-                            <span class="shadow"></span>
-                            <span class="edge"></span>
-                            <span class="front">
-                                Reset
-                            </span>
-                        </button>
                     </div>
                 </div>
             </div>
             <br>
 
             <!-- High Control Oral Practice -->
-            <div class="ribbon-lightgrey" style="width: 54px;">
-                <p class="smaller">HCOP</p>
-            </div>
-            <br>
-            <div class="ribbon-lightyellow" style="width: 300px;">
-                <p>• Listen to dialogues 1, 2, 3, and 4..</p>
-                <p>• Practice in pairs:</p>
-                <p>A <span class="arial">-></span> B, swich B -> A.</p>
-            </div>
-            <br>
-            <iframe src="https://drive.google.com/file/d/1WBbjp8Z8lgF0zyMOUQCfk1kbgG3fJ-LJ/preview" width="100%"
-                height="60" allow="autoplay"></iframe>
-            <br>
-
-            <div class="grammar-practice-numbers-hcop">
-                <p class="smaller"><b>1</b></p>
-            </div>
-            <div class="grammar-practice-container">
-                <img src="assets/img/vl1.png" alt="1" class="img-1-100" style="height: 180px;">
-                <div>
-                    <p><b>A:</b> A cappuccino, please.</p>
-                    <p><b>B:</b> <b><span class="color-green">What’s your name?</span></b></p>
-                    <p><b>A:</b> Helen.</p>
-                    <p><b>B:</b> Ellen?</p>
-                    <p><b>A:</b> No, Helen.</p>
-                    <p><b>B:</b> Helen, OK.</p>
+            <div>
+                <div class="ribbon-lightgrey" style="width: 54px;">
+                    <p class="smaller">HCOP</p>
                 </div>
-            </div>
-
-            <div class="grammar-practice-numbers-hcop">
-                <p class="smaller"><b>2</b></p>
-            </div>
-            <div class="grammar-practice-container">
-                <img src="assets/img/vl2.png" alt="2" class="img-1-100" style="height: 180px;">
-                <div>
-                    <p><b>A:</b> <b><span class="color-green">Are you</span></b> Diana?</p>
-                    <p><b>B:</b> No, <b><span class="color-green">I’m not</span></b>. I’m Helen.</p>
-                    <p><b>A:</b> Sorry. Helen? Your cappuccino.</p>
-                    <p><b>B:</b> Thanks.</p>
+                <br>
+                <div class="ribbon-lightyellow" style="width: 300px;">
+                    <p>• Listen to dialogues 1, 2, 3, and 4..</p>
+                    <p>• Practice in pairs:</p>
+                    <p>A <span class="arrow-bold">&rarr;</span> B</p>
+                    <p>switch</p>
+                    <p>B <span class="arrow-bold">&rarr;</span> A.</p>
                 </div>
-            </div>
+                <br>
+                <iframe src="https://drive.google.com/file/d/1WBbjp8Z8lgF0zyMOUQCfk1kbgG3fJ-LJ/preview" width="100%"
+                    height="60" allow="autoplay"></iframe>
+                <br>
 
-            <div class="grammar-practice-numbers-hcop">
-                <p class="smaller"><b>3</b></p>
-            </div>
-            <div class="grammar-practice-container">
-                <img src="assets/img/vl3.png" alt="3" class="img-1-100" style="height: 180px;">
-                <div>
-                    <p><b>A:</b> Hello. <b><span class="color-green">Are you</span></b> Helen?</p>
-                    <p><b>B:</b> Yes, <b><span class="color-green">I am</span></b>. And <b><span
-                                class="color-green">you're</span></b> Tom. Yes! Nice to meet you.</p>
-                    <p><b>A:</b> Nice to meet you.</p>
-                    <p><b>B:</b> Just a minute. </p>
+                <div class="grammar-practice-numbers-hcop">
+                    <p class="smaller"><b>1</b></p>
                 </div>
-            </div>
+                <div class="grammar-practice-container">
+                    <img src="assets/img/vl1.png" alt="1" class="img-1-100" style="height: 180px;">
+                    <div>
+                        <p><b>A:</b> A cappuccino, please.</p>
+                        <p><b>B:</b> <b><span class="color-green">What’s your name?</span></b></p>
+                        <p><b>A:</b> Helen.</p>
+                        <p><b>B:</b> Ellen?</p>
+                        <p><b>A:</b> No, Helen.</p>
+                        <p><b>B:</b> Helen, OK.</p>
+                    </div>
+                </div>
 
-            <div class="grammar-practice-numbers-hcop">
-                <p class="smaller"><b>4</b></p>
-            </div>
-            <div class="grammar-practice-container">
-                <img src="assets/img/vl4.png" alt="4" class="img-1-100" style="height: 180px;">
-                <div>
-                    <p><b>A:</b> Hi. A tea, please.</p>
-                    <p><b>B:</b> <b><span class="color-green">What's your name?</span></b></p>
-                    <p><b>A:</b> Tom.</p>
-                    <p><b>B:</b> Ellen?</p>
-                    <p><b>A:</b> Dom. A tea.</p>
-                    <p><b>B:</b> No, <b><span class="color-green">I'm </span></b>Tom, not Dom.</p>
+                <div class="grammar-practice-numbers-hcop">
+                    <p class="smaller"><b>2</b></p>
+                </div>
+                <div class="grammar-practice-container">
+                    <img src="assets/img/vl2.png" alt="2" class="img-1-100" style="height: 180px;">
+                    <div>
+                        <p><b>A:</b> <b><span class="color-green">Are you</span></b> Diana?</p>
+                        <p><b>B:</b> No, <b><span class="color-green">I’m not</span></b>. I’m Helen.</p>
+                        <p><b>A:</b> Sorry. Helen? Your cappuccino.</p>
+                        <p><b>B:</b> Thanks.</p>
+                    </div>
+                </div>
+
+                <div class="grammar-practice-numbers-hcop">
+                    <p class="smaller"><b>3</b></p>
+                </div>
+                <div class="grammar-practice-container">
+                    <img src="assets/img/vl3.png" alt="3" class="img-1-100" style="height: 180px;">
+                    <div>
+                        <p><b>A:</b> Hello. <b><span class="color-green">Are you</span></b> Helen?</p>
+                        <p><b>B:</b> Yes, <b><span class="color-green">I am</span></b>. And <b><span
+                                    class="color-green">you're</span></b> Tom. Yes! Nice to meet you.</p>
+                        <p><b>A:</b> Nice to meet you.</p>
+                        <p><b>B:</b> Just a minute. </p>
+                    </div>
+                </div>
+
+                <div class="grammar-practice-numbers-hcop">
+                    <p class="smaller"><b>4</b></p>
+                </div>
+                <div class="grammar-practice-container">
+                    <img src="assets/img/vl4.png" alt="4" class="img-1-100" style="height: 180px;">
+                    <div>
+                        <p><b>A:</b> Hi. A tea, please.</p>
+                        <p><b>B:</b> <b><span class="color-green">What's your name?</span></b></p>
+                        <p><b>A:</b> Tom.</p>
+                        <p><b>B:</b> Ellen?</p>
+                        <p><b>A:</b> Dom. A tea.</p>
+                        <p><b>B:</b> No, <b><span class="color-green">I'm </span></b>Tom, not Dom.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -478,8 +484,10 @@
                 <p class="color-white"><b>INTRODUCTION<br>(Warm-up)</b></p>
             </div>
             <br>
-            <p>Look at the picture / pictures. Watch this video. Read this passage.
+            <p>Look at the picture. What is it?
             </p>
+            <br>
+            <img src="" alt="cup of coffee">
         </div>
         <br>
 
@@ -496,7 +504,8 @@
                 <p class="smaller">Meaning</p>
             </div>
             <br>
-            <p>...</p>
+            <p><b>xxx</b></p>
+            <br>
             <br>
 
             <!-- Pronunciation -->
@@ -504,7 +513,67 @@
                 <p class="smaller">Pronunciation</p>
             </div>
             <br>
-            <p>...</p>
+            <div class="vocabulary-pronunciation-flex-wrap">
+                <div class="container-white vocabulary-pronunciation-flex-center">
+                    <p>1</p>
+                    <p>one</p>
+                    <p><span class="phonetics">/wʌn/</span></p>
+                </div>
+
+                <div class="container-white vocabulary-pronunciation-flex-center">
+                    <p>2</p>
+                    <p>two</p>
+                    <p><span class="phonetics">/tuː/</span></p>
+                </div>
+
+                <div class="container-white vocabulary-pronunciation-flex-center">
+                    <p>3</p>
+                    <p>three</p>
+                    <p><span class="phonetics">/θriː/</span></p>
+                </div>
+
+                <div class="container-white vocabulary-pronunciation-flex-center">
+                    <p>4</p>
+                    <p>four</p>
+                    <p><span class="phonetics">xxx</span></p>
+                </div>
+
+                <div class="container-white vocabulary-pronunciation-flex-center">
+                    <p>5</p>
+                    <p>five</p>
+                    <p><span class="phonetics">xxx</span></p>
+                </div>
+
+                <div class="container-white vocabulary-pronunciation-flex-center">
+                    <p>6</p>
+                    <p>six</p>
+                    <p><span class="phonetics">xxx</span></p>
+                </div>
+
+                <div class="container-white vocabulary-pronunciation-flex-center">
+                    <p>7</p>
+                    <p>seven</p>
+                    <p><span class="phonetics">xxx</span></p>
+                </div>
+
+                <div class="container-white vocabulary-pronunciation-flex-center">
+                    <p>8</p>
+                    <p>eight</p>
+                    <p><span class="phonetics">xxx</span></p>
+                </div>
+
+                <div class="container-white vocabulary-pronunciation-flex-center">
+                    <p>9</p>
+                    <p>nine</p>
+                    <p><span class="phonetics">xxx</span></p>
+                </div>
+
+                <div class="container-white vocabulary-pronunciation-flex-center">
+                    <p>10</p>
+                    <p>ten</p>
+                    <p><span class="phonetics">xxx</span></p>
+                </div>
+            </div>
             <br>
 
             <!-- Form / Usage -->
@@ -563,7 +632,8 @@
                 <img src="../../../../assets/imgs/celta-production.gif" alt="Rocket" class="icon-celta-production">
                 <p class="color-white ribbon-lightgray"><b>PRODUCTION<br>(Vocabulary)</b></p>
             </div>
-            <img src="../../../../assets/imgs/conversation.gif" alt="Two people talking" class="production-gif-two-people">
+            <img src="../../../../assets/imgs/conversation.gif" alt="Two people talking"
+                class="production-gif-two-people">
             <br>
             <br>
             <p>...</p>
@@ -574,7 +644,7 @@
                 <span class="edge"></span>
                 <span class="front">Tips</span>
             </button>
-            
+
             <div id="tips2">
                 <br>
                 <p><b>...</b></p>
