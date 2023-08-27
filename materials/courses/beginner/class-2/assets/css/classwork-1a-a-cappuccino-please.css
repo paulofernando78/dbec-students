@@ -66,6 +66,10 @@
     width: 40px;
 }
 
+.vocabulary-introduction {
+    width: 80%;
+}
+
 
 @media (max-width: 600px) {
 
@@ -104,6 +108,12 @@
     .vocabulary-pronunciation-flex-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .vocabulary-introduction {
+        display: grid;
+        grid-template-columns: 1fr;
+        
     }
 
 }
