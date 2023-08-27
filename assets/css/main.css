@@ -651,6 +651,12 @@ p {
     outline: none;
 }
 
+/* ---------- */
+
+.button-play-white {
+    filter: invert();
+}
+
 /* ANIMATION */
 
 .pulse-review {
