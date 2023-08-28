@@ -57,78 +57,164 @@
                 <p class="smaller color-lightgrey">Selecione as repostas corretas.</p>
                 <br>
 
+                <!-- EXERCISE XXX -->
                 <!-- CHECKBOX 1 -->
                 <div>
+                    <p><b>1. Select the correct answer.</b></p>
+                    <br>
                     <div class="container-exercise-space">
                         <div>
-                            <div>
-                                <p>This place is...</p>
-                                <p class="smaller color-lightgrey">Este lugar é...</p>
-                                <div class="align-items-center-1">
-                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox">
-                                    <label for="checkbox-1a">a&#41; a hospital</label>
-                                    <span class="icon checkbox-icon invisible"></span>
-                                </div>
-
-                                <div class="align-items-center-1">
-                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox" />
-                                    <label for="checkbox-1b">b&#41; a market</label>
-                                    <span class="icon checkbox-icon invisible"></span>
-                                </div>
-
-                                <div class="align-items-center-1">
-                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox"
-                                        data-correct="true">
-                                    <label for=" checkbox-1c">c&#41; a coffee shop</label>
-                                    <span class="icon checkbox-icon invisible"></span>
-                                </div>
-                                <br>
-                                <p>People drink...</p>
-                                <p class="smaller color-lightgrey">As pessoas bebem...</p>
-                                <div class="align-items-center-1">
-                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox">
-                                    <label for=" checkbox-1c">d&#41; champagne</label>
-                                    <span class="icon checkbox-icon invisible"></span>
-                                </div>
-
-                                <div class="align-items-center-1">
-                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1d" class="checkbox"
-                                        data-correct="true">
-                                    <label for=" checkbox-1d">e&#41; tea</label>
-                                    <span class="icon checkbox-icon invisible"></span>
-                                </div>
-
-                                <div class="align-items-center-1">
-                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1f" class="checkbox">
-                                    <label for=" checkbox-1f">f&#41; vodka</label>
-                                    <span class="icon checkbox-icon invisible"></span>
-                                </div>
-
-                                <div class="align-items-center-1">
-                                    <input type="checkbox" name="checkbox-1-1" id="checkbox-1g" class="checkbox"
-                                        data-correct="true">
-                                    <label for=" checkbox-1g">g&#41; coffee</label>
-                                    <span class="icon checkbox-icon invisible"></span>
-                                </div>
-
+                            <p>This place is...</p>
+                            <div class="align-items-center-1">
+                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox1"
+                                    data-correct="false" />
+                                <label for="checkbox-1a">a&#41; a hospital</label>
+                                <span class="icon checkbox-correct-icon1 invisible1"></span>
+                                <span class="icon checkbox-incorrect-icon1 invisible1"></span>
                             </div>
-                        </div>
-                        <div>
-                            <button onclick="checkCheckboxes()" class="pushable">
+
+                            <div class="align-items-center-1">
+                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox1"
+                                    data-correct="false">
+                                <label for="checkbox-1b">b&#41; a supermarket</label>
+                                <span class="icon checkbox-correct-icon1 invisible1"></span>
+                                <span class="icon checkbox-incorrect-icon1 invisible1"></span>
+                            </div>
+
+                            <div class="align-items-center-1">
+                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox1 "
+                                    data-correct="true" />
+                                <label for=" checkbox-1c">c&#41; a coffee shop</label>
+                                <span class="icon checkbox-correct-icon1 invisible1"></span>
+                                <span class="icon checkbox-incorrect-icon1 invisible1"></span>
+                            </div>
+                            <br>
+
+                            <p>People drink...</p>
+                            <div class="align-items-center-1">
+                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox1" data-correct="false" />
+                                <label for="checkbox-1a">a&#41; champagne</label>
+                                <span class="icon checkbox-correct-icon1 invisible1"></span>
+                                <span class="icon checkbox-incorrect-icon1 invisible1"></span>
+                            </div>
+
+                            <div class="align-items-center-1">
+                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox1" data-correct="true">
+                                <label for="checkbox-1b">b&#41; tea</label>
+                                <span class="icon checkbox-correct-icon1 invisible1"></span>
+                                <span class="icon checkbox-incorrect-icon1 invisible1"></span>
+                            </div>
+                            
+                            <div class="align-items-center-1">
+                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox1 " data-correct="false" />
+                                <label for=" checkbox-1c">c&#41; vodka</label>
+                                <span class="icon checkbox-correct-icon1 invisible1"></span>
+                                <span class="icon checkbox-incorrect-icon1 invisible1"></span>
+                            </div>
+
+                            <div class="align-items-center-1">
+                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox1 " data-correct="true" />
+                                <label for=" checkbox-1c">c&#41; coffee</label>
+                                <span class="icon checkbox-correct-icon1 invisible1"></span>
+                                <span class="icon checkbox-incorrect-icon1 invisible1"></span>
+                            </div>
+                            <br>
+
+                            <button onclick="checkCheckboxes1()" class="pushable">
                                 <span class="shadow"></span>
                                 <span class="edge"></span>
                                 <span class="front">Check answers</span>
                             </button>
-                            <button onclick="resetCheckboxes()" class="pushable">
+                            <button onclick="showCheckboxes1()" class="pushable">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front">Show answers</span>
+                            </button>
+                            <button onclick="resetCheckboxes1()" class="pushable">
                                 <span class="shadow"></span>
                                 <span class="edge"></span>
                                 <span class="front">Reset</span>
                             </button>
-                            <p id="resultCheckboxes"></p>
+                            <p id="resultCheckboxes1"></p>
                         </div>
                     </div>
                 </div>
+                <br>
             </div>
+        </div>
+
+        <!-- CHECKBOX 1 -->
+        <div>
+            <div class="container-exercise-space">
+                <div>
+                    <div>
+                        <p>This place is...</p>
+                        <p class="smaller color-lightgrey">Este lugar é...</p>
+                        <div class="align-items-center-1">
+                            <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox">
+                            <label for="checkbox-1a">a&#41; a hospital</label>
+                            <span class="icon checkbox-icon invisible"></span>
+                        </div>
+
+                        <div class="align-items-center-1">
+                            <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox" />
+                            <label for="checkbox-1b">b&#41; a market</label>
+                            <span class="icon checkbox-icon invisible"></span>
+                        </div>
+
+                        <div class="align-items-center-1">
+                            <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox"
+                                data-correct="true">
+                            <label for=" checkbox-1c">c&#41; a coffee shop</label>
+                            <span class="icon checkbox-icon invisible"></span>
+                        </div>
+                        <br>
+                        <p>People drink...</p>
+                        <p class="smaller color-lightgrey">As pessoas bebem...</p>
+                        <div class="align-items-center-1">
+                            <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox">
+                            <label for=" checkbox-1c">d&#41; champagne</label>
+                            <span class="icon checkbox-icon invisible"></span>
+                        </div>
+
+                        <div class="align-items-center-1">
+                            <input type="checkbox" name="checkbox-1-1" id="checkbox-1d" class="checkbox"
+                                data-correct="true">
+                            <label for=" checkbox-1d">e&#41; tea</label>
+                            <span class="icon checkbox-icon invisible"></span>
+                        </div>
+
+                        <div class="align-items-center-1">
+                            <input type="checkbox" name="checkbox-1-1" id="checkbox-1f" class="checkbox">
+                            <label for=" checkbox-1f">f&#41; vodka</label>
+                            <span class="icon checkbox-icon invisible"></span>
+                        </div>
+
+                        <div class="align-items-center-1">
+                            <input type="checkbox" name="checkbox-1-1" id="checkbox-1g" class="checkbox"
+                                data-correct="true">
+                            <label for=" checkbox-1g">g&#41; coffee</label>
+                            <span class="icon checkbox-icon invisible"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <button onclick="checkCheckboxes()" class="pushable">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front">Check answers</span>
+                    </button>
+                    <button onclick="resetCheckboxes()" class="pushable">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front">Reset</span>
+                    </button>
+                    <p id="resultCheckboxes"></p>
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
         <br>
 
@@ -729,8 +815,8 @@
             <br>
             <iframe src="https://drive.google.com/file/d/1O4gMfqaBAo1R57KzcWvChHqXCTizxJu7/preview" width="100%"
                 height="60" allow="autoplay"></iframe>
-                <br>
-                <br>
+            <br>
+            <br>
             <div class="grid-2-columns">
                 <img src="assets/img/exercse-3-vocabulary.png" alt="Coffee and tea" class="img-1-100-border">
             </div>
