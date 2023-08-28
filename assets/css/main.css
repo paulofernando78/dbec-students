@@ -457,17 +457,6 @@ p {
 
 /* IMAGES */
 
-.flex-columns {
-    display: flex;
-    gap: 10px;
-}
-
-.flex-columns-center {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
 .img-1-100 {
     width: 100%;
     display: block;
@@ -495,12 +484,22 @@ p {
     box-shadow: 0 0 3px;
 }
 
-.img-2 {
-    width: 61.69%;
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
-.img-3 {
-    width: 40.6%;
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.flex-columns-center {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .production-gif-two-people {
@@ -640,6 +639,17 @@ p {
 }
 
 @media (max-width: 600px) {
+
+    .grid-2-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .flex-columns-center {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
 
     .icon-container-classes {
         display: flex;

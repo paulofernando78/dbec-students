@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../assets/css/main.css">
   <link rel="stylesheet" href="../../assets/css/exercises.css">
-  <script src="../../assets/js/exercises-templates.js" defer></script>
+  <script src="exercises-templates.js" defer></script>
   <title>Exercise Templates</title>
 </head>
 
@@ -183,41 +183,43 @@
         <div>
           <p>1. xxx.</p>
           <div class="align-items-center-1">
-            <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox" data-correct="true" />
+            <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox1" data-correct="true" />
             <label for="checkbox-1a">a&#41; xxx</label>
-            <span class="icon checkbox-icon invisible"></span>
+            <span class="icon checkbox-correct-icon1 invisible1"></span>
+            <span class="icon checkbox-incorrect-icon1 invisible1"></span>
           </div>
 
           <div class="align-items-center-1">
-            <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox" />
+            <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox1" data-correct="false">
             <label for="checkbox-1b">b&#41; xxx</label>
-            <span class="icon checkbox-icon invisible"></span>
+            <span class="icon checkbox-correct-icon1 invisible1"></span>
+            <span class="icon checkbox-incorrect-icon1 invisible1"></span>
           </div>
 
           <div class="align-items-center-1">
-            <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox " data-correct="true" />
+            <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox1 " data-correct="true" />
             <label for=" checkbox-1c">c&#41; xxx</label>
-            <span class="icon checkbox-icon invisible"></span>
+            <span class="icon checkbox-correct-icon1 invisible1"></span>
+            <span class="icon checkbox-incorrect-icon1 invisible1"></span>
           </div>
-        </div>
+          <br>
 
-        <div>
-          <button onclick="checkCheckboxes()" class="pushable">
+          <button onclick="checkCheckboxes1()" class="pushable">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">Check answers</span>
           </button>
-          <button onclick="resetCheckboxes()" class="pushable">
-            <span class="shadow"></span>
-            <span class="edge"></span>
-            <span class="front">Reset</span>
-          </button>
-          <button onclick="showCheckboxes()" class="pushable">
+          <button onclick="showCheckboxes1()" class="pushable">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">Show answers</span>
           </button>
-          <p id="resultCheckboxes"></p>
+          <button onclick="resetCheckboxes1()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Reset</span>
+          </button>
+          <p id="resultCheckboxes1"></p>
         </div>
       </div>
     </div>
@@ -225,30 +227,32 @@
 
     <!-- EXERCISE XXX -->
     <!-- CHECKBOX 2 -->
-    <div>
-      <p><b>2. Select the correct answer.</b></p>
-      <br>
-      <div class="container-exercise-space">
-        <div>
-          <p>1. xxx.</p>
-          <div class="align-items-center-1">
-            <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox2" data-correct="true" />
-            <label for="checkbox-1a">a&#41; xxx</label>
-            <span class="icon checkbox-icon2 invisible2"></span>
-          </div>
-
-          <div class="align-items-center-1">
-            <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox2" />
-            <label for="checkbox-1b">b&#41; xxx</label>
-            <span class="icon checkbox-icon2 invisible2"></span>
-          </div>
-
-          <div class="align-items-center-1">
-            <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox2 " data-correct="true" />
-            <label for=" checkbox-1c">c&#41; xxx</label>
-            <span class="icon checkbox-icon2 invisible2"></span>
-          </div>
+    <p><b>1. Select the correct answer.</b></p>
+    <br>
+    <div class="container-exercise-space">
+      <div>
+        <p>1. xxx.</p>
+        <div class="align-items-center-1">
+          <input type="checkbox" name="checkbox-2-1" id="checkbox-2a" class="checkbox2" data-correct="true" />
+          <label for="checkbox-2a">a&#41; xxx</label>
+          <span class="icon checkbox-correct-icon2 invisible2"></span>
+          <span class="icon checkbox-incorrect-icon2 invisible2"></span>
         </div>
+
+        <div class="align-items-center-1">
+          <input type="checkbox" name="checkbox-2-1" id="checkbox-2b" class="checkbox2" data-correct="false">
+          <label for="checkbox-2b">b&#41; xxx</label>
+          <span class="icon checkbox-correct-icon2 invisible2"></span>
+          <span class="icon checkbox-incorrect-icon2 invisible2"></span>
+        </div>
+
+        <div class="align-items-center-1">
+          <input type="checkbox" name="checkbox-2-1" id="checkbox-2c" class="checkbox2 " data-correct="true" />
+          <label for=" checkbox-2c">c&#41; xxx</label>
+          <span class="icon checkbox-correct-icon2 invisible2"></span>
+          <span class="icon checkbox-incorrect-icon2 invisible2"></span>
+        </div>
+        <br>
 
         <div>
           <button onclick="checkCheckboxes2()" class="pushable">
@@ -256,15 +260,15 @@
             <span class="edge"></span>
             <span class="front">Check answers</span>
           </button>
-          <button onclick="resetCheckboxes2()" class="pushable">
-            <span class="shadow"></span>
-            <span class="edge"></span>
-            <span class="front">Reset</span>
-          </button>
           <button onclick="showCheckboxes2()" class="pushable">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">Show answers</span>
+          </button>
+          <button onclick="resetCheckboxes2()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Reset</span>
           </button>
           <p id="resultCheckboxes2"></p>
         </div>
