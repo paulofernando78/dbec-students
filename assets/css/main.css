@@ -351,7 +351,7 @@ p {
 }
 
 .container-green {
-    background: rgba(0, 128, 0, 0.63);
+    background: rgba(0, 128, 0, 0.425);
     color: black;
     padding-left: 5px;
     border-radius: 4px;
@@ -502,6 +502,9 @@ p {
 
 .production-gif-two-people {
     width: 30%;
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 /* COURSES */
