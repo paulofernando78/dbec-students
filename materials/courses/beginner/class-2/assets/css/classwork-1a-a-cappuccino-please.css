@@ -110,10 +110,4 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .vocabulary-introduction {
-        display: grid;
-        grid-template-columns: 1fr;
-        
-    }
-
 }
