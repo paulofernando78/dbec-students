@@ -92,28 +92,32 @@
 
                             <p>People drink...</p>
                             <div class="align-items-center-1">
-                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox1" data-correct="false" />
+                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox1"
+                                    data-correct="false" />
                                 <label for="checkbox-1a">a&#41; champagne</label>
                                 <span class="icon checkbox-correct-icon1 invisible1"></span>
                                 <span class="icon checkbox-incorrect-icon1 invisible1"></span>
                             </div>
 
                             <div class="align-items-center-1">
-                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox1" data-correct="true">
+                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox1"
+                                    data-correct="true">
                                 <label for="checkbox-1b">b&#41; tea</label>
                                 <span class="icon checkbox-correct-icon1 invisible1"></span>
                                 <span class="icon checkbox-incorrect-icon1 invisible1"></span>
                             </div>
-                            
+
                             <div class="align-items-center-1">
-                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox1 " data-correct="false" />
+                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox1 "
+                                    data-correct="false" />
                                 <label for=" checkbox-1c">c&#41; vodka</label>
                                 <span class="icon checkbox-correct-icon1 invisible1"></span>
                                 <span class="icon checkbox-incorrect-icon1 invisible1"></span>
                             </div>
 
                             <div class="align-items-center-1">
-                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox1 " data-correct="true" />
+                                <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox1 "
+                                    data-correct="true" />
                                 <label for=" checkbox-1c">c&#41; coffee</label>
                                 <span class="icon checkbox-correct-icon1 invisible1"></span>
                                 <span class="icon checkbox-incorrect-icon1 invisible1"></span>
@@ -291,6 +295,9 @@
             <br>
 
             <!-- HCWP -->
+            <img src="../../../../assets/imgs/icon-share.png" alt="Share icon" class="icon-general">
+            <br>
+            <br>
             <div>
                 <div class="container-green">
                     <p class="smaller"><b>HCWP</b></p>
@@ -744,6 +751,38 @@
             <br>
             <div class="grid-2-columns">
                 <img src="assets/img/exercse-3-vocabulary.png" alt="Coffee and tea" class="img-1-100-border">
+                <!-- DROPDOWN -->
+                <div>
+                    <div class="container-exercise-space">
+                        <div>
+                            <label>
+                                The correct number is
+                                <select id="option1">
+                                    <option value="na">...</option>
+                                    <option value="a">1</option>
+                                    <option value="b">2</option>
+                                    <option value="c">3</option>
+                                </select>
+                                <span class="dropdown-icon" id="option1Icon"></span>
+                            </label>
+                            <br>
+                        </div>
+
+                        <div>
+                            <button onclick="checkDropdowns()" class="pushable">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front">Check Answers</span>
+                            </button>
+                            <button onclick="resetDropdowns()" class="pushable">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front">Reset</span>
+                            </button>
+                            <p id="result-dropdown"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <br>
 

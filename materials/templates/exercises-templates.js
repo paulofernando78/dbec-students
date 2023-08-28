@@ -162,7 +162,7 @@ function resetCheckboxes2() {
 }
 
 // EXERCISE XXX
-// DROPDOWN
+// DROPDOWN 1
 function checkDropdowns() {
   var answers = {
     option1: "a",

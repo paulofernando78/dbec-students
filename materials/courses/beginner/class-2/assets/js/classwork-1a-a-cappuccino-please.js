@@ -1,3 +1,4 @@
+// xxx
 // RADIOS
 function resetRadios() {
   var radios = document.querySelectorAll('input[type="radio"]');
@@ -6,7 +7,7 @@ function resetRadios() {
   }
 }
 
-// EXERCISE XXX
+// xxx
 // CHECKBOXES 1
 function checkCheckboxes1() {
   var checkboxes = document.querySelectorAll(".checkbox1");
@@ -81,7 +82,7 @@ function resetCheckboxes1() {
   resultElement.textContent = "";
 }
 
-// EXERCISE XXX
+// xxx
 // CHECKBOXES 2
 function checkCheckboxes2() {
   var checkboxes = document.querySelectorAll(".checkbox2");
@@ -154,4 +155,57 @@ function resetCheckboxes2() {
 
   var resultElement = document.getElementById("resultCheckboxes2");
   resultElement.textContent = "";
+}
+
+// PRACTICE (Vocabulary)
+// DROPDOWN
+function checkDropdowns() {
+  var answers = {
+    option1: "b",
+  };
+
+  var result = document.getElementById("result-dropdown");
+  var dropdownIcons = document.getElementsByClassName("dropdown-icon");
+
+  var correctCount = 0;
+
+  // Check each dropdown answer
+  for (var key in answers) {
+    if (answers.hasOwnProperty(key)) {
+      var selectedValue = document.getElementById(key).value;
+
+      if (selectedValue === answers[key]) {
+        correctCount++;
+        var icon = document.getElementById(key + "Icon");
+        icon.className = "dropdown-icon drop correct";
+      } else {
+        var icon = document.getElementById(key + "Icon");
+        icon.className = "dropdown-icon drop incorrect";
+      }
+
+      icon.style.display = "inline-block";
+    }
+  }
+
+  result.innerHTML =
+    "You got " +
+    correctCount +
+    " out of " +
+    Object.keys(answers).length +
+    " correct.";
+}
+function resetDropdowns() {
+  var dropdowns = document.getElementsByTagName("select");
+  var dropdownIcons = document.getElementsByClassName("dropdown-icon");
+
+  for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].selectedIndex = 0;
+  }
+
+  for (var j = 0; j < dropdownIcons.length; j++) {
+    dropdownIcons[j].className = "dropdown-icon";
+    dropdownIcons[j].style.display = "none";
+  }
+
+  document.getElementById("result-dropdown").innerHTML = "";
 }

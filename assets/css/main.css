@@ -151,11 +151,10 @@ main {
     height: 22px;
 }
 
-
 .icon-general {
-    width: 1.5rem;
+    width: 2rem;
     position: relative;
-    top: 2px;
+    top: 3px;
 }
 
 .icon-celta-alignment {
@@ -182,7 +181,6 @@ main {
     height: 50px;
     margin-right: 15px;
 }
-
 
 .icon-celta-presentation {
     width: 55px;
@@ -487,7 +485,7 @@ p {
 .grid-2-columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
 }
 
 .grid-3-columns {
