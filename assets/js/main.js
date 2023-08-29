@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.execCommand("copy");
     document.body.removeChild(tempInput);
 
-    alert("Link URL copied to clipboard: " + linkUrl);
+    alert("Link URL copied to clipboard.");
   });
 });
 
