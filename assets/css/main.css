@@ -299,8 +299,9 @@ p {
 
 /* CONTAINERS */
 
-.container-title {
+.container-whiteboard {
     border: var(--container-border);
+    background-image: var(--container-background-image);
     border-radius: 4px;
     padding: 10px;
     box-shadow: 0 0 3px;
@@ -454,10 +455,6 @@ p {
 }
 
 /* IMAGES */
-
-.container-title-background {
-    background-image: var(--container-background-image);
-}
 
 .img-1-100 {
     width: 100%;
