@@ -313,14 +313,6 @@ p {
     box-shadow: 0 0 3px;
 }
 
-.container-celta {
-    border: var(--container-border);
-    border-radius: 4px;
-    background-color: black;
-    padding: 10px;
-    box-shadow: 0 0 3px;
-}
-
 .container-black {
     background: black;
     border-radius: 4px;
@@ -329,7 +321,6 @@ p {
 }
 
 .container-white-content {
-    /* border: 1px solid black; */
     border-radius: 0 0 4px 4px;
     background-color: white;
     padding: 5px;
