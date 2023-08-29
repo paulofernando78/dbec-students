@@ -302,7 +302,6 @@ p {
 .container-title {
     border: var(--container-border);
     border-radius: 4px;
-    background-color: black;
     padding: 10px;
     box-shadow: 0 0 3px;
 }
