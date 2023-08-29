@@ -3,9 +3,7 @@
 
 // GRAMMAR
 document.addEventListener("DOMContentLoaded", function () {
-  var copyLink = document.getElementById(
-    "https://paulofernando78.github.io/dbec-students/materials/courses/beginner/-templates/classwork.html#practice-grammar"
-  );
+  var copyLink = document.getElementById("practice-grammar-link");
 
   copyLink.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent the default link behavior
