@@ -1,14 +1,16 @@
 // BUTTON DROPDOWN MENU
 function buttonMenu() {
-    if (links.style.display == "block") {links.style = "none"
-    } else {
-        links.style.display = "block"
-    }
+  if (links.style.display == "block") {
+    links.style = "none";
+  } else {
+    links.style.display = "block";
+  }
 }
 
 // CLASSWORK BUTTON TIP
 function buttonTips1() {
-  if (tips1.style.display == "block") {tips1.style = "none";
+  if (tips1.style.display == "block") {
+    tips1.style = "none";
   } else {
     tips1.style.display = "block";
   }
@@ -43,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.execCommand("copy");
     document.body.removeChild(tempInput);
 
-    alert("Link copied to clipboard.");
+    alert("Link URL copied to clipboard: " + linkUrl);
   });
 });
 
