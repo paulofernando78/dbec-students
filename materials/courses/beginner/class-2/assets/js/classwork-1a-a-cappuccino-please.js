@@ -1,4 +1,55 @@
 // xxx
+// CLASSWORK PRACTICE COPY LINK
+
+// GRAMMAR
+document.addEventListener("DOMContentLoaded", function () {
+  var copyLink = document.getElementById(
+    "https://paulofernando78.github.io/dbec-students/materials/courses/beginner/-templates/classwork.html#practice-grammar"
+  );
+
+  copyLink.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the default link behavior
+
+    var linkUrl = copyLink.getAttribute("href");
+
+    // Create a temporary input element to copy the URL
+    var tempInput = document.createElement("input");
+    tempInput.style = "position: absolute; left: -1000px; top: -1000px;";
+    tempInput.value = linkUrl;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+
+    alert("Link copied to clipboard.");
+  });
+});
+
+// VOCABULARY
+document.addEventListener("DOMContentLoaded", function () {
+  var copyLink = document.getElementById(
+    "https://paulofernando78.github.io/dbec-students/materials/courses/beginner/-templates/classwork.html#practice-vocabulary"
+  );
+
+  copyLink.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the default link behavior
+
+    var linkUrl = copyLink.getAttribute("href");
+
+    // Create a temporary input element to copy the URL
+    var tempInput = document.createElement("input");
+    tempInput.style = "position: absolute; left: -1000px; top: -1000px;";
+    tempInput.value = linkUrl;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+
+    alert("Link copied to clipboard.");
+  });
+});
+
+// xxx
 // RADIOS
 function resetRadios() {
   var radios = document.querySelectorAll('input[type="radio"]');
@@ -82,7 +133,6 @@ function resetCheckboxes1() {
   resultElement.textContent = "";
 }
 
-// xxx
 // CHECKBOXES 2
 function checkCheckboxes2() {
   var checkboxes = document.querySelectorAll(".checkbox2");
