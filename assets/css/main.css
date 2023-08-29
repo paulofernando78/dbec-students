@@ -173,14 +173,14 @@ main {
 .icon-celta-warmup {
     width: 40px;
     height: 50px;
-    margin-right: 15px;
+    margin: 0 15px 0 6px;
     filter: drop-shadow(.5px .5px .5px);
 }
 
 .icon-celta-introduction {
     width: 53px;
     height: 50px;
-    margin-right: 15px;
+    margin: 0 15px 0 6px;
     filter: drop-shadow(.5px .5px .5px);
 }
 
@@ -188,7 +188,7 @@ main {
     width: 55px;
     height: 53px;
     filter: drop-shadow(.5px .5px .5px) grayscale();
-    margin-right: 15px;
+    margin: 0 15px 0 6px;
     padding-top: 3px;
     position: relative;
     top: 1px;
@@ -197,14 +197,14 @@ main {
 .icon-celta-practice {
     width: 65px;
     height: 50px;
-    margin-right: 15px;
+    margin: 0 15px 0 5px;
     filter: drop-shadow(.5px .5px .5px);
 }
 
 .icon-celta-production {
     width: 50px;
-    height: 54px;
-    margin-right: 15px;
+    height: 47px;
+    margin: 0 15px 0 6px;
     filter: drop-shadow(.5px .5px .5px);
 }
 
@@ -506,13 +506,6 @@ p {
     display: flex;
     gap: 10px;
     align-items: center;
-}
-
-.production-gif-two-people {
-    width: 30%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* COURSES */
