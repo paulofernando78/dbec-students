@@ -255,6 +255,18 @@ main {
     width: 40px;
 }
 
+.icon-pratice-grammar-position {
+    position: relative;
+    left: 532px;
+    bottom: 20px;
+}
+
+.icon-pratice-vocabulary-position {
+    position: relative;
+    left: 516px;
+    bottom: 20px;
+}
+
 /*FONT AND TEXT */
 
 h1 {
