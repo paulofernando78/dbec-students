@@ -20,7 +20,7 @@
     --p-size: 1.3rem;
     --font-size-small: 0.8rem;
     --container-border: 7px solid rgb(201, 201, 201);
-    --container-background-image: url('/assets/imgs/container-title-background.png');
+    --container-background-image: url('../imgs/container-title-background.png');
     --icon-correct: invert(35%) sepia(15%) saturate(2476%) hue-rotate(86deg) brightness(110%) contrast(119%);
     --icon-incorrect: invert(20%) sepia(50%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(119%);
 }
@@ -519,12 +519,7 @@ p {
     line-height: 1.2;
 }
 
-/* ARROW */
-
-.arrow-bold {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 900;
-}
+/* CLASSWORK-TIP-BUTTON */
 
 #tips1 {
     display: none;
