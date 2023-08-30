@@ -1,1 +1,21 @@
+  .translation-popup {
+      position: relative;
+      display: inline-block;
+      font-style: italic;
+      cursor: pointer;
+  }
 
+  .translation-popup:hover .way {
+      display: block;
+  }
+
+  .way {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      background-color: #f0f0f0;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+  }
