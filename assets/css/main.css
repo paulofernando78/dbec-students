@@ -494,7 +494,7 @@ p {
 .grid-3-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
 }
 
 .flex-columns-center {
@@ -633,6 +633,11 @@ p {
 @media (max-width: 600px) {
 
     .grid-2-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3-columns {
         display: grid;
         grid-template-columns: 1fr;
     }
