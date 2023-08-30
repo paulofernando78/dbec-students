@@ -3,6 +3,7 @@
 // <!-- An array of words -->
 // var words = ["english", "student"];
 
+// EXERCISE XXX
 // RADIOS
 function resetRadios() {
   var radios = document.querySelectorAll('input[type="radio"]');

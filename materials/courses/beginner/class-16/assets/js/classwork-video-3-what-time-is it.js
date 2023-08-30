@@ -1,4 +1,4 @@
-// EXERCISE XXX
+// WARM-UP (Reviewing)
 // CHECKBOXES 1
 function checkCheckboxes1() {
   var checkboxes = document.querySelectorAll(".checkbox1");
@@ -71,4 +71,13 @@ function resetCheckboxes1() {
 
   var resultElement = document.getElementById("resultCheckboxes1");
   resultElement.textContent = "";
+}
+
+// PRACTICE (Vocabulary) HCWP
+// RADIOS
+function resetRadios() {
+  var radios = document.querySelectorAll('input[type="radio"]');
+  for (var i = 0; i < radios.length; i++) {
+    radios[i].checked = false;
+  }
 }
