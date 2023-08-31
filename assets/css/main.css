@@ -330,6 +330,10 @@ p {
     box-shadow: 0 0 3px;
 }
 
+.container-white-content-line-height {
+  line-height: 10px;  
+}
+
 .container-white {
     border-radius: 4px;
     background-color: white;
