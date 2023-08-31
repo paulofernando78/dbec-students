@@ -689,6 +689,10 @@ p {
 
 @media (max-width: 600px) {
 
+    .container-index {
+        margin-top: 5px;
+    }
+
     .grid-2-columns {
         display: grid;
         grid-template-columns: 1fr;
