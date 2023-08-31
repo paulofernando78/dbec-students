@@ -1,11 +1,11 @@
-  .translation-popup {
+  .container-popup {
       position: relative;
       display: inline-block;
       font-style: italic;
       cursor: pointer;
   }
 
-  .translation-popup:hover .way {
+  .container-popup:hover .way {
       display: block;
   }
 
@@ -14,8 +14,61 @@
       position: absolute;
       bottom: 100%;
       left: 0;
-      background-color: #f0f0f0;
       padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
+      background-color: #ADE0FF;
+      border: 1px solid #add0ff;
+      border-radius: 4px;
+      box-shadow: 0 0 3px;
+  }
+
+  .container-popup:hover .could-you {
+      display: block;
+  }
+
+  .could-you {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      padding: 5px;
+      background-color: #ADE0FF;
+      border: 1px solid #add0ff;
+      border-radius: 4px;
+      box-shadow: 0 0 3px;
+  }
+
+  /* COLLAPSE */
+  .section {
+      border-radius: 5px;
+      margin-left: 20px;
+      cursor: pointer;
+      position: relative;
+  }
+
+  .content {
+      display: none;
+      margin-top: 10px;
+  }
+
+  .expanded .triangle {
+      transform: rotate(90deg);
+  }
+
+  /* TRIANGLE */
+  .triangle {
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 15px solid rgb(0, 0, 0);
+      transform: rotate(90deg);
+      position: absolute;
+      left: -20px;
+      top: 14px;
+      transform: translateY(-50%) rotate(90deg);
+      transition: transform 0.3s;
+  }
+
+  .expanded .triangle {
+      transform: translateY(-50%) rotate(180deg);
   }
