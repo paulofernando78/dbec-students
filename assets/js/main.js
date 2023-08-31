@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // COLLAPSE
-function toggleContent(section) {
+function toggleCollapse(section) {
   var content = section.querySelector(".content");
   content.style.display = content.style.display === "block" ? "none" : "block";
   section.classList.toggle("expanded");

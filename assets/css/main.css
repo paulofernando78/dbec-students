@@ -627,41 +627,41 @@ p {
     outline: none;
 }
 
-  /* COLLAPSE */
-  .section {
-      border-radius: 5px;
-      margin-left: 20px;
-      cursor: pointer;
-      position: relative;
-  }
+/* COLLAPSE */
 
-  .content {
-      display: none;
-      margin-top: 10px;
-  }
+.section {
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
 
-  .expanded .triangle {
-      transform: rotate(90deg);
-  }
+.content {
+    display: none;
+    margin-top: 10px;
+}
 
-  /* TRIANGLE */
-  .triangle {
-      width: 0;
-      height: 0;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-bottom: 15px solid rgb(0, 0, 0);
-      transform: rotate(90deg);
-      position: absolute;
-      left: -20px;
-      top: 14px;
-      transform: translateY(-50%) rotate(90deg);
-      transition: transform 0.3s;
-  }
+.expanded .triangle {
+    transform: rotate(90deg);
+}
 
-  .expanded .triangle {
-      transform: translateY(-50%) rotate(180deg);
-  }
+/* TRIANGLE */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 15px solid rgb(0, 0, 0);
+    transform: rotate(90deg);
+    position: absolute;
+    left: -20px;
+    top: 14px;
+    transform: translateY(-50%) rotate(90deg);
+    transition: transform 0.3s;
+}
+
+.expanded .triangle {
+    transform: translateY(-50%) rotate(180deg);
+}
 
 /* ANIMATION */
 
