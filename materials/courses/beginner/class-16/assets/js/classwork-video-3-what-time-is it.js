@@ -81,10 +81,3 @@ function resetRadios() {
     radios[i].checked = false;
   }
 }
-
-// COLLAPSE
-function toggleContent(section) {
-  var content = section.querySelector(".content");
-  content.style.display = content.style.display === "block" ? "none" : "block";
-  section.classList.toggle("expanded");
-}
