@@ -167,6 +167,7 @@ function showFill1() {
 function resetFill1() {
   var fill1Inputs = document.getElementsByClassName("fill1");
   var fill1Icons = document.getElementsByClassName("fill1-icon");
+  var result = document.getElementById("resultFill1");
 
   for (var i = 0; i < fill1Inputs.length; i++) {
     fill1Inputs[i].value = "";
@@ -177,7 +178,14 @@ function resetFill1() {
     fill1Icons[j].style.display = "none";
   }
 
-  document.getElementById("resultFill1").innerHTML = "";
+  result.innerHTML = "";
+
+  var answerElements = document.getElementsByClassName("fill1_answer");
+
+  for (var k = 0; k < answerElements.length; k++) {
+    var answerElement = answerElements[k];
+    answerElement.style.display = "none"; // Hide the answers
+  }
 }
 
 // EXERCISE 2.3
@@ -304,6 +312,7 @@ function showFill2() {
 function resetFill2() {
   var fill2Inputs = document.getElementsByClassName("fill2");
   var fill2Icons = document.getElementsByClassName("fill2-icon");
+  var result = document.getElementById("resultFill2");
 
   for (var i = 0; i < fill2Inputs.length; i++) {
     fill2Inputs[i].value = "";
@@ -314,5 +323,12 @@ function resetFill2() {
     fill2Icons[j].style.display = "none";
   }
 
-  document.getElementById("resultFill2").innerHTML = "";
+  result.innerHTML = "";
+
+  var answerElements = document.getElementsByClassName("fill2_answer");
+
+  for (var k = 0; k < answerElements.length; k++) {
+    var answerElement = answerElements[k];
+    answerElement.style.display = "none"; // Hide the answers
+  }
 }
