@@ -479,25 +479,17 @@ select option {
   border-bottom: 2px dotted;
 }
 
-.tooltip2:hover .container {
-  display: block;
-}
-
-.container {
-  display: none;
+.tooltip2:hover::after {
+  content: attr(data-tooltip);
   position: absolute;
-  bottom: 100%;
   padding: 5px;
+  bottom: 100%;
   background-color: rgb(235, 235, 235);
   border: 1px solid rgb(216, 216, 216);
   border-radius: 4px;
   box-shadow: 0 0 3px;
   white-space: nowrap;
 }
-
-
-
-
 
 @media (max-width: 600px) {
 
