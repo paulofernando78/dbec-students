@@ -571,6 +571,7 @@ p {
 /* TOOLTIP 2 */
 
 .tooltip2 {
+    position: relative;
     display: inline-block;
     cursor: pointer;
     border-bottom: 2px dotted;
@@ -578,7 +579,8 @@ p {
 
 .tooltip2:hover::after {
     content: attr(data-tooltip);
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     padding: 5px;
     background-color: lightgrey;
     border: 1px solid rgb(216, 216, 216);
@@ -588,6 +590,7 @@ p {
     transform: translate(-50%, -50%);
     left: 50%;
     width: 750px;
+    z-index: 1;
 }
 
 /* COLLAPSE */
