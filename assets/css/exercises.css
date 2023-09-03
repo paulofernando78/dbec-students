@@ -51,7 +51,7 @@ input[type="radio"] {
   border-radius: 100%;
   color: white !important;
   content: "";
-  background-image: url(../imgs/radio-correct.svg);
+  background-image: url(../img/radio-correct.svg);
   background-size: contain;
   filter: var(--icon-correct);
   width: 22px;
@@ -87,7 +87,7 @@ input[type="radio"] {
   border-radius: 100%;
   color: white !important;
   content: "";
-  background-image: url(../imgs/radio-incorrect.svg);
+  background-image: url(../img/radio-incorrect.svg);
   background-size: contain;
   filter: var(--icon-incorrect);
   width: 22px;
@@ -121,7 +121,7 @@ input[type="radio"] {
   border-radius: 20%;
   color: white !important;
   content: "";
-  background-image: url(../imgs/checkbox.svg);
+  background-image: url(../img/checkbox.svg);
   background-size: contain;
   width: 22px;
   height: 22px;
@@ -135,7 +135,7 @@ input[type="radio"] {
   height: 22px;
   margin-left: 5px;
   background-size: cover;
-  background-image: url(../imgs/correct.svg);
+  background-image: url(../img/correct.svg);
   filter: var(--icon-correct)
 }
 
@@ -145,7 +145,7 @@ input[type="radio"] {
   height: 22px;
   margin-left: 5px;
   background-size: cover;
-  background-image: url(../imgs/incorrect.svg);
+  background-image: url(../img/incorrect.svg);
   filter: var(--icon-incorrect)
 }
 
@@ -184,7 +184,7 @@ input[type="radio"] {
   border-radius: 20%;
   color: white !important;
   content: "";
-  background-image: url(../imgs/checkbox.svg);
+  background-image: url(../img/checkbox.svg);
   background-size: contain;
   width: 22px;
   height: 22px;
@@ -199,7 +199,7 @@ input[type="radio"] {
   height: 22px;
   margin-left: 5px;
   background-size: cover;
-  background-image: url(../imgs/correct.svg);
+  background-image: url(../img/correct.svg);
   filter: var(--icon-correct)
 }
 
@@ -209,7 +209,7 @@ input[type="radio"] {
   height: 22px;
   margin-left: 5px;
   background-size: cover;
-  background-image: url(../imgs/incorrect.svg);
+  background-image: url(../img/incorrect.svg);
   filter: var(--icon-incorrect)
 }
 
@@ -244,12 +244,12 @@ select option {
 }
 
 .drop.correct {
-  background-image: url(../imgs/correct.svg);
+  background-image: url(../img/correct.svg);
   filter: var(--icon-correct);
 }
 
 .drop.incorrect {
-  background-image: url(../imgs/incorrect.svg);
+  background-image: url(../img/incorrect.svg);
   filter: var(--icon-incorrect);
 }
 
@@ -273,7 +273,7 @@ select option {
 .fill1-icon.correct::before {
   display: inline-block;
   content: "";
-  background-image: url(../imgs/correct.svg);
+  background-image: url(../img/correct.svg);
   background-size: contain;
   filter: var(--icon-correct);
   width: 22px;
@@ -283,7 +283,7 @@ select option {
 .fill1-icon.incorrect::before {
   display: inline-block;
   content: "";
-  background-image: url(../imgs/incorrect.svg);
+  background-image: url(../img/incorrect.svg);
   background-size: contain;
   filter: var(--icon-incorrect);
   width: 22px;
@@ -310,7 +310,7 @@ select option {
 .fill2-icon.correct::before {
   display: inline-block;
   content: "";
-  background-image: url(../imgs/correct.svg);
+  background-image: url(../img/correct.svg);
   background-size: contain;
   filter: var(--icon-correct);
   width: 22px;
@@ -320,7 +320,7 @@ select option {
 .fill2-icon.incorrect::before {
   display: inline-block;
   content: "";
-  background-image: url(../imgs/incorrect.svg);
+  background-image: url(../img/incorrect.svg);
   background-size: contain;
   filter: var(--icon-incorrect);
   width: 22px;
@@ -347,7 +347,7 @@ select option {
 .fill3-icon.correct::before {
   display: inline-block;
   content: "";
-  background-image: url(../imgs/correct.svg);
+  background-image: url(../img/correct.svg);
   background-size: contain;
   filter: var(--icon-correct);
   width: 22px;
@@ -357,7 +357,7 @@ select option {
 .fill3-icon.incorrect::before {
   display: inline-block;
   content: "";
-  background-image: url(../imgs/incorrect.svg);
+  background-image: url(../img/incorrect.svg);
   background-size: contain;
   filter: var(--icon-incorrect);
   width: 22px;
@@ -384,7 +384,7 @@ select option {
 .fill4-icon.correct::before {
   display: inline-block;
   content: "";
-  background-image: url(../imgs/correct.svg);
+  background-image: url(../img/correct.svg);
   background-size: contain;
   filter: var(--icon-correct);
   width: 22px;
@@ -394,7 +394,7 @@ select option {
 .fill4-icon.incorrect::before {
   display: inline-block;
   content: "";
-  background-image: url(../imgs/incorrect.svg);
+  background-image: url(../img/incorrect.svg);
   background-size: contain;
   filter: var(--icon-incorrect);
   width: 22px;
@@ -421,7 +421,7 @@ select option {
 .fill-text-icon.correct::before {
   display: inline-block;
   content: "";
-  background-image: url(../imgs/correct.svg);
+  background-image: url(../img/correct.svg);
   background-size: contain;
   filter: var(--icon-correct);
   width: 22px;
@@ -431,7 +431,7 @@ select option {
 .fill-text-icon.incorrect::before {
   display: inline-block;
   content: "";
-  background-image: url(../imgs/incorrect.svg);
+  background-image: url(../img/incorrect.svg);
   background-size: contain;
   filter: var(--icon-incorrect);
   width: 22px;
@@ -458,38 +458,6 @@ select option {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-/* TOOLTIP 1 */
-
-.tooltip1 {
-  cursor: pointer;
-}
-
-.tooltip1:hover::after {
-  content: attr(data-tooltip);
-}
-
-/* TOOLTIP 2 */
-
-.tooltip2 {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  border-bottom: 2px dotted;
-}
-
-.tooltip2:hover::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  padding: 5px;
-  bottom: 100%;
-  background-color: rgb(235, 235, 235);
-  border: 1px solid rgb(216, 216, 216);
-  border-radius: 4px;
-  box-shadow: 0 0 3px;
-  white-space: nowrap;
-  max-width: 100%;
 }
 
 @media (max-width: 600px) {

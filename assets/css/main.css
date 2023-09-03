@@ -558,6 +558,73 @@ p {
     line-height: 1.2;
 }
 
+/* TOOLTIP 1 */
+
+.tooltip1 {
+    cursor: pointer;
+}
+
+.tooltip1:hover::after {
+    content: attr(data-tooltip);
+}
+
+/* TOOLTIP 2 */
+
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 2px dotted;
+}
+
+.tooltip2:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    padding: 5px;
+    bottom: 100%;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
+    white-space: nowrap;
+}
+
+/* COLLAPSE */
+
+.section {
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.content {
+    display: none;
+    margin-top: 10px;
+}
+
+.expanded .triangle {
+    transform: rotate(90deg);
+}
+
+/* TRIANGLE */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 15px solid rgb(0, 0, 0);
+    transform: rotate(90deg);
+    position: absolute;
+    left: -20px;
+    top: 14px;
+    transform: translateY(-50%) rotate(90deg);
+    transition: transform 0.3s;
+}
+
+.expanded .triangle {
+    transform: translateY(-50%) rotate(180deg);
+}
+
 /* CLASSWORK-TIP-BUTTON */
 
 #tips1 {
@@ -651,42 +718,6 @@ p {
 
 .pushable:focus:not(:focus-visible) {
     outline: none;
-}
-
-/* COLLAPSE */
-
-.section {
-    margin-left: 20px;
-    cursor: pointer;
-    position: relative;
-}
-
-.content {
-    display: none;
-    margin-top: 10px;
-}
-
-.expanded .triangle {
-    transform: rotate(90deg);
-}
-
-/* TRIANGLE */
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 15px solid rgb(0, 0, 0);
-    transform: rotate(90deg);
-    position: absolute;
-    left: -20px;
-    top: 14px;
-    transform: translateY(-50%) rotate(90deg);
-    transition: transform 0.3s;
-}
-
-.expanded .triangle {
-    transform: translateY(-50%) rotate(180deg);
 }
 
 /* ANIMATION */
