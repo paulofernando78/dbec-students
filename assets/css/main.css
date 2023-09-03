@@ -593,7 +593,7 @@ p {
 /* COLLAPSE */
 
 .section {
-    margin-left: 20px;
+    margin: 0 0px 0 20px;
     cursor: pointer;
     position: relative;
 }
@@ -611,15 +611,15 @@ p {
 .triangle {
     width: 0;
     height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
     border-bottom: 15px solid rgb(0, 0, 0);
     transform: rotate(90deg);
     position: absolute;
-    left: -20px;
-    top: 14px;
+    left: -18px;
+    top: 15px;
     transform: translateY(-50%) rotate(90deg);
-    transition: transform 0.3s;
+    transition: 0.3s transform;
 }
 
 .expanded .triangle {
