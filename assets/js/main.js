@@ -24,7 +24,6 @@ function buttonTips2() {
   }
 }
 
-// xxx
 // CLASSWORK PRACTICE COPY LINK
 
 // GRAMMAR

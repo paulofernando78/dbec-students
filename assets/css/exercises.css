@@ -460,29 +460,44 @@ select option {
   gap: 20px;
 }
 
-/* CONTAINER POP-UP */
-.container-popup {
-  position: relative;
-  display: inline-block;
+/* TOOLTIP 1 */
+
+.tooltip1 {
   cursor: pointer;
 }
 
-.container-popup:hover .word {
+.tooltip1:hover::after {
+  content: attr(data-tooltip);
+}
+
+/* TOOLTIP 2 */
+
+.tooltip2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 2px dotted;
+}
+
+.tooltip2:hover .container {
   display: block;
 }
 
-.word {
+.container {
   display: none;
   position: absolute;
   bottom: 100%;
-  left: 0;
   padding: 5px;
-  white-space: nowrap;
-  background-color: #ADE0FF;
-  border: 1px solid #add0ff;
+  background-color: white;
+  border: 1px solid rgb(216, 216, 216);
   border-radius: 4px;
   box-shadow: 0 0 3px;
+  white-space: nowrap;
 }
+
+
+
+
 
 @media (max-width: 600px) {
 
