@@ -580,14 +580,14 @@ p {
     content: attr(data-tooltip);
     position: absolute;
     padding: 5px;
-    background-color: rgb(235, 235, 235);
+    background-color: lightgrey;
     border: 1px solid rgb(216, 216, 216);
     border-radius: 4px;
     box-shadow: 0 0 3px;
     white-space: nowrap;
     transform: translate(-50%, -50%);
     left: 50%;
-    bottom: 53.5%;
+    width: 750px;
 }
 
 /* COLLAPSE */
@@ -721,6 +721,11 @@ p {
     outline: none;
 }
 
+#audio-player-fixed {
+    top: 0;
+    position: sticky;
+}
+
 /* ANIMATION */
 
 .pulse-review {
@@ -785,6 +790,10 @@ p {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+    }
+
+    .tooltip2:hover::after {
+        width: 350px;
     }
 
     .video-iframe-mobile {

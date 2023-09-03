@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    grid-template-columns: 67.2% 30%;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
