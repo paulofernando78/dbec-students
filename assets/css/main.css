@@ -583,7 +583,7 @@ p {
     bottom: 0;
     padding: 5px;
     line-height: 25px;
-    background-color: #43C2E7;
+    background-color: #f6b6ff;
     border-radius: 4px;
     box-shadow: 0 0 3px;
     white-space: normal;
@@ -599,7 +599,6 @@ p {
 .tooltip2:hover .tooltip2-info {
     display: block;
 }
-
 
 /* .tooltip2:hover::after {
     content: attr(data-tooltip);
