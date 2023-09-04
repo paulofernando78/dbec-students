@@ -20,6 +20,7 @@
     --p-size: 1.3rem;
     --font-size-small: 0.8rem;
     --container-border: 7px solid rgb(201, 201, 201);
+    --img-border: 5px solid rgba(211, 211, 211, 0.507);
     --container-background-image: url('../imgs/container-title-background.png');
     --icon-correct: invert(35%) sepia(15%) saturate(2476%) hue-rotate(86deg) brightness(110%) contrast(119%);
     --icon-incorrect: invert(20%) sepia(50%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(119%);
@@ -466,6 +467,7 @@ p {
 
 .align-items-center-flip-card {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
@@ -516,7 +518,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid rgba(211, 211, 211, 0.233);
+    border: var(--img-border);
     border-radius: 4px;
     box-shadow: 0 0 3px;
 }
@@ -578,13 +580,13 @@ p {
 /* FLIP CARDS */
 
 .flip-card-container {
-    width: 170px;
-    height: 200px;
+    width: 350px;
+    height: 300px;
     perspective: 1000px;
 }
 
 .flip-card {
-    /* position: relative; */
+    position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
@@ -598,27 +600,27 @@ p {
 }
 
 .flip-card-front {
-    height: 200px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: black;
     background-color: rgb(255, 255, 255);
-    border: 5px solid rgba(211, 211, 211, 0.233);
+    border: var(--img-border);
     border-radius: 4px;
     box-shadow: 0 0 3px;
 }
 
 .flip-card-back {
-    height: 200px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: black;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    border: 5px solid rgba(211, 211, 211, 0.233);
+    border: var(--img-border);
     border-radius: 4px;
     box-shadow: 0 0 3px;
     transform: rotateY(180deg);
