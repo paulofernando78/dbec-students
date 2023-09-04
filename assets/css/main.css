@@ -577,21 +577,48 @@ p {
     border-bottom: 2px dotted;
 }
 
-.tooltip2:hover::after {
+.tooltip2-info {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    padding: 5px;
+    line-height: 25px;
+    background-color: #43C2E7;
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
+    white-space: normal;
+    text-align: justify;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 750px;
+    height: auto;
+    z-index: 1;
+}
+
+.tooltip2:hover .tooltip2-info {
+    display: block;
+}
+
+
+/* .tooltip2:hover::after {
     content: attr(data-tooltip);
     position: fixed;
     bottom: 0;
     padding: 5px;
-    background-color: lightgrey;
-    border: 1px solid rgb(216, 216, 216);
+    line-height: 25px;
+    background-color: #43C2E7;
     border-radius: 4px;
     box-shadow: 0 0 3px;
-    white-space: nowrap;
+    white-space: normal;
+    text-align: justify;
+    overflow: auto;
     transform: translate(-50%, -50%);
     left: 50%;
     width: 750px;
+    height: auto;
     z-index: 1;
-}
+} */
 
 /* COLLAPSE */
 
@@ -795,7 +822,7 @@ p {
         gap: 1rem;
     }
 
-    .tooltip2:hover::after {
+    .tooltip2-info {
         width: 350px;
     }
 
