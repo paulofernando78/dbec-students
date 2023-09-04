@@ -491,19 +491,14 @@ p {
 .grid-3-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.grid-3-columns {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
 }
 
 .grid-repeat-auto-fit-general {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, 100px);
     justify-content: space-around;
+    gap: 20px;
 }
 
 .img-1-100 {
@@ -580,7 +575,7 @@ p {
 /* FLIP CARDS */
 
 .flip-card-container {
-    width: 380px;
+    width: 300px;
     height: 200px;
     perspective: 1000px;
 }
@@ -598,13 +593,24 @@ p {
     position: absolute;
     backface-visibility: hidden;
 }
+.grid-2-rows-flip-card {
+    display: grid;
+    grid-template-rows: 100px 30px;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-flip-card {
+    width: 110px;
+}
 
 .flip-card-front {
-    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: 200px;
     color: black;
     background-color: rgb(255, 255, 255);
     border: var(--img-border);
@@ -613,12 +619,12 @@ p {
 }
 
 .flip-card-back {
-    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
     text-align: center;
+    height: 200px;
+    color: black;
     background-color: rgb(255, 255, 255);
     border: var(--img-border);
     border-radius: 4px;
