@@ -580,7 +580,7 @@ p {
 /* FLIP CARDS */
 
 .flip-card-container {
-    width: 350px;
+    width: 380px;
     height: 300px;
     perspective: 1000px;
 }
