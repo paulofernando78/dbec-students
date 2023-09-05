@@ -78,6 +78,8 @@ function toggleCollapse(section) {
 }
 
 // FLIP CARDS
+
+// JUST THE FIRST ONE!!!
 // const flippedCard = document.querySelector("#flipped")
 // flippedCard.addEventListener("click",(e)=>{
 //   flippedCard.classList.toggle("flipped")
