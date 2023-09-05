@@ -488,9 +488,21 @@ p {
     gap: 20px;
 }
 
+.grid-2-rows {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
 .grid-3-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-3-rows {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
 
@@ -612,7 +624,7 @@ p {
 /* FLIP CARDS */
 
 .flip-card-container {
-    width: 300px;
+    width: 310px;
     height: 200px;
     perspective: 1000px;
 }
@@ -631,31 +643,6 @@ p {
     backface-visibility: hidden;
 }
 
-.grid-2-rows-flip-card {
-    display: grid;
-    grid-template-rows: 1px 60px;
-    justify-items: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.grid-flip-card-icon1 {
-    position: relative;
-    bottom: 35.5px;
-    right: 128px;
-}
-
-.grid-flip-card-icon2 {
-    position: relative;
-    bottom: 12.5px;
-    right: 128px;
-}
-
-.img-flip-card {
-    width: 110px;
-    margin-bottom: 10px;
-}
-
 .flip-card-front {
     display: flex;
     align-items: center;
@@ -667,6 +654,8 @@ p {
     border: var(--img-border);
     border-radius: 4px;
     box-shadow: 0 0 3px;
+    background-image: url(../../assets/img/container-title-background.png);
+    background-size: cover;
 }
 
 .flip-card-back {
@@ -680,12 +669,45 @@ p {
     border: var(--img-border);
     border-radius: 4px;
     box-shadow: 0 0 3px;
+    background-image: url(../../assets/img/container-title-background.png);
+    background-size: cover;
     transform: rotateY(180deg);
 }
 
-
 .flip-card-container:hover .flip-card {
     transform: rotateY(180deg);
+}
+
+.grid-2-rows-flip-card {
+    display: grid;
+    grid-template-rows: 50px 105px;
+    gap: 20px;
+}
+
+.grid-3-rows-flip-card {
+    display: grid;
+    grid-template-rows: 10px 90px 55px;
+    gap: 10px;
+    justify-items: center;
+}
+
+.grid-3-rows-flip-card-icon-item {
+   justify-self: start;
+}
+
+.flip-card1-icon {
+    position: relative;
+    bottom: 72px;
+    right: 132px;
+}
+
+.flip-card2-card3-icon {
+    margin-left: 5px;
+}
+
+.flip-card1-bg-img {
+    /* background-image: url(https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/16:9/w_3332,h_1874,c_limit/1521-WIRED-Cat.jpeg); */
+    background-size: cover;
 }
 
 /* SHUFFLE CARDS */
