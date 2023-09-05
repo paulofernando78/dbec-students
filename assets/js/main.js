@@ -77,7 +77,18 @@ function toggleCollapse(section) {
   section.classList.toggle("expanded");
 }
 
-const flippedCard = document.querySelector("#flipped")
-flippedCard.addEventListener("click",(e)=>{
-  flippedCard.classList.toggle("flipped")
-})
+// FLIP CARDS
+// const flippedCard = document.querySelector("#flipped")
+// flippedCard.addEventListener("click",(e)=>{
+//   flippedCard.classList.toggle("flipped")
+// })
+
+const flipCardContainers = document.querySelectorAll(".flip-card-container");
+
+flipCardContainers.forEach((container) => {
+  const flipCard = container.querySelector(".flip-card");
+
+  flipCard.addEventListener("click", (e) => {
+    flipCard.classList.toggle("flipped");
+  });
+});
