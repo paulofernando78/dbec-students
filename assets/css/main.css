@@ -475,11 +475,18 @@ p {
 
 /* CONTAINERS + IMAGES */
 
+.flex-columns-start {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .flex-columns-center {
     display: flex;
-    gap: 10px;
     align-items: center;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .grid-2-columns {
@@ -538,20 +545,6 @@ p {
     box-shadow: 0 0 3px;
 }
 
-.img-1-60 {
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.img-1-70 {
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .img-1-80-100 {
     width: 80%;
     display: block;
@@ -566,6 +559,35 @@ p {
     border-radius: 4px;
     box-shadow: 0 0 3px;
     width: 80%;
+}
+
+.img-1-70 {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-1-60 {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-1-50-100-border-left {
+    display: block;
+    margin-right: auto;
+    border: 5px solid rgba(211, 211, 211, 0.233);
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
+    width: 50%;
+}
+
+/* BITMOJI */
+
+.img-bitmoji {
+    width: 200px;
 }
 
 /* COURSES */
@@ -690,7 +712,7 @@ p {
 }
 
 .grid-3-rows-flip-card-icon-item {
-   justify-self: start;
+    justify-self: start;
 }
 
 .flip-card1-icon {
@@ -911,6 +933,10 @@ p {
 
     .img-1-80-50-border-left {
         width: 50%;
+    }
+
+    .img-1-50-100-border-left {
+        width: 100%;
     }
 
     .icon-container-classes {
