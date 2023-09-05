@@ -656,6 +656,7 @@ p {
     box-shadow: 0 0 3px;
     background-image: url(../../assets/img/container-title-background.png);
     background-size: cover;
+    background-clip: content-box;
 }
 
 .flip-card-back {
@@ -671,6 +672,7 @@ p {
     box-shadow: 0 0 3px;
     background-image: url(../../assets/img/container-title-background.png);
     background-size: cover;
+    background-clip: content-box;
     transform: rotateY(180deg);
 }
 
@@ -706,8 +708,7 @@ p {
 }
 
 .flip-card1-bg-img {
-    /* background-image: url(https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/16:9/w_3332,h_1874,c_limit/1521-WIRED-Cat.jpeg); */
-    background-size: cover;
+    background-image: url(https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/16:9/w_3332,h_1874,c_limit/1521-WIRED-Cat.jpeg);
 }
 
 /* SHUFFLE CARDS */
