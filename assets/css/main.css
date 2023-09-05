@@ -676,10 +676,6 @@ p {
     transform: rotateY(180deg);
 }
 
-.flip-card-container:hover .flip-card {
-    transform: rotateY(180deg);
-}
-
 .grid-2-rows-flip-card {
     display: grid;
     grid-template-rows: 50px 105px;
@@ -709,6 +705,10 @@ p {
 
 .flip-card1-bg-img {
     background-image: url(https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/16:9/w_3332,h_1874,c_limit/1521-WIRED-Cat.jpeg);
+}
+
+.flipped {
+    transform: rotateY(180deg);
 }
 
 /* SHUFFLE CARDS */

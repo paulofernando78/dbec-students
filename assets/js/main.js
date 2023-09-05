@@ -77,5 +77,7 @@ function toggleCollapse(section) {
   section.classList.toggle("expanded");
 }
 
-// FLIP CARDS
-function
+const flippedCard = document.querySelector("#flipped")
+flippedCard.addEventListener("click",(e)=>{
+  flippedCard.classList.toggle("flipped")
+})
