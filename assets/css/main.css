@@ -566,6 +566,7 @@ p {
 
 .tooltip1 {
     cursor: pointer;
+    border-bottom: 2px dotted;
 }
 
 .tooltip1-info {
@@ -632,14 +633,27 @@ p {
 
 .grid-2-rows-flip-card {
     display: grid;
-    grid-template-rows: 100px 30px;
+    grid-template-rows: 1px 60px;
     justify-items: center;
     align-items: center;
     gap: 20px;
 }
 
+.grid-flip-card-icon1 {
+    position: relative;
+    bottom: 35.5px;
+    right: 128px;
+}
+
+.grid-flip-card-icon2 {
+    position: relative;
+    bottom: 12.5px;
+    right: 128px;
+}
+
 .img-flip-card {
     width: 110px;
+    margin-bottom: 10px;
 }
 
 .flip-card-front {
