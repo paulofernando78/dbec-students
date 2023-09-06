@@ -1,0 +1,5 @@
+    .grid-3-columns>div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
