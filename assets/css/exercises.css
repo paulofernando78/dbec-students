@@ -1,4 +1,39 @@
-/* GENERAL */
+
+/* HANGMAN */
+
+.letters-style {
+  width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #636a7e;
+    border: var(--img-border);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* DRAG AND DROP */
+
+.drag-card {
+  width: 200px;
+  height: 50px;
+  background-color: #F7F198;
+  border: var(--img-border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-card {
+  width: 100%;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+
 /* TOOLTIP 1 */
 
 .tooltip1 {
