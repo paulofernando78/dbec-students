@@ -4,12 +4,14 @@
   display: grid;
   grid-template-columns: 300px 300px;
   justify-content: space-around;
-  align-items: end;
+  justify-items: center;
+  align-items: center;
+  margin: 0 70px 0 70px;
 }
 
-.word-guess-letters {
+/* .word-guess-letters {
   margin-bottom: 8px;
-}
+} */
 
 /* DRAG AND DROP */
 
@@ -685,6 +687,7 @@ select option {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 50px;
+    margin: 0px;
   }
 
   input[type="text"] {
