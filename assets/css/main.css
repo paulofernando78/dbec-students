@@ -657,6 +657,7 @@ p {
 .front {
     display: block;
     position: relative;
+    margin-bottom: 1px;
     padding: 7px 10px;
     border-radius: 6px;
     font-size: 1rem;
@@ -674,18 +675,18 @@ p {
 }
 
 .pushable:hover .front {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     transition:
         transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
 
 .pushable:active .front {
-    transform: translateY(-2px);
+    transform: translateY(0);
     transition: transform 34ms;
 }
 
 .pushable:hover .shadow {
-    transform: translateY(4px);
+    transform: translateY(2px);
     transition:
         transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
@@ -698,6 +699,8 @@ p {
 .pushable:focus:not(:focus-visible) {
     outline: none;
 }
+
+/* AUDIO PLAYER */
 
 #audio-player-fixed {
     top: 0;
