@@ -1,7 +1,72 @@
 // HANGMAN
 
-// <!-- An array of words -->
-// var words = ["english", "student"];
+const targetWord = "COFFEE"; // Change to the word you want
+let guessedWord;
+let incorrectGuesses = 0;
+let maxIncorrectGuesses = 6;
+
+function startGame() {
+  guessedWord = "_".repeat(targetWord.length);
+  displayWord();
+  document.getElementById("result").textContent = "";
+  enableLetterButtons();
+}
+
+function displayWord() {
+  document.getElementById("word-display").textContent = guessedWord;
+}
+
+function checkGuess(letter) {
+  let found = false;
+  for (let i = 0; i < targetWord.length; i++) {
+    if (targetWord[i] === letter) {
+      guessedWord =
+        guessedWord.substring(0, i) + letter + guessedWord.substring(i + 1);
+      found = true;
+    }
+  }
+
+  if (!found) {
+    incorrectGuesses++;
+    updateHangman();
+  }
+
+  displayWord();
+
+  if (guessedWord === targetWord) {
+    document.getElementById("result").textContent = "You win!";
+    disableLetterButtons();
+  } else if (incorrectGuesses === maxIncorrectGuesses) {
+    document.getElementById("result").textContent =
+      "You lose. The word was: " + targetWord;
+    disableLetterButtons();
+  }
+}
+
+function updateHangman() {
+  // Add code to update the hangman display (e.g., drawing the hangman figure)
+}
+
+function disableLetterButtons() {
+  const buttons = document.querySelectorAll(".pushable-hm");
+  buttons.forEach((button) => (button.disabled = true));
+}
+
+function enableLetterButtons() {
+  const buttons = document.querySelectorAll(".pushable-hm");
+  buttons.forEach((button) => (button.disabled = false));
+}
+
+const letterButtons = document.querySelectorAll(".pushable-hm");
+letterButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    const letter = button.querySelector(".front-hm").textContent;
+    checkGuess(letter);
+    button.disabled = true;
+  });
+});
+
+startGame();
 
 // EXERCISE XXX
 // RADIOS

@@ -1,16 +1,14 @@
-
 /* HANGMAN */
 
-.letters-style {
-  width: 50px;
-    height: 50px;
-    color: white;
-    background-color: #636a7e;
-    border: var(--img-border);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.grid-2-columns-word-guess {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.word-guess-letters {
+  margin-bottom: 8px;
 }
 
 /* DRAG AND DROP */
@@ -32,7 +30,6 @@
   border: 1px solid;
   border-radius: 4px;
 }
-
 
 /* TOOLTIP 1 */
 
@@ -682,6 +679,13 @@ select option {
 }
 
 @media (max-width: 600px) {
+
+  .grid-2-columns-word-guess {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 50px;
+  }
 
   input[type="text"] {
     width: 80%;
