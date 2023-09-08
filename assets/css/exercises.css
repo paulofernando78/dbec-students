@@ -1,9 +1,5 @@
 /* HANGMAN */
 
-.container-hm {
-  padding-top: 15px;
-}
-
 .grid-2-columns-word-guess {
   display: grid;
   grid-template-columns: 300px 400px;

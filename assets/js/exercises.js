@@ -1,72 +1,74 @@
 // HANGMAN
 
-const targetWord = "COFFEE"; // Change to the word you want
-let guessedWord;
-let incorrectGuesses = 0;
-let maxIncorrectGuesses = 6;
-
-function startGame() {
-  guessedWord = "_".repeat(targetWord.length);
-  displayWord();
-  document.getElementById("result-hm").textContent = "";
-  enableLetterButtons();
-}
-
-function displayWord() {
-  document.getElementById("word-display").textContent = guessedWord;
-}
-
-function checkGuess(letter) {
-  let found = false;
-  for (let i = 0; i < targetWord.length; i++) {
-    if (targetWord[i] === letter) {
-      guessedWord =
-        guessedWord.substring(0, i) + letter + guessedWord.substring(i + 1);
-      found = true;
-    }
-  }
-
-  if (!found) {
-    incorrectGuesses++;
-    updateHangman();
-  }
-
-  displayWord();
-
-  if (guessedWord === targetWord) {
-    document.getElementById("result-hm").textContent = "You win!";
-    disableLetterButtons();
-  } else if (incorrectGuesses === maxIncorrectGuesses) {
-    document.getElementById("result-hm").textContent =
-      "Sorry. Try again!";
-    disableLetterButtons();
-  }
-}
-
-function updateHangman() {
-  // Add code to update the hangman display (e.g., drawing the hangman figure)
-}
-
-function disableLetterButtons() {
-  const buttons = document.querySelectorAll(".pushable-hm");
-  buttons.forEach((button) => (button.disabled = true));
-}
-
-function enableLetterButtons() {
-  const buttons = document.querySelectorAll(".pushable-hm");
-  buttons.forEach((button) => (button.disabled = false));
-}
-
-const letterButtons = document.querySelectorAll(".pushable-hm");
-letterButtons.forEach((button) => {
-  button.addEventListener("click", function () {
-    const letter = button.querySelector(".front-hm").textContent;
-    checkGuess(letter);
-    button.disabled = true;
-  });
-});
-
-startGame();
+// Word to guess
+        const wordToGuess = "coffee";
+        
+        // Array to store guessed letters
+        const guessedLetters = [];
+        
+        // Number of chances left
+        let chancesLeft = 10;
+        
+        // Function to initialize the game
+        function initializeGame() {
+            // Create letter buttons dynamically
+            const letterButtons = document.getElementById("letter-buttons");
+            for (let i = 65; i <= 90; i++) {
+                const letter = String.fromCharCode(i);
+                const button = document.createElement("button");
+                button.textContent = letter;
+                button.className = "pushable-hm word-guess-letters";
+                button.onclick = () => guessLetter(letter);
+                letterButtons.appendChild(button);
+            }
+            
+            // Initialize the word display
+            const wordDisplay = document.getElementById("word-display");
+            wordDisplay.querySelector("p").textContent = `The word is: ${getWordDisplay()}`;
+        }
+        
+        // Function to guess a letter
+        function guessLetter(letter) {
+            if (chancesLeft > 0 && !guessedLetters.includes(letter)) {
+                guessedLetters.push(letter);
+                const wordDisplay = document.getElementById("word-display");
+                wordDisplay.querySelector("p").textContent = `The word is: ${getWordDisplay()}`;
+                
+                if (!wordToGuess.includes(letter)) {
+                    chancesLeft--;
+                }
+                
+                const usedWords = document.getElementById("used-words");
+                usedWords.textContent = `Used letters: ${guessedLetters.join(", ")}`;
+                
+                if (chancesLeft === 0) {
+                    endGame("You lose! The word was 'coffee'.");
+                } else if (wordToGuess === getWordDisplay()) {
+                    endGame("Congratulations! You guessed the word.");
+                }
+            }
+        }
+        
+        // Function to get the word display with underscores
+        function getWordDisplay() {
+            return wordToGuess
+                .split("")
+                .map(letter => (guessedLetters.includes(letter) ? letter : "_"))
+                .join(" ");
+        }
+        
+        // Function to end the game
+        function endGame(message) {
+            const result = document.getElementById("result-hm");
+            result.textContent = message;
+            
+            // Disable all letter buttons
+            const letterButtons = document.querySelectorAll(".word-guess-letters");
+            letterButtons.forEach(button => button.disabled = true);
+        }
+        
+        // Initialize the game
+        initializeGame();
 
 // EXERCISE XXX
 // RADIOS
