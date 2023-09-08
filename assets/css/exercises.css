@@ -1,5 +1,9 @@
 /* HANGMAN */
 
+.container-hm {
+  padding-top: 15px;
+}
+
 .grid-2-columns-word-guess {
   display: grid;
   grid-template-columns: 300px 400px;
@@ -11,6 +15,12 @@
 
 .word-guess-letters {
   margin-bottom: 3px;
+}
+
+.hm-text-style {
+  font-size: 1.5rem;
+  text-align: center;
+  color: blue;
 }
 
 /* DRAG AND DROP */
@@ -680,7 +690,7 @@ select option {
   gap: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   .grid-2-columns-word-guess {
     display: grid;

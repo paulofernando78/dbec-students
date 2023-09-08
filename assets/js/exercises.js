@@ -8,7 +8,7 @@ let maxIncorrectGuesses = 6;
 function startGame() {
   guessedWord = "_".repeat(targetWord.length);
   displayWord();
-  document.getElementById("result").textContent = "";
+  document.getElementById("result-hm").textContent = "";
   enableLetterButtons();
 }
 
@@ -34,11 +34,11 @@ function checkGuess(letter) {
   displayWord();
 
   if (guessedWord === targetWord) {
-    document.getElementById("result").textContent = "You win!";
+    document.getElementById("result-hm").textContent = "You win!";
     disableLetterButtons();
   } else if (incorrectGuesses === maxIncorrectGuesses) {
-    document.getElementById("result").textContent =
-      "You lose. The word was: " + targetWord;
+    document.getElementById("result-hm").textContent =
+      "Sorry. Try again!";
     disableLetterButtons();
   }
 }
