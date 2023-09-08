@@ -1,6 +1,73 @@
 // HANGMAN
 
+const words = ["hangman"];
+let selectedWord = words[Math.floor(Math.random() * words.length)];
+let displayWord = [];
+let incorrectGuesses = [];
+let attemptsRemaining = 6;
 
+function setupGame() {
+  selectedWord = words[Math.floor(Math.random() * words.length)];
+  displayWord = [];
+  incorrectGuesses = [];
+  attemptsRemaining = 6;
+
+  for (let i = 0; i < selectedWord.length; i++) {
+    displayWord.push("_");
+  }
+
+  document.getElementById("word").innerText = displayWord.join(" ");
+  document.getElementById("incorrectGuesses").innerText = "";
+  document.getElementById("attemptsRemaining").innerText = attemptsRemaining;
+  document.getElementById("guessInput").value = "";
+}
+
+function guessLetter() {
+  const guess = document.getElementById("guessInput").value.toLowerCase();
+
+  if (guess.length !== 1 || !/^[a-z]$/.test(guess)) {
+    alert("Please enter a single letter.");
+    return;
+  }
+
+  if (displayWord.includes(guess) || incorrectGuesses.includes(guess)) {
+    alert("You've already guessed this letter.");
+    return;
+  }
+
+  let letterFound = false;
+
+  for (let i = 0; i < selectedWord.length; i++) {
+    if (selectedWord[i] === guess) {
+      displayWord[i] = guess;
+      letterFound = true;
+    }
+  }
+
+  if (!letterFound) {
+    incorrectGuesses.push(guess);
+    attemptsRemaining--;
+
+    if (attemptsRemaining === 0) {
+      alert("Game over! The word was: " + selectedWord);
+      setupGame();
+    }
+  }
+
+  document.getElementById("word").innerText = displayWord.join(" ");
+  document.getElementById("incorrectGuesses").innerText =
+    incorrectGuesses.join(", ");
+  document.getElementById("attemptsRemaining").innerText = attemptsRemaining;
+
+  if (displayWord.join("") === selectedWord) {
+    alert("Congratulations! You guessed the word: " + selectedWord);
+    setupGame();
+  }
+
+  document.getElementById("guessInput").value = "";
+}
+
+setupGame();
 
 // EXERCISE XXX
 // RADIOS
