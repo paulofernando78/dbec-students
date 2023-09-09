@@ -1,10 +1,11 @@
 // HANGMAN
 
 // Hangman game variables
-const selectedWord = "APPLE"; // The word to guess
+const selectedWord = "HANGMAN"; // The word to guess
 let guessedWord = []; // The current state of guessed letters
 let incorrectGuesses = []; // Incorrectly guessed letters
 const maxAttempts = 6; // Maximum allowed incorrect guesses
+let gameOver = false; // Game over flag
 
 // Function to initialize the game
 function initializeGame() {
@@ -16,6 +17,9 @@ function initializeGame() {
 
   // Reset incorrect guesses
   incorrectGuesses = [];
+
+  // Reset game over flag
+  gameOver = false;
 
   // Update the HTML display
   updateDisplay();
@@ -35,23 +39,31 @@ function updateDisplay() {
   const attemptsRemainingDisplay = document.getElementById("attemptsRemaining");
   attemptsRemainingDisplay.textContent = maxAttempts - incorrectGuesses.length;
 
+  // Get the message element
+  const messageElement = document.getElementById("message");
+
   // Check for win or lose
-  if (guessedWord.join("") === selectedWord) {
+  if (guessedWord.join("") === selectedWord && !gameOver) {
     // Player wins
-    alert("Congratulations! You guessed the word: " + selectedWord);
-    initializeGame(); // Restart the game
-  } else if (incorrectGuesses.length >= maxAttempts) {
+    messageElement.textContent = "Congrats! You got it.";
+    messageElement.style.color = "green";
+    messageElement.style.fontWeight = "bold";
+    gameOver = true;
+  } else if (incorrectGuesses.length >= maxAttempts && !gameOver) {
     // Player loses
-    alert("Game Over. The word was: " + selectedWord);
-    initializeGame(); // Restart the game
+    messageElement.textContent = "Sorry! Try again.";
+    messageElement.style.color = "red";
+    messageElement.style.fontWeight = "bold";
+    gameOver = true;
   }
 }
+
 
 // Function to handle letter guesses
 function guessLetter(letter) {
   // Check if the letter has already been guessed
-  if (guessedWord.includes(letter) || incorrectGuesses.includes(letter)) {
-    return; // Letter already guessed, do nothing
+  if (guessedWord.includes(letter) || incorrectGuesses.includes(letter) || gameOver) {
+    return; // Letter already guessed or game over, do nothing
   }
 
   // Check if the letter is in the selected word
@@ -72,19 +84,10 @@ function guessLetter(letter) {
 }
 
 // Initialize the game on page load
-window.onload = initializeGame;
-
-// Initialize the game on page load
-window.onload = initializeGame;
-
-// EXERCISE XXX
-// RADIOS
-function resetRadios() {
-  var radios = document.querySelectorAll('input[type="radio"]');
-  for (var i = 0; i < radios.length; i++) {
-    radios[i].checked = false;
-  }
-}
+window.onload = function () {
+  initializeGame();
+  document.getElementById("message").textContent = "";
+};
 
 // EXERCISE XXX
 // CHECKBOXES 1

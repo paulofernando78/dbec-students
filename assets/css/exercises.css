@@ -41,8 +41,11 @@
 }
 
 .front-hm {
+  display: flex;
+    align-items: center;
+    justify-content: center;
   height: 40px;
-  display: block;
+  /* display: block; */
   position: relative;
   margin-bottom: 1px;
   padding: 7px 10px;
