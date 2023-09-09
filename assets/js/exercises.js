@@ -1,73 +1,81 @@
 // HANGMAN
 
-const words = ["hangman"];
-let selectedWord = words[Math.floor(Math.random() * words.length)];
-let displayWord = [];
-let incorrectGuesses = [];
-let attemptsRemaining = 6;
+// Hangman game variables
+const selectedWord = "APPLE"; // The word to guess
+let guessedWord = []; // The current state of guessed letters
+let incorrectGuesses = []; // Incorrectly guessed letters
+const maxAttempts = 6; // Maximum allowed incorrect guesses
 
-function setupGame() {
-  selectedWord = words[Math.floor(Math.random() * words.length)];
-  displayWord = [];
+// Function to initialize the game
+function initializeGame() {
+  // Initialize guessedWord with underscores
+  guessedWord = [];
+  for (let i = 0; i < selectedWord.length; i++) {
+    guessedWord.push("_");
+  }
+
+  // Reset incorrect guesses
   incorrectGuesses = [];
-  attemptsRemaining = 6;
 
-  for (let i = 0; i < selectedWord.length; i++) {
-    displayWord.push("_");
-  }
-
-  document.getElementById("word").innerText = displayWord.join(" ");
-  document.getElementById("incorrectGuesses").innerText = "";
-  document.getElementById("attemptsRemaining").innerText = attemptsRemaining;
-  document.getElementById("guessInput").value = "";
+  // Update the HTML display
+  updateDisplay();
 }
 
-function guessLetter() {
-  const guess = document.getElementById("guessInput").value.toLowerCase();
+// Function to update the game display
+function updateDisplay() {
+  // Update the word display
+  const wordDisplay = document.getElementById("word");
+  wordDisplay.textContent = guessedWord.join(" ");
 
-  if (guess.length !== 1 || !/^[a-z]$/.test(guess)) {
-    alert("Please enter a single letter.");
-    return;
-  }
+  // Update incorrect guesses
+  const incorrectGuessesDisplay = document.getElementById("incorrectGuesses");
+  incorrectGuessesDisplay.textContent = incorrectGuesses.join(" ");
 
-  if (displayWord.includes(guess) || incorrectGuesses.includes(guess)) {
-    alert("You've already guessed this letter.");
-    return;
-  }
+  // Update attempts remaining
+  const attemptsRemainingDisplay = document.getElementById("attemptsRemaining");
+  attemptsRemainingDisplay.textContent = maxAttempts - incorrectGuesses.length;
 
-  let letterFound = false;
-
-  for (let i = 0; i < selectedWord.length; i++) {
-    if (selectedWord[i] === guess) {
-      displayWord[i] = guess;
-      letterFound = true;
-    }
-  }
-
-  if (!letterFound) {
-    incorrectGuesses.push(guess);
-    attemptsRemaining--;
-
-    if (attemptsRemaining === 0) {
-      alert("Game over! The word was: " + selectedWord);
-      setupGame();
-    }
-  }
-
-  document.getElementById("word").innerText = displayWord.join(" ");
-  document.getElementById("incorrectGuesses").innerText =
-    incorrectGuesses.join(", ");
-  document.getElementById("attemptsRemaining").innerText = attemptsRemaining;
-
-  if (displayWord.join("") === selectedWord) {
+  // Check for win or lose
+  if (guessedWord.join("") === selectedWord) {
+    // Player wins
     alert("Congratulations! You guessed the word: " + selectedWord);
-    setupGame();
+    initializeGame(); // Restart the game
+  } else if (incorrectGuesses.length >= maxAttempts) {
+    // Player loses
+    alert("Game Over. The word was: " + selectedWord);
+    initializeGame(); // Restart the game
   }
-
-  document.getElementById("guessInput").value = "";
 }
 
-setupGame();
+// Function to handle letter guesses
+function guessLetter(letter) {
+  // Check if the letter has already been guessed
+  if (guessedWord.includes(letter) || incorrectGuesses.includes(letter)) {
+    return; // Letter already guessed, do nothing
+  }
+
+  // Check if the letter is in the selected word
+  if (selectedWord.includes(letter)) {
+    // Update guessedWord with the correctly guessed letter
+    for (let i = 0; i < selectedWord.length; i++) {
+      if (selectedWord[i] === letter) {
+        guessedWord[i] = letter;
+      }
+    }
+  } else {
+    // Incorrect guess
+    incorrectGuesses.push(letter);
+  }
+
+  // Update the game display
+  updateDisplay();
+}
+
+// Initialize the game on page load
+window.onload = initializeGame;
+
+// Initialize the game on page load
+window.onload = initializeGame;
 
 // EXERCISE XXX
 // RADIOS
