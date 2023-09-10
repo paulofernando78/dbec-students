@@ -1,7 +1,7 @@
 // HANGMAN
 
 // Hangman game variables
-const selectedWord = "CAR"; // The word to guess
+const selectedWord = "XXX"; // The word to guess
 let guessedWord = []; // The current state of guessed letters
 let incorrectGuesses = []; // Incorrectly guessed letters
 const maxAttempts = 2; // Maximum allowed incorrect guesses
@@ -61,7 +61,11 @@ function updateDisplay() {
 // Function to handle letter guesses
 function guessLetter(letter) {
   // Check if the letter has already been guessed
-  if (guessedWord.includes(letter) || incorrectGuesses.includes(letter) || gameOver) {
+  if (
+    guessedWord.includes(letter) ||
+    incorrectGuesses.includes(letter) ||
+    gameOver
+  ) {
     return; // Letter already guessed or game over, do nothing
   }
 
