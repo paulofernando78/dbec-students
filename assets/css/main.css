@@ -290,6 +290,10 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.times-new-roman {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .smaller {
     font-size: var(--font-size-smaller)
 }

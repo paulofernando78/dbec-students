@@ -10,13 +10,6 @@
   <title>Exercise Templates</title>
 </head>
 
-<style>
-  #word {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-</style>
-
 <body>
   <main>
     <div class="container-whiteboard">
@@ -29,157 +22,159 @@
     <br>
 
     <div>
-      <p><b>Guess the word!</b></p>
-      <br>
-      <br>
+      <div>
+        <p><b>Guess the word!</b></p>
+        <br>
+        <br>
 
-      <div class="grid-3-columns-word-guess">
-        <img src="../../assets/img/bitmoji/dont-know-question-mark2.png" alt="Don't know" class="img-bitmoji">
+        <div class="grid-3-columns-word-guess">
+          <img src="../../assets/img/bitmoji/dont-know-question-mark2.png" alt="Don't know" class="img-bitmoji">
 
-        <!-- LETTERS -->
-        <div>
-          <div class="flex-hm-letters">
+          <!-- LETTERS -->
+          <div>
             <div class="flex-hm-letters">
-              <button onclick="guessLetter('A')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">A</span>
-              </button>
-              <button onclick="guessLetter('B')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">B</span>
-              </button>
-              <button onclick="guessLetter('C')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">C</span>
-              </button>
-              <button onclick="guessLetter('D')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">D</span>
-              </button>
-              <button onclick="guessLetter('E')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">E</span>
-              </button>
-              <button onclick="guessLetter('F')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">F</span>
-              </button>
-              <button onclick="guessLetter('G')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">G</span>
-              </button>
-              <button onclick="guessLetter('H')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">H</span>
-              </button>
-              <button onclick="guessLetter('I')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">I</span>
-              </button>
-              <button onclick="guessLetter('J')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">J</span>
-              </button>
-              <button onclick="guessLetter('K')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">K</span>
-              </button>
-              <button onclick="guessLetter('L')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">L</span>
-              </button>
-              <button onclick="guessLetter('M')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">M</span>
-              </button>
-              <button onclick="guessLetter('N')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">N</span>
-              </button>
-              <button onclick="guessLetter('O')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">O</span>
-              </button>
-              <button onclick="guessLetter('P')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">P</span>
-              </button>
-              <button onclick="guessLetter('Q')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">Q</span>
-              </button>
-              <button onclick="guessLetter('R')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">R</span>
-              </button>
-              <button onclick="guessLetter('S')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">S</span>
-              </button>
-              <button onclick="guessLetter('T')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">T</span>
-              </button>
-              <button onclick="guessLetter('U')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">U</span>
-              </button>
-              <button onclick="guessLetter('V')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">V</span>
-              </button>
-              <button onclick="guessLetter('W')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">W</span>
-              </button>
-              <button onclick="guessLetter('X')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">X</span>
-              </button>
-              <button onclick="guessLetter('Y')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">Y</span>
-              </button>
-              <button onclick="guessLetter('Z')" class="pushable-hm">
-                <span class="shadow-hm"></span>
-                <span class="edge-hm"></span>
-                <span class="front-hm">Z</span>
-              </button>
+              <div class="flex-hm-letters">
+                <button onclick="guessLetter('A')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">A</span>
+                </button>
+                <button onclick="guessLetter('B')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">B</span>
+                </button>
+                <button onclick="guessLetter('C')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">C</span>
+                </button>
+                <button onclick="guessLetter('D')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">D</span>
+                </button>
+                <button onclick="guessLetter('E')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">E</span>
+                </button>
+                <button onclick="guessLetter('F')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">F</span>
+                </button>
+                <button onclick="guessLetter('G')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">G</span>
+                </button>
+                <button onclick="guessLetter('H')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">H</span>
+                </button>
+                <button onclick="guessLetter('I')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">I</span>
+                </button>
+                <button onclick="guessLetter('J')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">J</span>
+                </button>
+                <button onclick="guessLetter('K')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">K</span>
+                </button>
+                <button onclick="guessLetter('L')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">L</span>
+                </button>
+                <button onclick="guessLetter('M')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">M</span>
+                </button>
+                <button onclick="guessLetter('N')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">N</span>
+                </button>
+                <button onclick="guessLetter('O')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">O</span>
+                </button>
+                <button onclick="guessLetter('P')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">P</span>
+                </button>
+                <button onclick="guessLetter('Q')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">Q</span>
+                </button>
+                <button onclick="guessLetter('R')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">R</span>
+                </button>
+                <button onclick="guessLetter('S')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">S</span>
+                </button>
+                <button onclick="guessLetter('T')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">T</span>
+                </button>
+                <button onclick="guessLetter('U')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">U</span>
+                </button>
+                <button onclick="guessLetter('V')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">V</span>
+                </button>
+                <button onclick="guessLetter('W')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">W</span>
+                </button>
+                <button onclick="guessLetter('X')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">X</span>
+                </button>
+                <button onclick="guessLetter('Y')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">Y</span>
+                </button>
+                <button onclick="guessLetter('Z')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">Z</span>
+                </button>
+              </div>
             </div>
-          </div>
 
-        </div>
-        <div>
-          <div id="word" style="text-align: center;"></div>
-          <br>
-          <p><b>Incorrect letters:</b> <span id="incorrectGuesses"></span></p>
-          <p><b>Attempts remaining:</b> <span id="attemptsRemaining"></span></p>
-          <p><span id="message"></span></p>
+          </div>
+          <div>
+            <div id="word" style="text-align: center;"></div>
+            <br>
+            <p><b>Incorrect letters:</b> <span id="incorrectGuesses"></span></p>
+            <p><b>Attempts remaining:</b> <span id="attemptsRemaining"></span></p>
+            <p><span id="message"></span></p>
+          </div>
         </div>
       </div>
     </div>
@@ -192,17 +187,19 @@
     <h1>DRAG AND DROP</h1>
     <br>
 
-    <div class="flex-columns-center">
-      <div class="drag-card">
-        <p>Drag 1</p>
-      </div>
+    <div>
+      <div class="flex-columns-center">
+        <div class="drag-card">
+          <p>Drag 1</p>
+        </div>
 
-      <div class="drag-card">
-        <p>Drag 2</p>
-      </div>
+        <div class="drag-card">
+          <p>Drag 2</p>
+        </div>
 
-      <div class="drag-card">
-        <p>Drag 3</p>
+        <div class="drag-card">
+          <p>Drag 3</p>
+        </div>
       </div>
     </div>
 
@@ -332,12 +329,15 @@
     <br>
 
     <div>
-      <span class="tooltip2">xxx
-        <span class="tooltip2-info"><b>xxx</b>
-          <span class="phonetics"> xxx </span> xxx
-          <span class="color-lightgrey"> xxx</span>
+      <p>
+        <span class="tooltip2">xxx
+          <span class="tooltip2-info"><b>xxx</b>
+            <span class="times-new-roman"><i>xxx</i></span>
+            <span class="phonetics"> xxx </span> xxx
+            <span class="color-lightgrey"> xxx</span>
+          </span>
         </span>
-      </span>
+      </p>
     </div>
 
     <br>
