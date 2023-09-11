@@ -496,9 +496,11 @@ p {
 .grid-2-columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     gap: 20px;
 }
 
+/* TWO COLUMNS EXERCISES */
 .grid-2-columns-gap-10-0 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
