@@ -1,0 +1,15 @@
+.container-alphabet {
+    width: 100px;
+    height: 100px;
+}
+
+.alphabet-letters {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.alphabet-numbers-size {
+    font-size: .8rem;
+}
+
+

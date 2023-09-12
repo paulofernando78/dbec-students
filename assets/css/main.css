@@ -121,14 +121,6 @@ main {
     padding-top: 30px;
 }
 
-.main-gif-embarassed {
-    font-size: 1rem;
-}
-
-.main-gif-disappoited {
-    font-size: 1rem;
-}
-
 /* GENERAL */
 
 /* ICONS */
@@ -479,18 +471,25 @@ p {
 
 /* CONTAINERS + IMAGES */
 
-.flex-columns-start {
+.flex-start {
     display: flex;
     align-items: start;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.flex-columns-center {
+.flex-center {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.flex-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid-2-columns {
@@ -516,6 +515,7 @@ p {
 .grid-3-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     gap: 10px;
 }
 
@@ -529,7 +529,13 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, 100px);
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
+}
+
+.img-border {
+    border: var(--img-border);
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
 }
 
 .img-1-100 {
@@ -745,6 +751,10 @@ p {
         gap: 10px;
     }
 
+    .grid-2-columns {
+        grid-template-columns: 1fr;
+    }
+
     .grid-2-columns-10-0 {
         display: grid;
         grid-template-columns: 1fr;
@@ -752,7 +762,6 @@ p {
     }
 
     .grid-3-columns {
-        display: grid;
         grid-template-columns: 1fr;
     }
 
