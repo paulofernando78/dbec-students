@@ -284,6 +284,7 @@ p {
 
 .times-new-roman {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
 }
 
 .smaller {
@@ -294,6 +295,10 @@ p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1rem;
     color: #00a2ff
+}
+
+.text-decoration-none {
+    text-decoration: none;
 }
 
 /* CONTAINERS */
@@ -495,7 +500,7 @@ p {
 .grid-2-columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    /* justify-items: center; */
     gap: 20px;
 }
 

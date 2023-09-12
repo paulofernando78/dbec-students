@@ -43,8 +43,8 @@
 
 .front-hm {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   /* display: block; */
   position: relative;
@@ -133,7 +133,6 @@
 
 .tooltip1 {
   cursor: pointer;
-  border-bottom: 2px dotted;
 }
 
 .tooltip1-info {
@@ -150,7 +149,6 @@
   position: relative;
   display: inline-block;
   cursor: pointer;
-  border-bottom: 2px dotted;
 }
 
 .tooltip2-info {
@@ -163,11 +161,10 @@
   border-radius: 4px;
   box-shadow: 0 0 3px;
   white-space: normal;
-  /* text-align: justify; */
   overflow: auto;
   transform: translate(-50%, -50%);
   left: 50%;
-  width: 750px;
+  width: 90%;
   height: auto;
   z-index: 1;
 }
@@ -778,16 +775,16 @@ select option {
 
 @media (max-width: 768px) {
 
+  input[type="text"] {
+    width: 80%;
+  }
+
   .grid-3-columns-word-guess {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 30px;
     margin: 0px;
-  }
-
-  input[type="text"] {
-    width: 80%;
   }
 
 }
