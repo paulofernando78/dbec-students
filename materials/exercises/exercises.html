@@ -277,7 +277,7 @@
     <br>
 
     <!-- SIMPLE DRAG CARDS 1-->
-    <h1>SIMPLE DARG CARDS 1</h1>
+    <h1>SIMPLE DRAG CARDS 1</h1>
     <br>
 
 
@@ -291,17 +291,27 @@
       <h1>SHUFFLE CARDS</h1>
       <br>
 
-      <div class="flex-center">
-        <div class="shuffle-card" onclick="moveCard()">
-          <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark" class="shuffle-card-question-mark">
-        </div>
-      
-        <br>
-      
-        <div class="shuffled-card">
-          <p></p>
-        </div>
-        <br>
+      <div class="card-wrapper">
+        <ul class="card-list">
+          <li class="card-list__item" data-card="0">
+            <p><span class="card">What's the past of go?</span></p>
+          </li>
+          <li class="card-list__item" data-card="1">
+            <p><span class="card">What's the past eat?</span></p>
+          </li>
+          <li class="card-list__item" data-card="2">
+            <p><span class="card">What's the past of get?</span></p>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <div class="button-wrapper">
+        <button class="button btn-shuffle">
+          Shuffle
+        </button>
+        <button class="button btn-reset">
+          Reset
+        </button>
       </div>
       <br>
       
@@ -310,15 +320,11 @@
         <span class="edge"></span>
         <span class="front">Shuffle</span>
       </button>
-      <button onclick="undo()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Undo</span>
       </button>
-      <button onclick="deal()" class="pushable">
+      <button onclick="reset()" class="pushable">
         <span class="shadow"></span>
         <span class="edge"></span>
-        <span class="front">Deal</span>
+        <span class="front">Reset</span>
       </button>
 
       <br>

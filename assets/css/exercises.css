@@ -130,29 +130,132 @@
 }
 
 /* SIMPLE DRAG CARDS */
-.shuffle-card {
+
+.card-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  height: 280px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+
+  width: 100%;
+  max-height: 100%;
+  height: 350px;
+
+  margin: 0;
   padding: 10px;
+
+  list-style: none;
+}
+
+.card-list__item {
+  position: absolute;
+
+  animation: none;
+  animation-fill-mode: forwards;
+
+  &[data-card="0"] {
+    z-index: 6;
+
+    margin-top: 0;
+  }
+
+  &[data-card="1"] {
+    z-index: 5;
+
+    margin-top: 4px;
+  }
+
+  &[data-card="2"] {
+    z-index: 4;
+
+    margin-top: 8px;
+  }
+
+  .is-animated & {
+
+    &[data-card="0"] {
+      animation: shuffle 1s ease-in-out 0s 1 normal;
+      z-index: 2;
+
+      transition: z-index 0s ease-in-out 0.5s;
+    }
+
+    &[data-card="1"] {
+      animation: shuffle 1s ease-in-out 1s 1 normal;
+      z-index: 1;
+
+      transition: z-index 0s ease-in-out 1.5s;
+    }
+
+    &[data-card="2"] {
+      animation: shuffle 1s ease-in-out 2s 1 normal;
+      z-index: 0;
+
+      transition: z-index 0s ease-in-out 2.5s;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  max-width: 100%;
+  width: 150px;
+  max-height: 100%;
+  height: 250px;
+
+  padding: 5px;
+
   border: var(--img-border);
   border-radius: 4px;
   box-shadow: 0 0 3px;
-  cursor: pointer;
-  width: 170px;
-  height: 250px;
-  background-color: rgb(104, 74, 74);
-  transition: transform 0.3s ease;
-  
+
+  background: #555;
+}
+
+[data-card="0"] .card {
+  background: white;
+}
+
+[data-card="1"] .card {
+  background: white;
+}
+
+[data-card="2"] .card {
+  background: white;
+}
+
+@keyframes shuffle {
+  0% {
+    transform: rotate(0) translateX(0) scale(1);
+  }
+
+  50% {
+    transform: rotate(5deg) translateX(105%) scale(0.96);
+  }
+
+  100% {
+    transform: rotate(0) translateX(0);
+  }
+}
+
+.card-list__item:hover {
+  transform: translateY(-5px);
 }
 
 .shuffle-card-question-mark {
   width: 80px;
 }
 
-.shuffle-card:hover {
-  transform: translateY(-5px);
-}
+
+
 
 .shuffled-card {
   display: flex;
@@ -167,7 +270,6 @@
   height: 250px;
 
 }
-
 
 /* TOOLTIP 1 */
 
@@ -827,4 +929,18 @@ select option {
     margin: 0px;
   }
 
+}
+
+@keyframes shuffle {
+  0% {
+    transform: rotate(0) translateX(0) scale(1);
+  }
+
+  50% {
+    transform: rotate(5deg) translateX(105%) scale(0.96);
+  }
+
+  100% {
+    transform: rotate(0) translateX(0);
+  }
 }

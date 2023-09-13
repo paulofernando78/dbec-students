@@ -92,45 +92,24 @@ window.onload = function () {
   document.getElementById("message").textContent = "";
 };
 
-// SHUTTLE CARDS
-function drop(event, targetClassName) {
-  event.preventDefault();
-  const data = event.dataTransfer.getData("text");
-  const draggedElement = document.getElementById(data);
-
-  // Instead of using a class selector, use the provided targetClassName.
-  const targetElement = document.querySelector(`.${targetClassName}`);
-
-  if (draggedElement && targetElement) {
-    const draggedNumber = draggedElement.textContent;
-    const targetNumber = targetElement.querySelector("b").textContent;
-
-    if (draggedNumber === targetNumber) {
-      targetElement.appendChild(draggedElement);
-    }
-  }
-}
-
 // SHUFFLE CARD
-function moveCard() {
-  const shuffleCard = document.querySelector(".shuffle-card");
-  
-  const shuffledCard = document.querySelector(".shuffled-card");
-  const cardText = "What's the past of go?";
+const cardList = document.getElementsByClassName("card-list")[0];
+const shuffle = document.getElementsByClassName("btn-shuffle")[0];
+const reset = document.getElementsByClassName("btn-reset")[0];
 
-  // Generate a random number (0 or 1) to decide where to move the card
-  const randomIndex = Math.floor(Math.random() * 2);
+shuffle.addEventListener("click", () => {
+  cardList.classList.add("is-animated");
 
-  if (randomIndex === 0) {
-    // Move the card to shuffleCard
-    shuffleCard.querySelector("p").textContent = cardText;
-    shuffledCard.querySelector("p").textContent = "";
-  } else {
-    // Move the card to shuffledCard
-    shuffledCard.querySelector("p").textContent = cardText;
-    shuffleCard.querySelector("p").textContent = "";
-  }
-}
+  shuffle.disabled = true;
+  reset.disabled = false;
+});
+
+reset.addEventListener("click", () => {
+  cardList.classList.remove("is-animated");
+
+  reset.disabled = true;
+  shuffle.disabled = false;
+});
 
 // EXERCISE XXX
 // CHECKBOXES 1
