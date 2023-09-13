@@ -1,10 +1,10 @@
 // HANGMAN
 
 // Hangman game variables
-const selectedWord = "XXX"; // The word to guess
+const selectedWord = "LORENZO"; // *CAPITAL!!! The word to guess
 let guessedWord = []; // The current state of guessed letters
 let incorrectGuesses = []; // Incorrectly guessed letters
-const maxAttempts = 2; // Maximum allowed incorrect guesses
+const maxAttempts = 3; // Maximum allowed incorrect guesses
 let gameOver = false; // Game over flag
 
 // Function to initialize the game

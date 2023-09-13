@@ -611,6 +611,7 @@ p {
 
 .img-bitmoji {
     width: 200px;
+    filter: drop-shadow(0 0 1px);
 }
 
 /* COURSES */
@@ -618,8 +619,6 @@ p {
 .class-description {
     line-height: 1.2;
 }
-
-
 
 /* CLASSWORK-TIP-BUTTON */
 
