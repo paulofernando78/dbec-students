@@ -93,22 +93,19 @@ window.onload = function () {
 };
 
 // SHUFFLE CARD
-const cardList = document.getElementsByClassName("card-list")[0];
-const shuffle = document.getElementsByClassName("btn-shuffle")[0];
-const reset = document.getElementsByClassName("btn-reset")[0];
+const cardList = document.querySelector(".card-list");
+const shuffleButton = document.querySelector(".shuffle-button");
+const resetButton = document.querySelector(".reset-button");
 
-shuffle.addEventListener("click", () => {
+shuffleButton.addEventListener("click", () => {
   cardList.classList.add("is-animated");
-
-  shuffle.disabled = true;
-  reset.disabled = false;
 });
 
-reset.addEventListener("click", () => {
+resetButton.addEventListener("click", () => {
   cardList.classList.remove("is-animated");
 
-  reset.disabled = true;
-  shuffle.disabled = false;
+  resetButton.disabled = true;
+  shuffleButton.disabled = false;
 });
 
 // EXERCISE XXX
