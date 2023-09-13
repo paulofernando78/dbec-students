@@ -129,140 +129,64 @@
   border-radius: 4px;
 }
 
-/* SIMPLE DRAG CARDS */
+/* SHUFFLE CARDS */
 
-.card-wrapper {
+.shuffle-cards-container {
   display: flex;
-  flex-direction: row;
-  height: 260px;
-  /* max-height: 100%; */
+  justify-content: center;
+  width: 300px;
+  height: 300px;
 }
 
-.card-list {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-height: 100%;
-  list-style: none;
-}
-
-.card-list__item {
-  position: absolute;
-
-  animation: none;
-  animation-fill-mode: forwards;
-
-  &[data-card="0"] {
-    z-index: 6;
-
-    margin-top: 0;
-  }
-
-  &[data-card="1"] {
-    z-index: 5;
-
-    margin-top: 4px;
-  }
-
-  &[data-card="2"] {
-    z-index: 4;
-
-    margin-top: 8px;
-  }
-
-  .is-animated & {
-
-    &[data-card="0"] {
-      animation: shuffle 1s ease-in-out 0s 1 normal;
-      z-index: 2;
-
-      transition: z-index 0s ease-in-out 0.5s;
-    }
-
-    &[data-card="1"] {
-      animation: shuffle 1s ease-in-out 1s 1 normal;
-      z-index: 1;
-
-      transition: z-index 0s ease-in-out 1.5s;
-    }
-
-    &[data-card="2"] {
-      animation: shuffle 1s ease-in-out 2s 1 normal;
-      z-index: 0;
-
-      transition: z-index 0s ease-in-out 2.5s;
-    }
-  }
-}
-
-.card {
+.shuffle-card {
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
 
-  max-width: 100%;
+.shuffle-card-face {
+  position: absolute;
+  /* top: 20px;
+  right: 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 150px;
-  max-height: 100%;
-  height: 250px;
+  height: 230px;
 
-  padding: 5px;
+  /* z-index: 1;
+  margin-top: 5px; */
 
+}
+
+.shuffle-card-front {
   border: var(--img-border);
   border-radius: 4px;
   box-shadow: 0 0 3px;
-
-  background: #555;
+  background-image: url(../../assets/img/container-title-background.png);
+  transform: rotateY(180deg);
 }
 
-[data-card="0"] .card {
-  background: white;
+.shuffle-card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: var(--img-border);
+  border-radius: 4px;
+  box-shadow: 0 0 3px;
+  background-image: url(../../assets/img/container-title-background.png);
+  backface-visibility: hidden;
 }
 
-[data-card="1"] .card {
-  background: white;
-}
-
-[data-card="2"] .card {
-  background: white;
-}
-
-@keyframes shuffle {
-  0% {
-    transform: rotate(0) translateX(0) scale(1);
-  }
-
-  50% {
-    transform: rotate(5deg) translateX(105%) scale(0.96);
-  }
-
-  100% {
-    transform: rotate(0) translateX(0);
-  }
-}
-
-.card-list__item:hover {
-  transform: translateY(-5px);
+.shuffle-card-flipped {
+  transform: rotateY(180deg) translateX(180px);
 }
 
 .shuffle-card-question-mark {
   width: 80px;
-}
-
-
-
-
-.shuffled-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-  border: 4px solid orange;
-  border-radius: 4px;
-  box-shadow: 0 0 3px orange;
-  width: 170px;
-  height: 250px;
-
 }
 
 /* TOOLTIP 1 */
@@ -923,18 +847,4 @@ select option {
     margin: 0px;
   }
 
-}
-
-@keyframes shuffle {
-  0% {
-    transform: rotate(0) translateX(0) scale(1);
-  }
-
-  50% {
-    transform: rotate(5deg) translateX(105%) scale(0.96);
-  }
-
-  100% {
-    transform: rotate(0) translateX(0);
-  }
 }

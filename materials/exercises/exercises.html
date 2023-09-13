@@ -282,1207 +282,1216 @@
 
 
 
-      <br>
-      <br>
-      <hr>
-      <br>
+    <br>
+    <br>
+    <hr>
+    <br>
 
-      <!-- SHUFFLE CARDS -->
-      <h1>SHUFFLE CARDS</h1>
-      <br>
+    <!-- SHUFFLE CARDS -->
+    <h1>SHUFFLE CARDS</h1>
+    <br>
 
-      <div class="">
-        <div class="card-wrapper">
-          <ul class="card-list">
-            <li class="card-list__item" data-card="0">
-              <p><span class="card">What's the past of go?</span></p>
-            </li>
-            <li class="card-list__item" data-card="1">
-              <p><span class="card">What's the past eat?</span></p>
-            </li>
-            <li class="card-list__item" data-card="2">
-              <p><span class="card">What's the past of get?</span></p>
-            </li>
-          </ul>
+    <div class="shuffle-cards-container">
+
+      <div class="shuffle-card shuffle-card-flipped">
+        <div class="shuffle-card-face shuffle-card-front">
+          <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
         </div>
-        <br>
-        
-        <button onclick="shuffleCards()" class="pushable shuffle-button">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Shuffle</span>
-        </button>
+        <div class="shuffle-card-face shuffle-card-back">
+          What's the past of ask?
+        </div>
+      </div>
       
-        <button onclick="resetCards()" class="pushable reset-button">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Reset</span>
-        </button>
-      </div>
+    
 
-      <br>
-      <br>
-      <hr>
-      <br>
+    <!-- <div class="shuffle-card-list-item">
+        <p><span class="card1" onclick="rotateCard1(this)">1</span></p>
+      </div> -->
 
-      <!-- TOOLTIP 1 -->
-      <h1>TOOLTIP 1</h1>
-      <br>
+    <br>
+    <br>
 
-      <div>
-        <p>
-          <span class="tooltip1"><span style="border-bottom: 2px dotted">ask</span>
-            <span class="tooltip1-info"> • asked • asked</span>
+    <!-- <div class="shuffle-buttons-position">
+      <button onclick="shuffleCards()" class="pushable shuffle-button">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Shuffle</span>
+      </button>
+
+      <button onclick="resetShuttle()" class="pushable reset-button">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Reset</span>
+      </button>
+    </div> -->
+
+    <br>
+
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!-- TOOLTIP 1 -->
+    <h1>TOOLTIP 1</h1>
+    <br>
+
+    <div>
+      <p>
+        <span class="tooltip1"><span style="border-bottom: 2px dotted">ask</span>
+          <span class="tooltip1-info"> • asked • asked</span>
+        </span>
+      </p>
+    </div>
+
+    <br>
+
+    <!-- TOOLTIP 2 -->
+    <h1>TOOLTIP 2</h1>
+    <br>
+
+    <div>
+      <p>
+        <span class="tooltip2"><span style="border-bottom: 2px dotted;">xxx</span> xxx
+          <span class="tooltip2-info"><b>xxx</b>
+            <span class="times-new-roman"><i>xxx</i></span>
+            <span class="phonetics"> xxx </span> xxx
+            <span class="color-lightgrey"> xxx</span>
           </span>
-        </p>
+        </span>
+      </p>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!-- COLLAPSE -->
+    <h1>COLLAPSE</h1>
+    <br>
+    <div>
+      <div class="container-white">
+        <div class="section" onclick="toggleCollapse(this)">
+          <div class="collpase-flex-column">
+            <div class="triangle"></div>
+            <p>Audioscript / Info</p>
+            <div class="content" style="width: 97.3%;">
+              <br>
+              <iframe src="" width="100%" height="60"></iframe>
+              <br>
+              <br>
+              <p><b>A:</b> ...</p>
+              <p><b>B:</b> ...</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <br>
+    <br>
+    <hr>
+    <br>
 
-      <!-- TOOLTIP 2 -->
-      <h1>TOOLTIP 2</h1>
-      <br>
+    <!-- EXERCISE XXX -->
+    <!-- RADIO -->
+    <h1>RADIO</h1>
+    <br>
+    <div>
+      <p><b>1. Choose the correct answers.</b></p>
+      <br />
 
-      <div>
-        <p>
-          <span class="tooltip2"><span style="border-bottom: 2px dotted;">xxx</span> xxx
-            <span class="tooltip2-info"><b>xxx</b>
-              <span class="times-new-roman"><i>xxx</i></span>
-              <span class="phonetics"> xxx </span> xxx
-              <span class="color-lightgrey"> xxx</span>
+      <div class="container-exercise-space">
+        <div>
+          <p>1. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-1" id="radio-1a" class="radio-correct" />
+            <label for="radio-1a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-1" id="radio-1b" class="radio-incorrect" />
+            <label for="radio-1b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>2. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-2" id="radio-2a" class="radio-correct" />
+            <label for="radio-2a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-2" id="radio-2b" class="radio-incorrect" />
+            <label for="radio-2b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>3. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-3" id="radio-3a" class="radio-correct" />
+            <label for="radio-3a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-3" id="radio-3b" class="radio-incorrect" />
+            <label for="radio-3b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>4. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-4" id="radio-4a" class="radio-correct" />
+            <label for="radio-4a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-4" id="radio-4b" class="radio-incorrect" />
+            <label for="radio-4b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>5. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-5" id="radio-5a" class="radio-correct" />
+            <label for="radio-5a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-5" id="radio-5b" class="radio-incorrect" />
+            <label for="radio-5b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>6. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-6" id="radio-6a" class="radio-correct" />
+            <label for="radio-6a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-6" id="radio-6b" class="radio-incorrect" />
+            <label for="radio-6b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>7. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-7" id="radio-7a" class="radio-correct" />
+            <label for="radio-7a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-7" id="radio-7b" class="radio-incorrect" />
+            <label for="radio-7b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>8. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-8" id="radio-8a" class="radio-correct" />
+            <label for="radio-8a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-8" id="radio-8b" class="radio-incorrect" />
+            <label for="radio-8b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>9. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-9" id="radio-9a" class="radio-correct" />
+            <label for="radio-9a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-9" id="radio-9b" class="radio-incorrect" />
+            <label for="radio-9b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>10. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-10" id="radio-10a" class="radio-correct" />
+            <label for="radio-10a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-10" id="radio-10b" class="radio-incorrect" />
+            <label for="radio-10b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>11. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-11-5" id="radio-11a" class="radio-correct" />
+            <label for="radio-11a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-11-5" id="radio-11b" class="radio-incorrect" />
+            <label for="radio-11b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>12. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-12" id="radio-12a" class="radio-correct" />
+            <label for="radio-12a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-12" id="radio-12b" class="radio-incorrect" />
+            <label for="radio-12b">b&#41; xxx</label>
+          </div>
+        </div>
+
+        <div>
+          <button onclick="resetRadios()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">
+              Reset
             </span>
-          </span>
-        </p>
-      </div>
-
-      <br>
-      <br>
-      <hr>
-      <br>
-
-      <!-- COLLAPSE -->
-      <h1>COLLAPSE</h1>
-      <br>
-      <div>
-        <div class="container-white">
-          <div class="section" onclick="toggleCollapse(this)">
-            <div class="collpase-flex-column">
-              <div class="triangle"></div>
-              <p>Audioscript / Info</p>
-              <div class="content" style="width: 97.3%;">
-                <br>
-                <iframe src="" width="100%" height="60"></iframe>
-                <br>
-                <br>
-                <p><b>A:</b> ...</p>
-                <p><b>B:</b> ...</p>
-              </div>
-            </div>
-          </div>
+          </button>
         </div>
       </div>
+    </div>
 
+    <br>
+    <hr>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- CHECKBOX 1 -->
+    <h2>CHECKBOX 1</h2>
+    <br>
+    <div>
+      <p><b>1. Select the correct answer.</b></p>
       <br>
-      <hr>
-      <br>
-
-      <!-- EXERCISE XXX -->
-      <!-- RADIO -->
-      <h1>RADIO</h1>
-      <br>
-      <div>
-        <p><b>1. Choose the correct answers.</b></p>
-        <br />
-
-        <div class="container-exercise-space">
-          <div>
-            <p>1. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-1" id="radio-1a" class="radio-correct" />
-              <label for="radio-1a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-1" id="radio-1b" class="radio-incorrect" />
-              <label for="radio-1b">b&#41; xxx</label>
-            </div>
-            <br />
-
-            <p>2. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-2" id="radio-2a" class="radio-correct" />
-              <label for="radio-2a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-2" id="radio-2b" class="radio-incorrect" />
-              <label for="radio-2b">b&#41; xxx</label>
-            </div>
-            <br />
-
-            <p>3. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-3" id="radio-3a" class="radio-correct" />
-              <label for="radio-3a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-3" id="radio-3b" class="radio-incorrect" />
-              <label for="radio-3b">b&#41; xxx</label>
-            </div>
-            <br />
-
-            <p>4. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-4" id="radio-4a" class="radio-correct" />
-              <label for="radio-4a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-4" id="radio-4b" class="radio-incorrect" />
-              <label for="radio-4b">b&#41; xxx</label>
-            </div>
-            <br />
-
-            <p>5. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-5" id="radio-5a" class="radio-correct" />
-              <label for="radio-5a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-5" id="radio-5b" class="radio-incorrect" />
-              <label for="radio-5b">b&#41; xxx</label>
-            </div>
-            <br />
-
-            <p>6. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-6" id="radio-6a" class="radio-correct" />
-              <label for="radio-6a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-6" id="radio-6b" class="radio-incorrect" />
-              <label for="radio-6b">b&#41; xxx</label>
-            </div>
-            <br />
-
-            <p>7. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-7" id="radio-7a" class="radio-correct" />
-              <label for="radio-7a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-7" id="radio-7b" class="radio-incorrect" />
-              <label for="radio-7b">b&#41; xxx</label>
-            </div>
-            <br />
-
-            <p>8. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-8" id="radio-8a" class="radio-correct" />
-              <label for="radio-8a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-8" id="radio-8b" class="radio-incorrect" />
-              <label for="radio-8b">b&#41; xxx</label>
-            </div>
-            <br />
-
-            <p>9. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-9" id="radio-9a" class="radio-correct" />
-              <label for="radio-9a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-9" id="radio-9b" class="radio-incorrect" />
-              <label for="radio-9b">b&#41; xxx</label>
-            </div>
-            <br />
-
-            <p>10. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-10" id="radio-10a" class="radio-correct" />
-              <label for="radio-10a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-10" id="radio-10b" class="radio-incorrect" />
-              <label for="radio-10b">b&#41; xxx</label>
-            </div>
-            <br />
-
-            <p>11. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-11-5" id="radio-11a" class="radio-correct" />
-              <label for="radio-11a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-11-5" id="radio-11b" class="radio-incorrect" />
-              <label for="radio-11b">b&#41; xxx</label>
-            </div>
-            <br />
-
-            <p>12. xxx</p>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-12" id="radio-12a" class="radio-correct" />
-              <label for="radio-12a">a&#41; xxx</label>
-            </div>
-            <div class="align-items-center-1">
-              <input type="radio" name="radio-1-12" id="radio-12b" class="radio-incorrect" />
-              <label for="radio-12b">b&#41; xxx</label>
-            </div>
+      <div class="container-exercise-space">
+        <div>
+          <p>1. xxx.</p>
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox1" data-correct="true" />
+            <label for="checkbox-1a">a&#41; xxx</label>
+            <span class="icon checkbox-correct-icon1 invisible1"></span>
+            <span class="icon checkbox-incorrect-icon1 invisible1"></span>
           </div>
 
-          <div>
-            <button onclick="resetRadios()" class="pushable">
-              <span class="shadow"></span>
-              <span class="edge"></span>
-              <span class="front">
-                Reset
-              </span>
-            </button>
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox1" data-correct="false">
+            <label for="checkbox-1b">b&#41; xxx</label>
+            <span class="icon checkbox-correct-icon1 invisible1"></span>
+            <span class="icon checkbox-incorrect-icon1 invisible1"></span>
           </div>
+
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox1 " data-correct="true" />
+            <label for=" checkbox-1c">c&#41; xxx</label>
+            <span class="icon checkbox-correct-icon1 invisible1"></span>
+            <span class="icon checkbox-incorrect-icon1 invisible1"></span>
+          </div>
+          <br>
+
+          <button onclick="checkCheckboxes1()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Check answers</span>
+          </button>
+          <button onclick="showCheckboxes1()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Show answers</span>
+          </button>
+          <button onclick="resetCheckboxes1()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Reset</span>
+          </button>
+          <p id="resultCheckboxes1"></p>
         </div>
       </div>
+    </div>
+    <br>
 
+    <!-- EXERCISE XXX -->
+    <!-- CHECKBOX 2 -->
+    <h2>CHECKBOX 2</h2>
+    <br>
+    <div>
+      <p><b>1. Select the correct answer.</b></p>
       <br>
-      <hr>
-      <br>
+      <div class="container-exercise-space">
+        <div>
+          <p>1. xxx.</p>
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-2-1" id="checkbox-2a" class="checkbox2" data-correct="true" />
+            <label for="checkbox-2a">a&#41; xxx</label>
+            <span class="icon checkbox-correct-icon2 invisible2"></span>
+            <span class="icon checkbox-incorrect-icon2 invisible2"></span>
+          </div>
 
-      <!-- EXERCISE XXX -->
-      <!-- CHECKBOX 1 -->
-      <h2>CHECKBOX 1</h2>
-      <br>
-      <div>
-        <p><b>1. Select the correct answer.</b></p>
-        <br>
-        <div class="container-exercise-space">
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-2-1" id="checkbox-2b" class="checkbox2" data-correct="false">
+            <label for="checkbox-2b">b&#41; xxx</label>
+            <span class="icon checkbox-correct-icon2 invisible2"></span>
+            <span class="icon checkbox-incorrect-icon2 invisible2"></span>
+          </div>
+
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-2-1" id="checkbox-2c" class="checkbox2 " data-correct="true" />
+            <label for=" checkbox-2c">c&#41; xxx</label>
+            <span class="icon checkbox-correct-icon2 invisible2"></span>
+            <span class="icon checkbox-incorrect-icon2 invisible2"></span>
+          </div>
+          <br>
+
           <div>
-            <p>1. xxx.</p>
-            <div class="align-items-center-1">
-              <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox1" data-correct="true" />
-              <label for="checkbox-1a">a&#41; xxx</label>
-              <span class="icon checkbox-correct-icon1 invisible1"></span>
-              <span class="icon checkbox-incorrect-icon1 invisible1"></span>
-            </div>
-
-            <div class="align-items-center-1">
-              <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox1" data-correct="false">
-              <label for="checkbox-1b">b&#41; xxx</label>
-              <span class="icon checkbox-correct-icon1 invisible1"></span>
-              <span class="icon checkbox-incorrect-icon1 invisible1"></span>
-            </div>
-
-            <div class="align-items-center-1">
-              <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox1 " data-correct="true" />
-              <label for=" checkbox-1c">c&#41; xxx</label>
-              <span class="icon checkbox-correct-icon1 invisible1"></span>
-              <span class="icon checkbox-incorrect-icon1 invisible1"></span>
-            </div>
-            <br>
-
-            <button onclick="checkCheckboxes1()" class="pushable">
+            <button onclick="checkCheckboxes2()" class="pushable">
               <span class="shadow"></span>
               <span class="edge"></span>
               <span class="front">Check answers</span>
             </button>
-            <button onclick="showCheckboxes1()" class="pushable">
+            <button onclick="showCheckboxes2()" class="pushable">
               <span class="shadow"></span>
               <span class="edge"></span>
               <span class="front">Show answers</span>
             </button>
-            <button onclick="resetCheckboxes1()" class="pushable">
+            <button onclick="resetCheckboxes2()" class="pushable">
               <span class="shadow"></span>
               <span class="edge"></span>
               <span class="front">Reset</span>
             </button>
-            <p id="resultCheckboxes1"></p>
+            <p id="resultCheckboxes2"></p>
           </div>
         </div>
       </div>
-      <br>
+    </div>
 
-      <!-- EXERCISE XXX -->
-      <!-- CHECKBOX 2 -->
-      <h2>CHECKBOX 2</h2>
-      <br>
-      <div>
-        <p><b>1. Select the correct answer.</b></p>
-        <br>
-        <div class="container-exercise-space">
-          <div>
-            <p>1. xxx.</p>
-            <div class="align-items-center-1">
-              <input type="checkbox" name="checkbox-2-1" id="checkbox-2a" class="checkbox2" data-correct="true" />
-              <label for="checkbox-2a">a&#41; xxx</label>
-              <span class="icon checkbox-correct-icon2 invisible2"></span>
-              <span class="icon checkbox-incorrect-icon2 invisible2"></span>
-            </div>
+    <br>
+    <hr>
+    <br>
 
-            <div class="align-items-center-1">
-              <input type="checkbox" name="checkbox-2-1" id="checkbox-2b" class="checkbox2" data-correct="false">
-              <label for="checkbox-2b">b&#41; xxx</label>
-              <span class="icon checkbox-correct-icon2 invisible2"></span>
-              <span class="icon checkbox-incorrect-icon2 invisible2"></span>
-            </div>
+    <!-- EXERCISE XXX -->
+    <!-- DROPDOWN -->
+    <h2>DROPDOWN</h2>
+    <br>
+    <div>
+      <p><b>1. Choose the correct answer.</b></p>
+      <br />
 
-            <div class="align-items-center-1">
-              <input type="checkbox" name="checkbox-2-1" id="checkbox-2c" class="checkbox2 " data-correct="true" />
-              <label for=" checkbox-2c">c&#41; xxx</label>
-              <span class="icon checkbox-correct-icon2 invisible2"></span>
-              <span class="icon checkbox-incorrect-icon2 invisible2"></span>
-            </div>
-            <br>
+      <div class="container-exercise-space">
+        <div>
+          <label>
+            a&#41; xxx
+            <select id="option1">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option1Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            b&#41; xxx
+            <select id="option2">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option2Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            c&#41; xxx
+            <select id="option3">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option3Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            d&#41; xxx
+            <select id="option4">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option4Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            e&#41; xxx
+            <select id="option5">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option5Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            f&#41; xxx
+            <select id="option6">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option6Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            g&#41; xxx
+            <select id="option7">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option7Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            h&#41; xxx
+            <select id="option8">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option8Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            i&#41; xxx
+            <select id="option9">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option9Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            j&#41; xxx
+            <select id="option10">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option10Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            k&#41; xxx
+            <select id="option11">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option11Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            l&#41; xxx
+            <select id="option12a">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option12aIcon"></span>
+            xxx
+            <select id="option12b">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option12bIcon"></span>
+          </label>
+        </div>
 
-            <div>
-              <button onclick="checkCheckboxes2()" class="pushable">
-                <span class="shadow"></span>
-                <span class="edge"></span>
-                <span class="front">Check answers</span>
-              </button>
-              <button onclick="showCheckboxes2()" class="pushable">
-                <span class="shadow"></span>
-                <span class="edge"></span>
-                <span class="front">Show answers</span>
-              </button>
-              <button onclick="resetCheckboxes2()" class="pushable">
-                <span class="shadow"></span>
-                <span class="edge"></span>
-                <span class="front">Reset</span>
-              </button>
-              <p id="resultCheckboxes2"></p>
-            </div>
-          </div>
+        <div>
+          <button onclick="checkDropdowns()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Check answers</span>
+          </button>
+          <button onclick="resetDropdowns()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Reset</span>
+          </button>
+          <p id="result-dropdown"></p>
         </div>
       </div>
-
-      <br>
-      <hr>
-      <br>
-
-      <!-- EXERCISE XXX -->
-      <!-- DROPDOWN -->
-      <h2>DROPDOWN</h2>
-      <br>
-      <div>
-        <p><b>1. Choose the correct answer.</b></p>
-        <br />
-
-        <div class="container-exercise-space">
-          <div>
-            <label>
-              a&#41; xxx
-              <select id="option1">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option1Icon"></span>
-              xxx
-            </label>
-            <br>
-            <label>
-              b&#41; xxx
-              <select id="option2">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option2Icon"></span>
-              xxx
-            </label>
-            <br>
-            <label>
-              c&#41; xxx
-              <select id="option3">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option3Icon"></span>
-              xxx
-            </label>
-            <br>
-            <label>
-              d&#41; xxx
-              <select id="option4">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option4Icon"></span>
-              xxx
-            </label>
-            <br>
-            <label>
-              e&#41; xxx
-              <select id="option5">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option5Icon"></span>
-              xxx
-            </label>
-            <br>
-            <label>
-              f&#41; xxx
-              <select id="option6">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option6Icon"></span>
-              xxx
-            </label>
-            <br>
-            <label>
-              g&#41; xxx
-              <select id="option7">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option7Icon"></span>
-              xxx
-            </label>
-            <br>
-            <label>
-              h&#41; xxx
-              <select id="option8">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option8Icon"></span>
-              xxx
-            </label>
-            <br>
-            <label>
-              i&#41; xxx
-              <select id="option9">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option9Icon"></span>
-              xxx
-            </label>
-            <br>
-            <label>
-              j&#41; xxx
-              <select id="option10">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option10Icon"></span>
-              xxx
-            </label>
-            <br>
-            <label>
-              k&#41; xxx
-              <select id="option11">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option11Icon"></span>
-              xxx
-            </label>
-            <br>
-            <label>
-              l&#41; xxx
-              <select id="option12a">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option12aIcon"></span>
-              xxx
-              <select id="option12b">
-                <option value="na">...</option>
-                <option value="a">xxx</option>
-                <option value="b">xxx</option>
-                <option value="c">xxx</option>
-              </select>
-              <span class="dropdown-icon" id="option12bIcon"></span>
-            </label>
-          </div>
-
-          <div>
-            <button onclick="checkDropdowns()" class="pushable">
-              <span class="shadow"></span>
-              <span class="edge"></span>
-              <span class="front">Check answers</span>
-            </button>
-            <button onclick="resetDropdowns()" class="pushable">
-              <span class="shadow"></span>
-              <span class="edge"></span>
-              <span class="front">Reset</span>
-            </button>
-            <p id="result-dropdown"></p>
-          </div>
-        </div>
-      </div>
-
-      <br>
-      <hr>
-      <br>
-
-      <!-- EXERCISE XXX -->
-      <!-- FILL IN THE BLANKS 1-->
-      <div>
-        <p><b>1. Fill-in-the-blanks 1</b></p>
-        <br />
-
-        <div class="fills-height fills-margin">
-          <p>1. xxx
-            <br>
-            <input type="text" id="blank1_fill1" class="fill1">
-            <span id="fill1Icon1" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 1</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>2. xxx
-            <br>
-            <input type="text" id="blank2_fill1" class="fill1">
-            <span id="fill1Icon2" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 2</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>3. xxx
-            <br>
-            <input type="text" id="blank3_fill1" class="fill1">
-            <span id="fill1Icon3" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 3</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>4. xxx
-            <br>
-            <input type="text" id="blank4_fill1" class="fill1">
-            <span id="fill1Icon4" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 4</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>5. xxx
-            <br>
-            <input type="text" id="blank5_fill1" class="fill1">
-            <span id="fill1Icon5" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 5</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>6. xxx
-            <br>
-            <input type="text" id="blank6_fill1" class="fill1">
-            <span id="fill1Icon6" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 6</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>7. xxx
-            <br>
-            <input type="text" id="blank7_fill1" class="fill1">
-            <span id="fill1Icon7" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 7</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>8. xxx
-            <br>
-            <input type="text" id="blank8_fill1" class="fill1">
-            <span id="fill1Icon8" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 8</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>9. xxx
-            <br>
-            <input type="text" id="blank9_fill1" class="fill1">
-            <span id="fill1Icon9" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 9</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>10. xxx
-            <br>
-            <input type="text" id="blank10_fill1" class="fill1">
-            <span id="fill1Icon10" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 10</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>11. xxx
-            <br>
-            <input type="text" id="blank11_fill1" class="fill1">
-            <span id="fill1Icon11" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 11</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>12. xxx
-            <br>
-            <input type="text" id="blank12_fill1" class="fill1">
-            <span id="fill1Icon12" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 12</i></p>
-          </p>
-        </div>
-        <div class="fills-height fills-margin">
-          <p>13. xxx
-            <br>
-            <input type="text" id="blank13_fill1" class="fill1">
-            <span id="fill1Icon13" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 13</i></p>
-          </p>
-        </div>
-        <div class="fills-height">
-          <p>14. xxx
-            <br>
-            <input type="text" id="blank14_fill1" class="fill1">
-            <span id="fill1Icon14" class="fill1-icon"></span>
-          <p class="color-green fill1_answer answer-height"><i>Answer 14</i></p>
-          </p>
-        </div>
-        <br>
-
-        <button onclick="checkFill1()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Check answers</span>
-        </button>
-        <button onclick="showFill1()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Show answers</span>
-        </button>
-        <button onclick="resetFill1()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Reset</span>
-        </button>
-        <div id="resultFill1" class="p"></div>
-
-      </div>
-      <br>
-
-      <!-- EXERCISE XXX -->
-      <!-- FILL IN THE BLANKS 2-->
-      <div>
-        <p><b>1. Fill-in-the-blanks 2</b></p>
-        <br />
-        <div class="fills-height fills-margin">
-          <p>1. xxx
-            <br>
-            <input type="text" id="blank1_fill2" class="fill2">
-            <span id="fill2Icon1" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 1</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>2. xxx
-            <br>
-            <input type="text" id="blank2_fill2" class="fill2">
-            <span id="fill2Icon2" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 2</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>3. xxx
-            <br>
-            <input type="text" id="blank3_fill2" class="fill2">
-            <span id="fill2Icon3" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 3</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>4. xxx
-            <br>
-            <input type="text" id="blank4_fill2" class="fill2">
-            <span id="fill2Icon4" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 4</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>5. xxx
-            <br>
-            <input type="text" id="blank5_fill2" class="fill2">
-            <span id="fill2Icon5" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 5</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>6. xxx
-            <br>
-            <input type="text" id="blank6_fill2" class="fill2">
-            <span id="fill2Icon6" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 6</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>7. xxx
-            <br>
-            <input type="text" id="blank7_fill2" class="fill2">
-            <span id="fill2Icon7" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 7</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>8. xxx
-            <br>
-            <input type="text" id="blank8_fill2" class="fill2">
-            <span id="fill2Icon8" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 8</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>9. xxx
-            <br>
-            <input type="text" id="blank9_fill2" class="fill2">
-            <span id="fill2Icon9" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 9</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>10. xxx
-            <br>
-            <input type="text" id="blank10_fill2" class="fill2">
-            <span id="fill2Icon10" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 10</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>11. xxx
-            <br>
-            <input type="text" id="blank11_fill2" class="fill2">
-            <span id="fill2Icon11" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 11</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height">
-          <p>12. xxx
-            <br>
-            <input type="text" id="blank12_fill2" class="fill2">
-            <span id="fill2Icon12" class="fill2-icon"></span>
-          <p class="color-green fill2_answer answer-height"><i>Answer 12</i></p>
-          </p>
-        </div>
-        <br />
-
-        <button onclick="checkFill2()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Check answers</span>
-        </button>
-        <button onclick="showFill2()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Show answers</span>
-        </button>
-        <button onclick="resetFill2()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Reset</span>
-        </button>
-        <div id="resultFill2" class="p"></div>
-      </div>
-      <br>
-
-      <!-- EXERCISE XXX -->
-      <!-- FILL IN THE BLANKS 3-->
-      <div>
-        <p><b>1. Fill-in-the-blanks 3</b></p>
-        <br />
-
-        <div class="fills-height fills-margin">
-          <p>1. xxx
-            <br>
-            <input type="text" id="blank1_fill3" class="fill3">
-            <span id="fill3Icon1" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 1</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>2. xxx
-            <br>
-            <input type="text" id="blank2_fill3" class="fill3">
-            <span id="fill3Icon2" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 2</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>3. xxx
-            <br>
-            <input type="text" id="blank3_fill3" class="fill3">
-            <span id="fill3Icon3" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 3</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>4. xxx
-            <br>
-            <input type="text" id="blank4_fill3" class="fill3">
-            <span id="fill3Icon4" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 4</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>5. xxx
-            <br>
-            <input type="text" id="blank5_fill3" class="fill3">
-            <span id="fill3Icon5" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 5</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>6. xxx
-            <br>
-            <input type="text" id="blank6_fill3" class="fill3">
-            <span id="fill3Icon6" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 6</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>7. xxx
-            <br>
-            <input type="text" id="blank7_fill3" class="fill3">
-            <span id="fill3Icon7" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 7</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>8. xxx
-            <br>
-            <input type="text" id="blank8_fill3" class="fill3">
-            <span id="fill3Icon8" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 8</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>9. xxx
-            <br>
-            <input type="text" id="blank9_fill3" class="fill3">
-            <span id="fill3Icon9" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 9</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>10. xxx
-            <br>
-            <input type="text" id="blank10_fill3" class="fill3">
-            <span id="fill3Icon10" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 10</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>11. xxx
-            <br>
-            <input type="text" id="blank11_fill3" class="fill3">
-            <span id="fill3Icon11" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 11</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height">
-          <p>12. xxx
-            <br>
-            <input type="text" id="blank12_fill3" class="fill3">
-            <span id="fill3Icon12" class="fill3-icon"></span>
-          <p class="color-green fill3_answer answer-height"><i>Answer 12</i></p>
-          </p>
-        </div>
-        <br />
-
-        <button onclick="checkFill3()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Check answers</span>
-        </button>
-        <button onclick="showFill3()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Show answers</span>
-        </button>
-        <button onclick="resetFill3()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Reset</span>
-        </button>
-        <div id="resultFill3" class="p"></div>
-      </div>
-      <br>
-
-      <!-- EXERCISE XXX -->
-      <!-- FILL IN THE BLANKS 4-->
-      <div>
-        <p><b>1. Fill-in-the-blanks 4</b></p>
-        <br />
-
-        <div class="fills-height fills-margin">
-          <p>1. xxx
-            <br>
-            <input type="text" id="blank1_fill4" class="fill4">
-            <span id="fill4Icon1" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 1</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>2. xxx
-            <br>
-            <input type="text" id="blank2_fill4" class="fill4">
-            <span id="fill4Icon2" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 2</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>3. xxx
-            <br>
-            <input type="text" id="blank3_fill4" class="fill4">
-            <span id="fill4Icon3" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 3</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>4. xxx
-            <br>
-            <input type="text" id="blank4_fill4" class="fill4">
-            <span id="fill4Icon4" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 4</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>5. xxx
-            <br>
-            <input type="text" id="blank5_fill4" class="fill4">
-            <span id="fill4Icon5" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 5</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>6. xxx
-            <br>
-            <input type="text" id="blank6_fill4" class="fill4">
-            <span id="fill4Icon6" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 6</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>7. xxx
-            <br>
-            <input type="text" id="blank7_fill4" class="fill4">
-            <span id="fill4Icon7" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 7</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>8. xxx
-            <br>
-            <input type="text" id="blank8_fill4" class="fill4">
-            <span id="fill4Icon8" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 8</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>9. xxx
-            <br>
-            <input type="text" id="blank9_fill4" class="fill4">
-            <span id="fill4Icon9" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 9</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>10. xxx
-            <br>
-            <input type="text" id="blank10_fill4" class="fill4">
-            <span id="fill4Icon10" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 10</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height fills-margin">
-          <p>11. xxx
-            <br>
-            <input type="text" id="blank11_fill4" class="fill4">
-            <span id="fill4Icon11" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 11</i></p>
-          </p>
-        </div>
-
-        <div class="fills-height">
-          <p>12. xxx
-            <br>
-            <input type="text" id="blank12_fill4" class="fill4">
-            <span id="fill4Icon12" class="fill4-icon"></span>
-          <p class="color-green fill4_answer answer-height"><i>Answer 12</i></p>
-          </p>
-        </div>
-        <br />
-
-        <button onclick="checkFill4()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Check answers</span>
-        </button>
-        <button onclick="showFill4()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Show answers</span>
-        </button>
-        <button onclick="resetFill4()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Reset</span>
-        </button>
-        <div id="resultFill4" class="p"></div>
-      </div>
-      <br>
-
-      <!-- EXERCISE XXX -->
-      <!-- FILL IN THE BLANKS (TEXT) -->
-      <div>
-        <p><b>1. Fill-in-the-blanks (text)</b></p>
-        <br />
-        <p><b>1. Write the correct answer.</b></p>
-        <br />
-
-        <p>xxx <sup>1</sup>
-          <input type="text" id="blank1_text" class="fill-text">
-          <span id="filltextIcon1" class="fill-text-icon"></span>
-          xxx.
-
-          xxx <sup>2</sup>
-          <input type="text" id="blank2_text" class="fill-text">
-          <span id="filltextIcon2" class="fill-text-icon"></span>
-          xxx.
-
-          xxx <sup>3</sup>
-          <input type="text" id="blank3_text" class="fill-text">
-          <span id="filltextIcon3" class="fill-text-icon"></span>
-          xxx.
-
-          xxx <sup>4</sup>
-          <input type="text" id="blank4_text" class="fill-text">
-          <span id="filltextIcon4" class="fill-text-icon"></span>
-          xxx.
-
-          xxx <sup>5</sup>
-          <input type="text" id="blank5_text" class="fill-text">
-          <span id="filltextIcon5" class="fill-text-icon"></span>
-          xxx.
-
-          xxx <sup>6</sup>
-          <input type="text" id="blank6_text" class="fill-text">
-          <span id="filltextIcon6" class="fill-text-icon"></span>
-          xxx.
-
-          xxx <sup>7</sup>
-          <input type="text" id="blank7_text" class="fill-text">
-          <span id="filltextIcon7" class="fill-text-icon"></span>
-          xxx.
-
-          xxx <sup>8</sup>
-          <input type="text" id="blank8_text" class="fill-text">
-          <span id="filltextIcon8" class="fill-text-icon"></span>
-          xxx.
-
-          xxx <sup>9</sup>
-          <input type="text" id="blank9_text" class="fill-text">
-          <span id="filltextIcon9" class="fill-text-icon"></span>
-          xxx.
-
-          xxx <sup>10</sup>
-          <input type="text" id="blank10_text" class="fill-text">
-          <span id="filltextIcon10" class="fill-text-icon"></span>
-          xxx.
-
-          xxx <sup>11</sup>
-          <input type="text" id="blank11_text" class="fill-text">
-          <span id="filltextIcon11" class="fill-text-icon"></span>
-          xxx.
-
-          xxx <sup>12</sup>
-          <input type="text" id="blank12_text" class="fill-text">
-          <span id="filltextIcon12" class="fill-text-icon"></span>
-          xxx.
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- FILL IN THE BLANKS 1-->
+    <div>
+      <p><b>1. Fill-in-the-blanks 1</b></p>
+      <br />
+
+      <div class="fills-height fills-margin">
+        <p>1. xxx
+          <br>
+          <input type="text" id="blank1_fill1" class="fill1">
+          <span id="fill1Icon1" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 1</i></p>
         </p>
-        <br>
-
-        <button onclick="checkFilltext()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Check answers</span>
-        </button>
-        <button onclick="showFilltext()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Show answers</span>
-        </button>
-        <button onclick="resetFilltext()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">Reset</span>
-        </button>
-        <div id="resultFilltext" class="p"></div>
-        <br>
-        <p class="color-green fill-text-answer"><i>
-            <p class="color-green fill-text-answer"> 1. Answer, 2. Answer, 3. Answer, 4. Answer, 5. Answer, 6. Answer,
-              7.
-              Answer, 8. Answer, 9. Answer, 10. Answer, 11. Answer, 12. Answer
-            <p class="color-green fill-text-answer">
-          </i></p>
       </div>
+
+      <div class="fills-height fills-margin">
+        <p>2. xxx
+          <br>
+          <input type="text" id="blank2_fill1" class="fill1">
+          <span id="fill1Icon2" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 2</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>3. xxx
+          <br>
+          <input type="text" id="blank3_fill1" class="fill1">
+          <span id="fill1Icon3" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 3</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>4. xxx
+          <br>
+          <input type="text" id="blank4_fill1" class="fill1">
+          <span id="fill1Icon4" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 4</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>5. xxx
+          <br>
+          <input type="text" id="blank5_fill1" class="fill1">
+          <span id="fill1Icon5" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 5</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>6. xxx
+          <br>
+          <input type="text" id="blank6_fill1" class="fill1">
+          <span id="fill1Icon6" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 6</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>7. xxx
+          <br>
+          <input type="text" id="blank7_fill1" class="fill1">
+          <span id="fill1Icon7" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 7</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>8. xxx
+          <br>
+          <input type="text" id="blank8_fill1" class="fill1">
+          <span id="fill1Icon8" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 8</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>9. xxx
+          <br>
+          <input type="text" id="blank9_fill1" class="fill1">
+          <span id="fill1Icon9" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 9</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>10. xxx
+          <br>
+          <input type="text" id="blank10_fill1" class="fill1">
+          <span id="fill1Icon10" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 10</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>11. xxx
+          <br>
+          <input type="text" id="blank11_fill1" class="fill1">
+          <span id="fill1Icon11" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 11</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>12. xxx
+          <br>
+          <input type="text" id="blank12_fill1" class="fill1">
+          <span id="fill1Icon12" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 12</i></p>
+        </p>
+      </div>
+      <div class="fills-height fills-margin">
+        <p>13. xxx
+          <br>
+          <input type="text" id="blank13_fill1" class="fill1">
+          <span id="fill1Icon13" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 13</i></p>
+        </p>
+      </div>
+      <div class="fills-height">
+        <p>14. xxx
+          <br>
+          <input type="text" id="blank14_fill1" class="fill1">
+          <span id="fill1Icon14" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 14</i></p>
+        </p>
+      </div>
+      <br>
+
+      <button onclick="checkFill1()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Check answers</span>
+      </button>
+      <button onclick="showFill1()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Show answers</span>
+      </button>
+      <button onclick="resetFill1()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Reset</span>
+      </button>
+      <div id="resultFill1" class="p"></div>
+
+    </div>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- FILL IN THE BLANKS 2-->
+    <div>
+      <p><b>1. Fill-in-the-blanks 2</b></p>
+      <br />
+      <div class="fills-height fills-margin">
+        <p>1. xxx
+          <br>
+          <input type="text" id="blank1_fill2" class="fill2">
+          <span id="fill2Icon1" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 1</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>2. xxx
+          <br>
+          <input type="text" id="blank2_fill2" class="fill2">
+          <span id="fill2Icon2" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 2</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>3. xxx
+          <br>
+          <input type="text" id="blank3_fill2" class="fill2">
+          <span id="fill2Icon3" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 3</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>4. xxx
+          <br>
+          <input type="text" id="blank4_fill2" class="fill2">
+          <span id="fill2Icon4" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 4</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>5. xxx
+          <br>
+          <input type="text" id="blank5_fill2" class="fill2">
+          <span id="fill2Icon5" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 5</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>6. xxx
+          <br>
+          <input type="text" id="blank6_fill2" class="fill2">
+          <span id="fill2Icon6" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 6</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>7. xxx
+          <br>
+          <input type="text" id="blank7_fill2" class="fill2">
+          <span id="fill2Icon7" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 7</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>8. xxx
+          <br>
+          <input type="text" id="blank8_fill2" class="fill2">
+          <span id="fill2Icon8" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 8</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>9. xxx
+          <br>
+          <input type="text" id="blank9_fill2" class="fill2">
+          <span id="fill2Icon9" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 9</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>10. xxx
+          <br>
+          <input type="text" id="blank10_fill2" class="fill2">
+          <span id="fill2Icon10" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 10</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>11. xxx
+          <br>
+          <input type="text" id="blank11_fill2" class="fill2">
+          <span id="fill2Icon11" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 11</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height">
+        <p>12. xxx
+          <br>
+          <input type="text" id="blank12_fill2" class="fill2">
+          <span id="fill2Icon12" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 12</i></p>
+        </p>
+      </div>
+      <br />
+
+      <button onclick="checkFill2()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Check answers</span>
+      </button>
+      <button onclick="showFill2()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Show answers</span>
+      </button>
+      <button onclick="resetFill2()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Reset</span>
+      </button>
+      <div id="resultFill2" class="p"></div>
+    </div>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- FILL IN THE BLANKS 3-->
+    <div>
+      <p><b>1. Fill-in-the-blanks 3</b></p>
+      <br />
+
+      <div class="fills-height fills-margin">
+        <p>1. xxx
+          <br>
+          <input type="text" id="blank1_fill3" class="fill3">
+          <span id="fill3Icon1" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 1</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>2. xxx
+          <br>
+          <input type="text" id="blank2_fill3" class="fill3">
+          <span id="fill3Icon2" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 2</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>3. xxx
+          <br>
+          <input type="text" id="blank3_fill3" class="fill3">
+          <span id="fill3Icon3" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 3</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>4. xxx
+          <br>
+          <input type="text" id="blank4_fill3" class="fill3">
+          <span id="fill3Icon4" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 4</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>5. xxx
+          <br>
+          <input type="text" id="blank5_fill3" class="fill3">
+          <span id="fill3Icon5" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 5</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>6. xxx
+          <br>
+          <input type="text" id="blank6_fill3" class="fill3">
+          <span id="fill3Icon6" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 6</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>7. xxx
+          <br>
+          <input type="text" id="blank7_fill3" class="fill3">
+          <span id="fill3Icon7" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 7</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>8. xxx
+          <br>
+          <input type="text" id="blank8_fill3" class="fill3">
+          <span id="fill3Icon8" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 8</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>9. xxx
+          <br>
+          <input type="text" id="blank9_fill3" class="fill3">
+          <span id="fill3Icon9" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 9</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>10. xxx
+          <br>
+          <input type="text" id="blank10_fill3" class="fill3">
+          <span id="fill3Icon10" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 10</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>11. xxx
+          <br>
+          <input type="text" id="blank11_fill3" class="fill3">
+          <span id="fill3Icon11" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 11</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height">
+        <p>12. xxx
+          <br>
+          <input type="text" id="blank12_fill3" class="fill3">
+          <span id="fill3Icon12" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 12</i></p>
+        </p>
+      </div>
+      <br />
+
+      <button onclick="checkFill3()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Check answers</span>
+      </button>
+      <button onclick="showFill3()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Show answers</span>
+      </button>
+      <button onclick="resetFill3()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Reset</span>
+      </button>
+      <div id="resultFill3" class="p"></div>
+    </div>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- FILL IN THE BLANKS 4-->
+    <div>
+      <p><b>1. Fill-in-the-blanks 4</b></p>
+      <br />
+
+      <div class="fills-height fills-margin">
+        <p>1. xxx
+          <br>
+          <input type="text" id="blank1_fill4" class="fill4">
+          <span id="fill4Icon1" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 1</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>2. xxx
+          <br>
+          <input type="text" id="blank2_fill4" class="fill4">
+          <span id="fill4Icon2" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 2</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>3. xxx
+          <br>
+          <input type="text" id="blank3_fill4" class="fill4">
+          <span id="fill4Icon3" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 3</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>4. xxx
+          <br>
+          <input type="text" id="blank4_fill4" class="fill4">
+          <span id="fill4Icon4" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 4</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>5. xxx
+          <br>
+          <input type="text" id="blank5_fill4" class="fill4">
+          <span id="fill4Icon5" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 5</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>6. xxx
+          <br>
+          <input type="text" id="blank6_fill4" class="fill4">
+          <span id="fill4Icon6" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 6</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>7. xxx
+          <br>
+          <input type="text" id="blank7_fill4" class="fill4">
+          <span id="fill4Icon7" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 7</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>8. xxx
+          <br>
+          <input type="text" id="blank8_fill4" class="fill4">
+          <span id="fill4Icon8" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 8</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>9. xxx
+          <br>
+          <input type="text" id="blank9_fill4" class="fill4">
+          <span id="fill4Icon9" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 9</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>10. xxx
+          <br>
+          <input type="text" id="blank10_fill4" class="fill4">
+          <span id="fill4Icon10" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 10</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>11. xxx
+          <br>
+          <input type="text" id="blank11_fill4" class="fill4">
+          <span id="fill4Icon11" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 11</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height">
+        <p>12. xxx
+          <br>
+          <input type="text" id="blank12_fill4" class="fill4">
+          <span id="fill4Icon12" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 12</i></p>
+        </p>
+      </div>
+      <br />
+
+      <button onclick="checkFill4()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Check answers</span>
+      </button>
+      <button onclick="showFill4()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Show answers</span>
+      </button>
+      <button onclick="resetFill4()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Reset</span>
+      </button>
+      <div id="resultFill4" class="p"></div>
+    </div>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- FILL IN THE BLANKS (TEXT) -->
+    <div>
+      <p><b>1. Fill-in-the-blanks (text)</b></p>
+      <br />
+      <p><b>1. Write the correct answer.</b></p>
+      <br />
+
+      <p>xxx <sup>1</sup>
+        <input type="text" id="blank1_text" class="fill-text">
+        <span id="filltextIcon1" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>2</sup>
+        <input type="text" id="blank2_text" class="fill-text">
+        <span id="filltextIcon2" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>3</sup>
+        <input type="text" id="blank3_text" class="fill-text">
+        <span id="filltextIcon3" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>4</sup>
+        <input type="text" id="blank4_text" class="fill-text">
+        <span id="filltextIcon4" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>5</sup>
+        <input type="text" id="blank5_text" class="fill-text">
+        <span id="filltextIcon5" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>6</sup>
+        <input type="text" id="blank6_text" class="fill-text">
+        <span id="filltextIcon6" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>7</sup>
+        <input type="text" id="blank7_text" class="fill-text">
+        <span id="filltextIcon7" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>8</sup>
+        <input type="text" id="blank8_text" class="fill-text">
+        <span id="filltextIcon8" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>9</sup>
+        <input type="text" id="blank9_text" class="fill-text">
+        <span id="filltextIcon9" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>10</sup>
+        <input type="text" id="blank10_text" class="fill-text">
+        <span id="filltextIcon10" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>11</sup>
+        <input type="text" id="blank11_text" class="fill-text">
+        <span id="filltextIcon11" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>12</sup>
+        <input type="text" id="blank12_text" class="fill-text">
+        <span id="filltextIcon12" class="fill-text-icon"></span>
+        xxx.
+      </p>
+      <br>
+
+      <button onclick="checkFilltext()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Check answers</span>
+      </button>
+      <button onclick="showFilltext()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Show answers</span>
+      </button>
+      <button onclick="resetFilltext()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">Reset</span>
+      </button>
+      <div id="resultFilltext" class="p"></div>
+      <br>
+      <p class="color-green fill-text-answer"><i>
+          <p class="color-green fill-text-answer"> 1. Answer, 2. Answer, 3. Answer, 4. Answer, 5. Answer, 6. Answer,
+            7.
+            Answer, 8. Answer, 9. Answer, 10. Answer, 11. Answer, 12. Answer
+          <p class="color-green fill-text-answer">
+        </i></p>
+    </div>
   </main>
 
   <script>

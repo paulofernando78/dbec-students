@@ -93,20 +93,11 @@ window.onload = function () {
 };
 
 // SHUFFLE CARD
-const cardList = document.querySelector(".card-list");
-const shuffleButton = document.querySelector(".shuffle-button");
-const resetButton = document.querySelector(".reset-button");
 
-shuffleButton.addEventListener("click", () => {
-  cardList.classList.add("is-animated");
-});
-
-resetButton.addEventListener("click", () => {
-  cardList.classList.remove("is-animated");
-
-  resetButton.disabled = true;
-  shuffleButton.disabled = false;
-});
+const shuffleCard = document.querySelector(".shuffle-card")
+shuffleCard.addEventListener("click",(e) => {
+shuffleCard.classList.toggle("shuffle-card-flipped")
+})
 
 // EXERCISE XXX
 // CHECKBOXES 1
