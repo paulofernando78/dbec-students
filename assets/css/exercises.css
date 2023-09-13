@@ -1,9 +1,5 @@
 /* HANGMAN BUTTON */
 
-.container-hm {
-  margin-top: 20px;
-}
-
 .pushable-hm {
   position: relative;
   width: 40px;
@@ -109,6 +105,10 @@
   padding-top: 8.5px;
 }
 
+.grid-3-columns-word-guess div:nth-child(3) {
+  padding-bottom: 5px;
+}
+
 .flex-hm-letters {
   display: flex;
   flex-wrap: wrap;
@@ -145,7 +145,7 @@
   width: 300px;
   height: 300px;
   margin-left: 110px;
-  /* border: 2px solid black; */
+  border: 2px solid black;
 }
 
 .shuffle-card {

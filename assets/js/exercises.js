@@ -92,6 +92,22 @@ window.onload = function () {
   document.getElementById("message").textContent = "";
 };
 
+// Function to reset the game
+function resetHM() {
+  // Reinitialize the game
+  initializeGame();
+
+  // Clear the message
+  const messageElement = document.getElementById("message");
+  messageElement.textContent = "";
+}
+
+// Initialize the game on page load
+window.onload = function () {
+  initializeGame();
+  document.getElementById("message").textContent = "";
+};
+
 // SHUFFLE CARD
 
 const shuffleCard = document.querySelector(".shuffle-card")
