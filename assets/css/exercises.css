@@ -142,10 +142,16 @@
   width: 170px;
   height: 250px;
   background-color: rgb(104, 74, 74);
+  transition: transform 0.3s ease;
+  
 }
 
 .shuffle-card-question-mark {
   width: 80px;
+}
+
+.shuffle-card:hover {
+  transform: translateY(-5px);
 }
 
 .shuffled-card {
