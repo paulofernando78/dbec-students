@@ -114,8 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const cards = [
     { element: document.querySelector(".shuffle-card1"), flipped: false },
     { element: document.querySelector(".shuffle-card2"), flipped: false },
-    { element: document.querySelector(".shuffle-card3"), flipped: false },
-    { element: document.querySelector(".shuffle-card4"), flipped: false },
   ];
 
   cards.forEach((card, index) => {
