@@ -110,10 +110,20 @@ window.onload = function () {
 
 // SHUFFLE CARD
 
-const shuffleCard = document.querySelector(".shuffle-card")
-shuffleCard.addEventListener("click",(e) => {
-shuffleCard.classList.toggle("shuffle-card-flipped")
-})
+const shuffleCard1 = document.querySelector(".shuffle-card1");
+shuffleCard1.addEventListener("click", (e) => {
+  shuffleCard1.classList.toggle("shuffle-card-flipped1");
+});
+
+const shuffleCard2 = document.querySelector(".shuffle-card2");
+shuffleCard2.addEventListener("click", (e) => {
+  shuffleCard2.classList.toggle("shuffle-card-flipped2");
+});
+
+const shuffleCard3 = document.querySelector(".shuffle-card3");
+shuffleCard3.addEventListener("click", (e) => {
+  shuffleCard3.classList.toggle("shuffle-card-flipped3");
+});
 
 // EXERCISE XXX
 // CHECKBOXES 1
