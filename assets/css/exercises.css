@@ -225,6 +225,7 @@
   width: 100%;
   height: 265px;
   position: relative;
+  /* border: 2px solid; */
 }
 
 .shuffle-card-face {
@@ -261,9 +262,6 @@
 /* SHUFFLE CARDS # */
 
 .shuffle-card1 {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   transform-style: preserve-3d;
   transition: transform 0.8s ease;
   position: absolute;
@@ -308,7 +306,21 @@
   transform: rotateY(180deg) translateX(15px);
 }
 
+.shuffle-card4 {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  position: absolute;
+  top: 20px;
+  left: 52%;
+  z-index: 0;
+}
 
+.shuffle-card-flipped4 {
+  transform: rotateY(180deg) translateX(15px);
+}
 
 /* DRAG AND DROP */
 
