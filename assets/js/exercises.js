@@ -110,25 +110,23 @@ window.onload = function () {
 
 // SHUFFLE CARD
 
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = [
-    { element: document.querySelector(".shuffle-card1"), flipped: false },
-    { element: document.querySelector(".shuffle-card2"), flipped: false },
-  ];
+const ShuffleCard1 = document.querySelector(".shuffle-card1");
+const ShuffleCard2 = document.querySelector(".shuffle-card2");
+const ShuffleCard3 = document.querySelector(".shuffle-card3");
 
-  cards.forEach((card, index) => {
-    card.element.addEventListener("click", () => {
-      card.flipped = !card.flipped; // Toggle the flipped state
+ShuffleCard1.addEventListener("click", (e) => {
+  ShuffleCard1.classList.toggle("shuffle-card-flipped1");
+  ShuffleCard2.style.zIndex = 1; // Bring card 2 to the back when card 1 is flipped
+});
 
-      // Update the z-index based on the flipped state and index
-      card.element.style.zIndex = card.flipped
-        ? cards.length + 1
-        : cards.length - index;
+ShuffleCard2.addEventListener("click", (e) => {
+  ShuffleCard2.classList.toggle("shuffle-card-flipped2");
+  ShuffleCard2.style.zIndex = 3; // Bring card 2 to the front when card 2 is flipped
+});
 
-      // Apply the transform to flip the card
-      card.element.classList.toggle(`shuffle-card-flipped${index + 1}`);
-    });
-  });
+ShuffleCard3.addEventListener("click", (e) => {
+  ShuffleCard3.classList.toggle("shuffle-card-flipped3");
+  ShuffleCard3.style.zIndex = 3; // Bring card 2 to the front when card 2 is flipped
 });
 
 // EXERCISE XXX

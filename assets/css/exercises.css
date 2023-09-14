@@ -271,27 +271,37 @@
   position: absolute;
   top: 5px;
   left: 52%;
+  z-index: 2;
 }
 
 .shuffle-card-flipped1 {
   transform: rotateY(-180deg) translateX(15px);
-  z-index: 1;
 }
 
 .shuffle-card2 {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   transform-style: preserve-3d;
   transition: transform 1s ease;
   position: absolute;
   top: 10px;
   left: 52%;
+  z-index: 1;
 }
 
 .shuffle-card-flipped2 {
   transform: rotateY(-180deg) translateX(15px);
+}
+
+.shuffle-card3 {
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+  position: absolute;
+  top: 15px;
+  left: 52%;
   z-index: 0;
+}
+
+.shuffle-card-flipped3 {
+  transform: rotateY(-180deg) translateX(15px);
 }
 
 /* DRAG AND DROP */
