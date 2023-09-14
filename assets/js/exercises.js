@@ -110,19 +110,26 @@ window.onload = function () {
 
 // SHUFFLE CARD
 
-const shuffleCard1 = document.querySelector(".shuffle-card1");
-shuffleCard1.addEventListener("click", (e) => {
-  shuffleCard1.classList.toggle("shuffle-card-flipped1");
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = [
+    { element: document.querySelector(".shuffle-card1"), flipped: false },
+    { element: document.querySelector(".shuffle-card2"), flipped: false },
+    { element: document.querySelector(".shuffle-card3"), flipped: false },
+  ];
 
-const shuffleCard2 = document.querySelector(".shuffle-card2");
-shuffleCard2.addEventListener("click", (e) => {
-  shuffleCard2.classList.toggle("shuffle-card-flipped2");
-});
+  cards.forEach((card, index) => {
+    card.element.addEventListener("click", () => {
+      card.flipped = !card.flipped; // Toggle the flipped state
 
-const shuffleCard3 = document.querySelector(".shuffle-card3");
-shuffleCard3.addEventListener("click", (e) => {
-  shuffleCard3.classList.toggle("shuffle-card-flipped3");
+      // Update the z-index based on the flipped state and index
+      card.element.style.zIndex = card.flipped
+        ? cards.length + 1
+        : cards.length - index;
+
+      // Apply the transform to flip the card
+      card.element.classList.toggle(`shuffle-card-flipped${index + 1}`);
+    });
+  });
 });
 
 // EXERCISE XXX
