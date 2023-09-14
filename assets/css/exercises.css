@@ -242,6 +242,10 @@
   width: 80px;
 }
 
+.card-perspective {
+  perspective: 1000px;
+}
+
 .shuffle-card-front {
   border: var(--img-border);
   border-radius: 4px;
@@ -271,7 +275,7 @@
 }
 
 .shuffle-card-flipped1 {
-  transform: rotateY(180deg) translateX(15px);
+  transform: rotateY(-180deg) translateX(15px);
 }
 
 .shuffle-card2 {
@@ -287,7 +291,7 @@
 }
 
 .shuffle-card-flipped2 {
-  transform: rotateY(180deg) translateX(15px);
+  transform: rotateY(-180deg) translateX(15px);
 }
 
 .shuffle-card3 {
@@ -303,7 +307,7 @@
 }
 
 .shuffle-card-flipped3 {
-  transform: rotateY(180deg) translateX(15px);
+  transform: rotateY(-180deg) translateX(15px);
 }
 
 .shuffle-card4 {
@@ -319,7 +323,7 @@
 }
 
 .shuffle-card-flipped4 {
-  transform: rotateY(180deg) translateX(15px);
+  transform: rotateY(-180deg) translateX(15px);
 }
 
 /* DRAG AND DROP */
