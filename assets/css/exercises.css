@@ -1,10 +1,9 @@
-
 :root {
   --icon-correct: invert(35%) sepia(15%) saturate(2476%) hue-rotate(86deg) brightness(110%) contrast(119%);
-    --icon-incorrect: invert(20%) sepia(50%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(119%);
-    --card-texture: url('../img/card-texture.jpg');
-    --card-border: 5px solid white;
---shuffle-card-translate: translateX(15px);
+  --icon-incorrect: invert(20%) sepia(50%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(119%);
+  --card-texture: url('../img/card-texture.jpg');
+  --card-border: 5px solid white;
+  --shuffle-card-translate: translateX(15px);
 }
 
 /* HANGMAN BUTTON */
@@ -215,6 +214,89 @@
   transform: rotateY(180deg);
 }
 
+/* !!!!!!! */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 150px;
+  height: 250px;
+  margin: 0 10px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: var(--img-border);
+  border-radius: 4px;
+  box-shadow: 0 0 3px;
+  background-image: url(../../assets/img/container-title-background.png);
+  background-size: cover;
+  background-clip: content-box;
+}
+
+.shuffle-card-question-mark {
+  width: 80px;
+}
+
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: var(--img-border);
+  border-radius: 4px;
+  box-shadow: 0 0 3px;
+  background-image: url(../../assets/img/container-title-background.png);
+  background-size: cover;
+  background-clip: content-box;
+  transform: rotateY(180deg);
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
 /* SHUFFLE CARDS */
 
 .grid-2-columns-shuffle-cards {
@@ -227,7 +309,7 @@
   background-size: cover;
   margin: auto;
   width: 380px;
-  padding: 20px;
+  padding: 19px 20px 20px 20px;
   border-radius: 4px;
   box-shadow: 0 0 3px;
 }
@@ -252,9 +334,7 @@
 
 }
 
-.shuffle-card-question-mark {
-  width: 80px;
-}
+
 
 .card-perspective {
   perspective: 1000px;
@@ -269,7 +349,7 @@
   border: var(--card-border);
 
   -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+  transform: scaleX(-1);
   /* transform: rotateY(180deg); */
 }
 

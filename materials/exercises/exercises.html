@@ -260,6 +260,50 @@
     <hr>
     <br>
 
+<!-- SHUFFLE CARD -->
+
+<div class="card-container">
+  <div class="card" onclick="toggleCard(0)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark" class="shuffle-card-question-mark">
+      </div>
+      <div class="card-back">
+        <p>Back 1</p>
+      </div>
+    </div>
+  </div>
+  <div class="card" onclick="toggleCard(1)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark" class="shuffle-card-question-mark">
+      </div>
+      <div class="card-back">
+        <p>Back 2</p>
+      </div>
+    </div>
+  </div>
+  <div class="card" onclick="toggleCard(2)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark" class="shuffle-card-question-mark">
+      </div>
+      <div class="card-back">
+        <p>Back 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button onclick="shuffleCards()" class="pushable">
+  <span class="shadow"></span>
+  <span class="edge"></span>
+  <span class="front">
+    Shuffle
+  </span>
+</button>
+
+
     <!-- SHUFFLE CARDS -->
     <h1>SHUFFLE CARDS</h1>
     <br>
@@ -269,7 +313,7 @@
       <div class="shuffle-cards-container">
         <div class="card-perspective">
           <!-- Card 1 -->
-          <div class="shuffle-card1 shuffle-card-flipped1">
+          <div class="shuffle-card shuffle-card1 shuffle-card-flipped1">
             <div class="shuffle-card-face shuffle-card-front">
               <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
             </div>
@@ -279,7 +323,7 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="shuffle-card2 shuffle-card-flipped2">
+          <div class="shuffle-card shuffle-card2 shuffle-card-flipped2">
             <div class="shuffle-card-face shuffle-card-front">
               <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
             </div>
@@ -289,7 +333,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="shuffle-card3 shuffle-card-flipped3">
+          <div class="shuffle-card shuffle-card3 shuffle-card-flipped3">
             <div class="shuffle-card-face shuffle-card-front">
               <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
             </div>
@@ -299,7 +343,7 @@
           </div>
 
           <!-- Card 4 -->
-          <div class="shuffle-card4 shuffle-card-flipped4">
+          <div class="shuffle-card shuffle-card4 shuffle-card-flipped4">
             <div class="shuffle-card-face shuffle-card-front">
               <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
             </div>
@@ -309,7 +353,7 @@
           </div>
 
           <!-- Card 5 -->
-          <div class="shuffle-card5 shuffle-card-flipped5">
+          <div class="shuffle-card shuffle-card5 shuffle-card-flipped5">
             <div class="shuffle-card-face shuffle-card-front">
               <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
             </div>
@@ -319,7 +363,7 @@
           </div>
 
           <!-- Card 6 -->
-          <div class="shuffle-card6 shuffle-card-flipped6">
+          <div class="shuffle-card shuffle-card6 shuffle-card-flipped6">
             <div class="shuffle-card-face shuffle-card-front">
               <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
             </div>
@@ -329,7 +373,7 @@
           </div>
 
           <!-- Card 7 -->
-          <div class="shuffle-card7 shuffle-card-flipped7">
+          <div class="shuffle-card shuffle-card7 shuffle-card-flipped7">
             <div class="shuffle-card-face shuffle-card-front">
               <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
             </div>
@@ -339,7 +383,7 @@
           </div>
 
           <!-- Card 8 -->
-          <div class="shuffle-card8 shuffle-card-flipped8">
+          <div class="shuffle-card shuffle-card8 shuffle-card-flipped8">
             <div class="shuffle-card-face shuffle-card-front">
               <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
             </div>
@@ -349,7 +393,7 @@
           </div>
 
           <!-- Card 9 -->
-          <div class="shuffle-card9 shuffle-card-flipped9">
+          <div class="shuffle-card shuffle-card9 shuffle-card-flipped9">
             <div class="shuffle-card-face shuffle-card-front">
               <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
             </div>
@@ -359,7 +403,7 @@
           </div>
 
           <!-- Card 10 -->
-          <div class="shuffle-card10 shuffle-card-flipped10">
+          <div class="shuffle-card shuffle-card10 shuffle-card-flipped10">
             <div class="shuffle-card-face shuffle-card-front">
               <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
             </div>
@@ -373,19 +417,11 @@
 
       <div class="flex-center">
 
-        <button onclick="cardstShuffle()" class="pushable">
+        <button onclick="shuffleCards()" class="pushable">
           <span class="shadow"></span>
           <span class="edge"></span>
           <span class="front">
             Shuffle
-          </span>
-        </button>
-        <br>
-        <button onclick="resetShuffle()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">
-            Reset
           </span>
         </button>
       </div>

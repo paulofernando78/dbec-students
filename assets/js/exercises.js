@@ -102,11 +102,39 @@ function resetHM() {
   messageElement.textContent = "";
 }
 
+
+
+
+// !!!!!!!!!!!!!!!!!!
+
 // Initialize the game on page load
 window.onload = function () {
   initializeGame();
   document.getElementById("message").textContent = "";
 };
+
+      const cards = document.querySelectorAll(".card");
+
+      function toggleCard(index) {
+        cards[index].querySelector(".card-inner").style.transform =
+          cards[index].querySelector(".card-inner").style.transform ===
+          "rotateY(180deg)"
+            ? "rotateY(0deg)"
+            : "rotateY(180deg)";
+      }
+
+      function shuffleCards() {
+        const container = document.querySelector(".card-container");
+        for (let i = container.children.length; i >= 0; i--) {
+          container.appendChild(container.children[(Math.random() * i) | 0]);
+        }
+
+        // Reset all cards to the front side
+        cards.forEach((card) => {
+          card.querySelector(".card-inner").style.transform = "rotateY(0deg)";
+        });
+      }
+
 
 // SHUFFLE CARD
 
@@ -206,36 +234,18 @@ ShuffleCard10.addEventListener("click", (e) => {
   ShuffleCard10.style.zIndex = currentZIndex;
 });
 
-// Define the resetShuffle function
-function resetShuffle() {
-  // Remove the "flipped" class from all shuffle cards
-  ShuffleCard1.classList.remove("shuffle-card-flipped1");
-  ShuffleCard2.classList.remove("shuffle-card-flipped2");
-  ShuffleCard3.classList.remove("shuffle-card-flipped3");
-  ShuffleCard4.classList.remove("shuffle-card-flipped4");
-  ShuffleCard5.classList.remove("shuffle-card-flipped5");
-  ShuffleCard6.classList.remove("shuffle-card-flipped6");
-  ShuffleCard7.classList.remove("shuffle-card-flipped7");
-  ShuffleCard8.classList.remove("shuffle-card-flipped8");
-  ShuffleCard9.classList.remove("shuffle-card-flipped9");
-  ShuffleCard10.classList.remove("shuffle-card-flipped10");
-
-  // Reset the z-index for all shuffle cards to the initial value (10)
-  ShuffleCard1.style.zIndex = 10;
-  ShuffleCard2.style.zIndex = 10;
-  ShuffleCard3.style.zIndex = 10;
-  ShuffleCard4.style.zIndex = 10;
-  ShuffleCard5.style.zIndex = 10;
-  ShuffleCard6.style.zIndex = 10;
-  ShuffleCard7.style.zIndex = 10;
-  ShuffleCard8.style.zIndex = 10;
-  ShuffleCard9.style.zIndex = 10;
-  ShuffleCard10.style.zIndex = 10;
-}
-
-// Attach the resetShuffle function to the button's onclick event
-const resetButton = document.querySelector(".pushable button");
-resetButton.addEventListener("click", resetShuffle);
+const shuffleCardsArray = [
+  document.querySelector(".shuffle-card1"),
+  document.querySelector(".shuffle-card2"),
+  document.querySelector(".shuffle-card3"),
+  document.querySelector(".shuffle-card4"),
+  document.querySelector(".shuffle-card5"),
+  document.querySelector(".shuffle-card6"),
+  document.querySelector(".shuffle-card7"),
+  document.querySelector(".shuffle-card8"),
+  document.querySelector(".shuffle-card9"),
+  document.querySelector(".shuffle-card10"),
+];
 
 // EXERCISE XXX
 // CHECKBOXES 1
