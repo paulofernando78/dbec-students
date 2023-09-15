@@ -115,16 +115,46 @@ const ShuffleCard2 = document.querySelector(".shuffle-card2");
 const ShuffleCard3 = document.querySelector(".shuffle-card3");
 const ShuffleCard4 = document.querySelector(".shuffle-card4");
 
+const cards = ["card1", "card2", "card3", "card4"];
+let count = 1;
+let increasing = true;
+
+function resetStyles() {
+  cards.forEach((card, index) => {
+    const shuffleCard = document.getElementById(card);
+    shuffleCard.style.zIndex = increasing ? cards.length - index : index + 1;
+  });
+}
+
+function handleCardClick() {
+  if (count === cards.length * 2) {
+    count = 1;
+    increasing = !increasing;
+    resetStyles();
+  } else {
+    count++;
+  }
+}
+
+cards.forEach((card) => {
+  const shuffleCard = document.getElementById(card);
+  shuffleCard.addEventListener("click", handleCardClick);
+});
+
+// Inicializar os estilos iniciais
+resetStyles();
+
+
 ShuffleCard1.addEventListener("click", (e) => {
   // Toggle the flipped class
   ShuffleCard1.classList.toggle("shuffle-card-flipped1");
 
   // If the card is flipped, bring it to the front
   if (ShuffleCard1.classList.contains("shuffle-card-flipped1")) {
-    ShuffleCard1.style.zIndex = 7;
+    ShuffleCard1.style.zIndex = 15;
   } else {
     // If the card is flipped back, reset the z-index
-    ShuffleCard1.style.zIndex = 4;
+    ShuffleCard1.style.zIndex = 8;
   }
 });
 
@@ -132,9 +162,9 @@ ShuffleCard2.addEventListener("click", (e) => {
   ShuffleCard2.classList.toggle("shuffle-card-flipped2");
 
   if (ShuffleCard2.classList.contains("shuffle-card-flipped2")) {
-    ShuffleCard2.style.zIndex = 6;
+    ShuffleCard2.style.zIndex = 14;
   } else {
-    ShuffleCard2.style.zIndex = 4;
+    ShuffleCard2.style.zIndex = 9;
 
   }
 });
@@ -143,9 +173,9 @@ ShuffleCard3.addEventListener("click", (e) => {
   ShuffleCard3.classList.toggle("shuffle-card-flipped3");
 
   if (ShuffleCard3.classList.contains("shuffle-card-flipped3")) {
-    ShuffleCard3.style.zIndex = 5;
+    ShuffleCard3.style.zIndex = 13;
   } else {
-    ShuffleCard3.style.zIndex = 4;
+    ShuffleCard3.style.zIndex = 10;
   }
 });
 
@@ -153,9 +183,9 @@ ShuffleCard4.addEventListener("click", (e) => {
   ShuffleCard4.classList.toggle("shuffle-card-flipped4");
 
   if (ShuffleCard4.classList.contains("shuffle-card-flipped4")) {
-    ShuffleCard4.style.zIndex = 4;
+    ShuffleCard4.style.zIndex = 12;
   } else {
-    ShuffleCard4.style.zIndex = 4;
+    ShuffleCard4.style.zIndex = 11;
   }
 });
 
