@@ -206,6 +206,37 @@ ShuffleCard10.addEventListener("click", (e) => {
   ShuffleCard10.style.zIndex = currentZIndex;
 });
 
+// Define the resetShuffle function
+function resetShuffle() {
+  // Remove the "flipped" class from all shuffle cards
+  ShuffleCard1.classList.remove("shuffle-card-flipped1");
+  ShuffleCard2.classList.remove("shuffle-card-flipped2");
+  ShuffleCard3.classList.remove("shuffle-card-flipped3");
+  ShuffleCard4.classList.remove("shuffle-card-flipped4");
+  ShuffleCard5.classList.remove("shuffle-card-flipped5");
+  ShuffleCard6.classList.remove("shuffle-card-flipped6");
+  ShuffleCard7.classList.remove("shuffle-card-flipped7");
+  ShuffleCard8.classList.remove("shuffle-card-flipped8");
+  ShuffleCard9.classList.remove("shuffle-card-flipped9");
+  ShuffleCard10.classList.remove("shuffle-card-flipped10");
+
+  // Reset the z-index for all shuffle cards to the initial value (10)
+  ShuffleCard1.style.zIndex = 10;
+  ShuffleCard2.style.zIndex = 10;
+  ShuffleCard3.style.zIndex = 10;
+  ShuffleCard4.style.zIndex = 10;
+  ShuffleCard5.style.zIndex = 10;
+  ShuffleCard6.style.zIndex = 10;
+  ShuffleCard7.style.zIndex = 10;
+  ShuffleCard8.style.zIndex = 10;
+  ShuffleCard9.style.zIndex = 10;
+  ShuffleCard10.style.zIndex = 10;
+}
+
+// Attach the resetShuffle function to the button's onclick event
+const resetButton = document.querySelector(".pushable button");
+resetButton.addEventListener("click", resetShuffle);
+
 // EXERCISE XXX
 // CHECKBOXES 1
 function checkCheckboxes1() {

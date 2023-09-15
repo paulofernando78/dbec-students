@@ -260,7 +260,7 @@
   border-radius: 4px;
   box-shadow: 0 0 3px;
   background-image: url(../../assets/img/container-title-background.png);
-  transform: rotateY(180deg);
+  /* transform: rotateY(180deg); */
 }
 
 .shuffle-card-back {
