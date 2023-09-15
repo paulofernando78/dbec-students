@@ -1,3 +1,12 @@
+
+:root {
+  --icon-correct: invert(35%) sepia(15%) saturate(2476%) hue-rotate(86deg) brightness(110%) contrast(119%);
+    --icon-incorrect: invert(20%) sepia(50%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(119%);
+    --card-texture: url('../img/card-texture.jpg');
+    --card-border: 5px solid white;
+--shuffle-card-translate: translateX(15px);
+}
+
 /* HANGMAN BUTTON */
 
 .pushable-hm {
@@ -217,16 +226,18 @@
   background-image: url(../img/shuffle-card-table.jpg);
   background-size: cover;
   margin: auto;
-  width: 55%;
-  padding: 10px;
+  width: 380px;
+  padding: 20px;
   border-radius: 4px;
   box-shadow: 0 0 3px;
 }
 
 .shuffle-cards-container {
-  /* width: 100%; */
+  width: 100%;
   height: 285px;
   position: relative;
+  padding-left: 2px;
+
   /* border: 2px solid; */
 }
 
@@ -280,12 +291,12 @@
   transition: transform 1s ease;
   position: absolute;
   top: 5px;
-  /* left: 52%; */
+  left: 52%;
   z-index: 10;
 }
 
 .shuffle-card-flipped1 {
-  transform: rotateY(-180deg) translateX(15px);
+  transform: rotateY(-180deg) var(--shuffle-card-translate);
 }
 
 .shuffle-card2 {
@@ -298,7 +309,7 @@
 }
 
 .shuffle-card-flipped2 {
-  transform: rotateY(-180deg) translateX(15px);
+  transform: rotateY(-180deg) var(--shuffle-card-translate);
 }
 
 .shuffle-card3 {
@@ -311,7 +322,7 @@
 }
 
 .shuffle-card-flipped3 {
-  transform: rotateY(-180deg) translateX(15px);
+  transform: rotateY(-180deg) var(--shuffle-card-translate);
 }
 
 .shuffle-card4 {
@@ -324,7 +335,7 @@
 }
 
 .shuffle-card-flipped4 {
-  transform: rotateY(-180deg) translateX(15px);
+  transform: rotateY(-180deg) var(--shuffle-card-translate);
 }
 
 .shuffle-card5 {
@@ -337,7 +348,7 @@
 }
 
 .shuffle-card-flipped5 {
-  transform: rotateY(-180deg) translateX(15px);
+  transform: rotateY(-180deg) var(--shuffle-card-translate);
 }
 
 .shuffle-card6 {
@@ -350,7 +361,7 @@
 }
 
 .shuffle-card-flipped6 {
-  transform: rotateY(-180deg) translateX(15px);
+  transform: rotateY(-180deg) var(--shuffle-card-translate);
 }
 
 .shuffle-card7 {
@@ -363,7 +374,7 @@
 }
 
 .shuffle-card-flipped7 {
-  transform: rotateY(-180deg) translateX(15px);
+  transform: rotateY(-180deg) var(--shuffle-card-translate);
 }
 
 .shuffle-card8 {
@@ -376,7 +387,7 @@
 }
 
 .shuffle-card-flipped8 {
-  transform: rotateY(-180deg) translateX(15px);
+  transform: rotateY(-180deg) var(--shuffle-card-translate);
 }
 
 .shuffle-card9 {
@@ -389,7 +400,7 @@
 }
 
 .shuffle-card-flipped9 {
-  transform: rotateY(-180deg) translateX(15px);
+  transform: rotateY(-180deg) var(--shuffle-card-translate);
 }
 
 .shuffle-card10 {
@@ -402,7 +413,7 @@
 }
 
 .shuffle-card-flipped10 {
-  transform: rotateY(-180deg) translateX(15px);
+  transform: rotateY(-180deg) var(--shuffle-card-translate);
 }
 
 /* DRAG AND DROP */
@@ -982,7 +993,25 @@ select option {
 
   .grid-2-columns-shuffle-cards {
     grid-template-columns: 1fr;
-    width: 100%;
+    width: 70%;
   }
 
 }
+
+/* @media (max-width: 610px) {
+
+  .grid-2-columns-shuffle-cards {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  .grid-2-columns-shuffle-cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+} */
