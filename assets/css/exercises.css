@@ -210,24 +210,18 @@
 
 .grid-2-columns-shuffle-cards {
   display: grid;
-  grid-template-columns: 200px 350px 110px;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
-  gap: 20px;
+  gap: 30px;
   background-image: url(../img/shuffle-card-table.jpg);
   background-size: cover;
   margin: auto;
-  width: 75%;
+  width: 55%;
   padding: 10px;
-
   border-radius: 4px;
   box-shadow: 0 0 3px;
 }
-
-/* .grid-2-columns-shuffle-cards div:nth-child(2) {
-  display: flex;
-  align-items: center;
-} */
 
 .shuffle-cards-container {
   /* width: 100%; */
@@ -244,7 +238,7 @@
   text-align: center;
   width: 160px;
   height: 230px;
-  
+
 }
 
 .shuffle-card-question-mark {
@@ -259,7 +253,12 @@
   border: var(--img-border);
   border-radius: 4px;
   box-shadow: 0 0 3px;
-  background-image: url(../../assets/img/container-title-background.png);
+  background-image: url(../../assets/img/card-texture.jpg);
+  background-size: cover;
+  border: var(--card-border);
+
+  -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   /* transform: rotateY(180deg); */
 }
 
@@ -268,7 +267,9 @@
   border: var(--img-border);
   border-radius: 4px;
   box-shadow: 0 0 3px;
-  background-image: url(../../assets/img/container-title-background.png);
+  background-image: url(../../assets/img/card-texture.jpg);
+  background-size: cover;
+  border: var(--card-border);
   backface-visibility: hidden;
 }
 
@@ -279,7 +280,7 @@
   transition: transform 1s ease;
   position: absolute;
   top: 5px;
-  left: 52%;
+  /* left: 52%; */
   z-index: 10;
 }
 
