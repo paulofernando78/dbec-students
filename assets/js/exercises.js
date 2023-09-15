@@ -114,6 +114,7 @@ const ShuffleCard1 = document.querySelector(".shuffle-card1");
 const ShuffleCard2 = document.querySelector(".shuffle-card2");
 const ShuffleCard3 = document.querySelector(".shuffle-card3");
 const ShuffleCard4 = document.querySelector(".shuffle-card4");
+const ShuffleCard5 = document.querySelector(".shuffle-card5");
 
 let currentZIndex = 4; // Initialize the current z-index
 
@@ -150,6 +151,14 @@ ShuffleCard4.addEventListener("click", (e) => {
 
   ShuffleCard4.classList.toggle("shuffle-card-flipped4");
   ShuffleCard4.style.zIndex = currentZIndex;
+});
+
+ShuffleCard5.addEventListener("click", (e) => {
+  // Increment the current z-index
+  currentZIndex++;
+
+  ShuffleCard5.classList.toggle("shuffle-card-flipped5");
+  ShuffleCard5.style.zIndex = currentZIndex;
 });
 
 // EXERCISE XXX
