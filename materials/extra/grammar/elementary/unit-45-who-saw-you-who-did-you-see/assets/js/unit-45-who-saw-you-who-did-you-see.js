@@ -6,8 +6,8 @@ function checkFill1() {
     blank2_fill1: "What felt off the shelf?",
     blank3_fill1: "Who wants to see you?",
     blank4_fill1: "Who took your umbrella?",
-    blank5_fill1: "What made you you sick?",
-    blank6_fill1: "Who's coming.",
+    blank5_fill1: "What made you sick?",
+    blank6_fill1: "Who's coming?",
   };
 
   var fill1Icon1 = document.getElementById("fill1Icon1");
