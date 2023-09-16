@@ -216,204 +216,65 @@
 
 /* SHUFFLE CARD */
 
-/* SHUFFLE CARDS */
-
-.grid-2-columns-shuffle-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
-  gap: 30px;
-  background-image: url(../img/shuffle-card-table.jpg);
-  background-size: cover;
-  margin: auto;
-  width: 380px;
-  padding: 19px 20px 20px 20px;
-  border-radius: 4px;
-  box-shadow: 0 0 3px;
+.card-container {
+  display: flex;
+  justify-content: center;
+  border: 2px solid;
 }
 
-.shuffle-cards-container {
+.card {
+  width: 100px;
+  height: 150px;
+  margin: 0 10px;
+  perspective: 1000px;
+  cursor: pointer;
+  border: 2px solid red;
+}
+
+.card-inner {
   width: 100%;
-  height: 285px;
-  position: relative;
-  padding-left: 2px;
-
-  /* border: 2px solid; */
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  border: 2px solid blue;
 }
 
-.shuffle-card-face {
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
   position: absolute;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  width: 160px;
-  height: 230px;
-}
-
-.card-perspective {
-  perspective: 1000px;
-}
-
-.shuffle-card-front {
-  border: var(--img-border);
-  border-radius: 4px;
-  box-shadow: 0 0 3px;
-  background-image: url(../../assets/img/card-texture.jpg);
-  background-size: cover;
-  border: var(--card-border);
-
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  /* transform: rotateY(180deg); */
-}
-
-.shuffle-card-question-mark {
-  width: 50%;
-}
-
-.shuffle-card-back {
-  padding: 5px;
-  border: var(--img-border);
-  border-radius: 4px;
-  box-shadow: 0 0 3px;
-  background-image: url(../../assets/img/card-texture.jpg);
-  background-size: cover;
-  border: var(--card-border);
+  align-items: center;
   backface-visibility: hidden;
 }
 
-/* SHUFFLE CARDS # */
+.card-front {
+  border: var(--card-border);
+    background-image: var(--card-texture);
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
+}
 
-.shuffle-card1 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 5px;
-  left: 52%;
-  z-index: 10;
+.card-back {
+  border: var(--card-border);
+    background-image: var(--card-texture);
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
 }
 
 .shuffle-card-flipped1 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card2 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 10px;
-  left: 52%;
-  z-index: 9;
+  
 }
 
 .shuffle-card-flipped2 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card3 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 15px;
-  left: 52%;
-  z-index: 8;
+  /* position: absolute;
+  left: -50px; */
 }
 
 .shuffle-card-flipped3 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card4 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 20px;
-  left: 52%;
-  z-index: 7;
-}
-
-.shuffle-card-flipped4 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card5 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 25px;
-  left: 52%;
-  z-index: 6;
-}
-
-.shuffle-card-flipped5 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card6 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 30px;
-  left: 52%;
-  z-index: 5;
-}
-
-.shuffle-card-flipped6 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card7 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 35px;
-  left: 52%;
-  z-index: 4;
-}
-
-.shuffle-card-flipped7 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card8 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 40px;
-  left: 52%;
-  z-index: 3;
-}
-
-.shuffle-card-flipped8 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card9 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 45px;
-  left: 52%;
-  z-index: 2;
-}
-
-.shuffle-card-flipped9 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card10 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 50px;
-  left: 52%;
-  z-index: 1;
-}
-
-.shuffle-card-flipped10 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
+  
 }
 
 /* DRAG AND DROP */
