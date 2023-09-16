@@ -102,10 +102,7 @@ function resetHM() {
   messageElement.textContent = "";
 }
 
-
-
-
-// !!!!!!!!!!!!!!!!!!
+// SHUFFLE CARDS
 
 // Initialize the game on page load
 window.onload = function () {
@@ -113,139 +110,27 @@ window.onload = function () {
   document.getElementById("message").textContent = "";
 };
 
-      const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".shuffle-card");
 
-      function toggleCard(index) {
-        cards[index].querySelector(".card-inner").style.transform =
-          cards[index].querySelector(".card-inner").style.transform ===
-          "rotateY(180deg)"
-            ? "rotateY(0deg)"
-            : "rotateY(180deg)";
-      }
+function toggleCard(index) {
+  cards[index].querySelector(".shuffle-card-inner").style.transform =
+    cards[index].querySelector(".shuffle-card-inner").style.transform ===
+    "rotateY(180deg)"
+      ? "rotateY(0deg)"
+      : "rotateY(180deg)";
+}
 
-      function shuffleCards() {
-        const container = document.querySelector(".card-container");
-        for (let i = container.children.length; i >= 0; i--) {
-          container.appendChild(container.children[(Math.random() * i) | 0]);
-        }
+function shuffleCards() {
+  const container = document.querySelector(".shuffle-card-container");
+  for (let i = container.children.length; i >= 0; i--) {
+    container.appendChild(container.children[(Math.random() * i) | 0]);
+  }
 
-        // Reset all cards to the front side
-        cards.forEach((card) => {
-          card.querySelector(".card-inner").style.transform = "rotateY(0deg)";
-        });
-      }
-
-
-// SHUFFLE CARD
-
-const ShuffleCard1 = document.querySelector(".shuffle-card1");
-const ShuffleCard2 = document.querySelector(".shuffle-card2");
-const ShuffleCard3 = document.querySelector(".shuffle-card3");
-const ShuffleCard4 = document.querySelector(".shuffle-card4");
-const ShuffleCard5 = document.querySelector(".shuffle-card5");
-const ShuffleCard6 = document.querySelector(".shuffle-card6");
-const ShuffleCard7 = document.querySelector(".shuffle-card7");
-const ShuffleCard8 = document.querySelector(".shuffle-card8");
-const ShuffleCard9 = document.querySelector(".shuffle-card9");
-const ShuffleCard10 = document.querySelector(".shuffle-card10");
-
-let currentZIndex = 10; // Initialize the current z-index
-
-ShuffleCard1.addEventListener("click", (e) => {
-  // Increment the current z-index
-  currentZIndex++;
-
-  // Toggle the flipped class
-  ShuffleCard1.classList.toggle("shuffle-card-flipped1");
-
-  // Set the updated z-index
-  ShuffleCard1.style.zIndex = currentZIndex;
-});
-
-ShuffleCard2.addEventListener("click", (e) => {
-  // Increment the current z-index
-  currentZIndex++;
-
-  ShuffleCard2.classList.toggle("shuffle-card-flipped2");
-  ShuffleCard2.style.zIndex = currentZIndex;
-});
-
-ShuffleCard3.addEventListener("click", (e) => {
-  // Increment the current z-index
-  currentZIndex++;
-
-  ShuffleCard3.classList.toggle("shuffle-card-flipped3");
-  ShuffleCard3.style.zIndex = currentZIndex;
-});
-
-ShuffleCard4.addEventListener("click", (e) => {
-  // Increment the current z-index
-  currentZIndex++;
-
-  ShuffleCard4.classList.toggle("shuffle-card-flipped4");
-  ShuffleCard4.style.zIndex = currentZIndex;
-});
-
-ShuffleCard5.addEventListener("click", (e) => {
-  // Increment the current z-index
-  currentZIndex++;
-
-  ShuffleCard5.classList.toggle("shuffle-card-flipped5");
-  ShuffleCard5.style.zIndex = currentZIndex;
-});
-
-ShuffleCard6.addEventListener("click", (e) => {
-  // Increment the current z-index
-  currentZIndex++;
-
-  ShuffleCard6.classList.toggle("shuffle-card-flipped6");
-  ShuffleCard6.style.zIndex = currentZIndex;
-});
-
-ShuffleCard7.addEventListener("click", (e) => {
-  // Increment the current z-index
-  currentZIndex++;
-
-  ShuffleCard7.classList.toggle("shuffle-card-flipped7");
-  ShuffleCard7.style.zIndex = currentZIndex;
-});
-
-ShuffleCard8.addEventListener("click", (e) => {
-  // Increment the current z-index
-  currentZIndex++;
-
-  ShuffleCard8.classList.toggle("shuffle-card-flipped8");
-  ShuffleCard8.style.zIndex = currentZIndex;
-});
-
-ShuffleCard9.addEventListener("click", (e) => {
-  // Increment the current z-index
-  currentZIndex++;
-
-  ShuffleCard9.classList.toggle("shuffle-card-flipped9");
-  ShuffleCard9.style.zIndex = currentZIndex;
-});
-
-ShuffleCard10.addEventListener("click", (e) => {
-  // Increment the current z-index
-  currentZIndex++;
-
-  ShuffleCard10.classList.toggle("shuffle-card-flipped10");
-  ShuffleCard10.style.zIndex = currentZIndex;
-});
-
-const shuffleCardsArray = [
-  document.querySelector(".shuffle-card1"),
-  document.querySelector(".shuffle-card2"),
-  document.querySelector(".shuffle-card3"),
-  document.querySelector(".shuffle-card4"),
-  document.querySelector(".shuffle-card5"),
-  document.querySelector(".shuffle-card6"),
-  document.querySelector(".shuffle-card7"),
-  document.querySelector(".shuffle-card8"),
-  document.querySelector(".shuffle-card9"),
-  document.querySelector(".shuffle-card10"),
-];
+  // Reset all cards to the front side
+  cards.forEach((card) => {
+    card.querySelector(".shuffle-card-inner").style.transform = "rotateY(0deg)";
+  });
+}
 
 // EXERCISE XXX
 // CHECKBOXES 1

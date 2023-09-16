@@ -214,30 +214,33 @@
   transform: rotateY(180deg);
 }
 
-/* !!!!!!! */
+/* SHUFFLE CARD */
 
-.card-container {
+.shuffle-card-container {
   display: flex;
   justify-content: center;
+  border: 2px solid;
+  position: relative;
 }
 
-.card {
+.shuffle-card {
   width: 150px;
   height: 250px;
-  margin: 0 10px;
   perspective: 1000px;
   cursor: pointer;
+  border: 2px solid red;
 }
 
-.card-inner {
+.shuffle-card-inner {
   width: 100%;
   height: 100%;
-  transition: transform 0.5s;
+  transition: transform 1s;
   transform-style: preserve-3d;
+  border: 2px solid yellow;
 }
 
-.card-front,
-.card-back {
+.shuffle-card-front,
+.shuffle-card-back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -247,253 +250,78 @@
   backface-visibility: hidden;
 }
 
-.card-front {
+.shuffle-card-front {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 150px;
   height: 200px;
-  color: black;
   background-color: rgb(255, 255, 255);
-  border: var(--img-border);
+  border: var(--card-border);
   border-radius: 4px;
   box-shadow: 0 0 3px;
-  background-image: url(../../assets/img/container-title-background.png);
+  background-image: url(../../assets/img/card-texture.jpg);
   background-size: cover;
   background-clip: content-box;
 }
 
-.shuffle-card-question-mark {
+.shuffle-card-question-mark-img {
   width: 80px;
 }
 
-.card-back {
+.shuffle-card-back {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 150px;
   height: 200px;
-  color: black;
   background-color: rgb(255, 255, 255);
-  border: var(--img-border);
+  border: var(--card-border);
   border-radius: 4px;
   box-shadow: 0 0 3px;
-  background-image: url(../../assets/img/container-title-background.png);
+  background-image: url(../../assets/img/card-texture.jpg);
   background-size: cover;
   background-clip: content-box;
   transform: rotateY(180deg);
 }
 
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-
-
-
-
-/* SHUFFLE CARDS */
-
-.grid-2-columns-shuffle-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
-  gap: 30px;
-  background-image: url(../img/shuffle-card-table.jpg);
-  background-size: cover;
-  margin: auto;
-  width: 380px;
-  padding: 19px 20px 20px 20px;
-  border-radius: 4px;
-  box-shadow: 0 0 3px;
-}
-
-.shuffle-cards-container {
-  width: 100%;
-  height: 285px;
-  position: relative;
-  padding-left: 2px;
-
-  /* border: 2px solid; */
-}
-
-.shuffle-card-face {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 160px;
-  height: 230px;
-
-}
-
-
-
-.card-perspective {
-  perspective: 1000px;
-}
-
-.shuffle-card-front {
-  border: var(--img-border);
-  border-radius: 4px;
-  box-shadow: 0 0 3px;
-  background-image: url(../../assets/img/card-texture.jpg);
-  background-size: cover;
-  border: var(--card-border);
-
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  /* transform: rotateY(180deg); */
-}
-
-.shuffle-card-back {
-  padding: 5px;
-  border: var(--img-border);
-  border-radius: 4px;
-  box-shadow: 0 0 3px;
-  background-image: url(../../assets/img/card-texture.jpg);
-  background-size: cover;
-  border: var(--card-border);
-  backface-visibility: hidden;
-}
-
-/* SHUFFLE CARDS # */
+/* ### */
 
 .shuffle-card1 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
   position: absolute;
   top: 5px;
-  left: 52%;
-  z-index: 10;
-}
-
-.shuffle-card-flipped1 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card2 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 10px;
-  left: 52%;
-  z-index: 9;
-}
-
-.shuffle-card-flipped2 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card3 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 15px;
-  left: 52%;
-  z-index: 8;
-}
-
-.shuffle-card-flipped3 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card4 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 20px;
-  left: 52%;
-  z-index: 7;
-}
-
-.shuffle-card-flipped4 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card5 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 25px;
-  left: 52%;
-  z-index: 6;
-}
-
-.shuffle-card-flipped5 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card6 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 30px;
-  left: 52%;
-  z-index: 5;
-}
-
-.shuffle-card-flipped6 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card7 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 35px;
-  left: 52%;
-  z-index: 4;
-}
-
-.shuffle-card-flipped7 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card8 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 40px;
-  left: 52%;
-  z-index: 3;
-}
-
-.shuffle-card-flipped8 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card9 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 45px;
-  left: 52%;
-  z-index: 2;
-}
-
-.shuffle-card-flipped9 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
-}
-
-.shuffle-card10 {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-  position: absolute;
-  top: 50px;
-  left: 52%;
+  left: 0;
   z-index: 1;
 }
 
-.shuffle-card-flipped10 {
-  transform: rotateY(-180deg) var(--shuffle-card-translate);
+.shuffle-card2 {
+  position: absolute;
+  top: 10px;
+  left: -150px;
+  z-index: 9;
+}
+
+.shuffle-card3 {
+  position: absolute;
+  top: 15px;
+  left: -40px;
+  z-index: 8;
+}
+
+.shuffle-card4 {
+  position: absolute;
+  top: 20px;
+  left: -50px;
+  z-index: 7;
+}
+
+.shuffle-card5 {
+  position: absolute;
+  top: 25px;
+  left: -60px;
+  z-index: 6;
 }
 
 /* DRAG AND DROP */
@@ -1064,11 +892,8 @@ select option {
   }
 
   .grid-3-columns-word-guess {
-    display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 30px;
-    margin: 0px;
+
   }
 
 }

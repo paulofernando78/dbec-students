@@ -260,173 +260,78 @@
     <hr>
     <br>
 
-<!-- SHUFFLE CARD -->
+    <!-- SHUFFLE CARD -->
 
-<div class="card-container">
-  <div class="card" onclick="toggleCard(0)">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark" class="shuffle-card-question-mark">
-      </div>
-      <div class="card-back">
-        <p>Back 1</p>
-      </div>
-    </div>
-  </div>
-  <div class="card" onclick="toggleCard(1)">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark" class="shuffle-card-question-mark">
-      </div>
-      <div class="card-back">
-        <p>Back 2</p>
-      </div>
-    </div>
-  </div>
-  <div class="card" onclick="toggleCard(2)">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark" class="shuffle-card-question-mark">
-      </div>
-      <div class="card-back">
-        <p>Back 3</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<button onclick="shuffleCards()" class="pushable">
-  <span class="shadow"></span>
-  <span class="edge"></span>
-  <span class="front">
-    Shuffle
-  </span>
-</button>
-
-
-    <!-- SHUFFLE CARDS -->
-    <h1>SHUFFLE CARDS</h1>
-    <br>
-
-    <div class="grid-2-columns-shuffle-cards">
-
-      <div class="shuffle-cards-container">
-        <div class="card-perspective">
-          <!-- Card 1 -->
-          <div class="shuffle-card shuffle-card1 shuffle-card-flipped1">
-            <div class="shuffle-card-face shuffle-card-front">
-              <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
+    <div>
+      <div class="shuffle-card-container">
+        <div class="shuffle-card" onclick="toggleCard(0)">
+          <div class="shuffle-card-inner shuffle-card1" data-index="1">
+            <div class="shuffle-card-front">
+              <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark"
+                class="shuffle-card-question-mark-img">
             </div>
-            <div class="shuffle-card-face shuffle-card-back">
-              <p>Card 1</p>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="shuffle-card shuffle-card2 shuffle-card-flipped2">
-            <div class="shuffle-card-face shuffle-card-front">
-              <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
-            </div>
-            <div class="shuffle-card-face shuffle-card-back">
-              <p>Card 2</p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="shuffle-card shuffle-card3 shuffle-card-flipped3">
-            <div class="shuffle-card-face shuffle-card-front">
-              <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
-            </div>
-            <div class="shuffle-card-face shuffle-card-back">
-              <p>Card 3</p>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="shuffle-card shuffle-card4 shuffle-card-flipped4">
-            <div class="shuffle-card-face shuffle-card-front">
-              <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
-            </div>
-            <div class="shuffle-card-face shuffle-card-back">
-              <p>Card 4</p>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="shuffle-card shuffle-card5 shuffle-card-flipped5">
-            <div class="shuffle-card-face shuffle-card-front">
-              <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
-            </div>
-            <div class="shuffle-card-face shuffle-card-back">
-              <p>Card 5</p>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="shuffle-card shuffle-card6 shuffle-card-flipped6">
-            <div class="shuffle-card-face shuffle-card-front">
-              <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
-            </div>
-            <div class="shuffle-card-face shuffle-card-back">
-              <p>Card 6</p>
-            </div>
-          </div>
-
-          <!-- Card 7 -->
-          <div class="shuffle-card shuffle-card7 shuffle-card-flipped7">
-            <div class="shuffle-card-face shuffle-card-front">
-              <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
-            </div>
-            <div class="shuffle-card-face shuffle-card-back">
-              <p>Card 7</p>
-            </div>
-          </div>
-
-          <!-- Card 8 -->
-          <div class="shuffle-card shuffle-card8 shuffle-card-flipped8">
-            <div class="shuffle-card-face shuffle-card-front">
-              <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
-            </div>
-            <div class="shuffle-card-face shuffle-card-back">
-              <p>Card 8</p>
-            </div>
-          </div>
-
-          <!-- Card 9 -->
-          <div class="shuffle-card shuffle-card9 shuffle-card-flipped9">
-            <div class="shuffle-card-face shuffle-card-front">
-              <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
-            </div>
-            <div class="shuffle-card-face shuffle-card-back">
-              <p>Card 9</p>
-            </div>
-          </div>
-
-          <!-- Card 10 -->
-          <div class="shuffle-card shuffle-card10 shuffle-card-flipped10">
-            <div class="shuffle-card-face shuffle-card-front">
-              <img src="../../assets/img/gifs/question-mark.gif" alt="question-mark" class="shuffle-card-question-mark">
-            </div>
-            <div class="shuffle-card-face shuffle-card-back">
-              <p>Card 10</p>
+            <div class="shuffle-card-back">
+              <p>Back 1</p>
             </div>
           </div>
         </div>
-
+        <div class="shuffle-card" onclick="toggleCard(1)">
+          <div class="shuffle-card-inner shuffle-card2" data-index="2">
+            <div class="shuffle-card-front">
+              <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark"
+                class="shuffle-card-question-mark-img">
+            </div>
+            <div class="shuffle-card-back">
+              <p>Back 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="shuffle-card" onclick="toggleCard(2)">
+          <div class="shuffle-card-inner  shuffle-card3"  data-index="3">
+            <div class="shuffle-card-front">
+              <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark"
+                class="shuffle-card-question-mark-img">
+            </div>
+            <div class="shuffle-card-back">
+              <p>Back 3</p>
+            </div>
+          </div>
+        </div>
+        <div class="shuffle-card" onclick="toggleCard(3)">
+          <div class="shuffle-card-inner  shuffle-card4"  data-index="4">
+            <div class="shuffle-card-front">
+              <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark"
+                class="shuffle-card-question-mark-img">
+            </div>
+            <div class="shuffle-card-back">
+              <p>Back 4</p>
+            </div>
+          </div>
+        </div>
+        <div class="shuffle-card" onclick="toggleCard(4)">
+          <div class="shuffle-card-inner  shuffle-card5"  data-index="5">
+            <div class="shuffle-card-front">
+              <img src="../../assets/img/gifs/question-mark.gif" alt="Question mark"
+                class="shuffle-card-question-mark-img">
+            </div>
+            <div class="shuffle-card-back">
+              <p>Back 5</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="flex-center">
-
-        <button onclick="shuffleCards()" class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">
-            Shuffle
-          </span>
-        </button>
-      </div>
-
+      
+      <button onclick="shuffleCards()" class="pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">
+          Shuffle
+        </span>
+      </button>
     </div>
+
+
+
 
     <br>
     <hr>
@@ -1621,67 +1526,6 @@
         </i></p>
     </div>
   </main>
-
-  <script>
-    // The word to be guessed
-    const wordToGuess = "coffee";
-
-    // Initialize an array to store the guessed letters
-    let guessedLetters = [];
-
-    // Function to handle guessing a letter
-    function guessLetter(letter) {
-      // Check if the letter has already been guessed
-      if (guessedLetters.includes(letter)) {
-        alert("You already guessed this letter!");
-        return;
-      }
-
-      // Add the letter to the guessed letters array
-      guessedLetters.push(letter);
-
-      // Update the word display
-      updateWordDisplay();
-
-      // Check if the game is won or lost
-      if (checkWin()) {
-        alert("Congratulations! You've won!");
-      } else if (checkLoss()) {
-        alert("Sorry, you've lost. The word was 'coffee'.");
-      }
-    }
-
-    // Function to update the word display
-    function updateWordDisplay() {
-      const wordDisplay = document.getElementById("word-display");
-      let displayText = "";
-
-      for (const char of wordToGuess) {
-        if (guessedLetters.includes(char)) {
-          displayText += char + " ";
-        } else {
-          displayText += "_ ";
-        }
-      }
-
-      wordDisplay.textContent = displayText;
-    }
-
-    // Function to check if the player has won
-    function checkWin() {
-      return wordToGuess.split("").every(char => guessedLetters.includes(char));
-    }
-
-    // Function to check if the player has lost
-    function checkLoss() {
-      const incorrectGuesses = guessedLetters.filter(letter => !wordToGuess.includes(letter));
-      return incorrectGuesses.length >= 6; // You can customize the number of allowed incorrect guesses
-    }
-
-    // Initialize the word display
-    updateWordDisplay();
-  </script>
-
 </body>
 
 </html>
