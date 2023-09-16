@@ -234,6 +234,9 @@
   height: 100%;
   transition: transform 0.5s;
   transform-style: preserve-3d;
+  border: var(--img-border);
+  border-radius: 4px;
+  box-shadow: 0 0 3px;
 }
 
 .card-front,
@@ -248,27 +251,25 @@
 }
 
 .card-front {
-  background-color: #3498db;
-  color: white;
+  background-image: url(../img/card-texture.jpg);
+  background-size: cover;
+}
+
+.card-front-img {
+  width: 50%;
 }
 
 .card-back {
-  background-color: #e74c3c;
-  color: white;
+  background-image: url(../img/card-texture.jpg);
+  background-size: cover;
   transform: rotateY(180deg);
 }
 
-.shuffle-card-flipped1 {
-  
-}
+.shuffle-card-flipped1 {}
 
-.shuffle-card-flipped2 {
-  
-}
+.shuffle-card-flipped2 {}
 
-.shuffle-card-flipped3 {
-  
-}
+.shuffle-card-flipped3 {}
 
 /* DRAG AND DROP */
 
