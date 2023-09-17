@@ -217,8 +217,12 @@
 /* SHUFFLE CARD */
 
 .card-container {
+  width: 50%;
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
+  border: 2px dotted black;
 }
 
 .card {
@@ -227,6 +231,7 @@
   margin: 0 10px;
   perspective: 1000px;
   cursor: pointer;
+  border: 2px dotted red;
 }
 
 .card-inner {
@@ -237,6 +242,7 @@
   border: var(--img-border);
   border-radius: 4px;
   box-shadow: 0 0 3px;
+  border: 2px dotted blue;
 }
 
 .card-front,
@@ -266,10 +272,6 @@
 }
 
 .shuffle-card-flipped1 {}
-
-.shuffle-card-flipped2 {}
-
-.shuffle-card-flipped3 {}
 
 /* DRAG AND DROP */
 
