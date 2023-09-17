@@ -104,25 +104,26 @@ function resetHM() {
 
 // SHUFFLE CARDS
 
-    const cards = document.querySelectorAll(".card");
+    const cards = document.querySelectorAll(".shuffle-card");
 
     function toggleCard(index) {
-      cards[index].querySelector(".card-inner").style.transform =
-        cards[index].querySelector(".card-inner").style.transform ===
+      cards[index].querySelector(".shuffle-card-inner").style.transform =
+        cards[index].querySelector(".shuffle-card-inner").style.transform ===
         "rotateY(180deg)"
           ? "rotateY(0deg)"
           : "rotateY(180deg)";
     }
 
     function shuffleCards() {
-      const container = document.querySelector(".card-container");
+      const container = document.querySelector(".shuffle-card-container");
       for (let i = container.children.length; i >= 0; i--) {
         container.appendChild(container.children[(Math.random() * i) | 0]);
       }
 
       // Reset all cards to the front side
       cards.forEach((card) => {
-        card.querySelector(".card-inner").style.transform = "rotateY(0deg)";
+        card.querySelector(".shuffle-card-inner").style.transform =
+          "rotateY(0deg)";
       });
     }
 
