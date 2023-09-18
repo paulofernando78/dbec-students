@@ -124,7 +124,7 @@ function rotateAndTranslate(card) {
 }
 
 const cardContents = [
-  "What's the past of the verb be?",
+  "Content for card 1",
   "Content for card 2",
   "Content for card 3",
   "Content for card 4",
