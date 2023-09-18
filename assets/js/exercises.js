@@ -164,7 +164,6 @@ function shuffleCards() {
   });
 }
 
-
 // EXERCISE XXX
 // CHECKBOXES 1
 function checkCheckboxes1() {

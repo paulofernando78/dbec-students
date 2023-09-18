@@ -238,7 +238,7 @@
 .shuffle-card-container {
   margin: auto;
   width: 350px;
-  height: 418px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -247,7 +247,7 @@
 
 .shuffle-card {
   width: 48%;
-  height: 41.2px;
+  height: 100%;
   perspective: 1000px;
   cursor: pointer;
   pointer-events: none;
@@ -255,7 +255,7 @@
 
 .shuffle-card-inner {
   width: 100%;
-  height: 650%;
+  height: 880%;
   background-image: var(--container-background-image);
   background-size: cover;
   border: var(--img-border);
@@ -297,55 +297,55 @@
 
 .shuffle-card2 {
   position: relative;
-  top: -25px;
+  top: -30px;
   z-index: 9;
 }
 
 .shuffle-card3 {
   position: relative;
-  top: -50px;
+  top: -60px;
   z-index: 8;
 }
 
 .shuffle-card4 {
   position: relative;
-  top: -75px;
+  top: -90px;
   z-index: 7;
 }
 
 .shuffle-card5 {
   position: relative;
-  top: -100px;
+  top: -120px;
   z-index: 6;
 }
 
 .shuffle-card6 {
   position: relative;
-  top: -125px;
+  top: -150px;
   z-index: 5;
 }
 
 .shuffle-card7 {
   position: relative;
-  top: -150px;
+  top: -180px;
   z-index: 4;
 }
 
 .shuffle-card8 {
   position: relative;
-  top: -175px;
+  top: -210px;
   z-index: 3;
 }
 
 .shuffle-card9 {
   position: relative;
-  top: -200px;
+  top: -240px;
   z-index: 2;
 }
 
 .shuffle-card10 {
   position: relative;
-  top: -225px;
+  top: -270px;
   z-index: 1;
 }
 
@@ -918,6 +918,7 @@ select option {
 
   .shuffle-background-2-grids {
     grid-template-columns: 1fr;
+    padding-top: 20px;
   }
 
   .grid-3-columns-word-guess {
