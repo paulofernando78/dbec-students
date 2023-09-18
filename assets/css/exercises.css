@@ -1,7 +1,7 @@
 :root {
   --icon-correct: invert(35%) sepia(15%) saturate(2476%) hue-rotate(86deg) brightness(110%) contrast(119%);
   --icon-incorrect: invert(20%) sepia(50%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(119%);
-  --shuffle-card-background: url('../img/red-texture-background.jpg');
+  --shuffle-card-background: url('../img/shuffle-card-table.jpg');
   --shuffle-card-translate: translateX(15px);
 }
 
@@ -242,11 +242,12 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  border: 2px solid red;
 }
 
 .shuffle-card {
-  width: 160px;
-  height: 50px;
+  width: 48%;
+  height: 41.2px;
   perspective: 1000px;
   cursor: pointer;
   pointer-events: none;
