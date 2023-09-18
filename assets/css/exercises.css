@@ -216,12 +216,24 @@
 
 /* SHUFFLE CARD */
 
-.shuffle-background {
-  padding: 20px;
+.shuffle-background-2-grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
   background-image: var(--shuffle-card-background);
   background-size: cover;
   border-radius: 4px;
-    box-shadow: 0 0 3px;
+  box-shadow: 0 0 3px;
+}
+
+.shuffle-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 20px;
 }
 
 .shuffle-card-container {
@@ -942,6 +954,10 @@ select option {
 
   input[type="text"] {
     width: 80%;
+  }
+
+  .shuffle-background-2-grids {
+    grid-template-columns: 1fr;
   }
 
   .grid-3-columns-word-guess {
