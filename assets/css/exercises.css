@@ -1,6 +1,7 @@
 :root {
   --icon-correct: invert(35%) sepia(15%) saturate(2476%) hue-rotate(86deg) brightness(110%) contrast(119%);
   --icon-incorrect: invert(20%) sepia(50%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(119%);
+  --shuffle-card-background: url('../img/red-texture-background.jpg');
   --card-texture: url('../img/card-texture.jpg');
   --card-border: 5px solid white;
   --shuffle-card-translate: translateX(15px);
@@ -217,36 +218,37 @@
 /* SHUFFLE CARD */
 
 .shuffle-card-container {
-  width: 50%;
+  margin: auto;
+  width: 350px;
+  height: 418px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  border: 2px solid black;
+  align-items: start;
+  justify-content: center;
+  background-image: var(--shuffle-card-background);
+  background-size: cover;
 }
 
 .shuffle-card {
-  width: 100px;
-  height: 150px;
-  margin: 0 10px;
+  width: 160px;
+  height: 50px;
   perspective: 1000px;
   cursor: pointer;
-  border: 2px solid red;
+  pointer-events: none;
 }
 
 .shuffle-card-inner {
+  border: dotted 2px red;
   width: 100%;
-  height: 100%;
-  transition: transform 0.5s;
+  height: 650%;
   transform-style: preserve-3d;
   border: var(--img-border);
   border-radius: 4px;
   box-shadow: 0 0 3px;
-  border: 3px solid blue;
+  pointer-events: auto;
   /* background-image: url(../img/card-texture.jpg);
   background-size: cover; */
-
-  
+  transition: transform 0.8s;
 }
 
 .shuffle-card-front,
@@ -267,29 +269,109 @@
   background-position: center center;
 }
 
-/* .shuffle-card-front-img {
-  width: 50%;
-} */
-
 .shuffle-card-back {
+  text-align: center;
   transform: rotateY(180deg);
 }
 
-/* .shuffle-card2 {
-  position: absolute;
-  top: 15px;
-} */
+/* ### */
+
+.shuffle-card1 {
+  z-index: 10;
+}
 
 .shuffle-card-inner1 {
-  background-color: blue;
+  background-color: lightblue;
+}
+
+.shuffle-card2 {
+  position: relative;
+  top: -25px;
+  z-index: 9;
 }
 
 .shuffle-card-inner2 {
   background-color: red;
 }
 
+.shuffle-card3 {
+  position: relative;
+  top: -50px;
+  z-index: 8;
+}
+
 .shuffle-card-inner3 {
   background-color: yellow;
+}
+
+.shuffle-card4 {
+  position: relative;
+  top: -75px;
+  z-index: 7;
+}
+
+.shuffle-card-inner4 {
+  background-color: purple;
+}
+
+.shuffle-card5 {
+  position: relative;
+  top: -100px;
+  z-index: 6;
+}
+
+.shuffle-card-inner5 {
+  background-color: orange;
+}
+
+.shuffle-card6 {
+  position: relative;
+  top: -125px;
+  z-index: 5;
+}
+
+.shuffle-card-inner6 {
+  background-color: pink;
+}
+
+.shuffle-card7 {
+  position: relative;
+  top: -150px;
+  z-index: 4;
+}
+
+.shuffle-card-inner7 {
+  background-color: brown;
+}
+
+.shuffle-card8 {
+  position: relative;
+  top: -175px;
+  z-index: 3;
+}
+
+.shuffle-card-inner8 {
+  background-color: green;
+}
+
+.shuffle-card9 {
+  position: relative;
+  top: -200px;
+  z-index: 2;
+}
+
+.shuffle-card-inner9 {
+  background-color: greenyellow;
+}
+
+.shuffle-card10 {
+  position: relative;
+  top: -225px;
+  z-index: 1;
+}
+
+.shuffle-card-inner10 {
+  background-color: blue;
 }
 
 /* DRAG AND DROP */

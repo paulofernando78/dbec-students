@@ -104,28 +104,37 @@ function resetHM() {
 
 // SHUFFLE CARDS
 
-    const cards = document.querySelectorAll(".shuffle-card");
+let zIndexCounter = 10; // Initial z-index value
 
-    function toggleCard(index) {
-      cards[index].querySelector(".shuffle-card-inner").style.transform =
-        cards[index].querySelector(".shuffle-card-inner").style.transform ===
-        "rotateY(180deg)"
-          ? "rotateY(0deg)"
-          : "rotateY(180deg)";
-    }
+function rotateAndTranslate(card) {
+  const cardInner = card.querySelector(".shuffle-card-inner");
+  const currentTransform = cardInner.style.transform;
 
-    function shuffleCards() {
-      const container = document.querySelector(".shuffle-card-container");
-      for (let i = container.children.length; i >= 0; i--) {
-        container.appendChild(container.children[(Math.random() * i) | 0]);
-      }
+  if (currentTransform === "rotateY(180deg) translateX(-180px)") {
+    // If the card is already rotated and translated, reset it
+    cardInner.style.transform = "rotateY(0deg) translateX(0px)";
+    card.style.zIndex = zIndexCounter; // Set the current z-index
+    zIndexCounter++; // Increment the z-index for the next card
+  } else {
+    // Rotate the card and translate it
+    cardInner.style.transform = "rotateY(180deg) translateX(-180px)";
+    card.style.zIndex = zIndexCounter; // Set the current z-index
+    zIndexCounter++; // Increment the z-index for the next card
+  }
+}
 
-      // Reset all cards to the front side
-      cards.forEach((card) => {
-        card.querySelector(".shuffle-card-inner").style.transform =
-          "rotateY(0deg)";
-      });
-    }
+function shuffleCards() {
+  const container = document.querySelector(".shuffle-card-container");
+  for (let i = container.children.length; i >= 0; i--) {
+    container.appendChild(container.children[(Math.random() * i) | 0]);
+  }
+
+  // Reset all cards to the front side
+  cards.forEach((card) => {
+    card.querySelector(".shuffle-card").style.transform = "rotateY(0deg)";
+  });
+}
+
 
 // EXERCISE XXX
 // CHECKBOXES 1
