@@ -123,15 +123,44 @@ function rotateAndTranslate(card) {
   }
 }
 
+const cardContents = [
+  "What's the past of the verb be?",
+  "Content for card 2",
+  "Content for card 3",
+  "Content for card 4",
+  "Content for card 5",
+  "Content for card 6",
+  "Content for card 7",
+  "Content for card 8",
+  "Content for card 9",
+  "Content for card 10",
+  // Add content for all cards
+];
+
 function shuffleCards() {
   const container = document.querySelector(".shuffle-card-container");
-  for (let i = container.children.length; i >= 0; i--) {
-    container.appendChild(container.children[(Math.random() * i) | 0]);
+  const cardBacks = document.querySelectorAll(".shuffle-card-back");
+
+  // Create a copy of cardContents to shuffle
+  const shuffledContents = [...cardContents];
+
+  for (let i = shuffledContents.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledContents[i], shuffledContents[j]] = [
+      shuffledContents[j],
+      shuffledContents[i],
+    ];
   }
 
+  // Update the card backs with shuffled content
+  cardBacks.forEach((cardBack, index) => {
+    cardBack.textContent = shuffledContents[index];
+  });
+
   // Reset all cards to the front side
+  const cards = container.querySelectorAll(".shuffle-card");
   cards.forEach((card) => {
-    card.querySelector(".shuffle-card").style.transform = "rotateY(0deg)";
+    card.querySelector(".shuffle-card-inner").style.transform = "rotateY(0deg)";
   });
 }
 
