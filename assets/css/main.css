@@ -20,7 +20,7 @@
     --p-size: 1.3rem;
     --font-size-small: 0.8rem;
     --container-border: 7px solid rgb(201, 201, 201);
-    --img-border: 5px solid rgba(211, 211, 211, 0.507);
+    --img-border: 5px solid white;
     --container-background-image: url('../img/container-title-background.png');
 }
 

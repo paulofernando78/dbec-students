@@ -3,7 +3,6 @@
   --icon-incorrect: invert(20%) sepia(50%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(119%);
   --shuffle-card-background: url('../img/red-texture-background.jpg');
   --card-texture: url('../img/card-texture.jpg');
-  --card-border: 5px solid white;
   --shuffle-card-translate: translateX(15px);
 }
 
@@ -217,6 +216,14 @@
 
 /* SHUFFLE CARD */
 
+.shuffle-background {
+  padding: 20px;
+  background-image: var(--shuffle-card-background);
+  background-size: cover;
+  border-radius: 4px;
+    box-shadow: 0 0 3px;
+}
+
 .shuffle-card-container {
   margin: auto;
   width: 350px;
@@ -224,9 +231,6 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
-  background-image: var(--shuffle-card-background);
-  background-size: cover;
 }
 
 .shuffle-card {
