@@ -71,20 +71,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // COLLAPSE
-function toggleCollapse(section) {
+function toggleCollapse(triangle) {
+  // Find the closest parent section element
+  var section = triangle.parentElement;
+
+  // Find the content element within the section
   var content = section.querySelector(".content");
+
+  // Toggle the display of the content
   content.style.display = content.style.display === "block" ? "none" : "block";
+
+  // Toggle the "expanded" class on the section element
   section.classList.toggle("expanded");
 }
 
-// FLIP CARDS
-
-// JUST THE FIRST ONE!!!
-// const flippedCard = document.querySelector("#flipped")
-// flippedCard.addEventListener("click",(e)=>{
-//   flippedCard.classList.toggle("flipped")
-// })
-
+// FLIP CARD
 const flipCardContainers = document.querySelectorAll(".flip-card-container");
 
 flipCardContainers.forEach((container) => {

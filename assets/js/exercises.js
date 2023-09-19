@@ -104,6 +104,20 @@ function resetHM() {
 
 // SHUFFLE CARDS
 
+const cardContents = [
+  "Content for card 1",
+  "Content for card 2",
+  "Content for card 3",
+  "Content for card 4",
+  "Content for card 5",
+  "Content for card 6",
+  "Content for card 7",
+  "Content for card 8",
+  "Content for card 9",
+  "Content for card 10",
+  // Add content for all cards
+];
+
 let zIndexCounter = 10; // Initial z-index value
 
 function rotateAndTranslate(card) {
@@ -123,19 +137,7 @@ function rotateAndTranslate(card) {
   }
 }
 
-const cardContents = [
-  "Content for card 1",
-  "Content for card 2",
-  "Content for card 3",
-  "Content for card 4",
-  "Content for card 5",
-  "Content for card 6",
-  "Content for card 7",
-  "Content for card 8",
-  "Content for card 9",
-  "Content for card 10",
-  // Add content for all cards
-];
+let activeCardIndex = 0; // Índice do cartão atualmente ativo
 
 function shuffleCards() {
   const container = document.querySelector(".shuffle-card-container");
@@ -161,7 +163,20 @@ function shuffleCards() {
   const cards = container.querySelectorAll(".shuffle-card");
   cards.forEach((card) => {
     card.querySelector(".shuffle-card-inner").style.transform = "rotateY(0deg)";
+    
   });
+}
+
+// // EXERCISE XXX
+// // RADIO
+function resetRadios() {
+  // Get all radio buttons by name
+  var radioButtons = document.querySelectorAll('input[type="radio"]');
+
+  // Loop through radio buttons and uncheck them
+  for (var i = 0; i < radioButtons.length; i++) {
+    radioButtons[i].checked = false;
+  }
 }
 
 // EXERCISE XXX

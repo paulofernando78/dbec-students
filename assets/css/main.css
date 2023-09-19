@@ -605,13 +605,6 @@ p {
     width: 50%;
 }
 
-/* BITMOJI */
-
-.img-bitmoji {
-    width: 200px;
-    filter: drop-shadow(0 0 1px);
-}
-
 /* COURSES */
 
 .class-description {
