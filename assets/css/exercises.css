@@ -262,7 +262,7 @@
   box-shadow: 0 0 3px;
   pointer-events: auto;
   transform-style: preserve-3d;
-  transition: transform 0.8s;
+  transition: transform 0.5s;
 }
 
 .shuffle-card-front,
