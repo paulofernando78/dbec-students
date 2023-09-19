@@ -4,7 +4,7 @@
 const selectedWord = "LORENZO"; // *CAPITAL!!! The word to guess
 let guessedWord = []; // The current state of guessed letters
 let incorrectGuesses = []; // Incorrectly guessed letters
-const maxAttempts = 3; // Maximum allowed incorrect guesses
+const maxAttempts = 1; // Maximum allowed incorrect guesses
 let gameOver = false; // Game over flag
 
 // Function to initialize the game
@@ -123,6 +123,7 @@ let zIndexCounter = 10; // Initial z-index value
 function rotateAndTranslate(card) {
   const cardInner = card.querySelector(".shuffle-card-inner");
   const currentTransform = cardInner.style.transform;
+  const audio = new Audio("https://universal-soundbank.com/sounds/4507.mp3"); // Replace "audio/card.mp3" with your audio file path
 
   if (currentTransform === "rotateY(180deg) translateX(-180px)") {
     // If the card is already rotated and translated, reset it
@@ -135,6 +136,10 @@ function rotateAndTranslate(card) {
     card.style.zIndex = zIndexCounter; // Set the current z-index
     zIndexCounter++; // Increment the z-index for the next card
   }
+
+  // Play the loaded audio
+  audio.currentTime = 0; // Reset audio to the beginning
+  audio.play();
 }
 
 let activeCardIndex = 0; // Índice do cartão atualmente ativo
@@ -157,13 +162,13 @@ function shuffleCards() {
   // Update the card backs with shuffled content
   cardBacks.forEach((cardBack, index) => {
     cardBack.textContent = shuffledContents[index];
+    cardBack.classList.add("card-p-match"); // Apply the font size class
   });
 
   // Reset all cards to the front side
   const cards = container.querySelectorAll(".shuffle-card");
   cards.forEach((card) => {
     card.querySelector(".shuffle-card-inner").style.transform = "rotateY(0deg)";
-    
   });
 }
 

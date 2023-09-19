@@ -214,12 +214,13 @@
 
 /* SHUFFLE CARD */
 
-.shuffle-background-2-grids {
+.shuffle-background-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
+  padding-bottom: 19px;
   background-image: var(--shuffle-card-background);
   background-size: cover;
   border-radius: 4px;
@@ -285,6 +286,10 @@
 .shuffle-card-back {
   text-align: center;
   transform: rotateY(180deg);
+}
+
+.card-p-match {
+  font-size: var(--p-size);
 }
 
 /* ### */
@@ -916,7 +921,7 @@ select option {
     width: 80%;
   }
 
-  .shuffle-background-2-grids {
+  .shuffle-background-grid-2 {
     grid-template-columns: 1fr;
     padding-top: 20px;
   }
