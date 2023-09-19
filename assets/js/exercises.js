@@ -123,7 +123,7 @@ let zIndexCounter = 10; // Initial z-index value
 function rotateAndTranslate(card) {
   const cardInner = card.querySelector(".shuffle-card-inner");
   const currentTransform = cardInner.style.transform;
-  const audio = new Audio("https://universal-soundbank.com/sounds/4507.mp3"); // Replace "audio/card.mp3" with your audio file path
+  const audio = new Audio("/assets/audio/card-shuffle1.mp3"); // Replace "audio/card.mp3" with your audio file path
 
   if (currentTransform === "rotateY(180deg) translateX(-180px)") {
     // If the card is already rotated and translated, reset it
@@ -147,6 +147,7 @@ let activeCardIndex = 0; // Índice do cartão atualmente ativo
 function shuffleCards() {
   const container = document.querySelector(".shuffle-card-container");
   const cardBacks = document.querySelectorAll(".shuffle-card-back");
+  const audio = new Audio("/assets/audio/card-shuffle1.mp3"); // Replace "audio/card.mp3" with your audio file path
 
   // Create a copy of cardContents to shuffle
   const shuffledContents = [...cardContents];
@@ -158,6 +159,10 @@ function shuffleCards() {
       shuffledContents[i],
     ];
   }
+
+  // Play the loaded audio
+  audio.currentTime = 0; // Reset audio to the beginning
+  audio.play();
 
   // Update the card backs with shuffled content
   cardBacks.forEach((cardBack, index) => {
