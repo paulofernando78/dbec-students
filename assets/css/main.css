@@ -357,6 +357,13 @@ p {
     box-shadow: 0 0 3px;
 }
 
+.container-lightgrey-content {
+    background: lightgrey;
+    border-radius: 4px 4px 0 0;
+    padding-left: 6px;
+    box-shadow: 0 0 3px;
+}
+
 .container-lightyellow {
     background: #ffee008f;
     color: black;

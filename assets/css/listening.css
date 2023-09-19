@@ -29,4 +29,8 @@
     .penguin-kids-container {
         grid-template-columns: 1fr;
     }
+
+    .penguin-kids-container div:nth-child(1) {
+        margin-left: 0;
+    }
 }
