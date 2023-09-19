@@ -1,106 +1,100 @@
 // HANGMAN
 
-// Hangman game variables
-const selectedWord = "LORENZO"; // *CAPITAL!!! The word to guess
-let guessedWord = []; // The current state of guessed letters
-let incorrectGuesses = []; // Incorrectly guessed letters
-const maxAttempts = 1; // Maximum allowed incorrect guesses
-let gameOver = false; // Game over flag
+// const selectedWord = "LORENZO"; //
+// let guessedWord = [];
+// let incorrectGuesses = [];
+// const maxAttempts = 1; //
+// let gameOver = false; //
 
-// Function to initialize the game
-function initializeGame() {
-  // Initialize guessedWord with underscores
-  guessedWord = [];
-  for (let i = 0; i < selectedWord.length; i++) {
-    guessedWord.push("_");
-  }
+// function initializeGame() {
+//   // Initialize guessedWord with underscores
+//   guessedWord = [];
+//   for (let i = 0; i < selectedWord.length; i++) {
+//     guessedWord.push("_");
+//   }
 
-  // Reset incorrect guesses
-  incorrectGuesses = [];
+//   // Reset incorrect guesses
+//   incorrectGuesses = [];
 
-  // Reset game over flag
-  gameOver = false;
+//   // Reset game over flag
+//   gameOver = false;
 
-  // Update the HTML display
-  updateDisplay();
-}
+//   // Update the HTML display
+//   updateDisplay();
+// }
 
-// Function to update the game display
-function updateDisplay() {
-  // Update the word display
-  const wordDisplay = document.getElementById("word");
-  wordDisplay.textContent = guessedWord.join(" ");
+// function updateDisplay() {
+//   // Update the word display
+//   const wordDisplay = document.getElementById("word");
+//   wordDisplay.textContent = guessedWord.join(" ");
 
-  // Update incorrect guesses
-  const incorrectGuessesDisplay = document.getElementById("incorrectGuesses");
-  incorrectGuessesDisplay.textContent = incorrectGuesses.join(" ");
+//   // Update incorrect guesses
+//   const incorrectGuessesDisplay = document.getElementById("incorrectGuesses");
+//   incorrectGuessesDisplay.textContent = incorrectGuesses.join(" ");
 
-  // Update attempts remaining
-  const attemptsRemainingDisplay = document.getElementById("attemptsRemaining");
-  attemptsRemainingDisplay.textContent = maxAttempts - incorrectGuesses.length;
+//   // Update attempts remaining
+//   const attemptsRemainingDisplay = document.getElementById("attemptsRemaining");
+//   attemptsRemainingDisplay.textContent = maxAttempts - incorrectGuesses.length;
 
-  // Get the message element
-  const messageElement = document.getElementById("message");
+//   // Get the message element
+//   const messageElement = document.getElementById("message");
 
-  // Check for win or lose
-  if (guessedWord.join("") === selectedWord && !gameOver) {
-    // Player wins
-    messageElement.textContent = "Congrats! You got it.";
-    messageElement.style.color = "green";
-    messageElement.style.fontWeight = "bold";
-    gameOver = true;
-  } else if (incorrectGuesses.length >= maxAttempts && !gameOver) {
-    // Player loses
-    messageElement.textContent = "Sorry! Try again.";
-    messageElement.style.color = "red";
-    messageElement.style.fontWeight = "bold";
-    gameOver = true;
-  }
-}
+//   // Check for win or lose
+//   if (guessedWord.join("") === selectedWord && !gameOver) {
+//     // Player wins
+//     messageElement.textContent = "Congrats! You got it.";
+//     messageElement.style.color = "green";
+//     messageElement.style.fontWeight = "bold";
+//     gameOver = true;
+//   } else if (incorrectGuesses.length >= maxAttempts && !gameOver) {
+//     // Player loses
+//     messageElement.textContent = "Sorry! Try again.";
+//     messageElement.style.color = "red";
+//     messageElement.style.fontWeight = "bold";
+//     gameOver = true;
+//   }
+// }
 
-// Function to handle letter guesses
-function guessLetter(letter) {
-  // Check if the letter has already been guessed
-  if (
-    guessedWord.includes(letter) ||
-    incorrectGuesses.includes(letter) ||
-    gameOver
-  ) {
-    return; // Letter already guessed or game over, do nothing
-  }
+// function guessLetter(letter) {
+//   // Check if the letter has already been guessed
+//   if (
+//     guessedWord.includes(letter) ||
+//     incorrectGuesses.includes(letter) ||
+//     gameOver
+//   ) {
+//     return; // Letter already guessed or game over, do nothing
+//   }
 
-  // Check if the letter is in the selected word
-  if (selectedWord.includes(letter)) {
-    // Update guessedWord with the correctly guessed letter
-    for (let i = 0; i < selectedWord.length; i++) {
-      if (selectedWord[i] === letter) {
-        guessedWord[i] = letter;
-      }
-    }
-  } else {
-    // Incorrect guess
-    incorrectGuesses.push(letter);
-  }
+//   // Check if the letter is in the selected word
+//   if (selectedWord.includes(letter)) {
+//     // Update guessedWord with the correctly guessed letter
+//     for (let i = 0; i < selectedWord.length; i++) {
+//       if (selectedWord[i] === letter) {
+//         guessedWord[i] = letter;
+//       }
+//     }
+//   } else {
+//     // Incorrect guess
+//     incorrectGuesses.push(letter);
+//   }
 
-  // Update the game display
-  updateDisplay();
-}
+//   // Update the game display
+//   updateDisplay();
+// }
 
-// Initialize the game on page load
-window.onload = function () {
-  initializeGame();
-  document.getElementById("message").textContent = "";
-};
+// window.onload = function () {
+//   initializeGame();
+//   document.getElementById("message").textContent = "";
+// };
 
-// Function to reset the game
-function resetHM() {
-  // Reinitialize the game
-  initializeGame();
+// function resetHM() {
+//   // Reinitialize the game
+//   initializeGame();
 
-  // Clear the message
-  const messageElement = document.getElementById("message");
-  messageElement.textContent = "";
-}
+//   // Clear the message
+//   const messageElement = document.getElementById("message");
+//   messageElement.textContent = "";
+// }
 
 // SHUFFLE CARDS
 
@@ -118,31 +112,28 @@ const cardContents = [
   // Add content for all cards
 ];
 
-let zIndexCounter = 10; // Initial z-index value
+let zIndexCounter = 10;
 
 function rotateAndTranslate(card) {
   const cardInner = card.querySelector(".shuffle-card-inner");
   const currentTransform = cardInner.style.transform;
-  const audio = new Audio("/assets/audio/card-shuffle1.mp3"); // Replace "audio/card.mp3" with your audio file path
+  const audio = new Audio("/assets/audio/card-shuffle1.mp3");
 
   if (currentTransform === "rotateY(180deg) translateX(-180px)") {
-    // If the card is already rotated and translated, reset it
     cardInner.style.transform = "rotateY(0deg) translateX(0px)";
-    card.style.zIndex = zIndexCounter; // Set the current z-index
-    zIndexCounter++; // Increment the z-index for the next card
+    card.style.zIndex = zIndexCounter;
+    zIndexCounter++;
   } else {
-    // Rotate the card and translate it
     cardInner.style.transform = "rotateY(180deg) translateX(-180px)";
-    card.style.zIndex = zIndexCounter; // Set the current z-index
-    zIndexCounter++; // Increment the z-index for the next card
+    card.style.zIndex = zIndexCounter;
+    zIndexCounter++;
   }
 
-  // Play the loaded audio
-  audio.currentTime = 0; // Reset audio to the beginning
+  audio.currentTime = 0;
   audio.play();
 }
 
-let activeCardIndex = 0; // Índice do cartão atualmente ativo
+let activeCardIndex = 0;
 
 function shuffleCards() {
   const container = document.querySelector(".shuffle-card-container");

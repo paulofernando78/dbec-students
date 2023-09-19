@@ -2,14 +2,27 @@
     display: grid;
     grid-template-columns: 67.2% 30%;
     gap: 20px;
+}
+
+.penguin-kids-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.img-penguin {
     margin-top: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .penguin-kids-container {
+        grid-template-columns: 1fr;
     }
 }
