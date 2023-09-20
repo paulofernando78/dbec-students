@@ -479,6 +479,10 @@ p {
     flex-wrap: wrap;
 }
 
+.text-align-center {
+    text-align: center;
+}
+
 /* CONTAINERS + IMAGES */
 
 .flex-start {
