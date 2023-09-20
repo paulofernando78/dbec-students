@@ -148,6 +148,10 @@ main {
     width: 1.6rem;
 }
 
+.icon-general-margin-bottom {
+    margin-bottom: 16px;
+}
+
 .icon-celta-space-between {
     display: flex;
     align-items: center;
@@ -450,6 +454,14 @@ p {
     color: rgba(0, 0, 255, 0.678);
 }
 
+.grid-color-lightgreay1 {
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+.grid-color-lightgreay2 {
+    background-color: rgba(128, 128, 128, 0.05);
+}
+
 /* ALIGNNMENT EXERCISES */
 
 .align-items-center-1 {
@@ -745,7 +757,7 @@ p {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
     .container-index {
         margin-top: 5px;
@@ -765,6 +777,11 @@ p {
         display: grid;
         grid-template-columns: 1fr;
         gap: 0
+    }
+
+    .grid-2-columns-american-vs-british {
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 
     .grid-3-columns {
