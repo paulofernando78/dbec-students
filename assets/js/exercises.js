@@ -3,7 +3,7 @@
 // const selectedWord = "LORENZO"; //
 // let guessedWord = [];
 // let incorrectGuesses = [];
-// const maxAttempts = 1; //
+// const maxAttempts = 3; //
 // let gameOver = false; //
 
 // function initializeGame() {
