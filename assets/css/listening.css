@@ -28,6 +28,12 @@
 
 @media (max-width: 600px) {
 
+    .penguin-readers-container-cover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .penguin-readers-container {
         display: flex;
         flex-direction: column;
