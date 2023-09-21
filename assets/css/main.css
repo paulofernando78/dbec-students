@@ -525,6 +525,11 @@ p {
     gap: 20px;
 }
 
+.grid-2-columns-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /* TWO COLUMNS EXERCISES */
 .grid-2-columns-gap-10-0 {
     display: grid;
