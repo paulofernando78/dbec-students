@@ -148,6 +148,11 @@ main {
     width: 1.6rem;
 }
 
+.icon-arrow-right {
+    width: 1.6rem;
+    width: 15px;
+}
+
 .icon-general-margin-bottom {
     margin-bottom: 16px;
 }
@@ -454,11 +459,11 @@ p {
     color: rgba(0, 0, 255, 0.678);
 }
 
-.grid-color-lightgreay1 {
+.grid-color-lightgrey1 {
     background-color: rgba(128, 128, 128, 0.25);
 }
 
-.grid-color-lightgreay2 {
+.grid-color-lightgrey2 {
     background-color: rgba(128, 128, 128, 0.05);
 }
 
