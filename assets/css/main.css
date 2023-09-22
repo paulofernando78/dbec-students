@@ -146,6 +146,9 @@ main {
 
 .icon-general {
     width: 1.6rem;
+    position: relative;
+    top: 1px;
+
 }
 
 .icon-arrow-right {
@@ -464,7 +467,7 @@ p {
 }
 
 .grid-color-lightgrey2 {
-    background-color: rgba(128, 128, 128, 0.05);
+    background-color: rgba(128, 128, 128, 0.07);
 }
 
 /* ALIGNNMENT EXERCISES */
@@ -533,6 +536,10 @@ p {
 .grid-2-columns-table {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.table-padding {
+    padding-left: 5px;
 }
 
 /* TWO COLUMNS EXERCISES */
