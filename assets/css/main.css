@@ -797,10 +797,6 @@ p {
         gap: 0
     }
 
-    .grid-2-columns-table {
-        grid-template-columns: repeat(1fr);
-    }
-
     .grid-table-short {
         grid-template-rows: 12px;
     }
