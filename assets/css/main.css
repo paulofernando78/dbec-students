@@ -462,14 +462,6 @@ p {
     color: rgba(0, 0, 255, 0.678);
 }
 
-.grid-color-lightgrey1 {
-    background-color: rgba(128, 128, 128, 0.25);
-}
-
-.grid-color-lightgrey2 {
-    background-color: rgba(128, 128, 128, 0.07);
-}
-
 /* ALIGNNMENT EXERCISES */
 
 .align-items-center-1 {
@@ -534,12 +526,21 @@ p {
 }
 
 .grid-2-columns-table {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
 }
 
+.grid-2-columns-table div:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+.grid-2-columns-table div:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.07);
+}
+
+
 .table-padding {
-    padding-left: 5px;
+    padding: 4px;
 }
 
 /* TWO COLUMNS EXERCISES */
@@ -794,6 +795,10 @@ p {
         display: grid;
         grid-template-columns: 1fr;
         gap: 0
+    }
+
+    .grid-2-columns-table {
+        grid-template-columns: repeat(1fr);
     }
 
     .grid-2-columns-american-vs-british {
