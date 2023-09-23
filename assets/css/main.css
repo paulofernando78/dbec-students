@@ -801,6 +801,10 @@ p {
         grid-template-columns: repeat(1fr);
     }
 
+    .grid-table-short {
+        grid-template-rows: 12px;
+    }
+
     .grid-2-columns-american-vs-british {
         display: grid;
         grid-template-columns: 50% 50%;
