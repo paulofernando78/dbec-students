@@ -1,3 +1,9 @@
+.grid-2-columns-listening {
+    display: grid;
+    grid-template-columns: 35px 91%;
+    align-items: center;
+}
+
 .penguin-readers-container-cover {
     display: grid;
     grid-template-columns: 30% 67.2%;
@@ -27,6 +33,11 @@
 }
 
 @media (max-width: 600px) {
+
+    /* .grid-2-columns-listening {
+        display: grid;
+        grid-template-columns: 35px 325px;
+    } */
 
     .penguin-readers-container-cover {
         display: flex;
