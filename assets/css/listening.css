@@ -34,10 +34,15 @@
 
 @media (max-width: 600px) {
 
-    /* .grid-2-columns-listening {
+    .grid-2-columns-listening {
         display: grid;
-        grid-template-columns: 35px 325px;
-    } */
+        grid-template-columns: 35px 91%;
+        align-items: start;
+    }
+
+        .grid-2-columns-listening .checkbox1 {
+            margin-top: 4px;
+        }
 
     .penguin-readers-container-cover {
         display: flex;

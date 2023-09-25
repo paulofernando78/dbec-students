@@ -194,19 +194,29 @@
   justify-self: start;
 }
 
-.flip-card1-icon {
+.flip-card-icon {
+  width: 1.6rem;
   position: relative;
   bottom: 72px;
   right: 132px;
 }
 
-.flip-card2-card3-icon {
-  margin-left: 5px;
-}
-
 .flip-card1-bg-img {
   background-image: url(https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/16:9/w_3332,h_1874,c_limit/1521-WIRED-Cat.jpeg);
 }
+
+.flip-card2-icon {
+  position: relative;
+  width: 1.6rem;
+  margin-left: 5px;
+}
+
+.flip-card3-icon {
+  position: relative;
+  width: 1.6rem;
+  margin-left: 5px;
+}
+
 
 .flipped {
   transform: rotateY(180deg);
