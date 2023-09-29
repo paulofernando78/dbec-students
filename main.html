@@ -12,59 +12,76 @@
 </head>
 
 <body>
-    <side>
-        <header id="aside">
-            <div class="header-content">
-                <img src="assets/img/btn-menu.svg" alt="Menu" class="btn-menu" id="btn-menu" onclick="buttonMenu()">
-                <h1 class="logo-main">DAILY BASIS ENGLISH COURSE</h1>
-                <img src="assets/img/USA-UK.png" alt="USA & UK flags" class="logo-img">
-            </div>
+    <header>
+        <div class="header-content">
+            <img src="assets/img/btn-menu.svg" alt="Menu" class="btn-menu" id="btn-menu" onclick="buttonMenu()">
+            <h1 class="logo-main">DAILY BASIS ENGLISH COURSE</h1>
+            <img src="assets/img/USA-UK.png" alt="USA & UK flags" class="logo-img">
+        </div>
 
-            <nav id="links">
-                <ul>
-                    <!-- COURSES -->
+        <nav id="links">
+            <ul>
+                <!-- COURSES -->
 
-                    <div>
-                        <li><b>
-                                <p>COURSES</p>
-                            </b></li>
-                        <div class="icon-list">
-                            <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
-                            <li><a href="/materials/courses/beginner/beginner.html">
-                                    <p>Beginner (A1)</p>
-                                </a></li>
-                        </div>
-                        <!-- <div class="icon-list">
-                                <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
-                                <li><a href=""><p>Elementary (A1-A2)</p></a></li>
-                            </div>
-                            <div class="icon-list">
-                                <img src="assets/img/book.svg" alt="Book"  class="nav-icon icon-size">
-                                <li class=><a href="/">Pre-Intermediate (A2-B1)</p></a></li>
-                            </div> -->
-                        <div class="icon-list">
-                            <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
-                            <li><a href="materials/courses/intermediate/intermediate.html">
-                                    <p>Intermediate (B1)</p>
-                                </a></li>
-                        </div>
-                        <!-- <div class="icon-list">
-                                <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
-                                <li><a href="/"><p>Intermediate Plus (B1+)</p></a></li>
-                            </div>
-                            <div class="icon-list">
-                                <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
-                                <li><a href="/"><p>Upper-Intermediate (B2)</p></a></li>
-                            </div>
-                            <div class="icon-list">
-                                <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
-                                <li><a href="/"><p>Advanced (C1)</p></a></li>
-                            </div>
-                            <div class="icon-list">
+                <div>
+                    <li><a href="#" onclick="loadPage('home.html');">
+                            <p><b>HOME</b></p>
+                        </a></li>
+                    <br>
+                    <li><b>
+                            <p>COURSES</p>
+                        </b></li>
+                    <div class="icon-list">
+                        <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
+                        <li>
+                            <a href="#" onclick="loadPage ('materials/courses/beginner/beginner.html');">
+                                <p>Beginner (A1)</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-list">
+                        <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
+                        <li><a href="#">
+                                <p>Elementary (A1-A2)</p>
+                            </a></li>
+                    </div>
+                    <div class="icon-list">
+                        <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
+                        <li><a href="#">
+                                <p class=smaller>Pre-Intermediate (A2-B1)</p>
+                            </a></li>
+                    </div>
+                    <div class="icon-list">
+                        <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
+                        <li>
+                            <a href="#" onclick="loadPage('materials/courses/intermediate/intermediate.html');">
+                                <p>Intermediate (B1)</p>
+                            </a>
+                        </li>
+                    </div>
+                    <!-- <div class="icon-list">
+                        <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
+                        <li><a href="/">
+                                <p>Intermediate Plus (B1+)</p>
+                            </a></li>
+                    </div> -->
+                    <div class="icon-list">
+                        <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
+                        <li><a href="#">
+                                <p class=smaller>Upper-Intermediate (B2)</p>
+                            </a></li>
+                    </div>
+                    <div class="icon-list">
+                        <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
+                        <li><a href="#">
+                                <p>Advanced (C1)</p>
+                            </a></li>
+                    </div>
+                    <!-- <div class="icon-list">
                                 <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
                                 <li><a href="/"><p class="p-main">Advanced Plus (C1+)</p></a></li>
                             </div> -->
-                        <!-- <div class="icon-list">
+                    <!-- <div class="icon-list">
                             <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
                             <li><a href="materials/courses/time-zones/time-zones-1/time-zones-1a.html">
                                     <p>Time Zones 1A</p>
@@ -76,77 +93,75 @@
                                     <p>Keynote Upper-Intermediate 2</p>
                                 </a></li>
                         </div> -->
-                        <br>
-                    </div>
+                    <br>
+                </div>
 
-                    <!-- EXTRA -->
-                    <div>
-                        <li><b>
-                                <p>EXTRA</p>
-                            </b></li>
-                        <div class="icon-list">
-                            <img src="assets/img/grammar.svg" alt="Grammar" class="nav-icon icon-size">
-                            <li><a href="materials/extra/grammar/grammar.html">
-                                    <p>Grammar</p>
-                                </a></li>
-                        </div>
-                        <div class="icon-list">
-                            <img src="assets/img/vocabulary.svg" alt="Grammar" class="nav-icon icon-size">
-                            <li><a href="materials/extra/vocabulary/vocabulary.html">
-                                    <p>Vocabulary</p>
-                                </a></li>
-                        </div>
-                        <div class="icon-list">
-                            <img src="assets/img/listening.svg" alt="Listening" class="nav-icon icon-size">
-                            <li> <a href="materials/extra/listening/listening.html">
-                                    <p>Listening</p>
-                                </a></li>
-                        </div>
-                        <div class="icon-list">
-                            <img src="assets/img/reading.svg" alt="Listening" class="nav-icon icon-size">
-                            <li> <a href="materials/extra/reading/reading.html">
-                                    <p>Reading</p>
-                                </a></li>
-                        </div>
-                        <div class="icon-list">
-                            <img src="assets/img/speaking.svg" alt="Listening" class="nav-icon icon-size"
-                                style="width: 30px; margin-left: 4px;">
-                            <li> <a href="materials/extra/speaking/speaking.html">
-                                    <p>Speaking</p>
-                                </a></li>
-                        </div>
-                        <br>
-                        <div class="icon-list">
-                            <img src="assets/img/icons/icon-business.svg" alt="Listening" class="nav-icon icon-size">
-                            <li> <a href="materials/extra/business/business.html">
-                                    <p>Business</p>
-                                </a></li>
-                        </div>
-                        <!-- <div class="icon-list">
+                <!-- EXTRA -->
+                <div>
+                    <li><b>
+                            <p>EXTRA</p>
+                        </b></li>
+                    <div class="icon-list">
+                        <img src="assets/img/grammar.svg" alt="Grammar" class="nav-icon icon-size">
+                        <li><a href="#" onclick="loadPage('materials/extra/grammar/grammar.html')">
+                                <p>Grammar</p>
+                            </a></li>
+                    </div>
+                    <div class="icon-list">
+                        <img src="assets/img/vocabulary.svg" alt="Grammar" class="nav-icon icon-size">
+                        <li><a href="#" onclick="loadPage('materials/extra/vocabulary/vocabulary.html')">
+                                <p>Vocabulary</p>
+                            </a></li>
+                    </div>
+                    <div class="icon-list">
+                        <img src="assets/img/listening.svg" alt="Listening" class="nav-icon icon-size">
+                        <li> <a href="#" onclick="loadPage('materials/extra/listening/listening.html')">
+                                <p>Listening</p>
+                            </a></li>
+                    </div>
+                    <div class="icon-list">
+                        <img src="assets/img/reading.svg" alt="Listening" class="nav-icon icon-size">
+                        <li> <a href="#" onclick="loadPage('materials/extra/reading/reading.html')">
+                                <p>Reading</p>
+                            </a></li>
+                    </div>
+                    <div class="icon-list">
+                        <img src="assets/img/speaking.svg" alt="Listening" class="nav-icon icon-size"
+                            style="width: 30px; margin-left: 4px;">
+                        <li> <a href="#" onclick="loadPage('materials/extra/speaking/speaking.html')">
+                                <p>Speaking</p>
+                            </a></li>
+                    </div>
+                    <br>
+                    <div class="icon-list">
+                        <img src="assets/img/icons/icon-business.svg" alt="Listening" class="nav-icon icon-size">
+                        <li> <a href="#" onclick="loadPage('materials/extra/business/business.html')">
+                                <p>Business</p>
+                            </a></li>
+                    </div>
+                    <!-- <div class="icon-list">
                             <img src="assets/img/speak.svg" alt="Pronunciation" class="nav-icon icon-size">
                             <li><a href="/">
                                     <p>Pronunciation</p>
                                 </a></li>
                         </div> -->
-                        <br>
-                        <!-- <div class="icon-list">
+                    <br>
+                    <!-- <div class="icon-list">
                             <img src="assets/img/log-out.svg" alt="Logout" class="nav-icon icon-size">
                             <li><a><p>Logout</p></a></li>
                             </div> -->
-                    </div>
-                </ul>
-            </nav>
-        </header>
-    </side>
+                </div>
+            </ul>
+        </nav>
+    </header>
     <br>
 
-    <div id="content">
-        <!-- Content will be dynamically loaded here -->
-    </div>
+    <main id="content">
+        <!-- Content will be loaded here -->
+    </main>
 
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
-    <main>
+    <!-- <main id="root">
         <input type="text" placeholder="search" style="width: 100%;">
         <br>
         <br>
@@ -157,200 +172,7 @@
                 wisely.</b></p>
         <br>
 
-        <div class="container-white">
-            <h2 class="feeling-today">How are you?</h2>
-            <h2 class="feeling-today">How are you doing?</h2>
-            <h1 class="feeling-today">How are you feeling today?</h1>
-            <div class="main-container-gifs">
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/UOQIdYsMcjcuzuUwNZ/giphy.gif" alt="Thumb OK emoji"
-                        class="main-gifs">
-                    <p>OK</p>
-                    <p>Good</p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/QWvra259h4LCvdJnxP/giphy.gif" alt="Cheerful emoji"
-                        class="main-gifs">
-                    <p>
-                        <span class="tooltip2">cheerful
-                            <span class="tooltip2-info"><b>cheerful</b>
-                                <span class="times-new-roman"><i>adjective</i></span>
-                                <span class="phonetics">/ˈtʃɪr.fəl/</span> happy and positive
-                                <span class="color-lightgrey"> alegre</span>
-                            </span>
-                        </span>
-                    </p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/WtDLxQWQWLtw3oIXTy/giphy.gif" alt="Crazy emoji"
-                        class="main-gifs">
-                    <p>crazy</p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/fSM1fAZJOixky6npXS/giphy.gif" alt="Goofy emoji"
-                        class="main-gifs">
-                    <p>
-                        <span class="tooltip2">goofy
-                            <span class="tooltip2-info"><b>goofy</b>
-                                <span class="times-new-roman"><i>adjective</i></span>
-                                <span class="phonetics"> /ˈɡuː.fi/ </span> pleasantly silly
-                                <span class="color-lightgrey"> bobo(a)</span>
-                            </span>
-                        </span>
-                    </p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/IzcFv6WJ4310bDeGjo/giphy.gif" alt="Upset emoji"
-                        class="main-gifs">
-                    <p>
-                        <span class="tooltip2">upset
-                            <span class="tooltip2-info"><b>upset</b>
-                                <span class="times-new-roman"><i>adjective</i></span>
-                                <span class="phonetics"> /ʌpˈset/ </span> to make someone worried, unhappy, or angry
-                                <span class="color-lightgrey"> chateado(a)</span>
-                            </span>
-                        </span>
-                    </p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/j5E5qvtLDTfmHbT84Y/giphy.gif" alt="Angry emoji"
-                        class="main-gifs">
-                    <p>angry</p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/kfS15Gnvf9UhkwafJn/giphy.gif" alt="Dissatisfied emoji"
-                        class="main-gifs">
-                    <p>
-                        <span class="tooltip2">dissatisfied
-                            <span class="tooltip2-info"><b>dissatisfied</b>
-                                <span class="times-new-roman"><i>adjective</i></span>
-                                <span class="phonetics"> /ˌdɪsˈsæt̬.əs.faɪd/ </span> not pleased with something; feeling
-                                that something is not as good as it should be
-                                <span class="color-lightgrey"> insatisfeito(a)</span>
-                            </span>
-                        </span>
-                    </p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/h4OGa0npayrJX2NRPT/giphy.gif" alt="Disappoited emoji"
-                        class="main-gifs">
-                    <p>
-                        <span class="tooltip2">disappointed
-                            <span class="tooltip2-info"><b>disappointed</b>
-                                <span class="times-new-roman"><i>adjective</i></span>
-                                <span class="phonetics"> /ˌdɪs.əˈpɔɪn.t̬ɪd/ </span> unhappy because someone or something
-                                was not as good
-                                as you hoped or expected, or because something did not happen
-                                <span class="color-lightgrey"> decepcionado(a)</span>
-                            </span>
-                        </span>
-                    </p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/hEwnTrYovTP5GHAeZp/giphy.gif" alt="Nervous emoji"
-                        class="main-gifs">
-                    <p>nervous</p>
-                    <p>anxious</p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/lRXY41yFFi9RfNXyPN/giphy.gif" alt="Love Emoji"
-                        class="main-gifs">
-                    <p>in love</p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/kgm1x63AjTnn9yyhXh/giphy.gif" alt="Calm emoji "
-                        class="main-gifs">
-                    <p>calm</p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/Ss0X9wziu1NHEPXe5c/giphy.gif" alt="Embarrassed emoji"
-                        class="main-gifs">
-                    <p>
-                        <span class="tooltip2">embarrassed
-                            <span class="tooltip2-info"><b>embarrassed</b>
-                                <span class="times-new-roman"><i>adjective</i></span>
-                                <span class="phonetics"> /ɪmˈber.əst/ </span> feeling ashamed or shy
-                                <span class="color-lightgrey"> envergonhado(a), constrangido(a)</span>
-                            </span>
-                        </span>
-                    </p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/hp3dmEypS0FaoyzWLR/giphy.gif" alt="Tired emoji"
-                        class="main-gifs">
-                    <p>exhausted</p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/J3MPB75dHsHQ1ZSFnK/giphy.gif" alt="Sleepy emoji"
-                        class="main-gifs">
-                    <p>
-                        <span class="tooltip2">sleepy
-                            <span class="tooltip2-info"><b>sleepy</b>
-                                <span class="times-new-roman"><i>adjective</i></span>
-                                <span class="phonetics"> /ˈsliː.pi/ </span> tired and wanting to sleep
-                                <span class="color-lightgrey"> sonolento, con sono</span>
-                            </span>
-                        </span>
-                    </p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="assets/img/emoji/emoji-sick.gif" alt="Idk emoji" class="main-gifs"
-                        style="width: 43.7%; margin-top: 4.9px;">
-                    <p>
-                        <span class="tooltip2">sick
-                            <span class="tooltip2-info"><b>sick</b>
-                                <span class="times-new-roman"><i>adjective</i></span>
-                                <span class="phonetics"> /sɪk/ </span> physically or mentally ill; not well or healthy
-                                <i style="font-family: 'Times New Roman', Times, serif;">synonym</i> ill
-                                <span class="color-lightgrey"> doente</span>
-                            </span>
-                        </span>
-                    </p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/W3CLbW0KY3RtjsqtYO/giphy.gif" alt="Sick emoji"
-                        class="main-gifs">
-                    <p>nauseated</p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/66rL8PmB42HOn3tgZe/giphy.gif" alt="Peace emoji"
-                        class="main-gifs">
-                    <p>in peace</p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/025VTXBFW3OUSWm8fN/giphy.gif" alt="Thankful emoji"
-                        class="main-gifs">
-                    <p>
-                        <span class="tooltip2">thankful
-                            <span class="tooltip2-info"><b>thankful</b>
-                                <span class="times-new-roman"><i>adjective</i></span>
-                                <span class="phonetics"> /ˈθæŋk.fəl/ </span> happy or grateful because of something
-                                <span class="color-lightgrey"> grato(a), agradecido(a)</span>
-                            </span>
-                        </span>
-                    </p>
-                </div>
-                <div class="main-container-gifs-align">
-                    <img src="https://media.giphy.com/media/KhSs4krQkSxPR78oZa/giphy.gif" alt="Idk emoji"
-                        class="main-gifs">
-                    <p>
-                        <span class="tooltip2">Idk
-                            <span class="tooltip2-info"><b>I don't know</b>
-                                <span class="color-lightgrey"> Não sei</span>
-                            </span>
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-
         <a href="/exercises-templates/exercises.html">Temp</a>
-    </main>
-
-    <script>
-     
-    </script>
-
 </body>
 
 </html>
