@@ -10,6 +10,9 @@ function loadPage(url) {
     .then((htmlContent) => {
       // Set the fetched HTML content as the innerHTML of the main section.
       document.getElementById("content").innerHTML = htmlContent;
+
+      // Update the URL in the browser's address bar
+      history.pushState(null, null, url);
     })
     .catch((error) => {
       console.error("There was a problem fetching the HTML:", error);
@@ -18,7 +21,7 @@ function loadPage(url) {
 
 // Self-invoking function to load "home.html" when the site initiates
 (function () {
-    loadPage('home.html');
+  loadPage("home.html");
 })();
 
 // BUTTON DROPDOWN MENU
