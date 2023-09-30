@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/main.js"></script>
-    <script src="/assets/js/loaded-html.js" defer></script>
+    <script src="/assets/js/router.js" defer></script>
+    <script src="/assets/js/contentLoader.js" defer></script>
     <title>Daily Basis English Course</title>
 </head>
 
@@ -24,7 +25,7 @@
                 <!-- COURSES -->
 
                 <div>
-                    <li><a href="#" onclick="loadPage('home.html');">
+                    <li><a href="#home" onclick="loadContent();">
                             <p><b>HOME</b></p>
                         </a></li>
                     <br>
@@ -34,7 +35,7 @@
                     <div class="icon-list">
                         <img src="assets/img/icons/book.svg" alt="Book" class="nav-icon icon-size">
                         <li>
-                            <a href="#" onclick="loadPage ('materials/courses/beginner/beginner.html');">
+                            <a href="#beginner" onclick="loadContent();">
                                 <p>Beginner (A1)</p>
                             </a>
                         </li>
@@ -42,8 +43,8 @@
                     <div class="icon-list">
                         <img src="assets/img/icons/book.svg" alt="Book" class="nav-icon icon-size">
                         <li><a href="#">
-                                <p>Elementary (A1-A2)</p>
-                            </a></li>
+                                <a href="#elementary" onclick="loadContent();"><p>Elementary (A1-A2)</p></a>
+                            </li>
                     </div>
                     <div class="icon-list">
                         <img src="assets/img/icons/book.svg" alt="Book" class="nav-icon icon-size">
@@ -54,17 +55,11 @@
                     <div class="icon-list">
                         <img src="assets/img/icons/book.svg" alt="Book" class="nav-icon icon-size">
                         <li>
-                            <a href="#" onclick="loadPage('materials/courses/intermediate/intermediate.html');">
+                            <a href="#intermediate" onclick="loadContent();">
                                 <p>Intermediate (B1)</p>
                             </a>
                         </li>
                     </div>
-                    <!-- <div class="icon-list">
-                        <img src="assets/img/icons/book.svg" alt="Book" class="nav-icon icon-size">
-                        <li><a href="/">
-                                <p>Intermediate Plus (B1+)</p>
-                            </a></li>
-                    </div> -->
                     <div class="icon-list">
                         <img src="assets/img/icons/book.svg" alt="Book" class="nav-icon icon-size">
                         <li><a href="#">
@@ -77,22 +72,6 @@
                                 <p>Advanced (C1)</p>
                             </a></li>
                     </div>
-                    <!-- <div class="icon-list">
-                                <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
-                                <li><a href="/"><p class="p-main">Advanced Plus (C1+)</p></a></li>
-                            </div> -->
-                    <!-- <div class="icon-list">
-                            <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
-                            <li><a href="materials/courses/time-zones/time-zones-1/time-zones-1a.html">
-                                    <p>Time Zones 1A</p>
-                                </a></li>
-                        </div>
-                        <div class="icon-list">
-                            <img src="assets/img/book.svg" alt="Book" class="nav-icon icon-size">
-                            <li><a href="materials/courses/keynote/keynote-upper-intermediate-2/Keynote upper-Intermediate-2.html">
-                                    <p>Keynote Upper-Intermediate 2</p>
-                                </a></li>
-                        </div> -->
                     <br>
                 </div>
 
@@ -103,7 +82,7 @@
                         </b></li>
                     <div class="icon-list">
                         <img src="assets/img/grammar.svg" alt="Grammar" class="nav-icon icon-size">
-                        <li><a href="#" onclick="loadPage('materials/extra/grammar/grammar.html')">
+                        <li><a href="#grammar" onclick="loadContent()">
                                 <p>Grammar</p>
                             </a></li>
                     </div>
@@ -132,6 +111,12 @@
                                 <p>Speaking</p>
                             </a></li>
                     </div>
+                    <div class="icon-list">
+                            <img src="assets/img/speak.svg" alt="Pronunciation" class="nav-icon icon-size">
+                            <li><a href="/">
+                                    <p>Pronunciation</p>
+                                </a></li>
+                        </div>
                     <br>
                     <div class="icon-list">
                         <img src="assets/img/icons/icon-business.svg" alt="Listening" class="nav-icon icon-size">
@@ -139,17 +124,7 @@
                                 <p>Business</p>
                             </a></li>
                     </div>
-                    <!-- <div class="icon-list">
-                            <img src="assets/img/speak.svg" alt="Pronunciation" class="nav-icon icon-size">
-                            <li><a href="/">
-                                    <p>Pronunciation</p>
-                                </a></li>
-                        </div> -->
                     <br>
-                    <!-- <div class="icon-list">
-                            <img src="assets/img/log-out.svg" alt="Logout" class="nav-icon icon-size">
-                            <li><a><p>Logout</p></a></li>
-                            </div> -->
                 </div>
             </ul>
         </nav>
