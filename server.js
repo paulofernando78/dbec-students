@@ -1,12 +1,20 @@
 // Import the required modules
 const express = require("express");
+const path = require("path"); // Import the 'path' module to work with file paths
 const app = express();
-const port = process.env.PORT || 3000; // Use the specified port or 3000 by default
+const port = process.env.PORT || 3000;
 
-// Define a route to handle incoming requests
-app.get("/", (req, res) => {
-  res.send("Hello, World!"); // Send a response to the root URL
+// Define a route to serve HTML files based on the route parameter
+app.get("/index.html", (req, res) => {
+  const filePath = path.join(__dirname, "html", "index.html");
+
+  res.sendFile(filePath, (err) => {
+    if (err) {
+      res.status(404).send("File not found");
+    }
+  });
 });
+
 
 // Start the server
 app.listen(port, () => {
