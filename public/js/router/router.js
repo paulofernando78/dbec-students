@@ -1,6 +1,6 @@
 // Define a routing table or mapping object
 const routes = {
-  home: "home.html",
+  home: "/public/home.html",
   beginner: "courses/beginner/beginner.html",
   elementary: "courses/elementary/elementary.html",
   pre_intermediate: "courses/pre-intermediate/pre-intermediate.html",

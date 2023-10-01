@@ -7,5 +7,5 @@ const port = 3000;
 app.use(express.static("public")); 
 
 app.listen(port, () => {
-console.log("Server is at http://localhost:3000");
+console.log(`Server is at http://localhost:3000`);
 });
