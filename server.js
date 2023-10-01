@@ -3,10 +3,9 @@ import express from 'express';
 const app = express();
 const port = 3000;
 
-app.get("/", (req, res) =>
-res.send("<h1>Server OK</h1>")
-);
+// Serve static files from a directory (e.g., public)
+app.use(express.static("public")); 
 
 app.listen(port, () => {
-console.log("Servidor iniciando na porta 3000");
+console.log("Server is at http://localhost:3000");
 });
