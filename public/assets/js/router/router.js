@@ -5,9 +5,12 @@ const routes = {
   elementary: "courses/elementary/elementary.html",
   pre_intermediate: "public/courses/pre-intermediate/pre-intermediate.html",
   intermediate: "courses/intermediate/intermediate.html",
-  upper_intermediate:
-    "courses/upper-intermediate/upper-intermediate.html",
+  upper_intermediate: "courses/upper-intermediate/upper-intermediate.html",
   advanced: "courses/advanced/advanced.html",
+
+  // BEGINEER
+  beginner_class_2_classwork_1a_a_cappuccino_please:
+    "courses/beginner/class_2/classwork_1a_a_cappuccino_please.html",
 
   // GRAMMAR-ELEMENTARY
   grammar: "extra/grammar/grammar.html",
