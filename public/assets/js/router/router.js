@@ -14,7 +14,6 @@ const routes = {
 
   // GRAMMAR-ELEMENTARY
   grammar: "extra/grammar/grammar.html",
-  grammar: "extra/grammar/grammar.html",
   grammar_elementary: "extra/grammar/elementary/elementary.html",
   grammar_elementary_unit_1_am_is_are:
     "extra/grammar/elementary/unit_1_am_is_are/unit_1_am_is_are.html",
