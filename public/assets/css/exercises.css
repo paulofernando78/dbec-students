@@ -100,20 +100,7 @@
 
 /* HANGMAN */
 
-.grid-3-columns-word-guess {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center;
-}
 
-.grid-3-columns-word-guess div:nth-child(2) {
-  padding-top: 8.5px;
-}
-
-.grid-3-columns-word-guess div:nth-child(3) {
-  padding-bottom: 5px;
-}
 
 .flex-hm-letters {
   display: flex;
@@ -936,8 +923,8 @@ select option {
     padding-top: 20px;
   }
 
-  .grid-3-columns-word-guess {
+  /* .grid-3-columns-word-guess {
     grid-template-columns: 1fr;
 
-  }
+  } */
 }

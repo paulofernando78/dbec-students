@@ -41,6 +41,7 @@ const routes = {
   speaking: "extra/speaking/speaking.html",
   pronunciation: "extra/pronunciation/pronunciation.html",
   business: "extra/business/business.html",
+  temp: "/exercises-templates/exercises-templates.html",
 };
 
 // Function to load content based on the fragment
