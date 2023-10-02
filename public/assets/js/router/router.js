@@ -1,11 +1,12 @@
 // Define a routing table or mapping object
 const routes = {
-  home: "/public/home.html",
+  home: "home.html",
   beginner: "courses/beginner/beginner.html",
   elementary: "courses/elementary/elementary.html",
-  pre_intermediate: "courses/pre-intermediate/pre-intermediate.html",
+  pre_intermediate: "public/courses/pre-intermediate/pre-intermediate.html",
   intermediate: "courses/intermediate/intermediate.html",
-  upper_intermediate: "courses/upper-intermediate/upper-intermediate.html",
+  upper_intermediate:
+    "courses/upper-intermediate/upper-intermediate.html",
   advanced: "courses/advanced/advanced.html",
 
   // GRAMMAR-ELEMENTARY
