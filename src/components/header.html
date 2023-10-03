@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/routes/routes.js" defer></script>
-    <script src="assets/js/contentLoader.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
-    <script src="assets/js/exercises_templates.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script defer src="../assets/js/routes/routes.js"></script>
+    <script defer src="../assets/js/contentLoader.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/exercises_templates.js"></script>
     <!-- <script src="assets/js/extra/grammar/elementary/unit1_am_is_are/unit-1-am-is-are.js"></script> -->
     <title>Daily Basis English Course</title>
 </head>
@@ -18,18 +18,18 @@
     <header>
         <div>
             <div class="header-content">
-                <img src="assets/img/btn-menu.svg" alt="Menu" class="btn-menu" id="btn-menu" onclick="buttonMenu()">
+                <img src="../assets/img/btn-menu.svg" alt="Menu" class="btn-menu" id="btn-menu" onclick="buttonMenu()">
                 <h1 class="logo-main">DAILY BASIS ENGLISH COURSE</h1>
-                <img src="assets/img/USA-UK.png" alt="USA & UK flags" class="logo-img">
+                <img src="../assets/img/USA-UK.png" alt="USA & UK flags" class="logo-img">
             </div>
-            <div style="padding: 5px;"><input type="text" placeholder="Search bar" id="search_bar"></div>
+            <div style="padding: 5px;"><input type="text" placeholder="search" id="search_bar"></div>
         </div>
         <nav id="links">
             <ul>
                 <!-- COURSES -->
                 <div>
                     <div class="icon-list">
-                        <img src="assets/img/icon/home.svg" alt="Home" class="nav-icon icon-size">
+                        <img src="../assets/img/icon/home.svg" alt="Home" class="nav-icon icon-size">
                         <li><a href="#home" onclick="loadContent();">
                                 <p><b>HOME</b></p>
                             </a></li>
@@ -39,7 +39,7 @@
                             <p><b>COURSES</b></p>
                     </li>
                     <div class="icon-list">
-                        <img src="assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
+                        <img src="../assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
                         <li>
                             <a href="#beginner" onclick="loadContent();">
                                 <p>Beginner (A1)</p>
@@ -47,7 +47,7 @@
                         </li>
                     </div>
                     <div class="icon-list">
-                        <img src="assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
+                        <img src="../assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
                         <li><a href="#">
                                 <a href="#elementary" onclick="loadContent();">
                                     <p>Elementary (A1-A2)</p>
@@ -55,13 +55,13 @@
                         </li>
                     </div>
                     <div class="icon-list">
-                        <img src="assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
+                        <img src="../assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
                         <li><a href="#">
                                 <p style="font-size: 1.1rem;">Pre-Intermediate (A2-B1)</p>
                             </a></li>
                     </div>
                     <div class="icon-list">
-                        <img src="assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
+                        <img src="../assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
                         <li>
                             <a href="#intermediate" onclick="loadContent();">
                                 <p>Intermediate (B1)</p>
@@ -69,13 +69,13 @@
                         </li>
                     </div>
                     <div class="icon-list">
-                        <img src="assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
+                        <img src="../assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
                         <li><a href="#">
                                 <p style="font-size: 1.2rem;">Upper-Intermediate (B2)</p>
                             </a></li>
                     </div>
                     <div class="icon-list">
-                        <img src="assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
+                        <img src="../assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
                         <li><a href="#">
                                 <p>Advanced (C1)</p>
                             </a></li>
@@ -89,38 +89,38 @@
                             <p>EXTRA</p>
                         </b></li>
                     <div class="icon-list">
-                        <img src="assets/img/grammar.svg" alt="Grammar" class="nav-icon icon-size">
+                        <img src="../assets/img/grammar.svg" alt="Grammar" class="nav-icon icon-size">
                         <li><a href="#grammar" onclick="loadContent()">
                                 <p>Grammar</p>
                             </a></li>
                     </div>
                     <div class="icon-list">
-                        <img src="assets/img/vocabulary.svg" alt="Grammar" class="nav-icon icon-size">
+                        <img src="../assets/img/vocabulary.svg" alt="Grammar" class="nav-icon icon-size">
                         <li><a href="#vocabulary" onclick="loadContent()">
                                 <p>Vocabulary</p>
                             </a></li>
                     </div>
                     <div class="icon-list">
-                        <img src="assets/img/listening.svg" alt="Listening" class="nav-icon icon-size">
+                        <img src="../assets/img/listening.svg" alt="Listening" class="nav-icon icon-size">
                         <li> <a href="#listening" onclick="loadContent()">
                                 <p>Listening</p>
                             </a></li>
                     </div>
                     <div class="icon-list">
-                        <img src="assets/img/reading.svg" alt="Listening" class="nav-icon icon-size">
+                        <img src="../assets/img/reading.svg" alt="Listening" class="nav-icon icon-size">
                         <li> <a href="#reading" onclick="loadContent()">
                                 <p>Reading</p>
                             </a></li>
                     </div>
                     <div class="icon-list">
-                        <img src="assets/img/speaking.svg" alt="Listening" class="nav-icon icon-size"
+                        <img src="../assets/img/speaking.svg" alt="Listening" class="nav-icon icon-size"
                             style="width: 30px; margin-left: 4px;">
                         <li> <a href="#speaking" onclick="loadContent()">
                                 <p>Speaking</p>
                             </a></li>
                     </div>
                     <div class="icon-list">
-                        <img src="assets/img/speak.svg" alt="Pronunciation" class="nav-icon icon-size"
+                        <img src="../assets/img/speak.svg" alt="Pronunciation" class="nav-icon icon-size"
                             style="width: 30px; margin-left: 4px;">
                         <li><a href="#pronunciation">
                                 <p>Pronunciation</p>
@@ -128,7 +128,7 @@
                     </div>
                     <br>
                     <div class="icon-list">
-                        <img src="assets/img/icon/business.svg" alt="Listening" class="nav-icon icon-size">
+                        <img src="../assets/img/icon/business.svg" alt="Listening" class="nav-icon icon-size">
                         <li> <a href="#business" onclick="loadContent()">
                                 <p>Business</p>
                             </a></li>

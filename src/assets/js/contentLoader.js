@@ -18,5 +18,5 @@ function loadPage(url) {
 
 // Self-invoking function to load "home.html" when the site initiates
 (function () {
-  loadPage("home.html");
+  loadPage("../pages/home.html");
 })();
