@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/router/routes.js" defer></script>
+    <script src="assets/js/routes/routes.js" defer></script>
     <script src="assets/js/contentLoader.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <!-- <script src="assets/js/exercises_templates.js" defer></script> -->
+    <script src="assets/js/extra/grammar/elementary/unit1_am_is_are/unit-1-am-is-are.js"></script>
     <title>Daily Basis English Course</title>
 </head>
 
@@ -23,6 +25,10 @@
         <nav id="links">
             <ul>
                 <!-- COURSES -->
+
+                <input type="text" placeholder="search" style="width: 100%;">
+                <br>
+                <br>
 
                 <div>
                     <li><a href="#home" onclick="loadContent();">
@@ -43,13 +49,15 @@
                     <div class="icon-list">
                         <img src="assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
                         <li><a href="#">
-                                <a href="#elementary" onclick="loadContent();"><p>Elementary (A1-A2)</p></a>
-                            </li>
+                                <a href="#elementary" onclick="loadContent();">
+                                    <p>Elementary (A1-A2)</p>
+                                </a>
+                        </li>
                     </div>
                     <div class="icon-list">
                         <img src="assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
                         <li><a href="#">
-                                <p class=smaller>Pre-Intermediate (A2-B1)</p>
+                                <p style="font-size: 1.1rem;">Pre-Intermediate (A2-B1)</p>
                             </a></li>
                     </div>
                     <div class="icon-list">
@@ -63,7 +71,7 @@
                     <div class="icon-list">
                         <img src="assets/img/icon/book.svg" alt="Book" class="nav-icon icon-size">
                         <li><a href="#">
-                                <p class=smaller>Upper-Intermediate (B2)</p>
+                                <p style="font-size: 1.2rem;">Upper-Intermediate (B2)</p>
                             </a></li>
                     </div>
                     <div class="icon-list">
@@ -112,11 +120,12 @@
                             </a></li>
                     </div>
                     <div class="icon-list">
-                            <img src="assets/img/speak.svg" alt="Pronunciation" class="nav-icon icon-size" style="width: 30px; margin-left: 4px;">
-                            <li><a href="#pronunciation">
-                                    <p>Pronunciation</p>
-                                </a></li>
-                        </div>
+                        <img src="assets/img/speak.svg" alt="Pronunciation" class="nav-icon icon-size"
+                            style="width: 30px; margin-left: 4px;">
+                        <li><a href="#pronunciation">
+                                <p>Pronunciation</p>
+                            </a></li>
+                    </div>
                     <br>
                     <div class="icon-list">
                         <img src="assets/img/icon/business.svg" alt="Listening" class="nav-icon icon-size">
@@ -134,20 +143,6 @@
     <main id="content">
         <!-- Content will be loaded here -->
     </main>
-
-
-    <!-- <main id="root">
-        <input type="text" placeholder="search" style="width: 100%;">
-        <br>
-        <br>
-        <iframe frameborder="0" width="100%" height="65px"
-            src="https://drive.google.com/file/d/1OS0mdD0xBjXSnALyLjq3jJKS4LibqBJj/preview"></iframe>
-        <br>
-        <p><b>Hi! Welcome to your student's website. Here, you'll find a lot of interesting materials. Please, use it
-                wisely.</b></p>
-        <br>
-
-        <a href="/exercises-templates/exercises.html">Temp</a>
 </body>
 
 </html>
