@@ -31,18 +31,9 @@ body {
 /* NAV */
 
 header {
-    width: 300px;
     position: fixed;
     box-shadow: 0 0 3px;
-}
-
-nav {
-    padding: 10px;
     background-color: #062745;
-    color: white;
-    font-family: var(--font);
-    font-size: var(--nav-font-size);
-    height: 100vh;
 }
 
 .header-content {
@@ -52,6 +43,20 @@ nav {
     justify-content: space-between;
     gap: 10px;
     padding: 10px;
+    box-sizing: content-box;
+}
+
+#search_bar {
+    width: 100%;
+}
+
+nav {
+    padding: 10px;
+    background-color: #062745;
+    color: white;
+    font-family: var(--font);
+    font-size: var(--nav-font-size);
+    height: 100vh;
 }
 
 .logo-main {
@@ -104,7 +109,7 @@ a {
 main {
     padding: 7px;
     position: relative;
-    margin-left: 150px;
+    margin-left: 146px;
     top: -10px;
 }
 
@@ -782,7 +787,7 @@ p {
 
 @media (max-width: 600px) {
 
-    .header {
+    header {
         width: 100%;
         position: static;
     }
