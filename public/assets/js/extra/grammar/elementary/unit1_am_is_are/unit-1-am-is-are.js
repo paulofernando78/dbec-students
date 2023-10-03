@@ -1,72 +1,113 @@
 // EXERCISE 1.1
 // FILL-IN-THE-BLANKS 1
 function checkFill1() {
-  var answers = {
-    blank1_fill1: "she's",
-    blank2_fill1: "they're",
-    blank3_fill1: ["it's not", "it isn't", "it's not, it isn't"],
-    blank4_fill1: "I'm not",
-    blank5_fill1: ["you're not", "you aren't", "you're not, you aren't"],
+  // var answers = {
+  //   blank1_fill1: "she's",
+  //   blank2_fill1: "they're",
+  //   blank3_fill1: ["it's not", "it isn't", "it's not, it isn't"],
+  //   blank4_fill1: "I'm not",
+  //   blank5_fill1: ["you're not", "you aren't", "you're not, you aren't"],
+  // };
+
+  // var fill1Icon1 = document.getElementById("fill1Icon1");
+  // var fill1Icon2 = document.getElementById("fill1Icon2");
+  // var fill1Icon3 = document.getElementById("fill1Icon3");
+  // var fill1Icon4 = document.getElementById("fill1Icon4");
+  // var fill1Icon5 = document.getElementById("fill1Icon5");
+  // var result = document.getElementById("resultFill1");
+
+  // var isCorrect1 =
+  //   document.getElementById("blank1_fill1").value.trim() ===
+  //   answers.blank1_fill1;
+  // var isCorrect2 =
+  //   document.getElementById("blank2_fill1").value.trim() ===
+  //   answers.blank2_fill1;
+  // var userInput3 = document.getElementById("blank3_fill1").value.trim();
+  // var isCorrect3 = answers.blank3_fill1.includes(userInput3);
+  // var isCorrect4 =
+  //   document.getElementById("blank4_fill1").value.trim() ===
+  //   answers.blank4_fill1;
+  // var userInput5 = document.getElementById("blank5_fill1").value.trim();
+  // var isCorrect5 = answers.blank5_fill1.includes(userInput5);
+
+  // fill1Icon1.className = isCorrect1
+  //   ? "fill1-icon correct"
+  //   : "fill1-icon incorrect";
+  // fill1Icon2.className = isCorrect2
+  //   ? "fill1-icon correct"
+  //   : "fill1-icon incorrect";
+  // fill1Icon3.className = isCorrect3
+  //   ? "fill1-icon correct"
+  //   : "fill1-icon incorrect";
+  // fill1Icon4.className = isCorrect4
+  //   ? "fill1-icon correct"
+  //   : "fill1-icon incorrect";
+  // fill1Icon5.className = isCorrect5
+  //   ? "fill1-icon correct"
+  //   : "fill1-icon incorrect";
+
+  // fill1Icon1.style.display = "inline-block";
+  // fill1Icon2.style.display = "inline-block";
+  // fill1Icon3.style.display = "inline-block";
+  // fill1Icon4.style.display = "inline-block";
+  // fill1Icon5.style.display = "inline-block";
+
+  // var correctCount = [
+  //   isCorrect1,
+  //   isCorrect2,
+  //   isCorrect3,
+  //   isCorrect4,
+  //   isCorrect5,
+  // ].filter(function (x) {
+  //   return x === true;
+  // }).length;
+
+  // Lista de respostas
+  const blank_fill = {
+    1: ["she's"],
+    2: ["they're", "they are"],
+    3: ["it's not", "it isn't", "it's not, it isn't"],
+    4: ["i'm not"],
+    5: ["you're not", "you aren't", "you're not", "you aren't"],
   };
 
-  var fill1Icon1 = document.getElementById("fill1Icon1");
-  var fill1Icon2 = document.getElementById("fill1Icon2");
-  var fill1Icon3 = document.getElementById("fill1Icon3");
-  var fill1Icon4 = document.getElementById("fill1Icon4");
-  var fill1Icon5 = document.getElementById("fill1Icon5");
+  // Lista de respostas corretas
+  const resultList = [];
+
+  // Quantidade de vezes que o laço irá se repetir
+  const quantidadeDeRespostas = Object.keys(blank_fill).length;
+  // Isso é um laço de repetição
+  // Passará por cada uma das respostas, validará e dará o resultado
+  for (let i = 1; i <= quantidadeDeRespostas; i = i + 1) {
+    // esse "i" será alterado a cada vez que o laço se repetir
+    // ele já se inicia com valor 1 e continuará rodando até terminar a lista de resposta
+    // Campo onde ficará o ícone
+    const icon = document.getElementById("fill1Icon" + i);
+    // Pega a resposta do aluno
+    const response = document
+      .getElementById("blank" + i + "_fill1")
+      .value.trim();
+    // Válida se a resposta é válida
+    // esse [i] é para acessar a chave (1, 2, 3...) da lista de respostas
+    const isCorrect = blank_fill[i].includes(response.toLowerCase());
+    // Adiciona o resultado da resposta do aluno
+    resultList.push(isCorrect);
+    // Altera o ícone baseado na resposta (correta/errada | true/false)
+    icon.className = isCorrect ? "fill1-icon correct" : "fill1-icon incorrect";
+    icon.style.display = "inline-block";
+  }
+
+  // Filtra para ver quantas questões foram acertadas
+  const correctCount = resultList.filter((x) => x === true).length;
+
+  // Seleciona o elemento onde será exibido o resultado
   var result = document.getElementById("resultFill1");
-
-  var isCorrect1 =
-    document.getElementById("blank1_fill1").value.trim() ===
-    answers.blank1_fill1;
-  var isCorrect2 =
-    document.getElementById("blank2_fill1").value.trim() ===
-    answers.blank2_fill1;
-  var userInput3 = document.getElementById("blank3_fill1").value.trim();
-  var isCorrect3 = answers.blank3_fill1.includes(userInput3);
-  var isCorrect4 =
-    document.getElementById("blank4_fill1").value.trim() ===
-    answers.blank4_fill1;
-  var userInput5 = document.getElementById("blank5_fill1").value.trim();
-  var isCorrect5 = answers.blank5_fill1.includes(userInput5);
-
-  fill1Icon1.className = isCorrect1
-    ? "fill1-icon correct"
-    : "fill1-icon incorrect";
-  fill1Icon2.className = isCorrect2
-    ? "fill1-icon correct"
-    : "fill1-icon incorrect";
-  fill1Icon3.className = isCorrect3
-    ? "fill1-icon correct"
-    : "fill1-icon incorrect";
-  fill1Icon4.className = isCorrect4
-    ? "fill1-icon correct"
-    : "fill1-icon incorrect";
-  fill1Icon5.className = isCorrect5
-    ? "fill1-icon correct"
-    : "fill1-icon incorrect";
-
-  fill1Icon1.style.display = "inline-block";
-  fill1Icon2.style.display = "inline-block";
-  fill1Icon3.style.display = "inline-block";
-  fill1Icon4.style.display = "inline-block";
-  fill1Icon5.style.display = "inline-block";
-
-  var correctCount = [
-    isCorrect1,
-    isCorrect2,
-    isCorrect3,
-    isCorrect4,
-    isCorrect5,
-  ].filter(function (x) {
-    return x === true;
-  }).length;
 
   result.innerHTML =
     "You got " +
     correctCount +
     " out of " +
-    Object.keys(answers).length +
+    Object.keys(blank_fill).length +
     " correct.";
 }
 function showFill1() {
