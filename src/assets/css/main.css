@@ -770,6 +770,11 @@ p {
 
 /* AUDIO PLAYER */
 
+.player-customization {
+    width: 100%;
+    border-radius: 4px;
+}
+
 #audio-player-fixed {
     top: 0;
     position: sticky;
