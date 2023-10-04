@@ -5,6 +5,7 @@ const port = 3000;
 
 // Serve static files from a directory (e.g., public)
 app.use(express.static("."));
+// app.use(express.static("src"));
 
 app.listen(port, () => {
 console.log(`Server is listening at http://localhost:3000`);
