@@ -1,13 +1,12 @@
 // Define a routing table or mapping object
 const routes = {
   home: "../pages/home.html",
-  beginner: "../pages/courses/beginner/beginner.html",
-  elementary: "../pages/courses/elementary/elementary.html",
-  pre_intermediate: "../pages/courses/pre-intermediate/pre-intermediate.html",
-  intermediate: "../pages/courses/intermediate/intermediate.html",
-  upper_intermediate:
-    "../pages/courses/upper-intermediate/upper-intermediate.html",
-  advanced: "../pages/courses/advanced/advanced.html",
+  beginner: "../pages/courses/1_beginner/beginner.html",
+  elementary: "../pages/courses/2_elementary/elementary.html",
+  pre_intermediate: "../pages/courses/3_pre_intermediate/pre_intermediate.html",
+  intermediate: "../pages/courses/4_intermediate/intermediate.html",
+  upper_intermediate: "../pages/courses/5_upper_intermediate/upper_intermediate.html",
+  advanced: "../pages/courses/6_advanced/advanced.html",
 
   // BEGINEER
   beginner_class_2_classwork_1a_a_cappuccino_please:

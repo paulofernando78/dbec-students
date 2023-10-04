@@ -643,7 +643,6 @@ input[type="radio"] {
   height: 22px;
 }
 
-
 /* --- */
 
 .checkbox-correct-icon2 {
@@ -712,158 +711,18 @@ select option {
 
 /* FILL-IN-THE-BLANKS 1 */
 
-.fill1_answer {
+.fill1_answer,
+.fill2_answer,
+.fill3_answer,
+.fill4_answer,
+.fill-text-answer {
   display: none;
 }
 
-.fill1-icon {
-  display: none;
-  margin-left: 5px;
-  position: relative;
-  top: 5px;
-}
-
-.fill1-icon.correct::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../img/correct.svg);
-  background-size: contain;
-  filter: var(--icon-correct);
-  width: 22px;
-  height: 22px;
-}
-
-.fill1-icon.incorrect::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../img/incorrect.svg);
-  background-size: contain;
-  filter: var(--icon-incorrect);
-  width: 22px;
-  height: 22px;
-}
-
-#resultFill1 {
-  margin-top: 10px;
-}
-
-/* FILL-IN-THE-BLANKS 2 */
-
-.fill2_answer {
-  display: none;
-}
-
-.fill2-icon {
-  display: none;
-  margin-left: 5px;
-  position: relative;
-  top: 5px;
-}
-
-.fill2-icon.correct::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../img/correct.svg);
-  background-size: contain;
-  filter: var(--icon-correct);
-  width: 22px;
-  height: 22px;
-}
-
-.fill2-icon.incorrect::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../img/incorrect.svg);
-  background-size: contain;
-  filter: var(--icon-incorrect);
-  width: 22px;
-  height: 22px;
-}
-
-#resultFill2 {
-  margin-top: 10px;
-}
-
-/* FILL-IN-THE-BLANKS 3 */
-
-.fill3_answer {
-  display: none;
-}
-
-.fill3-icon {
-  display: none;
-  margin-left: 5px;
-  position: relative;
-  top: 5px;
-}
-
-.fill3-icon.correct::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../img/correct.svg);
-  background-size: contain;
-  filter: var(--icon-correct);
-  width: 22px;
-  height: 22px;
-}
-
-.fill3-icon.incorrect::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../img/incorrect.svg);
-  background-size: contain;
-  filter: var(--icon-incorrect);
-  width: 22px;
-  height: 22px;
-}
-
-#resultFill3 {
-  margin-top: 10px;
-}
-
-/* FILL-IN-THE-BLANKS 4 */
-
-.fill4_answer {
-  display: none;
-}
-
-.fill4-icon {
-  display: none;
-  margin-left: 5px;
-  position: relative;
-  top: 5px;
-}
-
-.fill4-icon.correct::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../img/correct.svg);
-  background-size: contain;
-  filter: var(--icon-correct);
-  width: 22px;
-  height: 22px;
-}
-
-.fill4-icon.incorrect::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../img/incorrect.svg);
-  background-size: contain;
-  filter: var(--icon-incorrect);
-  width: 22px;
-  height: 22px;
-}
-
-#resultFill4 {
-  margin-top: 10px;
-}
-
-/* FILL-IN-THE-BLANKS TEXT */
-
-.fill-text {
-  width: 150px !important;
-}
-
+.fill1-icon,
+.fill2-icon,
+.fill3-icon,
+.fill4-icon,
 .fill-text-icon {
   display: none;
   margin-left: 5px;
@@ -871,6 +730,10 @@ select option {
   top: 5px;
 }
 
+.fill1-icon.correct::before,
+.fill2-icon.correct::before,
+.fill3-icon.correct::before,
+.fill4-icon.correct::before,
 .fill-text-icon.correct::before {
   display: inline-block;
   content: "";
@@ -881,6 +744,10 @@ select option {
   height: 22px;
 }
 
+.fill1-icon.incorrect::before,
+.fill2-icon.incorrect::before,
+.fill3-icon.incorrect::before,
+.fill4-icon.incorrect::before,
 .fill-text-icon.incorrect::before {
   display: inline-block;
   content: "";
@@ -891,9 +758,21 @@ select option {
   height: 22px;
 }
 
+#resultFill1,
+#resultFill2,
+#resultFill3,
+#resultFill4,
 #resultFilltext {
   margin-top: 10px;
 }
+
+/* FILL-IN-THE-BLANKS TEXT */
+
+.fill-text {
+  width: 150px !important;
+}
+
+/* --- */
 
 .fill-text-answer {
   display: none;
