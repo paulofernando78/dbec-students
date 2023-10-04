@@ -9,7 +9,7 @@
     <script defer src="../assets/js/routes/routes.js"></script>
     <script defer src="../assets/js/contentLoader.js"></script>
     <script defer src="../assets/js/main.js"></script>
-    <script defer src="../assets/js/exercises_templates.js"></script>
+    <!-- <script defer src="../assets/js/exercises_templates.js"></script> -->
     <!-- <script src="../assets/js/extra/grammar/elementary/unit1_am_is_are/unit-1-am-is-are.js"></script> -->
     <title>Daily Basis English Course</title>
 </head>
@@ -122,8 +122,16 @@
                     <div class="icon-list">
                         <img src="../assets/img/speak.svg" alt="Pronunciation" class="nav-icon icon-size"
                             style="width: 30px; margin-left: 4px;">
-                        <li><a href="#pronunciation">
+                        <li> <a href="#pronunciation" onclick="loadContent()">
                                 <p>Pronunciation</p>
+                            </a></li>
+                    </div>
+                    <br>
+                    <div class="icon-list">
+                        <img src="../assets/img/speak.svg" alt="Pronunciation" class="nav-icon icon-size"
+                            style="width: 30px; margin-left: 4px;">
+                        <li> <a href="#expressions" onclick="loadContent()">
+                                <p>Expressions</p>
                             </a></li>
                     </div>
                     <br>
@@ -144,5 +152,4 @@
         <!-- Content will be loaded here -->
     </main>
 </body>
-
 </html>

@@ -5,7 +5,8 @@ const routes = {
   elementary: "../pages/courses/2_elementary/elementary.html",
   pre_intermediate: "../pages/courses/3_pre_intermediate/pre_intermediate.html",
   intermediate: "../pages/courses/4_intermediate/intermediate.html",
-  upper_intermediate: "../pages/courses/5_upper_intermediate/upper_intermediate.html",
+  upper_intermediate:
+    "../pages/courses/5_upper_intermediate/upper_intermediate.html",
   advanced: "../pages/courses/6_advanced/advanced.html",
 
   // BEGINEER
@@ -70,14 +71,19 @@ const routes = {
   false_cognates:
     "../pages/extra/vocabulary/(false)_cognates/(false)_cognates.html",
 
+  // LISTENING
   listening: "../pages/extra/listening/listening.html",
-  penguin_kids: "extra/listening/penguin_kids/penguin_kids.html",
+
+  // LISTENING PENGUIN KIDS
+  penguin_kids: "../pages/extra/listening/penguin_kids/penguin_kids.html",
   penguin_kids_level_1_dumbo:
     "../pages/extra/listening/penguin_kids/dumbo/dumbo.html",
 
   reading: "../pages/extra/reading/reading.html",
   speaking: "../pages/extra/speaking/speaking.html",
   pronunciation: "../pages/extra/pronunciation/pronunciation.html",
+  expressions: "../pages/extra/expressions/expressions.html",
+
   business: "../pages/extra/business/business.html",
 
   temp: "../pages/_exercises_templates/exercises_templates.html",
