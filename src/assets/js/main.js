@@ -1,7 +1,8 @@
 // BUTTON DROPDOWN MENU
 function buttonMenu() {
+  const links = document.getElementById("nav_bar");
   if (links.style.display == "block") {
-    links.style = "none";
+    links.style.display = "none";
   } else {
     links.style.display = "block";
   }
