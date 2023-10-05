@@ -28,7 +28,7 @@ body {
     font-family: var(--font);
 }
 
-/* NAV */
+/* HEADER */
 
 header {
     position: fixed;
@@ -46,9 +46,32 @@ header {
     box-sizing: content-box;
 }
 
-#search_bar {
+/* NAV */
+
+.search_bar {
+    position: relative;
     width: 100%;
 }
+
+.search_bar input {
+    width: 100%;
+}
+
+.search_bar:before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/header_nav/search.svg);
+}
+
+/* .search_bar img {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+} */
 
 nav {
     padding: 10px;
@@ -139,6 +162,108 @@ main {
     padding-top: 30px;
 }
 
+/* CELTA GIFS */
+
+.celta_space_between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.celta_center {
+    display: flex;
+    align-items: center;
+}
+
+.celta_warmup {
+    width: 40px;
+    height: 50px;
+    margin: 0 15px 0 6px;
+    filter: drop-shadow(.5px .5px .5px);
+}
+
+.celta_introduction {
+    width: 53px;
+    height: 50px;
+    margin: 0 16px 0 2px;
+    filter: drop-shadow(.5px .5px .5px);
+}
+
+.celta_presentation {
+    width: 55px;
+    height: 53px;
+    filter: drop-shadow(.5px .5px .5px) grayscale();
+    margin: 0 15px 0 6px;
+    padding-top: 3px;
+    position: relative;
+    top: 1px;
+}
+
+.celta_practice {
+    width: 65px;
+    height: 50px;
+    margin: 0 15px 0 5px;
+    filter: drop-shadow(.5px .5px .5px);
+}
+
+.copy_practice {
+    margin-bottom: 23.5px;
+}
+
+.celta_production {
+    width: 50px;
+    height: 47px;
+    margin: 0 15px 0 6px;
+    filter: drop-shadow(.5px .5px .5px);
+}
+
+.celta_wp_fillin {
+    width: 63px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.celta_wp_click {
+    width: 30px;
+    height: 45x;
+    margin-right: 15px;
+    position: relative;
+    top: -2px;
+}
+
+.celta_op {
+    width: 50px;
+    height: 45x;
+    margin-right: 15px;
+    position: relative;
+    top: -2px;
+}
+
+.celta_wrapup {
+    width: 53px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.celta_time {
+    position: relative;
+    bottom: 22px;
+    left: 540px;
+}
+
+.celta_listenup {
+    width: 40px;
+    padding-bottom: 10px;
+}
+
+.celta_mouth {
+    width: 40px;
+}
+
+.celta_eye {
+    width: 40px;
+}
+
 /* GENERAL */
 
 /* ICONS */
@@ -168,7 +293,6 @@ main {
     width: 1.6rem;
     position: relative;
     top: 2px;
-
 }
 
 .icon-arrow-right {
@@ -178,106 +302,6 @@ main {
 
 .icon-general-margin-bottom {
     margin-bottom: 16px;
-}
-
-.icon-celta-space-between {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.icon-celta-center {
-    display: flex;
-    align-items: center;
-}
-
-.icon-celta-warmup {
-    width: 40px;
-    height: 50px;
-    margin: 0 15px 0 6px;
-    filter: drop-shadow(.5px .5px .5px);
-}
-
-.icon-celta-introduction {
-    width: 53px;
-    height: 50px;
-    margin: 0 16px 0 2px;
-    filter: drop-shadow(.5px .5px .5px);
-}
-
-.icon-celta-presentation {
-    width: 55px;
-    height: 53px;
-    filter: drop-shadow(.5px .5px .5px) grayscale();
-    margin: 0 15px 0 6px;
-    padding-top: 3px;
-    position: relative;
-    top: 1px;
-}
-
-.icon-celta-practice {
-    width: 65px;
-    height: 50px;
-    margin: 0 15px 0 5px;
-    filter: drop-shadow(.5px .5px .5px);
-}
-
-.icon-copy-practice {
-    margin-bottom: 23.5px;
-}
-
-.icon-celta-production {
-    width: 50px;
-    height: 47px;
-    margin: 0 15px 0 6px;
-    filter: drop-shadow(.5px .5px .5px);
-}
-
-.icon-celta-wp-fillin {
-    width: 63px;
-    height: 35px;
-    margin-right: 15px;
-}
-
-.icon-celta-wp-click {
-    width: 30px;
-    height: 45x;
-    margin-right: 15px;
-    position: relative;
-    top: -2px;
-}
-
-.icon-celta-op {
-    width: 50px;
-    height: 45x;
-    margin-right: 15px;
-    position: relative;
-    top: -2px;
-}
-
-.icon-celta-wrapup {
-    width: 53px;
-    height: 48px;
-    margin-right: 10px;
-}
-
-.icon-celta-time {
-    position: relative;
-    bottom: 22px;
-    left: 540px;
-}
-
-.icon-listenup {
-    width: 40px;
-    padding-bottom: 10px;
-}
-
-.icon-mouth {
-    width: 40px;
-}
-
-.icon-eye {
-    width: 40px;
 }
 
 /*FONT AND TEXT */

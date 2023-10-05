@@ -9,9 +9,14 @@ const routes = {
     "../pages/courses/5_upper_intermediate/upper_intermediate.html",
   advanced: "../pages/courses/6_advanced/advanced.html",
 
-  // BEGINEER
+  // BEGINNER
+  beginner_class_2_flipped_classroom_1a_a_cappuccino_please:
+    "../pages/courses/1_beginner/class_2/flipped_classroom_1a_a_cappuccino_please.html",
   beginner_class_2_classwork_1a_a_cappuccino_please:
-    "../pages/courses/beginner/class_2/classwork_1a_a_cappuccino_please.html",
+    "../pages/courses/1_beginner/class_2/classwork_1a_a_cappuccino_please.html",
+  beginner_class_2_homework_1a_a_cappuccino_please:
+    "../pages/courses/1_beginner/class_2/homework_1a_a_cappuccino_please.html",
+
   beginner_class_3: "",
   beginner_class_4: "",
   beginner_class_5: "",
@@ -82,6 +87,8 @@ const routes = {
   reading: "../pages/extra/reading/reading.html",
   speaking: "../pages/extra/speaking/speaking.html",
   pronunciation: "../pages/extra/pronunciation/pronunciation.html",
+  pronunciation_letter_u: "../pages/extra/pronunciation/letter_u/letter_u.html",
+
   expressions: "../pages/extra/expressions/expressions.html",
 
   business: "../pages/extra/business/business.html",
