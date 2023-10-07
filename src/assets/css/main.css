@@ -374,7 +374,7 @@ p {
 .container-black {
     background: black;
     border-radius: 4px;
-    padding-left: 10px;
+    padding: 10px;
     box-shadow: 0 0 3px;
 }
 
@@ -810,7 +810,7 @@ p {
     animation: pulse 3s linear infinite;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 600px) {
     nav {
         display: block !important;
     }

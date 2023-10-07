@@ -75,6 +75,8 @@ const routes = {
     "../pages/extra/vocabulary/essential_words/essential_words.html",
   false_cognates:
     "../pages/extra/vocabulary/(false)_cognates/(false)_cognates.html",
+  homophone_homograph_homonym:
+    "../pages/extra/vocabulary/homophone_homograph_homonym/homophone_homograph_homonym.html",
 
   // LISTENING
   listening: "../pages/extra/listening/listening.html",
@@ -83,6 +85,32 @@ const routes = {
   penguin_kids: "../pages/extra/listening/penguin_kids/penguin_kids.html",
   penguin_kids_level_1_dumbo:
     "../pages/extra/listening/penguin_kids/dumbo/dumbo.html",
+
+  // LISTENING PENGUIN READERS
+  penguin_readers:
+    "../pages/extra/listening/penguin-readers/penguin-readers.html",
+  penguin_readers_flying_home:
+    "../pages/extra/listening/penguin-readers/easystarts/flying-home/flying-home.html",
+  penguin_readers_newspaper_chase:
+    "../pages/extra/listening/penguin-readers/easystarts/newspaper-chase/newspaper-chase.html",
+  penguin_readers_a_new_zealand_adventure:
+    "../pages/extra/listening/penguin-readers/easystarts/a-new-zealand-adventure/a-new-zealand-adventure.html",
+  penguin_readers_marcel_and_the_white_star:
+    "../pages/extra/listening/penguin-readers/easystarts/marcel-and-the-white-star/marcel-and-the-white-star.html",
+  penguin_readers_simon_and_the_spy:
+    "../pages/extra/listening/penguin-readers/easystarts/marcel-and-the-white-star/marcel-and-the-white-star.html",
+  penguin_readers_the_last_photo:
+    "../pages/extra/listening/penguin-readers/easystarts/the-pearl-girl/the-pearl-girl.html",
+  penguin_readers_the_leopard_and_the_lighthouse:
+    "../pages/extra/listening/penguin-readers/easystarts/xxx/xxx.html",
+  penguin_readers_the_pearl_girl:
+    "../pages/extra/listening/penguin-readers/easystarts/xxx/xxx.html",
+  penguin_readers_tinkers_island:
+    "../pages/extra/listening/penguin-readers/easystarts/xxx/xxx.html",
+  penguin_readers_the_fireboy:
+    "../pages/extra/listening/penguin-readers/easystarts/xxx/xxx.html",
+  penguin_readers_who_wants_to_be_a_star:
+    "../pages/extra/listening/penguin-readers/easystarts/who-wants-to-be-a-star/who-wants-to-be-a-star.html",
 
   reading: "../pages/extra/reading/reading.html",
   speaking: "../pages/extra/speaking/speaking.html",
