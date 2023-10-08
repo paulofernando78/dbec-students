@@ -98,13 +98,13 @@ const routes = {
   penguin_readers_marcel_and_the_white_star:
     "../pages/extra/listening/penguin-readers/easystarts/marcel-and-the-white-star/marcel-and-the-white-star.html",
   penguin_readers_simon_and_the_spy:
-    "../pages/extra/listening/penguin-readers/easystarts/marcel-and-the-white-star/marcel-and-the-white-star.html",
+    "../pages/extra/listening/penguin-readers/easystarts/simon-and-the-spy/simon-and-the-spy.html",
   penguin_readers_the_last_photo:
-    "../pages/extra/listening/penguin-readers/easystarts/the-pearl-girl/the-pearl-girl.html",
+    "../pages/extra/listening/penguin-readers/easystarts/the-last-photo/the-last-photo.html",
   penguin_readers_the_leopard_and_the_lighthouse:
     "../pages/extra/listening/penguin-readers/easystarts/xxx/xxx.html",
   penguin_readers_the_pearl_girl:
-    "../pages/extra/listening/penguin-readers/easystarts/xxx/xxx.html",
+    "../pages/extra/listening/penguin-readers/easystarts/the-pearl-girl/the-pearl-girl.html",
   penguin_readers_tinkers_island:
     "../pages/extra/listening/penguin-readers/easystarts/xxx/xxx.html",
   penguin_readers_the_fireboy:
