@@ -108,7 +108,7 @@ const routes = {
   penguin_readers_tinkers_island:
     "../pages/extra/listening/penguin-readers/easystarts/xxx/xxx.html",
   penguin_readers_the_fireboy:
-    "../pages/extra/listening/penguin-readers/easystarts/xxx/xxx.html",
+    "../pages/extra/listening/penguin-readers/easystarts/the-fireboy/the-fireboy.html",
   penguin_readers_who_wants_to_be_a_star:
     "../pages/extra/listening/penguin-readers/easystarts/who-wants-to-be-a-star/who-wants-to-be-a-star.html",
 
