@@ -24,10 +24,6 @@
     gap: 20px;
 }
 
-.penguin-kids-container div:nth-child(1) {
-    margin-left: 30px;
-}
-
 .img-penguin {
     margin-top: 20px;
 }
@@ -58,9 +54,5 @@
 
     .penguin-kids-container {
         grid-template-columns: 1fr;
-    }
-
-    .penguin-kids-container div:nth-child(1) {
-        margin-left: 0;
     }
 }

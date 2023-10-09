@@ -82,9 +82,13 @@ const routes = {
   listening: "../pages/extra/listening/listening.html",
 
   // LISTENING PENGUIN KIDS
-  penguin_kids: "../pages/extra/listening/penguin_kids/penguin_kids.html",
+  penguin_kids: "../pages/extra/listening/penguin-kids/penguin-kids.html",
   penguin_kids_level_1_dumbo:
-    "../pages/extra/listening/penguin_kids/dumbo/dumbo.html",
+    "../pages/extra/listening/penguin-kids/dumbo/dumbo.html",
+  penguin_kids_level_1_sleeping_beauty:
+    "../pages/extra/listening/penguin-kids/sleeping-beauty/sleeping-beauty.html",
+  penguin_kids_level_1_cinderella:
+    "../pages/extra/listening/penguin-kids/cinderella/cinderella.html",
 
   // LISTENING PENGUIN READERS
   penguin_readers:
