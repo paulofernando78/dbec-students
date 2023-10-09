@@ -104,7 +104,7 @@ const routes = {
   penguin_readers_the_last_photo:
     "../pages/extra/listening/penguin-readers/easystarts/the-last-photo/the-last-photo.html",
   penguin_readers_the_leopard_and_the_lighthouse:
-    "../pages/extra/listening/penguin-readers/easystarts/xxx/xxx.html",
+    "../pages/extra/listening/penguin-readers/easystarts/the-leopard-and-the-lighthouse/the-leopard-and-the-lighthouse.html",
   penguin_readers_the_pearl_girl:
     "../pages/extra/listening/penguin-readers/easystarts/the-pearl-girl/the-pearl-girl.html",
   penguin_readers_tinkers_island:
