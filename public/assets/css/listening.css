@@ -18,16 +18,6 @@
     margin-top: 20px;
 }
 
-.penguin-kids-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.img-penguin {
-    margin-top: 20px;
-}
-
 @media (max-width: 600px) {
 
     .grid-2-columns-listening {
@@ -36,9 +26,9 @@
         align-items: start;
     }
 
-        .grid-2-columns-listening .checkbox1 {
-            margin-top: 4px;
-        }
+    .grid-2-columns-listening .checkbox1 {
+        margin-top: 4px;
+    }
 
     .penguin-readers-container-cover {
         display: flex;
