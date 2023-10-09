@@ -164,32 +164,32 @@ main {
 
 /* CELTA GIFS */
 
-.celta_space_between {
+.celta-space_between {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.celta_center {
+.celta-center {
     display: flex;
     align-items: center;
 }
 
-.celta_warmup {
+.celta-warmup {
     width: 40px;
     height: 50px;
     margin: 0 15px 0 6px;
     filter: drop-shadow(.5px .5px .5px);
 }
 
-.celta_introduction {
+.celta-introduction {
     width: 53px;
     height: 50px;
     margin: 0 16px 0 2px;
     filter: drop-shadow(.5px .5px .5px);
 }
 
-.celta_presentation {
+.celta-presentation {
     width: 55px;
     height: 53px;
     filter: drop-shadow(.5px .5px .5px) grayscale();
@@ -199,31 +199,31 @@ main {
     top: 1px;
 }
 
-.celta_practice {
+.celta-practice {
     width: 65px;
     height: 50px;
     margin: 0 15px 0 5px;
     filter: drop-shadow(.5px .5px .5px);
 }
 
-.copy_practice {
+.copy-practice {
     margin-bottom: 23.5px;
 }
 
-.celta_production {
+.celta-production {
     width: 50px;
     height: 47px;
     margin: 0 15px 0 6px;
     filter: drop-shadow(.5px .5px .5px);
 }
 
-.celta_wp_fillin {
+.celta-wp_fillin {
     width: 63px;
     height: 35px;
     margin-right: 15px;
 }
 
-.celta_wp_click {
+.celta-wp_click {
     width: 30px;
     height: 45x;
     margin-right: 15px;
@@ -231,7 +231,7 @@ main {
     top: -2px;
 }
 
-.celta_op {
+.celta-op {
     width: 50px;
     height: 45x;
     margin-right: 15px;
@@ -239,28 +239,28 @@ main {
     top: -2px;
 }
 
-.celta_wrapup {
+.celta-wrapup {
     width: 53px;
     height: 48px;
     margin-right: 10px;
 }
 
-.celta_time {
+.celta-time {
     position: relative;
     bottom: 22px;
     left: 540px;
 }
 
-.celta_listenup {
+.celta-listenup {
     width: 40px;
     padding-bottom: 10px;
 }
 
-.celta_mouth {
+.celta-mouth {
     width: 40px;
 }
 
-.celta_eye {
+.celta-eye {
     width: 40px;
 }
 

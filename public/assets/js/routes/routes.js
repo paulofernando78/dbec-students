@@ -1,21 +1,21 @@
 // Define a routing table or mapping object
 const routes = {
   home: "../pages/home.html",
-  beginner: "../pages/courses/1_beginner/beginner.html",
-  elementary: "../pages/courses/2_elementary/elementary.html",
-  pre_intermediate: "../pages/courses/3_pre_intermediate/pre_intermediate.html",
-  intermediate: "../pages/courses/4_intermediate/intermediate.html",
+  beginner: "../pages/courses/1-beginner/beginner.html",
+  elementary: "../pages/courses/2-elementary/elementary.html",
+  pre_intermediate: "../pages/courses/3-pre-intermediate/pre-intermediate.html",
+  intermediate: "../pages/courses/4-intermediate/intermediate.html",
   upper_intermediate:
-    "../pages/courses/5_upper_intermediate/upper_intermediate.html",
-  advanced: "../pages/courses/6_advanced/advanced.html",
+    "../pages/courses/5_upper-intermediate/upper-intermediate.html",
+  advanced: "../pages/courses/6-advanced/advanced.html",
 
   // BEGINNER
   beginner_class_2_flipped_classroom_1a_a_cappuccino_please:
-    "../pages/courses/1_beginner/class_2/flipped_classroom_1a_a_cappuccino_please.html",
+    "../pages/courses/1-beginner/class-2/flipped-classroom-1a-a-cappuccino-please.html",
   beginner_class_2_classwork_1a_a_cappuccino_please:
-    "../pages/courses/1_beginner/class_2/classwork_1a_a_cappuccino_please.html",
+    "../pages/courses/1-beginner/class-2/classwork-1a-a-cappuccino-please.html",
   beginner_class_2_homework_1a_a_cappuccino_please:
-    "../pages/courses/1_beginner/class_2/homework_1a_a_cappuccino_please.html",
+    "../pages/courses/1-beginner/class-2/homework-1a-a-cappuccino-please.html",
 
   beginner_class_3: "",
   beginner_class_4: "",
