@@ -93,6 +93,8 @@ const routes = {
     "../pages/extra/listening/penguin-readers/easystarts/flying-home/flying-home.html",
   penguin_readers_newspaper_chase:
     "../pages/extra/listening/penguin-readers/easystarts/newspaper-chase/newspaper-chase.html",
+  penguin_readers_new_zealand_adventure:
+    "../pages/extra/listening/penguin-readers/easystarts/new-zealand-adventure/new-zealand-adventure.html",
   penguin_readers_a_new_zealand_adventure:
     "../pages/extra/listening/penguin-readers/easystarts/a-new-zealand-adventure/a-new-zealand-adventure.html",
   penguin_readers_marcel_and_the_white_star:
