@@ -475,7 +475,6 @@ p {
     box-shadow: 0 0 3px;
 }
 
-
 /* COLORS */
 
 .color-black {
@@ -551,6 +550,13 @@ p {
 .flex-center {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flex-space-between {
+    display: flex;
+    align-items: space-between ;
     flex-wrap: wrap;
     gap: 10px;
 }
