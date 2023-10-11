@@ -7,8 +7,6 @@ function resetRadios() {
   }
 }
 
-console.log("checkCheckboxes1")
-
 // xxx
 // CHECKBOXES 1
 function checkCheckboxes1() {
