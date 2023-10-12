@@ -1,4 +1,3 @@
-// Function to fetch and display HTML content in the main section.
 function loadPage(url) {
   fetch(url)
     .then((response) => {
@@ -10,6 +9,22 @@ function loadPage(url) {
     .then((htmlContent) => {
       // Set the fetched HTML content as the innerHTML of the main section.
       document.getElementById("content").innerHTML = htmlContent;
+
+      // Find and load associated JavaScript files within the loaded HTML content.
+      const scriptElements = document
+        .getElementById("content")
+        .querySelectorAll("script");
+      scriptElements.forEach((scriptElement) => {
+        const src = scriptElement.getAttribute("src");
+        if (src) {
+          const script = document.createElement("script");
+          script.src = src;
+          document.body.appendChild(script);
+        } else {
+          // Execute inline scripts
+          eval(scriptElement.innerHTML);
+        }
+      });
     })
     .catch((error) => {
       console.error("There was a problem fetching the HTML:", error);

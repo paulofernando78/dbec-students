@@ -5,11 +5,7 @@
 
 /* CSS */
 
-@import url(index.css);
-@import url(beginner.css);
-@import url(intermediate.css);
-@import url(listening.css);
-@import url(exercises.css);
+@import url(import.css);
 
 /* ROOT */
 
