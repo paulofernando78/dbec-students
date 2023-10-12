@@ -58,17 +58,17 @@ const routes = {
   grammar: "../pages/extra/grammar/grammar.html",
   grammar_elementary: "../pages/extra/grammar/elementary/elementary.html",
   grammar_elementary_unit_1_am_is_are:
-    "../pages/extra/grammar/elementary/unit_1_am_is_are/unit_1_am_is_are.html",
+    "../pages/extra/grammar/elementary/unit-1-am-is-are/unit-1-am-is-are.html",
   grammar_elementary_unit_2_am_is_are_questions:
-    "../pages/extra/grammar/elementary/unit_2_am_is_are_questions/unit_2_am_is_are_questions.html",
+    "../pages/extra/grammar/elementary/unit_2-am-is-are-questions/unit-2-am-is-are-questions.html",
   grammar_elementary_unit_3_i_am_doing_present_continuous:
-    "../pages/extra/grammar/elementary/unit_3_i_am_doing_present_continuous/unit_3_i_am_doing_present_continuous.html",
+    "../pages/extra/grammar/elementary/unit-3-i-am-doing-present-continuous/unit-3-i-am-doing-present-continuous.html",
   grammar_elementary_unit_4_are_you_doing_present_continuous_questions:
-    "../pages/extra/grammar/elementary/unit_4_are_you_doing_present_continuous_questions/unit_4_are_you_doing_present_continuous_questions.html",
+    "../pages/extra/grammar/elementary/unit-4-are-you-doing-present-continuous-questions/unit-4-are-you-doing-present-continuous-questions.html",
   grammar_elementary_unit_5_i_do_work_like_etc_simple_present:
-    "../pages/extra/grammar/elementary/unit_5_i_do_work_like_etc_simple_present/unit_5_i_do_work_like_etc_simple_present.html",
+    "../pages/extra/grammar/elementary/unit-5-i-do-work-like-etc-simple-present/unit-5-i-do-work-like-etc-simple-present.html",
   grammar_elementary_unit_6_i_dont_simple_present_negative:
-    "../pages/extra/grammar/elementary/unit_6_i_dont_simple_present_negative/unit_6_i_dont_simple_present_negative.html",
+    "../pages/extra/grammar/elementary/unit-6-i-dont-simple-present-negative/unit-6-i-dont-simple-present-negative.html",
 
   vocabulary: "../pages/extra/vocabulary/vocabulary.html",
   essential_words:
