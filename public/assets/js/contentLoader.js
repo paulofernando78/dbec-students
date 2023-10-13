@@ -25,7 +25,21 @@ function loadPage(url) {
           eval(scriptElement.innerHTML);
         }
       });
+
+      //  const linkElements = document
+      //   .getElementById("content")
+      //   .querySelectorAll("link[rel='stylesheet']");
+      // linkElements.forEach((linkElement) => {
+      //   const href = linkElement.getAttribute("href");
+      //   if (href) {
+      //     const stylesheet = document.createElement("link");
+      //     stylesheet.rel = "stylesheet";
+      //     stylesheet.href = href;
+      //     document.head.appendChild(stylesheet);
+      //   }
+      // });
     })
+
     .catch((error) => {
       console.error("There was a problem fetching the HTML:", error);
     });
