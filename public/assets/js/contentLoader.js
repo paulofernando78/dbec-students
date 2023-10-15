@@ -11,7 +11,7 @@ function loadPage(url) {
       document.getElementById("content").innerHTML = htmlContent;
 
       // Scroll the page to the top
-      // window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
 
       // Find and load associated JavaScript files within the loaded HTML content.
       const scriptElements = document
