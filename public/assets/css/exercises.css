@@ -101,8 +101,6 @@
 
 /* HANGMAN */
 
-
-
 .flex-hm-letters {
   display: flex;
   flex-wrap: wrap;
@@ -211,6 +209,10 @@
 }
 
 /* SHUFFLE CARD */
+
+.shuffle-content {
+  margin: 0 20px 0 20px
+}
 
 .shuffle-background-grid-2 {
   display: grid;
