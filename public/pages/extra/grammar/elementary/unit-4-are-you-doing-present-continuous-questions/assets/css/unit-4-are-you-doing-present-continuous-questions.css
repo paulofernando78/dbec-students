@@ -1,16 +1,16 @@
 .unit-4-a-affirmative-question-grid {
+    width: 354px;
     display: grid;
-    grid-template-columns: 97px 97px 100px;
-    width: 356px;
+    grid-template-columns: 90px 97px 93px;
     align-items: center;
     gap: 33px;
 }
 
 .unit-4-b-word-order {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: 160px 70px 140px 200px;
-    width: 532px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 160px 70px 140px 150px;
+    width: 520px;
 }
 
 @media (max-width: 600px) {
@@ -19,7 +19,7 @@
         display: grid;
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: 80px 50px 63px 200px;
-        width: 356px;
+        width: 342px;
     }
 
     .unit-4-b-smaller {
