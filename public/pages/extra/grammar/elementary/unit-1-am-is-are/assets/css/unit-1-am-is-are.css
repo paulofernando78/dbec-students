@@ -1,13 +1,23 @@
+.grid-lisa {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.lisa {
+    padding: 20px
+}
+
 .unit-1-a-affirmative-grid {
     display: grid;
     grid-template-columns: 1fr;
-    width: 292px;
+    max-width: 292px;
 }
 
 .unit-1-a-negative-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 421px;
+    max-width: 421px;
 }
 
 /* .unit-1-exercise-1-1 {
@@ -17,10 +27,19 @@
 
 @media (max-width: 600px) {
 
+    .grid-lisa {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .lisa {
+        max-width: 30%;
+    }
+
     .unit-1-a-negative-grid {
         display: grid;
         grid-template-columns: 1fr;
-        width: 357px;
+        max-width: 348px;
     }
 
     .unit-1-a-negative-smaller-font-1 {

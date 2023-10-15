@@ -99,6 +99,12 @@
   outline: none;
 }
 
+.flex-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
 /* HANGMAN */
 
 .flex-hm-letters {
@@ -467,7 +473,7 @@ input[type="text"] {
   margin: .1rem 0 .1rem 0;
   font-family: var(--font);
   font-size: var(--p-size);
-  width: 90%;
+  width: 86%;
 }
 
 /* RADIO BUTTONS */

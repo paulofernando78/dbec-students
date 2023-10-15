@@ -9,6 +9,10 @@
     gap: 20px;
 }
 
+.short-answer-pic {
+    width: 50%;
+}
+
 @media (max-width: 600px) {
 
     .unit-2-c-short-answers-flex {
