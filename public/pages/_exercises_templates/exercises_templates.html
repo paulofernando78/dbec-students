@@ -28,7 +28,7 @@
 
         <div class="container-white word_guess_padding" style="padding: 15px;">
           <div class="flex-columns" style="margin: 0 auto; padding: 30px;">
-            <img src="" alt="Image" class="img-1-100" style="width: 80%;">
+            <img src="" alt="Image" class="img-1-100-border" style="width: 80%;">
           </div>
 
           <!-- LETTERS -->
@@ -203,7 +203,7 @@
           <div class="flip-card" id="flipped">
             <div class="flip-card-front flip-card1-bg-img">
               <div>
-                <img src="../../assets/img/icon/icon-flip.png" alt="Icon flip;" class="flip-card-icon">
+                <img src="../../assets/img/icon/flip.png" alt="Icon flip;" class="flip-card-icon">
               </div>
             </div>
             <div class="flip-card-back">
@@ -217,7 +217,7 @@
           <div class="flip-card">
             <div class="flip-card-front">
               <div class="grid-2-rows-flip-card">
-                <img src="../../assets/img/icons/icon-flip.png" alt="Icon flip;" class="flip-card2-icon">
+                <img src="../assets/img/icon/flip.png" alt="Icon flip;" class="flip-card2-icon">
                 <p>What's the past and participle of the verb ask?<b></b>?</p>
               </div>
             </div>
@@ -240,9 +240,9 @@
           <div class="flip-card">
             <div class="flip-card-front">
               <div class="grid-3-rows-flip-card">
-                <img src="../../assets/img/icons/icon-flip.png" alt="Icon flip;"
+                <img src="../assets/img/icon/flip.png" alt="Icon flip;"
                   class="grid-3-rows-flip-card-icon-item flip-card3-icon">
-                <img src="../../assets/img/book-title.gif" alt="Pic1" style="width: 30%;">
+                <img src="../assets/img/gif/book-title.gif" alt="Pic1" style="width: 30%;">
                 <p>What is it?</p>
               </div>
             </div>
@@ -632,21 +632,23 @@
           </div>
           <br>
 
-          <button onclick="checkCheckboxes1()" class="pushable">
-            <span class="shadow"></span>
-            <span class="edge"></span>
-            <span class="front">Check answers</span>
-          </button>
-          <button onclick="showCheckboxes1()" class="pushable">
-            <span class="shadow"></span>
-            <span class="edge"></span>
-            <span class="front">Show answers</span>
-          </button>
-          <button onclick="resetCheckboxes1()" class="pushable">
-            <span class="shadow"></span>
-            <span class="edge"></span>
-            <span class="front">Reset</span>
-          </button>
+          <div class="flex-button">
+            <button onclick="checkCheckboxes1()" class="pushable">
+              <span class="shadow"></span>
+              <span class="edge"></span>
+              <span class="front">Check answers</span>
+            </button>
+            <button onclick="showCheckboxes1()" class="pushable">
+              <span class="shadow"></span>
+              <span class="edge"></span>
+              <span class="front">Show answers</span>
+            </button>
+            <button onclick="resetCheckboxes1()" class="pushable">
+              <span class="shadow"></span>
+              <span class="edge"></span>
+              <span class="front">Reset</span>
+            </button>
+          </div>
           <p id="resultCheckboxes1"></p>
         </div>
       </div>
@@ -685,7 +687,7 @@
           </div>
           <br>
 
-          <div>
+          <div class="flex-button">
             <button onclick="checkCheckboxes2()" class="pushable">
               <span class="shadow"></span>
               <span class="edge"></span>
@@ -701,8 +703,8 @@
               <span class="edge"></span>
               <span class="front">Reset</span>
             </button>
-            <p id="resultCheckboxes2"></p>
           </div>
+            <p id="resultCheckboxes2"></p>
         </div>
       </div>
     </div>
@@ -873,7 +875,7 @@
           </label>
         </div>
 
-        <div>
+        <div class="flex-button">
           <button onclick="checkDropdowns()" class="pushable">
             <span class="shadow"></span>
             <span class="edge"></span>
@@ -884,8 +886,8 @@
             <span class="edge"></span>
             <span class="front">Reset</span>
           </button>
-          <p id="result-dropdown"></p>
         </div>
+          <p id="result-dropdown"></p>
       </div>
     </div>
 
@@ -1024,21 +1026,23 @@
       </div>
       <br>
 
-      <button onclick="checkFill1()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Check answers</span>
-      </button>
-      <button onclick="showFill1()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Show answers</span>
-      </button>
-      <button onclick="resetFill1()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Reset</span>
-      </button>
+      <div class="flex-button">
+        <button onclick="checkFill1()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="showFill1()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Show answers</span>
+        </button>
+        <button onclick="resetFill1()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Reset</span>
+        </button>
+      </div>
       <div id="resultFill1" class="p"></div>
 
     </div>
@@ -1158,21 +1162,23 @@
       </div>
       <br />
 
-      <button onclick="checkFill2()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Check answers</span>
-      </button>
-      <button onclick="showFill2()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Show answers</span>
-      </button>
-      <button onclick="resetFill2()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Reset</span>
-      </button>
+      <div class="flex-button">
+        <button onclick="checkFill2()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="showFill2()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Show answers</span>
+        </button>
+        <button onclick="resetFill2()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Reset</span>
+        </button>
+      </div>
       <div id="resultFill2" class="p"></div>
     </div>
     <br>
@@ -1292,21 +1298,23 @@
       </div>
       <br />
 
-      <button onclick="checkFill3()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Check answers</span>
-      </button>
-      <button onclick="showFill3()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Show answers</span>
-      </button>
-      <button onclick="resetFill3()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Reset</span>
-      </button>
+      <div class="flex-button">
+        <button onclick="checkFill3()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="showFill3()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Show answers</span>
+        </button>
+        <button onclick="resetFill3()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Reset</span>
+        </button>
+      </div>
       <div id="resultFill3" class="p"></div>
     </div>
     <br>
@@ -1426,21 +1434,23 @@
       </div>
       <br />
 
-      <button onclick="checkFill4()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Check answers</span>
-      </button>
-      <button onclick="showFill4()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Show answers</span>
-      </button>
-      <button onclick="resetFill4()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Reset</span>
-      </button>
+      <div class="flex-button">
+        <button onclick="checkFill4()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="showFill4()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Show answers</span>
+        </button>
+        <button onclick="resetFill4()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Reset</span>
+        </button>
+      </div>
       <div id="resultFill4" class="p"></div>
     </div>
     <br>
@@ -1515,29 +1525,26 @@
       </p>
       <br>
 
-      <button onclick="checkFilltext()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Check answers</span>
-      </button>
-      <button onclick="showFilltext()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Show answers</span>
-      </button>
-      <button onclick="resetFilltext()" class="pushable">
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front">Reset</span>
-      </button>
+      <div class="flex-button">
+        <button onclick="checkFilltext()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="showFilltext()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Show answers</span>
+        </button>
+        <button onclick="resetFilltext()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Reset</span>
+        </button>
+      </div>
       <div id="resultFilltext" class="p"></div>
       <br>
-      <p class="color-green fill-text-answer"><i>
-          <p class="color-green fill-text-answer"> 1. Answer, 2. Answer, 3. Answer, 4. Answer, 5. Answer, 6. Answer,
-            7.
-            Answer, 8. Answer, 9. Answer, 10. Answer, 11. Answer, 12. Answer
-          <p class="color-green fill-text-answer">
-        </i></p>
+      <p class="color-green fill-text-answer"> 1. Answer, 2. Answer, 3. Answer, 4. Answer, 5. Answer, 6. Answer, 7. Answer, 8. Answer, 9. Answer, 10. Answer, 11. Answer, 12. Answer</p>
     </div>
   </main>
 </body>

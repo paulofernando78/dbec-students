@@ -47,8 +47,3 @@ function loadPage(url) {
       console.error("There was a problem fetching the HTML:", error);
     });
 }
-
-// Self-invoking function to load "home.html" when the site initiates
-(function () {
-  loadPage("../pages/home.html");
-})();

@@ -18,7 +18,7 @@
     --p-size: 1.3rem;
     --font-size-small: 0.8rem;
     --container-border: 7px solid rgb(201, 201, 201);
-    --img-border: 5px solid white;
+    --img-border: 5px solid rgba(211, 211, 211, 0.233);
     --container-background-image: url('../img/container-title-background.png');
 }
 
@@ -650,7 +650,7 @@ p {
 .img-1-100-border-left {
     display: block;
     margin-right: auto;
-    border: 5px solid rgba(211, 211, 211, 0.233);
+    border: var(--img-border);
     border-radius: 4px;
     box-shadow: 0 0 3px;
 }
@@ -665,7 +665,7 @@ p {
 .img-1-80-50-border-left {
     display: block;
     margin-right: auto;
-    border: 5px solid rgba(211, 211, 211, 0.233);
+    border: var(--img-border);
     border-radius: 4px;
     box-shadow: 0 0 3px;
     width: 80%;
@@ -688,7 +688,7 @@ p {
 .img-1-50-100-border-left {
     display: block;
     margin-right: auto;
-    border: 5px solid rgba(211, 211, 211, 0.233);
+    border: var(--img-border);
     border-radius: 4px;
     box-shadow: 0 0 3px;
     width: 50%;
