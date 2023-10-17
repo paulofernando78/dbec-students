@@ -120,33 +120,32 @@ const routes = {
     "../pages/courses/1-beginner/class-16/homework-video-3-what-time-is-it.html",
 
   // BEGINNER CLASS 17
-  beginner_class_17_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-17/flipped-classroom-xxx.html",
-  beginner_class_17_classwork_xxx:
-    "../pages/courses/1-beginner/class-17/classwork-xxx.html",
-  beginner_class_17_homework_xxx:
-    "../pages/courses/1-beginner/class-17/homework-xxx.html",
+  beginner_class_17_flipped_classroom_6a_a_school_reunion:
+    "../pages/courses/1-beginner/class-17/flipped-classroom-6a-a-school-reunion.html",
+  beginner_class_17_classwork_6a_a_school_reunion:
+    "../pages/courses/1-beginner/class-17/classwork-6a-a-school-reunion.html",
+  beginner_class_17_homework_6a_a_school_reunion:
+    "../pages/courses/1-beginner/class-17/homework-6a-a-school-reunion.html",
 
   // BEGINNER CLASS 18
-  beginner_class_18_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-18/flipped-classroom-xxx.html",
-  beginner_class_18_classwork_xxx:
-    "../pages/courses/1-beginner/class-18/classwork-xxx.html",
-  beginner_class_18_homework_xxx:
-    "../pages/courses/1-beginner/class-18/homework-xxx.html",
+  beginner_class_18_flipped_classroom_6b_good_morning_goodnight:
+    "../pages/courses/1-beginner/class-18/flipped-classroom-6b-good-morning-goodnight.html",
+  beginner_class_18_classwork_6b_good_morning_goodnight:
+    "../pages/courses/1-beginner/class-18/classwork-6b-good-morning-goodnight.html",
+  beginner_class_18_homework_6b_good_morning_goodnight:
+    "../pages/courses/1-beginner/class-18/homework-6b-good-morning-goodnight.html",
 
   // BEGINNER CLASS 19
-  beginner_class_19_classwork_xxx:
+  beginner_class_19_classwork_5_6_review_quiz:
     "../pages/courses/1-beginner/class-19/classwork-5-6-review-quiz.html",
-  beginner_class_19_extra_homework_xxx: "",
 
   // BEGINNER CLASS 20
-  beginner_class_20_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-20/flipped-classroom-xxx.html",
-  beginner_class_20_classwork_xxx:
-    "../pages/courses/1-beginner/class-20/classwork-xxx.html",
-  beginner_class_20_homework_xxx:
-    "../pages/courses/1-beginner/class-20/homework-xxx.html",
+  beginner_class_20_flipped_classroom_7a_have_a_nice_weekend:
+    "../pages/courses/1-beginner/class-20/flipped-classroom-7a-have-a-nice-weekend.html",
+  beginner_class_20_classwork_7a_have_a_nice_weekend:
+    "../pages/courses/1-beginner/class-20/classwork-7a-have-a-nice-weekend.html",
+  beginner_class_20_homework_7a_have_a_nice_weekend:
+    "../pages/courses/1-beginner/class-20/homework-7a-have-a-nice-weekend.html",
 
   // BEGINNER CLASS 21
   beginner_class_21_flipped_classroom_7b_lights_camera_action:
@@ -165,49 +164,48 @@ const routes = {
     "../pages/courses/1-beginner/class-22/homework-video-4-whats-the-date.html",
 
   // BEGINNER CLASS 23
-  beginner_class_23_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-23/flipped-classroom-xxx.html",
-  beginner_class_23_classwork_xxx:
-    "../pages/courses/1-beginner/class-23/classwork-xxx.html",
-  beginner_class_23_homework_xxx:
-    "../pages/courses/1-beginner/class-23/homework-xxx.html",
+  beginner_class_23_flipped_classroom_8a_can_i_park_here:
+    "../pages/courses/1-beginner/class-23/flipped-classroom-8a-can-i-park-here.html",
+  beginner_class_23_classwork_8a_can_i_park_here:
+    "../pages/courses/1-beginner/class-23/classwork-8a-can-i-park-here.html",
+  beginner_class_23_homework_8a_can_i_park_here:
+    "../pages/courses/1-beginner/class-23/homework-8a-can-i-park-here.html",
 
   // BEGINNER CLASS 24
-  beginner_class_24_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-24/flipped-classroom-xxx.html",
-  beginner_class_24_classwork_xxx:
-    "../pages/courses/1-beginner/class-24/classwork-xxx.html",
-  beginner_class_24_homework_xxx:
-    "../pages/courses/1-beginner/class-24/homework-xxx.html",
+  beginner_class_24_flipped_classroom_8b_i_love_cooking:
+    "../pages/courses/1-beginner/class-24/flipped-classroom-8b-i-love-cooking.html",
+  beginner_class_24_classwork_8b_i_love_cooking:
+    "../pages/courses/1-beginner/class-24/classwork-8b-i-love-cooking.html",
+  beginner_class_24_homework_8b_i_love_cooking:
+    "../pages/courses/1-beginner/class-24/homework-8b-i-love-cooking.html",
 
   // BEGINNER CLASS 25
-  beginner_class_25_classwork_xxx:
-    "../pages/courses/1-beginner/class-25/classwork-5-6-review-quiz.html",
-  beginner_class_25_extra_homework_xxx: "",
+  beginner_class_25_classwork_7_8_review_quiz:
+    "../pages/courses/1-beginner/class-25/classwork-7-8-review-quiz.html",
 
   // BEGINNER CLASS 26
-  beginner_class_26_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-26/flipped-classroom-xxx.html",
-  beginner_class_26_classwork_xxx:
-    "../pages/courses/1-beginner/class-26/classwork-xxx.html",
-  beginner_class_26_homework_xxx:
-    "../pages/courses/1-beginner/class-26/homework-xxx.html",
+  beginner_class_26_flipped_classroom_9a_everythings_fine:
+    "../pages/courses/1-beginner/class-26/flipped-classroom-9a-everythings-fine.html",
+  beginner_class_26_classwork_9a_everythings_fine:
+    "../pages/courses/1-beginner/class-26/classwork-9a-everythings-fine.html",
+  beginner_class_26_homework_9a_everythings_fine:
+    "../pages/courses/1-beginner/class-26/homework-9a-everythings-fine.html",
 
   // BEGINNER CLASS 27
-  beginner_class_27_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-27/flipped-classroom-xxx.html",
-  beginner_class_27_classwork_xxx:
-    "../pages/courses/1-beginner/class-27/classwork-xxx.html",
-  beginner_class_27_homework_xxx:
-    "../pages/courses/1-beginner/class-27/homework-xxx.html",
+  beginner_class_27_flipped_classroom_9b_working_undercover:
+    "../pages/courses/1-beginner/class-27/flipped-classroom-9b-working-undercover.html",
+  beginner_class_27_classwork_9b_working_undercover:
+    "../pages/courses/1-beginner/class-27/classwork-9b-working-undercover.html",
+  beginner_class_27_homework_9b_working_undercover:
+    "../pages/courses/1-beginner/class-27/homework-9b-working-undercover.html",
 
   // BEGINNER CLASS 28
-  beginner_class_28_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-28/flipped-classroom-xxx.html",
-  beginner_class_28_classwork_xxx:
-    "../pages/courses/1-beginner/class-28/classwork-xxx.html",
-  beginner_class_28_homework_xxx:
-    "../pages/courses/1-beginner/class-28/homework-xxx.html",
+  beginner_class_28_flipped_classroom_video_5_would_you_like_to_come:
+    "../pages/courses/1-beginner/class-28/flipped-classroom-video-5-would-you-like-to-come.html",
+  beginner_class_28_classwork_video_5_would_you_like_to_come:
+    "../pages/courses/1-beginner/class-28/classwork-video-5-would-you-like-to-come.html",
+  beginner_class_28_homework_video_5_would_you_like_to_come:
+    "../pages/courses/1-beginner/class-28/homework-video-5-would-you-like-to-come.html",
 
   // BEGINNER CLASS 29
   beginner_class_29_flipped_classroom_xxx:
