@@ -321,7 +321,7 @@ const routes = {
     "../pages/courses/4-intermediate/class-6/homework-xxx.html",
 
   // INTERMEDIATE CLASS 7
-  intermediate_class_7_classwork_xxx:
+  intermediate_class_7_classwork_1_2_review_quiz:
     "../pages/courses/4-intermediate/class-7/classwork-1-2-review-quiz.html",
 
   // INTERMEDIATE CLASS 8
@@ -502,12 +502,14 @@ const routes = {
 
   // UPPER INTERMEDIATE
   upper_intermediate:
-    "../pages/courses/5_upper-intermediate/upper-intermediate.html",
+    "../pages/courses/5-upper-intermediate/upper-intermediate.html",
 
   // ADVANCED
   advanced: "../pages/courses/6-advanced/advanced.html",
 
-  // GRAMMAR-ELEMENTARY
+  // EXTRA
+
+  // EXTRA • GRAMMAR • ELEMENTARY
   grammar: "../pages/extra/grammar/grammar.html",
   grammar_elementary: "../pages/extra/grammar/elementary/elementary.html",
   grammar_elementary_unit_1_am_is_are:
@@ -531,10 +533,10 @@ const routes = {
   homophone_homograph_homonym:
     "../pages/extra/vocabulary/homophone_homograph_homonym/homophone_homograph_homonym.html",
 
-  // LISTENING
+  // EXTRA • LISTENING
   listening: "../pages/extra/listening/listening.html",
 
-  // LISTENING PENGUIN KIDS
+  // EXTRA • LISTENING • PENGUIN KIDS
   penguin_kids: "../pages/extra/listening/penguin-kids/penguin-kids.html",
   penguin_kids_level_1_dumbo:
     "../pages/extra/listening/penguin-kids/dumbo/dumbo.html",
@@ -543,7 +545,7 @@ const routes = {
   penguin_kids_level_1_cinderella:
     "../pages/extra/listening/penguin-kids/cinderella/cinderella.html",
 
-  // LISTENING PENGUIN READERS
+  // EXTRA • LISTENING • PENGUIN READERS
   penguin_readers:
     "../pages/extra/listening/penguin-readers/penguin-readers.html",
   penguin_readers_flying_home:
@@ -571,17 +573,41 @@ const routes = {
   penguin_readers_who_wants_to_be_a_star:
     "../pages/extra/listening/penguin-readers/easystarts/who-wants-to-be-a-star/who-wants-to-be-a-star.html",
 
+  // EXTRA • READING
   reading: "../pages/extra/reading/reading.html",
+
+  // EXTRA • SPEAKING
   speaking: "../pages/extra/speaking/speaking.html",
+
+  // EXTRA • PRONUNCIATION
   pronunciation: "../pages/extra/pronunciation/pronunciation.html",
   pronunciation_letter_u: "../pages/extra/pronunciation/letter_u/letter_u.html",
-
   expressions: "../pages/extra/expressions/expressions.html",
 
-  business: "../pages/extra/business/business.html",
+  // SPECIFIC PURPOSES
 
+  // SPECIFIC PURPOSES • BUSINESS
+  business: "../pages/specific-purposes/business/business.html",
+
+  business_cases: "../pages/specific-purposes/business/cases/cases.html",
+
+  // SPECIFIC PURPOSES • BUSINESS • CASES
+  business_cases:
+    "../pages/specific-purposes/business/cases/cases.html",
+
+  // SPECIFIC PURPOSES • BUSINESS • CASES
+  business_cases_8_reasons_why_blockbuster_failed_and_filed_for_bankruptcy:
+    "../pages/specific-purposes/business/cases/8-reasons-why-blockbuster-failed-and-filed-for-bankruptcy/8-reasons-why-blockbuster-failed-and-filed-for-bankruptcy.html",
+
+  // SPECIFIC PURPOSES • DENTISTRY
+  dentistry: "../pages/specific-purposes/dentistry/dentistry.html",
+
+  // SPECIFIC PURPOSES • JOB INTERVIEWS
+  job_interviews:
+    "../pages/specific-purposes/job-interviews/job-interviews.html",
+
+  // ***
   temp: "../pages/_exercises_templates/exercises_templates.html",
-  classwork: "/pages/courses/-templates/classwork.html",
 };
 
 // Function to load content based on the fragment
