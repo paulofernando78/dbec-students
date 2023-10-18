@@ -208,70 +208,68 @@ const routes = {
     "../pages/courses/1-beginner/class-28/homework-video-5-would-you-like-to-come.html",
 
   // BEGINNER CLASS 29
-  beginner_class_29_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-29/flipped-classroom-xxx.html",
-  beginner_class_29_classwork_xxx:
-    "../pages/courses/1-beginner/class-29/classwork-xxx.html",
-  beginner_class_29_homework_xxx:
-    "../pages/courses/1-beginner/class-29/homework-xxx.html",
+  beginner_class_29_flipped_classroom_10a_a_room_with_a_view:
+    "../pages/courses/1-beginner/class-29/flipped-classroom-10a-a-room-with-a-view.html",
+  beginner_class_29_classwork_10a_a_room_with_a_view:
+    "../pages/courses/1-beginner/class-29/classwork-10a-a-room-with-a-view.html",
+  beginner_class_29_homework_10a_a_room_with_a_view:
+    "../pages/courses/1-beginner/class-29/homework-10a-a-room-with-a-view.html",
 
   // BEGINNER CLASS 30
-  beginner_class_30_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-30/flipped-classroom-xxx.html",
-  beginner_class_30_classwork_xxx:
-    "../pages/courses/1-beginner/class-30/classwork-xxx.html",
-  beginner_class_30_homework_xxx:
-    "../pages/courses/1-beginner/class-30/homework-xxx.html",
+  beginner_class_30_flipped_classroom_10b_where_were_you:
+    "../pages/courses/1-beginner/class-30/flipped-classroom-10b-where-were-you.html",
+  beginner_class_30_classwork_10b_where_were_you:
+    "../pages/courses/1-beginner/class-30/classwork-10b-where-were-you.html",
+  beginner_class_30_homework_10b_where_were_you:
+    "../pages/courses/1-beginner/class-30/homework-10b-where-were-you.html",
 
   // BEGINNER CLASS 31
-  beginner_class_31_classwork_xxx:
-    "../pages/courses/1-beginner/class-31/classwork-5-6-review-quiz.html",
-  beginner_class_31_extra_homework_xxx: "",
+  beginner_class_31_classwork_9_10_review_quiz:
+    "../pages/courses/1-beginner/class-31/classwork-9-10-review-quiz.html",
 
   // BEGINNER CLASS 32
-  beginner_class_32_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-32/flipped-classroom-xxx.html",
-  beginner_class_32_classwork_xxx:
-    "../pages/courses/1-beginner/class-32/classwork-xxx.html",
-  beginner_class_32_homework_xxx:
-    "../pages/courses/1-beginner/class-32/homework-xxx.html",
+  beginner_class_32_flipped_classroom_11a_a_new_life_in_the_us:
+    "../pages/courses/1-beginner/class-32/flipped-classroom-11a-a-new-life-in-the-us.html",
+  beginner_class_32_classwork_11a_a_new_life_in_the_us:
+    "../pages/courses/1-beginner/class-32/classwork-11a-a-new-life-in-the-us.html",
+  beginner_class_32_homework_11a_a_new_life_in_the_us:
+    "../pages/courses/1-beginner/class-32/homework-11a-a-new-life-in-the-us.html",
 
   // BEGINNER CLASS 33
-  beginner_class_33_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-33/flipped-classroom-xxx.html",
-  beginner_class_33_classwork_xxx:
-    "../pages/courses/1-beginner/class-33/classwork-xxx.html",
-  beginner_class_33_homework_xxx:
-    "../pages/courses/1-beginner/class-33/homework-xxx.html",
+  beginner_class_33_flipped_classroom_11b_how_was_your_day:
+    "../pages/courses/1-beginner/class-33/flipped-classroom-11b-how-was-your-day.html",
+  beginner_class_33_classwork_11b_how_was_your_day:
+    "../pages/courses/1-beginner/class-33/classwork-11b-how-was-your-day.html",
+  beginner_class_33_homework_11b_how_was_your_day:
+    "../pages/courses/1-beginner/class-33/homework-11b-how-was-your-day.html",
 
   // BEGINNER CLASS 34
-  beginner_class_34_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-34/flipped-classroom-xxx.html",
-  beginner_class_34_classwork_xxx:
-    "../pages/courses/1-beginner/class-34/classwork-xxx.html",
-  beginner_class_34_homework_xxx:
-    "../pages/courses/1-beginner/class-34/homework-xxx.html",
+  beginner_class_34_flipped_classroom_video_6_is_there_a_bank_near_here:
+    "../pages/courses/1-beginner/class-34/flipped-classroom-video-6-is-there-a-bank-near-here.html",
+  beginner_class_34_classwork_video_6_is_there_a_bank_near_here:
+    "../pages/courses/1-beginner/class-34/classwork-video-6-is-there-a-bank-near-here.html",
+  beginner_class_34_homework_video_6_is_there_a_bank_near_here:
+    "../pages/courses/1-beginner/class-34/homework-video-6-is-there-a-bank-near-here.html",
 
   // BEGINNER CLASS 35
-  beginner_class_35_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-35/flipped-classroom-xxx.html",
-  beginner_class_35_classwork_xxx:
-    "../pages/courses/1-beginner/class-35/classwork-xxx.html",
-  beginner_class_35_homework_xxx:
-    "../pages/courses/1-beginner/class-35/homework-xxx.html",
+  beginner_class_35_flipped_classroom_12a_strangers_on_a_train:
+    "../pages/courses/1-beginner/class-35/flipped-classroom-12a-strangers-on-a-train.html",
+  beginner_class_35_classwork_12a_strangers_on_a_train:
+    "../pages/courses/1-beginner/class-35/classwork-12a-strangers-on-a-train.html",
+  beginner_class_35_homework_12a_strangers_on_a_train:
+    "../pages/courses/1-beginner/class-35/homework-12a-strangers-on-a-train.html",
 
   // BEGINNER CLASS 36
-  beginner_class_36_flipped_classroom_xxx:
-    "../pages/courses/1-beginner/class-36/flipped-classroom-xxx.html",
-  beginner_class_36_classwork_xxx:
-    "../pages/courses/1-beginner/class-36/classwork-xxx.html",
-  beginner_class_36_homework_xxx:
-    "../pages/courses/1-beginner/class-36/homework-xxx.html",
+  beginner_class_36_flipped_classroom_12b_review_the_past:
+    "../pages/courses/1-beginner/class-36/flipped-classroom-12b-review-the-past.html",
+  beginner_class_36_classwork_12b_review_the_past:
+    "../pages/courses/1-beginner/class-36/classwork-12b-review-the-past.html",
+  beginner_class_36_homework_12b_review_the_past:
+    "../pages/courses/1-beginner/class-36/homework-12b-review-the-past.html",
 
   // BEGINNER CLASS 37
-  beginner_class_37_classwork_xxx:
+  beginner_class_37_classwork_11_12_review_quiz:
     "../pages/courses/1-beginner/class-37/classwork-11-12-review-quiz.html",
-  beginner_class_37_extra_homework_xxx: "",
 
   // ELEMENTARY
   elementary: "../pages/courses/2-elementary/elementary.html",
@@ -291,267 +289,216 @@ const routes = {
     "../pages/courses/4-intermediate/class-2/homework-1a-eating-in-and-out.html",
 
   // INTERMEDIATE CLASS 3
-  intermediate_class_3_:
-    "../pages/courses/4-intermediate/class-x/flipped-classroom-xxx.html",
-  intermediate_class_3_:
-    "../pages/courses/4-intermediate/class-x/classwork-xxx.html",
-  intermediate_class_3_:
-    "../pages/courses/4-intermediate/class-x/homework-xxx.html",
+  intermediate_class_3_flipped_classroom_1a_1b_modern_families:
+    "../pages/courses/4-intermediate/class-3/flipped-classroom-1b-modern-families.html",
+  intermediate_class_3_classswork_1b_modern_families:
+    "../pages/courses/4-intermediate/class-3/classwork-1b-modern-families.html",
+  intermediate_class_3_homework_1b_modern_families:
+    "../pages/courses/4-intermediate/class-3/homework-1b-modern-families.html",
 
   // INTERMEDIATE CLASS 4
-  intermediate_class_4_:
+  intermediate_class_4_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-4/flipped-classroom-xxx.html",
-  intermediate_class_4_:
+  intermediate_class_4_classwork_xxx:
     "../pages/courses/4-intermediate/class-4/classwork-xxx.html",
-  intermediate_class_4_:
+  intermediate_class_4_homework_xxx:
     "../pages/courses/4-intermediate/class-4/homework-xxx.html",
 
   // INTERMEDIATE CLASS 5
-  intermediate_class_5_:
+  intermediate_class_5_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-5/flipped-classroom-xxx.html",
-  intermediate_class_5_:
+  intermediate_class_5_classwork_xxx:
     "../pages/courses/4-intermediate/class-5/classwork-xxx.html",
-  intermediate_class_5_:
+  intermediate_class_5_homework_xxx:
     "../pages/courses/4-intermediate/class-5/homework-xxx.html",
 
   // INTERMEDIATE CLASS 6
-  intermediate_class_6_:
+  intermediate_class_6_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-6/flipped-classroom-xxx.html",
-  intermediate_class_6_:
+  intermediate_class_6_classwork_xxx:
     "../pages/courses/4-intermediate/class-6/classwork-xxx.html",
-  intermediate_class_6_:
+  intermediate_class_6_homework_xxx:
     "../pages/courses/4-intermediate/class-6/homework-xxx.html",
 
   // INTERMEDIATE CLASS 7
-  intermediate_class_7_:
+  intermediate_class_7_classwork_xxx:
     "../pages/courses/4-intermediate/class-7/classwork-1-2-review-quiz.html",
-  intermediate_class_7_: "",
 
   // INTERMEDIATE CLASS 8
-  intermediate_class_8_:
+  intermediate_class_8_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-8/flipped-classroom-xxx.html",
-  intermediate_class_8_:
+  intermediate_class_8_classwork_xxx:
     "../pages/courses/4-intermediate/class-8/classwork-xxx.html",
-  intermediate_class_8_:
+  intermediate_class_8_homework_xxx:
     "../pages/courses/4-intermediate/class-8/homework-xxx.html",
 
   // INTERMEDIATE CLASS 9
-  intermediate_class_9_:
+  intermediate_class_9_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-9/flipped-classroom-xxx.html",
-  intermediate_class_9_:
+  intermediate_class_9_classwork_xxx:
     "../pages/courses/4-intermediate/class-9/classwork-xxx.html",
-  intermediate_class_9_:
+  intermediate_class_9_homework_xxx:
     "../pages/courses/4-intermediate/class-9/homework-xxx.html",
 
   // INTERMEDIATE CLASS 10
-  intermediate_class_10_:
+  intermediate_class_10_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-10/flipped-classroom-xxx.html",
-  intermediate_class_10_:
+  intermediate_class_10_classwork_xxx:
     "../pages/courses/4-intermediate/class-10/classwork-xxx.html",
-  intermediate_class_10_:
+  intermediate_class_10_homework_xxx:
     "../pages/courses/4-intermediate/class-10/homework-xxx.html",
 
   // INTERMEDIATE CLASS 11
-  intermediate_class_11_:
+  intermediate_class_11_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-11/flipped-classroom-xxx.html",
-  intermediate_class_11_:
+  intermediate_class_11_classwork_xxx:
     "../pages/courses/4-intermediate/class-11/classwork-xxx.html",
-  intermediate_class_11_:
+  intermediate_class_11_homework_xxx:
     "../pages/courses/4-intermediate/class-11/homework-xxx.html",
 
   // INTERMEDIATE CLASS 12
-  intermediate_class_12_:
+  intermediate_class_12_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-12/flipped-classroom-xxx.html",
-  intermediate_class_12_:
+  intermediate_class_12_classwork_xxx:
     "../pages/courses/4-intermediate/class-12/classwork-xxx.html",
-  intermediate_class_12_:
+  intermediate_class_12_homework_xxx:
     "../pages/courses/4-intermediate/class-12/homework-xxx.html",
 
   // INTERMEDIATE CLASS 13
-  intermediate_class_13_:
+  intermediate_class_13_classwork_xxx:
     "../pages/courses/4-intermediate/class-13/classwork-3-4-review-quiz.html",
-  intermediate_class_13_: "",
 
   // INTERMEDIATE CLASS 14
-  intermediate_class_14_:
+  intermediate_class_14_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-14/flipped-classroom-xxx.html",
-  intermediate_class_14_:
+  intermediate_class_14_classwork_xxx:
     "../pages/courses/4-intermediate/class-14/classwork-xxx.html",
-  intermediate_class_14_:
+  intermediate_class_14_homework_xxx:
     "../pages/courses/4-intermediate/class-14/homework-xxx.html",
 
   // INTERMEDIATE CLASS 15
-  intermediate_class_15_:
+  intermediate_class_15_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-15/flipped-classroom-xxx.html",
-  intermediate_class_15_:
+  intermediate_class_15_classwork_xxx:
     "../pages/courses/4-intermediate/class-15/classwork-xxx.html",
-  intermediate_class_15_:
+  intermediate_class_15_homework_xxx:
     "../pages/courses/4-intermediate/class-15/homework-xxx.html",
 
   // INTERMEDIATE CLASS 16
-  intermediate_class_17_:
+  intermediate_class_17_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-17/flipped-classroom-xxx.html",
-  intermediate_class_17_:
+  intermediate_class_17_classwork_xxx:
     "../pages/courses/4-intermediate/class-17/classwork-xxx.html",
-  intermediate_class_17_:
+  intermediate_class_17_homework_xxx:
     "../pages/courses/4-intermediate/class-17/homework-xxx.html",
 
   // INTERMEDIATE CLASS 17
-  intermediate_class_17_:
+  intermediate_class_17_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-17/flipped-classroom-xxx.html",
-  intermediate_class_17_:
+  intermediate_class_17_classwork_xxx:
     "../pages/courses/4-intermediate/class-17/classwork-xxx.html",
-  intermediate_class_17_:
+  intermediate_class_17_homework_xxx:
     "../pages/courses/4-intermediate/class-17/homework-xxx.html",
 
   // INTERMEDIATE CLASS 18
-  intermediate_class_18_:
+  intermediate_class_18_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-18/flipped-classroom-xxx.html",
-  intermediate_class_18_:
+  intermediate_class_18_classwork_xxx:
     "../pages/courses/4-intermediate/class-18/classwork-xxx.html",
-  intermediate_class_18_:
+  intermediate_class_18_homework_xxx:
     "../pages/courses/4-intermediate/class-18/homework-xxx.html",
 
   // INTERMEDIATE CLASS 19
-  intermediate_class_19_:
+  intermediate_class_19_classwork_xxx:
     "../pages/courses/4-intermediate/class-19/classwork-5-6-review-quiz.html",
-  intermediate_class_19_: "",
 
   // INTERMEDIATE CLASS 20
-  intermediate_class_20_:
+  intermediate_class_20_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-20/flipped-classroom-xxx.html",
-  intermediate_class_20_:
+  intermediate_class_20_classwork_xxx:
     "../pages/courses/4-intermediate/class-20/classwork-xxx.html",
-  intermediate_class_20_:
+  intermediate_class_20_homework_xxx:
     "../pages/courses/4-intermediate/class-20/homework-xxx.html",
 
   // INTERMEDIATE CLASS 21
-  intermediate_class_21_:
+  intermediate_class_21_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-21/flipped-classroom-xxx.html",
-  intermediate_class_21_:
+  intermediate_class_21_classwork_xxx:
     "../pages/courses/4-intermediate/class-21/classwork-xxx.html",
-  intermediate_class_21_:
+  intermediate_class_21_homework_xxx:
     "../pages/courses/4-intermediate/class-21/homework-xxx.html",
 
   // INTERMEDIATE CLASS 22
-  intermediate_class_22_:
+  intermediate_class_22_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-22/flipped-classroom-xxx.html",
-  intermediate_class_22_:
+  intermediate_class_22_classwork_xxx:
     "../pages/courses/4-intermediate/class-22/classwork-xxx.html",
-  intermediate_class_22_:
+  intermediate_class_22_homework_xxx:
     "../pages/courses/4-intermediate/class-22/homework-xxx.html",
 
   // INTERMEDIATE CLASS 23
-  intermediate_class_23_:
+  intermediate_class_23_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-23/flipped-classroom-xxx.html",
-  intermediate_class_23_:
+  intermediate_class_23_classwork_xxx:
     "../pages/courses/4-intermediate/class-23/classwork-xxx.html",
-  intermediate_class_23_:
+  intermediate_class_23_homework_xxx:
     "../pages/courses/4-intermediate/class-23/homework-xxx.html",
 
   // INTERMEDIATE CLASS 24
-  intermediate_class_24_:
+  intermediate_class_24_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-24/flipped-classroom-xxx.html",
-  intermediate_class_24_:
+  intermediate_class_24_classwork_xxx:
     "../pages/courses/4-intermediate/class-24/classwork-xxx.html",
-  intermediate_class_24_:
+  intermediate_class_24_homework_xxx:
     "../pages/courses/4-intermediate/class-24/homework-xxx.html",
 
   // INTERMEDIATE CLASS 25
-  intermediate_class_25_:
+  intermediate_class_25_classwork_xxx:
     "../pages/courses/4-intermediate/class-13/classwork-7-8-review-quiz.html",
-  intermediate_class_25_: "",
 
   // INTERMEDIATE CLASS 26
-  intermediate_class_26_:
+  intermediate_class_26_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-26/flipped-classroom-xxx.html",
-  intermediate_class_26_:
+  intermediate_class_26_classwork_xxx:
     "../pages/courses/4-intermediate/class-26/classwork-xxx.html",
-  intermediate_class_26_:
+  intermediate_class_26_homework_xxx:
     "../pages/courses/4-intermediate/class-26/homework-xxx.html",
 
   // INTERMEDIATE CLASS 27
-  intermediate_class_27_:
+  intermediate_class_27_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-27/flipped-classroom-xxx.html",
-  intermediate_class_27_:
+  intermediate_class_27_classwork_xxx:
     "../pages/courses/4-intermediate/class-27/classwork-xxx.html",
-  intermediate_class_27_:
+  intermediate_class_27_homework_xxx:
     "../pages/courses/4-intermediate/class-27/homework-xxx.html",
 
   // INTERMEDIATE CLASS 28
-  intermediate_class_28_:
+  intermediate_class_28_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-28/flipped-classroom-xxx.html",
-  intermediate_class_28_:
+  intermediate_class_28_classwork_xxx:
     "../pages/courses/4-intermediate/class-28/classwork-xxx.html",
-  intermediate_class_28_:
+  intermediate_class_28_homework_xxx:
     "../pages/courses/4-intermediate/class-28/homework-xxx.html",
 
   // INTERMEDIATE CLASS 29
-  intermediate_class_29_:
+  intermediate_class_29_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-29/flipped-classroom-xxx.html",
-  intermediate_class_29_:
+  intermediate_class_29_classwork_xxx:
     "../pages/courses/4-intermediate/class-29/classwork-xxx.html",
-  intermediate_class_29_:
+  intermediate_class_29_homework_xxx:
     "../pages/courses/4-intermediate/class-29/homework-xxx.html",
 
   // INTERMEDIATE CLASS 30
-  intermediate_class_30_:
+  intermediate_class_30_flipped_classroom_xxx:
     "../pages/courses/4-intermediate/class-30/flipped-classroom-xxx.html",
-  intermediate_class_30_:
+  intermediate_class_30_classwork_xxx:
     "../pages/courses/4-intermediate/class-30/classwork-xxx.html",
-  intermediate_class_30_:
+  intermediate_class_30_homework_xxx:
     "../pages/courses/4-intermediate/class-30/homework-xxx.html",
 
   // INTERMEDIATE CLASS 31
-  intermediate_class_31_:
+  intermediate_class_31_classwork_xxx:
     "../pages/courses/4-intermediate/class-13/classwork-9-10-review-quiz.html",
-  intermediate_class_31_: "",
-
-  // INTERMEDIATE CLASS 32
-  intermediate_class_32_:
-    "../pages/courses/4-intermediate/class-32/flipped-classroom-xxx.html",
-  intermediate_class_32_:
-    "../pages/courses/4-intermediate/class-32/classwork-xxx.html",
-  intermediate_class_32_:
-    "../pages/courses/4-intermediate/class-32/homework-xxx.html",
-
-  // INTERMEDIATE CLASS 33
-  intermediate_class_33_:
-    "../pages/courses/4-intermediate/class-33/flipped-classroom-xxx.html",
-  intermediate_class_33_:
-    "../pages/courses/4-intermediate/class-33/classwork-xxx.html",
-  intermediate_class_33_:
-    "../pages/courses/4-intermediate/class-33/homework-xxx.html",
-
-  // INTERMEDIATE CLASS 34
-  intermediate_class_34_:
-    "../pages/courses/4-intermediate/class-34/flipped-classroom-xxx.html",
-  intermediate_class_34_:
-    "../pages/courses/4-intermediate/class-34/classwork-xxx.html",
-  intermediate_class_34_:
-    "../pages/courses/4-intermediate/class-34/homework-xxx.html",
-
-  // INTERMEDIATE CLASS 35
-  intermediate_class_35_:
-    "../pages/courses/4-intermediate/class-35/flipped-classroom-xxx.html",
-  intermediate_class_35_:
-    "../pages/courses/4-intermediate/class-35/classwork-xxx.html",
-  intermediate_class_35_:
-    "../pages/courses/4-intermediate/class-35/homework-xxx.html",
-
-  // INTERMEDIATE CLASS 36
-  intermediate_class_36_:
-    "../pages/courses/4-intermediate/class-36/flipped-classroom-xxx.html",
-  intermediate_class_36_:
-    "../pages/courses/4-intermediate/class-36/classwork-xxx.html",
-  intermediate_class_36_:
-    "../pages/courses/4-intermediate/class-36/homework-xxx.html",
-
-  // INTERMEDIATE CLASS 37
-  intermediate_class_37_:
-    "../pages/courses/4-intermediate/class-37/classwork-11-12-review-quiz.html",
-  intermediate_class_37_:
-    "../pages/courses/4-intermediate/class-37/extra-homework-11-12-review.html",
 
   // UPPER INTERMEDIATE
   upper_intermediate:
