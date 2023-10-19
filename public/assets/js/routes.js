@@ -1,3 +1,5 @@
+import {loadPage} from "./contentLoader.js"
+
 // Define a routing table or mapping object
 const routes = {
   home: "../pages/home.html",
@@ -607,7 +609,7 @@ const routes = {
     "../pages/specific-purposes/job-interviews/job-interviews.html",
 
   // ***
-  temp: "../pages/_exercises_templates/exercises_templates.html",
+  temp: "../pages/_exercises-templates/exercises-templates.html",
 };
 
 // Function to load content based on the fragment

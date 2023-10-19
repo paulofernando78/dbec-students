@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="../pages/_exercises-templates/exercises-templates.js" defer></script>
+  <title>Exercise Templates</title>
+</head>
+
+<body>
+  <main>
+    <div class="container-whiteboard">
+      <h1>Exercise Templates</h1>
+    </div>
+    <br />
+
+    <!-- HANGMAN -->
+    <h1>GUESS THE WORD</h1>
+    <br>
+
+    <div>
+      <div>
+        <p><b>Guess the word!</b></p>
+        <br>
+
+        <div class="container-white word_guess_padding" style="padding: 15px;">
+          <div class="flex-columns" style="margin: 0 auto; padding: 30px;">
+            <img src="../pages/" alt="Image" class="img-1-100-border" style="width: 80%;">
+          </div>
+
+          <!-- LETTERS -->
+          <div>
+            <div class="flex-hm-letters">
+              <div class="flex-hm-letters">
+                <button onclick="guessLetter('A')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">A</span>
+                </button>
+                <button onclick="guessLetter('B')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">B</span>
+                </button>
+                <button onclick="guessLetter('C')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">C</span>
+                </button>
+                <button onclick="guessLetter('D')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">D</span>
+                </button>
+                <button onclick="guessLetter('E')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">E</span>
+                </button>
+                <button onclick="guessLetter('F')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">F</span>
+                </button>
+                <button onclick="guessLetter('G')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">G</span>
+                </button>
+                <button onclick="guessLetter('H')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">H</span>
+                </button>
+                <button onclick="guessLetter('I')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">I</span>
+                </button>
+                <button onclick="guessLetter('J')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">J</span>
+                </button>
+                <button onclick="guessLetter('K')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">K</span>
+                </button>
+                <button onclick="guessLetter('L')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">L</span>
+                </button>
+                <button onclick="guessLetter('M')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">M</span>
+                </button>
+                <button onclick="guessLetter('N')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">N</span>
+                </button>
+                <button onclick="guessLetter('O')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">O</span>
+                </button>
+                <button onclick="guessLetter('P')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">P</span>
+                </button>
+                <button onclick="guessLetter('Q')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">Q</span>
+                </button>
+                <button onclick="guessLetter('R')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">R</span>
+                </button>
+                <button onclick="guessLetter('S')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">S</span>
+                </button>
+                <button onclick="guessLetter('T')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">T</span>
+                </button>
+                <button onclick="guessLetter('U')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">U</span>
+                </button>
+                <button onclick="guessLetter('V')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">V</span>
+                </button>
+                <button onclick="guessLetter('W')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">W</span>
+                </button>
+                <button onclick="guessLetter('X')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">X</span>
+                </button>
+                <button onclick="guessLetter('Y')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">Y</span>
+                </button>
+                <button onclick="guessLetter('Z')" class="pushable-hm">
+                  <span class="shadow-hm"></span>
+                  <span class="edge-hm"></span>
+                  <span class="front-hm">Z</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div style="text-align: center;">
+            <br>
+            <div id="word" style="text-align: center; font-size: 1.5rem;"></div>
+            <br>
+            <p><b>Incorrect letters:</b> <span id="incorrectGuesses"></span></p>
+            <p><b>Attempts remaining:</b> <span id="attemptsRemaining"></span></p>
+            <p><span id="message"></span></p>
+            <br>
+            <button onclick="resetHM()" class="pushable reset-button">
+              <span class="shadow"></span>
+              <span class="edge"></span>
+              <span class="front">Reset</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- FLIP CARDS -->
+    <h1>FLIP CARDS</h1>
+    <br>
+
+    <div>
+      <div class="align-items-center-flip-card">
+
+        <!-- FLIP CARD 1 -->
+        <div class="flip-card-container">
+          <div class="flip-card" id="flipped">
+            <div class="flip-card-front flip-card1-bg-img">
+              <div>
+                <img src="../../assets/img/icon/flip.png" alt="Icon flip;" class="flip-card-icon">
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <p>Write something here.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FLIP CARD 2 -->
+        <div class="flip-card-container">
+          <div class="flip-card">
+            <div class="flip-card-front">
+              <div class="grid-2-rows-flip-card">
+                <img src="../assets/img/icon/flip.png" alt="Icon flip;" class="flip-card2-icon">
+                <p>What's the past and participle of the verb ask?<b></b>?</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div>
+                <p>asked
+                <div class="phonetics">/æsk/</div>
+                </p>
+                <br>
+                <p>asked
+                <div class="phonetics">/æsk/</div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FLIP CARD 3 -->
+        <div class="flip-card-container">
+          <div class="flip-card">
+            <div class="flip-card-front">
+              <div class="grid-3-rows-flip-card">
+                <img src="../assets/img/icon/flip.png" alt="Icon flip;"
+                  class="grid-3-rows-flip-card-icon-item flip-card3-icon">
+                <img src="../assets/img/gif/book-title.gif" alt="Pic1" style="width: 30%;">
+                <p>What is it?</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <p>It's a book.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- SHUFFLE CARDS -->
+    <h1>SHUFFLE CARDS</h1>
+    <br>
+
+    <div>
+      <div class="shuffle-background-grid-2">
+        <div class="shuffle-content">
+          <img src="" alt="Pic">
+          <p>Can you answer the questions?</p>
+        </div>
+
+        <div class="shuffle-background">
+          <div class="shuffle-card-container">
+
+            <div class="shuffle-card shuffle-card1" onclick="rotateAndTranslate(this)">
+              <div class="shuffle-card-inner">
+                <div class="shuffle-card-front"></div>
+                <div class="shuffle-card-back shuffle-card-back-1">
+                  <p>Content for card 1</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shuffle-card shuffle-card2" onclick="rotateAndTranslate(this)">
+              <div class="shuffle-card-inner">
+                <div class="shuffle-card-front"></div>
+                <div class="shuffle-card-back shuffle-card-back-2">
+                  <p>Content for card 2</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shuffle-card shuffle-card3" onclick="rotateAndTranslate(this)">
+              <div class="shuffle-card-inner">
+                <div class="shuffle-card-front"></div>
+                <div class="shuffle-card-back shuffle-card-back-3">
+                  <p>Content for card 3</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shuffle-card shuffle-card4" onclick="rotateAndTranslate(this)">
+              <div class="shuffle-card-inner">
+                <div class="shuffle-card-front"></div>
+                <div class="shuffle-card-back shuffle-card-back-4">
+                  <p>Content for card 4</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shuffle-card shuffle-card5" onclick="rotateAndTranslate(this)">
+              <div class="shuffle-card-inner">
+                <div class="shuffle-card-front"></div>
+                <div class="shuffle-card-back shuffle-card-back-5">
+                  <p>Content for card 5</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shuffle-card shuffle-card6" onclick="rotateAndTranslate(this)">
+              <div class="shuffle-card-inner">
+                <div class="shuffle-card-front"></div>
+                <div class="shuffle-card-back shuffle-card-back-6">
+                  <p>Content for card 6</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shuffle-card shuffle-card7" onclick="rotateAndTranslate(this)">
+              <div class="shuffle-card-inner">
+                <div class="shuffle-card-front"></div>
+                <div class="shuffle-card-back shuffle-card-back-7">
+                  <p>Content for card 7</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shuffle-card shuffle-card8" onclick="rotateAndTranslate(this)">
+              <div class="shuffle-card-inner">
+                <div class="shuffle-card-front"></div>
+                <div class="shuffle-card-back shuffle-card-back-8">
+                  <p>Content for card 8</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shuffle-card shuffle-card9" onclick="rotateAndTranslate(this)">
+              <div class="shuffle-card-inner">
+                <div class="shuffle-card-front"></div>
+                <div class="shuffle-card-back shuffle-card-back-9">
+                  <p>Content for card 9</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shuffle-card shuffle-card10" onclick="rotateAndTranslate(this)">
+              <div class="shuffle-card-inner">
+                <div class="shuffle-card-front"></div>
+                <div class="shuffle-card-back shuffle-card-back-10">
+                  <p>Content for card 10</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button onclick="shuffleCards()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">
+              Shuffle
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- COLLAPSE -->
+    <h1>COLLAPSE</h1>
+    <br>
+
+    <div>
+      <div class="container-white">
+        <div class="section">
+          <div class="triangle" onclick="toggleCollapse(this)"></div>
+          <p>Audioscript / Info</p>
+          <div class="content" style="width: 97.3%;">
+            <br>
+            <iframe src="" width="100%" height="60"></iframe>
+            <br>
+            <br>
+            <p><b>A:</b> ...</p>
+            <p><b>B:</b> ...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- TOOLTIP 1 -->
+    <h1>TOOLTIP 1</h1>
+    <br>
+
+    <div>
+      <p>
+        <span class="tooltip1"><span style="border-bottom: 2px dotted">ask</span>
+          <span class="tooltip1-info"> • asked • asked</span>
+        </span>
+      </p>
+    </div>
+
+    <br>
+
+    <!-- TOOLTIP 2 -->
+    <h1>TOOLTIP 2</h1>
+    <br>
+
+    <div>
+      <p>
+        <span class="tooltip2"><span style="border-bottom: 2px dotted;">xxx</span>
+          <span class="tooltip2-info"><b>xxx</b> xxx
+            <span class="times-new-roman"><i>xxx</i></span>
+            <span class="phonetics"> xxx </span>
+            xxx
+            <span class="color-lightgrey"> xxx</span>
+          </span>
+        </span>
+      </p>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- RADIO -->
+    <h1>RADIO</h1>
+    <br>
+
+    <div>
+      <p><b>1. Choose the correct answers.</b></p>
+      <br />
+
+      <div class="container-exercise-space">
+        <div>
+          <p>1. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-1" id="radio-1a" class="radio-correct" />
+            <label for="radio-1a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-1" id="radio-1b" class="radio-incorrect" />
+            <label for="radio-1b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>2. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-2" id="radio-2a" class="radio-correct" />
+            <label for="radio-2a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-2" id="radio-2b" class="radio-incorrect" />
+            <label for="radio-2b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>3. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-3" id="radio-3a" class="radio-correct" />
+            <label for="radio-3a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-3" id="radio-3b" class="radio-incorrect" />
+            <label for="radio-3b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>4. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-4" id="radio-4a" class="radio-correct" />
+            <label for="radio-4a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-4" id="radio-4b" class="radio-incorrect" />
+            <label for="radio-4b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>5. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-5" id="radio-5a" class="radio-correct" />
+            <label for="radio-5a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-5" id="radio-5b" class="radio-incorrect" />
+            <label for="radio-5b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>6. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-6" id="radio-6a" class="radio-correct" />
+            <label for="radio-6a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-6" id="radio-6b" class="radio-incorrect" />
+            <label for="radio-6b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>7. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-7" id="radio-7a" class="radio-correct" />
+            <label for="radio-7a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-7" id="radio-7b" class="radio-incorrect" />
+            <label for="radio-7b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>8. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-8" id="radio-8a" class="radio-correct" />
+            <label for="radio-8a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-8" id="radio-8b" class="radio-incorrect" />
+            <label for="radio-8b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>9. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-9" id="radio-9a" class="radio-correct" />
+            <label for="radio-9a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-9" id="radio-9b" class="radio-incorrect" />
+            <label for="radio-9b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>10. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-10" id="radio-10a" class="radio-correct" />
+            <label for="radio-10a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-10" id="radio-10b" class="radio-incorrect" />
+            <label for="radio-10b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>11. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-11-5" id="radio-11a" class="radio-correct" />
+            <label for="radio-11a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-11-5" id="radio-11b" class="radio-incorrect" />
+            <label for="radio-11b">b&#41; xxx</label>
+          </div>
+          <br />
+
+          <p>12. xxx</p>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-12" id="radio-12a" class="radio-correct" />
+            <label for="radio-12a">a&#41; xxx</label>
+          </div>
+          <div class="align-items-center-1">
+            <input type="radio" name="radio-1-12" id="radio-12b" class="radio-incorrect" />
+            <label for="radio-12b">b&#41; xxx</label>
+          </div>
+        </div>
+
+        <div>
+          <button onclick="resetRadios()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">
+              Reset
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- CHECKBOX 1 -->
+    <h2>CHECKBOX 1</h2>
+    <br>
+    <div>
+      <p><b>1. Select the correct answer.</b></p>
+      <br>
+      <div class="container-exercise-space">
+        <div>
+          <p>1. xxx.</p>
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-1-1" id="checkbox-1a" class="checkbox1" data-correct="true" />
+            <label for="checkbox-1a">a&#41; xxx</label>
+            <span class="icon checkbox-correct-icon1 invisible1"></span>
+            <span class="icon checkbox-incorrect-icon1 invisible1"></span>
+          </div>
+
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-1-1" id="checkbox-1b" class="checkbox1" data-correct="false">
+            <label for="checkbox-1b">b&#41; xxx</label>
+            <span class="icon checkbox-correct-icon1 invisible1"></span>
+            <span class="icon checkbox-incorrect-icon1 invisible1"></span>
+          </div>
+
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-1-1" id="checkbox-1c" class="checkbox1 " data-correct="true" />
+            <label for=" checkbox-1c">c&#41; xxx</label>
+            <span class="icon checkbox-correct-icon1 invisible1"></span>
+            <span class="icon checkbox-incorrect-icon1 invisible1"></span>
+          </div>
+          <br>
+
+          <div class="flex-button">
+            <button onclick="checkCheckboxes1()" class="pushable">
+              <span class="shadow"></span>
+              <span class="edge"></span>
+              <span class="front">Check answers</span>
+            </button>
+            <button onclick="showCheckboxes1()" class="pushable">
+              <span class="shadow"></span>
+              <span class="edge"></span>
+              <span class="front">Show answers</span>
+            </button>
+            <button onclick="resetCheckboxes1()" class="pushable">
+              <span class="shadow"></span>
+              <span class="edge"></span>
+              <span class="front">Reset</span>
+            </button>
+          </div>
+          <p id="resultCheckboxes1"></p>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- CHECKBOX 2 -->
+    <h2>CHECKBOX 2</h2>
+    <br>
+    <div>
+      <p><b>1. Select the correct answer.</b></p>
+      <br>
+      <div class="container-exercise-space">
+        <div>
+          <p>1. xxx.</p>
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-2-1" id="checkbox-2a" class="checkbox2" data-correct="true" />
+            <label for="checkbox-2a">a&#41; xxx</label>
+            <span class="icon checkbox-correct-icon2 invisible2"></span>
+            <span class="icon checkbox-incorrect-icon2 invisible2"></span>
+          </div>
+
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-2-1" id="checkbox-2b" class="checkbox2" data-correct="false">
+            <label for="checkbox-2b">b&#41; xxx</label>
+            <span class="icon checkbox-correct-icon2 invisible2"></span>
+            <span class="icon checkbox-incorrect-icon2 invisible2"></span>
+          </div>
+
+          <div class="align-items-center-1">
+            <input type="checkbox" name="checkbox-2-1" id="checkbox-2c" class="checkbox2 " data-correct="true" />
+            <label for=" checkbox-2c">c&#41; xxx</label>
+            <span class="icon checkbox-correct-icon2 invisible2"></span>
+            <span class="icon checkbox-incorrect-icon2 invisible2"></span>
+          </div>
+          <br>
+
+          <div class="flex-button">
+            <button onclick="checkCheckboxes2()" class="pushable">
+              <span class="shadow"></span>
+              <span class="edge"></span>
+              <span class="front">Check answers</span>
+            </button>
+            <button onclick="showCheckboxes2()" class="pushable">
+              <span class="shadow"></span>
+              <span class="edge"></span>
+              <span class="front">Show answers</span>
+            </button>
+            <button onclick="resetCheckboxes2()" class="pushable">
+              <span class="shadow"></span>
+              <span class="edge"></span>
+              <span class="front">Reset</span>
+            </button>
+          </div>
+          <p id="resultCheckboxes2"></p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- DROPDOWN -->
+    <h2>DROPDOWN</h2>
+    <br>
+    <div>
+      <p><b>1. Choose the correct answer.</b></p>
+      <br />
+
+      <div class="container-exercise-space">
+        <div>
+          <label>
+            a&#41; xxx
+            <select id="option1">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option1Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            b&#41; xxx
+            <select id="option2">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option2Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            c&#41; xxx
+            <select id="option3">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option3Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            d&#41; xxx
+            <select id="option4">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option4Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            e&#41; xxx
+            <select id="option5">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option5Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            f&#41; xxx
+            <select id="option6">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option6Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            g&#41; xxx
+            <select id="option7">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option7Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            h&#41; xxx
+            <select id="option8">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option8Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            i&#41; xxx
+            <select id="option9">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option9Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            j&#41; xxx
+            <select id="option10">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option10Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            k&#41; xxx
+            <select id="option11">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option11Icon"></span>
+            xxx
+          </label>
+          <br>
+          <label>
+            l&#41; xxx
+            <select id="option12a">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option12aIcon"></span>
+            xxx
+            <select id="option12b">
+              <option value="na">...</option>
+              <option value="a">xxx</option>
+              <option value="b">xxx</option>
+              <option value="c">xxx</option>
+            </select>
+            <span class="dropdown-icon" id="option12bIcon"></span>
+          </label>
+        </div>
+
+        <div class="flex-button">
+          <button onclick="checkDropdowns()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Check answers</span>
+          </button>
+          <button onclick="resetDropdowns()" class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Reset</span>
+          </button>
+        </div>
+        <p id="result-dropdown"></p>
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- FILL IN THE BLANKS 1-->
+    <div>
+      <p><b>1. Fill-in-the-blanks 1</b></p>
+      <br />
+
+      <div class="fills-height fills-margin">
+        <p>1. xxx
+          <br>
+          <input type="text" id="blank1_fill1" class="fill1">
+          <span id="fill1Icon1" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 1</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>2. xxx
+          <br>
+          <input type="text" id="blank2_fill1" class="fill1">
+          <span id="fill1Icon2" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 2</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>3. xxx
+          <br>
+          <input type="text" id="blank3_fill1" class="fill1">
+          <span id="fill1Icon3" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 3</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>4. xxx
+          <br>
+          <input type="text" id="blank4_fill1" class="fill1">
+          <span id="fill1Icon4" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 4</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>5. xxx
+          <br>
+          <input type="text" id="blank5_fill1" class="fill1">
+          <span id="fill1Icon5" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 5</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>6. xxx
+          <br>
+          <input type="text" id="blank6_fill1" class="fill1">
+          <span id="fill1Icon6" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 6</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>7. xxx
+          <br>
+          <input type="text" id="blank7_fill1" class="fill1">
+          <span id="fill1Icon7" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 7</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>8. xxx
+          <br>
+          <input type="text" id="blank8_fill1" class="fill1">
+          <span id="fill1Icon8" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 8</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>9. xxx
+          <br>
+          <input type="text" id="blank9_fill1" class="fill1">
+          <span id="fill1Icon9" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 9</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>10. xxx
+          <br>
+          <input type="text" id="blank10_fill1" class="fill1">
+          <span id="fill1Icon10" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 10</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>11. xxx
+          <br>
+          <input type="text" id="blank11_fill1" class="fill1">
+          <span id="fill1Icon11" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 11</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>12. xxx
+          <br>
+          <input type="text" id="blank12_fill1" class="fill1">
+          <span id="fill1Icon12" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 12</i></p>
+        </p>
+      </div>
+      <div class="fills-height fills-margin">
+        <p>13. xxx
+          <br>
+          <input type="text" id="blank13_fill1" class="fill1">
+          <span id="fill1Icon13" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 13</i></p>
+        </p>
+      </div>
+      <div class="fills-height">
+        <p>14. xxx
+          <br>
+          <input type="text" id="blank14_fill1" class="fill1">
+          <span id="fill1Icon14" class="fill1-icon"></span>
+        <p class="color-green fill1_answer answer-height"><i>Answer 14</i></p>
+        </p>
+      </div>
+      <br>
+
+      <div class="flex-button">
+        <button onclick="checkFill1()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="showFill1()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Show answers</span>
+        </button>
+        <button onclick="resetFill1()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Reset</span>
+        </button>
+      </div>
+      <div id="resultFill1" class="p"></div>
+
+    </div>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- FILL IN THE BLANKS 2-->
+    <div>
+      <p><b>1. Fill-in-the-blanks 2</b></p>
+      <br />
+      <div class="fills-height fills-margin">
+        <p>1. xxx
+          <br>
+          <input type="text" id="blank1_fill2" class="fill2">
+          <span id="fill2Icon1" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 1</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>2. xxx
+          <br>
+          <input type="text" id="blank2_fill2" class="fill2">
+          <span id="fill2Icon2" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 2</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>3. xxx
+          <br>
+          <input type="text" id="blank3_fill2" class="fill2">
+          <span id="fill2Icon3" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 3</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>4. xxx
+          <br>
+          <input type="text" id="blank4_fill2" class="fill2">
+          <span id="fill2Icon4" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 4</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>5. xxx
+          <br>
+          <input type="text" id="blank5_fill2" class="fill2">
+          <span id="fill2Icon5" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 5</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>6. xxx
+          <br>
+          <input type="text" id="blank6_fill2" class="fill2">
+          <span id="fill2Icon6" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 6</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>7. xxx
+          <br>
+          <input type="text" id="blank7_fill2" class="fill2">
+          <span id="fill2Icon7" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 7</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>8. xxx
+          <br>
+          <input type="text" id="blank8_fill2" class="fill2">
+          <span id="fill2Icon8" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 8</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>9. xxx
+          <br>
+          <input type="text" id="blank9_fill2" class="fill2">
+          <span id="fill2Icon9" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 9</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>10. xxx
+          <br>
+          <input type="text" id="blank10_fill2" class="fill2">
+          <span id="fill2Icon10" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 10</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>11. xxx
+          <br>
+          <input type="text" id="blank11_fill2" class="fill2">
+          <span id="fill2Icon11" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 11</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height">
+        <p>12. xxx
+          <br>
+          <input type="text" id="blank12_fill2" class="fill2">
+          <span id="fill2Icon12" class="fill2-icon"></span>
+        <p class="color-green fill2_answer answer-height"><i>Answer 12</i></p>
+        </p>
+      </div>
+      <br />
+
+      <div class="flex-button">
+        <button onclick="checkFill2()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="showFill2()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Show answers</span>
+        </button>
+        <button onclick="resetFill2()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Reset</span>
+        </button>
+      </div>
+      <div id="resultFill2" class="p"></div>
+    </div>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- FILL IN THE BLANKS 3-->
+    <div>
+      <p><b>1. Fill-in-the-blanks 3</b></p>
+      <br />
+
+      <div class="fills-height fills-margin">
+        <p>1. xxx
+          <br>
+          <input type="text" id="blank1_fill3" class="fill3">
+          <span id="fill3Icon1" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 1</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>2. xxx
+          <br>
+          <input type="text" id="blank2_fill3" class="fill3">
+          <span id="fill3Icon2" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 2</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>3. xxx
+          <br>
+          <input type="text" id="blank3_fill3" class="fill3">
+          <span id="fill3Icon3" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 3</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>4. xxx
+          <br>
+          <input type="text" id="blank4_fill3" class="fill3">
+          <span id="fill3Icon4" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 4</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>5. xxx
+          <br>
+          <input type="text" id="blank5_fill3" class="fill3">
+          <span id="fill3Icon5" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 5</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>6. xxx
+          <br>
+          <input type="text" id="blank6_fill3" class="fill3">
+          <span id="fill3Icon6" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 6</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>7. xxx
+          <br>
+          <input type="text" id="blank7_fill3" class="fill3">
+          <span id="fill3Icon7" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 7</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>8. xxx
+          <br>
+          <input type="text" id="blank8_fill3" class="fill3">
+          <span id="fill3Icon8" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 8</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>9. xxx
+          <br>
+          <input type="text" id="blank9_fill3" class="fill3">
+          <span id="fill3Icon9" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 9</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>10. xxx
+          <br>
+          <input type="text" id="blank10_fill3" class="fill3">
+          <span id="fill3Icon10" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 10</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>11. xxx
+          <br>
+          <input type="text" id="blank11_fill3" class="fill3">
+          <span id="fill3Icon11" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 11</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height">
+        <p>12. xxx
+          <br>
+          <input type="text" id="blank12_fill3" class="fill3">
+          <span id="fill3Icon12" class="fill3-icon"></span>
+        <p class="color-green fill3_answer answer-height"><i>Answer 12</i></p>
+        </p>
+      </div>
+      <br />
+
+      <div class="flex-button">
+        <button onclick="checkFill3()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="showFill3()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Show answers</span>
+        </button>
+        <button onclick="resetFill3()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Reset</span>
+        </button>
+      </div>
+      <div id="resultFill3" class="p"></div>
+    </div>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- FILL IN THE BLANKS 4-->
+    <div>
+      <p><b>1. Fill-in-the-blanks 4</b></p>
+      <br />
+
+      <div class="fills-height fills-margin">
+        <p>1. xxx
+          <br>
+          <input type="text" id="blank1_fill4" class="fill4">
+          <span id="fill4Icon1" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 1</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>2. xxx
+          <br>
+          <input type="text" id="blank2_fill4" class="fill4">
+          <span id="fill4Icon2" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 2</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>3. xxx
+          <br>
+          <input type="text" id="blank3_fill4" class="fill4">
+          <span id="fill4Icon3" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 3</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>4. xxx
+          <br>
+          <input type="text" id="blank4_fill4" class="fill4">
+          <span id="fill4Icon4" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 4</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>5. xxx
+          <br>
+          <input type="text" id="blank5_fill4" class="fill4">
+          <span id="fill4Icon5" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 5</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>6. xxx
+          <br>
+          <input type="text" id="blank6_fill4" class="fill4">
+          <span id="fill4Icon6" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 6</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>7. xxx
+          <br>
+          <input type="text" id="blank7_fill4" class="fill4">
+          <span id="fill4Icon7" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 7</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>8. xxx
+          <br>
+          <input type="text" id="blank8_fill4" class="fill4">
+          <span id="fill4Icon8" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 8</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>9. xxx
+          <br>
+          <input type="text" id="blank9_fill4" class="fill4">
+          <span id="fill4Icon9" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 9</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>10. xxx
+          <br>
+          <input type="text" id="blank10_fill4" class="fill4">
+          <span id="fill4Icon10" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 10</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height fills-margin">
+        <p>11. xxx
+          <br>
+          <input type="text" id="blank11_fill4" class="fill4">
+          <span id="fill4Icon11" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 11</i></p>
+        </p>
+      </div>
+
+      <div class="fills-height">
+        <p>12. xxx
+          <br>
+          <input type="text" id="blank12_fill4" class="fill4">
+          <span id="fill4Icon12" class="fill4-icon"></span>
+        <p class="color-green fill4_answer answer-height"><i>Answer 12</i></p>
+        </p>
+      </div>
+      <br />
+
+      <div class="flex-button">
+        <button onclick="checkFill4()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="showFill4()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Show answers</span>
+        </button>
+        <button onclick="resetFill4()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Reset</span>
+        </button>
+      </div>
+      <div id="resultFill4" class="p"></div>
+    </div>
+    <br>
+
+    <!-- EXERCISE XXX -->
+    <!-- FILL IN THE BLANKS (TEXT) -->
+    <div>
+      <p><b>1. Fill-in-the-blanks (text)</b></p>
+      <br />
+      <p><b>1. Write the correct answer.</b></p>
+      <br />
+
+      <p>xxx <sup>1</sup>
+        <input type="text" id="blank1_text" class="fill-text">
+        <span id="filltextIcon1" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>2</sup>
+        <input type="text" id="blank2_text" class="fill-text">
+        <span id="filltextIcon2" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>3</sup>
+        <input type="text" id="blank3_text" class="fill-text">
+        <span id="filltextIcon3" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>4</sup>
+        <input type="text" id="blank4_text" class="fill-text">
+        <span id="filltextIcon4" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>5</sup>
+        <input type="text" id="blank5_text" class="fill-text">
+        <span id="filltextIcon5" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>6</sup>
+        <input type="text" id="blank6_text" class="fill-text">
+        <span id="filltextIcon6" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>7</sup>
+        <input type="text" id="blank7_text" class="fill-text">
+        <span id="filltextIcon7" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>8</sup>
+        <input type="text" id="blank8_text" class="fill-text">
+        <span id="filltextIcon8" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>9</sup>
+        <input type="text" id="blank9_text" class="fill-text">
+        <span id="filltextIcon9" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>10</sup>
+        <input type="text" id="blank10_text" class="fill-text">
+        <span id="filltextIcon10" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>11</sup>
+        <input type="text" id="blank11_text" class="fill-text">
+        <span id="filltextIcon11" class="fill-text-icon"></span>
+        xxx.
+
+        xxx <sup>12</sup>
+        <input type="text" id="blank12_text" class="fill-text">
+        <span id="filltextIcon12" class="fill-text-icon"></span>
+        xxx.
+      </p>
+      <br>
+
+      <div class="flex-button">
+        <button onclick="checkFilltext()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Check answers</span>
+        </button>
+        <button onclick="showFilltext()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Show answers</span>
+        </button>
+        <button onclick="resetFilltext()" class="pushable">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">Reset</span>
+        </button>
+      </div>
+      <div id="resultFilltext" class="p"></div>
+      <br>
+      <p class="color-green fill-text-answer"> 1. Answer, 2. Answer, 3. Answer, 4. Answer, 5. Answer, 6. Answer, 7.
+        Answer, 8. Answer, 9. Answer, 10. Answer, 11. Answer, 12. Answer</p>
+    </div>
+  </main>
+</body>
+
+</html>

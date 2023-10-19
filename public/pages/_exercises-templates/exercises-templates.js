@@ -1,16 +1,23 @@
-// HANGMAN
+// GUESS THE WORD
 
-const selectedWord = "LORENZO"; //
+const selectedWord = "ALPHABET";
 let guessedWord = [];
 let incorrectGuesses = [];
-const maxAttempts = 3; //
-let gameOver = false; //
+const maxAttempts = 3;
+let gameOver = false;
+
+initializeGame();
 
 function initializeGame() {
   // Initialize guessedWord with underscores
+  console.log(guessedWord);
   guessedWord = [];
   for (let i = 0; i < selectedWord.length; i++) {
-    guessedWord.push("_");
+    if (selectedWord[i] === " ") {
+      guessedWord.push(" ");
+    } else {
+      guessedWord.push("_");
+    }
   }
 
   // Reset incorrect guesses
@@ -83,6 +90,7 @@ function guessLetter(letter) {
 }
 
 window.onload = function () {
+  console.log('load')
   initializeGame();
   document.getElementById("message").textContent = "";
 };
@@ -95,6 +103,17 @@ function resetHM() {
   const messageElement = document.getElementById("message");
   messageElement.textContent = "";
 }
+
+// FLIP CARD
+const flipCardContainers = document.querySelectorAll(".flip-card-container");
+
+flipCardContainers.forEach((container) => {
+  const flipCard = container.querySelector(".flip-card");
+
+  flipCard.addEventListener("click", (e) => {
+    flipCard.classList.toggle("flipped");
+  });
+});
 
 // SHUFFLE CARDS
 
@@ -166,6 +185,21 @@ function shuffleCards() {
   cards.forEach((card) => {
     card.querySelector(".shuffle-card-inner").style.transform = "rotateY(0deg)";
   });
+}
+
+// COLLAPSE
+function toggleCollapse(triangle) {
+  // Find the closest parent section element
+  var section = triangle.parentElement;
+
+  // Find the content element within the section
+  var content = section.querySelector(".content");
+
+  // Toggle the display of the content
+  content.style.display = content.style.display === "block" ? "none" : "block";
+
+  // Toggle the "expanded" class on the section element
+  section.classList.toggle("expanded");
 }
 
 // // EXERCISE XXX

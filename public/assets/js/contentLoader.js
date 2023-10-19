@@ -1,4 +1,5 @@
-function loadPage(url) {
+
+export function loadPage(url) {
   fetch(url)
     .then((response) => {
       if (!response.ok) {

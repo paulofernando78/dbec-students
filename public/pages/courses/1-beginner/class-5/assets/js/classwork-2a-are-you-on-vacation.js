@@ -1,9 +1,9 @@
 // GUESS THE WORD
 
-const selectedWord = "THE ALPHABET"; //
+const selectedWord = "LORENZO"; //
 let guessedWord = [];
 let incorrectGuesses = [];
-const maxAttempts = 8; //
+const maxAttempts = 3; //
 let gameOver = false; //
 
 function initializeGame() {

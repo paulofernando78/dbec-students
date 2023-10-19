@@ -545,6 +545,12 @@ p {
     gap: 10px;
 }
 
+.flex-start-no-wrap {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
 .flex-center {
     display: flex;
     align-items: center;
