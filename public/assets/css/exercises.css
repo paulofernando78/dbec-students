@@ -810,9 +810,4 @@ select option {
     grid-template-columns: 1fr;
     padding-top: 20px;
   }
-
-  /* .grid-3-columns-word-guess {
-    grid-template-columns: 1fr;
-
-  } */
 }

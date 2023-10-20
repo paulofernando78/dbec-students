@@ -1,7 +1,8 @@
-import {loadPage} from "./contentLoader.js"
+import { loadPage } from "./contentLoader.js"
 
 // Define a routing table or mapping object
 const routes = {
+  "": "../pages/home.html",
   home: "../pages/home.html",
 
   // BEGINNER
@@ -594,8 +595,7 @@ const routes = {
   business_cases: "../pages/specific-purposes/business/cases/cases.html",
 
   // SPECIFIC PURPOSES • BUSINESS • CASES
-  business_cases:
-    "../pages/specific-purposes/business/cases/cases.html",
+  business_cases: "../pages/specific-purposes/business/cases/cases.html",
 
   // SPECIFIC PURPOSES • BUSINESS • CASES
   business_cases_8_reasons_why_blockbuster_failed_and_filed_for_bankruptcy:

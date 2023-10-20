@@ -89,12 +89,6 @@ function guessLetter(letter) {
   updateDisplay();
 }
 
-window.onload = function () {
-  console.log('load')
-  initializeGame();
-  document.getElementById("message").textContent = "";
-};
-
 function resetHM() {
   // Reinitialize the game
   initializeGame();

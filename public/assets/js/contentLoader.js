@@ -1,4 +1,3 @@
-
 export function loadPage(url) {
   fetch(url)
     .then((response) => {
